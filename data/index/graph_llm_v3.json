@@ -1,0 +1,5510 @@
+{
+  "source": "extracted",
+  "extractor": "llm:v3_fewshot",
+  "entities": [
+    {
+      "id": "E0000",
+      "type": "Company",
+      "name": "柏观环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0001",
+      "type": "Jurisdiction",
+      "name": "新港城",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0002",
+      "type": "Company",
+      "name": "漱玉资本管理有限公司",
+      "aliases": [
+        "漱玉资管"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0003",
+      "type": "Company",
+      "name": "Qiwu Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0004",
+      "type": "Jurisdiction",
+      "name": "北屿自治区",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0005",
+      "type": "Company",
+      "name": "Jinyue Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0006",
+      "type": "Company",
+      "name": "砥行资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0007",
+      "type": "Jurisdiction",
+      "name": "临海特区",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0008",
+      "type": "Company",
+      "name": "Yuanxi Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0009",
+      "type": "Jurisdiction",
+      "name": "澄江特别行政区",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0010",
+      "type": "Company",
+      "name": "鹤鸣金融服务有限公司",
+      "aliases": [
+        "鹤鸣金服"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0011",
+      "type": "Company",
+      "name": "砚池环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0012",
+      "type": "Jurisdiction",
+      "name": "卡兰群岛",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0013",
+      "type": "Company",
+      "name": "Yunzhou Investment Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0014",
+      "type": "Company",
+      "name": "洄川国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0015",
+      "type": "Jurisdiction",
+      "name": "白鹭湾",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0016",
+      "type": "Company",
+      "name": "珩屿金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0017",
+      "type": "Company",
+      "name": "麓岩金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0018",
+      "type": "Jurisdiction",
+      "name": "卡瑟尼亚",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0019",
+      "type": "Company",
+      "name": "Huilan Investment Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0020",
+      "type": "Company",
+      "name": "Daiyu Financial Services Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0021",
+      "type": "Company",
+      "name": "霁川环球投资有限公司",
+      "aliases": [
+        "霁川环球"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0022",
+      "type": "Company",
+      "name": "澜图资产管理有限公司",
+      "aliases": [
+        "澜图资本管理有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0023",
+      "type": "Company",
+      "name": "汐禾国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0024",
+      "type": "Company",
+      "name": "砺石资产管理有限公司",
+      "aliases": [
+        "砺石资本",
+        "砺石资本管理有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0025",
+      "type": "Company",
+      "name": "樾川国际控股有限公司",
+      "aliases": [
+        "樾川国际"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0026",
+      "type": "Company",
+      "name": "茗谷投资控股有限公司",
+      "aliases": [
+        "茗谷投资",
+        "茗谷环球投资有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0027",
+      "type": "Company",
+      "name": "屿川环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0028",
+      "type": "Company",
+      "name": "翊澜资本管理有限公司",
+      "aliases": [
+        "翊澜资产管理有限公司",
+        "翊澜资管"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0029",
+      "type": "Company",
+      "name": "松岚资产管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0030",
+      "type": "Company",
+      "name": "燧明投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0031",
+      "type": "Company",
+      "name": "Xiuyun Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0032",
+      "type": "Company",
+      "name": "星海投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0033",
+      "type": "Company",
+      "name": "青柏投资控股有限公司",
+      "aliases": [
+        "青柏投资"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0034",
+      "type": "Company",
+      "name": "Linchuan Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0035",
+      "type": "Company",
+      "name": "柏观环球投资有限公司（2）",
+      "aliases": [
+        "柏观环球（2）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0036",
+      "type": "Company",
+      "name": "漱玉资本（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0037",
+      "type": "Jurisdiction",
+      "name": "维兰群岛",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0038",
+      "type": "Company",
+      "name": "栖梧国际控股有限公司（2）",
+      "aliases": [
+        "栖梧国际（2）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0039",
+      "type": "Company",
+      "name": "瑾樾资产管理有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0040",
+      "type": "Company",
+      "name": "砥行资本管理有限公司（2）",
+      "aliases": [
+        "砥行资本（2）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0041",
+      "type": "Jurisdiction",
+      "name": "圣德罗自由区",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0042",
+      "type": "Company",
+      "name": "沅曦金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0043",
+      "type": "Company",
+      "name": "鹤鸣环球投资有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0044",
+      "type": "Company",
+      "name": "Yanchi Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0045",
+      "type": "Company",
+      "name": "昀舟金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0046",
+      "type": "Company",
+      "name": "Huichuan Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0047",
+      "type": "Company",
+      "name": "珩屿国际控股有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0048",
+      "type": "Company",
+      "name": "麓岩投资（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0049",
+      "type": "Company",
+      "name": "徽岚金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0050",
+      "type": "Company",
+      "name": "岱屿资本管理有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0051",
+      "type": "Company",
+      "name": "霁川资本（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0052",
+      "type": "Company",
+      "name": "澜图资产管理有限公司（2）",
+      "aliases": [
+        "澜图资管（2）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0053",
+      "type": "Company",
+      "name": "汐禾金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0054",
+      "type": "Jurisdiction",
+      "name": "圣维尔",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0055",
+      "type": "Company",
+      "name": "Lishi Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0056",
+      "type": "Company",
+      "name": "樾川金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0057",
+      "type": "Company",
+      "name": "茗谷环球投资有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0058",
+      "type": "Company",
+      "name": "屿川环球（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0059",
+      "type": "Company",
+      "name": "翊澜资本（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0060",
+      "type": "Company",
+      "name": "松岚环球投资有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0061",
+      "type": "Company",
+      "name": "燧明投资控股有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0062",
+      "type": "Company",
+      "name": "岫云金融服务有限公司（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0063",
+      "type": "Jurisdiction",
+      "name": "图兰海峡区",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0064",
+      "type": "Company",
+      "name": "星海资本管理有限公司（2）",
+      "aliases": [
+        "星海资本（2）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0065",
+      "type": "Company",
+      "name": "青柏资本（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0066",
+      "type": "Jurisdiction",
+      "name": "米德兰",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0067",
+      "type": "Company",
+      "name": "凛川环球（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0068",
+      "type": "Company",
+      "name": "柏观金融服务有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0069",
+      "type": "Company",
+      "name": "漱玉投资控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0070",
+      "type": "Company",
+      "name": "Qiwu Capital Management Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0071",
+      "type": "Company",
+      "name": "瑾樾资本（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0072",
+      "type": "Company",
+      "name": "砥行资本（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0073",
+      "type": "Company",
+      "name": "沅曦金服（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0074",
+      "type": "Company",
+      "name": "鹤鸣资产管理有限公司（3）",
+      "aliases": [
+        "鹤鸣资管（3）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0075",
+      "type": "Company",
+      "name": "砚池国际控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0076",
+      "type": "Company",
+      "name": "昀舟金服（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0077",
+      "type": "Company",
+      "name": "洄川投资控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0078",
+      "type": "Company",
+      "name": "珩屿资本管理有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0079",
+      "type": "Company",
+      "name": "Luyan International Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0080",
+      "type": "Company",
+      "name": "徽岚资管（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0081",
+      "type": "Company",
+      "name": "岱屿环球投资有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0082",
+      "type": "Company",
+      "name": "霁川资产管理有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0083",
+      "type": "Company",
+      "name": "澜图资本管理有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0084",
+      "type": "Company",
+      "name": "汐禾金融服务有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0085",
+      "type": "Company",
+      "name": "砺石环球投资有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0086",
+      "type": "Company",
+      "name": "樾川国际控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0087",
+      "type": "Company",
+      "name": "茗谷资本（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0088",
+      "type": "Company",
+      "name": "屿川国际控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0089",
+      "type": "Company",
+      "name": "翊澜资本管理有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0090",
+      "type": "Company",
+      "name": "松岚资产管理有限公司（3）",
+      "aliases": [
+        "松岚资管（3）"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0091",
+      "type": "Company",
+      "name": "燧明国际控股有限公司（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0092",
+      "type": "Company",
+      "name": "环宇银行新港城分行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0093",
+      "type": "Company",
+      "name": "北岸银行澄江特别行政区分行",
+      "aliases": [
+        "北岸银行"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0094",
+      "type": "Company",
+      "name": "汇川银行新港城分行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0095",
+      "type": "Company",
+      "name": "昭明银行新港城分行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0096",
+      "type": "Company",
+      "name": "瑞辰银行新港城分行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0097",
+      "type": "Fund",
+      "name": "澜图全球宏观基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0098",
+      "type": "Fund",
+      "name": "砺石量化对冲基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0099",
+      "type": "Fund",
+      "name": "栖梧基础设施收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0100",
+      "type": "Company",
+      "name": "栖梧资本（3）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0101",
+      "type": "Fund",
+      "name": "星海并购套利基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0102",
+      "type": "Fund",
+      "name": "霁川基础设施收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0103",
+      "type": "Company",
+      "name": "霁川资产管理有限公司",
+      "aliases": [
+        "霁川资本管理有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0104",
+      "type": "Fund",
+      "name": "砺石可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0105",
+      "type": "Company",
+      "name": "砺石资管（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0106",
+      "type": "Fund",
+      "name": "翊澜科技成长基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0107",
+      "type": "Fund",
+      "name": "翊澜可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0108",
+      "type": "Company",
+      "name": "Yilan Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0109",
+      "type": "Fund",
+      "name": "砥行全球宏观基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0110",
+      "type": "Fund",
+      "name": "翊澜房地产收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0111",
+      "type": "Fund",
+      "name": "鹤鸣多空策略基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0112",
+      "type": "Fund",
+      "name": "徽岚可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0113",
+      "type": "Fund",
+      "name": "澜图可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0114",
+      "type": "Fund",
+      "name": "凛川科技成长基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0115",
+      "type": "Company",
+      "name": "凛川资产管理有限公司",
+      "aliases": [
+        "凛川资管"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0116",
+      "type": "Fund",
+      "name": "瑾樾科技成长基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0117",
+      "type": "Fund",
+      "name": "岱屿科技成长基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0118",
+      "type": "Company",
+      "name": "Daiyu Capital Management Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0119",
+      "type": "Fund",
+      "name": "鹤鸣房地产收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0120",
+      "type": "Company",
+      "name": "Heming Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0121",
+      "type": "Fund",
+      "name": "澜图私募信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0122",
+      "type": "Fund",
+      "name": "松岚全球宏观基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0123",
+      "type": "Fund",
+      "name": "霁川全球宏观基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0124",
+      "type": "Fund",
+      "name": "砚池亚洲机会基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0125",
+      "type": "Company",
+      "name": "砚池资产管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0126",
+      "type": "Fund",
+      "name": "青柏房地产收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0127",
+      "type": "Company",
+      "name": "青柏资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0128",
+      "type": "Fund",
+      "name": "凛川私募信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0129",
+      "type": "Fund",
+      "name": "砺石全球宏观基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0130",
+      "type": "Fund",
+      "name": "霁川私募信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0131",
+      "type": "Fund",
+      "name": "星海多空策略基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0132",
+      "type": "Company",
+      "name": "星海资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0133",
+      "type": "Fund",
+      "name": "翊澜亚洲机会基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0134",
+      "type": "Fund",
+      "name": "松岚新兴市场债券基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0135",
+      "type": "Fund",
+      "name": "砥行私募信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0136",
+      "type": "Fund",
+      "name": "澜图并购套利基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0137",
+      "type": "Fund",
+      "name": "翊澜基础设施收益基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0138",
+      "type": "Fund",
+      "name": "澜图科技成长基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0139",
+      "type": "Company",
+      "name": "Lantu Asset Management Pte. Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0140",
+      "type": "Fund",
+      "name": "青柏多空策略基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0141",
+      "type": "Fund",
+      "name": "岫云结构化信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0142",
+      "type": "Company",
+      "name": "岫云资产管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0143",
+      "type": "Fund",
+      "name": "松岚可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0144",
+      "type": "Fund",
+      "name": "砚池并购套利基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0145",
+      "type": "Company",
+      "name": "砚池资管（2）",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0146",
+      "type": "Fund",
+      "name": "砥行亚洲机会基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0147",
+      "type": "Fund",
+      "name": "岫云可持续发展基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0148",
+      "type": "Fund",
+      "name": "瑾樾私募信贷基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0149",
+      "type": "Fund",
+      "name": "星海量化对冲基金",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0150",
+      "type": "Person",
+      "name": "张思齐",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0151",
+      "type": "Company",
+      "name": "岫云金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0152",
+      "type": "Person",
+      "name": "陈行知",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0153",
+      "type": "Company",
+      "name": "Yunzhou Financial Services Ltd.",
+      "aliases": [
+        "昀舟金融服务有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0154",
+      "type": "Person",
+      "name": "曾慕白",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0155",
+      "type": "Company",
+      "name": "瑾樾资产管理有限公司",
+      "aliases": [
+        "瑾樾资本管理有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0156",
+      "type": "Person",
+      "name": "朱叔夜",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0157",
+      "type": "Company",
+      "name": "徽岚资产管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0158",
+      "type": "Person",
+      "name": "朱思齐",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0159",
+      "type": "Company",
+      "name": "栖梧资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0160",
+      "type": "Person",
+      "name": "徐秉文",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0161",
+      "type": "Person",
+      "name": "邱书尧",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0162",
+      "type": "Company",
+      "name": "栖梧国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0163",
+      "type": "Person",
+      "name": "谢怀瑾",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0164",
+      "type": "Company",
+      "name": "岱屿环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0165",
+      "type": "Person",
+      "name": "曾若谷",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0166",
+      "type": "Person",
+      "name": "王慕白",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0167",
+      "type": "Company",
+      "name": "汐禾金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0168",
+      "type": "Person",
+      "name": "陈敬亭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0169",
+      "type": "Person",
+      "name": "吴知微",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0170",
+      "type": "Person",
+      "name": "吴景行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0171",
+      "type": "Person",
+      "name": "张沐阳",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0172",
+      "type": "Person",
+      "name": "孙嘉铭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0173",
+      "type": "Company",
+      "name": "沅曦环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0174",
+      "type": "Person",
+      "name": "黄明远",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0175",
+      "type": "Company",
+      "name": "珩屿国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0176",
+      "type": "Person",
+      "name": "曾书尧",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0177",
+      "type": "Person",
+      "name": "朱南星",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0178",
+      "type": "Person",
+      "name": "谢志诚",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0179",
+      "type": "Company",
+      "name": "Luyan Financial Services Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0180",
+      "type": "Person",
+      "name": "谢见山",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0181",
+      "type": "Person",
+      "name": "邱嘉铭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0182",
+      "type": "Company",
+      "name": "鹤鸣资产管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0183",
+      "type": "Person",
+      "name": "刘景行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0184",
+      "type": "Company",
+      "name": "徽岚投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0185",
+      "type": "Person",
+      "name": "马听澜",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0186",
+      "type": "Person",
+      "name": "吴清和",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0187",
+      "type": "Company",
+      "name": "Suiming Investment Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0188",
+      "type": "Person",
+      "name": "刘知微",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0189",
+      "type": "Person",
+      "name": "林景行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0190",
+      "type": "Company",
+      "name": "柏观金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0191",
+      "type": "Person",
+      "name": "林嘉铭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0192",
+      "type": "Company",
+      "name": "Baiguan Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0193",
+      "type": "Person",
+      "name": "王沐阳",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0194",
+      "type": "Person",
+      "name": "谢慕白",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0195",
+      "type": "Person",
+      "name": "马若谷",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0196",
+      "type": "Person",
+      "name": "邱之涵",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0197",
+      "type": "Company",
+      "name": "岱屿资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0198",
+      "type": "Person",
+      "name": "邱见山",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0199",
+      "type": "Company",
+      "name": "漱玉投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0200",
+      "type": "Person",
+      "name": "洪景行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0201",
+      "type": "Person",
+      "name": "徐行知",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0202",
+      "type": "Person",
+      "name": "周书尧",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0203",
+      "type": "Person",
+      "name": "张慕白",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0204",
+      "type": "Person",
+      "name": "王清和",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0205",
+      "type": "Person",
+      "name": "许慕白",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0206",
+      "type": "Person",
+      "name": "郑明远",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0207",
+      "type": "Company",
+      "name": "Heming Global Investments Ltd.",
+      "aliases": [
+        "栖梧环球",
+        "栖梧环球投资有限公司"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0208",
+      "type": "Person",
+      "name": "马怀瑾",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0209",
+      "type": "Company",
+      "name": "珩屿资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0210",
+      "type": "Person",
+      "name": "李敬亭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0211",
+      "type": "Company",
+      "name": "瑾樾环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0212",
+      "type": "Person",
+      "name": "郑怀瑾",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0213",
+      "type": "Company",
+      "name": "岱屿金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0214",
+      "type": "Person",
+      "name": "王敬亭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0215",
+      "type": "Person",
+      "name": "黄南星",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0216",
+      "type": "Company",
+      "name": "Heming Financial Services Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0217",
+      "type": "Person",
+      "name": "徐知微",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0218",
+      "type": "Person",
+      "name": "邱景行",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0219",
+      "type": "Person",
+      "name": "黄怀瑾",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0220",
+      "type": "Company",
+      "name": "凛川环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0221",
+      "type": "Person",
+      "name": "曾知微",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0222",
+      "type": "Person",
+      "name": "周嘉铭",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0223",
+      "type": "Person",
+      "name": "周牧之",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0224",
+      "type": "Company",
+      "name": "Starsea Capital Management Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0225",
+      "type": "Person",
+      "name": "陈沐阳",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0226",
+      "type": "Person",
+      "name": "许清和",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0227",
+      "type": "Person",
+      "name": "周若谷",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0228",
+      "type": "Person",
+      "name": "洪衡之",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0229",
+      "type": "Person",
+      "name": "孙志诚",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0230",
+      "type": "Company",
+      "name": "鹤鸣环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0231",
+      "type": "Company",
+      "name": "徽岚金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0232",
+      "type": "Company",
+      "name": "昀舟投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0233",
+      "type": "Company",
+      "name": "沅曦金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0234",
+      "type": "Company",
+      "name": "砺石环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0235",
+      "type": "Person",
+      "name": "刘若谷",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0236",
+      "type": "Company",
+      "name": "屿川国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0237",
+      "type": "Company",
+      "name": "松岚环球投资有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0238",
+      "type": "Person",
+      "name": "许听澜",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0239",
+      "type": "Company",
+      "name": "茗谷资本管理有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0240",
+      "type": "Company",
+      "name": "麓岩国际控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0241",
+      "type": "Company",
+      "name": "麓岩投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0242",
+      "type": "Company",
+      "name": "Dixing Capital Management Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0243",
+      "type": "Company",
+      "name": "Daiyu Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0244",
+      "type": "Company",
+      "name": "Yanchi Global Investments Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0245",
+      "type": "Company",
+      "name": "Huichuan Investment Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0246",
+      "type": "Company",
+      "name": "樾川金融服务有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0247",
+      "type": "Company",
+      "name": "洄川投资控股有限公司",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0248",
+      "type": "Company",
+      "name": "Minggu Investment Holdings Ltd.",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0249",
+      "type": "Company",
+      "name": "Yilan Capital Management Ltd.",
+      "aliases": [],
+      "props": {}
+    }
+  ],
+  "edges": [
+    {
+      "src": "E0000",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0002",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0002",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0003",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0004",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0005",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0005",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0006",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0008",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0007",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0010",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0008",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0011",
+      "rel": "REGISTERED_IN",
+      "dst": "E0012",
+      "source_doc": "doc-0009",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0016",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "REGISTERED_IN",
+      "dst": "E0018",
+      "source_doc": "doc-0013",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0019",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0020",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0015",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0021",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0016",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0017",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0023",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0018",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0024",
+      "rel": "REGISTERED_IN",
+      "dst": "E0018",
+      "source_doc": "doc-0019",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0020",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0026",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0021",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0027",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0028",
+      "rel": "REGISTERED_IN",
+      "dst": "E0012",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0029",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0025",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0026",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0027",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0033",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0029",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "REGISTERED_IN",
+      "dst": "E0037",
+      "source_doc": "doc-0031",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0032",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0033",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "REGISTERED_IN",
+      "dst": "E0041",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0042",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0043",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0044",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0037",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0045",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0038",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0046",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0039",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0047",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0040",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0048",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0041",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0049",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0042",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0050",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0043",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0051",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0044",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0052",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0045",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0053",
+      "rel": "REGISTERED_IN",
+      "dst": "E0054",
+      "source_doc": "doc-0046",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0055",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0047",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0056",
+      "rel": "REGISTERED_IN",
+      "dst": "E0041",
+      "source_doc": "doc-0048",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0057",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0049",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0058",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0050",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0059",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0051",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0060",
+      "rel": "REGISTERED_IN",
+      "dst": "E0037",
+      "source_doc": "doc-0052",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0061",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0053",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0062",
+      "rel": "REGISTERED_IN",
+      "dst": "E0063",
+      "source_doc": "doc-0054",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0064",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0055",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0065",
+      "rel": "REGISTERED_IN",
+      "dst": "E0066",
+      "source_doc": "doc-0056",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0067",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0057",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0068",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0058",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0069",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0059",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0070",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0060",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0071",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0061",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0072",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0062",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0073",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0063",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0074",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0064",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0075",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0065",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0076",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0066",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0077",
+      "rel": "REGISTERED_IN",
+      "dst": "E0037",
+      "source_doc": "doc-0067",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0078",
+      "rel": "REGISTERED_IN",
+      "dst": "E0012",
+      "source_doc": "doc-0068",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0079",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0069",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0080",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0070",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0081",
+      "rel": "REGISTERED_IN",
+      "dst": "E0012",
+      "source_doc": "doc-0071",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0082",
+      "rel": "REGISTERED_IN",
+      "dst": "E0063",
+      "source_doc": "doc-0072",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0083",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0073",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0084",
+      "rel": "REGISTERED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0074",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0085",
+      "rel": "REGISTERED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0075",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0086",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0076",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0087",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0077",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0088",
+      "rel": "REGISTERED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0078",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0089",
+      "rel": "REGISTERED_IN",
+      "dst": "E0066",
+      "source_doc": "doc-0079",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0090",
+      "rel": "REGISTERED_IN",
+      "dst": "E0012",
+      "source_doc": "doc-0080",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0091",
+      "rel": "REGISTERED_IN",
+      "dst": "E0066",
+      "source_doc": "doc-0081",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0092",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0082",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0093",
+      "rel": "REGISTERED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0083",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0094",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0084",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0095",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0085",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0096",
+      "rel": "REGISTERED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0086",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0097",
+      "rel": "DOMICILED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0087",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0097",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 9 月 15 日",
+      "source_doc": "doc-0087",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0097",
+      "rel": "MANAGED_BY",
+      "dst": "E0022",
+      "source_doc": "doc-0087",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0097",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0087",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0097",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0087",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0098",
+      "rel": "DOMICILED_IN",
+      "dst": "E0054",
+      "source_doc": "doc-0088",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0098",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 5 月 11 日",
+      "source_doc": "doc-0088",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0098",
+      "rel": "MANAGED_BY",
+      "dst": "E0024",
+      "source_doc": "doc-0088",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0098",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0088",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0098",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万美元",
+      "source_doc": "doc-0088",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0099",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0089",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0099",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 1 月 10 日",
+      "source_doc": "doc-0089",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0099",
+      "rel": "MANAGED_BY",
+      "dst": "E0100",
+      "source_doc": "doc-0089",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0099",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0089",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0099",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万新元",
+      "source_doc": "doc-0089",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0101",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0090",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0101",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2019 年 11 月 7 日",
+      "source_doc": "doc-0090",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0101",
+      "rel": "MANAGED_BY",
+      "dst": "E0064",
+      "source_doc": "doc-0090",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0101",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0090",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0101",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0090",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0102",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0091",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0102",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 11 月 9 日",
+      "source_doc": "doc-0091",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0102",
+      "rel": "MANAGED_BY",
+      "dst": "E0103",
+      "source_doc": "doc-0091",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0102",
+      "rel": "CUSTODIAN",
+      "dst": "E0095",
+      "source_doc": "doc-0091",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0102",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0091",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0104",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0092",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0129"
+      ]
+    },
+    {
+      "src": "E0104",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 2 月 10 日",
+      "source_doc": "doc-0092",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0104",
+      "rel": "MANAGED_BY",
+      "dst": "E0105",
+      "source_doc": "doc-0092",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0104",
+      "rel": "CUSTODIAN",
+      "dst": "E0095",
+      "source_doc": "doc-0092",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0129"
+      ]
+    },
+    {
+      "src": "E0104",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0092",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0106",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0093",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0130"
+      ]
+    },
+    {
+      "src": "E0106",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 8 月 25 日",
+      "source_doc": "doc-0093",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0106",
+      "rel": "MANAGED_BY",
+      "dst": "E0028",
+      "source_doc": "doc-0093",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0106",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0093",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0130"
+      ]
+    },
+    {
+      "src": "E0106",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万新元",
+      "source_doc": "doc-0093",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0107",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0094",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0130"
+      ]
+    },
+    {
+      "src": "E0107",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 12 月 22 日",
+      "source_doc": "doc-0094",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0107",
+      "rel": "MANAGED_BY",
+      "dst": "E0108",
+      "source_doc": "doc-0094",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0107",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0094",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0130"
+      ]
+    },
+    {
+      "src": "E0107",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万新元",
+      "source_doc": "doc-0094",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0109",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0095",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0131"
+      ]
+    },
+    {
+      "src": "E0109",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 3 月 25 日",
+      "source_doc": "doc-0095",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0109",
+      "rel": "MANAGED_BY",
+      "dst": "E0040",
+      "source_doc": "doc-0095",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0109",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0095",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0131"
+      ]
+    },
+    {
+      "src": "E0109",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0095",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0110",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0096",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0132"
+      ]
+    },
+    {
+      "src": "E0110",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 1 月 28 日",
+      "source_doc": "doc-0096",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0110",
+      "rel": "MANAGED_BY",
+      "dst": "E0059",
+      "source_doc": "doc-0096",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0110",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0096",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0132"
+      ]
+    },
+    {
+      "src": "E0110",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0096",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0111",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0097",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0133"
+      ]
+    },
+    {
+      "src": "E0111",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 8 月 3 日",
+      "source_doc": "doc-0097",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0111",
+      "rel": "MANAGED_BY",
+      "dst": "E0074",
+      "source_doc": "doc-0097",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0111",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0097",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0133"
+      ]
+    },
+    {
+      "src": "E0111",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万新元",
+      "source_doc": "doc-0097",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0112",
+      "rel": "DOMICILED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0098",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0112",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 8 月 8 日",
+      "source_doc": "doc-0098",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0112",
+      "rel": "MANAGED_BY",
+      "dst": "E0080",
+      "source_doc": "doc-0098",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0112",
+      "rel": "CUSTODIAN",
+      "dst": "E0096",
+      "source_doc": "doc-0098",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0112",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0098",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0113",
+      "rel": "DOMICILED_IN",
+      "dst": "E0054",
+      "source_doc": "doc-0099",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0113",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 6 月 25 日",
+      "source_doc": "doc-0099",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0113",
+      "rel": "MANAGED_BY",
+      "dst": "E0022",
+      "source_doc": "doc-0099",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0113",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0099",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0113",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万新元",
+      "source_doc": "doc-0099",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0114",
+      "rel": "DOMICILED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0100",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0134"
+      ]
+    },
+    {
+      "src": "E0114",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 9 月 26 日",
+      "source_doc": "doc-0100",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0114",
+      "rel": "MANAGED_BY",
+      "dst": "E0115",
+      "source_doc": "doc-0100",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0114",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0100",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0134"
+      ]
+    },
+    {
+      "src": "E0114",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0100",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0116",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0101",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0135"
+      ]
+    },
+    {
+      "src": "E0116",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 11 月 13 日",
+      "source_doc": "doc-0101",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0116",
+      "rel": "MANAGED_BY",
+      "dst": "E0071",
+      "source_doc": "doc-0101",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0116",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0101",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0135"
+      ]
+    },
+    {
+      "src": "E0116",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万新元",
+      "source_doc": "doc-0101",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0117",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0102",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0117",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 2 月 18 日",
+      "source_doc": "doc-0102",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0117",
+      "rel": "MANAGED_BY",
+      "dst": "E0118",
+      "source_doc": "doc-0102",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0117",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0102",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0117",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万新元",
+      "source_doc": "doc-0102",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0119",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0103",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0133"
+      ]
+    },
+    {
+      "src": "E0119",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 4 月 10 日",
+      "source_doc": "doc-0103",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0119",
+      "rel": "MANAGED_BY",
+      "dst": "E0120",
+      "source_doc": "doc-0103",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0119",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0103",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0133"
+      ]
+    },
+    {
+      "src": "E0119",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0103",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0121",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0104",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0121",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 11 月 2 日",
+      "source_doc": "doc-0104",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0121",
+      "rel": "MANAGED_BY",
+      "dst": "E0022",
+      "source_doc": "doc-0104",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0121",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0104",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0121",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0104",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0122",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0105",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0122",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 6 月 13 日",
+      "source_doc": "doc-0105",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0122",
+      "rel": "MANAGED_BY",
+      "dst": "E0090",
+      "source_doc": "doc-0105",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0122",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0105",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0122",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0105",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0123",
+      "rel": "DOMICILED_IN",
+      "dst": "E0041",
+      "source_doc": "doc-0106",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0136"
+      ]
+    },
+    {
+      "src": "E0123",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 4 月 15 日",
+      "source_doc": "doc-0106",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0123",
+      "rel": "MANAGED_BY",
+      "dst": "E0103",
+      "source_doc": "doc-0106",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0123",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0106",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0136"
+      ]
+    },
+    {
+      "src": "E0123",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0106",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0124",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0107",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0137"
+      ]
+    },
+    {
+      "src": "E0124",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2020 年 6 月 10 日",
+      "source_doc": "doc-0107",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0124",
+      "rel": "MANAGED_BY",
+      "dst": "E0125",
+      "source_doc": "doc-0107",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0124",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0107",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0137"
+      ]
+    },
+    {
+      "src": "E0124",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0107",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0126",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0108",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0138"
+      ]
+    },
+    {
+      "src": "E0126",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2020 年 8 月 10 日",
+      "source_doc": "doc-0108",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0126",
+      "rel": "MANAGED_BY",
+      "dst": "E0127",
+      "source_doc": "doc-0108",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0126",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0108",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0138"
+      ]
+    },
+    {
+      "src": "E0126",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万美元",
+      "source_doc": "doc-0108",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0128",
+      "rel": "DOMICILED_IN",
+      "dst": "E0018",
+      "source_doc": "doc-0109",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0134"
+      ]
+    },
+    {
+      "src": "E0128",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2020 年 10 月 21 日",
+      "source_doc": "doc-0109",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0128",
+      "rel": "MANAGED_BY",
+      "dst": "E0115",
+      "source_doc": "doc-0109",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0128",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0109",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0134"
+      ]
+    },
+    {
+      "src": "E0128",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0109",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0129",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0110",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0129"
+      ]
+    },
+    {
+      "src": "E0129",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 5 月 5 日",
+      "source_doc": "doc-0110",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0129",
+      "rel": "MANAGED_BY",
+      "dst": "E0024",
+      "source_doc": "doc-0110",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0129",
+      "rel": "CUSTODIAN",
+      "dst": "E0095",
+      "source_doc": "doc-0110",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0129"
+      ]
+    },
+    {
+      "src": "E0129",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万新元",
+      "source_doc": "doc-0110",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0130",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0111",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0136"
+      ]
+    },
+    {
+      "src": "E0130",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 12 月 28 日",
+      "source_doc": "doc-0111",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0130",
+      "rel": "MANAGED_BY",
+      "dst": "E0103",
+      "source_doc": "doc-0111",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0130",
+      "rel": "CUSTODIAN",
+      "dst": "E0095",
+      "source_doc": "doc-0111",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0136"
+      ]
+    },
+    {
+      "src": "E0130",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0111",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0131",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0112",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0131",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 4 月 15 日",
+      "source_doc": "doc-0112",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0131",
+      "rel": "MANAGED_BY",
+      "dst": "E0132",
+      "source_doc": "doc-0112",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0131",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0112",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0131",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万新元",
+      "source_doc": "doc-0112",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0133",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0113",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0132"
+      ]
+    },
+    {
+      "src": "E0133",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 8 月 18 日",
+      "source_doc": "doc-0113",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0133",
+      "rel": "MANAGED_BY",
+      "dst": "E0059",
+      "source_doc": "doc-0113",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0133",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0113",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0132"
+      ]
+    },
+    {
+      "src": "E0133",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0113",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0134",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0114",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0139"
+      ]
+    },
+    {
+      "src": "E0134",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2025 年 7 月 12 日",
+      "source_doc": "doc-0114",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0134",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0114",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0139"
+      ]
+    },
+    {
+      "src": "E0134",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万新元",
+      "source_doc": "doc-0114",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0135",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0115",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0131"
+      ]
+    },
+    {
+      "src": "E0135",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 2 月 12 日",
+      "source_doc": "doc-0115",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0135",
+      "rel": "MANAGED_BY",
+      "dst": "E0006",
+      "source_doc": "doc-0115",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0135",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0115",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0131"
+      ]
+    },
+    {
+      "src": "E0135",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万新元",
+      "source_doc": "doc-0115",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0136",
+      "rel": "DOMICILED_IN",
+      "dst": "E0004",
+      "source_doc": "doc-0116",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0136",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 1 月 9 日",
+      "source_doc": "doc-0116",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0136",
+      "rel": "MANAGED_BY",
+      "dst": "E0022",
+      "source_doc": "doc-0116",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0136",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0116",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0136",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0116",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0137",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0117",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0137",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 5 月 10 日",
+      "source_doc": "doc-0117",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0137",
+      "rel": "MANAGED_BY",
+      "dst": "E0028",
+      "source_doc": "doc-0117",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0137",
+      "rel": "CUSTODIAN",
+      "dst": "E0092",
+      "source_doc": "doc-0117",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0137",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万新元",
+      "source_doc": "doc-0117",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0138",
+      "rel": "DOMICILED_IN",
+      "dst": "E0009",
+      "source_doc": "doc-0118",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0138",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2019 年 1 月 17 日",
+      "source_doc": "doc-0118",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0138",
+      "rel": "MANAGED_BY",
+      "dst": "E0139",
+      "source_doc": "doc-0118",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0138",
+      "rel": "CUSTODIAN",
+      "dst": "E0095",
+      "source_doc": "doc-0118",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0127"
+      ]
+    },
+    {
+      "src": "E0138",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万新元",
+      "source_doc": "doc-0118",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0140",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0119",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0138"
+      ]
+    },
+    {
+      "src": "E0140",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 11 月 6 日",
+      "source_doc": "doc-0119",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0140",
+      "rel": "MANAGED_BY",
+      "dst": "E0127",
+      "source_doc": "doc-0119",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0140",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0119",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0138"
+      ]
+    },
+    {
+      "src": "E0140",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万新元",
+      "source_doc": "doc-0119",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0141",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0120",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0140"
+      ]
+    },
+    {
+      "src": "E0141",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2023 年 12 月 5 日",
+      "source_doc": "doc-0120",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0141",
+      "rel": "MANAGED_BY",
+      "dst": "E0142",
+      "source_doc": "doc-0120",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0141",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0120",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0140"
+      ]
+    },
+    {
+      "src": "E0141",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万新元",
+      "source_doc": "doc-0120",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0143",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0121",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0139"
+      ]
+    },
+    {
+      "src": "E0143",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2019 年 7 月 15 日",
+      "source_doc": "doc-0121",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0143",
+      "rel": "MANAGED_BY",
+      "dst": "E0029",
+      "source_doc": "doc-0121",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0143",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0121",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0139"
+      ]
+    },
+    {
+      "src": "E0143",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:100 万美元",
+      "source_doc": "doc-0121",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0144",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0122",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0137"
+      ]
+    },
+    {
+      "src": "E0144",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 3 月 27 日",
+      "source_doc": "doc-0122",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0144",
+      "rel": "MANAGED_BY",
+      "dst": "E0145",
+      "source_doc": "doc-0122",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0144",
+      "rel": "CUSTODIAN",
+      "dst": "E0096",
+      "source_doc": "doc-0122",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0137"
+      ]
+    },
+    {
+      "src": "E0144",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0122",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0146",
+      "rel": "DOMICILED_IN",
+      "dst": "E0007",
+      "source_doc": "doc-0123",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0146",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2021 年 3 月 27 日",
+      "source_doc": "doc-0123",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0146",
+      "rel": "MANAGED_BY",
+      "dst": "E0006",
+      "source_doc": "doc-0123",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0146",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0123",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0146",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万新元",
+      "source_doc": "doc-0123",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0147",
+      "rel": "DOMICILED_IN",
+      "dst": "E0018",
+      "source_doc": "doc-0124",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0140"
+      ]
+    },
+    {
+      "src": "E0147",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2024 年 6 月 15 日",
+      "source_doc": "doc-0124",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0147",
+      "rel": "MANAGED_BY",
+      "dst": "E0142",
+      "source_doc": "doc-0124",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0147",
+      "rel": "CUSTODIAN",
+      "dst": "E0096",
+      "source_doc": "doc-0124",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0140"
+      ]
+    },
+    {
+      "src": "E0147",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:10 万美元",
+      "source_doc": "doc-0124",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0148",
+      "rel": "DOMICILED_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0125",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0135"
+      ]
+    },
+    {
+      "src": "E0148",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2019 年 1 月 19 日",
+      "source_doc": "doc-0125",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0148",
+      "rel": "MANAGED_BY",
+      "dst": "E0071",
+      "source_doc": "doc-0125",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0148",
+      "rel": "CUSTODIAN",
+      "dst": "E0094",
+      "source_doc": "doc-0125",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0135"
+      ]
+    },
+    {
+      "src": "E0148",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:25 万美元",
+      "source_doc": "doc-0125",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0149",
+      "rel": "DOMICILED_IN",
+      "dst": "E0015",
+      "source_doc": "doc-0126",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0149",
+      "rel": "LAUNCHED_ON",
+      "dst": "lit:2022 年 9 月 17 日",
+      "source_doc": "doc-0126",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0149",
+      "rel": "MANAGED_BY",
+      "dst": "E0132",
+      "source_doc": "doc-0126",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0149",
+      "rel": "CUSTODIAN",
+      "dst": "E0093",
+      "source_doc": "doc-0126",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0128"
+      ]
+    },
+    {
+      "src": "E0149",
+      "rel": "MIN_INVESTMENT",
+      "dst": "lit:50 万美元",
+      "source_doc": "doc-0126",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0150",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0151",
+      "source_doc": "doc-0141",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0150",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0142",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0285"
+      ]
+    },
+    {
+      "src": "E0152",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0153",
+      "source_doc": "doc-0143",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0319"
+      ]
+    },
+    {
+      "src": "E0152",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0144",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0154",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0145",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0154",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0146",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0156",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0157",
+      "source_doc": "doc-0147",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0158",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0159",
+      "source_doc": "doc-0148",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0158",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0000",
+      "source_doc": "doc-0149",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0160",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0150",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0161",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0151",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0161",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0162",
+      "source_doc": "doc-0152",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0163",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0164",
+      "source_doc": "doc-0153",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0165",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0021",
+      "source_doc": "doc-0155",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0166",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0167",
+      "source_doc": "doc-0157",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0168",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0079",
+      "source_doc": "doc-0158",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0169",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0160",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0169",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0085",
+      "source_doc": "doc-0161",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0170",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0132",
+      "source_doc": "doc-0162",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0171",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0167",
+      "source_doc": "doc-0163",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0172",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0173",
+      "source_doc": "doc-0165",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0174",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0175",
+      "source_doc": "doc-0167",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0174",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0115",
+      "source_doc": "doc-0168",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0176",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0169",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0177",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0170",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0177",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0171",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0178",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0179",
+      "source_doc": "doc-0172",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0180",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0174",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0180",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0127",
+      "source_doc": "doc-0175",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0181",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0182",
+      "source_doc": "doc-0176",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0181",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0016",
+      "source_doc": "doc-0177",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0183",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0184",
+      "source_doc": "doc-0179",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0312"
+      ]
+    },
+    {
+      "src": "E0185",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0180",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0186",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0187",
+      "source_doc": "doc-0181",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0188",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0183",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0189",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0190",
+      "source_doc": "doc-0184",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0191",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0192",
+      "source_doc": "doc-0185",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0193",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0142",
+      "source_doc": "doc-0187",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0193",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0024",
+      "source_doc": "doc-0188",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0194",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0159",
+      "source_doc": "doc-0189",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0195",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0190",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0195",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0191",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0197",
+      "source_doc": "doc-0192",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0182",
+      "source_doc": "doc-0193",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0198",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0199",
+      "source_doc": "doc-0194",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0200",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0195",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0200",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0017",
+      "source_doc": "doc-0196",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0201",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0197",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0201",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0198",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0202",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0199",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0202",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0175",
+      "source_doc": "doc-0200",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0203",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0030",
+      "source_doc": "doc-0201",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0204",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0026",
+      "source_doc": "doc-0202",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0204",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0203",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0199",
+      "source_doc": "doc-0204",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0049",
+      "source_doc": "doc-0205",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0206",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0207",
+      "source_doc": "doc-0206",
+      "confidence": 1.0,
+      "extra_docs": [
+        "doc-0207"
+      ]
+    },
+    {
+      "src": "E0208",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0209",
+      "source_doc": "doc-0208",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0210",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0211",
+      "source_doc": "doc-0209",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0212",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0213",
+      "source_doc": "doc-0210",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0214",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0211",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0215",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0213",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0215",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0216",
+      "source_doc": "doc-0214",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0217",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0175",
+      "source_doc": "doc-0215",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0218",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0014",
+      "source_doc": "doc-0217",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0218",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0218",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0219",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0220",
+      "source_doc": "doc-0219",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0221",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0024",
+      "source_doc": "doc-0220",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0221",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0221",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0222",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0021",
+      "source_doc": "doc-0222",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0223",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0224",
+      "source_doc": "doc-0223",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0223",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0224",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0225",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0030",
+      "source_doc": "doc-0227",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0225",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0103",
+      "source_doc": "doc-0228",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0226",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0197",
+      "source_doc": "doc-0229",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0227",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0023",
+      "source_doc": "doc-0231",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0228",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0232",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0229",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0184",
+      "source_doc": "doc-0233",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0176",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0021",
+      "source_doc": "doc-0234",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0212",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0230",
+      "source_doc": "doc-0235",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0203",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0236",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0227",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0231",
+      "source_doc": "doc-0237",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0218",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0238",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0163",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0103",
+      "source_doc": "doc-0239",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0210",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0151",
+      "source_doc": "doc-0240",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0228",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0232",
+      "source_doc": "doc-0241",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0233",
+      "source_doc": "doc-0242",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0211",
+      "source_doc": "doc-0243",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0200",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0234",
+      "source_doc": "doc-0244",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0245",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0222",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0207",
+      "source_doc": "doc-0246",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0247",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0204",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0184",
+      "source_doc": "doc-0248",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0170",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0155",
+      "source_doc": "doc-0249",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0169",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0023",
+      "source_doc": "doc-0250",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0229",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0026",
+      "source_doc": "doc-0251",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0178",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0153",
+      "source_doc": "doc-0252",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0221",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0033",
+      "source_doc": "doc-0253",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0202",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0000",
+      "source_doc": "doc-0254",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0189",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0173",
+      "source_doc": "doc-0255",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0189",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0127",
+      "source_doc": "doc-0256",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0235",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0236",
+      "source_doc": "doc-0257",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0193",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0258",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0170",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0213",
+      "source_doc": "doc-0259",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0178",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0237",
+      "source_doc": "doc-0260",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0166",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0014",
+      "source_doc": "doc-0261",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0030",
+      "source_doc": "doc-0262",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0223",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0209",
+      "source_doc": "doc-0263",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0196",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0016",
+      "source_doc": "doc-0264",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0191",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0265",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0181",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0132",
+      "source_doc": "doc-0266",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0238",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0115",
+      "source_doc": "doc-0267",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0223",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0125",
+      "source_doc": "doc-0268",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0168",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0239",
+      "source_doc": "doc-0269",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0229",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0240",
+      "source_doc": "doc-0270",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0223",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0000",
+      "source_doc": "doc-0271",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0183",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0157",
+      "source_doc": "doc-0272",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "SHAREHOLDER_OF",
+      "dst": "E0241",
+      "source_doc": "doc-0273",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0029",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0207",
+      "source_doc": "doc-0274",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0242",
+      "source_doc": "doc-0275",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0010",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0243",
+      "source_doc": "doc-0276",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0216",
+      "source_doc": "doc-0277",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0089",
+      "source_doc": "doc-0278",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0233",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0026",
+      "source_doc": "doc-0279",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0089",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0083",
+      "source_doc": "doc-0280",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0048",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0074",
+      "source_doc": "doc-0281",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0059",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0244",
+      "source_doc": "doc-0282",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0021",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0283",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0052",
+      "rel": "REGISTERED_IN",
+      "dst": "E0041",
+      "source_doc": "doc-0284",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0150",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0286",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0183",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0287",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0183",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0245",
+      "source_doc": "doc-0288",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0215",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0115",
+      "source_doc": "doc-0289",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0215",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0290",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0238",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0291",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0238",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0246",
+      "source_doc": "doc-0292",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0206",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0115",
+      "source_doc": "doc-0295",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0206",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0296",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0158",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0132",
+      "source_doc": "doc-0297",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0158",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0298",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0188",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0103",
+      "source_doc": "doc-0299",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0301",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0237",
+      "source_doc": "doc-0302",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0194",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0024",
+      "source_doc": "doc-0303",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0194",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0247",
+      "source_doc": "doc-0304",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0188",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0035",
+      "source_doc": "doc-0305",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0188",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0022",
+      "source_doc": "doc-0306",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0169",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0173",
+      "source_doc": "doc-0307",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0169",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0023",
+      "source_doc": "doc-0308",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0000",
+      "source_doc": "doc-0309",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0205",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0167",
+      "source_doc": "doc-0310",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0183",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0311",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0156",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0024",
+      "source_doc": "doc-0315",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0156",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0021",
+      "source_doc": "doc-0316",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0229",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0317",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0229",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0127",
+      "source_doc": "doc-0318",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0152",
+      "rel": "DIRECTOR_OF",
+      "dst": "E0248",
+      "source_doc": "doc-0320",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0105",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0057",
+      "source_doc": "doc-0321",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0029",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0248",
+      "source_doc": "doc-0322",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0224",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0020",
+      "source_doc": "doc-0323",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0249",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0006",
+      "source_doc": "doc-0324",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0003",
+      "source_doc": "doc-0325",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "SUBSIDIARY_OF",
+      "dst": "E0043",
+      "source_doc": "doc-0326",
+      "confidence": 1.0,
+      "extra_docs": []
+    }
+  ]
+}

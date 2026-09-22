@@ -1,16 +1,34 @@
-__pycache__/
-*.py[cod]
+# ── 凭据：绝不提交 ──────────────────────────────────
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# ── 虚拟环境：绝对路径 + 平台专属 wheel，换机器必然报错 ──
 .venv/
 venv/
-env/
+ENV/
+__pycache__/
+*.py[cod]
 *.egg-info/
 build/
 dist/
-data/index/
-# reports/index.html 是交付物, 保留
+
+# ── 系统 / 编辑器 ──────────────────────────────────
 .DS_Store
 Thumbs.db
 .idea/
 .vscode/
-# 向量模型 24MB —— 用 git 管理时建议 LFS，或按 README 说明单独拷贝
-# models/
+
+# ══════════════════════════════════════════════════
+# 以下目录**刻意提交**，不要加进忽略列表：
+#
+#   data/llm_cache/   replay 模式的燃料。提交它，clone 后无需 API key、
+#                     无需联网即可复现全部 LLM 结果 —— 面试现场的保命符
+#   data/index/       LLM 抽取出来的知识图谱。**没有 key 的人重建不了**
+#   data/synthetic/   语料与标准图谱（可由 run.py phase0 重建，但提交更省事）
+#   models/           bge-small-zh 量化模型 23MB。提交后 clone 即离线可用，
+#                     免去 fetch-model 这一步；网络受限的机器尤其需要
+#   reports/          评测报告，是交付物
+# ══════════════════════════════════════════════════

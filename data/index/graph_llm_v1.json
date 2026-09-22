@@ -1,0 +1,6 @@
+{
+  "source": "extracted",
+  "extractor": "llm:v1_naive",
+  "entities": [],
+  "edges": []
+}
