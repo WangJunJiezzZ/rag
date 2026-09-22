@@ -342,6 +342,13 @@ try:                                    # 可选依赖, 缺了就降级
 
     HAS_PINYIN = True
 
+except ImportError:                     # pragma: no cover
+    def _romanize(text: str, n_chars: int = 3) -> str:
+        return ""
+
+    HAS_PINYIN = False
+
+
 # 中英文公司类型后缀对照。
 # 品牌部分是**音译**(岱屿->Daiyu), 后缀部分是**意译**(资本管理->Capital Management),
 # 所以只比拼音会把"岱屿资本管理"和"岱屿金融服务"判成同一家 —— 实测正是这样炸的。
@@ -365,12 +372,6 @@ def _suffix_tokens(cjk_name: str) -> tuple[str, ...] | None:
         if zh in cjk_name:
             return en
     return None
-except ImportError:                     # pragma: no cover
-    def _romanize(text: str, n_chars: int = 3) -> str:
-        return ""
-
-    HAS_PINYIN = False
-
 
 def _script(s: str) -> str:
     has_cjk = any(_CJK_RANGE[0] <= c <= _CJK_RANGE[1] for c in s)
