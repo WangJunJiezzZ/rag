@@ -1,0 +1,96 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"凛川资产管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"黄明远\",\n      \"type\": \"人员\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"2022年9月25日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"三年\",\n      \"type\": \"时长\"\n    },\n    {\n      \"name\": \"金融相关专业硕士学位\",\n      \"type\": \"学历\"\n    },\n    {\n      \"name\": \"机构客户业务\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"职能\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"投资限制\",\n      \"type\": \"事项\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"凛川资产管理有限公司\",\n      \"predicate\": \"委任\",\n      \"object\": \"黄明远\"\n    },\n    {\n      \"subject\": \"黄明远\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"黄明远\",\n      \"predicate\": \"任期\",\n      \"object\": \"三年\"\n    },\n    {\n      \"subject\": \"黄明远\",\n      \"predicate\": \"生效日期\",\n      \"object\": \"2022年9月25日\"\n    },\n    {\n      \"subject\": \"黄明远\",\n      \"predicate\": \"持有\",\n      \"object\": \"金融相关专业硕士学位\"\n    },\n    {\n      \"subject\": \"黄明远\",\n      \"predicate\": \"覆盖\",\n      \"object\": \"机构客户业务\"\n    },\n    {\n      \"subject\": \"合规与风险管理职能\",\n      \"predicate\": \"报告\",\n      \"object\": \"董事会\"\n    },\n    {\n      \"subject\": \"合规与风险管理职能\",\n      \"predicate\": \"监控\",\n      \"object\": \"投资限制\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "黄明远",
+    "type": "人员"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2022年9月25日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   },
+   {
+    "name": "金融相关专业硕士学位",
+    "type": "学历"
+   },
+   {
+    "name": "机构客户业务",
+    "type": "业务领域"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "职能"
+   },
+   {
+    "name": "董事会",
+    "type": "机构"
+   },
+   {
+    "name": "投资限制",
+    "type": "事项"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "凛川资产管理有限公司",
+    "predicate": "委任",
+    "object": "黄明远"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "生效日期",
+    "object": "2022年9月25日"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "持有",
+    "object": "金融相关专业硕士学位"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "覆盖",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告",
+    "object": "董事会"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 219,
+ "output_tokens": 460,
+ "cached_read_tokens": 0,
+ "latency_ms": 4022.682500013616,
+ "provider": "deepseek"
+}

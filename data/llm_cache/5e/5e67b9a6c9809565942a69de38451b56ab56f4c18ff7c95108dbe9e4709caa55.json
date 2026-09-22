@@ -1,0 +1,71 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"翊澜亚洲机会基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"翊澜资本（2）\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"jurisdiction\",\"name\":\"临海特区\",\"type\":\"注册地\"},{\"id\":\"strategy\",\"name\":\"亚洲机会策略\",\"type\":\"投资策略\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"基准货币\"}],\"relations\":[{\"head\":\"manager\",\"relation\":\"管理\",\"tail\":\"fund\"},{\"head\":\"custodian\",\"relation\":\"托管\",\"tail\":\"fund\"},{\"head\":\"fund\",\"relation\":\"注册于\",\"tail\":\"jurisdiction\"},{\"head\":\"fund\",\"relation\":\"采用\",\"tail\":\"strategy\"},{\"head\":\"fund\",\"relation\":\"基准货币为\",\"tail\":\"currency\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "翊澜亚洲机会基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "翊澜资本（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "strategy",
+    "name": "亚洲机会策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   }
+  ],
+  "relations": [
+   {
+    "head": "manager",
+    "relation": "管理",
+    "tail": "fund"
+   },
+   {
+    "head": "custodian",
+    "relation": "托管",
+    "tail": "fund"
+   },
+   {
+    "head": "fund",
+    "relation": "注册于",
+    "tail": "jurisdiction"
+   },
+   {
+    "head": "fund",
+    "relation": "采用",
+    "tail": "strategy"
+   },
+   {
+    "head": "fund",
+    "relation": "基准货币为",
+    "tail": "currency"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 875,
+ "output_tokens": 185,
+ "cached_read_tokens": 640,
+ "latency_ms": 3114.593915990554,
+ "provider": "deepseek"
+}

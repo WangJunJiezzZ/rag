@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2024 年 2 月 19 日 召开的股东大会审议通过，郑明远当选为本公司董事，即日生效\", \"subject\": \"郑明远\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"栖梧环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2024 年 2 月 19 日 召开的股东大会审议通过，郑明远当选为本公司董事，即日生效",
+    "subject": "郑明远",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "栖梧环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1614,
+ "output_tokens": 83,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3429.865540994797,
+ "provider": "deepseek"
+}

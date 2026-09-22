@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphRAG Lab</title>
+<style>
+:root{
+  --bg:#0f1115; --panel:#171a21; --panel2:#1d212a; --line:#272c38;
+  --fg:#e6e9ef; --muted:#8b93a7; --accent:#5b9dff; --accent2:#7ee0b8;
+  --warn:#ffb454; --danger:#ff6b6b; --ok:#7ee0b8;
+  --fund:#5b9dff; --company:#b48ead; --person:#ffb454; --jur:#ff6b6b; --lit:#6b7280;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#f7f8fa; --panel:#fff; --panel2:#f0f2f6; --line:#dfe3ea;
+    --fg:#171a21; --muted:#6b7280; --accent:#2563eb; --accent2:#0f9d76;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",
+  "Hiragino Sans GB","Microsoft YaHei",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 16px 60px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:6px}
+h1{font-size:20px;margin:0;letter-spacing:.5px}
+.sub{color:var(--muted);font-size:13px}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:3px 11px;font-size:12px;color:var(--muted)}
+.chip b{color:var(--fg);font-weight:600}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+  padding:16px;margin-bottom:14px}
+.card h2{font-size:13px;margin:0 0 12px;color:var(--muted);font-weight:600;
+  letter-spacing:.6px;text-transform:uppercase}
+.examples{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.ex{background:var(--panel2);border:1px solid var(--line);border-radius:9px;
+  padding:10px 12px;cursor:pointer;text-align:left;color:var(--fg);font-family:inherit;
+  font-size:13px;transition:.15s}
+.ex:hover{border-color:var(--accent);transform:translateY(-1px)}
+.ex .tag{display:block;font-size:11px;color:var(--accent);margin-bottom:4px}
+.ex .q{color:var(--fg);line-height:1.45}
+.ex .meta{font-size:11px;color:var(--muted);margin-top:5px}
+.askrow{display:flex;gap:8px;flex-wrap:wrap}
+input[type=text]{flex:1;min-width:240px;background:var(--panel2);color:var(--fg);
+  border:1px solid var(--line);border-radius:9px;padding:11px 13px;font:inherit}
+input[type=text]:focus{outline:none;border-color:var(--accent)}
+button.primary{background:var(--accent);color:#fff;border:0;border-radius:9px;
+  padding:11px 22px;font:inherit;font-weight:600;cursor:pointer}
+button.primary:disabled{opacity:.5;cursor:default}
+.opts{display:flex;gap:16px;flex-wrap:wrap;margin-top:11px;font-size:12px;color:var(--muted)}
+.opts label{display:flex;align-items:center;gap:5px;cursor:pointer}
+select{background:var(--panel2);color:var(--fg);border:1px solid var(--line);
+  border-radius:6px;padding:3px 7px;font:inherit;font-size:12px}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:900px){.grid{grid-template-columns:1.25fr .95fr}}
+.answer{white-space:pre-wrap;line-height:1.8;font-size:15px}
+.answer .cite{display:inline-block;background:var(--accent);color:#fff;border-radius:4px;
+  padding:0 5px;margin:0 1px;font-size:11px;font-weight:700;cursor:pointer;
+  vertical-align:1px}
+.answer .cite.bad{background:var(--danger)}
+.refused{border-left:3px solid var(--warn);padding-left:12px;color:var(--warn)}
+.trace{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.pill{font-size:11px;border-radius:6px;padding:2px 8px;border:1px solid var(--line);
+  background:var(--panel2);color:var(--muted)}
+.pill.route{border-color:var(--accent);color:var(--accent)}
+.pill.graph{border-color:var(--accent2);color:var(--accent2)}
+svg.paths{width:100%;height:auto;display:block}
+.node rect{rx:7;stroke-width:1.6}
+.node text{font-size:11px;fill:var(--fg)}
+.edge line{stroke:var(--muted);stroke-width:1.4}
+.edge text{font-size:9.5px;fill:var(--muted)}
+.ev{border:1px solid var(--line);border-radius:9px;margin-bottom:8px;overflow:hidden}
+.ev summary{cursor:pointer;padding:9px 12px;background:var(--panel2);font-size:12.5px;
+  display:flex;gap:8px;align-items:center;list-style:none}
+.ev summary::-webkit-details-marker{display:none}
+.ev summary .idx{background:var(--accent);color:#fff;border-radius:4px;padding:0 6px;
+  font-size:11px;font-weight:700;flex:none}
+.ev summary .ttl{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ev summary .sc{color:var(--muted);font-size:11px;flex:none}
+.ev .body{padding:11px 13px;white-space:pre-wrap;font-size:12.5px;line-height:1.7;
+  color:var(--muted);border-top:1px solid var(--line);max-height:280px;overflow:auto}
+.ev.gold summary{border-left:3px solid var(--ok)}
+.err{color:var(--danger);font-size:12.5px;background:var(--panel2);padding:10px 12px;
+  border-radius:8px;border-left:3px solid var(--danger)}
+.empty{color:var(--muted);font-size:13px;text-align:center;padding:26px 0}
+.note{color:var(--muted);font-size:11.5px;margin-top:10px;line-height:1.6}
+.spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.3);
+  border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GraphRAG Lab</h1>
+    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">合成数据演示</b></span>
+  </header>
+  <div class="status" id="status"></div>
+
+  <div class="card">
+    <h2>试试这几个问题（按难度递增）</h2>
+    <div class="examples" id="examples"></div>
+  </div>
+
+  <div class="card">
+    <div class="askrow">
+      <input type="text" id="q" placeholder="输入问题，例如：XX基金是否与高风险管辖区的实体存在关联？"
+             autocomplete="off">
+      <button class="primary" id="go">提问</button>
+    </div>
+    <div class="opts">
+      <label>图谱来源
+        <select id="graph">
+          <option value="extracted">抽取图（真实水平）</option>
+          <option value="oracle">标准图（上界）</option>
+        </select>
+      </label>
+      <label>生成 prompt
+        <select id="prompt">
+          <option value="answer/v3_guarded">v3_guarded（拒答护栏）</option>
+          <option value="answer/v2_cited">v2_cited（强制引用）</option>
+          <option value="answer/v1_naive">v1_naive（无约束）</option>
+        </select>
+      </label>
+      <label>top_k <select id="topk">
+          <option>5</option><option selected>8</option><option>12</option><option>20</option>
+        </select></label>
+    </div>
+    <div class="note">切换「图谱来源」可直观看到 LLM 抽取环节的损失：标准图能走通的关系链，抽取图上可能是断的。</div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <h2>回答</h2>
+        <div id="trace" class="trace"></div>
+        <div id="answer"><div class="empty">提出一个问题，或点上面的示例</div></div>
+      </div>
+      <div class="card" id="graphcard" style="display:none">
+        <h2>关系路径（由知识图谱推导）</h2>
+        <div id="paths"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>检索到的证据</h2>
+      <div id="evidence"><div class="empty">—</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TYPE_COLOR = {Fund:'--fund',Company:'--company',Person:'--person',
+                    Jurisdiction:'--jur',Literal:'--lit',Unknown:'--lit'};
+let LAST = null;
+
+async function boot(){
+  try{
+    const h = await (await fetch('/api/health')).json();
+    $('#status').innerHTML = [
+      `LLM <b>${h.llm_provider}</b>`,
+      `原生引用 <b>${h.native_citations?'是':'否'}</b>`,
+      `向量 <b>${h.dense?'已启用':'未启用'}</b>`,
+      `chunk <b>${h.chunks}</b>`,
+      `文档 <b>${h.docs}</b>`,
+      h.graph ? `图谱 <b>${h.graph.entities}</b> 实体 / <b>${h.graph.edges}</b> 边` : ''
+    ].filter(Boolean).map(t=>`<span class="chip">${t}</span>`).join('');
+  }catch(e){ $('#status').innerHTML = `<span class="chip">后端未就绪</span>`; }
+
+  const ex = await (await fetch('/api/examples')).json();
+  $('#examples').innerHTML = ex.map(e=>`
+    <button class="ex" data-q="${esc(e.question)}">
+      <span class="tag">${esc(e.label)}</span>
+      <span class="q">${esc(e.question)}</span>
+      <span class="meta">证据 ${e.n_evidence} 份</span>
+    </button>`).join('');
+  document.querySelectorAll('.ex').forEach(b=>b.onclick=()=>{
+    $('#q').value = b.dataset.q; ask();
+  });
+}
+
+async function ask(){
+  const q = $('#q').value.trim();
+  if(!q) return;
+  $('#go').disabled = true;
+  $('#answer').innerHTML = '<div class="empty"><span class="spin"></span> 检索并生成中…</div>';
+  $('#evidence').innerHTML = '<div class="empty">—</div>';
+  $('#graphcard').style.display='none';
+  try{
+    const r = await fetch('/api/ask',{method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({question:q, graph:$('#graph').value,
+                           prompt:$('#prompt').value, top_k:+$('#topk').value})});
+    LAST = await r.json();
+    render(LAST);
+  }catch(e){
+    $('#answer').innerHTML = `<div class="err">请求失败：${esc(e.message)}</div>`;
+  }finally{ $('#go').disabled = false; }
+}
+
+function render(d){
+  const t = d.trace||{};
+  $('#trace').innerHTML = [
+    t.route ? `<span class="pill route">路由 ${esc(t.route)}</span>` : '',
+    t.reason ? `<span class="pill">${esc(t.reason)}</span>` : '',
+    t.intent ? `<span class="pill graph">图模板 ${esc(t.intent)}</span>` : '',
+    (t.linked_entities&&t.linked_entities.length)
+      ? `<span class="pill graph">链接实体 ${t.linked_entities.map(esc).join('、')}</span>` : '',
+    `<span class="pill">${d.latency_ms.toFixed(0)}ms</span>`,
+    d.cost_usd ? `<span class="pill">$${d.cost_usd.toFixed(4)}</span>` : '',
+    t.graph_source ? `<span class="pill">${t.graph_source.includes('synthetic')?'标准图':'抽取图'}</span>`:''
+  ].filter(Boolean).join('');
+
+  if(d.error){
+    $('#answer').innerHTML =
+      `<div class="err"><b>生成环节不可用</b>：${esc(d.error)}<br>
+       检索结果仍在右侧展示。设置 ANTHROPIC_API_KEY 或 DEEPSEEK_API_KEY 后可生成答案。</div>`;
+  }else if(!d.answer){
+    $('#answer').innerHTML = '<div class="empty">无输出</div>';
+  }else{
+    const n = (d.chunks||[]).length;
+    const html = esc(d.answer).replace(/\[(\d{1,2})\]/g,(m,i)=>{
+      const bad = (+i<1 || +i>n);
+      return `<span class="cite${bad?' bad':''}" data-i="${i}" title="${
+        bad?'引用了不存在的编号 —— 可自动检出的幻觉':'点击查看出处'}">${i}</span>`;
+    });
+    $('#answer').innerHTML = `<div class="answer${d.refused?' refused':''}">${html}</div>`;
+    document.querySelectorAll('.cite').forEach(c=>c.onclick=()=>{
+      const el = document.querySelector(`#ev-${c.dataset.i}`);
+      if(el){ el.open = true; el.scrollIntoView({behavior:'smooth',block:'center'}); }
+    });
+  }
+
+  const cited = new Set((d.citations||[]).filter(c=>c.valid).map(c=>c.doc_id));
+  $('#evidence').innerHTML = (d.chunks||[]).map((c,i)=>`
+    <details class="ev${cited.has(c.doc_id)?' gold':''}" id="ev-${i+1}">
+      <summary><span class="idx">${i+1}</span>
+        <span class="ttl">${esc(c.doc_title)}</span>
+        <span class="sc">${c.score.toFixed(3)}</span></summary>
+      <div class="body">${esc(c.raw_text)}</div>
+    </details>`).join('') || '<div class="empty">未召回任何证据</div>';
+
+  const gs = (d.trace&&d.trace.graphs)||[];
+  if(gs.length){
+    $('#graphcard').style.display='';
+    $('#paths').innerHTML = gs.map(drawPath).join('');
+  }
+}
+
+/* 原生 SVG 画关系链 —— 零外部依赖，断网可用 */
+function drawPath(g){
+  const nodes=g.nodes||[], edges=g.edges||[];
+  if(!nodes.length) return '';
+  const order=[]; const seen=new Set();
+  const push=id=>{ if(!seen.has(id)){seen.add(id);order.push(id);} };
+  if(edges.length){ push(edges[0].reversed?edges[0].to:edges[0].from); }
+  edges.forEach(e=>{ push(e.from); push(e.to); });
+  nodes.forEach(n=>push(n.id));
+  const byId=Object.fromEntries(nodes.map(n=>[n.id,n]));
+  const seq=order.filter(id=>byId[id]);
+
+  const W=250, H=64, PAD=10;
+  const height = seq.length*H + PAD*2;
+  let svg=`<svg class="paths" viewBox="0 0 ${W+140} ${height}" role="img">`;
+  seq.forEach((id,i)=>{
+    const n=byId[id], y=PAD+i*H+18;
+    const color=`var(${TYPE_COLOR[n.type]||'--lit'})`;
+    const risky = n.risk==='高风险';
+    const label=n.name.length>16?n.name.slice(0,15)+'…':n.name;
+    svg+=`<g class="node"><rect x="16" y="${y-15}" width="230" height="30"
+      fill="var(--panel2)" stroke="${risky?'var(--danger)':color}"
+      stroke-width="${risky?2.4:1.6}" rx="7"></rect>
+      <text x="28" y="${y+4}">${esc(label)}</text>
+      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">
+        ${esc(n.type)}${risky?' ⚠':''}</text></g>`;
+    if(i<seq.length-1){
+      const e=edges.find(e=>(e.from===id&&e.to===seq[i+1])||(e.to===id&&e.from===seq[i+1]));
+      const y2=PAD+(i+1)*H+18;
+      svg+=`<g class="edge"><line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
+        <polygon points="131,${y2-15} 127,${y2-22} 135,${y2-22}" fill="var(--muted)"></polygon>
+        <text x="142" y="${(y+y2)/2+4}">${esc(e?e.rel:'')}</text></g>`;
+    }
+  });
+  return svg+'</svg>';
+}
+
+$('#go').onclick=ask;
+$('#q').addEventListener('keydown',e=>{ if(e.key==='Enter') ask(); });
+['#graph','#prompt','#topk'].forEach(s=>$(s).onchange=()=>{ if(LAST) ask(); });
+boot();
+</script>
+</body>
+</html>

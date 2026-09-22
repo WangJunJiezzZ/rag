@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"李敬亭\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"岫云金融服务有限公司\",\n      \"type\": \"Company\"\n    },\n    {\n      \"name\": \"2022年7月21日\",\n      \"type\": \"Date\"\n    },\n    {\n      \"name\": \"75%\",\n      \"type\": \"Percentage\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"李敬亭\",\n      \"predicate\": \"持有\",\n      \"object\": \"岫云金融服务有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"75%\",\n        \"登记日期\": \"2022年7月21日\"\n      }\n    },\n    {\n      \"subject\": \"李敬亭\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"岫云金融服务有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "李敬亭",
+    "type": "Person"
+   },
+   {
+    "name": "岫云金融服务有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2022年7月21日",
+    "type": "Date"
+   },
+   {
+    "name": "75%",
+    "type": "Percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "李敬亭",
+    "predicate": "持有",
+    "object": "岫云金融服务有限公司",
+    "attributes": {
+     "持股比例": "75%",
+     "登记日期": "2022年7月21日"
+    }
+   },
+   {
+    "subject": "李敬亭",
+    "predicate": "是主要股东",
+    "object": "岫云金融服务有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 241,
+ "output_tokens": 197,
+ "cached_read_tokens": 0,
+ "latency_ms": 4470.948291011155,
+ "provider": "deepseek"
+}

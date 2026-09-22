@@ -1,0 +1,157 @@
+{
+ "text": "{\"entities\":[{\"name\":\"星海量化对冲基金\",\"type\":\"基金\",\"aliases\":[\"本基金\"]},{\"name\":\"星海资本管理有限公司\",\"type\":\"基金管理人\",\"aliases\":[\"管理人\"]},{\"name\":\"北岸银行澄江特别行政区分行\",\"type\":\"基金托管人\",\"aliases\":[\"托管人\"]},{\"name\":\"白鹭湾\",\"type\":\"注册地\",\"aliases\":[]},{\"name\":\"投资委员会\",\"type\":\"内部机构\",\"aliases\":[]},{\"name\":\"董事会\",\"type\":\"内部机构\",\"aliases\":[]},{\"name\":\"美元\",\"type\":\"基准货币\",\"aliases\":[]}],\"relations\":[{\"subject\":\"星海量化对冲基金\",\"predicate\":\"设立日期\",\"object\":\"2022年9月17日\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"注册地\",\"object\":\"白鹭湾\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"基准货币\",\"object\":\"美元\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"存续期限\",\"object\":\"无固定期限\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"投资策略\",\"object\":\"量化对冲策略\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"管理方式\",\"object\":\"开放式集合投资计划\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"管理人\",\"object\":\"星海资本管理有限公司\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"托管人\",\"object\":\"北岸银行澄江特别行政区分行\"},{\"subject\":\"星海资本管理有限公司\",\"predicate\":\"职责\",\"object\":\"投资决策、日常运作及信息披露\"},{\"subject\":\"北岸银行澄江特别行政区分行\",\"predicate\":\"职责\",\"object\":\"财产保管、清算交收及对管理人投资运作的监督\"},{\"subject\":\"星海资本管理有限公司\",\"predicate\":\"管理费年费率\",\"object\":\"2.00%\"},{\"subject\":\"北岸银行澄江特别行政区分行\",\"predicate\":\"托管费年费率\",\"object\":\"0.10%\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"最低认购金额\",\"object\":\"50万美元\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"追加认购最低金额\",\"object\":\"1万美元\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"赎回申请时间\",\"object\":\"每月最后一个工作日\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"赎回款项支付期限\",\"object\":\"确认后7个工作日内\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"非上市股权投资上限\",\"object\":\"不超过15%的资产净值\"},{\"subject\":\"星海量化对冲基金\",\"predicate\":\"其他费用合计上限\",\"object\":\"不超过基金资产净值的0.30%\"},{\"subject\":\"非上市股权投资\",\"predicate\":\"审批机构\",\"object\":\"投资委员会\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告对象\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "星海量化对冲基金",
+    "type": "基金",
+    "aliases": [
+     "本基金"
+    ]
+   },
+   {
+    "name": "星海资本管理有限公司",
+    "type": "基金管理人",
+    "aliases": [
+     "管理人"
+    ]
+   },
+   {
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人",
+    "aliases": [
+     "托管人"
+    ]
+   },
+   {
+    "name": "白鹭湾",
+    "type": "注册地",
+    "aliases": []
+   },
+   {
+    "name": "投资委员会",
+    "type": "内部机构",
+    "aliases": []
+   },
+   {
+    "name": "董事会",
+    "type": "内部机构",
+    "aliases": []
+   },
+   {
+    "name": "美元",
+    "type": "基准货币",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "设立日期",
+    "object": "2022年9月17日"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "投资策略",
+    "object": "量化对冲策略"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "管理方式",
+    "object": "开放式集合投资计划"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "管理人",
+    "object": "星海资本管理有限公司"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "托管人",
+    "object": "北岸银行澄江特别行政区分行"
+   },
+   {
+    "subject": "星海资本管理有限公司",
+    "predicate": "职责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "北岸银行澄江特别行政区分行",
+    "predicate": "职责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "星海资本管理有限公司",
+    "predicate": "管理费年费率",
+    "object": "2.00%"
+   },
+   {
+    "subject": "北岸银行澄江特别行政区分行",
+    "predicate": "托管费年费率",
+    "object": "0.10%"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "最低认购金额",
+    "object": "50万美元"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "追加认购最低金额",
+    "object": "1万美元"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "赎回申请时间",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "赎回款项支付期限",
+    "object": "确认后7个工作日内"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "非上市股权投资上限",
+    "object": "不超过15%的资产净值"
+   },
+   {
+    "subject": "星海量化对冲基金",
+    "predicate": "其他费用合计上限",
+    "object": "不超过基金资产净值的0.30%"
+   },
+   {
+    "subject": "非上市股权投资",
+    "predicate": "审批机构",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 924,
+ "output_tokens": 601,
+ "cached_read_tokens": 768,
+ "latency_ms": 4950.346832978539,
+ "provider": "deepseek"
+}

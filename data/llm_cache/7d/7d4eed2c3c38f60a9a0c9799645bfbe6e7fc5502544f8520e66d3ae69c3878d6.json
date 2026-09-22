@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"于 2021 年 9 月 26 日 依法设立并完成注册登记，注册地为北屿自治区\", \"subject\": \"凛川科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"于 2021 年 9 月 26 日 依法设立并完成注册登记\", \"subject\": \"凛川科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2021 年 9 月 26 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"基金管理人：凛川资管\", \"subject\": \"凛川科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"凛川资管\", \"object_type\": \"Company\"},\n {\"evidence\": \"基金托管人：北岸银行澄江特别行政区分行\", \"subject\": \"凛川科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 50 万美元\", \"subject\": \"凛川科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"50 万美元\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "于 2021 年 9 月 26 日 依法设立并完成注册登记，注册地为北屿自治区",
+    "subject": "凛川科技成长基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "于 2021 年 9 月 26 日 依法设立并完成注册登记",
+    "subject": "凛川科技成长基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2021 年 9 月 26 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：凛川资管",
+    "subject": "凛川科技成长基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "凛川资管",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：北岸银行澄江特别行政区分行",
+    "subject": "凛川科技成长基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 50 万美元",
+    "subject": "凛川科技成长基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "50 万美元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2159,
+ "output_tokens": 343,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4808.558458054904,
+ "provider": "deepseek"
+}

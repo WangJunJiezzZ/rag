@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"中文名「砥行资本管理有限公司」与英文名「Huilan Investment Holdings Ltd.」名称不对应，且无证据表明为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "中文名「砥行资本管理有限公司」与英文名「Huilan Investment Holdings Ltd.」名称不对应，且无证据表明为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 377,
+ "output_tokens": 50,
+ "cached_read_tokens": 128,
+ "latency_ms": 2785.597499983851,
+ "provider": "deepseek"
+}

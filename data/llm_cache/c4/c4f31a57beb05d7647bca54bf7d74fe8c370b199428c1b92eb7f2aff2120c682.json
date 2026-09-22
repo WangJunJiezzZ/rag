@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2025 年 4 月 8 日，王沐阳直接持有本公司已发行股本的 15%，为本公司主要股东之一\", \"subject\": \"王沐阳\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"砥行资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2025 年 4 月 8 日，王沐阳直接持有本公司已发行股本的 15%，为本公司主要股东之一",
+    "subject": "王沐阳",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "砥行资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1638,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3194.1443330142647,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.6, \"reason\": \"「樾川国际」与「樾川金融服务有限公司」名称后缀与主体表述不同，缺乏证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.6,
+  "reason": "「樾川国际」与「樾川金融服务有限公司」名称后缀与主体表述不同，缺乏证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 396,
+ "output_tokens": 46,
+ "cached_read_tokens": 256,
+ "latency_ms": 3276.1810409720056,
+ "provider": "deepseek"
+}

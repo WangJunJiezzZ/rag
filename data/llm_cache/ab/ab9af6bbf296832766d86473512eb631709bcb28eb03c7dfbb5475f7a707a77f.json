@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"Luyan International Holdings Ltd.\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2009703766\",\n        \"注册地\": \"新港城\",\n        \"注册日期\": \"2019年7月13日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"Luyan International Holdings Ltd.\",\n      \"predicate\": \"注册地\",\n      \"object\": \"新港城\"\n    },\n    {\n      \"subject\": \"Luyan International Holdings Ltd.\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2009703766\"\n    },\n    {\n      \"subject\": \"Luyan International Holdings Ltd.\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2019年7月13日\"\n    },\n    {\n      \"subject\": \"Luyan International Holdings Ltd.\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"Luyan International Holdings Ltd.\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Luyan International Holdings Ltd.",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2009703766",
+     "注册地": "新港城",
+     "注册日期": "2019年7月13日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "新港城",
+    "type": "注册地"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Luyan International Holdings Ltd.",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "Luyan International Holdings Ltd.",
+    "predicate": "注册编号",
+    "object": "2009703766"
+   },
+   {
+    "subject": "Luyan International Holdings Ltd.",
+    "predicate": "注册日期",
+    "object": "2019年7月13日"
+   },
+   {
+    "subject": "Luyan International Holdings Ltd.",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "Luyan International Holdings Ltd.",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 243,
+ "output_tokens": 303,
+ "cached_read_tokens": 0,
+ "latency_ms": 3496.8664160114713,
+ "provider": "deepseek"
+}

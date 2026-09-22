@@ -1,0 +1,67 @@
+{
+ "text": "{\"entities\":[{\"name\":\"凛川环球投资有限公司（2）\",\"type\":\"公司\"},{\"name\":\"黄怀瑾\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"黄怀瑾\",\"predicate\":\"担任董事\",\"object\":\"凛川环球投资有限公司（2）\"},{\"subject\":\"黄怀瑾\",\"predicate\":\"任职于\",\"object\":\"董事会\"},{\"subject\":\"董事会\",\"predicate\":\"成员数量\",\"object\":\"五名\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"凛川环球投资有限公司（2）\"},{\"subject\":\"投资委员会\",\"predicate\":\"成员数量下限\",\"object\":\"三名\"},{\"subject\":\"投资委员会\",\"predicate\":\"职责\",\"object\":\"审议重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"predicate\":\"会议频率\",\"object\":\"每月至少一次\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川环球投资有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "黄怀瑾",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "黄怀瑾",
+    "predicate": "担任董事",
+    "object": "凛川环球投资有限公司（2）"
+   },
+   {
+    "subject": "黄怀瑾",
+    "predicate": "任职于",
+    "object": "董事会"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "成员数量",
+    "object": "五名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "凛川环球投资有限公司（2）"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员数量下限",
+    "object": "三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 408,
+ "output_tokens": 190,
+ "cached_read_tokens": 256,
+ "latency_ms": 3693.381707998924,
+ "provider": "deepseek"
+}

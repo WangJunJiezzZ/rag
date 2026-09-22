@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"许慕白\",\"type\":\"Person\"},{\"name\":\"麓岩投资控股有限公司\",\"type\":\"Company\"}],\"relations\":[{\"subject\":\"许慕白\",\"predicate\":\"持有\",\"object\":\"麓岩投资控股有限公司\",\"attributes\":{\"持股比例\":\"51%\",\"登记日期\":\"2023年6月6日\"}},{\"subject\":\"许慕白\",\"predicate\":\"是主要股东之一\",\"object\":\"麓岩投资控股有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "许慕白",
+    "type": "Person"
+   },
+   {
+    "name": "麓岩投资控股有限公司",
+    "type": "Company"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许慕白",
+    "predicate": "持有",
+    "object": "麓岩投资控股有限公司",
+    "attributes": {
+     "持股比例": "51%",
+     "登记日期": "2023年6月6日"
+    }
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "是主要股东之一",
+    "object": "麓岩投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 95,
+ "cached_read_tokens": 256,
+ "latency_ms": 3321.4450829545967,
+ "provider": "deepseek"
+}

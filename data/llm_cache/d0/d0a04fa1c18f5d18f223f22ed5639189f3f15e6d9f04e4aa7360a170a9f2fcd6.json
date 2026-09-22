@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2024 年 7 月 13 日，洪景行直接持有本公司已发行股本的 5%，为本公司主要股东之一。\", \"subject\": \"洪景行\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"砺石环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2024 年 7 月 13 日，洪景行直接持有本公司已发行股本的 5%，为本公司主要股东之一。",
+    "subject": "洪景行",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "砺石环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1190,
+ "output_tokens": 88,
+ "cached_read_tokens": 768,
+ "latency_ms": 3707.11358304834,
+ "provider": "deepseek"
+}

@@ -1,0 +1,79 @@
+{
+ "text": "{\"entities\":[{\"name\":\"洄川投资控股有限公司\",\"type\":\"公司\",\"aliases\":[\"Huichuan Investment Holdings Ltd.\",\"本公司\"]},{\"name\":\"刘景行\",\"type\":\"人员\",\"aliases\":[]},{\"name\":\"董事会\",\"type\":\"组织\",\"aliases\":[]},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\",\"aliases\":[]},{\"name\":\"管理人\",\"type\":\"组织\",\"aliases\":[]}],\"relations\":[{\"subject\":\"刘景行\",\"predicate\":\"任职于\",\"object\":\"洄川投资控股有限公司\"},{\"subject\":\"刘景行\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"刘景行\",\"predicate\":\"加入\",\"object\":\"洄川投资控股有限公司\"},{\"subject\":\"董事会\",\"predicate\":\"隶属于\",\"object\":\"洄川投资控股有限公司\"},{\"subject\":\"董事会\",\"predicate\":\"包含成员\",\"object\":\"刘景行\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告于\",\"object\":\"董事会\"},{\"subject\":\"管理人\",\"predicate\":\"建立\",\"object\":\"合规与风险管理职能\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "洄川投资控股有限公司",
+    "type": "公司",
+    "aliases": [
+     "Huichuan Investment Holdings Ltd.",
+     "本公司"
+    ]
+   },
+   {
+    "name": "刘景行",
+    "type": "人员",
+    "aliases": []
+   },
+   {
+    "name": "董事会",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "管理人",
+    "type": "组织",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "刘景行",
+    "predicate": "任职于",
+    "object": "洄川投资控股有限公司"
+   },
+   {
+    "subject": "刘景行",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "刘景行",
+    "predicate": "加入",
+    "object": "洄川投资控股有限公司"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "隶属于",
+    "object": "洄川投资控股有限公司"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "包含成员",
+    "object": "刘景行"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告于",
+    "object": "董事会"
+   },
+   {
+    "subject": "管理人",
+    "predicate": "建立",
+    "object": "合规与风险管理职能"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 314,
+ "output_tokens": 224,
+ "cached_read_tokens": 128,
+ "latency_ms": 3520.8590420079418,
+ "provider": "deepseek"
+}

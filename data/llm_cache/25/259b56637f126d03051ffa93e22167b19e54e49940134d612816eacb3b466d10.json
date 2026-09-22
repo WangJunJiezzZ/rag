@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：维兰群岛\", \"subject\": \"漱玉资本（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"维兰群岛\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：维兰群岛",
+    "subject": "漱玉资本（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "维兰群岛",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1635,
+ "output_tokens": 61,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3567.447750014253,
+ "provider": "deepseek"
+}

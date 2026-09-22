@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2024 年 9 月 16 日 完成董事会成员增补，新任董事为洪景行\", \"subject\": \"洪景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"麓岩金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2024 年 9 月 16 日 完成董事会成员增补，新任董事为洪景行",
+    "subject": "洪景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "麓岩金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1172,
+ "output_tokens": 79,
+ "cached_read_tokens": 768,
+ "latency_ms": 2862.836125015747,
+ "provider": "deepseek"
+}

@@ -1,0 +1,67 @@
+{
+ "text": "{\"entities\":[{\"name\":\"松岚资产管理有限公司（3）\",\"type\":\"公司\"},{\"name\":\"吴知微\",\"type\":\"人员\"},{\"name\":\"董事会\",\"type\":\"组织机构\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织机构\"}],\"relations\":[{\"subject\":\"松岚资产管理有限公司（3）\",\"predicate\":\"委任\",\"object\":\"吴知微\",\"properties\":{\"职位\":\"董事\",\"生效日期\":\"2022年9月4日\",\"任期\":\"三年\"}},{\"subject\":\"吴知微\",\"predicate\":\"持有\",\"object\":\"金融相关专业的硕士学位\"},{\"subject\":\"吴知微\",\"predicate\":\"具备\",\"object\":\"所在司法管辖区认可的从业资格\"},{\"subject\":\"吴知微\",\"predicate\":\"覆盖\",\"object\":\"机构客户业务\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告\",\"object\":\"董事会\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚资产管理有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "吴知微",
+    "type": "人员"
+   },
+   {
+    "name": "董事会",
+    "type": "组织机构"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "松岚资产管理有限公司（3）",
+    "predicate": "委任",
+    "object": "吴知微",
+    "properties": {
+     "职位": "董事",
+     "生效日期": "2022年9月4日",
+     "任期": "三年"
+    }
+   },
+   {
+    "subject": "吴知微",
+    "predicate": "持有",
+    "object": "金融相关专业的硕士学位"
+   },
+   {
+    "subject": "吴知微",
+    "predicate": "具备",
+    "object": "所在司法管辖区认可的从业资格"
+   },
+   {
+    "subject": "吴知微",
+    "predicate": "覆盖",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告",
+    "object": "董事会"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 400,
+ "output_tokens": 197,
+ "cached_read_tokens": 256,
+ "latency_ms": 4488.172833982389,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两只基金名称不同（全球宏观 vs 可持续发展），设立时间与注册地均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两只基金名称不同（全球宏观 vs 可持续发展），设立时间与注册地均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 450,
+ "output_tokens": 41,
+ "cached_read_tokens": 256,
+ "latency_ms": 2634.8907920182683,
+ "provider": "deepseek"
+}

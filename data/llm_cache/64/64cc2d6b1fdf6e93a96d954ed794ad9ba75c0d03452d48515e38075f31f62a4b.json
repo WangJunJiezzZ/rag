@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)的砚池国际控股有限公司，B为罗马化名Xiuyun Asset Management Pte. Ltd.，名称主体不同，且A带序号区分，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)的砚池国际控股有限公司，B为罗马化名Xiuyun Asset Management Pte. Ltd.，名称主体不同，且A带序号区分，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 390,
+ "output_tokens": 64,
+ "cached_read_tokens": 256,
+ "latency_ms": 4077.5334159843624,
+ "provider": "deepseek"
+}

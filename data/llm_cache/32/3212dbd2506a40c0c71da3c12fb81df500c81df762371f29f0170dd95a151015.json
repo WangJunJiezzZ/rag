@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（资产管理 vs 金融服务），且上下文中的董事、日期均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（资产管理 vs 金融服务），且上下文中的董事、日期均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 422,
+ "output_tokens": 41,
+ "cached_read_tokens": 256,
+ "latency_ms": 3328.842415998224,
+ "provider": "deepseek"
+}

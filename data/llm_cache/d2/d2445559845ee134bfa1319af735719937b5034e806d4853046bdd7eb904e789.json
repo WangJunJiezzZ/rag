@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.98, \"reason\": \"A是昭明银行的分支机构，B是澜图资产管理公司，两者名称与实体类型均不同。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.98,
+  "reason": "A是昭明银行的分支机构，B是澜图资产管理公司，两者名称与实体类型均不同。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 42,
+ "cached_read_tokens": 128,
+ "latency_ms": 4125.672957976349,
+ "provider": "deepseek"
+}

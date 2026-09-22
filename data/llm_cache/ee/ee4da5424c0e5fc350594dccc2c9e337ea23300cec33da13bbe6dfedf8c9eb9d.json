@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 带序号（3）且中文名为「漱玉投资控股有限公司」，B 为英文名「Qiwu Global Investments Ltd.」，名称主体与序号均不匹配，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 带序号（3）且中文名为「漱玉投资控股有限公司」，B 为英文名「Qiwu Global Investments Ltd.」，名称主体与序号均不匹配，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 62,
+ "cached_read_tokens": 128,
+ "latency_ms": 3845.4017500043847,
+ "provider": "deepseek"
+}

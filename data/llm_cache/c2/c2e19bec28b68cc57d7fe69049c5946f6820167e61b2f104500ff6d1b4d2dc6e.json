@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称A为中文公司名且带序号（2），名称B为英文公司名，两者名称、语言及标识均不匹配，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称A为中文公司名且带序号（2），名称B为英文公司名，两者名称、语言及标识均不匹配，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 383,
+ "output_tokens": 52,
+ "cached_read_tokens": 128,
+ "latency_ms": 3262.6209579757415,
+ "provider": "deepseek"
+}

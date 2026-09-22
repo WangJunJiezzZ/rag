@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"翊澜资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"刘景行\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"部门\"}],\"relations\":[{\"subject\":\"翊澜资本管理有限公司\",\"predicate\":\"委任\",\"object\":\"刘景行\"},{\"subject\":\"刘景行\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"刘景行\",\"predicate\":\"任职于\",\"object\":\"翊澜资本管理有限公司\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告给\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "翊澜资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "刘景行",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "部门"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "翊澜资本管理有限公司",
+    "predicate": "委任",
+    "object": "刘景行"
+   },
+   {
+    "subject": "刘景行",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "刘景行",
+    "predicate": "任职于",
+    "object": "翊澜资本管理有限公司"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告给",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 326,
+ "output_tokens": 129,
+ "cached_read_tokens": 128,
+ "latency_ms": 4847.783792007249,
+ "provider": "deepseek"
+}

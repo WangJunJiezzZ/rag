@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"砺石可持续发展基金：采用可持续发展策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行\", \"subject\": \"砺石可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}, {\"evidence\": \"砺石可持续发展基金：采用可持续发展策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行\", \"subject\": \"砺石可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"昭明银行新港城分行\", \"object_type\": \"Company\"}, {\"evidence\": \"砺石全球宏观基金：采用全球宏观策略，注册地为新港城，托管人为昭明银行新港城分行\", \"subject\": \"砺石全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"}, {\"evidence\": \"砺石全球宏观基金：采用全球宏观策略，注册地为新港城，托管人为昭明银行新港城分行\", \"subject\": \"砺石全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"昭明银行新港城分行\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "砺石可持续发展基金：采用可持续发展策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行",
+    "subject": "砺石可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "砺石可持续发展基金：采用可持续发展策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行",
+    "subject": "砺石可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "昭明银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "砺石全球宏观基金：采用全球宏观策略，注册地为新港城，托管人为昭明银行新港城分行",
+    "subject": "砺石全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "砺石全球宏观基金：采用全球宏观策略，注册地为新港城，托管人为昭明银行新港城分行",
+    "subject": "砺石全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "昭明银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1258,
+ "output_tokens": 304,
+ "cached_read_tokens": 768,
+ "latency_ms": 4258.962417021394,
+ "provider": "deepseek"
+}

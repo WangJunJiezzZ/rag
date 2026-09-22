@@ -1,0 +1,65 @@
+{
+ "text": "{\"entities\":[{\"name\":\"霁川资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"Jichuan Asset Management Pte. Ltd.\",\"type\":\"公司\"},{\"name\":\"刘知微\",\"type\":\"人员\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"注册机关\",\"type\":\"机构\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"别名\",\"object\":\"Jichuan Asset Management Pte. Ltd.\"},{\"subject\":\"刘知微\",\"predicate\":\"当选董事\",\"object\":\"霁川资产管理有限公司\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"刘知微当选董事\"},{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"备案变更\",\"object\":\"注册机关\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"霁川资产管理有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Jichuan Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "刘知微",
+    "type": "人员"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "别名",
+    "object": "Jichuan Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "当选董事",
+    "object": "霁川资产管理有限公司"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "刘知微当选董事"
+   },
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "备案变更",
+    "object": "注册机关"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "霁川资产管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 313,
+ "output_tokens": 181,
+ "cached_read_tokens": 128,
+ "latency_ms": 3256.778040959034,
+ "provider": "deepseek"
+}

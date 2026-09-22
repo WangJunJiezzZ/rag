@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"邱之涵\",\n      \"type\": \"person\"\n    },\n    {\n      \"name\": \"燧明投资控股有限公司\",\n      \"type\": \"company\"\n    },\n    {\n      \"name\": \"5%\",\n      \"type\": \"percentage\"\n    },\n    {\n      \"name\": \"2023年6月28日\",\n      \"type\": \"date\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"邱之涵\",\n      \"predicate\": \"持有\",\n      \"object\": \"燧明投资控股有限公司\",\n      \"properties\": {\n        \"持股比例\": \"5%\",\n        \"登记日期\": \"2023年6月28日\"\n      }\n    },\n    {\n      \"subject\": \"邱之涵\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"燧明投资控股有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "邱之涵",
+    "type": "person"
+   },
+   {
+    "name": "燧明投资控股有限公司",
+    "type": "company"
+   },
+   {
+    "name": "5%",
+    "type": "percentage"
+   },
+   {
+    "name": "2023年6月28日",
+    "type": "date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "邱之涵",
+    "predicate": "持有",
+    "object": "燧明投资控股有限公司",
+    "properties": {
+     "持股比例": "5%",
+     "登记日期": "2023年6月28日"
+    }
+   },
+   {
+    "subject": "邱之涵",
+    "predicate": "是主要股东",
+    "object": "燧明投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 237,
+ "output_tokens": 200,
+ "cached_read_tokens": 0,
+ "latency_ms": 3275.3817079938017,
+ "provider": "deepseek"
+}

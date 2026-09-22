@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2022 年 8 月 20 日 召开的股东大会审议通过，周牧之当选为本公司董事，即日生效\", \"subject\": \"周牧之\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"Starsea Capital Management Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2022 年 8 月 20 日 召开的股东大会审议通过，周牧之当选为本公司董事，即日生效",
+    "subject": "周牧之",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "Starsea Capital Management Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1185,
+ "output_tokens": 84,
+ "cached_read_tokens": 896,
+ "latency_ms": 3096.8807909521274,
+ "provider": "deepseek"
+}

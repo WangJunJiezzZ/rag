@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2025 年 12 月 13 日 完成董事会成员增补，新任董事为曾知微\", \"subject\": \"曾知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"砥行资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2025 年 12 月 13 日 完成董事会成员增补，新任董事为曾知微",
+    "subject": "曾知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "砥行资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1183,
+ "output_tokens": 80,
+ "cached_read_tokens": 768,
+ "latency_ms": 3976.7147910315543,
+ "provider": "deepseek"
+}

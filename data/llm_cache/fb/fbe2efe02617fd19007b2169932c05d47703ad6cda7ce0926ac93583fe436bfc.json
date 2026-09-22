@@ -1,0 +1,30 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"实体名称：茗谷资本（3）\", \"subject\": \"茗谷资本（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"注册地：白鹭湾\", \"subject\": \"茗谷资本（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：茗谷资本（3）",
+    "subject": "茗谷资本（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "注册地：白鹭湾",
+    "subject": "茗谷资本（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1636,
+ "output_tokens": 121,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4538.073708012234,
+ "provider": "deepseek"
+}

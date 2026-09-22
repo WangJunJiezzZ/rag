@@ -1,0 +1,30 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"截至 2022 年 6 月 27 日，周若谷直接持有本公司已发行股本的 75%，为本公司主要股东之一\", \"subject\": \"周若谷\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"徽岚金融服务有限公司\", \"object_type\": \"Company\"},\n {\"evidence\": \"股东名称：周若谷\", \"subject\": \"周若谷\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"徽岚金融服务有限公司\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2022 年 6 月 27 日，周若谷直接持有本公司已发行股本的 75%，为本公司主要股东之一",
+    "subject": "周若谷",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "徽岚金融服务有限公司",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "股东名称：周若谷",
+    "subject": "周若谷",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "徽岚金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1637,
+ "output_tokens": 141,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4055.3199169808067,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称A为「屿川环球（2）」，名称B为「Yunzhou Investment Holdings Ltd.」，中文名与罗马化名均不匹配，且A带序号(2)，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称A为「屿川环球（2）」，名称B为「Yunzhou Investment Holdings Ltd.」，中文名与罗马化名均不匹配，且A带序号(2)，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 381,
+ "output_tokens": 62,
+ "cached_read_tokens": 128,
+ "latency_ms": 4803.43108298257,
+ "provider": "deepseek"
+}

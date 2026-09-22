@@ -1,0 +1,133 @@
+{
+ "text": "{\"entities\":[{\"name\":\"澜图资产管理有限公司\",\"type\":\"公司\",\"aliases\":[\"Lantu Asset Management Pte. Ltd.\"]},{\"name\":\"澜图全球宏观基金\",\"type\":\"基金\",\"aliases\":[]},{\"name\":\"澜图私募信贷基金\",\"type\":\"基金\",\"aliases\":[]},{\"name\":\"澜图科技成长基金\",\"type\":\"基金\",\"aliases\":[]},{\"name\":\"汇川银行新港城分行\",\"type\":\"银行\",\"aliases\":[]},{\"name\":\"北岸银行澄江特别行政区分行\",\"type\":\"银行\",\"aliases\":[]},{\"name\":\"昭明银行新港城分行\",\"type\":\"银行\",\"aliases\":[]},{\"name\":\"北屿自治区\",\"type\":\"地区\",\"aliases\":[]},{\"name\":\"澄江特别行政区\",\"type\":\"地区\",\"aliases\":[]},{\"name\":\"投资委员会\",\"type\":\"组织\",\"aliases\":[]}],\"relations\":[{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"澜图全球宏观基金\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"澜图私募信贷基金\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"澜图科技成长基金\"},{\"subject\":\"澜图全球宏观基金\",\"predicate\":\"采用策略\",\"object\":\"全球宏观策略\"},{\"subject\":\"澜图私募信贷基金\",\"predicate\":\"采用策略\",\"object\":\"私募信贷策略\"},{\"subject\":\"澜图科技成长基金\",\"predicate\":\"采用策略\",\"object\":\"科技成长策略\"},{\"subject\":\"澜图全球宏观基金\",\"predicate\":\"注册地\",\"object\":\"北屿自治区\"},{\"subject\":\"澜图私募信贷基金\",\"predicate\":\"注册地\",\"object\":\"澄江特别行政区\"},{\"subject\":\"澜图科技成长基金\",\"predicate\":\"注册地\",\"object\":\"澄江特别行政区\"},{\"subject\":\"澜图全球宏观基金\",\"predicate\":\"托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"澜图私募信贷基金\",\"predicate\":\"托管人\",\"object\":\"北岸银行澄江特别行政区分行\"},{\"subject\":\"澜图科技成长基金\",\"predicate\":\"托管人\",\"object\":\"昭明银行新港城分行\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资产管理有限公司",
+    "type": "公司",
+    "aliases": [
+     "Lantu Asset Management Pte. Ltd."
+    ]
+   },
+   {
+    "name": "澜图全球宏观基金",
+    "type": "基金",
+    "aliases": []
+   },
+   {
+    "name": "澜图私募信贷基金",
+    "type": "基金",
+    "aliases": []
+   },
+   {
+    "name": "澜图科技成长基金",
+    "type": "基金",
+    "aliases": []
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "银行",
+    "aliases": []
+   },
+   {
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "银行",
+    "aliases": []
+   },
+   {
+    "name": "昭明银行新港城分行",
+    "type": "银行",
+    "aliases": []
+   },
+   {
+    "name": "北屿自治区",
+    "type": "地区",
+    "aliases": []
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "地区",
+    "aliases": []
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "管理",
+    "object": "澜图全球宏观基金"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "管理",
+    "object": "澜图私募信贷基金"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "管理",
+    "object": "澜图科技成长基金"
+   },
+   {
+    "subject": "澜图全球宏观基金",
+    "predicate": "采用策略",
+    "object": "全球宏观策略"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "采用策略",
+    "object": "私募信贷策略"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "采用策略",
+    "object": "科技成长策略"
+   },
+   {
+    "subject": "澜图全球宏观基金",
+    "predicate": "注册地",
+    "object": "北屿自治区"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "澜图全球宏观基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "托管人",
+    "object": "北岸银行澄江特别行政区分行"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "托管人",
+    "object": "昭明银行新港城分行"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 518,
+ "output_tokens": 476,
+ "cached_read_tokens": 384,
+ "latency_ms": 4029.1776250232942,
+ "provider": "deepseek"
+}

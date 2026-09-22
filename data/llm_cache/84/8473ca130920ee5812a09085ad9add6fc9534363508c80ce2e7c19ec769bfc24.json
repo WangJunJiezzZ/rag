@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2025 年 7 月 11 日 召开的股东大会审议通过，吴知微当选为本公司董事，即日生效\", \"subject\": \"吴知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"砺石环球投资有限公司（3）\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2025 年 7 月 11 日 召开的股东大会审议通过，吴知微当选为本公司董事，即日生效",
+    "subject": "吴知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "砺石环球投资有限公司（3）",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1183,
+ "output_tokens": 86,
+ "cached_read_tokens": 768,
+ "latency_ms": 2858.2440830068663,
+ "provider": "deepseek"
+}

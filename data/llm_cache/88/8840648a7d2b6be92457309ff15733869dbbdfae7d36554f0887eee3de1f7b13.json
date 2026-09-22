@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「砥行资本管理有限公司」与英文名「Yanchi Asset Management Pte. Ltd.」在名称上无对应关系，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「砥行资本管理有限公司」与英文名「Yanchi Asset Management Pte. Ltd.」在名称上无对应关系，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 390,
+ "output_tokens": 55,
+ "cached_read_tokens": 256,
+ "latency_ms": 4016.838582989294,
+ "provider": "deepseek"
+}

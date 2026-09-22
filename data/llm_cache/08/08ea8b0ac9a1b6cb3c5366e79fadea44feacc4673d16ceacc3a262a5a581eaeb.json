@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任曾若谷为本公司董事\", \"subject\": \"曾若谷\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"霁川环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任曾若谷为本公司董事",
+    "subject": "曾若谷",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "霁川环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1173,
+ "output_tokens": 60,
+ "cached_read_tokens": 768,
+ "latency_ms": 3102.899666002486,
+ "provider": "deepseek"
+}

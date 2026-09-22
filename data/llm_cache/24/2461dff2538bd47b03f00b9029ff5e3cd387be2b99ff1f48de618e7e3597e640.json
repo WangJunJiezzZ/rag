@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者为不同名称的公司（资本管理 vs 金融服务），无证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者为不同名称的公司（资本管理 vs 金融服务），无证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 37,
+ "cached_read_tokens": 256,
+ "latency_ms": 3027.275707980152,
+ "provider": "deepseek"
+}

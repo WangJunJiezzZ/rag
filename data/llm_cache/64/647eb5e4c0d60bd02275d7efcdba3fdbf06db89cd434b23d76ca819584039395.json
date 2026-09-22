@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.98, \"reason\": \"两只基金名称、投资策略、设立日期和注册地均不同，是不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.98,
+  "reason": "两只基金名称、投资策略、设立日期和注册地均不同，是不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 454,
+ "output_tokens": 37,
+ "cached_read_tokens": 256,
+ "latency_ms": 3944.193833041936,
+ "provider": "deepseek"
+}

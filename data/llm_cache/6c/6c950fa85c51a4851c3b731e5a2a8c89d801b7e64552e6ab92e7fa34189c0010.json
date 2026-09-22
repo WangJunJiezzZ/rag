@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"徽岚投资控股有限公司\",\"type\":\"公司\"},{\"name\":\"孙志诚\",\"type\":\"人员\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"2023年5月5日\",\"type\":\"日期\"}],\"relations\":[{\"subject\":\"徽岚投资控股有限公司\",\"predicate\":\"委任\",\"object\":\"孙志诚\"},{\"subject\":\"孙志诚\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"孙志诚\",\"predicate\":\"任期开始日期\",\"object\":\"2023年5月5日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "徽岚投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "孙志诚",
+    "type": "人员"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2023年5月5日",
+    "type": "日期"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "徽岚投资控股有限公司",
+    "predicate": "委任",
+    "object": "孙志诚"
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "任期开始日期",
+    "object": "2023年5月5日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 117,
+ "cached_read_tokens": 256,
+ "latency_ms": 3106.5547090256587,
+ "provider": "deepseek"
+}

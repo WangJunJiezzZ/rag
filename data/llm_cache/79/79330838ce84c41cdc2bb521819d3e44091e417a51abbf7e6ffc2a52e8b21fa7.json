@@ -1,0 +1,71 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"砺石全球宏观基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"砺石资产管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"昭明银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"newport\",\"name\":\"新港城\",\"type\":\"注册地\"},{\"id\":\"xin\",\"name\":\"新元\",\"type\":\"基准货币\"}],\"relations\":[{\"head\":\"manager\",\"relation\":\"管理\",\"tail\":\"fund\"},{\"head\":\"custodian\",\"relation\":\"托管\",\"tail\":\"fund\"},{\"head\":\"fund\",\"relation\":\"注册地\",\"tail\":\"newport\"},{\"head\":\"fund\",\"relation\":\"基准货币\",\"tail\":\"xin\"},{\"head\":\"manager\",\"relation\":\"收取管理费\",\"tail\":\"fund\"},{\"head\":\"custodian\",\"relation\":\"收取托管费\",\"tail\":\"fund\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砺石全球宏观基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砺石资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "昭明银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "newport",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "xin",
+    "name": "新元",
+    "type": "基准货币"
+   }
+  ],
+  "relations": [
+   {
+    "head": "manager",
+    "relation": "管理",
+    "tail": "fund"
+   },
+   {
+    "head": "custodian",
+    "relation": "托管",
+    "tail": "fund"
+   },
+   {
+    "head": "fund",
+    "relation": "注册地",
+    "tail": "newport"
+   },
+   {
+    "head": "fund",
+    "relation": "基准货币",
+    "tail": "xin"
+   },
+   {
+    "head": "manager",
+    "relation": "收取管理费",
+    "tail": "fund"
+   },
+   {
+    "head": "custodian",
+    "relation": "收取托管费",
+    "tail": "fund"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 895,
+ "output_tokens": 183,
+ "cached_read_tokens": 640,
+ "latency_ms": 4034.8889579763636,
+ "provider": "deepseek"
+}

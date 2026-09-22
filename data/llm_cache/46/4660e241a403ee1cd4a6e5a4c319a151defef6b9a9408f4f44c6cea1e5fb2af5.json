@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：澄江特别行政区\", \"subject\": \"星海资本管理有限公司（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：澄江特别行政区",
+    "subject": "星海资本管理有限公司（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1641,
+ "output_tokens": 65,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3737.61754197767,
+ "provider": "deepseek"
+}

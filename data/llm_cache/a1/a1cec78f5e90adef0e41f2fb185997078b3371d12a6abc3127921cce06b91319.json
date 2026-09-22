@@ -1,0 +1,156 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"凛川科技成长基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"凛川资管\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regulator\",\n      \"name\": \"北屿自治区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"investor\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    },\n    {\n      \"id\": \"auditor\",\n      \"name\": \"独立审计机构\",\n      \"type\": \"审计机构\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立于\",\n      \"object\": \"2021年9月26日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"regulator\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理人为\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管人为\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面向\",\n      \"object\": \"investor\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"科技成长策略\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于非上市股权或流动性受限资产的比例上限\",\n      \"object\": \"10%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于非上市股权或流动性受限资产的比例上限\",\n      \"object\": \"20%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"50万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"5万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"锁定期\",\n      \"object\": \"12个月\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回申请提前通知期\",\n      \"object\": \"15个工作日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理费年费率\",\n      \"object\": \"2.00%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"0.05%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"其他费用合计上限\",\n      \"object\": \"0.30%\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"auditor\",\n      \"predicate\": \"审计\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"审批\",\n      \"object\": \"非上市股权或流动性受限资产投资\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "凛川科技成长基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "凛川资管",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regulator",
+    "name": "北屿自治区",
+    "type": "注册地"
+   },
+   {
+    "id": "investor",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立于",
+    "object": "2021年9月26日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regulator"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人为",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人为",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面向",
+    "object": "investor"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "科技成长策略"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于非上市股权或流动性受限资产的比例上限",
+    "object": "10%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于非上市股权或流动性受限资产的比例上限",
+    "object": "20%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "50万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "5万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "锁定期",
+    "object": "12个月"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请提前通知期",
+    "object": "15个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费年费率",
+    "object": "2.00%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费年费率",
+    "object": "0.05%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "其他费用合计上限",
+    "object": "0.30%"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "auditor",
+    "predicate": "审计",
+    "object": "fund"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "审批",
+    "object": "非上市股权或流动性受限资产投资"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 856,
+ "output_tokens": 876,
+ "cached_read_tokens": 640,
+ "latency_ms": 5173.992624972016,
+ "provider": "deepseek"
+}

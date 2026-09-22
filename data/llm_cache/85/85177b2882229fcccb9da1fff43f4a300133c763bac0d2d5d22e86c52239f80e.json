@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"青柏投资\",\"type\":\"公司\",\"attributes\":{\"注册编号\":\"1993707314\",\"注册地\":\"白鹭湾\",\"注册日期\":\"2021年9月2日\",\"主体状态\":\"存续\",\"经营范围\":\"投资管理、投资顾问及相关配套服务\"}}],\"relations\":[{\"subject\":\"青柏投资\",\"predicate\":\"注册编号\",\"object\":\"1993707314\"},{\"subject\":\"青柏投资\",\"predicate\":\"注册地\",\"object\":\"白鹭湾\"},{\"subject\":\"青柏投资\",\"predicate\":\"注册日期\",\"object\":\"2021年9月2日\"},{\"subject\":\"青柏投资\",\"predicate\":\"主体状态\",\"object\":\"存续\"},{\"subject\":\"青柏投资\",\"predicate\":\"经营范围\",\"object\":\"投资管理、投资顾问及相关配套服务\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "青柏投资",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "1993707314",
+     "注册地": "白鹭湾",
+     "注册日期": "2021年9月2日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "青柏投资",
+    "predicate": "注册编号",
+    "object": "1993707314"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "注册日期",
+    "object": "2021年9月2日"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 407,
+ "output_tokens": 168,
+ "cached_read_tokens": 256,
+ "latency_ms": 3303.4332920215093,
+ "provider": "deepseek"
+}

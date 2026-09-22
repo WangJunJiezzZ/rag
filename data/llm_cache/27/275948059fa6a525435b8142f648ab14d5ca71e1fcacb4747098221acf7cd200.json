@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：砚池国际控股有限公司（3）\", \"subject\": \"砚池国际控股有限公司（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：砚池国际控股有限公司（3）",
+    "subject": "砚池国际控股有限公司（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1195,
+ "output_tokens": 68,
+ "cached_read_tokens": 768,
+ "latency_ms": 2805.0218749558553,
+ "provider": "deepseek"
+}

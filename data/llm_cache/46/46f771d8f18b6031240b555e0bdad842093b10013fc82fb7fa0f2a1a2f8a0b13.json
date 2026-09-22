@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同：'环球投资'与'资本管理'为不同主体，且上下文未表明指向同一实体\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同：'环球投资'与'资本管理'为不同主体，且上下文未表明指向同一实体"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 41,
+ "cached_read_tokens": 256,
+ "latency_ms": 3377.277875028085,
+ "provider": "deepseek"
+}

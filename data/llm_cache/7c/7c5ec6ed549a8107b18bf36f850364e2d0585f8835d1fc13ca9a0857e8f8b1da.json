@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Huichuan Global Investments Ltd.\", \"subject\": \"Huichuan Global Investments Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Huichuan Global Investments Ltd.",
+    "subject": "Huichuan Global Investments Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1639,
+ "output_tokens": 68,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4843.017125036567,
+ "provider": "deepseek"
+}

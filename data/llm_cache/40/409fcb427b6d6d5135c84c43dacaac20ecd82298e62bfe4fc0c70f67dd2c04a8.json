@@ -1,0 +1,56 @@
+{
+ "text": "{\"entities\":[{\"name\":\"麓岩国际控股有限公司\",\"type\":\"公司\"},{\"name\":\"刘若谷\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"刘若谷\",\"predicate\":\"担任\",\"object\":\"麓岩国际控股有限公司\",\"context\":\"新任董事\"},{\"subject\":\"刘若谷\",\"predicate\":\"加入\",\"object\":\"麓岩国际控股有限公司\",\"context\":\"加入本公司前\"},{\"subject\":\"董事会\",\"predicate\":\"组成\",\"object\":\"麓岩国际控股有限公司\",\"context\":\"董事会现由五名成员组成\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"麓岩国际控股有限公司\",\"context\":\"本基金的账目由独立审计机构按年度审计\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "麓岩国际控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "刘若谷",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "刘若谷",
+    "predicate": "担任",
+    "object": "麓岩国际控股有限公司",
+    "context": "新任董事"
+   },
+   {
+    "subject": "刘若谷",
+    "predicate": "加入",
+    "object": "麓岩国际控股有限公司",
+    "context": "加入本公司前"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "组成",
+    "object": "麓岩国际控股有限公司",
+    "context": "董事会现由五名成员组成"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "麓岩国际控股有限公司",
+    "context": "本基金的账目由独立审计机构按年度审计"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 400,
+ "output_tokens": 165,
+ "cached_read_tokens": 256,
+ "latency_ms": 4170.372000022326,
+ "provider": "deepseek"
+}

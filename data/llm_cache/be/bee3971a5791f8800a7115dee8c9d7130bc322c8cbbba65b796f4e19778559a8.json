@@ -1,0 +1,50 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"汐禾金融服务有限公司（2）\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2022221263\",\n        \"注册地\": \"圣维尔\",\n        \"注册日期\": \"2010年10月7日\",\n        \"主体状态\": \"存续\"\n      }\n    },\n    {\n      \"name\": \"圣维尔\",\n      \"type\": \"管辖区\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"汐禾金融服务有限公司（2）\",\n      \"predicate\": \"注册地\",\n      \"object\": \"圣维尔\"\n    },\n    {\n      \"subject\": \"汐禾金融服务有限公司（2）\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2022221263\"\n    },\n    {\n      \"subject\": \"汐禾金融服务有限公司（2）\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2010年10月7日\"\n    },\n    {\n      \"subject\": \"汐禾金融服务有限公司（2）\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "汐禾金融服务有限公司（2）",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2022221263",
+     "注册地": "圣维尔",
+     "注册日期": "2010年10月7日",
+     "主体状态": "存续"
+    }
+   },
+   {
+    "name": "圣维尔",
+    "type": "管辖区"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "汐禾金融服务有限公司（2）",
+    "predicate": "注册地",
+    "object": "圣维尔"
+   },
+   {
+    "subject": "汐禾金融服务有限公司（2）",
+    "predicate": "注册编号",
+    "object": "2022221263"
+   },
+   {
+    "subject": "汐禾金融服务有限公司（2）",
+    "predicate": "注册日期",
+    "object": "2010年10月7日"
+   },
+   {
+    "subject": "汐禾金融服务有限公司（2）",
+    "predicate": "主体状态",
+    "object": "存续"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 237,
+ "output_tokens": 253,
+ "cached_read_tokens": 0,
+ "latency_ms": 4124.784625018947,
+ "provider": "deepseek"
+}

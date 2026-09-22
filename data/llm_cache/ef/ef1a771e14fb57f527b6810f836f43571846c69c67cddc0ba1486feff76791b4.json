@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称完全不同，A为中文洄川国际控股有限公司，B为Daiyu Financial Services Ltd.，无对应关系。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称完全不同，A为中文洄川国际控股有限公司，B为Daiyu Financial Services Ltd.，无对应关系。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 383,
+ "output_tokens": 45,
+ "cached_read_tokens": 128,
+ "latency_ms": 2729.5855839620344,
+ "provider": "deepseek"
+}

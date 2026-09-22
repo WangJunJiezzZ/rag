@@ -1,0 +1,47 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"洪景行\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"砺石环球投资有限公司\",\n      \"type\": \"Company\"\n    },\n    {\n      \"name\": \"5%\",\n      \"type\": \"Percentage\"\n    },\n    {\n      \"name\": \"2024年7月13日\",\n      \"type\": \"Date\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"洪景行\",\n      \"predicate\": \"持有股份\",\n      \"object\": \"砺石环球投资有限公司\"\n    },\n    {\n      \"subject\": \"洪景行\",\n      \"predicate\": \"持股比例\",\n      \"object\": \"5%\"\n    },\n    {\n      \"subject\": \"洪景行\",\n      \"predicate\": \"登记日期\",\n      \"object\": \"2024年7月13日\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "洪景行",
+    "type": "Person"
+   },
+   {
+    "name": "砺石环球投资有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "5%",
+    "type": "Percentage"
+   },
+   {
+    "name": "2024年7月13日",
+    "type": "Date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "洪景行",
+    "predicate": "持有股份",
+    "object": "砺石环球投资有限公司"
+   },
+   {
+    "subject": "洪景行",
+    "predicate": "持股比例",
+    "object": "5%"
+   },
+   {
+    "subject": "洪景行",
+    "predicate": "登记日期",
+    "object": "2024年7月13日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 241,
+ "output_tokens": 199,
+ "cached_read_tokens": 0,
+ "latency_ms": 4557.357999961823,
+ "provider": "deepseek"
+}

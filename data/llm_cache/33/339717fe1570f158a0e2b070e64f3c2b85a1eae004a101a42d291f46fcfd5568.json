@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"谢志诚\",\"type\":\"Person\"},{\"name\":\"松岚环球投资有限公司\",\"type\":\"Company\"},{\"name\":\"2022年3月5日\",\"type\":\"Date\"},{\"name\":\"5%\",\"type\":\"Percentage\"}],\"relations\":[{\"subject\":\"谢志诚\",\"predicate\":\"持有股份\",\"object\":\"松岚环球投资有限公司\"},{\"subject\":\"谢志诚\",\"predicate\":\"持股比例\",\"object\":\"5%\"},{\"subject\":\"谢志诚\",\"predicate\":\"登记日期\",\"object\":\"2022年3月5日\"},{\"subject\":\"谢志诚\",\"predicate\":\"股东身份\",\"object\":\"主要股东\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "谢志诚",
+    "type": "Person"
+   },
+   {
+    "name": "松岚环球投资有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2022年3月5日",
+    "type": "Date"
+   },
+   {
+    "name": "5%",
+    "type": "Percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "谢志诚",
+    "predicate": "持有股份",
+    "object": "松岚环球投资有限公司"
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "持股比例",
+    "object": "5%"
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "登记日期",
+    "object": "2022年3月5日"
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "股东身份",
+    "object": "主要股东"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 332,
+ "output_tokens": 136,
+ "cached_read_tokens": 128,
+ "latency_ms": 4621.946917031892,
+ "provider": "deepseek"
+}

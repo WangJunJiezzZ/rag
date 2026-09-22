@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 带有序号「（2）」且为中文名，B 为英文名 Huilan Investment Holdings，名称主体不同，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 带有序号「（2）」且为中文名，B 为英文名 Huilan Investment Holdings，名称主体不同，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 383,
+ "output_tokens": 52,
+ "cached_read_tokens": 128,
+ "latency_ms": 5568.21012502769,
+ "provider": "deepseek"
+}

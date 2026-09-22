@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（投资控股 vs 金融服务），且上下文中的董事、日期均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（投资控股 vs 金融服务），且上下文中的董事、日期均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 423,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 2971.61241696449,
+ "provider": "deepseek"
+}

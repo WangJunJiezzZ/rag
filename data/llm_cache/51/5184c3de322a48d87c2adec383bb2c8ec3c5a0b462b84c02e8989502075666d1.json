@@ -1,0 +1,156 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"翊澜亚洲机会基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"翊澜资本（2）\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"jurisdiction\",\"name\":\"临海特区\",\"type\":\"注册地\"},{\"id\":\"strategy\",\"name\":\"亚洲机会策略\",\"type\":\"投资策略\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"基准货币\"},{\"id\":\"date\",\"name\":\"2025年8月18日\",\"type\":\"设立日期\"},{\"id\":\"min_subscription\",\"name\":\"10万美元\",\"type\":\"最低认购金额\"},{\"id\":\"min_additional\",\"name\":\"5万美元\",\"type\":\"最低追加认购金额\"},{\"id\":\"performance_fee_10\",\"name\":\"10%\",\"type\":\"业绩报酬计提比例\"},{\"id\":\"performance_fee_15\",\"name\":\"15%\",\"type\":\"业绩报酬计提比例\"},{\"id\":\"hurdle_rate\",\"name\":\"8%\",\"type\":\"年化门槛收益率\"},{\"id\":\"redemption_frequency\",\"name\":\"每月最后一个工作日\",\"type\":\"赎回申请日\"},{\"id\":\"redemption_payment\",\"name\":\"7个工作日\",\"type\":\"赎回款项支付期限\"}],\"relations\":[{\"subject\":\"fund\",\"predicate\":\"全称\",\"object\":\"翊澜亚洲机会基金\"},{\"subject\":\"fund\",\"predicate\":\"设立日期\",\"object\":\"2025年8月18日\"},{\"subject\":\"fund\",\"predicate\":\"注册地\",\"object\":\"临海特区\"},{\"subject\":\"fund\",\"predicate\":\"基准货币\",\"object\":\"美元\"},{\"subject\":\"fund\",\"predicate\":\"投资策略\",\"object\":\"亚洲机会策略\"},{\"subject\":\"fund\",\"predicate\":\"基金管理人\",\"object\":\"翊澜资本（2）\"},{\"subject\":\"fund\",\"predicate\":\"基金托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"fund\",\"predicate\":\"最低认购金额\",\"object\":\"10万美元\"},{\"subject\":\"fund\",\"predicate\":\"最低追加认购金额\",\"object\":\"5万美元\"},{\"subject\":\"fund\",\"predicate\":\"业绩报酬计提比例\",\"object\":\"10%\"},{\"subject\":\"fund\",\"predicate\":\"业绩报酬计提比例\",\"object\":\"15%\"},{\"subject\":\"fund\",\"predicate\":\"年化门槛收益率\",\"object\":\"8%\"},{\"subject\":\"fund\",\"predicate\":\"赎回申请日\",\"object\":\"每月最后一个工作日\"},{\"subject\":\"fund\",\"predicate\":\"赎回款项支付期限\",\"object\":\"7个工作日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "翊澜亚洲机会基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "翊澜资本（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "strategy",
+    "name": "亚洲机会策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "date",
+    "name": "2025年8月18日",
+    "type": "设立日期"
+   },
+   {
+    "id": "min_subscription",
+    "name": "10万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "min_additional",
+    "name": "5万美元",
+    "type": "最低追加认购金额"
+   },
+   {
+    "id": "performance_fee_10",
+    "name": "10%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "performance_fee_15",
+    "name": "15%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "hurdle_rate",
+    "name": "8%",
+    "type": "年化门槛收益率"
+   },
+   {
+    "id": "redemption_frequency",
+    "name": "每月最后一个工作日",
+    "type": "赎回申请日"
+   },
+   {
+    "id": "redemption_payment",
+    "name": "7个工作日",
+    "type": "赎回款项支付期限"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "翊澜亚洲机会基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2025年8月18日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "临海特区"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "亚洲机会策略"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "翊澜资本（2）"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "10万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低追加认购金额",
+    "object": "5万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提比例",
+    "object": "10%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提比例",
+    "object": "15%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "年化门槛收益率",
+    "object": "8%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "7个工作日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 796,
+ "output_tokens": 528,
+ "cached_read_tokens": 640,
+ "latency_ms": 6370.723415981047,
+ "provider": "deepseek"
+}

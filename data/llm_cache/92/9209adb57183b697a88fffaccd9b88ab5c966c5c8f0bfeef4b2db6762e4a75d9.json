@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.6, \"reason\": \"「漱玉投资控股有限公司」与「漱玉资管」后缀不同，前者为投资控股公司，后者为资产管理公司，可能为不同主体，缺乏明确同一性证据。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.6,
+  "reason": "「漱玉投资控股有限公司」与「漱玉资管」后缀不同，前者为投资控股公司，后者为资产管理公司，可能为不同主体，缺乏明确同一性证据。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 379,
+ "output_tokens": 57,
+ "cached_read_tokens": 128,
+ "latency_ms": 4854.306290973909,
+ "provider": "deepseek"
+}

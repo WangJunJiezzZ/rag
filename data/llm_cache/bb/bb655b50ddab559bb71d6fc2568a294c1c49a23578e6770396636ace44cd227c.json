@@ -1,0 +1,26 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Luyan International Holdings Ltd.\",\"type\":\"公司\",\"attributes\":{\"注册编号\":\"2009703766\",\"注册地\":\"新港城\",\"注册日期\":\"2019年7月13日\",\"主体状态\":\"存续\",\"业务范围\":\"投资管理、投资顾问及相关配套服务\"}}],\"relations\":[]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Luyan International Holdings Ltd.",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2009703766",
+     "注册地": "新港城",
+     "注册日期": "2019年7月13日",
+     "主体状态": "存续",
+     "业务范围": "投资管理、投资顾问及相关配套服务"
+    }
+   }
+  ],
+  "relations": []
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 393,
+ "output_tokens": 70,
+ "cached_read_tokens": 256,
+ "latency_ms": 3025.75849997811,
+ "provider": "deepseek"
+}

@@ -1,0 +1,176 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"砚池亚洲机会基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"砚池资产管理有限公司\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"环宇银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regplace\",\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"亚洲机会策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"investcommittee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"board\",\n      \"name\": \"董事会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"compliance\",\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"内部职能\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称\",\n      \"object\": \"砚池亚洲机会基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2020年6月10日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"regplace\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"建立\",\n      \"object\": \"compliance\"\n    },\n    {\n      \"subject\": \"compliance\",\n      \"predicate\": \"报告对象\",\n      \"object\": \"board\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"10万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"10万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回申请日\",\n      \"object\": \"每月最后一个工作日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回款项支付时限\",\n      \"object\": \"确认后5个工作日内\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计提规则\",\n      \"object\": \"超过8%年化门槛收益率部分的20%，高水位线法，每年结算一次\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计提规则\",\n      \"object\": \"超过5%年化门槛收益率部分的15%，高水位线法，每年结算一次\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"非上市股权或流动性受限资产投资上限\",\n      \"object\": \"不超过资产净值的30%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"该等投资须经审批机构\",\n      \"object\": \"investcommittee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"关联交易风险\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"估值风险\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"流动性风险\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砚池亚洲机会基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砚池资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "strategy",
+    "name": "亚洲机会策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "investcommittee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   },
+   {
+    "id": "compliance",
+    "name": "合规与风险管理职能",
+    "type": "内部职能"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "砚池亚洲机会基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2020年6月10日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "manager",
+    "predicate": "建立",
+    "object": "compliance"
+   },
+   {
+    "subject": "compliance",
+    "predicate": "报告对象",
+    "object": "board"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "10万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "10万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付时限",
+    "object": "确认后5个工作日内"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提规则",
+    "object": "超过8%年化门槛收益率部分的20%，高水位线法，每年结算一次"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提规则",
+    "object": "超过5%年化门槛收益率部分的15%，高水位线法，每年结算一次"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权或流动性受限资产投资上限",
+    "object": "不超过资产净值的30%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "该等投资须经审批机构",
+    "object": "investcommittee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "关联交易风险"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "估值风险"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "流动性风险"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 695,
+ "output_tokens": 1006,
+ "cached_read_tokens": 0,
+ "latency_ms": 6155.456457985565,
+ "provider": "deepseek"
+}

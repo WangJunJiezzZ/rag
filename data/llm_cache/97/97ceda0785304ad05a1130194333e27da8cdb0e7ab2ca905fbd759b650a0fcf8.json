@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.7, \"reason\": \"「青柏投资」与「青柏资本管理有限公司」名称主体不同，且B带序号（2），无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.7,
+  "reason": "「青柏投资」与「青柏资本管理有限公司」名称主体不同，且B带序号（2），无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 48,
+ "cached_read_tokens": 256,
+ "latency_ms": 3378.1743749859743,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"中文名「砥行资本管理有限公司」与英文名「Starsea Capital Management Ltd.」无对应关系，且上下文未提供任何关联证据，无法判定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "中文名「砥行资本管理有限公司」与英文名「Starsea Capital Management Ltd.」无对应关系，且上下文未提供任何关联证据，无法判定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 57,
+ "cached_read_tokens": 256,
+ "latency_ms": 4766.390000004321,
+ "provider": "deepseek"
+}

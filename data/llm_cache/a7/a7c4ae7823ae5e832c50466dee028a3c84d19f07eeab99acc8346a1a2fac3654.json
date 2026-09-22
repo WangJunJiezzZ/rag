@@ -1,0 +1,82 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"澜图资本管理有限公司（3）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"林嘉铭\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"澜图资本管理有限公司（3）\",\n      \"predicate\": \"董事会成员增补完成于\",\n      \"object\": \"2022年8月17日\"\n    },\n    {\n      \"subject\": \"澜图资本管理有限公司（3）\",\n      \"predicate\": \"新任董事为\",\n      \"object\": \"林嘉铭\"\n    },\n    {\n      \"subject\": \"董事会\",\n      \"predicate\": \"由五名成员组成\",\n      \"object\": \"五名成员\"\n    },\n    {\n      \"subject\": \"林嘉铭\",\n      \"predicate\": \"曾任职于\",\n      \"object\": \"多家区域性金融机构\"\n    },\n    {\n      \"subject\": \"林嘉铭\",\n      \"predicate\": \"担任职务\",\n      \"object\": \"投资及风险管理职务\"\n    },\n    {\n      \"subject\": \"林嘉铭\",\n      \"predicate\": \"从业经验超过\",\n      \"object\": \"20年\"\n    },\n    {\n      \"subject\": \"林嘉铭\",\n      \"predicate\": \"擅长领域\",\n      \"object\": \"跨境资产配置\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"由不少于三名成员组成\",\n      \"object\": \"不少于三名成员\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"负责审议\",\n      \"object\": \"重大投资决策及关联交易事项\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"召开会议频率\",\n      \"object\": \"每月至少一次\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资本管理有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "林嘉铭",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "董事会成员增补完成于",
+    "object": "2022年8月17日"
+   },
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "新任董事为",
+    "object": "林嘉铭"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "由五名成员组成",
+    "object": "五名成员"
+   },
+   {
+    "subject": "林嘉铭",
+    "predicate": "曾任职于",
+    "object": "多家区域性金融机构"
+   },
+   {
+    "subject": "林嘉铭",
+    "predicate": "担任职务",
+    "object": "投资及风险管理职务"
+   },
+   {
+    "subject": "林嘉铭",
+    "predicate": "从业经验超过",
+    "object": "20年"
+   },
+   {
+    "subject": "林嘉铭",
+    "predicate": "擅长领域",
+    "object": "跨境资产配置"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "由不少于三名成员组成",
+    "object": "不少于三名成员"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责审议",
+    "object": "重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "召开会议频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 240,
+ "output_tokens": 435,
+ "cached_read_tokens": 0,
+ "latency_ms": 3981.4180419780314,
+ "provider": "deepseek"
+}

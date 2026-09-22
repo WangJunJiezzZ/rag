@@ -1,0 +1,72 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"燧明投资控股有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"陈沐阳\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"2024年12月24日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"三年\",\n      \"type\": \"时长\"\n    },\n    {\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"部门\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"燧明投资控股有限公司（2）\",\n      \"predicate\": \"委任\",\n      \"object\": \"陈沐阳\",\n      \"properties\": {\n        \"职位\": \"董事\",\n        \"生效日期\": \"2024年12月24日\",\n        \"任期\": \"三年\"\n      }\n    },\n    {\n      \"subject\": \"陈沐阳\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\",\n      \"properties\": {\n        \"所属公司\": \"燧明投资控股有限公司（2）\",\n        \"生效日期\": \"2024年12月24日\",\n        \"任期\": \"三年\"\n      }\n    },\n    {\n      \"subject\": \"合规与风险管理职能\",\n      \"predicate\": \"报告\",\n      \"object\": \"董事会\",\n      \"properties\": {\n        \"报告方式\": \"直接向董事会报告\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "燧明投资控股有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "陈沐阳",
+    "type": "人物"
+   },
+   {
+    "name": "2024年12月24日",
+    "type": "日期"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "部门"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "燧明投资控股有限公司（2）",
+    "predicate": "委任",
+    "object": "陈沐阳",
+    "properties": {
+     "职位": "董事",
+     "生效日期": "2024年12月24日",
+     "任期": "三年"
+    }
+   },
+   {
+    "subject": "陈沐阳",
+    "predicate": "担任",
+    "object": "董事",
+    "properties": {
+     "所属公司": "燧明投资控股有限公司（2）",
+     "生效日期": "2024年12月24日",
+     "任期": "三年"
+    }
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告",
+    "object": "董事会",
+    "properties": {
+     "报告方式": "直接向董事会报告"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 235,
+ "output_tokens": 352,
+ "cached_read_tokens": 0,
+ "latency_ms": 4725.595625001006,
+ "provider": "deepseek"
+}

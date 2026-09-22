@@ -1,0 +1,145 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"霁川资产管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"Jichuan Asset Management Pte. Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"刘知微\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"2023年5月21日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"股东大会\",\n      \"type\": \"会议\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"注册机关\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"金融相关专业\",\n      \"type\": \"专业\"\n    },\n    {\n      \"name\": \"硕士学位\",\n      \"type\": \"学位\"\n    },\n    {\n      \"name\": \"独立审计机构\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"投资者\",\n      \"type\": \"群体\"\n    },\n    {\n      \"name\": \"财政年度\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"四个月\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"中文版本\",\n      \"type\": \"文件版本\"\n    },\n    {\n      \"name\": \"英文版本\",\n      \"type\": \"文件版本\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"霁川资产管理有限公司\",\n      \"predicate\": \"别名\",\n      \"object\": \"Jichuan Asset Management Pte. Ltd.\"\n    },\n    {\n      \"subject\": \"刘知微\",\n      \"predicate\": \"当选为\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"刘知微\",\n      \"predicate\": \"当选于\",\n      \"object\": \"股东大会\"\n    },\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"召开于\",\n      \"object\": \"2023年5月21日\"\n    },\n    {\n      \"subject\": \"刘知微\",\n      \"predicate\": \"任职于\",\n      \"object\": \"霁川资产管理有限公司\"\n    },\n    {\n      \"subject\": \"刘知微\",\n      \"predicate\": \"持有\",\n      \"object\": \"硕士学位\"\n    },\n    {\n      \"subject\": \"硕士学位\",\n      \"predicate\": \"专业为\",\n      \"object\": \"金融相关专业\"\n    },\n    {\n      \"subject\": \"霁川资产管理有限公司\",\n      \"predicate\": \"备案于\",\n      \"object\": \"注册机关\"\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"审计机构为\",\n      \"object\": \"独立审计机构\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"审计\",\n      \"object\": \"本基金\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"提供报告给\",\n      \"object\": \"投资者\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供于\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"中文版本\",\n      \"predicate\": \"优先于\",\n      \"object\": \"英文版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Jichuan Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "刘知微",
+    "type": "人物"
+   },
+   {
+    "name": "2023年5月21日",
+    "type": "日期"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "金融相关专业",
+    "type": "专业"
+   },
+   {
+    "name": "硕士学位",
+    "type": "学位"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间"
+   },
+   {
+    "name": "四个月",
+    "type": "时间"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件版本"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "别名",
+    "object": "Jichuan Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "当选为",
+    "object": "董事"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "当选于",
+    "object": "股东大会"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "召开于",
+    "object": "2023年5月21日"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "任职于",
+    "object": "霁川资产管理有限公司"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "持有",
+    "object": "硕士学位"
+   },
+   {
+    "subject": "硕士学位",
+    "predicate": "专业为",
+    "object": "金融相关专业"
+   },
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "备案于",
+    "object": "注册机关"
+   },
+   {
+    "subject": "本基金",
+    "predicate": "审计机构为",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "提供报告给",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供于",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "中文版本",
+    "predicate": "优先于",
+    "object": "英文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 228,
+ "output_tokens": 734,
+ "cached_read_tokens": 0,
+ "latency_ms": 4439.482583024073,
+ "provider": "deepseek"
+}

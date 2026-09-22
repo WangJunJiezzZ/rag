@@ -1,0 +1,47 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"凛川环球投资有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"黄怀瑾\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"黄怀瑾\",\n      \"predicate\": \"新任董事\",\n      \"object\": \"凛川环球投资有限公司（2）\"\n    },\n    {\n      \"subject\": \"黄怀瑾\",\n      \"predicate\": \"成员\",\n      \"object\": \"董事会\"\n    },\n    {\n      \"subject\": \"凛川环球投资有限公司（2）\",\n      \"predicate\": \"设立\",\n      \"object\": \"投资委员会\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川环球投资有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "黄怀瑾",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "黄怀瑾",
+    "predicate": "新任董事",
+    "object": "凛川环球投资有限公司（2）"
+   },
+   {
+    "subject": "黄怀瑾",
+    "predicate": "成员",
+    "object": "董事会"
+   },
+   {
+    "subject": "凛川环球投资有限公司（2）",
+    "predicate": "设立",
+    "object": "投资委员会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 235,
+ "output_tokens": 196,
+ "cached_read_tokens": 0,
+ "latency_ms": 3480.344917043112,
+ "provider": "deepseek"
+}

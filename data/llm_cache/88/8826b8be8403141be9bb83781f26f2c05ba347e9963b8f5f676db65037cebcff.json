@@ -1,0 +1,118 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"栖梧资本管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"谢慕白\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"股东大会\",\n      \"type\": \"会议\"\n    },\n    {\n      \"name\": \"2022年8月15日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"注册机关\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"独立审计机构\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"审计报告\",\n      \"type\": \"文件\"\n    },\n    {\n      \"name\": \"投资者\",\n      \"type\": \"群体\"\n    },\n    {\n      \"name\": \"财政年度\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"中文版本\",\n      \"type\": \"文件\"\n    },\n    {\n      \"name\": \"英文版本\",\n      \"type\": \"文件\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"召开于\",\n      \"object\": \"2022年8月15日\"\n    },\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"审议通过\",\n      \"object\": \"谢慕白当选为本公司董事\"\n    },\n    {\n      \"subject\": \"谢慕白\",\n      \"predicate\": \"当选为\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"谢慕白\",\n      \"predicate\": \"任职于\",\n      \"object\": \"栖梧资本管理有限公司\"\n    },\n    {\n      \"subject\": \"栖梧资本管理有限公司\",\n      \"predicate\": \"向注册机关备案\",\n      \"object\": \"相关变更\"\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"账目由审计\",\n      \"object\": \"独立审计机构\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"提供\",\n      \"object\": \"审计报告\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供给\",\n      \"object\": \"投资者\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供时间\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"本公告\",\n      \"predicate\": \"以...为准\",\n      \"object\": \"中文版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "谢慕白",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "2022年8月15日",
+    "type": "日期"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "股东大会",
+    "predicate": "召开于",
+    "object": "2022年8月15日"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "谢慕白当选为本公司董事"
+   },
+   {
+    "subject": "谢慕白",
+    "predicate": "当选为",
+    "object": "董事"
+   },
+   {
+    "subject": "谢慕白",
+    "predicate": "任职于",
+    "object": "栖梧资本管理有限公司"
+   },
+   {
+    "subject": "栖梧资本管理有限公司",
+    "predicate": "向注册机关备案",
+    "object": "相关变更"
+   },
+   {
+    "subject": "本基金",
+    "predicate": "账目由审计",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "提供",
+    "object": "审计报告"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供给",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "本公告",
+    "predicate": "以...为准",
+    "object": "中文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 226,
+ "output_tokens": 582,
+ "cached_read_tokens": 0,
+ "latency_ms": 4092.081957962364,
+ "provider": "deepseek"
+}

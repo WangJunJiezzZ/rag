@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2024 年 5 月 22 日 起，委任李敬亭为本公司董事\", \"subject\": \"李敬亭\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"瑾樾环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2024 年 5 月 22 日 起，委任李敬亭为本公司董事",
+    "subject": "李敬亭",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "瑾樾环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1633,
+ "output_tokens": 78,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3112.3440000228584,
+ "provider": "deepseek"
+}

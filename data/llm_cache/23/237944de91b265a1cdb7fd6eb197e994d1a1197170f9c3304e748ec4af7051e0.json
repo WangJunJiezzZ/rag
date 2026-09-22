@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「翊澜资产管理有限公司」，B为英文名「Heming Financial Services Ltd.」，两者名称、语言及业务指向均不一致，无证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「翊澜资产管理有限公司」，B为英文名「Heming Financial Services Ltd.」，两者名称、语言及业务指向均不一致，无证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 400,
+ "output_tokens": 57,
+ "cached_read_tokens": 256,
+ "latency_ms": 3021.4825829607435,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"新任董事为许慕白\", \"subject\": \"许慕白\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"澜图资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "新任董事为许慕白",
+    "subject": "许慕白",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "澜图资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1618,
+ "output_tokens": 57,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3228.453667019494,
+ "provider": "deepseek"
+}

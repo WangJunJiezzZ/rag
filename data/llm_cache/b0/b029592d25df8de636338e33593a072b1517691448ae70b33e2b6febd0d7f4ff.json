@@ -1,0 +1,33 @@
+{
+ "text": "{\n  \"entity_relations\": [\n    {\n      \"subject\": \"周书尧\",\n      \"relation\": \"持有\",\n      \"object\": \"柏观环球投资有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"51%\",\n        \"登记日期\": \"2022年4月8日\"\n      }\n    },\n    {\n      \"subject\": \"周书尧\",\n      \"relation\": \"是主要股东之一\",\n      \"object\": \"柏观环球投资有限公司\"\n    },\n    {\n      \"subject\": \"柏观环球投资有限公司\",\n      \"relation\": \"发布\",\n      \"object\": \"权益变动公告\"\n    }\n  ]\n}",
+ "parsed": {
+  "entity_relations": [
+   {
+    "subject": "周书尧",
+    "relation": "持有",
+    "object": "柏观环球投资有限公司",
+    "attributes": {
+     "持股比例": "51%",
+     "登记日期": "2022年4月8日"
+    }
+   },
+   {
+    "subject": "周书尧",
+    "relation": "是主要股东之一",
+    "object": "柏观环球投资有限公司"
+   },
+   {
+    "subject": "柏观环球投资有限公司",
+    "relation": "发布",
+    "object": "权益变动公告"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 240,
+ "output_tokens": 137,
+ "cached_read_tokens": 0,
+ "latency_ms": 3342.7950000041164,
+ "provider": "deepseek"
+}

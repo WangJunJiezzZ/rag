@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"柏观环球投资有限公司\",\"type\":\"公司\"},{\"name\":\"周牧之\",\"type\":\"股东\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"周牧之\",\"predicate\":\"持有\",\"object\":\"柏观环球投资有限公司\",\"attributes\":{\"持股比例\":\"30%\",\"登记日期\":\"2024年9月21日\"}},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"柏观环球投资有限公司\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "柏观环球投资有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "周牧之",
+    "type": "股东"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周牧之",
+    "predicate": "持有",
+    "object": "柏观环球投资有限公司",
+    "attributes": {
+     "持股比例": "30%",
+     "登记日期": "2024年9月21日"
+    }
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "柏观环球投资有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 336,
+ "output_tokens": 122,
+ "cached_read_tokens": 128,
+ "latency_ms": 2756.0466660070233,
+ "provider": "deepseek"
+}

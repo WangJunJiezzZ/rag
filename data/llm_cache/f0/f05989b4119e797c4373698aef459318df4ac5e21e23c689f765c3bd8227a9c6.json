@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"澜图资产管理有限公司\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2024903035\",\n        \"注册地\": \"白鹭湾\",\n        \"注册日期\": \"2002年3月22日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"白鹭湾\",\n      \"type\": \"地点\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"注册地\",\n      \"object\": \"白鹭湾\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2024903035\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2002年3月22日\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资产管理有限公司",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2024903035",
+     "注册地": "白鹭湾",
+     "注册日期": "2002年3月22日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "白鹭湾",
+    "type": "地点"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册编号",
+    "object": "2024903035"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册日期",
+    "object": "2002年3月22日"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 235,
+ "output_tokens": 290,
+ "cached_read_tokens": 0,
+ "latency_ms": 4259.02254099492,
+ "provider": "deepseek"
+}

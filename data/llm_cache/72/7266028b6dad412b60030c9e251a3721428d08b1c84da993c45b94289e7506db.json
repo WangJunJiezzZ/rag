@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2024 年 11 月 19 日 完成董事会成员增补，新任董事为刘景行\", \"subject\": \"刘景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"鹤鸣环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2024 年 11 月 19 日 完成董事会成员增补，新任董事为刘景行",
+    "subject": "刘景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "鹤鸣环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1629,
+ "output_tokens": 80,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4731.595624994952,
+ "provider": "deepseek"
+}

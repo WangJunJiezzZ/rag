@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2024 年 4 月 6 日 起，委任吴知微为本公司董事\", \"subject\": \"吴知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"汐禾国际控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2024 年 4 月 6 日 起，委任吴知微为本公司董事",
+    "subject": "吴知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "汐禾国际控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1627,
+ "output_tokens": 77,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3347.6618329877965,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：柏观金融服务有限公司（3）\", \"subject\": \"柏观金融服务有限公司（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：柏观金融服务有限公司（3）",
+    "subject": "柏观金融服务有限公司（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1192,
+ "output_tokens": 66,
+ "cached_read_tokens": 768,
+ "latency_ms": 3543.7427080469206,
+ "provider": "deepseek"
+}

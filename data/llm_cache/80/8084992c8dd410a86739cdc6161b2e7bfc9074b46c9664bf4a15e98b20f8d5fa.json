@@ -1,0 +1,171 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"岫云结构化信贷基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"岫云资产管理有限公司\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regplace\",\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"新元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"结构化信贷策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"auditor\",\n      \"name\": \"独立审计机构\",\n      \"type\": \"审计机构\"\n    },\n    {\n      \"id\": \"investor\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    },\n    {\n      \"id\": \"investcommittee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称\",\n      \"object\": \"岫云结构化信贷基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2023年12月5日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"regplace\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"审计机构\",\n      \"object\": \"auditor\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面向对象\",\n      \"object\": \"investor\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"职责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"职责\",\n      \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"auditor\",\n      \"predicate\": \"职责\",\n      \"object\": \"按年度审计基金账目\"\n    },\n    {\n      \"subject\": \"investor\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"50万新元\"\n    },\n    {\n      \"subject\": \"investor\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"10万新元\"\n    },\n    {\n      \"subject\": \"investor\",\n      \"predicate\": \"赎回申请时间\",\n      \"object\": \"每月最后一个工作日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回款项支付时限\",\n      \"object\": \"确认后5个工作日内\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"管理费年费率\",\n      \"object\": \"1.50%\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"0.10%\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"0.12%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"非上市股权或流动性受限资产投资上限\",\n      \"object\": \"不超过10%的资产净值\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"该等投资审批机构\",\n      \"object\": \"investcommittee\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "岫云结构化信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "岫云资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "结构化信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   },
+   {
+    "id": "investor",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "investcommittee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2023年12月5日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "审计机构",
+    "object": "auditor"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面向对象",
+    "object": "investor"
+   },
+   {
+    "subject": "manager",
+    "predicate": "职责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "职责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "auditor",
+    "predicate": "职责",
+    "object": "按年度审计基金账目"
+   },
+   {
+    "subject": "investor",
+    "predicate": "最低认购金额",
+    "object": "50万新元"
+   },
+   {
+    "subject": "investor",
+    "predicate": "追加认购最低金额",
+    "object": "10万新元"
+   },
+   {
+    "subject": "investor",
+    "predicate": "赎回申请时间",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付时限",
+    "object": "确认后5个工作日内"
+   },
+   {
+    "subject": "manager",
+    "predicate": "管理费年费率",
+    "object": "1.50%"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "托管费年费率",
+    "object": "0.10%"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "托管费年费率",
+    "object": "0.12%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权或流动性受限资产投资上限",
+    "object": "不超过10%的资产净值"
+   },
+   {
+    "subject": "fund",
+    "predicate": "该等投资审批机构",
+    "object": "investcommittee"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 803,
+ "output_tokens": 970,
+ "cached_read_tokens": 0,
+ "latency_ms": 7489.1989169991575,
+ "provider": "deepseek"
+}

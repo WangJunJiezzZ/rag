@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2023 年 12 月 15 日 召开的股东大会审议通过，洪景行当选为本公司董事，即日生效\", \"subject\": \"洪景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"澜图资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2023 年 12 月 15 日 召开的股东大会审议通过，洪景行当选为本公司董事，即日生效",
+    "subject": "洪景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "澜图资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1179,
+ "output_tokens": 83,
+ "cached_read_tokens": 896,
+ "latency_ms": 3449.072957970202,
+ "provider": "deepseek"
+}

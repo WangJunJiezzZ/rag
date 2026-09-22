@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（澜图资本管理有限公司 vs Yuanxi Global Investments Ltd.），且A带序号（3），无证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（澜图资本管理有限公司 vs Yuanxi Global Investments Ltd.），且A带序号（3），无证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 48,
+ "cached_read_tokens": 128,
+ "latency_ms": 3861.8617920437828,
+ "provider": "deepseek"
+}

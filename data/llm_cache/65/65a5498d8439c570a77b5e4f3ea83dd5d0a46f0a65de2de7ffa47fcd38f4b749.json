@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"中文名「茗谷投资」与英文名「Jinyue Global Investments Ltd.」音译和用词均不对应，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "中文名「茗谷投资」与英文名「Jinyue Global Investments Ltd.」音译和用词均不对应，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 52,
+ "cached_read_tokens": 128,
+ "latency_ms": 3574.1025420138612,
+ "provider": "deepseek"
+}

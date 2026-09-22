@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.3, \"reason\": \"中文名与英文名音译不对应，且无其他强标识证明为同一实体\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.3,
+  "reason": "中文名与英文名音译不对应，且无其他强标识证明为同一实体"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 378,
+ "output_tokens": 37,
+ "cached_read_tokens": 128,
+ "latency_ms": 3467.457916995045,
+ "provider": "deepseek"
+}

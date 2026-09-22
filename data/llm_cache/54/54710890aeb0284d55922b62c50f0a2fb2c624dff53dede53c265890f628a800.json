@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 6 月 6 日，许慕白直接持有本公司已发行股本的 51%，为本公司主要股东之一\", \"subject\": \"许慕白\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"麓岩投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 6 月 6 日，许慕白直接持有本公司已发行股本的 51%，为本公司主要股东之一",
+    "subject": "许慕白",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "麓岩投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1636,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 2569.708166003693,
+ "provider": "deepseek"
+}

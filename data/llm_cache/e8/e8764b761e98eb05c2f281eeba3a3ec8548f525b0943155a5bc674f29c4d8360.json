@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"昀舟投资控股有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"洪衡之\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"2025年6月1日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"51%\",\n      \"type\": \"持股比例\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"洪衡之\",\n      \"predicate\": \"持有\",\n      \"object\": \"昀舟投资控股有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"51%\",\n        \"登记日期\": \"2025年6月1日\"\n      }\n    },\n    {\n      \"subject\": \"洪衡之\",\n      \"predicate\": \"是主要股东之一\",\n      \"object\": \"昀舟投资控股有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "昀舟投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "洪衡之",
+    "type": "人物"
+   },
+   {
+    "name": "2025年6月1日",
+    "type": "日期"
+   },
+   {
+    "name": "51%",
+    "type": "持股比例"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "洪衡之",
+    "predicate": "持有",
+    "object": "昀舟投资控股有限公司",
+    "attributes": {
+     "持股比例": "51%",
+     "登记日期": "2025年6月1日"
+    }
+   },
+   {
+    "subject": "洪衡之",
+    "predicate": "是主要股东之一",
+    "object": "昀舟投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 240,
+ "output_tokens": 199,
+ "cached_read_tokens": 0,
+ "latency_ms": 3187.788332987111,
+ "provider": "deepseek"
+}

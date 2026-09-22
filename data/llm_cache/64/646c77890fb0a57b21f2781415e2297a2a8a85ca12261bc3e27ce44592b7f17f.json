@@ -1,0 +1,101 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"砥行全球宏观基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"砥行资本（2）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"临海特区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"全球宏观策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"auditor\",\n      \"name\": \"独立审计机构\",\n      \"type\": \"审计机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"jurisdiction\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"committee\",\n      \"predicate\": \"审批\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"auditor\",\n      \"predicate\": \"审计\",\n      \"object\": \"fund\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砥行全球宏观基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砥行资本（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "全球宏观策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "committee",
+    "predicate": "审批",
+    "object": "fund"
+   },
+   {
+    "subject": "auditor",
+    "predicate": "审计",
+    "object": "fund"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 837,
+ "output_tokens": 497,
+ "cached_read_tokens": 640,
+ "latency_ms": 5407.834207988344,
+ "provider": "deepseek"
+}

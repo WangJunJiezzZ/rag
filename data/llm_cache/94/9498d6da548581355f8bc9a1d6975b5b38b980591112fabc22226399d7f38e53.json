@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"砥行资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"王沐阳\",\"type\":\"人员\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"王沐阳\",\"predicate\":\"持有\",\"object\":\"砥行资本管理有限公司\",\"attributes\":{\"持股比例\":\"15%\",\"登记日期\":\"2025年4月8日\"}},{\"subject\":\"砥行资本管理有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砥行资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "王沐阳",
+    "type": "人员"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "王沐阳",
+    "predicate": "持有",
+    "object": "砥行资本管理有限公司",
+    "attributes": {
+     "持股比例": "15%",
+     "登记日期": "2025年4月8日"
+    }
+   },
+   {
+    "subject": "砥行资本管理有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 335,
+ "output_tokens": 122,
+ "cached_read_tokens": 128,
+ "latency_ms": 3148.140000004787,
+ "provider": "deepseek"
+}

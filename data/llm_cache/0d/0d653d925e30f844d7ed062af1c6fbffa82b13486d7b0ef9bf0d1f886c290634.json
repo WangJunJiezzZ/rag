@@ -1,0 +1,107 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"松岚环球投资有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"许慕白\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"股东大会\",\n      \"type\": \"会议\"\n    },\n    {\n      \"name\": \"2023年8月13日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"注册机关\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"结构化产品与另类投资\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"name\": \"66亿单位货币\",\n      \"type\": \"金额\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"许慕白\",\n      \"predicate\": \"当选为\",\n      \"object\": \"松岚环球投资有限公司（2）董事\"\n    },\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"审议通过\",\n      \"object\": \"许慕白当选董事\"\n    },\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"召开于\",\n      \"object\": \"2023年8月13日\"\n    },\n    {\n      \"subject\": \"许慕白当选董事\",\n      \"predicate\": \"生效于\",\n      \"object\": \"2023年8月13日\"\n    },\n    {\n      \"subject\": \"相关变更\",\n      \"predicate\": \"备案于\",\n      \"object\": \"注册机关\"\n    },\n    {\n      \"subject\": \"许慕白\",\n      \"predicate\": \"从事\",\n      \"object\": \"结构化产品与另类投资的设计与分销工作\"\n    },\n    {\n      \"subject\": \"许慕白\",\n      \"predicate\": \"管理规模\",\n      \"object\": \"66亿单位货币\"\n    },\n    {\n      \"subject\": \"松岚环球投资有限公司（2）\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"负责\",\n      \"object\": \"审议重大投资决策及关联交易事项\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"成员不少于\",\n      \"object\": \"三名成员\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"召开频率\",\n      \"object\": \"每月至少一次\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚环球投资有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "许慕白",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "2023年8月13日",
+    "type": "日期"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "投资委员会",
+    "type": "机构"
+   },
+   {
+    "name": "结构化产品与另类投资",
+    "type": "业务领域"
+   },
+   {
+    "name": "66亿单位货币",
+    "type": "金额"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许慕白",
+    "predicate": "当选为",
+    "object": "松岚环球投资有限公司（2）董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "许慕白当选董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "召开于",
+    "object": "2023年8月13日"
+   },
+   {
+    "subject": "许慕白当选董事",
+    "predicate": "生效于",
+    "object": "2023年8月13日"
+   },
+   {
+    "subject": "相关变更",
+    "predicate": "备案于",
+    "object": "注册机关"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "从事",
+    "object": "结构化产品与另类投资的设计与分销工作"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "管理规模",
+    "object": "66亿单位货币"
+   },
+   {
+    "subject": "松岚环球投资有限公司（2）",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员不少于",
+    "object": "三名成员"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "召开频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 238,
+ "output_tokens": 567,
+ "cached_read_tokens": 0,
+ "latency_ms": 4165.355541976169,
+ "provider": "deepseek"
+}

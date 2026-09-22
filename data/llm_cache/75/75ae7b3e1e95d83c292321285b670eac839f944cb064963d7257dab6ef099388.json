@@ -1,0 +1,52 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"漱玉资管\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2012988662\",\n        \"注册地\": \"新港城\",\n        \"注册日期\": \"2009年10月9日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"漱玉资管\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2012988662\"\n    },\n    {\n      \"subject\": \"漱玉资管\",\n      \"predicate\": \"注册地\",\n      \"object\": \"新港城\"\n    },\n    {\n      \"subject\": \"漱玉资管\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2009年10月9日\"\n    },\n    {\n      \"subject\": \"漱玉资管\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"漱玉资管\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "漱玉资管",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2012988662",
+     "注册地": "新港城",
+     "注册日期": "2009年10月9日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "漱玉资管",
+    "predicate": "注册编号",
+    "object": "2012988662"
+   },
+   {
+    "subject": "漱玉资管",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "漱玉资管",
+    "predicate": "注册日期",
+    "object": "2009年10月9日"
+   },
+   {
+    "subject": "漱玉资管",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "漱玉资管",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 232,
+ "output_tokens": 270,
+ "cached_read_tokens": 0,
+ "latency_ms": 4914.140666020103,
+ "provider": "deepseek"
+}

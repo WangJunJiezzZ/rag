@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)的柏观金融服务公司，B为罗马化名Xiuyun资产管理公司，名称主体与业务类型均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)的柏观金融服务公司，B为罗马化名Xiuyun资产管理公司，名称主体与业务类型均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 56,
+ "cached_read_tokens": 256,
+ "latency_ms": 2938.22704203194,
+ "provider": "deepseek"
+}

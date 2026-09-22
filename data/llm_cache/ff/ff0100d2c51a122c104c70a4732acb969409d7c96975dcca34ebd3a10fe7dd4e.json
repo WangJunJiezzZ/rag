@@ -1,0 +1,64 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"松岚资产管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"周书尧\",\n      \"type\": \"人员\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织机构\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"董事会成员增补\",\n      \"object\": \"周书尧\",\n      \"date\": \"2022年12月27日\"\n    },\n    {\n      \"subject\": \"周书尧\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\",\n      \"organization\": \"松岚资产管理有限公司\"\n    },\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"负责\",\n      \"object\": \"审议重大投资决策及关联交易事项\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"成员人数\",\n      \"object\": \"不少于三名\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"会议频率\",\n      \"object\": \"每月至少召开一次\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "周书尧",
+    "type": "人员"
+   },
+   {
+    "name": "董事会",
+    "type": "组织机构"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "董事会成员增补",
+    "object": "周书尧",
+    "date": "2022年12月27日"
+   },
+   {
+    "subject": "周书尧",
+    "predicate": "担任",
+    "object": "董事",
+    "organization": "松岚资产管理有限公司"
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少召开一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 227,
+ "output_tokens": 303,
+ "cached_read_tokens": 0,
+ "latency_ms": 4349.649125011638,
+ "provider": "deepseek"
+}

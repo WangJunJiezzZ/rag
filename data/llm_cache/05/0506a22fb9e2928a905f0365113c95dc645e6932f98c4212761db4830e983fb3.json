@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 10 月 19 日，周牧之直接持有本公司已发行股本的 75%，为本公司主要股东之一\", \"subject\": \"周牧之\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"珩屿资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 10 月 19 日，周牧之直接持有本公司已发行股本的 75%，为本公司主要股东之一",
+    "subject": "周牧之",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "珩屿资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1637,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4398.984750034288,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：澄江特别行政区\", \"subject\": \"樾川国际控股有限公司（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：澄江特别行政区",
+    "subject": "樾川国际控股有限公司（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1196,
+ "output_tokens": 66,
+ "cached_read_tokens": 768,
+ "latency_ms": 2423.7103749765083,
+ "provider": "deepseek"
+}

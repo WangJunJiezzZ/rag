@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"朱思齐当选为本公司董事\", \"subject\": \"朱思齐\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"栖梧资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "朱思齐当选为本公司董事",
+    "subject": "朱思齐",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "栖梧资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1626,
+ "output_tokens": 59,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4172.4478749674745,
+ "provider": "deepseek"
+}

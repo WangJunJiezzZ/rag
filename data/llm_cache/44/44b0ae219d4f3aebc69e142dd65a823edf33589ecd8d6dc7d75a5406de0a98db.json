@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（国际控股 vs 环球投资），且无证据表明指向同一实体\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（国际控股 vs 环球投资），且无证据表明指向同一实体"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 35,
+ "cached_read_tokens": 256,
+ "latency_ms": 2877.4581250036135,
+ "provider": "deepseek"
+}

@@ -1,0 +1,61 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"砥行私募信贷基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"砥行资本管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"regulator\",\"name\":\"临海特区\",\"type\":\"注册地\"},{\"id\":\"currency\",\"name\":\"新元\",\"type\":\"基准货币\"}],\"relations\":[{\"subject\":\"砥行私募信贷基金\",\"predicate\":\"基金管理人\",\"object\":\"砥行资本管理有限公司\"},{\"subject\":\"砥行私募信贷基金\",\"predicate\":\"基金托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"砥行私募信贷基金\",\"predicate\":\"注册地\",\"object\":\"临海特区\"},{\"subject\":\"砥行私募信贷基金\",\"predicate\":\"基准货币\",\"object\":\"新元\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砥行私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砥行资本管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regulator",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "新元",
+    "type": "基准货币"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "砥行私募信贷基金",
+    "predicate": "基金管理人",
+    "object": "砥行资本管理有限公司"
+   },
+   {
+    "subject": "砥行私募信贷基金",
+    "predicate": "基金托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "砥行私募信贷基金",
+    "predicate": "注册地",
+    "object": "临海特区"
+   },
+   {
+    "subject": "砥行私募信贷基金",
+    "predicate": "基准货币",
+    "object": "新元"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 909,
+ "output_tokens": 187,
+ "cached_read_tokens": 768,
+ "latency_ms": 3719.750375021249,
+ "provider": "deepseek"
+}

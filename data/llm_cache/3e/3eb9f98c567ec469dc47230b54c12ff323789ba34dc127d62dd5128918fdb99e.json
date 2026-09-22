@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「松岚资产管理有限公司」与英文名「Huilan Investment Holdings Ltd.」在名称、业务类型和罗马化上均不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「松岚资产管理有限公司」与英文名「Huilan Investment Holdings Ltd.」在名称、业务类型和罗马化上均不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 376,
+ "output_tokens": 54,
+ "cached_read_tokens": 128,
+ "latency_ms": 6320.316958008334,
+ "provider": "deepseek"
+}

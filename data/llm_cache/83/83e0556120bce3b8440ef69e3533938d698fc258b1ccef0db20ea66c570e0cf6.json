@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「星海投资控股有限公司」与英文名「Xiuyun Asset Management Pte. Ltd.」在名称、语言及业务表述上均不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「星海投资控股有限公司」与英文名「Xiuyun Asset Management Pte. Ltd.」在名称、语言及业务表述上均不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 58,
+ "cached_read_tokens": 128,
+ "latency_ms": 3160.7180410064757,
+ "provider": "deepseek"
+}

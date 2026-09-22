@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2024 年 8 月 8 日，孙志诚直接持有本公司已发行股本的 20%，为本公司主要股东之一\", \"subject\": \"孙志诚\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"茗谷投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2024 年 8 月 8 日，孙志诚直接持有本公司已发行股本的 20%，为本公司主要股东之一",
+    "subject": "孙志诚",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "茗谷投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1630,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3304.8207499668933,
+ "provider": "deepseek"
+}

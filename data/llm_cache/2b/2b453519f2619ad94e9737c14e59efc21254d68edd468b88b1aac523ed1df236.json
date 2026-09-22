@@ -1,0 +1,33 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"茗谷投资控股有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"沅曦金融服务有限公司\",\n      \"type\": \"公司\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"茗谷投资控股有限公司\",\n      \"predicate\": \"持有\",\n      \"object\": \"沅曦金融服务有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"100%\",\n        \"关系类型\": \"全资附属公司\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "茗谷投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "沅曦金融服务有限公司",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "茗谷投资控股有限公司",
+    "predicate": "持有",
+    "object": "沅曦金融服务有限公司",
+    "attributes": {
+     "持股比例": "100%",
+     "关系类型": "全资附属公司"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 222,
+ "output_tokens": 119,
+ "cached_read_tokens": 0,
+ "latency_ms": 3383.0809580395,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（徽岚 vs Qiwu），且A带序号（2）指向特定分支，无证据表明二者为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（徽岚 vs Qiwu），且A带序号（2）指向特定分支，无证据表明二者为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 47,
+ "cached_read_tokens": 128,
+ "latency_ms": 3864.520540984813,
+ "provider": "deepseek"
+}

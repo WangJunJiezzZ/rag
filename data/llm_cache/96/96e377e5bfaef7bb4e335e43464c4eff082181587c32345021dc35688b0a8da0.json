@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"珩屿金融服务有限公司\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2014500156\",\n        \"注册地\": \"新港城\",\n        \"注册日期\": \"2017年8月17日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"新港城\",\n      \"type\": \"地点\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"珩屿金融服务有限公司\",\n      \"predicate\": \"注册地\",\n      \"object\": \"新港城\"\n    },\n    {\n      \"subject\": \"珩屿金融服务有限公司\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2017年8月17日\"\n    },\n    {\n      \"subject\": \"珩屿金融服务有限公司\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2014500156\"\n    },\n    {\n      \"subject\": \"珩屿金融服务有限公司\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"珩屿金融服务有限公司\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "珩屿金融服务有限公司",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2014500156",
+     "注册地": "新港城",
+     "注册日期": "2017年8月17日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "新港城",
+    "type": "地点"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "珩屿金融服务有限公司",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "珩屿金融服务有限公司",
+    "predicate": "注册日期",
+    "object": "2017年8月17日"
+   },
+   {
+    "subject": "珩屿金融服务有限公司",
+    "predicate": "注册编号",
+    "object": "2014500156"
+   },
+   {
+    "subject": "珩屿金融服务有限公司",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "珩屿金融服务有限公司",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 236,
+ "output_tokens": 290,
+ "cached_read_tokens": 0,
+ "latency_ms": 5021.81412500795,
+ "provider": "deepseek"
+}

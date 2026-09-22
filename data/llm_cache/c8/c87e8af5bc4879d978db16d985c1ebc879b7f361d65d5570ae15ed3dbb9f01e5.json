@@ -1,0 +1,60 @@
+{
+ "text": "{\"entities\":[{\"name\":\"砺石环球投资有限公司\",\"type\":\"公司\"},{\"name\":\"吴知微\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"注册机关\",\"type\":\"机构\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"吴知微\",\"predicate\":\"当选为\",\"object\":\"砺石环球投资有限公司\",\"context\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"吴知微\",\"context\":\"当选董事\"},{\"subject\":\"砺石环球投资有限公司\",\"predicate\":\"向注册机关备案\",\"object\":\"注册机关\",\"context\":\"董事变更\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"砺石环球投资有限公司\",\"context\":\"账目\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砺石环球投资有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "吴知微",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "吴知微",
+    "predicate": "当选为",
+    "object": "砺石环球投资有限公司",
+    "context": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "吴知微",
+    "context": "当选董事"
+   },
+   {
+    "subject": "砺石环球投资有限公司",
+    "predicate": "向注册机关备案",
+    "object": "注册机关",
+    "context": "董事变更"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "砺石环球投资有限公司",
+    "context": "账目"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 325,
+ "output_tokens": 161,
+ "cached_read_tokens": 128,
+ "latency_ms": 3748.8096249871887,
+ "provider": "deepseek"
+}

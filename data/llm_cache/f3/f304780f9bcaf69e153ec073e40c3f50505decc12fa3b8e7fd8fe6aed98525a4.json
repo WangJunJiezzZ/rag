@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：临海特区\", \"subject\": \"澜图资管（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：临海特区",
+    "subject": "澜图资管（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1633,
+ "output_tokens": 62,
+ "cached_read_tokens": 1280,
+ "latency_ms": 2904.900915978942,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Linchuan Asset Management Pte. Ltd.\", \"subject\": \"Linchuan Asset Management Pte. Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Linchuan Asset Management Pte. Ltd.",
+    "subject": "Linchuan Asset Management Pte. Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1197,
+ "output_tokens": 75,
+ "cached_read_tokens": 768,
+ "latency_ms": 2918.9853339921683,
+ "provider": "deepseek"
+}

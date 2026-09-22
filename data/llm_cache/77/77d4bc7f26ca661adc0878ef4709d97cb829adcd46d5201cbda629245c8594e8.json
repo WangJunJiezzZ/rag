@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Daiyu Financial Services Ltd.\", \"subject\": \"Daiyu Financial Services Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Daiyu Financial Services Ltd.",
+    "subject": "Daiyu Financial Services Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1189,
+ "output_tokens": 68,
+ "cached_read_tokens": 768,
+ "latency_ms": 2711.8905839743093,
+ "provider": "deepseek"
+}

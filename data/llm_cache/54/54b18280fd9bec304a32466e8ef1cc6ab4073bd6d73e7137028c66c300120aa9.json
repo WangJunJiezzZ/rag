@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：珩屿国际控股有限公司（2）\", \"subject\": \"珩屿国际控股有限公司（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：珩屿国际控股有限公司（2）",
+    "subject": "珩屿国际控股有限公司（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1194,
+ "output_tokens": 72,
+ "cached_read_tokens": 768,
+ "latency_ms": 3785.3831670363434,
+ "provider": "deepseek"
+}

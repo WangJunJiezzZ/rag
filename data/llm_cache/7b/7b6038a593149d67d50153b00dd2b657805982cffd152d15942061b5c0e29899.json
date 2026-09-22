@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"徽岚资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"朱叔夜\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"朱叔夜\",\"predicate\":\"担任董事\",\"object\":\"徽岚资产管理有限公司\"},{\"subject\":\"朱叔夜\",\"predicate\":\"属于\",\"object\":\"董事会\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"徽岚资产管理有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "徽岚资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "朱叔夜",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "朱叔夜",
+    "predicate": "担任董事",
+    "object": "徽岚资产管理有限公司"
+   },
+   {
+    "subject": "朱叔夜",
+    "predicate": "属于",
+    "object": "董事会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "徽岚资产管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 394,
+ "output_tokens": 104,
+ "cached_read_tokens": 256,
+ "latency_ms": 3503.62266699085,
+ "provider": "deepseek"
+}

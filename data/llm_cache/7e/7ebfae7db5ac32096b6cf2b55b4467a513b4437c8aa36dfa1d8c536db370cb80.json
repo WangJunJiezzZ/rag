@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"曾书尧\",\"type\":\"person\"},{\"name\":\"霁川环球投资有限公司\",\"type\":\"organization\"}],\"relations\":[{\"subject\":\"曾书尧\",\"predicate\":\"持有股份\",\"object\":\"霁川环球投资有限公司\",\"details\":{\"持股比例\":\"15%\",\"登记日期\":\"2022年1月16日\"}},{\"subject\":\"曾书尧\",\"predicate\":\"主要股东\",\"object\":\"霁川环球投资有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "曾书尧",
+    "type": "person"
+   },
+   {
+    "name": "霁川环球投资有限公司",
+    "type": "organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "曾书尧",
+    "predicate": "持有股份",
+    "object": "霁川环球投资有限公司",
+    "details": {
+     "持股比例": "15%",
+     "登记日期": "2022年1月16日"
+    }
+   },
+   {
+    "subject": "曾书尧",
+    "predicate": "主要股东",
+    "object": "霁川环球投资有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 325,
+ "output_tokens": 94,
+ "cached_read_tokens": 128,
+ "latency_ms": 4604.366291954648,
+ "provider": "deepseek"
+}

@@ -1,0 +1,62 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"星海并购套利基金：采用并购套利策略，注册地为白鹭湾，托管人为环宇银行新港城分行\", \"subject\": \"星海并购套利基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"星海并购套利基金：采用并购套利策略，注册地为白鹭湾，托管人为环宇银行新港城分行\", \"subject\": \"星海并购套利基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"环宇银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"星海多空策略基金：采用多空策略策略，注册地为澄江特别行政区，托管人为汇川银行新港城分行\", \"subject\": \"星海多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"星海多空策略基金：采用多空策略策略，注册地为澄江特别行政区，托管人为汇川银行新港城分行\", \"subject\": \"星海多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"星海量化对冲基金：采用量化对冲策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"星海量化对冲基金：采用量化对冲策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "星海并购套利基金：采用并购套利策略，注册地为白鹭湾，托管人为环宇银行新港城分行",
+    "subject": "星海并购套利基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "星海并购套利基金：采用并购套利策略，注册地为白鹭湾，托管人为环宇银行新港城分行",
+    "subject": "星海并购套利基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "环宇银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "星海多空策略基金：采用多空策略策略，注册地为澄江特别行政区，托管人为汇川银行新港城分行",
+    "subject": "星海多空策略基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "星海多空策略基金：采用多空策略策略，注册地为澄江特别行政区，托管人为汇川银行新港城分行",
+    "subject": "星海多空策略基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "星海量化对冲基金：采用量化对冲策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "星海量化对冲基金：采用量化对冲策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1307,
+ "output_tokens": 481,
+ "cached_read_tokens": 768,
+ "latency_ms": 5197.221625014208,
+ "provider": "deepseek"
+}

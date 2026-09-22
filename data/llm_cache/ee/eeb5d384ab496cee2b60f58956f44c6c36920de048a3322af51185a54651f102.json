@@ -1,0 +1,39 @@
+{
+ "text": "{\"entities\":[{\"name\":\"周牧之\",\"type\":\"Person\"},{\"name\":\"珩屿资本管理有限公司\",\"type\":\"Company\"}],\"relations\":[{\"subject\":\"周牧之\",\"predicate\":\"持股比例\",\"object\":\"75%\"},{\"subject\":\"周牧之\",\"predicate\":\"登记日期\",\"object\":\"2023年10月19日\"},{\"subject\":\"周牧之\",\"predicate\":\"股东身份\",\"object\":\"主要股东\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "周牧之",
+    "type": "Person"
+   },
+   {
+    "name": "珩屿资本管理有限公司",
+    "type": "Company"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周牧之",
+    "predicate": "持股比例",
+    "object": "75%"
+   },
+   {
+    "subject": "周牧之",
+    "predicate": "登记日期",
+    "object": "2023年10月19日"
+   },
+   {
+    "subject": "周牧之",
+    "predicate": "股东身份",
+    "object": "主要股东"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 406,
+ "output_tokens": 90,
+ "cached_read_tokens": 256,
+ "latency_ms": 3089.263874979224,
+ "provider": "deepseek"
+}

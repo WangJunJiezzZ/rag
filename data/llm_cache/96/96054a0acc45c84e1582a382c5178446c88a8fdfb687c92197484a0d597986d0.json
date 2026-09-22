@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"两家公司名称不同（环球投资 vs 资产管理），属于不同法律主体，不能合并。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "两家公司名称不同（环球投资 vs 资产管理），属于不同法律主体，不能合并。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 412,
+ "output_tokens": 37,
+ "cached_read_tokens": 256,
+ "latency_ms": 3049.2279999889433,
+ "provider": "deepseek"
+}

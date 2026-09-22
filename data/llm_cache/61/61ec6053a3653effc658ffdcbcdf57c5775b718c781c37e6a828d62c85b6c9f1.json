@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者均为「鹤鸣」系公司但主体名称不同（环球投资 vs 金融服务），属不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者均为「鹤鸣」系公司但主体名称不同（环球投资 vs 金融服务），属不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 41,
+ "cached_read_tokens": 256,
+ "latency_ms": 3029.8292500083335,
+ "provider": "deepseek"
+}

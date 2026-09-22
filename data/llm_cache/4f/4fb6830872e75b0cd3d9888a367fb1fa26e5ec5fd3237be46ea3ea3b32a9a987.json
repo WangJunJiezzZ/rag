@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2025 年 3 月 21 日 召开的股东大会审议通过，陈敬亭当选为本公司董事，即日生效\", \"subject\": \"陈敬亭\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"Luyan International Holdings Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2025 年 3 月 21 日 召开的股东大会审议通过，陈敬亭当选为本公司董事，即日生效",
+    "subject": "陈敬亭",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "Luyan International Holdings Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1189,
+ "output_tokens": 84,
+ "cached_read_tokens": 768,
+ "latency_ms": 2977.401624957565,
+ "provider": "deepseek"
+}

@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"青柏房地产收益基金：采用房地产收益策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"青柏房地产收益基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}, {\"evidence\": \"青柏房地产收益基金：采用房地产收益策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"青柏房地产收益基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"}, {\"evidence\": \"青柏多空策略基金：采用多空策略策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"青柏多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"}, {\"evidence\": \"青柏多空策略基金：采用多空策略策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"青柏多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "青柏房地产收益基金：采用房地产收益策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "青柏房地产收益基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "青柏房地产收益基金：采用房地产收益策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "青柏房地产收益基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "青柏多空策略基金：采用多空策略策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "青柏多空策略基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "青柏多空策略基金：采用多空策略策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "青柏多空策略基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1260,
+ "output_tokens": 322,
+ "cached_read_tokens": 768,
+ "latency_ms": 3380.349999992177,
+ "provider": "deepseek"
+}

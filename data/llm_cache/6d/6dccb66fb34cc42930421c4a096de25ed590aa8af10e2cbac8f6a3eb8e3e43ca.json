@@ -1,0 +1,13 @@
+{
+ "text": "{\"triples\": []}",
+ "parsed": {
+  "triples": []
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1310,
+ "output_tokens": 6,
+ "cached_read_tokens": 0,
+ "latency_ms": 2993.9582500373945,
+ "provider": "deepseek"
+}

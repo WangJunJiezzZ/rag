@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Minggu Investment Holdings Ltd.\",\"type\":\"公司\"},{\"name\":\"松岚资产管理有限公司\",\"type\":\"公司\"}],\"relations\":[{\"subject\":\"Minggu Investment Holdings Ltd.\",\"predicate\":\"全资持有\",\"object\":\"松岚资产管理有限公司\",\"attributes\":{\"持股比例\":\"100%\"}},{\"subject\":\"松岚资产管理有限公司\",\"predicate\":\"纳入合并财务报表范围\",\"object\":\"Minggu Investment Holdings Ltd.\",\"attributes\":{}}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Minggu Investment Holdings Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Minggu Investment Holdings Ltd.",
+    "predicate": "全资持有",
+    "object": "松岚资产管理有限公司",
+    "attributes": {
+     "持股比例": "100%"
+    }
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "纳入合并财务报表范围",
+    "object": "Minggu Investment Holdings Ltd.",
+    "attributes": {}
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 311,
+ "output_tokens": 97,
+ "cached_read_tokens": 128,
+ "latency_ms": 3064.509292016737,
+ "provider": "deepseek"
+}

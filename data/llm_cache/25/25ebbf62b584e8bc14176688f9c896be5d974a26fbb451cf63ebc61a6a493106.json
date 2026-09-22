@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任许慕白为本公司董事\", \"subject\": \"许慕白\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"汐禾金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任许慕白为本公司董事",
+    "subject": "许慕白",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "汐禾金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1177,
+ "output_tokens": 59,
+ "cached_read_tokens": 896,
+ "latency_ms": 3540.926583984401,
+ "provider": "deepseek"
+}

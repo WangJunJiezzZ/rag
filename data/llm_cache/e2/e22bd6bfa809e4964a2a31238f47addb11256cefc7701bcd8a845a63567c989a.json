@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Xiuyun Asset Management Pte. Ltd.\", \"subject\": \"Xiuyun Asset Management Pte. Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Xiuyun Asset Management Pte. Ltd.",
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1196,
+ "output_tokens": 70,
+ "cached_read_tokens": 768,
+ "latency_ms": 4035.410500015132,
+ "provider": "deepseek"
+}

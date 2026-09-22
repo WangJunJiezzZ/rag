@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.6, \"reason\": \"「茗谷投资」与「茗谷资本管理有限公司」名称后缀不同，可能为不同主体，缺乏明确同一性证据。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.6,
+  "reason": "「茗谷投资」与「茗谷资本管理有限公司」名称后缀不同，可能为不同主体，缺乏明确同一性证据。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 46,
+ "cached_read_tokens": 256,
+ "latency_ms": 3369.434874970466,
+ "provider": "deepseek"
+}

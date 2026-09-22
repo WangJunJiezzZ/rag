@@ -1,0 +1,271 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"砺石量化对冲基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"砺石资本\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"环宇银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"saintville\",\n      \"name\": \"圣维尔\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"usd\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"quantitative_hedge_strategy\",\n      \"name\": \"量化对冲策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"unlisted_equity\",\n      \"name\": \"非上市股权或流动性受限资产\",\n      \"type\": \"投资标的\"\n    },\n    {\n      \"id\": \"listed_stocks_drs\",\n      \"name\": \"受认可交易所上市的股票及存托凭证\",\n      \"type\": \"投资标的\"\n    },\n    {\n      \"id\": \"debt_instruments\",\n      \"name\": \"政府及公司债务工具\",\n      \"type\": \"投资标的\"\n    },\n    {\n      \"id\": \"money_market_instruments\",\n      \"name\": \"货币市场工具\",\n      \"type\": \"投资标的\"\n    },\n    {\n      \"id\": \"derivatives\",\n      \"name\": \"衍生金融工具\",\n      \"type\": \"投资标的\"\n    },\n    {\n      \"id\": \"lockup_period\",\n      \"name\": \"24个月锁定期\",\n      \"type\": \"锁定期\"\n    },\n    {\n      \"id\": \"performance_fee\",\n      \"name\": \"业绩报酬\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"management_fee\",\n      \"name\": \"管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee\",\n      \"name\": \"托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"audit_fee\",\n      \"name\": \"审计费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"legal_fee\",\n      \"name\": \"法律顾问费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"admin_fee\",\n      \"name\": \"行政管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"legal_regulatory_risk\",\n      \"name\": \"法律与监管风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"credit_risk\",\n      \"name\": \"信用风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"market_risk\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"concentration_risk\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"related_party_risk\",\n      \"name\": \"关联交易风险\",\n      \"type\": \"风险因素\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设有\",\n      \"object\": \"investment_committee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"saintville\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"usd\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用\",\n      \"object\": \"quantitative_hedge_strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于\",\n      \"object\": \"unlisted_equity\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于\",\n      \"object\": \"listed_stocks_drs\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于\",\n      \"object\": \"debt_instruments\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于\",\n      \"object\": \"money_market_instruments\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资于\",\n      \"object\": \"derivatives\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设有\",\n      \"object\": \"lockup_period\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"收取\",\n      \"object\": \"performance_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担\",\n      \"object\": \"management_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担\",\n      \"object\": \"custody_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担\",\n      \"object\": \"audit_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担\",\n      \"object\": \"legal_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担\",\n      \"object\": \"admin_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临\",\n      \"object\": \"legal_regulatory_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临\",\n      \"object\": \"credit_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临\",\n      \"object\": \"market_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临\",\n      \"object\": \"concentration_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临\",\n      \"object\": \"related_party_risk\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"审批\",\n      \"object\": \"unlisted_equity\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"关联\",\n      \"object\": \"related_party_risk\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砺石量化对冲基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砺石资本",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "saintville",
+    "name": "圣维尔",
+    "type": "注册地"
+   },
+   {
+    "id": "usd",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "quantitative_hedge_strategy",
+    "name": "量化对冲策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "unlisted_equity",
+    "name": "非上市股权或流动性受限资产",
+    "type": "投资标的"
+   },
+   {
+    "id": "listed_stocks_drs",
+    "name": "受认可交易所上市的股票及存托凭证",
+    "type": "投资标的"
+   },
+   {
+    "id": "debt_instruments",
+    "name": "政府及公司债务工具",
+    "type": "投资标的"
+   },
+   {
+    "id": "money_market_instruments",
+    "name": "货币市场工具",
+    "type": "投资标的"
+   },
+   {
+    "id": "derivatives",
+    "name": "衍生金融工具",
+    "type": "投资标的"
+   },
+   {
+    "id": "lockup_period",
+    "name": "24个月锁定期",
+    "type": "锁定期"
+   },
+   {
+    "id": "performance_fee",
+    "name": "业绩报酬",
+    "type": "费用"
+   },
+   {
+    "id": "management_fee",
+    "name": "管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee",
+    "name": "托管费",
+    "type": "费用"
+   },
+   {
+    "id": "audit_fee",
+    "name": "审计费",
+    "type": "费用"
+   },
+   {
+    "id": "legal_fee",
+    "name": "法律顾问费",
+    "type": "费用"
+   },
+   {
+    "id": "admin_fee",
+    "name": "行政管理费",
+    "type": "费用"
+   },
+   {
+    "id": "legal_regulatory_risk",
+    "name": "法律与监管风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "credit_risk",
+    "name": "信用风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "market_risk",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "concentration_risk",
+    "name": "集中度风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "related_party_risk",
+    "name": "关联交易风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "saintville"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "usd"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用",
+    "object": "quantitative_hedge_strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于",
+    "object": "unlisted_equity"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于",
+    "object": "listed_stocks_drs"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于",
+    "object": "debt_instruments"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于",
+    "object": "money_market_instruments"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资于",
+    "object": "derivatives"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "lockup_period"
+   },
+   {
+    "subject": "fund",
+    "predicate": "收取",
+    "object": "performance_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担",
+    "object": "management_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担",
+    "object": "custody_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担",
+    "object": "audit_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担",
+    "object": "legal_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担",
+    "object": "admin_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临",
+    "object": "legal_regulatory_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临",
+    "object": "credit_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临",
+    "object": "market_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临",
+    "object": "concentration_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临",
+    "object": "related_party_risk"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "审批",
+    "object": "unlisted_equity"
+   },
+   {
+    "subject": "manager",
+    "predicate": "关联",
+    "object": "related_party_risk"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 800,
+ "output_tokens": 1536,
+ "cached_read_tokens": 0,
+ "latency_ms": 6456.846249988303,
+ "provider": "deepseek"
+}

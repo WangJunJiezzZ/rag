@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"北岸银行是银行，Linchuan Asset Management Pte. Ltd. 是资产管理公司，名称与业务均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "北岸银行是银行，Linchuan Asset Management Pte. Ltd. 是资产管理公司，名称与业务均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 49,
+ "cached_read_tokens": 128,
+ "latency_ms": 3265.260957996361,
+ "provider": "deepseek"
+}

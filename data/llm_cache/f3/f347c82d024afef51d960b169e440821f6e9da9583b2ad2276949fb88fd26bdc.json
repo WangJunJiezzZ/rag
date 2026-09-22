@@ -1,0 +1,166 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"瑾樾私募信贷基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"瑾樾资本（3）\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"regplace\",\"name\":\"新港城\",\"type\":\"注册地\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"基准货币\"},{\"id\":\"strategy\",\"name\":\"私募信贷策略\",\"type\":\"投资策略\"},{\"id\":\"threshold1\",\"name\":\"6%年化门槛收益率\",\"type\":\"业绩报酬门槛\"},{\"id\":\"threshold2\",\"name\":\"4%年化门槛收益率\",\"type\":\"业绩报酬门槛\"},{\"id\":\"hurdlerate\",\"name\":\"15%\",\"type\":\"业绩报酬计提比例\"},{\"id\":\"mininitial\",\"name\":\"25万美元\",\"type\":\"最低认购金额\"},{\"id\":\"minadditional\",\"name\":\"1万美元\",\"type\":\"追加认购最低金额\"},{\"id\":\"redemptionlimit\",\"name\":\"15%\",\"type\":\"赎回总额上限比例\"},{\"id\":\"highwatermark\",\"name\":\"高水位线法\",\"type\":\"业绩报酬计算方法\"}],\"relations\":[{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"设立日期\",\"object\":\"2019年1月19日\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"基准货币\",\"object\":\"美元\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"存续期限\",\"object\":\"无固定期限\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"投资策略\",\"object\":\"私募信贷策略\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"基金管理人\",\"object\":\"瑾樾资本（3）\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"基金托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"最低认购金额\",\"object\":\"25万美元\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"追加认购最低金额\",\"object\":\"1万美元\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"赎回开放机制\",\"object\":\"季度开放机制\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"赎回总额上限比例\",\"object\":\"15%\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"业绩报酬门槛收益率\",\"object\":\"6%年化门槛收益率\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"业绩报酬门槛收益率\",\"object\":\"4%年化门槛收益率\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"业绩报酬计提比例\",\"object\":\"15%\"},{\"subject\":\"瑾樾私募信贷基金\",\"predicate\":\"业绩报酬计算方法\",\"object\":\"高水位线法\"},{\"subject\":\"瑾樾资本（3）\",\"predicate\":\"负责\",\"object\":\"投资决策、日常运作及信息披露\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"负责\",\"object\":\"基金财产保管、清算交收及对管理人投资运作的监督\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "瑾樾私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "瑾樾资本（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "私募信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "threshold1",
+    "name": "6%年化门槛收益率",
+    "type": "业绩报酬门槛"
+   },
+   {
+    "id": "threshold2",
+    "name": "4%年化门槛收益率",
+    "type": "业绩报酬门槛"
+   },
+   {
+    "id": "hurdlerate",
+    "name": "15%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "mininitial",
+    "name": "25万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "minadditional",
+    "name": "1万美元",
+    "type": "追加认购最低金额"
+   },
+   {
+    "id": "redemptionlimit",
+    "name": "15%",
+    "type": "赎回总额上限比例"
+   },
+   {
+    "id": "highwatermark",
+    "name": "高水位线法",
+    "type": "业绩报酬计算方法"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "设立日期",
+    "object": "2019年1月19日"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "投资策略",
+    "object": "私募信贷策略"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基金管理人",
+    "object": "瑾樾资本（3）"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基金托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "最低认购金额",
+    "object": "25万美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "追加认购最低金额",
+    "object": "1万美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "赎回开放机制",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "赎回总额上限比例",
+    "object": "15%"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬门槛收益率",
+    "object": "6%年化门槛收益率"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬门槛收益率",
+    "object": "4%年化门槛收益率"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬计提比例",
+    "object": "15%"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬计算方法",
+    "object": "高水位线法"
+   },
+   {
+    "subject": "瑾樾资本（3）",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "负责",
+    "object": "基金财产保管、清算交收及对管理人投资运作的监督"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 968,
+ "output_tokens": 667,
+ "cached_read_tokens": 768,
+ "latency_ms": 4622.846291982569,
+ "provider": "deepseek"
+}

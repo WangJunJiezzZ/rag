@@ -1,0 +1,39 @@
+{
+ "text": "{\"entities\":[{\"name\":\"邱之涵\",\"type\":\"person\"},{\"name\":\"珩屿金融服务有限公司\",\"type\":\"organization\"}],\"relations\":[{\"subject\":\"邱之涵\",\"predicate\":\"持股比例\",\"object\":\"30%\"},{\"subject\":\"邱之涵\",\"predicate\":\"登记日期\",\"object\":\"2025年8月15日\"},{\"subject\":\"邱之涵\",\"predicate\":\"股东\",\"object\":\"珩屿金融服务有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "邱之涵",
+    "type": "person"
+   },
+   {
+    "name": "珩屿金融服务有限公司",
+    "type": "organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "邱之涵",
+    "predicate": "持股比例",
+    "object": "30%"
+   },
+   {
+    "subject": "邱之涵",
+    "predicate": "登记日期",
+    "object": "2025年8月15日"
+   },
+   {
+    "subject": "邱之涵",
+    "predicate": "股东",
+    "object": "珩屿金融服务有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 322,
+ "output_tokens": 90,
+ "cached_read_tokens": 128,
+ "latency_ms": 3706.7544169840403,
+ "provider": "deepseek"
+}

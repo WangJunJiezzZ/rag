@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"茗谷资本（3）\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"2020777278\",\n        \"注册地\": \"白鹭湾\",\n        \"注册日期\": \"2020年8月15日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"白鹭湾\",\n      \"type\": \"地区\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"茗谷资本（3）\",\n      \"predicate\": \"注册地\",\n      \"object\": \"白鹭湾\"\n    },\n    {\n      \"subject\": \"茗谷资本（3）\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"2020777278\"\n    },\n    {\n      \"subject\": \"茗谷资本（3）\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2020年8月15日\"\n    },\n    {\n      \"subject\": \"茗谷资本（3）\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"茗谷资本（3）\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "茗谷资本（3）",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2020777278",
+     "注册地": "白鹭湾",
+     "注册日期": "2020年8月15日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "白鹭湾",
+    "type": "地区"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "茗谷资本（3）",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "茗谷资本（3）",
+    "predicate": "注册编号",
+    "object": "2020777278"
+   },
+   {
+    "subject": "茗谷资本（3）",
+    "predicate": "注册日期",
+    "object": "2020年8月15日"
+   },
+   {
+    "subject": "茗谷资本（3）",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "茗谷资本（3）",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 242,
+ "output_tokens": 302,
+ "cached_read_tokens": 0,
+ "latency_ms": 5312.063833000138,
+ "provider": "deepseek"
+}

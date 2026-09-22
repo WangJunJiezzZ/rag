@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者名称不同（国际控股 vs 资本管理），且上下文涉及不同董事与不同事件，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者名称不同（国际控股 vs 资本管理），且上下文涉及不同董事与不同事件，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 412,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 3266.613292042166,
+ "provider": "deepseek"
+}

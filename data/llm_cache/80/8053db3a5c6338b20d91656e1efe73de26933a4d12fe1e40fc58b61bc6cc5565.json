@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2025 年 8 月 19 日 召开的股东大会审议通过，陈行知当选为本公司董事，即日生效\", \"subject\": \"陈行知\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"Yunzhou Financial Services Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2025 年 8 月 19 日 召开的股东大会审议通过，陈行知当选为本公司董事，即日生效",
+    "subject": "陈行知",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "Yunzhou Financial Services Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1627,
+ "output_tokens": 84,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4290.947250032332,
+ "provider": "deepseek"
+}

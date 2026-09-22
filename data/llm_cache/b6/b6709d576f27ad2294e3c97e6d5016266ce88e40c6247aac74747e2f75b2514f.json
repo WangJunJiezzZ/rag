@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「砥行资本管理有限公司」，B为英文名「Huichuan Investment Holdings Ltd.」，两者名称不对应，且无证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「砥行资本管理有限公司」，B为英文名「Huichuan Investment Holdings Ltd.」，两者名称不对应，且无证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 402,
+ "output_tokens": 55,
+ "cached_read_tokens": 256,
+ "latency_ms": 3171.8825419666246,
+ "provider": "deepseek"
+}

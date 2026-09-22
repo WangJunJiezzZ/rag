@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"于 2022 年 12 月 28 日 依法设立并完成注册登记，注册地为新港城\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"于 2022 年 12 月 28 日 依法设立并完成注册登记\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2022 年 12 月 28 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"基金管理人：霁川资产管理有限公司（3）。管理人负责本基金的投资决策、日常运作及信息披露。\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"霁川资产管理有限公司\", \"object_type\": \"Company\"},\n {\"evidence\": \"基金托管人：昭明银行新港城分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督。\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"昭明银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 50 万美元\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"50 万美元\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "于 2022 年 12 月 28 日 依法设立并完成注册登记，注册地为新港城",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "于 2022 年 12 月 28 日 依法设立并完成注册登记",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2022 年 12 月 28 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：霁川资产管理有限公司（3）。管理人负责本基金的投资决策、日常运作及信息披露。",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "霁川资产管理有限公司",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：昭明银行新港城分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督。",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "昭明银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 50 万美元",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "50 万美元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2193,
+ "output_tokens": 374,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4347.430333960801,
+ "provider": "deepseek"
+}

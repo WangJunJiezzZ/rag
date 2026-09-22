@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：澜图资产管理有限公司\", \"subject\": \"澜图资产管理有限公司\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：澜图资产管理有限公司",
+    "subject": "澜图资产管理有限公司",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1184,
+ "output_tokens": 60,
+ "cached_read_tokens": 768,
+ "latency_ms": 2962.9685420077294,
+ "provider": "deepseek"
+}

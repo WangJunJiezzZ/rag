@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「茗谷投资」与「Luyan International Holdings Ltd.」名称、语言及主体均不同，无证据指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「茗谷投资」与「Luyan International Holdings Ltd.」名称、语言及主体均不同，无证据指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 47,
+ "cached_read_tokens": 128,
+ "latency_ms": 3973.4432919649407,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)的柏观金融服务有限公司，B为英文名Huichuan Global Investments Ltd.，名称主体与语言均不同，无法对应同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)的柏观金融服务有限公司，B为英文名Huichuan Global Investments Ltd.，名称主体与语言均不同，无法对应同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 386,
+ "output_tokens": 57,
+ "cached_read_tokens": 128,
+ "latency_ms": 3156.005167053081,
+ "provider": "deepseek"
+}

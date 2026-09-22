@@ -1,0 +1,57 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"周牧之\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"砚池资产管理有限公司\",\n      \"type\": \"Organization\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"Organization\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"周牧之\",\n      \"predicate\": \"持有股份\",\n      \"object\": \"砚池资产管理有限公司\",\n      \"details\": {\n        \"持股比例\": \"25%\",\n        \"登记日期\": \"2023年3月27日\"\n      }\n    },\n    {\n      \"subject\": \"周牧之\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"砚池资产管理有限公司\"\n    },\n    {\n      \"subject\": \"砚池资产管理有限公司\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"成员人数\",\n      \"object\": \"不少于三名\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"召开会议频率\",\n      \"object\": \"每月至少一次\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "周牧之",
+    "type": "Person"
+   },
+   {
+    "name": "砚池资产管理有限公司",
+    "type": "Organization"
+   },
+   {
+    "name": "投资委员会",
+    "type": "Organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周牧之",
+    "predicate": "持有股份",
+    "object": "砚池资产管理有限公司",
+    "details": {
+     "持股比例": "25%",
+     "登记日期": "2023年3月27日"
+    }
+   },
+   {
+    "subject": "周牧之",
+    "predicate": "是主要股东",
+    "object": "砚池资产管理有限公司"
+   },
+   {
+    "subject": "砚池资产管理有限公司",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "召开会议频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 244,
+ "output_tokens": 261,
+ "cached_read_tokens": 0,
+ "latency_ms": 5216.76366601605,
+ "provider": "deepseek"
+}

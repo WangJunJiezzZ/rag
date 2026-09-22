@@ -1,0 +1,54 @@
+{
+ "text": "{\"entities\":[{\"name\":\"樾川金融服务有限公司\",\"type\":\"公司\"},{\"name\":\"许听澜\",\"type\":\"人员\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"许听澜\",\"predicate\":\"担任董事\",\"object\":\"樾川金融服务有限公司\",\"start_date\":\"2022-03-11\",\"term\":\"三年\"},{\"subject\":\"许听澜\",\"predicate\":\"曾任职于\",\"object\":\"多家区域性金融机构\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"向\",\"object\":\"董事会\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "樾川金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "许听澜",
+    "type": "人员"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许听澜",
+    "predicate": "担任董事",
+    "object": "樾川金融服务有限公司",
+    "start_date": "2022-03-11",
+    "term": "三年"
+   },
+   {
+    "subject": "许听澜",
+    "predicate": "曾任职于",
+    "object": "多家区域性金融机构"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "向",
+    "object": "董事会"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 408,
+ "output_tokens": 146,
+ "cached_read_tokens": 256,
+ "latency_ms": 3358.4361669491045,
+ "provider": "deepseek"
+}

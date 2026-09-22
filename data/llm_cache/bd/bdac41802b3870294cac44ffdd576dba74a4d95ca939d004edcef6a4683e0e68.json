@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"岫云结构化信贷基金：采用结构化信贷策略，注册地为新港城，托管人为汇川银行新港城分行\", \"subject\": \"岫云结构化信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"岫云结构化信贷基金：采用结构化信贷策略，注册地为新港城，托管人为汇川银行新港城分行\", \"subject\": \"岫云结构化信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"岫云可持续发展基金：采用可持续发展策略，注册地为卡瑟尼亚，托管人为瑞辰银行新港城分行\", \"subject\": \"岫云可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"卡瑟尼亚\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"岫云可持续发展基金：采用可持续发展策略，注册地为卡瑟尼亚，托管人为瑞辰银行新港城分行\", \"subject\": \"岫云可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"瑞辰银行新港城分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "岫云结构化信贷基金：采用结构化信贷策略，注册地为新港城，托管人为汇川银行新港城分行",
+    "subject": "岫云结构化信贷基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "岫云结构化信贷基金：采用结构化信贷策略，注册地为新港城，托管人为汇川银行新港城分行",
+    "subject": "岫云结构化信贷基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "岫云可持续发展基金：采用可持续发展策略，注册地为卡瑟尼亚，托管人为瑞辰银行新港城分行",
+    "subject": "岫云可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "卡瑟尼亚",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "岫云可持续发展基金：采用可持续发展策略，注册地为卡瑟尼亚，托管人为瑞辰银行新港城分行",
+    "subject": "岫云可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "瑞辰银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1255,
+ "output_tokens": 312,
+ "cached_read_tokens": 768,
+ "latency_ms": 5071.210041991435,
+ "provider": "deepseek"
+}

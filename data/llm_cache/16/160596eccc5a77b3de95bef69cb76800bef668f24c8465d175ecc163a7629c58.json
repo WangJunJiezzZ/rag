@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「星海投资控股有限公司」与英文名「Huichuan Global Investments Ltd.」名称完全不同，无对应关系，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「星海投资控股有限公司」与英文名「Huichuan Global Investments Ltd.」名称完全不同，无对应关系，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 378,
+ "output_tokens": 50,
+ "cached_read_tokens": 128,
+ "latency_ms": 3363.6903750011697,
+ "provider": "deepseek"
+}

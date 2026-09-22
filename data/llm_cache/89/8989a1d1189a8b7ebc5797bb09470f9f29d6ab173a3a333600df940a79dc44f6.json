@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"谢怀瑾\",\"type\":\"Person\"},{\"name\":\"霁川资产管理有限公司\",\"type\":\"Organization\"}],\"relations\":[{\"subject\":\"谢怀瑾\",\"predicate\":\"持有股份\",\"object\":\"霁川资产管理有限公司\",\"details\":{\"持股比例\":\"25%\",\"登记日期\":\"2025年3月18日\"}},{\"subject\":\"谢怀瑾\",\"predicate\":\"是主要股东\",\"object\":\"霁川资产管理有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "谢怀瑾",
+    "type": "Person"
+   },
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "Organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "谢怀瑾",
+    "predicate": "持有股份",
+    "object": "霁川资产管理有限公司",
+    "details": {
+     "持股比例": "25%",
+     "登记日期": "2025年3月18日"
+    }
+   },
+   {
+    "subject": "谢怀瑾",
+    "predicate": "是主要股东",
+    "object": "霁川资产管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 398,
+ "output_tokens": 92,
+ "cached_read_tokens": 256,
+ "latency_ms": 3844.750375021249,
+ "provider": "deepseek"
+}

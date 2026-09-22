@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「北岸银行」是中文银行名称，与英文投资公司「Yuanxi Global Investments Ltd.」名称、主体类型均不同，无证据指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「北岸银行」是中文银行名称，与英文投资公司「Yuanxi Global Investments Ltd.」名称、主体类型均不同，无证据指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 377,
+ "output_tokens": 54,
+ "cached_read_tokens": 128,
+ "latency_ms": 3265.3417919646017,
+ "provider": "deepseek"
+}

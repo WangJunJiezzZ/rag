@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"樾川金融服务有限公司（2）\",\"type\":\"公司\"},{\"name\":\"郑明远\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"head\":\"郑明远\",\"relation\":\"任职于\",\"tail\":\"樾川金融服务有限公司（2）\"},{\"head\":\"郑明远\",\"relation\":\"担任董事\",\"tail\":\"董事会\"},{\"head\":\"董事会\",\"relation\":\"隶属于\",\"tail\":\"樾川金融服务有限公司（2）\"},{\"head\":\"投资委员会\",\"relation\":\"隶属于\",\"tail\":\"樾川金融服务有限公司（2）\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "樾川金融服务有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "郑明远",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "head": "郑明远",
+    "relation": "任职于",
+    "tail": "樾川金融服务有限公司（2）"
+   },
+   {
+    "head": "郑明远",
+    "relation": "担任董事",
+    "tail": "董事会"
+   },
+   {
+    "head": "董事会",
+    "relation": "隶属于",
+    "tail": "樾川金融服务有限公司（2）"
+   },
+   {
+    "head": "投资委员会",
+    "relation": "隶属于",
+    "tail": "樾川金融服务有限公司（2）"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 327,
+ "output_tokens": 134,
+ "cached_read_tokens": 128,
+ "latency_ms": 3035.440791049041,
+ "provider": "deepseek"
+}

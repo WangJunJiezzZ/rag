@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"洄川国际控股有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"王慕白\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"10%\",\n      \"type\": \"持股比例\"\n    },\n    {\n      \"name\": \"2023年1月27日\",\n      \"type\": \"日期\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"王慕白\",\n      \"predicate\": \"持有\",\n      \"object\": \"洄川国际控股有限公司\",\n      \"properties\": {\n        \"持股比例\": \"10%\",\n        \"登记日期\": \"2023年1月27日\"\n      }\n    },\n    {\n      \"subject\": \"王慕白\",\n      \"predicate\": \"是主要股东之一\",\n      \"object\": \"洄川国际控股有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "洄川国际控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "王慕白",
+    "type": "人物"
+   },
+   {
+    "name": "10%",
+    "type": "持股比例"
+   },
+   {
+    "name": "2023年1月27日",
+    "type": "日期"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "王慕白",
+    "predicate": "持有",
+    "object": "洄川国际控股有限公司",
+    "properties": {
+     "持股比例": "10%",
+     "登记日期": "2023年1月27日"
+    }
+   },
+   {
+    "subject": "王慕白",
+    "predicate": "是主要股东之一",
+    "object": "洄川国际控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 236,
+ "output_tokens": 202,
+ "cached_read_tokens": 0,
+ "latency_ms": 3079.6034170198254,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2022 年 12 月 27 日 完成董事会成员增补，新任董事为周书尧。\", \"subject\": \"周书尧\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"松岚资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2022 年 12 月 27 日 完成董事会成员增补，新任董事为周书尧。",
+    "subject": "周书尧",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "松岚资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1176,
+ "output_tokens": 80,
+ "cached_read_tokens": 896,
+ "latency_ms": 3326.254124986008,
+ "provider": "deepseek"
+}

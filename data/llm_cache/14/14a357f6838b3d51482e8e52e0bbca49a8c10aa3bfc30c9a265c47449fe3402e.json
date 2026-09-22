@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"于 2023 年 6 月 25 日 依法设立并完成注册登记，注册地为圣维尔\", \"subject\": \"澜图可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"圣维尔\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"于 2023 年 6 月 25 日 依法设立并完成注册登记\", \"subject\": \"澜图可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2023 年 6 月 25 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"基金管理人：澜图资本管理有限公司（3）。管理人负责本基金的投资决策、日常运作及信息披露。\", \"subject\": \"澜图可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"澜图资本管理有限公司\", \"object_type\": \"Company\"},\n {\"evidence\": \"基金托管人：北岸银行澄江特别行政区分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督。\", \"subject\": \"澜图可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 50 万新元\", \"subject\": \"澜图可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"50 万新元\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "于 2023 年 6 月 25 日 依法设立并完成注册登记，注册地为圣维尔",
+    "subject": "澜图可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "圣维尔",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "于 2023 年 6 月 25 日 依法设立并完成注册登记",
+    "subject": "澜图可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2023 年 6 月 25 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：澜图资本管理有限公司（3）。管理人负责本基金的投资决策、日常运作及信息披露。",
+    "subject": "澜图可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "澜图资本管理有限公司",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：北岸银行澄江特别行政区分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督。",
+    "subject": "澜图可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 50 万新元",
+    "subject": "澜图可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "50 万新元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2191,
+ "output_tokens": 377,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4129.6649589785375,
+ "provider": "deepseek"
+}

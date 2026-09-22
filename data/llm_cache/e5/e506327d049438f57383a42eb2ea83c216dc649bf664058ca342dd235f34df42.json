@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「砥行资本管理有限公司」与英文名「Minggu Investment Holdings Ltd.」在名称、语言及主体上均无对应关系，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「砥行资本管理有限公司」与英文名「Minggu Investment Holdings Ltd.」在名称、语言及主体上均无对应关系，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 55,
+ "cached_read_tokens": 128,
+ "latency_ms": 3900.57112503564,
+ "provider": "deepseek"
+}

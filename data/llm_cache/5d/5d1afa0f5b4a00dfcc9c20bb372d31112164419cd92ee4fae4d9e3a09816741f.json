@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": true, \"confidence\": 0.85, \"reason\": \"两家公司均与郑明远董事任职相关，且「栖梧」与「Heming」为同一名称的中英对应，指向同一实体。\"}",
+ "parsed": {
+  "same": true,
+  "confidence": 0.85,
+  "reason": "两家公司均与郑明远董事任职相关，且「栖梧」与「Heming」为同一名称的中英对应，指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 425,
+ "output_tokens": 50,
+ "cached_read_tokens": 256,
+ "latency_ms": 3060.112749983091,
+ "provider": "deepseek"
+}

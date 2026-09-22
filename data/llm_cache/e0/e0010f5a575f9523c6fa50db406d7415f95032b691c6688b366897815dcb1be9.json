@@ -1,0 +1,181 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"id\": \"fund\", \"name\": \"徽岚可持续发展基金\", \"type\": \"基金\"},\n    {\"id\": \"manager\", \"name\": \"徽岚资管（3）\", \"type\": \"基金管理人\"},\n    {\"id\": \"custodian\", \"name\": \"瑞辰银行新港城分行\", \"type\": \"基金托管人\"},\n    {\"id\": \"jurisdiction\", \"name\": \"北屿自治区\", \"type\": \"注册地\"},\n    {\"id\": \"currency\", \"name\": \"美元\", \"type\": \"基准货币\"},\n    {\"id\": \"strategy\", \"name\": \"可持续发展策略\", \"type\": \"投资策略\"},\n    {\"id\": \"fee_management\", \"name\": \"管理费\", \"type\": \"费用\"},\n    {\"id\": \"fee_custody\", \"name\": \"托管费\", \"type\": \"费用\"},\n    {\"id\": \"fee_other\", \"name\": \"其他费用\", \"type\": \"费用\"},\n    {\"id\": \"risk_concentration\", \"name\": \"集中度风险\", \"type\": \"风险\"},\n    {\"id\": \"risk_market\", \"name\": \"市场风险\", \"type\": \"风险\"},\n    {\"id\": \"risk_fx\", \"name\": \"汇率风险\", \"type\": \"风险\"},\n    {\"id\": \"risk_valuation\", \"name\": \"估值风险\", \"type\": \"风险\"}\n  ],\n  \"relations\": [\n    {\"subject\": \"fund\", \"predicate\": \"设立日期\", \"object\": \"2021年8月8日\"},\n    {\"subject\": \"fund\", \"predicate\": \"注册地\", \"object\": \"jurisdiction\"},\n    {\"subject\": \"fund\", \"predicate\": \"基准货币\", \"object\": \"currency\"},\n    {\"subject\": \"fund\", \"predicate\": \"存续期限\", \"object\": \"无固定期限\"},\n    {\"subject\": \"fund\", \"predicate\": \"投资策略\", \"object\": \"strategy\"},\n    {\"subject\": \"fund\", \"predicate\": \"基金管理人\", \"object\": \"manager\"},\n    {\"subject\": \"fund\", \"predicate\": \"基金托管人\", \"object\": \"custodian\"},\n    {\"subject\": \"manager\", \"predicate\": \"职责\", \"object\": \"投资决策、日常运作及信息披露\"},\n    {\"subject\": \"custodian\", \"predicate\": \"职责\", \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"},\n    {\"subject\": \"fund\", \"predicate\": \"最低认购金额\", \"object\": \"50万美元\"},\n    {\"subject\": \"fund\", \"predicate\": \"追加认购最低金额\", \"object\": \"10万美元\"},\n    {\"subject\": \"fund\", \"predicate\": \"赎回申请日\", \"object\": \"每月最后一个工作日\"},\n    {\"subject\": \"fund\", \"predicate\": \"赎回款项支付期限\", \"object\": \"确认后5个工作日内\"},\n    {\"subject\": \"fund\", \"predicate\": \"管理费费率\", \"object\": \"1.50%年费率\"},\n    {\"subject\": \"fund\", \"predicate\": \"托管费费率\", \"object\": \"0.12%年费率\"},\n    {\"subject\": \"fund\", \"predicate\": \"其他费用上限\", \"object\": \"基金资产净值的0.45%\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_concentration\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_market\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_fx\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_valuation\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "徽岚可持续发展基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "徽岚资管（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "瑞辰银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "北屿自治区",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "可持续发展策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "fee_management",
+    "name": "管理费",
+    "type": "费用"
+   },
+   {
+    "id": "fee_custody",
+    "name": "托管费",
+    "type": "费用"
+   },
+   {
+    "id": "fee_other",
+    "name": "其他费用",
+    "type": "费用"
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险"
+   },
+   {
+    "id": "risk_market",
+    "name": "市场风险",
+    "type": "风险"
+   },
+   {
+    "id": "risk_fx",
+    "name": "汇率风险",
+    "type": "风险"
+   },
+   {
+    "id": "risk_valuation",
+    "name": "估值风险",
+    "type": "风险"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2021年8月8日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "职责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "职责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "50万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "10万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "确认后5个工作日内"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费费率",
+    "object": "1.50%年费率"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费费率",
+    "object": "0.12%年费率"
+   },
+   {
+    "subject": "fund",
+    "predicate": "其他费用上限",
+    "object": "基金资产净值的0.45%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_concentration"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_market"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_fx"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_valuation"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 843,
+ "output_tokens": 805,
+ "cached_read_tokens": 640,
+ "latency_ms": 5338.414875033777,
+ "provider": "deepseek"
+}

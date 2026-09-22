@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"新任董事为周书尧\", \"subject\": \"周书尧\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"松岚资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "新任董事为周书尧",
+    "subject": "周书尧",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "松岚资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1621,
+ "output_tokens": 57,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3657.6348340022378,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)，B为英文名Qiwu Capital Management Ltd.，名称与序号均不匹配，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)，B为英文名Qiwu Capital Management Ltd.，名称与序号均不匹配，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 386,
+ "output_tokens": 52,
+ "cached_read_tokens": 128,
+ "latency_ms": 2930.945875006728,
+ "provider": "deepseek"
+}

@@ -1,0 +1,56 @@
+{
+ "text": "{\"entities\":[{\"name\":\"张慕白\",\"type\":\"自然人\"},{\"name\":\"砚池环球投资有限公司\",\"type\":\"公司\"},{\"name\":\"投资委员会\",\"type\":\"组织\"},{\"name\":\"2022年12月5日\",\"type\":\"日期\"}],\"relations\":[{\"subject\":\"张慕白\",\"predicate\":\"持有\",\"object\":\"砚池环球投资有限公司\",\"properties\":{\"持股比例\":\"30%\",\"登记日期\":\"2022年12月5日\"}},{\"subject\":\"张慕白\",\"predicate\":\"是主要股东之一\",\"object\":\"砚池环球投资有限公司\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"砚池环球投资有限公司\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责审议\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "张慕白",
+    "type": "自然人"
+   },
+   {
+    "name": "砚池环球投资有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   },
+   {
+    "name": "2022年12月5日",
+    "type": "日期"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "张慕白",
+    "predicate": "持有",
+    "object": "砚池环球投资有限公司",
+    "properties": {
+     "持股比例": "30%",
+     "登记日期": "2022年12月5日"
+    }
+   },
+   {
+    "subject": "张慕白",
+    "predicate": "是主要股东之一",
+    "object": "砚池环球投资有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "砚池环球投资有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责审议",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 413,
+ "output_tokens": 161,
+ "cached_read_tokens": 256,
+ "latency_ms": 3258.6038330337033,
+ "provider": "deepseek"
+}

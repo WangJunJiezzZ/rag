@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.98, \"reason\": \"两者虽同属翊澜系列，但投资方向（房地产收益 vs 科技成长）、设立日期与注册地均不同，指向不同基金实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.98,
+  "reason": "两者虽同属翊澜系列，但投资方向（房地产收益 vs 科技成长）、设立日期与注册地均不同，指向不同基金实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 451,
+ "output_tokens": 50,
+ "cached_read_tokens": 256,
+ "latency_ms": 3716.9551250408404,
+ "provider": "deepseek"
+}

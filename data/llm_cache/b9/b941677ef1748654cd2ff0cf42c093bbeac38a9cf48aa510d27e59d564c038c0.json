@@ -1,0 +1,62 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"澜图全球宏观基金：采用全球宏观策略，注册地为北屿自治区，托管人为汇川银行新港城分行\", \"subject\": \"澜图全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"澜图全球宏观基金：采用全球宏观策略，注册地为北屿自治区，托管人为汇川银行新港城分行\", \"subject\": \"澜图全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"澜图私募信贷基金：采用私募信贷策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"澜图私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"澜图私募信贷基金：采用私募信贷策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"澜图私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"澜图科技成长基金：采用科技成长策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行\", \"subject\": \"澜图科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"澜图科技成长基金：采用科技成长策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行\", \"subject\": \"澜图科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"昭明银行新港城分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "澜图全球宏观基金：采用全球宏观策略，注册地为北屿自治区，托管人为汇川银行新港城分行",
+    "subject": "澜图全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "澜图全球宏观基金：采用全球宏观策略，注册地为北屿自治区，托管人为汇川银行新港城分行",
+    "subject": "澜图全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "澜图私募信贷基金：采用私募信贷策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "澜图私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "澜图私募信贷基金：采用私募信贷策略，注册地为澄江特别行政区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "澜图私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "澜图科技成长基金：采用科技成长策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行",
+    "subject": "澜图科技成长基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "澜图科技成长基金：采用科技成长策略，注册地为澄江特别行政区，托管人为昭明银行新港城分行",
+    "subject": "澜图科技成长基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "昭明银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1748,
+ "output_tokens": 472,
+ "cached_read_tokens": 1280,
+ "latency_ms": 6004.911124997307,
+ "provider": "deepseek"
+}

@@ -1,0 +1,91 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"岫云结构化信贷基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"岫云资产管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"newport\",\"name\":\"新港城\",\"type\":\"注册地\"},{\"id\":\"auditor\",\"name\":\"独立审计机构\",\"type\":\"审计机构\"},{\"id\":\"investor\",\"name\":\"合资格投资者\",\"type\":\"投资者\"},{\"id\":\"investment_committee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"}],\"relations\":[{\"subject\":\"岫云资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"托管\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"岫云结构化信贷基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"合资格投资者\",\"predicate\":\"认购\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"投资委员会\",\"predicate\":\"审批\",\"object\":\"非上市股权或流动性受限资产投资\"},{\"subject\":\"岫云资产管理有限公司\",\"predicate\":\"收取管理费\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"收取托管费\",\"object\":\"岫云结构化信贷基金\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "岫云结构化信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "岫云资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "newport",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   },
+   {
+    "id": "investor",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "管理",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "托管",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "岫云结构化信贷基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "认购",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "审批",
+    "object": "非上市股权或流动性受限资产投资"
+   },
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "收取管理费",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "收取托管费",
+    "object": "岫云结构化信贷基金"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 972,
+ "output_tokens": 319,
+ "cached_read_tokens": 768,
+ "latency_ms": 3554.235207964666,
+ "provider": "deepseek"
+}

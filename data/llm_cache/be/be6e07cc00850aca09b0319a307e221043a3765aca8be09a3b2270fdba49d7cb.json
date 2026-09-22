@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 为「砚池国际控股有限公司（3）」，B 为「Qiwu Global Investments Ltd.」，名称主体不同且 A 带序号，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 为「砚池国际控股有限公司（3）」，B 为「Qiwu Global Investments Ltd.」，名称主体不同且 A 带序号，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 56,
+ "cached_read_tokens": 128,
+ "latency_ms": 4063.9225830091164,
+ "provider": "deepseek"
+}

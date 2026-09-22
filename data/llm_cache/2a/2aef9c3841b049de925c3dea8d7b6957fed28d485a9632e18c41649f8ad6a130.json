@@ -1,0 +1,47 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"邱景行\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"瑾樾资本管理有限公司\",\n      \"type\": \"Company\"\n    },\n    {\n      \"name\": \"2024年4月3日\",\n      \"type\": \"Date\"\n    },\n    {\n      \"name\": \"25%\",\n      \"type\": \"Percentage\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"持有股份\",\n      \"object\": \"瑾樾资本管理有限公司\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"持股比例\",\n      \"object\": \"25%\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"登记日期\",\n      \"object\": \"2024年4月3日\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "邱景行",
+    "type": "Person"
+   },
+   {
+    "name": "瑾樾资本管理有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2024年4月3日",
+    "type": "Date"
+   },
+   {
+    "name": "25%",
+    "type": "Percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "邱景行",
+    "predicate": "持有股份",
+    "object": "瑾樾资本管理有限公司"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "持股比例",
+    "object": "25%"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "登记日期",
+    "object": "2024年4月3日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 241,
+ "output_tokens": 201,
+ "cached_read_tokens": 0,
+ "latency_ms": 4911.174167005811,
+ "provider": "deepseek"
+}

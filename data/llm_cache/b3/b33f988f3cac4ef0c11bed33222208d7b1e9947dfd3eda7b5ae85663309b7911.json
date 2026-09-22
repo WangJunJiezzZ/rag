@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（资本管理与金融服务），且上下文中的董事任命信息互不相关，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（资本管理与金融服务），且上下文中的董事任命信息互不相关，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 400,
+ "output_tokens": 41,
+ "cached_read_tokens": 256,
+ "latency_ms": 3142.701999982819,
+ "provider": "deepseek"
+}

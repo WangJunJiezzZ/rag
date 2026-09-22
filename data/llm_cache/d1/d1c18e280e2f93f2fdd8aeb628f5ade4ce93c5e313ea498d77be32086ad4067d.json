@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Huilan Investment Holdings Ltd.\", \"subject\": \"Huilan Investment Holdings Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Huilan Investment Holdings Ltd.",
+    "subject": "Huilan Investment Holdings Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1184,
+ "output_tokens": 62,
+ "cached_read_tokens": 768,
+ "latency_ms": 4009.8407909972593,
+ "provider": "deepseek"
+}

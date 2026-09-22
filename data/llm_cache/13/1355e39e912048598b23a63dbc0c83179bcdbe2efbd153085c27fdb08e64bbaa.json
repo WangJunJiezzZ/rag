@@ -1,0 +1,60 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Yilan Capital Management Ltd.\",\"type\":\"公司\"},{\"name\":\"砥行资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"本集团\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"砥行资本管理有限公司\",\"predicate\":\"持有股权\",\"object\":\"Yilan Capital Management Ltd.\",\"attributes\":{\"比例\":\"100%\"}},{\"subject\":\"Yilan Capital Management Ltd.\",\"predicate\":\"是全资附属公司\",\"object\":\"砥行资本管理有限公司\"},{\"subject\":\"Yilan Capital Management Ltd.\",\"predicate\":\"纳入合并范围\",\"object\":\"本集团\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"本集团\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Yilan Capital Management Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "砥行资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "本集团",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "砥行资本管理有限公司",
+    "predicate": "持有股权",
+    "object": "Yilan Capital Management Ltd.",
+    "attributes": {
+     "比例": "100%"
+    }
+   },
+   {
+    "subject": "Yilan Capital Management Ltd.",
+    "predicate": "是全资附属公司",
+    "object": "砥行资本管理有限公司"
+   },
+   {
+    "subject": "Yilan Capital Management Ltd.",
+    "predicate": "纳入合并范围",
+    "object": "本集团"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "本集团"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 171,
+ "cached_read_tokens": 128,
+ "latency_ms": 4609.794499992859,
+ "provider": "deepseek"
+}

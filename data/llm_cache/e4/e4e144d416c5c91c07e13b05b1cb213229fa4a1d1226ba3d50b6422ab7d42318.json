@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两只基金名称不同（亚洲机会基金 vs 房地产收益基金），设立日期与注册地均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两只基金名称不同（亚洲机会基金 vs 房地产收益基金），设立日期与注册地均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 435,
+ "output_tokens": 44,
+ "cached_read_tokens": 256,
+ "latency_ms": 2842.441500048153,
+ "provider": "deepseek"
+}

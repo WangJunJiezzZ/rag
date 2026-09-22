@@ -1,0 +1,63 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"青柏投资\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"1993707314\",\n        \"注册地\": \"白鹭湾\",\n        \"注册日期\": \"2021年9月2日\",\n        \"主体状态\": \"存续\",\n        \"公司类型\": \"有限责任公司\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"白鹭湾\",\n      \"type\": \"地区\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"注册地\",\n      \"object\": \"白鹭湾\"\n    },\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"1993707314\"\n    },\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2021年9月2日\"\n    },\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"公司类型\",\n      \"object\": \"有限责任公司\"\n    },\n    {\n      \"subject\": \"青柏投资\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "青柏投资",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "1993707314",
+     "注册地": "白鹭湾",
+     "注册日期": "2021年9月2日",
+     "主体状态": "存续",
+     "公司类型": "有限责任公司",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "白鹭湾",
+    "type": "地区",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "青柏投资",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "注册编号",
+    "object": "1993707314"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "注册日期",
+    "object": "2021年9月2日"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "公司类型",
+    "object": "有限责任公司"
+   },
+   {
+    "subject": "青柏投资",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 235,
+ "output_tokens": 326,
+ "cached_read_tokens": 0,
+ "latency_ms": 4984.109124983661,
+ "provider": "deepseek"
+}

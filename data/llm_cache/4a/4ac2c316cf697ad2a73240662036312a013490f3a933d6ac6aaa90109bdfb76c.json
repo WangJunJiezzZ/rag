@@ -1,0 +1,127 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"澜图资产管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"Lantu Asset Management Pte. Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"郑明远\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"2024年10月14日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"金融相关专业硕士学位\",\n      \"type\": \"学历\"\n    },\n    {\n      \"name\": \"从业资格\",\n      \"type\": \"资质\"\n    },\n    {\n      \"name\": \"机构客户业务\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"name\": \"独立审计机构\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"审计报告\",\n      \"type\": \"文件\"\n    },\n    {\n      \"name\": \"投资者\",\n      \"type\": \"群体\"\n    },\n    {\n      \"name\": \"财政年度\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"中文版本\",\n      \"type\": \"文件版本\"\n    },\n    {\n      \"name\": \"英文版本\",\n      \"type\": \"文件版本\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"别名\",\n      \"object\": \"Lantu Asset Management Pte. Ltd.\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"董事会成员增补完成日期\",\n      \"object\": \"2024年10月14日\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"新任董事\",\n      \"object\": \"郑明远\"\n    },\n    {\n      \"subject\": \"董事会\",\n      \"predicate\": \"成员数量\",\n      \"object\": \"五名\"\n    },\n    {\n      \"subject\": \"郑明远\",\n      \"predicate\": \"持有学历\",\n      \"object\": \"金融相关专业硕士学位\"\n    },\n    {\n      \"subject\": \"郑明远\",\n      \"predicate\": \"具备资质\",\n      \"object\": \"从业资格\"\n    },\n    {\n      \"subject\": \"郑明远\",\n      \"predicate\": \"过往覆盖业务\",\n      \"object\": \"机构客户业务\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"审计对象\",\n      \"object\": \"本基金账目\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供对象\",\n      \"object\": \"投资者\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供时间\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"中文版本\",\n      \"predicate\": \"优先于\",\n      \"object\": \"英文版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Lantu Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "郑明远",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "2024年10月14日",
+    "type": "日期"
+   },
+   {
+    "name": "金融相关专业硕士学位",
+    "type": "学历"
+   },
+   {
+    "name": "从业资格",
+    "type": "资质"
+   },
+   {
+    "name": "机构客户业务",
+    "type": "业务领域"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件版本"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "别名",
+    "object": "Lantu Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "董事会成员增补完成日期",
+    "object": "2024年10月14日"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "新任董事",
+    "object": "郑明远"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "成员数量",
+    "object": "五名"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "持有学历",
+    "object": "金融相关专业硕士学位"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "具备资质",
+    "object": "从业资格"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "过往覆盖业务",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计对象",
+    "object": "本基金账目"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供对象",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "中文版本",
+    "predicate": "优先于",
+    "object": "英文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 224,
+ "output_tokens": 652,
+ "cached_read_tokens": 0,
+ "latency_ms": 6333.712958032265,
+ "provider": "deepseek"
+}

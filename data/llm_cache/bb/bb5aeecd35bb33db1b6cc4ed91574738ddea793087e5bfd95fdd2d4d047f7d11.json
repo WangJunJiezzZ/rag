@@ -1,0 +1,58 @@
+{
+ "text": "{\"entities\":[{\"name\":\"昀舟金融服务有限公司\",\"type\":\"公司\"},{\"name\":\"陈行知\",\"type\":\"人员\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"陈行知\",\"predicate\":\"当选为\",\"object\":\"昀舟金融服务有限公司\",\"qualifier\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"陈行知\",\"qualifier\":\"当选董事\"},{\"subject\":\"昀舟金融服务有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "昀舟金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "陈行知",
+    "type": "人员"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "陈行知",
+    "predicate": "当选为",
+    "object": "昀舟金融服务有限公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "陈行知",
+    "qualifier": "当选董事"
+   },
+   {
+    "subject": "昀舟金融服务有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 407,
+ "output_tokens": 146,
+ "cached_read_tokens": 256,
+ "latency_ms": 3399.0227910107933,
+ "provider": "deepseek"
+}

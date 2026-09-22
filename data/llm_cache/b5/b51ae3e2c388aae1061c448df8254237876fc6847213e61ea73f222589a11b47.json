@@ -1,0 +1,42 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"澜图资本管理有限公司（3）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"翊澜资本管理有限公司（3）\",\n      \"type\": \"公司\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"澜图资本管理有限公司（3）\",\n      \"predicate\": \"持有\",\n      \"object\": \"翊澜资本管理有限公司（3）\",\n      \"attributes\": {\n        \"持股比例\": \"100%\"\n      }\n    },\n    {\n      \"subject\": \"澜图资本管理有限公司（3）\",\n      \"predicate\": \"全资附属公司\",\n      \"object\": \"翊澜资本管理有限公司（3）\"\n    },\n    {\n      \"subject\": \"翊澜资本管理有限公司（3）\",\n      \"predicate\": \"纳入合并财务报表范围\",\n      \"object\": \"澜图资本管理有限公司（3）\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资本管理有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "翊澜资本管理有限公司（3）",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "持有",
+    "object": "翊澜资本管理有限公司（3）",
+    "attributes": {
+     "持股比例": "100%"
+    }
+   },
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "全资附属公司",
+    "object": "翊澜资本管理有限公司（3）"
+   },
+   {
+    "subject": "翊澜资本管理有限公司（3）",
+    "predicate": "纳入合并财务报表范围",
+    "object": "澜图资本管理有限公司（3）"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 229,
+ "output_tokens": 208,
+ "cached_read_tokens": 0,
+ "latency_ms": 3745.5939580104314,
+ "provider": "deepseek"
+}

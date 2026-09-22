@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"北岸银行\",\n      \"type\": \"机构\",\n      \"attributes\": {\n        \"注册编号\": \"BK406327\",\n        \"注册地\": \"澄江特别行政区\",\n        \"注册日期\": \"1994年11月28日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"澄江特别行政区\",\n      \"type\": \"地区\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"北岸银行\",\n      \"predicate\": \"注册地\",\n      \"object\": \"澄江特别行政区\"\n    },\n    {\n      \"subject\": \"北岸银行\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"BK406327\"\n    },\n    {\n      \"subject\": \"北岸银行\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"1994年11月28日\"\n    },\n    {\n      \"subject\": \"北岸银行\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"北岸银行\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "北岸银行",
+    "type": "机构",
+    "attributes": {
+     "注册编号": "BK406327",
+     "注册地": "澄江特别行政区",
+     "注册日期": "1994年11月28日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "地区"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "北岸银行",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "北岸银行",
+    "predicate": "注册编号",
+    "object": "BK406327"
+   },
+   {
+    "subject": "北岸银行",
+    "predicate": "注册日期",
+    "object": "1994年11月28日"
+   },
+   {
+    "subject": "北岸银行",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "北岸银行",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 240,
+ "output_tokens": 285,
+ "cached_read_tokens": 0,
+ "latency_ms": 3760.6142919976264,
+ "provider": "deepseek"
+}

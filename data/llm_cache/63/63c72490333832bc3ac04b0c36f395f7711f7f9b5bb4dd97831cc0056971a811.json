@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者均为独立注册的公司名称，字号相同但主体名称不同（国际控股 vs 资本管理），且上下文中的董事与日期均不一致，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者均为独立注册的公司名称，字号相同但主体名称不同（国际控股 vs 资本管理），且上下文中的董事与日期均不一致，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 418,
+ "output_tokens": 52,
+ "cached_read_tokens": 256,
+ "latency_ms": 3126.964166003745,
+ "provider": "deepseek"
+}

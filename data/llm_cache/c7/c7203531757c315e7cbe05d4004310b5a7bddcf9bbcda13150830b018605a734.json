@@ -1,0 +1,96 @@
+{
+ "text": "{\"entities\":[{\"id\":\"e1\",\"name\":\"砚池资产管理有限公司\",\"type\":\"机构\"},{\"id\":\"e2\",\"name\":\"砚池亚洲机会基金\",\"type\":\"产品\"},{\"id\":\"e3\",\"name\":\"砚池并购套利基金\",\"type\":\"产品\"},{\"id\":\"e4\",\"name\":\"环宇银行新港城分行\",\"type\":\"机构\"},{\"id\":\"e5\",\"name\":\"瑞辰银行新港城分行\",\"type\":\"机构\"},{\"id\":\"e6\",\"name\":\"新港城\",\"type\":\"地区\"},{\"id\":\"e7\",\"name\":\"董事会\",\"type\":\"机构\"}],\"relations\":[{\"head\":\"e1\",\"relation\":\"管理\",\"tail\":\"e2\"},{\"head\":\"e1\",\"relation\":\"管理\",\"tail\":\"e3\"},{\"head\":\"e2\",\"relation\":\"采用策略\",\"tail\":\"亚洲机会策略\"},{\"head\":\"e3\",\"relation\":\"采用策略\",\"tail\":\"并购套利策略\"},{\"head\":\"e2\",\"relation\":\"注册地\",\"tail\":\"e6\"},{\"head\":\"e3\",\"relation\":\"注册地\",\"tail\":\"e6\"},{\"head\":\"e2\",\"relation\":\"托管人\",\"tail\":\"e4\"},{\"head\":\"e3\",\"relation\":\"托管人\",\"tail\":\"e5\"},{\"head\":\"e1\",\"relation\":\"向...报告\",\"tail\":\"e7\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "e1",
+    "name": "砚池资产管理有限公司",
+    "type": "机构"
+   },
+   {
+    "id": "e2",
+    "name": "砚池亚洲机会基金",
+    "type": "产品"
+   },
+   {
+    "id": "e3",
+    "name": "砚池并购套利基金",
+    "type": "产品"
+   },
+   {
+    "id": "e4",
+    "name": "环宇银行新港城分行",
+    "type": "机构"
+   },
+   {
+    "id": "e5",
+    "name": "瑞辰银行新港城分行",
+    "type": "机构"
+   },
+   {
+    "id": "e6",
+    "name": "新港城",
+    "type": "地区"
+   },
+   {
+    "id": "e7",
+    "name": "董事会",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "head": "e1",
+    "relation": "管理",
+    "tail": "e2"
+   },
+   {
+    "head": "e1",
+    "relation": "管理",
+    "tail": "e3"
+   },
+   {
+    "head": "e2",
+    "relation": "采用策略",
+    "tail": "亚洲机会策略"
+   },
+   {
+    "head": "e3",
+    "relation": "采用策略",
+    "tail": "并购套利策略"
+   },
+   {
+    "head": "e2",
+    "relation": "注册地",
+    "tail": "e6"
+   },
+   {
+    "head": "e3",
+    "relation": "注册地",
+    "tail": "e6"
+   },
+   {
+    "head": "e2",
+    "relation": "托管人",
+    "tail": "e4"
+   },
+   {
+    "head": "e3",
+    "relation": "托管人",
+    "tail": "e5"
+   },
+   {
+    "head": "e1",
+    "relation": "向...报告",
+    "tail": "e7"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 278,
+ "cached_read_tokens": 256,
+ "latency_ms": 3954.3010420165956,
+ "provider": "deepseek"
+}

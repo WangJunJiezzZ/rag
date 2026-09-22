@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A是汇川银行的分行，B是Luyan International Holdings Ltd.，两者名称与主体均不同。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A是汇川银行的分行，B是Luyan International Holdings Ltd.，两者名称与主体均不同。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 43,
+ "cached_read_tokens": 128,
+ "latency_ms": 3169.4037090055645,
+ "provider": "deepseek"
+}

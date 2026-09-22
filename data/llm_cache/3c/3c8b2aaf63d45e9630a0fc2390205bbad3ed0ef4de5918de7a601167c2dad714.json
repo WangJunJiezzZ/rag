@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：Qiwu Global Investments Ltd.\", \"subject\": \"Qiwu Global Investments Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：Qiwu Global Investments Ltd.",
+    "subject": "Qiwu Global Investments Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1186,
+ "output_tokens": 68,
+ "cached_read_tokens": 768,
+ "latency_ms": 4568.820292013697,
+ "provider": "deepseek"
+}

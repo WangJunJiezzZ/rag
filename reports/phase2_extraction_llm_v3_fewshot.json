@@ -1,0 +1,120 @@
+{
+  "extractor": "llm:v3_fewshot",
+  "prompt": "extract_triples/v3_fewshot",
+  "resolve": true,
+  "evidence_check": true,
+  "extract_stats": {
+    "docs": 326,
+    "raw": 512,
+    "kept": 511,
+    "dropped_schema": 0,
+    "dropped_evidence": 1,
+    "dropped_dup": 0,
+    "parse_retries": 0,
+    "parse_failed": 0,
+    "cost_usd": 0.17005349999999997,
+    "reasons": {}
+  },
+  "resolve_stats": {
+    "mentions": 276,
+    "canonical": 250,
+    "merged_by_rule": 20,
+    "merged_by_vector": 4,
+    "merged_by_llm": 2,
+    "llm_calls": 242,
+    "llm_rejected": 240,
+    "blocked_by_lexical": 458,
+    "gray_unresolved": 0,
+    "cost_usd": 0.04362120000000001,
+    "examples": [
+      "[词面-强] 凛川资产管理有限公司 == 凛川资管",
+      "[词面-强] 北岸银行 == 北岸银行澄江特别行政区分行",
+      "[词面-强] 星海资本管理有限公司（2） == 星海资本（2）",
+      "[词面-强] 松岚资产管理有限公司（3） == 松岚资管（3）",
+      "[词面-强] 柏观环球投资有限公司（2） == 柏观环球（2）",
+      "[词面-强] 栖梧国际控股有限公司（2） == 栖梧国际（2）",
+      "[词面-强] 栖梧环球 == 栖梧环球投资有限公司",
+      "[词面-强] 樾川国际 == 樾川国际控股有限公司",
+      "[词面-强] 漱玉资本管理有限公司 == 漱玉资管",
+      "[词面-强] 澜图资产管理有限公司（2） == 澜图资管（2）",
+      "[词面-强] 砥行资本管理有限公司（2） == 砥行资本（2）",
+      "[词面-强] 砺石资本 == 砺石资本管理有限公司"
+    ]
+  },
+  "precision": 0.8808290155440415,
+  "recall": 0.7083333333333334,
+  "f1": 0.7852193995381062,
+  "by_relation": {
+    "DOMICILED_IN": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "DIRECTOR_OF": {
+      "gold": 127,
+      "ext": 72,
+      "ok": 42,
+      "precision": 0.5833333333333334,
+      "recall": 0.33070866141732286
+    },
+    "CUSTODIAN": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SHAREHOLDER_OF": {
+      "gold": 40,
+      "ext": 22,
+      "ok": 17,
+      "precision": 0.7727272727272727,
+      "recall": 0.425
+    },
+    "MIN_INVESTMENT": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SUBSIDIARY_OF": {
+      "gold": 16,
+      "ext": 15,
+      "ok": 13,
+      "precision": 0.8666666666666667,
+      "recall": 0.8125
+    },
+    "RISK_LEVEL": {
+      "gold": 12,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "MANAGED_BY": {
+      "gold": 40,
+      "ext": 31,
+      "ok": 23,
+      "precision": 0.7419354838709677,
+      "recall": 0.575
+    },
+    "LAUNCHED_ON": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "REGISTERED_IN": {
+      "gold": 85,
+      "ext": 86,
+      "ok": 85,
+      "precision": 0.9883720930232558,
+      "recall": 1.0
+    }
+  },
+  "unmapped_entities": 29
+}

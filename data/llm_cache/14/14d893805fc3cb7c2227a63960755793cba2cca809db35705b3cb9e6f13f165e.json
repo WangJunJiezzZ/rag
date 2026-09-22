@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任王沐阳为本公司董事\", \"subject\": \"王沐阳\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"砺石资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任王沐阳为本公司董事",
+    "subject": "王沐阳",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "砺石资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1621,
+ "output_tokens": 59,
+ "cached_read_tokens": 1280,
+ "latency_ms": 9653.68791698711,
+ "provider": "deepseek"
+}

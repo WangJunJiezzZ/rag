@@ -1,0 +1,73 @@
+{
+ "text": "{\"entities\":[{\"name\":\"松岚环球投资有限公司（2）\",\"type\":\"公司\"},{\"name\":\"许慕白\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"},{\"name\":\"注册机关\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"许慕白\",\"predicate\":\"当选为\",\"object\":\"松岚环球投资有限公司（2）\",\"qualifier\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"许慕白当选为董事\"},{\"subject\":\"松岚环球投资有限公司（2）\",\"predicate\":\"向\",\"object\":\"注册机关\",\"qualifier\":\"备案董事变更\"},{\"subject\":\"松岚环球投资有限公司（2）\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"审议重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"predicate\":\"召开\",\"object\":\"会议\",\"qualifier\":\"每月至少一次\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚环球投资有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "许慕白",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   },
+   {
+    "name": "注册机关",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许慕白",
+    "predicate": "当选为",
+    "object": "松岚环球投资有限公司（2）",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "许慕白当选为董事"
+   },
+   {
+    "subject": "松岚环球投资有限公司（2）",
+    "predicate": "向",
+    "object": "注册机关",
+    "qualifier": "备案董事变更"
+   },
+   {
+    "subject": "松岚环球投资有限公司（2）",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "召开",
+    "object": "会议",
+    "qualifier": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 217,
+ "cached_read_tokens": 256,
+ "latency_ms": 3441.9437919859774,
+ "provider": "deepseek"
+}

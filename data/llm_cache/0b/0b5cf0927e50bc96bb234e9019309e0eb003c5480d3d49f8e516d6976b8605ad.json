@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为带序号的中文名称「砥行资本（3）」，B为英文名称「Huichuan Global Investments Ltd.」，两者名称、语言及主体均不同，无证据指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为带序号的中文名称「砥行资本（3）」，B为英文名称「Huichuan Global Investments Ltd.」，两者名称、语言及主体均不同，无证据指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 61,
+ "cached_read_tokens": 128,
+ "latency_ms": 3986.1874579801224,
+ "provider": "deepseek"
+}

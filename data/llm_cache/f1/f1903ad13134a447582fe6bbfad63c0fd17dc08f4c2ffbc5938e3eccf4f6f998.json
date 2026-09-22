@@ -1,0 +1,111 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"凛川私募信贷基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"凛川资产管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"北岸银行澄江特别行政区分行\",\"type\":\"基金托管人\"},{\"id\":\"jurisdiction\",\"name\":\"卡瑟尼亚\",\"type\":\"注册地\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"基准货币\"},{\"id\":\"strategy\",\"name\":\"私募信贷策略\",\"type\":\"投资策略\"},{\"id\":\"committee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"},{\"id\":\"board\",\"name\":\"董事会\",\"type\":\"内部机构\"},{\"id\":\"compliance\",\"name\":\"合规与风险管理职能\",\"type\":\"内部职能\"}],\"relations\":[{\"subject\":\"fund\",\"predicate\":\"设立于\",\"object\":\"2020年10月21日\"},{\"subject\":\"fund\",\"predicate\":\"注册地\",\"object\":\"jurisdiction\"},{\"subject\":\"fund\",\"predicate\":\"基准货币\",\"object\":\"currency\"},{\"subject\":\"fund\",\"predicate\":\"采用策略\",\"object\":\"strategy\"},{\"subject\":\"fund\",\"predicate\":\"管理人\",\"object\":\"manager\"},{\"subject\":\"fund\",\"predicate\":\"托管人\",\"object\":\"custodian\"},{\"subject\":\"manager\",\"predicate\":\"负责\",\"object\":\"fund\"},{\"subject\":\"custodian\",\"predicate\":\"负责保管\",\"object\":\"fund\"},{\"subject\":\"committee\",\"predicate\":\"审批\",\"object\":\"非上市股权投资\"},{\"subject\":\"compliance\",\"predicate\":\"报告于\",\"object\":\"board\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "凛川私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "凛川资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "卡瑟尼亚",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "私募信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   },
+   {
+    "id": "compliance",
+    "name": "合规与风险管理职能",
+    "type": "内部职能"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立于",
+    "object": "2020年10月21日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责保管",
+    "object": "fund"
+   },
+   {
+    "subject": "committee",
+    "predicate": "审批",
+    "object": "非上市股权投资"
+   },
+   {
+    "subject": "compliance",
+    "predicate": "报告于",
+    "object": "board"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 806,
+ "output_tokens": 321,
+ "cached_read_tokens": 640,
+ "latency_ms": 4624.77116700029,
+ "provider": "deepseek"
+}

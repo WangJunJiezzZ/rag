@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"陈敬亭\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"茗谷资本管理有限公司\",\n      \"type\": \"Company\"\n    },\n    {\n      \"name\": \"20%\",\n      \"type\": \"Percentage\"\n    },\n    {\n      \"name\": \"2022年11月18日\",\n      \"type\": \"Date\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"陈敬亭\",\n      \"predicate\": \"持有\",\n      \"object\": \"茗谷资本管理有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"20%\",\n        \"登记日期\": \"2022年11月18日\"\n      }\n    },\n    {\n      \"subject\": \"陈敬亭\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"茗谷资本管理有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "陈敬亭",
+    "type": "Person"
+   },
+   {
+    "name": "茗谷资本管理有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "20%",
+    "type": "Percentage"
+   },
+   {
+    "name": "2022年11月18日",
+    "type": "Date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "陈敬亭",
+    "predicate": "持有",
+    "object": "茗谷资本管理有限公司",
+    "attributes": {
+     "持股比例": "20%",
+     "登记日期": "2022年11月18日"
+    }
+   },
+   {
+    "subject": "陈敬亭",
+    "predicate": "是主要股东",
+    "object": "茗谷资本管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 244,
+ "output_tokens": 197,
+ "cached_read_tokens": 0,
+ "latency_ms": 3814.781541004777,
+ "provider": "deepseek"
+}

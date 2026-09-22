@@ -1,0 +1,153 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"org_1\",\n      \"name\": \"翊澜资本管理有限公司\",\n      \"type\": \"Organization\",\n      \"aliases\": [\"Yilan Capital Management Ltd.\", \"本公司\", \"管理人\"]\n    },\n    {\n      \"id\": \"fund_1\",\n      \"name\": \"翊澜房地产收益基金\",\n      \"type\": \"Fund\"\n    },\n    {\n      \"id\": \"fund_2\",\n      \"name\": \"翊澜亚洲机会基金\",\n      \"type\": \"Fund\"\n    },\n    {\n      \"id\": \"bank_1\",\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"Organization\"\n    },\n    {\n      \"id\": \"loc_1\",\n      \"name\": \"白鹭湾\",\n      \"type\": \"Location\"\n    },\n    {\n      \"id\": \"loc_2\",\n      \"name\": \"临海特区\",\n      \"type\": \"Location\"\n    },\n    {\n      \"id\": \"strategy_1\",\n      \"name\": \"房地产收益策略\",\n      \"type\": \"Strategy\"\n    },\n    {\n      \"id\": \"strategy_2\",\n      \"name\": \"亚洲机会策略\",\n      \"type\": \"Strategy\"\n    },\n    {\n      \"id\": \"committee_1\",\n      \"name\": \"投资委员会\",\n      \"type\": \"Committee\"\n    },\n    {\n      \"id\": \"function_1\",\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"Function\"\n    },\n    {\n      \"id\": \"board_1\",\n      \"name\": \"董事会\",\n      \"type\": \"Organization\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"head\": \"org_1\",\n      \"head_name\": \"翊澜资本管理有限公司\",\n      \"relation\": \"管理\",\n      \"tail\": \"fund_1\",\n      \"tail_name\": \"翊澜房地产收益基金\"\n    },\n    {\n      \"head\": \"org_1\",\n      \"head_name\": \"翊澜资本管理有限公司\",\n      \"relation\": \"管理\",\n      \"tail\": \"fund_2\",\n      \"tail_name\": \"翊澜亚洲机会基金\"\n    },\n    {\n      \"head\": \"fund_1\",\n      \"head_name\": \"翊澜房地产收益基金\",\n      \"relation\": \"采用策略\",\n      \"tail\": \"strategy_1\",\n      \"tail_name\": \"房地产收益策略\"\n    },\n    {\n      \"head\": \"fund_2\",\n      \"head_name\": \"翊澜亚洲机会基金\",\n      \"relation\": \"采用策略\",\n      \"tail\": \"strategy_2\",\n      \"tail_name\": \"亚洲机会策略\"\n    },\n    {\n      \"head\": \"fund_1\",\n      \"head_name\": \"翊澜房地产收益基金\",\n      \"relation\": \"注册地\",\n      \"tail\": \"loc_1\",\n      \"tail_name\": \"白鹭湾\"\n    },\n    {\n      \"head\": \"fund_2\",\n      \"head_name\": \"翊澜亚洲机会基金\",\n      \"relation\": \"注册地\",\n      \"tail\": \"loc_2\",\n      \"tail_name\": \"临海特区\"\n    },\n    {\n      \"head\": \"fund_1\",\n      \"head_name\": \"翊澜房地产收益基金\",\n      \"relation\": \"托管人\",\n      \"tail\": \"bank_1\",\n      \"tail_name\": \"汇川银行新港城分行\"\n    },\n    {\n      \"head\": \"fund_2\",\n      \"head_name\": \"翊澜亚洲机会基金\",\n      \"relation\": \"托管人\",\n      \"tail\": \"bank_1\",\n      \"tail_name\": \"汇川银行新港城分行\"\n    },\n    {\n      \"head\": \"org_1\",\n      \"head_name\": \"翊澜资本管理有限公司\",\n      \"relation\": \"设立\",\n      \"tail\": \"committee_1\",\n      \"tail_name\": \"投资委员会\"\n    },\n    {\n      \"head\": \"org_1\",\n      \"head_name\": \"翊澜资本管理有限公司\",\n      \"relation\": \"建立\",\n      \"tail\": \"function_1\",\n      \"tail_name\": \"合规与风险管理职能\"\n    },\n    {\n      \"head\": \"function_1\",\n      \"head_name\": \"合规与风险管理职能\",\n      \"relation\": \"报告对象\",\n      \"tail\": \"board_1\",\n      \"tail_name\": \"董事会\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "org_1",
+    "name": "翊澜资本管理有限公司",
+    "type": "Organization",
+    "aliases": [
+     "Yilan Capital Management Ltd.",
+     "本公司",
+     "管理人"
+    ]
+   },
+   {
+    "id": "fund_1",
+    "name": "翊澜房地产收益基金",
+    "type": "Fund"
+   },
+   {
+    "id": "fund_2",
+    "name": "翊澜亚洲机会基金",
+    "type": "Fund"
+   },
+   {
+    "id": "bank_1",
+    "name": "汇川银行新港城分行",
+    "type": "Organization"
+   },
+   {
+    "id": "loc_1",
+    "name": "白鹭湾",
+    "type": "Location"
+   },
+   {
+    "id": "loc_2",
+    "name": "临海特区",
+    "type": "Location"
+   },
+   {
+    "id": "strategy_1",
+    "name": "房地产收益策略",
+    "type": "Strategy"
+   },
+   {
+    "id": "strategy_2",
+    "name": "亚洲机会策略",
+    "type": "Strategy"
+   },
+   {
+    "id": "committee_1",
+    "name": "投资委员会",
+    "type": "Committee"
+   },
+   {
+    "id": "function_1",
+    "name": "合规与风险管理职能",
+    "type": "Function"
+   },
+   {
+    "id": "board_1",
+    "name": "董事会",
+    "type": "Organization"
+   }
+  ],
+  "relations": [
+   {
+    "head": "org_1",
+    "head_name": "翊澜资本管理有限公司",
+    "relation": "管理",
+    "tail": "fund_1",
+    "tail_name": "翊澜房地产收益基金"
+   },
+   {
+    "head": "org_1",
+    "head_name": "翊澜资本管理有限公司",
+    "relation": "管理",
+    "tail": "fund_2",
+    "tail_name": "翊澜亚洲机会基金"
+   },
+   {
+    "head": "fund_1",
+    "head_name": "翊澜房地产收益基金",
+    "relation": "采用策略",
+    "tail": "strategy_1",
+    "tail_name": "房地产收益策略"
+   },
+   {
+    "head": "fund_2",
+    "head_name": "翊澜亚洲机会基金",
+    "relation": "采用策略",
+    "tail": "strategy_2",
+    "tail_name": "亚洲机会策略"
+   },
+   {
+    "head": "fund_1",
+    "head_name": "翊澜房地产收益基金",
+    "relation": "注册地",
+    "tail": "loc_1",
+    "tail_name": "白鹭湾"
+   },
+   {
+    "head": "fund_2",
+    "head_name": "翊澜亚洲机会基金",
+    "relation": "注册地",
+    "tail": "loc_2",
+    "tail_name": "临海特区"
+   },
+   {
+    "head": "fund_1",
+    "head_name": "翊澜房地产收益基金",
+    "relation": "托管人",
+    "tail": "bank_1",
+    "tail_name": "汇川银行新港城分行"
+   },
+   {
+    "head": "fund_2",
+    "head_name": "翊澜亚洲机会基金",
+    "relation": "托管人",
+    "tail": "bank_1",
+    "tail_name": "汇川银行新港城分行"
+   },
+   {
+    "head": "org_1",
+    "head_name": "翊澜资本管理有限公司",
+    "relation": "设立",
+    "tail": "committee_1",
+    "tail_name": "投资委员会"
+   },
+   {
+    "head": "org_1",
+    "head_name": "翊澜资本管理有限公司",
+    "relation": "建立",
+    "tail": "function_1",
+    "tail_name": "合规与风险管理职能"
+   },
+   {
+    "head": "function_1",
+    "head_name": "合规与风险管理职能",
+    "relation": "报告对象",
+    "tail": "board_1",
+    "tail_name": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 313,
+ "output_tokens": 942,
+ "cached_read_tokens": 0,
+ "latency_ms": 6761.88354101032,
+ "provider": "deepseek"
+}

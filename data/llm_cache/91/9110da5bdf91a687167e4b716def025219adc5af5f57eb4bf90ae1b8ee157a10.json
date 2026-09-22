@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"A 带序号（3）且中文名「砺石」与 B 的罗马化名「Qiwu」不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "A 带序号（3）且中文名「砺石」与 B 的罗马化名「Qiwu」不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 51,
+ "cached_read_tokens": 128,
+ "latency_ms": 3170.7571250153705,
+ "provider": "deepseek"
+}

@@ -1,0 +1,149 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"瑾樾资产管理有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"邱景行\",\n      \"type\": \"人员\"\n    },\n    {\n      \"name\": \"股东大会\",\n      \"type\": \"会议\"\n    },\n    {\n      \"name\": \"2025年2月13日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"注册机关\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"结构化产品与另类投资\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"name\": \"193亿单位货币\",\n      \"type\": \"金额\"\n    },\n    {\n      \"name\": \"独立审计机构\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"审计报告\",\n      \"type\": \"文件\"\n    },\n    {\n      \"name\": \"投资者\",\n      \"type\": \"人员\"\n    },\n    {\n      \"name\": \"财政年度\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"四个月\",\n      \"type\": \"时间\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"账目\",\n      \"type\": \"财务项目\"\n    },\n    {\n      \"name\": \"中文版本\",\n      \"type\": \"文件版本\"\n    },\n    {\n      \"name\": \"英文版本\",\n      \"type\": \"文件版本\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"召开日期\",\n      \"object\": \"2025年2月13日\"\n    },\n    {\n      \"subject\": \"股东大会\",\n      \"predicate\": \"审议通过\",\n      \"object\": \"邱景行当选为本公司董事\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"当选\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"任职公司\",\n      \"object\": \"瑾樾资产管理有限公司（2）\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"生效日期\",\n      \"object\": \"2025年2月13日\"\n    },\n    {\n      \"subject\": \"相关变更\",\n      \"predicate\": \"备案于\",\n      \"object\": \"注册机关\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"从事工作\",\n      \"object\": \"结构化产品与另类投资的设计与分销\"\n    },\n    {\n      \"subject\": \"邱景行\",\n      \"predicate\": \"累计管理规模\",\n      \"object\": \"193亿单位货币\"\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"账目审计机构\",\n      \"object\": \"独立审计机构\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"审计\",\n      \"object\": \"本基金的账目\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供对象\",\n      \"object\": \"投资者\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供时间\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"本公告\",\n      \"predicate\": \"版本优先\",\n      \"object\": \"中文版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "瑾樾资产管理有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "邱景行",
+    "type": "人员"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "2025年2月13日",
+    "type": "日期"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "结构化产品与另类投资",
+    "type": "业务领域"
+   },
+   {
+    "name": "193亿单位货币",
+    "type": "金额"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "投资者",
+    "type": "人员"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间"
+   },
+   {
+    "name": "四个月",
+    "type": "时间"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "账目",
+    "type": "财务项目"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件版本"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "股东大会",
+    "predicate": "召开日期",
+    "object": "2025年2月13日"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "邱景行当选为本公司董事"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "当选",
+    "object": "董事"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "任职公司",
+    "object": "瑾樾资产管理有限公司（2）"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "生效日期",
+    "object": "2025年2月13日"
+   },
+   {
+    "subject": "相关变更",
+    "predicate": "备案于",
+    "object": "注册机关"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "从事工作",
+    "object": "结构化产品与另类投资的设计与分销"
+   },
+   {
+    "subject": "邱景行",
+    "predicate": "累计管理规模",
+    "object": "193亿单位货币"
+   },
+   {
+    "subject": "本基金",
+    "predicate": "账目审计机构",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金的账目"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供对象",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "本公告",
+    "predicate": "版本优先",
+    "object": "中文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 231,
+ "output_tokens": 775,
+ "cached_read_tokens": 0,
+ "latency_ms": 4987.13108303491,
+ "provider": "deepseek"
+}

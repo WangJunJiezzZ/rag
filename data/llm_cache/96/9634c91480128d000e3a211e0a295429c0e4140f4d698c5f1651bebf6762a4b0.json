@@ -1,0 +1,39 @@
+{
+ "text": "{\"实体关系三元组\":[{\"主体\":\"Lishi Asset Management Pte. Ltd.\",\"关系\":\"注册编号\",\"客体\":\"2002481913\"},{\"主体\":\"Lishi Asset Management Pte. Ltd.\",\"关系\":\"注册地\",\"客体\":\"澄江特别行政区\"},{\"主体\":\"Lishi Asset Management Pte. Ltd.\",\"关系\":\"注册日期\",\"客体\":\"2011 年 2 月 22 日\"},{\"主体\":\"Lishi Asset Management Pte. Ltd.\",\"关系\":\"主体状态\",\"客体\":\"存续\"},{\"主体\":\"Lishi Asset Management Pte. Ltd.\",\"关系\":\"业务范围\",\"客体\":\"投资管理、投资顾问及相关配套服务\"}]}",
+ "parsed": {
+  "实体关系三元组": [
+   {
+    "主体": "Lishi Asset Management Pte. Ltd.",
+    "关系": "注册编号",
+    "客体": "2002481913"
+   },
+   {
+    "主体": "Lishi Asset Management Pte. Ltd.",
+    "关系": "注册地",
+    "客体": "澄江特别行政区"
+   },
+   {
+    "主体": "Lishi Asset Management Pte. Ltd.",
+    "关系": "注册日期",
+    "客体": "2011 年 2 月 22 日"
+   },
+   {
+    "主体": "Lishi Asset Management Pte. Ltd.",
+    "关系": "主体状态",
+    "客体": "存续"
+   },
+   {
+    "主体": "Lishi Asset Management Pte. Ltd.",
+    "关系": "业务范围",
+    "客体": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 411,
+ "output_tokens": 143,
+ "cached_read_tokens": 256,
+ "latency_ms": 3529.451708018314,
+ "provider": "deepseek"
+}

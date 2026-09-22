@@ -1,0 +1,48 @@
+{
+ "text": "{\"entities\":[{\"name\":\"柏观金融服务有限公司\",\"type\":\"公司\"},{\"name\":\"曾承业\",\"type\":\"人员\"},{\"name\":\"董事\",\"type\":\"职位\"}],\"relations\":[{\"subject\":\"柏观金融服务有限公司\",\"predicate\":\"委任\",\"object\":\"曾承业\"},{\"subject\":\"曾承业\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"曾承业\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"曾承业\",\"predicate\":\"生效日期\",\"object\":\"2025年2月4日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "柏观金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "曾承业",
+    "type": "人员"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "柏观金融服务有限公司",
+    "predicate": "委任",
+    "object": "曾承业"
+   },
+   {
+    "subject": "曾承业",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "曾承业",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "曾承业",
+    "predicate": "生效日期",
+    "object": "2025年2月4日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 394,
+ "output_tokens": 115,
+ "cached_read_tokens": 256,
+ "latency_ms": 3293.988084013108,
+ "provider": "deepseek"
+}

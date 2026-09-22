@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"吴知微当选为本公司董事\", \"subject\": \"吴知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"砺石环球投资有限公司（3）\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "吴知微当选为本公司董事",
+    "subject": "吴知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "砺石环球投资有限公司（3）",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1628,
+ "output_tokens": 62,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3734.1889169765636,
+ "provider": "deepseek"
+}

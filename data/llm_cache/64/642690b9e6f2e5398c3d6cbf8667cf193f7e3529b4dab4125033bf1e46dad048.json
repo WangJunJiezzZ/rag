@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者全称不同（可持续发展基金 vs 私募信贷基金），设立日期与注册地均不同，指向不同基金实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者全称不同（可持续发展基金 vs 私募信贷基金），设立日期与注册地均不同，指向不同基金实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 450,
+ "output_tokens": 44,
+ "cached_read_tokens": 256,
+ "latency_ms": 2833.36429198971,
+ "provider": "deepseek"
+}

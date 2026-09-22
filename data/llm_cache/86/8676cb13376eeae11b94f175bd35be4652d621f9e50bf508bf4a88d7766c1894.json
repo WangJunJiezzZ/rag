@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任黄南星为本公司董事\", \"subject\": \"黄南星\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"翊澜资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任黄南星为本公司董事",
+    "subject": "黄南星",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "翊澜资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1622,
+ "output_tokens": 59,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3291.2005829857662,
+ "provider": "deepseek"
+}

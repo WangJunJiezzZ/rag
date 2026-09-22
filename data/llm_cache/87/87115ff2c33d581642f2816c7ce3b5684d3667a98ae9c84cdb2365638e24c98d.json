@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2022 年 11 月 18 日 召开的股东大会审议通过，刘知微当选为本公司董事，即日生效\", \"subject\": \"刘知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"澜图资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2022 年 11 月 18 日 召开的股东大会审议通过，刘知微当选为本公司董事，即日生效",
+    "subject": "刘知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "澜图资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1636,
+ "output_tokens": 82,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3713.14754197374,
+ "provider": "deepseek"
+}

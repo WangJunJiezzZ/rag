@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：麓岩投资（2）\", \"subject\": \"麓岩投资（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：麓岩投资（2）",
+    "subject": "麓岩投资（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1187,
+ "output_tokens": 64,
+ "cached_read_tokens": 768,
+ "latency_ms": 3203.077875019517,
+ "provider": "deepseek"
+}

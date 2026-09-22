@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号「（2）」，B为英文名「Huilan Investment Holdings Ltd.」，名称主体不同且A带序号标识，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号「（2）」，B为英文名「Huilan Investment Holdings Ltd.」，名称主体不同且A带序号标识，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 54,
+ "cached_read_tokens": 128,
+ "latency_ms": 12184.19850000646,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.7, \"reason\": \"「砺石环球投资有限公司」与「砺石资本」名称主体不同，前者为投资公司，后者为基金管理人，无证据表明为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.7,
+  "reason": "「砺石环球投资有限公司」与「砺石资本」名称主体不同，前者为投资公司，后者为基金管理人，无证据表明为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 414,
+ "output_tokens": 52,
+ "cached_read_tokens": 256,
+ "latency_ms": 2926.292124961037,
+ "provider": "deepseek"
+}

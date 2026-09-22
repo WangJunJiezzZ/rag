@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「翊澜资本（2）」与「Daiyu Financial Services Ltd.」名称、语言及序号均不同，无法指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「翊澜资本（2）」与「Daiyu Financial Services Ltd.」名称、语言及序号均不同，无法指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 48,
+ "cached_read_tokens": 128,
+ "latency_ms": 3111.659874964971,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2024 年 11 月 3 日，林景行直接持有本公司已发行股本的 20%，为本公司主要股东之一\", \"subject\": \"林景行\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"青柏资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2024 年 11 月 3 日，林景行直接持有本公司已发行股本的 20%，为本公司主要股东之一",
+    "subject": "林景行",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "青柏资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1643,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 2725.9150000172667,
+ "provider": "deepseek"
+}

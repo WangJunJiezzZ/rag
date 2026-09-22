@@ -1,0 +1,39 @@
+{
+ "text": "{\"entities\":[{\"name\":\"澜图资本管理有限公司（3）\",\"type\":\"公司\"},{\"name\":\"翊澜资本管理有限公司（3）\",\"type\":\"公司\"}],\"relations\":[{\"subject\":\"澜图资本管理有限公司（3）\",\"predicate\":\"全资持有\",\"object\":\"翊澜资本管理有限公司（3）\"},{\"subject\":\"澜图资本管理有限公司（3）\",\"predicate\":\"持股比例\",\"object\":\"100%\"},{\"subject\":\"翊澜资本管理有限公司（3）\",\"predicate\":\"纳入合并范围\",\"object\":\"澜图资本管理有限公司（3）\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资本管理有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "翊澜资本管理有限公司（3）",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "全资持有",
+    "object": "翊澜资本管理有限公司（3）"
+   },
+   {
+    "subject": "澜图资本管理有限公司（3）",
+    "predicate": "持股比例",
+    "object": "100%"
+   },
+   {
+    "subject": "翊澜资本管理有限公司（3）",
+    "predicate": "纳入合并范围",
+    "object": "澜图资本管理有限公司（3）"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 406,
+ "output_tokens": 122,
+ "cached_read_tokens": 256,
+ "latency_ms": 4094.090625003446,
+ "provider": "deepseek"
+}

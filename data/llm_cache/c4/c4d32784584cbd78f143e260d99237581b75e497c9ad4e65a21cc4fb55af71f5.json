@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2025 年 3 月 18 日，谢怀瑾直接持有本公司已发行股本的 25%，为本公司主要股东之一\", \"subject\": \"谢怀瑾\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"霁川资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2025 年 3 月 18 日，谢怀瑾直接持有本公司已发行股本的 25%，为本公司主要股东之一",
+    "subject": "谢怀瑾",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "霁川资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1633,
+ "output_tokens": 86,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3301.172667008359,
+ "provider": "deepseek"
+}

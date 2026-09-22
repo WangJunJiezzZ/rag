@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2022 年 1 月 16 日，曾书尧直接持有本公司已发行股本的 15%，为本公司主要股东之一\", \"subject\": \"曾书尧\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"霁川环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2022 年 1 月 16 日，曾书尧直接持有本公司已发行股本的 15%，为本公司主要股东之一",
+    "subject": "曾书尧",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "霁川环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1185,
+ "output_tokens": 87,
+ "cached_read_tokens": 768,
+ "latency_ms": 3213.220542005729,
+ "provider": "deepseek"
+}

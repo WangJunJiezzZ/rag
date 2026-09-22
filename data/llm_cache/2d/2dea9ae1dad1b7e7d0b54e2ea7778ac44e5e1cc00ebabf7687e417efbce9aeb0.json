@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任陈沐阳为本公司董事\", \"subject\": \"陈沐阳\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"燧明投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任陈沐阳为本公司董事",
+    "subject": "陈沐阳",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "燧明投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1184,
+ "output_tokens": 61,
+ "cached_read_tokens": 896,
+ "latency_ms": 2582.4170419946313,
+ "provider": "deepseek"
+}

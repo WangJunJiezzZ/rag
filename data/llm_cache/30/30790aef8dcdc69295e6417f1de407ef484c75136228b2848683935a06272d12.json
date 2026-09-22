@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任曾慕白为本公司董事\", \"subject\": \"曾慕白\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"瑾樾资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任曾慕白为本公司董事",
+    "subject": "曾慕白",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "瑾樾资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1186,
+ "output_tokens": 61,
+ "cached_read_tokens": 768,
+ "latency_ms": 2782.7418340020813,
+ "provider": "deepseek"
+}

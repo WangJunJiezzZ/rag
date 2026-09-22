@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 1 月 25 日，谢志诚直接持有本公司已发行股本的 51%，为本公司主要股东之一\", \"subject\": \"谢志诚\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"昀舟金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 1 月 25 日，谢志诚直接持有本公司已发行股本的 51%，为本公司主要股东之一",
+    "subject": "谢志诚",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "昀舟金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1193,
+ "output_tokens": 86,
+ "cached_read_tokens": 768,
+ "latency_ms": 2741.858959023375,
+ "provider": "deepseek"
+}

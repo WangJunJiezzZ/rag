@@ -1,0 +1,201 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"翊澜亚洲机会基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"翊澜资本（2）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"临海特区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"亚洲机会策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"base_currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"min_initial\",\n      \"name\": \"10万美元\",\n      \"type\": \"最低认购金额\"\n    },\n    {\n      \"id\": \"min_additional\",\n      \"name\": \"5万美元\",\n      \"type\": \"最低追加认购金额\"\n    },\n    {\n      \"id\": \"redemption_frequency\",\n      \"name\": \"每月最后一个工作日\",\n      \"type\": \"赎回申请日\"\n    },\n    {\n      \"id\": \"redemption_payment\",\n      \"name\": \"7个工作日\",\n      \"type\": \"赎回款项支付期限\"\n    },\n    {\n      \"id\": \"hurdle_rate\",\n      \"name\": \"8%年化门槛收益率\",\n      \"type\": \"业绩报酬门槛\"\n    },\n    {\n      \"id\": \"perf_fee_10\",\n      \"name\": \"10%\",\n      \"type\": \"业绩报酬计提比例\"\n    },\n    {\n      \"id\": \"perf_fee_15\",\n      \"name\": \"15%\",\n      \"type\": \"业绩报酬计提比例\"\n    },\n    {\n      \"id\": \"high_water_mark\",\n      \"name\": \"高水位线法\",\n      \"type\": \"业绩报酬计算方法\"\n    },\n    {\n      \"id\": \"risk_concentration\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_market\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_fx\",\n      \"name\": \"汇率风险\",\n      \"type\": \"风险因素\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称\",\n      \"object\": \"翊澜亚洲机会基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2025年8月18日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"jurisdiction\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"base_currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"min_initial\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低追加认购金额\",\n      \"object\": \"min_additional\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回申请日\",\n      \"object\": \"redemption_frequency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回款项支付期限\",\n      \"object\": \"redemption_payment\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬门槛收益率\",\n      \"object\": \"hurdle_rate\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计提比例\",\n      \"object\": \"perf_fee_10\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计提比例\",\n      \"object\": \"perf_fee_15\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计算方法\",\n      \"object\": \"high_water_mark\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_concentration\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_market\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_fx\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "翊澜亚洲机会基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "翊澜资本（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "strategy",
+    "name": "亚洲机会策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "base_currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "min_initial",
+    "name": "10万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "min_additional",
+    "name": "5万美元",
+    "type": "最低追加认购金额"
+   },
+   {
+    "id": "redemption_frequency",
+    "name": "每月最后一个工作日",
+    "type": "赎回申请日"
+   },
+   {
+    "id": "redemption_payment",
+    "name": "7个工作日",
+    "type": "赎回款项支付期限"
+   },
+   {
+    "id": "hurdle_rate",
+    "name": "8%年化门槛收益率",
+    "type": "业绩报酬门槛"
+   },
+   {
+    "id": "perf_fee_10",
+    "name": "10%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "perf_fee_15",
+    "name": "15%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "high_water_mark",
+    "name": "高水位线法",
+    "type": "业绩报酬计算方法"
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_market",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_fx",
+    "name": "汇率风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "翊澜亚洲机会基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2025年8月18日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "base_currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "min_initial"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低追加认购金额",
+    "object": "min_additional"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "redemption_frequency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "redemption_payment"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬门槛收益率",
+    "object": "hurdle_rate"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提比例",
+    "object": "perf_fee_10"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提比例",
+    "object": "perf_fee_15"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计算方法",
+    "object": "high_water_mark"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_concentration"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_market"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_fx"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "fund"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 705,
+ "output_tokens": 1148,
+ "cached_read_tokens": 0,
+ "latency_ms": 5631.023207970429,
+ "provider": "deepseek"
+}

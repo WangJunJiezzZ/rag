@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：茗谷投资\", \"subject\": \"茗谷投资\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：茗谷投资",
+    "subject": "茗谷投资",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1183,
+ "output_tokens": 62,
+ "cached_read_tokens": 768,
+ "latency_ms": 3156.078583037015,
+ "provider": "deepseek"
+}

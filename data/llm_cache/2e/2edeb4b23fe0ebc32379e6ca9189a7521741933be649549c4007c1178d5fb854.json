@@ -1,0 +1,43 @@
+{
+ "text": "{\"entities\":[{\"name\":\"郑怀瑾\",\"type\":\"Person\"},{\"name\":\"鹤鸣环球投资有限公司\",\"type\":\"Company\"},{\"name\":\"2023年12月18日\",\"type\":\"Date\"}],\"relations\":[{\"head\":\"郑怀瑾\",\"relation\":\"持有股份\",\"tail\":\"鹤鸣环球投资有限公司\"},{\"head\":\"郑怀瑾\",\"relation\":\"持股比例\",\"tail\":\"10%\"},{\"head\":\"郑怀瑾\",\"relation\":\"登记日期\",\"tail\":\"2023年12月18日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "郑怀瑾",
+    "type": "Person"
+   },
+   {
+    "name": "鹤鸣环球投资有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2023年12月18日",
+    "type": "Date"
+   }
+  ],
+  "relations": [
+   {
+    "head": "郑怀瑾",
+    "relation": "持有股份",
+    "tail": "鹤鸣环球投资有限公司"
+   },
+   {
+    "head": "郑怀瑾",
+    "relation": "持股比例",
+    "tail": "10%"
+   },
+   {
+    "head": "郑怀瑾",
+    "relation": "登记日期",
+    "tail": "2023年12月18日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 105,
+ "cached_read_tokens": 256,
+ "latency_ms": 3377.2804589825682,
+ "provider": "deepseek"
+}

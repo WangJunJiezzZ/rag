@@ -1,0 +1,46 @@
+{
+ "text": "{\"entities\":[{\"name\":\"澜图资产管理有限公司\",\"type\":\"公司\",\"attributes\":{\"注册编号\":\"2024903035\",\"注册地\":\"白鹭湾\",\"注册日期\":\"2002年3月22日\",\"主体状态\":\"存续\"}}],\"relations\":[{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"注册编号\",\"object\":\"2024903035\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"注册地\",\"object\":\"白鹭湾\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"注册日期\",\"object\":\"2002年3月22日\"},{\"subject\":\"澜图资产管理有限公司\",\"predicate\":\"主体状态\",\"object\":\"存续\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资产管理有限公司",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "2024903035",
+     "注册地": "白鹭湾",
+     "注册日期": "2002年3月22日",
+     "主体状态": "存续"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册编号",
+    "object": "2024903035"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "注册日期",
+    "object": "2002年3月22日"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "主体状态",
+    "object": "存续"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 139,
+ "cached_read_tokens": 256,
+ "latency_ms": 3055.1337500219233,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：澄江特别行政区\", \"subject\": \"Yunzhou Investment Holdings Ltd.\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：澄江特别行政区",
+    "subject": "Yunzhou Investment Holdings Ltd.",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1188,
+ "output_tokens": 63,
+ "cached_read_tokens": 768,
+ "latency_ms": 4711.5263330051675,
+ "provider": "deepseek"
+}

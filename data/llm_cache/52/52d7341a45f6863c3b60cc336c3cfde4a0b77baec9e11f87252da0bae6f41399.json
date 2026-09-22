@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「砥行资本管理有限公司」，B为英文名「Yunzhou Financial Services Ltd.」，两者名称、语言及主体均不对应，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「砥行资本管理有限公司」，B为英文名「Yunzhou Financial Services Ltd.」，两者名称、语言及主体均不对应，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 57,
+ "cached_read_tokens": 256,
+ "latency_ms": 2828.0067919986323,
+ "provider": "deepseek"
+}

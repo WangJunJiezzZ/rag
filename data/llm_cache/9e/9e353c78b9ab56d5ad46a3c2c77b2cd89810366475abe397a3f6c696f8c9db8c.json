@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 10 月 2 日，林景行直接持有本公司已发行股本的 30%，为本公司主要股东之一\", \"subject\": \"林景行\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"沅曦环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 10 月 2 日，林景行直接持有本公司已发行股本的 30%，为本公司主要股东之一",
+    "subject": "林景行",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "沅曦环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1633,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3324.894583027344,
+ "provider": "deepseek"
+}

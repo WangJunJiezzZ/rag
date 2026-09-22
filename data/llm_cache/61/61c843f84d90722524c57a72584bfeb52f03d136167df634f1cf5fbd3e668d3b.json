@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2025 年 11 月 27 日 完成董事会成员增补，新任董事为许听澜\", \"subject\": \"许听澜\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"翊澜资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2025 年 11 月 27 日 完成董事会成员增补，新任董事为许听澜",
+    "subject": "许听澜",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "翊澜资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1624,
+ "output_tokens": 80,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3219.3328329594806,
+ "provider": "deepseek"
+}

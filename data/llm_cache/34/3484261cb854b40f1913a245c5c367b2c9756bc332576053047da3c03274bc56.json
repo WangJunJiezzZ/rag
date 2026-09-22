@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.3, \"reason\": \"「樾川国际」与「Yuanxi Global Investments Ltd.」音译与业务描述均不匹配，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.3,
+  "reason": "「樾川国际」与「Yuanxi Global Investments Ltd.」音译与业务描述均不匹配，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 49,
+ "cached_read_tokens": 128,
+ "latency_ms": 4483.379875018727,
+ "provider": "deepseek"
+}

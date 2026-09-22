@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为带序号(3)的中文控股公司，B为无序号且名称不同的英文投资公司，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为带序号(3)的中文控股公司，B为无序号且名称不同的英文投资公司，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 46,
+ "cached_read_tokens": 128,
+ "latency_ms": 2780.4534580209292,
+ "provider": "deepseek"
+}

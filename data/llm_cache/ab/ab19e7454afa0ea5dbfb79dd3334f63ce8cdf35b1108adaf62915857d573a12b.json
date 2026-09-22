@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「屿川环球（2）」带序号且为中文名，与英文名「Linchuan Asset Management Pte. Ltd.」名称、语言及主体均不一致，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「屿川环球（2）」带序号且为中文名，与英文名「Linchuan Asset Management Pte. Ltd.」名称、语言及主体均不一致，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 60,
+ "cached_read_tokens": 128,
+ "latency_ms": 3045.266792003531,
+ "provider": "deepseek"
+}

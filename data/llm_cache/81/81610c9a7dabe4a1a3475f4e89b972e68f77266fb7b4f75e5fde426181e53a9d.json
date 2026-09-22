@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称A为中文「青柏投资」，名称B为罗马化「Daiyu Financial Services Ltd.」，两者名称完全不同，无对应关系。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称A为中文「青柏投资」，名称B为罗马化「Daiyu Financial Services Ltd.」，两者名称完全不同，无对应关系。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 49,
+ "cached_read_tokens": 128,
+ "latency_ms": 3728.567667014431,
+ "provider": "deepseek"
+}

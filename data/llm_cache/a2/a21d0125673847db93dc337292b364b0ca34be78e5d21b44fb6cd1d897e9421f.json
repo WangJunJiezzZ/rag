@@ -1,0 +1,29 @@
+{
+ "text": "{\"triples\":[{\"subject\":\"砥行资本（2）\",\"predicate\":\"全资附属公司\",\"object\":\"Qiwu Global Investments Ltd.\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"持有100%股权\",\"object\":\"砥行资本（2）\"},{\"subject\":\"砥行资本（2）\",\"predicate\":\"纳入合并财务报表范围\",\"object\":\"本集团\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "subject": "砥行资本（2）",
+    "predicate": "全资附属公司",
+    "object": "Qiwu Global Investments Ltd."
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "持有100%股权",
+    "object": "砥行资本（2）"
+   },
+   {
+    "subject": "砥行资本（2）",
+    "predicate": "纳入合并财务报表范围",
+    "object": "本集团"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 308,
+ "output_tokens": 84,
+ "cached_read_tokens": 128,
+ "latency_ms": 3312.883165956009,
+ "provider": "deepseek"
+}

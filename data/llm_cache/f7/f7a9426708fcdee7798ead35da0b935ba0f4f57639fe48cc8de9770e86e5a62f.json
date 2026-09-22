@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「鹤鸣」与英文名「Jinyue」音译不对应，且无证据表明二者为同一实体的中英文名称。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「鹤鸣」与英文名「Jinyue」音译不对应，且无证据表明二者为同一实体的中英文名称。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 50,
+ "cached_read_tokens": 128,
+ "latency_ms": 3283.1429159850813,
+ "provider": "deepseek"
+}

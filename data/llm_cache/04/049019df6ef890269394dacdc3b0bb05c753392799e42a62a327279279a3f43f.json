@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"周牧之\",\"type\":\"Person\"},{\"name\":\"砚池资产管理有限公司\",\"type\":\"Organization\"},{\"name\":\"投资委员会\",\"type\":\"Organization\"}],\"relations\":[{\"subject\":\"周牧之\",\"predicate\":\"持有股份\",\"object\":\"砚池资产管理有限公司\",\"properties\":{\"持股比例\":\"25%\",\"登记日期\":\"2023年3月27日\"}},{\"subject\":\"周牧之\",\"predicate\":\"是主要股东\",\"object\":\"砚池资产管理有限公司\"},{\"subject\":\"砚池资产管理有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "周牧之",
+    "type": "Person"
+   },
+   {
+    "name": "砚池资产管理有限公司",
+    "type": "Organization"
+   },
+   {
+    "name": "投资委员会",
+    "type": "Organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周牧之",
+    "predicate": "持有股份",
+    "object": "砚池资产管理有限公司",
+    "properties": {
+     "持股比例": "25%",
+     "登记日期": "2023年3月27日"
+    }
+   },
+   {
+    "subject": "周牧之",
+    "predicate": "是主要股东",
+    "object": "砚池资产管理有限公司"
+   },
+   {
+    "subject": "砚池资产管理有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 141,
+ "cached_read_tokens": 256,
+ "latency_ms": 3022.785583976656,
+ "provider": "deepseek"
+}

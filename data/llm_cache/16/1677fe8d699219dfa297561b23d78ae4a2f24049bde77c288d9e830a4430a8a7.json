@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"砥行全球宏观基金：采用全球宏观策略，注册地为临海特区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"砥行全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"砥行全球宏观基金：采用全球宏观策略，注册地为临海特区，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"砥行全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"砥行私募信贷基金：采用私募信贷策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"砥行私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"砥行私募信贷基金：采用私募信贷策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"砥行私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "砥行全球宏观基金：采用全球宏观策略，注册地为临海特区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "砥行全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "砥行全球宏观基金：采用全球宏观策略，注册地为临海特区，托管人为北岸银行澄江特别行政区分行",
+    "subject": "砥行全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "砥行私募信贷基金：采用私募信贷策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "砥行私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "砥行私募信贷基金：采用私募信贷策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "砥行私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1262,
+ "output_tokens": 316,
+ "cached_read_tokens": 768,
+ "latency_ms": 3492.2595000243746,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)且注册地北屿，B为英文名Huichuan Global Investments Ltd.，名称与标识均不匹配，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)且注册地北屿，B为英文名Huichuan Global Investments Ltd.，名称与标识均不匹配，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 57,
+ "cached_read_tokens": 128,
+ "latency_ms": 2799.9031670042314,
+ "provider": "deepseek"
+}

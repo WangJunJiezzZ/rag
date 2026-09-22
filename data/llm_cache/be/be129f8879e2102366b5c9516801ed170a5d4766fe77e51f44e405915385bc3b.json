@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"鹤鸣环球投资有限公司（2）\",\"type\":\"公司\"},{\"name\":\"许听澜\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"鹤鸣环球投资有限公司（2）\",\"predicate\":\"董事会成员增补\",\"object\":\"许听澜\"},{\"subject\":\"鹤鸣环球投资有限公司（2）\",\"predicate\":\"设有\",\"object\":\"投资委员会\"},{\"subject\":\"许听澜\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "鹤鸣环球投资有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "许听澜",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鹤鸣环球投资有限公司（2）",
+    "predicate": "董事会成员增补",
+    "object": "许听澜"
+   },
+   {
+    "subject": "鹤鸣环球投资有限公司（2）",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "许听澜",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 329,
+ "output_tokens": 139,
+ "cached_read_tokens": 128,
+ "latency_ms": 3569.0987500129268,
+ "provider": "deepseek"
+}

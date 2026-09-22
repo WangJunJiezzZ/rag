@@ -1,0 +1,109 @@
+{
+  "extractor": "llm:v1_naive",
+  "prompt": "extract_triples/v1_naive",
+  "resolve": true,
+  "evidence_check": true,
+  "extract_stats": {
+    "docs": 326,
+    "raw": 3,
+    "kept": 0,
+    "dropped_schema": 3,
+    "dropped_evidence": 0,
+    "dropped_dup": 0,
+    "parse_retries": 976,
+    "parse_failed": 325,
+    "cost_usd": 0.4497582,
+    "reasons": {
+      "schema:空": 3
+    }
+  },
+  "resolve_stats": {
+    "mentions": 0,
+    "canonical": 0,
+    "merged_by_rule": 0,
+    "merged_by_vector": 0,
+    "merged_by_llm": 0,
+    "llm_calls": 0,
+    "llm_rejected": 0,
+    "blocked_by_lexical": 0,
+    "gray_unresolved": 0,
+    "cost_usd": 0.0,
+    "examples": []
+  },
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": 0.0,
+  "by_relation": {
+    "DIRECTOR_OF": {
+      "gold": 127,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "DOMICILED_IN": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "LAUNCHED_ON": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "REGISTERED_IN": {
+      "gold": 85,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "SHAREHOLDER_OF": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "MANAGED_BY": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "MIN_INVESTMENT": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "RISK_LEVEL": {
+      "gold": 12,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "CUSTODIAN": {
+      "gold": 40,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    },
+    "SUBSIDIARY_OF": {
+      "gold": 16,
+      "ext": 0,
+      "ok": 0,
+      "precision": 0.0,
+      "recall": 0.0
+    }
+  },
+  "unmapped_entities": 0
+}

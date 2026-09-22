@@ -1,0 +1,102 @@
+{
+ "text": "{\"entities\":[{\"name\":\"岫云资产管理有限公司\",\"type\":\"机构\"},{\"name\":\"岫云结构化信贷基金\",\"type\":\"产品\"},{\"name\":\"岫云可持续发展基金\",\"type\":\"产品\"},{\"name\":\"新港城\",\"type\":\"地区\"},{\"name\":\"卡瑟尼亚\",\"type\":\"地区\"},{\"name\":\"汇川银行新港城分行\",\"type\":\"机构\"},{\"name\":\"瑞辰银行新港城分行\",\"type\":\"机构\"},{\"name\":\"董事会\",\"type\":\"机构\"},{\"name\":\"投资委员会\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"岫云资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"岫云结构化信贷基金\"},{\"subject\":\"岫云资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"岫云可持续发展基金\"},{\"subject\":\"岫云结构化信贷基金\",\"predicate\":\"采用策略\",\"object\":\"结构化信贷策略\"},{\"subject\":\"岫云可持续发展基金\",\"predicate\":\"采用策略\",\"object\":\"可持续发展策略\"},{\"subject\":\"岫云结构化信贷基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"岫云可持续发展基金\",\"predicate\":\"注册地\",\"object\":\"卡瑟尼亚\"},{\"subject\":\"岫云结构化信贷基金\",\"predicate\":\"托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"岫云可持续发展基金\",\"predicate\":\"托管人\",\"object\":\"瑞辰银行新港城分行\"},{\"subject\":\"岫云资产管理有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"向报告\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "岫云资产管理有限公司",
+    "type": "机构"
+   },
+   {
+    "name": "岫云结构化信贷基金",
+    "type": "产品"
+   },
+   {
+    "name": "岫云可持续发展基金",
+    "type": "产品"
+   },
+   {
+    "name": "新港城",
+    "type": "地区"
+   },
+   {
+    "name": "卡瑟尼亚",
+    "type": "地区"
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "机构"
+   },
+   {
+    "name": "瑞辰银行新港城分行",
+    "type": "机构"
+   },
+   {
+    "name": "董事会",
+    "type": "机构"
+   },
+   {
+    "name": "投资委员会",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "管理",
+    "object": "岫云结构化信贷基金"
+   },
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "管理",
+    "object": "岫云可持续发展基金"
+   },
+   {
+    "subject": "岫云结构化信贷基金",
+    "predicate": "采用策略",
+    "object": "结构化信贷策略"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "采用策略",
+    "object": "可持续发展策略"
+   },
+   {
+    "subject": "岫云结构化信贷基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "注册地",
+    "object": "卡瑟尼亚"
+   },
+   {
+    "subject": "岫云结构化信贷基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "托管人",
+    "object": "瑞辰银行新港城分行"
+   },
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "向报告",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 398,
+ "output_tokens": 335,
+ "cached_read_tokens": 256,
+ "latency_ms": 3744.579416990746,
+ "provider": "deepseek"
+}

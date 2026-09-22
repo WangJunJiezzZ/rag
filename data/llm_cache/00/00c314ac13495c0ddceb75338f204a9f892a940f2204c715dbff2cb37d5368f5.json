@@ -1,0 +1,109 @@
+{
+ "text": "{\"entities\":[{\"name\":\"燧明投资控股有限公司\",\"type\":\"公司\"},{\"name\":\"吴清和\",\"type\":\"人物\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"2023年1月13日\",\"type\":\"日期\"},{\"name\":\"三年\",\"type\":\"时长\"},{\"name\":\"金融相关专业硕士学位\",\"type\":\"学历\"},{\"name\":\"机构客户业务\",\"type\":\"业务领域\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"},{\"name\":\"审计报告\",\"type\":\"文件\"},{\"name\":\"投资者\",\"type\":\"群体\"},{\"name\":\"财政年度\",\"type\":\"时间范围\"},{\"name\":\"四个月\",\"type\":\"时长\"}],\"relations\":[{\"subject\":\"燧明投资控股有限公司\",\"predicate\":\"委任\",\"object\":\"吴清和\"},{\"subject\":\"吴清和\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"吴清和\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"委任\",\"predicate\":\"生效日期\",\"object\":\"2023年1月13日\"},{\"subject\":\"吴清和\",\"predicate\":\"持有\",\"object\":\"金融相关专业硕士学位\"},{\"subject\":\"吴清和\",\"predicate\":\"覆盖\",\"object\":\"机构客户业务\"},{\"subject\":\"燧明投资控股有限公司\",\"predicate\":\"审计机构\",\"object\":\"独立审计机构\"},{\"subject\":\"审计报告\",\"predicate\":\"提供对象\",\"object\":\"投资者\"},{\"subject\":\"审计报告\",\"predicate\":\"提供时间\",\"object\":\"财政年度结束后四个月内\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "燧明投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "吴清和",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2023年1月13日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   },
+   {
+    "name": "金融相关专业硕士学位",
+    "type": "学历"
+   },
+   {
+    "name": "机构客户业务",
+    "type": "业务领域"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间范围"
+   },
+   {
+    "name": "四个月",
+    "type": "时长"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "燧明投资控股有限公司",
+    "predicate": "委任",
+    "object": "吴清和"
+   },
+   {
+    "subject": "吴清和",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "吴清和",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "委任",
+    "predicate": "生效日期",
+    "object": "2023年1月13日"
+   },
+   {
+    "subject": "吴清和",
+    "predicate": "持有",
+    "object": "金融相关专业硕士学位"
+   },
+   {
+    "subject": "吴清和",
+    "predicate": "覆盖",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "燧明投资控股有限公司",
+    "predicate": "审计机构",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供对象",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 317,
+ "output_tokens": 312,
+ "cached_read_tokens": 128,
+ "latency_ms": 3741.9867090065964,
+ "provider": "deepseek"
+}

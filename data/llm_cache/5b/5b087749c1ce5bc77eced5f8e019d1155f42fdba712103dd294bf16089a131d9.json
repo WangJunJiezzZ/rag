@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：北屿自治区\", \"subject\": \"漱玉投资控股有限公司（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：北屿自治区",
+    "subject": "漱玉投资控股有限公司（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1191,
+ "output_tokens": 63,
+ "cached_read_tokens": 768,
+ "latency_ms": 2861.1457500373945,
+ "provider": "deepseek"
+}

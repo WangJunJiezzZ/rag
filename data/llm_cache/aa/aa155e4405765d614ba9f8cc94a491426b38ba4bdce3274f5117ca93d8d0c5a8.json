@@ -1,0 +1,62 @@
+{
+ "text": "{\"entities\":[{\"name\":\"凛川资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"黄明远\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"凛川资产管理有限公司\",\"predicate\":\"委任\",\"object\":\"黄明远\"},{\"subject\":\"黄明远\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"黄明远\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"黄明远\",\"predicate\":\"生效日期\",\"object\":\"2022年9月25日\"},{\"subject\":\"黄明远\",\"predicate\":\"持有\",\"object\":\"硕士学位\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告对象\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "黄明远",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "凛川资产管理有限公司",
+    "predicate": "委任",
+    "object": "黄明远"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "生效日期",
+    "object": "2022年9月25日"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "持有",
+    "object": "硕士学位"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 387,
+ "output_tokens": 161,
+ "cached_read_tokens": 128,
+ "latency_ms": 3318.50137503352,
+ "provider": "deepseek"
+}

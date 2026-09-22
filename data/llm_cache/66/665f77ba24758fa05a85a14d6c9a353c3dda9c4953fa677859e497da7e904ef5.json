@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任朱南星为本公司董事\", \"subject\": \"朱南星\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"砥行资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任朱南星为本公司董事",
+    "subject": "朱南星",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "砥行资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1188,
+ "output_tokens": 60,
+ "cached_read_tokens": 896,
+ "latency_ms": 3119.2632080055773,
+ "provider": "deepseek"
+}

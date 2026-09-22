@@ -1,0 +1,211 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"鹤鸣多空策略基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"鹤鸣资管（3）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"环宇银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"new_port_city\",\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"new_dollar\",\n      \"name\": \"新元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"多空策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"management_fee_1\",\n      \"name\": \"1.25%年费率管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee_1\",\n      \"name\": \"0.10%年费率托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"management_fee_2\",\n      \"name\": \"2.00%年费率管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee_2\",\n      \"name\": \"0.08%年费率托管费\",\n      \"type\": \"费用\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称\",\n      \"object\": \"鹤鸣多空策略基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2024年8月3日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"new_port_city\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"new_dollar\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设有\",\n      \"object\": \"investment_committee\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"组成\",\n      \"object\": \"不少于三名成员\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"职责\",\n      \"object\": \"审议重大投资决策及关联交易事项\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"会议频率\",\n      \"object\": \"每月至少召开一次\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"100万新元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"1万新元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回申请日\",\n      \"object\": \"每月最后一个工作日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回款项支付时限\",\n      \"object\": \"确认后10个工作日内\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理费\",\n      \"object\": \"management_fee_1\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管费\",\n      \"object\": \"custody_fee_1\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理费\",\n      \"object\": \"management_fee_2\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管费\",\n      \"object\": \"custody_fee_2\"\n    },\n    {\n      \"subject\": \"management_fee_1\",\n      \"predicate\": \"费率\",\n      \"object\": \"1.25%年费率\"\n    },\n    {\n      \"subject\": \"custody_fee_1\",\n      \"predicate\": \"费率\",\n      \"object\": \"0.10%年费率\"\n    },\n    {\n      \"subject\": \"management_fee_2\",\n      \"predicate\": \"费率\",\n      \"object\": \"2.00%年费率\"\n    },\n    {\n      \"subject\": \"custody_fee_2\",\n      \"predicate\": \"费率\",\n      \"object\": \"0.08%年费率\"\n    },\n    {\n      \"subject\": \"management_fee_1\",\n      \"predicate\": \"计提方式\",\n      \"object\": \"按月计提、按季支付\"\n    },\n    {\n      \"subject\": \"management_fee_2\",\n      \"predicate\": \"计提方式\",\n      \"object\": \"按月计提、按季支付\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "鹤鸣多空策略基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "鹤鸣资管（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "new_port_city",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "new_dollar",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "多空策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "management_fee_1",
+    "name": "1.25%年费率管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee_1",
+    "name": "0.10%年费率托管费",
+    "type": "费用"
+   },
+   {
+    "id": "management_fee_2",
+    "name": "2.00%年费率管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee_2",
+    "name": "0.08%年费率托管费",
+    "type": "费用"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "鹤鸣多空策略基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2024年8月3日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "new_port_city"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "new_dollar"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "组成",
+    "object": "不少于三名成员"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "会议频率",
+    "object": "每月至少召开一次"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "100万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "1万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付时限",
+    "object": "确认后10个工作日内"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费",
+    "object": "management_fee_1"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费",
+    "object": "custody_fee_1"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费",
+    "object": "management_fee_2"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费",
+    "object": "custody_fee_2"
+   },
+   {
+    "subject": "management_fee_1",
+    "predicate": "费率",
+    "object": "1.25%年费率"
+   },
+   {
+    "subject": "custody_fee_1",
+    "predicate": "费率",
+    "object": "0.10%年费率"
+   },
+   {
+    "subject": "management_fee_2",
+    "predicate": "费率",
+    "object": "2.00%年费率"
+   },
+   {
+    "subject": "custody_fee_2",
+    "predicate": "费率",
+    "object": "0.08%年费率"
+   },
+   {
+    "subject": "management_fee_1",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   },
+   {
+    "subject": "management_fee_2",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 738,
+ "output_tokens": 1276,
+ "cached_read_tokens": 0,
+ "latency_ms": 7823.347166005988,
+ "provider": "deepseek"
+}

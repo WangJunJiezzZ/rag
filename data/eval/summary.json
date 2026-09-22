@@ -1,0 +1,27 @@
+{
+  "total": 109,
+  "by_type": {
+    "fact_direct": 12,
+    "fact_paraphrase": 16,
+    "fact_disambig": 11,
+    "semantic_only": 12,
+    "hop2": 14,
+    "hop3_parent": 6,
+    "hop4_risk": 10,
+    "shared_director": 8,
+    "aggregation": 8,
+    "negative": 12
+  },
+  "by_split": {
+    "test": 43,
+    "train": 39,
+    "dev": 27
+  },
+  "by_requires": {
+    "vector": 28,
+    "hybrid": 11,
+    "dense": 12,
+    "graph": 46,
+    "refusal": 12
+  }
+}

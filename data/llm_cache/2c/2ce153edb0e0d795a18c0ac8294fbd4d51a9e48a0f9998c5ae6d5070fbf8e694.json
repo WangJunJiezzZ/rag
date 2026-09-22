@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"霁川全球宏观基金：采用全球宏观策略，注册地为圣德罗自由区，托管人为汇川银行新港城分行\", \"subject\": \"霁川全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"圣德罗自由区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"霁川全球宏观基金：采用全球宏观策略，注册地为圣德罗自由区，托管人为汇川银行新港城分行\", \"subject\": \"霁川全球宏观基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"霁川私募信贷基金：采用私募信贷策略，注册地为新港城，托管人为昭明银行新港城分行\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"霁川私募信贷基金：采用私募信贷策略，注册地为新港城，托管人为昭明银行新港城分行\", \"subject\": \"霁川私募信贷基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"昭明银行新港城分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "霁川全球宏观基金：采用全球宏观策略，注册地为圣德罗自由区，托管人为汇川银行新港城分行",
+    "subject": "霁川全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "圣德罗自由区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "霁川全球宏观基金：采用全球宏观策略，注册地为圣德罗自由区，托管人为汇川银行新港城分行",
+    "subject": "霁川全球宏观基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "霁川私募信贷基金：采用私募信贷策略，注册地为新港城，托管人为昭明银行新港城分行",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "霁川私募信贷基金：采用私募信贷策略，注册地为新港城，托管人为昭明银行新港城分行",
+    "subject": "霁川私募信贷基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "昭明银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1259,
+ "output_tokens": 316,
+ "cached_read_tokens": 768,
+ "latency_ms": 4627.418374991976,
+ "provider": "deepseek"
+}

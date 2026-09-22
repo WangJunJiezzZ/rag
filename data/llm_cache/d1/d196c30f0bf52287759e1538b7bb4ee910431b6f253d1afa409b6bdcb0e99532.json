@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"岱屿金融服务有限公司\",\"type\":\"公司\"},{\"name\":\"吴景行\",\"type\":\"股东\"}],\"relations\":[{\"subject\":\"吴景行\",\"predicate\":\"持有\",\"object\":\"岱屿金融服务有限公司\",\"attributes\":{\"持股比例\":\"75%\",\"登记日期\":\"2025年9月1日\"}},{\"subject\":\"吴景行\",\"predicate\":\"是主要股东之一\",\"object\":\"岱屿金融服务有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "岱屿金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "吴景行",
+    "type": "股东"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "吴景行",
+    "predicate": "持有",
+    "object": "岱屿金融服务有限公司",
+    "attributes": {
+     "持股比例": "75%",
+     "登记日期": "2025年9月1日"
+    }
+   },
+   {
+    "subject": "吴景行",
+    "predicate": "是主要股东之一",
+    "object": "岱屿金融服务有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 92,
+ "cached_read_tokens": 256,
+ "latency_ms": 3726.245291007217,
+ "provider": "deepseek"
+}

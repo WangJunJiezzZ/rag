@@ -1,0 +1,56 @@
+{
+ "text": "{\"entities\":[{\"name\":\"漱玉投资控股有限公司（3）\",\"type\":\"公司\"},{\"name\":\"邱见山\",\"type\":\"人物\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"2024年2月11日\",\"type\":\"日期\"},{\"name\":\"三年\",\"type\":\"时长\"}],\"relations\":[{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"委任\",\"object\":\"邱见山\"},{\"subject\":\"邱见山\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"邱见山\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"委任\",\"predicate\":\"生效日期\",\"object\":\"2024年2月11日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "漱玉投资控股有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "邱见山",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2024年2月11日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "委任",
+    "object": "邱见山"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "委任",
+    "predicate": "生效日期",
+    "object": "2024年2月11日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 146,
+ "cached_read_tokens": 256,
+ "latency_ms": 3001.090833975468,
+ "provider": "deepseek"
+}

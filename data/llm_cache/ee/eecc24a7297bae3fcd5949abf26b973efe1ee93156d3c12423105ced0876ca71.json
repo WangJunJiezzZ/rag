@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 1 月 12 日，吴景行直接持有本公司已发行股本的 51%，为本公司主要股东之一\", \"subject\": \"吴景行\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"瑾樾资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 1 月 12 日，吴景行直接持有本公司已发行股本的 51%，为本公司主要股东之一",
+    "subject": "吴景行",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "瑾樾资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1193,
+ "output_tokens": 87,
+ "cached_read_tokens": 768,
+ "latency_ms": 8924.831249983981,
+ "provider": "deepseek"
+}

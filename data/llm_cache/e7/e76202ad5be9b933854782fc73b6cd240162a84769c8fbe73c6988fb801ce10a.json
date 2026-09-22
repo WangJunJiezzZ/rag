@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者名称不同（可持续发展基金 vs 结构化信贷基金），设立日期与注册地均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者名称不同（可持续发展基金 vs 结构化信贷基金），设立日期与注册地均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 420,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 2901.5210419893265,
+ "provider": "deepseek"
+}

@@ -1,0 +1,246 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"翊澜可持续发展基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"Yilan Asset Management Pte. Ltd.\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"临海特区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"base_currency\",\n      \"name\": \"新元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"可持续发展策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"management_fee\",\n      \"name\": \"管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee\",\n      \"name\": \"托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"other_expenses\",\n      \"name\": \"审计费、法律顾问费、行政管理费及其他合理费用\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"related_party_risk\",\n      \"name\": \"关联交易风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"liquidity_risk\",\n      \"name\": \"流动性风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"currency_risk\",\n      \"name\": \"汇率风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"market_risk\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2024年12月22日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"jurisdiction\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"base_currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设有内部机构\",\n      \"object\": \"investment_committee\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"基金财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"职责\",\n      \"object\": \"审议重大投资决策及关联交易事项\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"成员人数要求\",\n      \"object\": \"不少于三名\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"会议频率\",\n      \"object\": \"每月至少一次\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"25万新元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"10万新元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回机制\",\n      \"object\": \"季度开放机制\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回限制\",\n      \"object\": \"单一开放日赎回总额超过基金资产净值10%时，管理人有权按比例延后处理超出部分\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"management_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"custody_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"other_expenses\"\n    },\n    {\n      \"subject\": \"management_fee\",\n      \"predicate\": \"费率\",\n      \"object\": \"基金资产净值的1.75%年费率\"\n    },\n    {\n      \"subject\": \"management_fee\",\n      \"predicate\": \"计提支付方式\",\n      \"object\": \"按月计提、按季支付\"\n    },\n    {\n      \"subject\": \"custody_fee\",\n      \"predicate\": \"费率\",\n      \"object\": \"0.05%年费率\"\n    },\n    {\n      \"subject\": \"other_expenses\",\n      \"predicate\": \"合计上限\",\n      \"object\": \"一般不超过基金资产净值的0.60%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"related_party_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"liquidity_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"currency_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"market_risk\"\n    },\n    {\n      \"subject\": \"related_party_risk\",\n      \"predicate\": \"风险描述\",\n      \"object\": \"管理人及其关联方可能同时管理其他投资组合，产生潜在利益冲突\"\n    },\n    {\n      \"subject\": \"liquidity_risk\",\n      \"predicate\": \"风险描述\",\n      \"object\": \"部分投资标的可能缺乏活跃二级市场，变现时可能无法以合理价格及时处置\"\n    },\n    {\n      \"subject\": \"currency_risk\",\n      \"predicate\": \"风险描述\",\n      \"object\": \"部分资产以非基准货币计价，汇率不利变动可能侵蚀投资回报\"\n    },\n    {\n      \"subject\": \"market_risk\",\n      \"predicate\": \"风险描述\",\n      \"object\": \"金融工具价格可能大幅波动，极端市场条件下资产净值可能显著下跌，投资者可能损失全部本金\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "翊澜可持续发展基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "Yilan Asset Management Pte. Ltd.",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "base_currency",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "可持续发展策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "management_fee",
+    "name": "管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee",
+    "name": "托管费",
+    "type": "费用"
+   },
+   {
+    "id": "other_expenses",
+    "name": "审计费、法律顾问费、行政管理费及其他合理费用",
+    "type": "费用"
+   },
+   {
+    "id": "related_party_risk",
+    "name": "关联交易风险",
+    "type": "风险"
+   },
+   {
+    "id": "liquidity_risk",
+    "name": "流动性风险",
+    "type": "风险"
+   },
+   {
+    "id": "currency_risk",
+    "name": "汇率风险",
+    "type": "风险"
+   },
+   {
+    "id": "market_risk",
+    "name": "市场风险",
+    "type": "风险"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2024年12月22日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "base_currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有内部机构",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "基金财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "成员人数要求",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "会议频率",
+    "object": "每月至少一次"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "25万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "10万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回机制",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回限制",
+    "object": "单一开放日赎回总额超过基金资产净值10%时，管理人有权按比例延后处理超出部分"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "management_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "custody_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "other_expenses"
+   },
+   {
+    "subject": "management_fee",
+    "predicate": "费率",
+    "object": "基金资产净值的1.75%年费率"
+   },
+   {
+    "subject": "management_fee",
+    "predicate": "计提支付方式",
+    "object": "按月计提、按季支付"
+   },
+   {
+    "subject": "custody_fee",
+    "predicate": "费率",
+    "object": "0.05%年费率"
+   },
+   {
+    "subject": "other_expenses",
+    "predicate": "合计上限",
+    "object": "一般不超过基金资产净值的0.60%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "related_party_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "liquidity_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "currency_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "market_risk"
+   },
+   {
+    "subject": "related_party_risk",
+    "predicate": "风险描述",
+    "object": "管理人及其关联方可能同时管理其他投资组合，产生潜在利益冲突"
+   },
+   {
+    "subject": "liquidity_risk",
+    "predicate": "风险描述",
+    "object": "部分投资标的可能缺乏活跃二级市场，变现时可能无法以合理价格及时处置"
+   },
+   {
+    "subject": "currency_risk",
+    "predicate": "风险描述",
+    "object": "部分资产以非基准货币计价，汇率不利变动可能侵蚀投资回报"
+   },
+   {
+    "subject": "market_risk",
+    "predicate": "风险描述",
+    "object": "金融工具价格可能大幅波动，极端市场条件下资产净值可能显著下跌，投资者可能损失全部本金"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 779,
+ "output_tokens": 1519,
+ "cached_read_tokens": 0,
+ "latency_ms": 7146.518208028283,
+ "provider": "deepseek"
+}

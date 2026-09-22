@@ -1,0 +1,201 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"id\": \"fund\", \"name\": \"翊澜科技成长基金\", \"type\": \"基金\"},\n    {\"id\": \"manager\", \"name\": \"翊澜资产管理有限公司\", \"type\": \"基金管理人\"},\n    {\"id\": \"custodian\", \"name\": \"北岸银行澄江特别行政区分行\", \"type\": \"基金托管人\"},\n    {\"id\": \"regplace\", \"name\": \"新港城\", \"type\": \"注册地\"},\n    {\"id\": \"currency\", \"name\": \"新元\", \"type\": \"基准货币\"},\n    {\"id\": \"strategy\", \"name\": \"科技成长策略\", \"type\": \"投资策略\"},\n    {\"id\": \"minfirst\", \"name\": \"25万新元\", \"type\": \"最低认购金额\"},\n    {\"id\": \"minadd\", \"name\": \"10万新元\", \"type\": \"追加认购最低金额\"},\n    {\"id\": \"redemption\", \"name\": \"每月最后一个工作日\", \"type\": \"赎回申请日\"},\n    {\"id\": \"payment\", \"name\": \"5个工作日\", \"type\": \"赎回款项支付期限\"},\n    {\"id\": \"feecap1\", \"name\": \"0.45%\", \"type\": \"费用上限\"},\n    {\"id\": \"feecap2\", \"name\": \"0.60%\", \"type\": \"费用上限\"},\n    {\"id\": \"risk_credit\", \"name\": \"信用风险\", \"type\": \"风险因素\"},\n    {\"id\": \"risk_valuation\", \"name\": \"估值风险\", \"type\": \"风险因素\"},\n    {\"id\": \"risk_market\", \"name\": \"市场风险\", \"type\": \"风险因素\"},\n    {\"id\": \"risk_concentration\", \"name\": \"集中度风险\", \"type\": \"风险因素\"},\n    {\"id\": \"risk_liquidity\", \"name\": \"流动性风险\", \"type\": \"风险因素\"}\n  ],\n  \"relations\": [\n    {\"subject\": \"fund\", \"predicate\": \"设立日期\", \"object\": \"2022年8月25日\"},\n    {\"subject\": \"fund\", \"predicate\": \"注册地\", \"object\": \"regplace\"},\n    {\"subject\": \"fund\", \"predicate\": \"基准货币\", \"object\": \"currency\"},\n    {\"subject\": \"fund\", \"predicate\": \"存续期限\", \"object\": \"无固定期限\"},\n    {\"subject\": \"fund\", \"predicate\": \"投资策略\", \"object\": \"strategy\"},\n    {\"subject\": \"fund\", \"predicate\": \"基金管理人\", \"object\": \"manager\"},\n    {\"subject\": \"fund\", \"predicate\": \"基金托管人\", \"object\": \"custodian\"},\n    {\"subject\": \"manager\", \"predicate\": \"负责\", \"object\": \"投资决策、日常运作及信息披露\"},\n    {\"subject\": \"custodian\", \"predicate\": \"负责\", \"object\": \"基金财产保管、清算交收及对管理人投资运作的监督\"},\n    {\"subject\": \"fund\", \"predicate\": \"最低认购金额\", \"object\": \"minfirst\"},\n    {\"subject\": \"fund\", \"predicate\": \"追加认购最低金额\", \"object\": \"minadd\"},\n    {\"subject\": \"fund\", \"predicate\": \"赎回申请日\", \"object\": \"redemption\"},\n    {\"subject\": \"fund\", \"predicate\": \"赎回款项支付期限\", \"object\": \"payment\"},\n    {\"subject\": \"fund\", \"predicate\": \"费用上限\", \"object\": \"feecap1\"},\n    {\"subject\": \"fund\", \"predicate\": \"费用上限\", \"object\": \"feecap2\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_credit\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_valuation\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_market\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_concentration\"},\n    {\"subject\": \"fund\", \"predicate\": \"风险因素\", \"object\": \"risk_liquidity\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "翊澜科技成长基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "翊澜资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "科技成长策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "minfirst",
+    "name": "25万新元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "minadd",
+    "name": "10万新元",
+    "type": "追加认购最低金额"
+   },
+   {
+    "id": "redemption",
+    "name": "每月最后一个工作日",
+    "type": "赎回申请日"
+   },
+   {
+    "id": "payment",
+    "name": "5个工作日",
+    "type": "赎回款项支付期限"
+   },
+   {
+    "id": "feecap1",
+    "name": "0.45%",
+    "type": "费用上限"
+   },
+   {
+    "id": "feecap2",
+    "name": "0.60%",
+    "type": "费用上限"
+   },
+   {
+    "id": "risk_credit",
+    "name": "信用风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_valuation",
+    "name": "估值风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_market",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_liquidity",
+    "name": "流动性风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2022年8月25日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "基金财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "minfirst"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "minadd"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "redemption"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "payment"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "feecap1"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "feecap2"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_credit"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_valuation"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_market"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_concentration"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_liquidity"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 901,
+ "output_tokens": 904,
+ "cached_read_tokens": 640,
+ "latency_ms": 5445.983209006954,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2022 年 9 月 23 日 召开的股东大会审议通过，马若谷当选为本公司董事，即日生效\", \"subject\": \"马若谷\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"松岚资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2022 年 9 月 23 日 召开的股东大会审议通过，马若谷当选为本公司董事，即日生效",
+    "subject": "马若谷",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "松岚资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1175,
+ "output_tokens": 82,
+ "cached_read_tokens": 768,
+ "latency_ms": 3910.6271660421044,
+ "provider": "deepseek"
+}

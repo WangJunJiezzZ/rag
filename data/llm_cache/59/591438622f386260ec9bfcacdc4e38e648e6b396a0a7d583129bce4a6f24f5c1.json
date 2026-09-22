@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"本基金全称为翊澜亚洲机会基金（以下简称“本基金”），于 2025 年 8 月 18 日 依法设立并完成注册登记，注册地为临海特区\", \"subject\": \"翊澜亚洲机会基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"本基金全称为翊澜亚洲机会基金（以下简称“本基金”），于 2025 年 8 月 18 日 依法设立并完成注册登记\", \"subject\": \"翊澜亚洲机会基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2025 年 8 月 18 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"基金管理人：翊澜资本（2）。管理人负责本基金的投资决策、日常运作及信息披露\", \"subject\": \"翊澜亚洲机会基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"翊澜资本（2）\", \"object_type\": \"Company\"},\n {\"evidence\": \"基金托管人：汇川银行新港城分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督\", \"subject\": \"翊澜亚洲机会基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 10 万美元\", \"subject\": \"翊澜亚洲机会基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"10 万美元\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本基金全称为翊澜亚洲机会基金（以下简称“本基金”），于 2025 年 8 月 18 日 依法设立并完成注册登记，注册地为临海特区",
+    "subject": "翊澜亚洲机会基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "本基金全称为翊澜亚洲机会基金（以下简称“本基金”），于 2025 年 8 月 18 日 依法设立并完成注册登记",
+    "subject": "翊澜亚洲机会基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2025 年 8 月 18 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：翊澜资本（2）。管理人负责本基金的投资决策、日常运作及信息披露",
+    "subject": "翊澜亚洲机会基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "翊澜资本（2）",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：汇川银行新港城分行。托管人负责本基金财产的保管、清算交收及对管理人投资运作的监督",
+    "subject": "翊澜亚洲机会基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 10 万美元",
+    "subject": "翊澜亚洲机会基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "10 万美元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1654,
+ "output_tokens": 405,
+ "cached_read_tokens": 768,
+ "latency_ms": 4748.078916978557,
+ "provider": "deepseek"
+}

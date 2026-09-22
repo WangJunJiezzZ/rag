@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.98, \"reason\": \"两者虽同属澜图品牌，但名称分别为私募信贷基金与科技成长基金，且设立时间不同，指向不同基金实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.98,
+  "reason": "两者虽同属澜图品牌，但名称分别为私募信贷基金与科技成长基金，且设立时间不同，指向不同基金实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 453,
+ "output_tokens": 47,
+ "cached_read_tokens": 256,
+ "latency_ms": 3078.9155829697847,
+ "provider": "deepseek"
+}

@@ -1,0 +1,38 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"孙志诚\",\n      \"type\": \"person\"\n    },\n    {\n      \"name\": \"茗谷投资控股有限公司\",\n      \"type\": \"organization\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"孙志诚\",\n      \"predicate\": \"直接持有\",\n      \"object\": \"茗谷投资控股有限公司\",\n      \"details\": {\n        \"持股比例\": \"20%\",\n        \"登记日期\": \"2024年8月8日\"\n      }\n    },\n    {\n      \"subject\": \"孙志诚\",\n      \"predicate\": \"是主要股东之一\",\n      \"object\": \"茗谷投资控股有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "孙志诚",
+    "type": "person"
+   },
+   {
+    "name": "茗谷投资控股有限公司",
+    "type": "organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "孙志诚",
+    "predicate": "直接持有",
+    "object": "茗谷投资控股有限公司",
+    "details": {
+     "持股比例": "20%",
+     "登记日期": "2024年8月8日"
+    }
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "是主要股东之一",
+    "object": "茗谷投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 236,
+ "output_tokens": 156,
+ "cached_read_tokens": 0,
+ "latency_ms": 3156.810916028917,
+ "provider": "deepseek"
+}

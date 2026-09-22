@@ -1,0 +1,44 @@
+{
+ "text": "{\"entity_relation_triples\":[{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"注册编号\",\"object\":\"2000526156\"},{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"注册地\",\"object\":\"北屿自治区\"},{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"注册日期\",\"object\":\"2013 年 8 月 7 日\"},{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"主体状态\",\"object\":\"存续\"},{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"经营范围\",\"object\":\"投资管理、投资顾问及相关配套服务\"},{\"subject\":\"Xiuyun Asset Management Pte. Ltd.\",\"relation\":\"公司类型\",\"object\":\"有限责任公司\"}]}",
+ "parsed": {
+  "entity_relation_triples": [
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "注册编号",
+    "object": "2000526156"
+   },
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "注册地",
+    "object": "北屿自治区"
+   },
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "注册日期",
+    "object": "2013 年 8 月 7 日"
+   },
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   },
+   {
+    "subject": "Xiuyun Asset Management Pte. Ltd.",
+    "relation": "公司类型",
+    "object": "有限责任公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 415,
+ "output_tokens": 171,
+ "cached_read_tokens": 256,
+ "latency_ms": 2902.0029159728438,
+ "provider": "deepseek"
+}

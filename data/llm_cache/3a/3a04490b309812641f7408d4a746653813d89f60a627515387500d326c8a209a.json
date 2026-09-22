@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2022 年 10 月 6 日 完成董事会成员增补，新任董事为郑明远\", \"subject\": \"郑明远\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"樾川金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2022 年 10 月 6 日 完成董事会成员增补，新任董事为郑明远",
+    "subject": "郑明远",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "樾川金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1628,
+ "output_tokens": 80,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3324.7093340032734,
+ "provider": "deepseek"
+}

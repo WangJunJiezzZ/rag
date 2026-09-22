@@ -1,0 +1,114 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"e1\",\n      \"name\": \"岱屿资本管理有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"id\": \"e2\",\n      \"name\": \"许清和\",\n      \"type\": \"人物\"\n    },\n    {\n      \"id\": \"e3\",\n      \"name\": \"2023年6月15日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"id\": \"e4\",\n      \"name\": \"股东大会\",\n      \"type\": \"会议\"\n    },\n    {\n      \"id\": \"e5\",\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"id\": \"e6\",\n      \"name\": \"注册机关\",\n      \"type\": \"机构\"\n    },\n    {\n      \"id\": \"e7\",\n      \"name\": \"结构化产品与另类投资\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"id\": \"e8\",\n      \"name\": \"275亿单位货币\",\n      \"type\": \"金额\"\n    },\n    {\n      \"id\": \"e9\",\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"职能\"\n    },\n    {\n      \"id\": \"e10\",\n      \"name\": \"董事会\",\n      \"type\": \"机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"e1\",\n      \"predicate\": \"召开\",\n      \"object\": \"e4\",\n      \"date\": \"2023年6月15日\"\n    },\n    {\n      \"subject\": \"e4\",\n      \"predicate\": \"审议通过\",\n      \"object\": \"e2\",\n      \"detail\": \"当选董事\"\n    },\n    {\n      \"subject\": \"e2\",\n      \"predicate\": \"当选\",\n      \"object\": \"e5\",\n      \"date\": \"2023年6月15日\"\n    },\n    {\n      \"subject\": \"e2\",\n      \"predicate\": \"任职于\",\n      \"object\": \"e1\"\n    },\n    {\n      \"subject\": \"e1\",\n      \"predicate\": \"备案至\",\n      \"object\": \"e6\"\n    },\n    {\n      \"subject\": \"e2\",\n      \"predicate\": \"从事\",\n      \"object\": \"e7\"\n    },\n    {\n      \"subject\": \"e2\",\n      \"predicate\": \"管理规模\",\n      \"object\": \"e8\"\n    },\n    {\n      \"subject\": \"e1\",\n      \"predicate\": \"建立\",\n      \"object\": \"e9\"\n    },\n    {\n      \"subject\": \"e9\",\n      \"predicate\": \"报告\",\n      \"object\": \"e10\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "e1",
+    "name": "岱屿资本管理有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "id": "e2",
+    "name": "许清和",
+    "type": "人物"
+   },
+   {
+    "id": "e3",
+    "name": "2023年6月15日",
+    "type": "日期"
+   },
+   {
+    "id": "e4",
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "id": "e5",
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "id": "e6",
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "id": "e7",
+    "name": "结构化产品与另类投资",
+    "type": "业务领域"
+   },
+   {
+    "id": "e8",
+    "name": "275亿单位货币",
+    "type": "金额"
+   },
+   {
+    "id": "e9",
+    "name": "合规与风险管理职能",
+    "type": "职能"
+   },
+   {
+    "id": "e10",
+    "name": "董事会",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "e1",
+    "predicate": "召开",
+    "object": "e4",
+    "date": "2023年6月15日"
+   },
+   {
+    "subject": "e4",
+    "predicate": "审议通过",
+    "object": "e2",
+    "detail": "当选董事"
+   },
+   {
+    "subject": "e2",
+    "predicate": "当选",
+    "object": "e5",
+    "date": "2023年6月15日"
+   },
+   {
+    "subject": "e2",
+    "predicate": "任职于",
+    "object": "e1"
+   },
+   {
+    "subject": "e1",
+    "predicate": "备案至",
+    "object": "e6"
+   },
+   {
+    "subject": "e2",
+    "predicate": "从事",
+    "object": "e7"
+   },
+   {
+    "subject": "e2",
+    "predicate": "管理规模",
+    "object": "e8"
+   },
+   {
+    "subject": "e1",
+    "predicate": "建立",
+    "object": "e9"
+   },
+   {
+    "subject": "e9",
+    "predicate": "报告",
+    "object": "e10"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 233,
+ "output_tokens": 594,
+ "cached_read_tokens": 0,
+ "latency_ms": 4316.153209016193,
+ "provider": "deepseek"
+}

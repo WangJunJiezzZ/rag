@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"柏观金融服务有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"曾承业\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"2025年2月4日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"三年\",\n      \"type\": \"时长\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"柏观金融服务有限公司\",\n      \"predicate\": \"委任\",\n      \"object\": \"曾承业\",\n      \"details\": {\n        \"职位\": \"董事\",\n        \"生效日期\": \"2025年2月4日\",\n        \"任期\": \"三年\"\n      }\n    },\n    {\n      \"subject\": \"曾承业\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\",\n      \"details\": {\n        \"公司\": \"柏观金融服务有限公司\",\n        \"生效日期\": \"2025年2月4日\",\n        \"任期\": \"三年\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "柏观金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "曾承业",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2025年2月4日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "柏观金融服务有限公司",
+    "predicate": "委任",
+    "object": "曾承业",
+    "details": {
+     "职位": "董事",
+     "生效日期": "2025年2月4日",
+     "任期": "三年"
+    }
+   },
+   {
+    "subject": "曾承业",
+    "predicate": "担任",
+    "object": "董事",
+    "details": {
+     "公司": "柏观金融服务有限公司",
+     "生效日期": "2025年2月4日",
+     "任期": "三年"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 228,
+ "output_tokens": 250,
+ "cached_read_tokens": 0,
+ "latency_ms": 3211.0518330009654,
+ "provider": "deepseek"
+}

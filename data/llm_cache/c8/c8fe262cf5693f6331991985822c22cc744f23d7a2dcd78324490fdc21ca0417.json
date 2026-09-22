@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：北岸银行\", \"subject\": \"北岸银行\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"澄江特别行政区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：北岸银行",
+    "subject": "北岸银行",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "澄江特别行政区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1189,
+ "output_tokens": 59,
+ "cached_read_tokens": 768,
+ "latency_ms": 3154.539000010118,
+ "provider": "deepseek"
+}

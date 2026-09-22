@@ -1,0 +1,38 @@
+{
+ "text": "{\"entities\":[{\"name\":\"曾知微\",\"type\":\"person\"},{\"name\":\"青柏投资控股有限公司\",\"type\":\"organization\"}],\"relations\":[{\"subject\":\"曾知微\",\"predicate\":\"持有\",\"object\":\"青柏投资控股有限公司\",\"attributes\":{\"持股比例\":\"10%\",\"登记日期\":\"2023年9月13日\"}},{\"subject\":\"曾知微\",\"predicate\":\"是主要股东之一\",\"object\":\"青柏投资控股有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "曾知微",
+    "type": "person"
+   },
+   {
+    "name": "青柏投资控股有限公司",
+    "type": "organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "曾知微",
+    "predicate": "持有",
+    "object": "青柏投资控股有限公司",
+    "attributes": {
+     "持股比例": "10%",
+     "登记日期": "2023年9月13日"
+    }
+   },
+   {
+    "subject": "曾知微",
+    "predicate": "是主要股东之一",
+    "object": "青柏投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 395,
+ "output_tokens": 95,
+ "cached_read_tokens": 256,
+ "latency_ms": 3922.3351249820553,
+ "provider": "deepseek"
+}

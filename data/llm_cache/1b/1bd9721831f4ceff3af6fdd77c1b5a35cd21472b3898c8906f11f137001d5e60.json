@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"Starsea Capital Management Ltd.为Daiyu Financial Services Ltd.之全资附属公司，Daiyu Financial Services Ltd.持有其 100% 股权。\", \"subject\": \"Starsea Capital Management Ltd.\", \"subject_type\": \"Company\", \"relation\": \"SUBSIDIARY_OF\", \"object\": \"Daiyu Financial Services Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "Starsea Capital Management Ltd.为Daiyu Financial Services Ltd.之全资附属公司，Daiyu Financial Services Ltd.持有其 100% 股权。",
+    "subject": "Starsea Capital Management Ltd.",
+    "subject_type": "Company",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Daiyu Financial Services Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1616,
+ "output_tokens": 95,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3192.8374170092866,
+ "provider": "deepseek"
+}

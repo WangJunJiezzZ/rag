@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2022 年 1 月 19 日 完成董事会成员增补，新任董事为朱思齐。\", \"subject\": \"朱思齐\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"柏观环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2022 年 1 月 19 日 完成董事会成员增补，新任董事为朱思齐。",
+    "subject": "朱思齐",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "柏观环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1171,
+ "output_tokens": 81,
+ "cached_read_tokens": 768,
+ "latency_ms": 2729.5311670168303,
+ "provider": "deepseek"
+}

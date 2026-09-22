@@ -1,0 +1,42 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"柏观环球投资有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"周牧之\",\n      \"type\": \"个人\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"周牧之\",\n      \"predicate\": \"持有\",\n      \"object\": \"柏观环球投资有限公司\",\n      \"details\": {\n        \"持股比例\": \"30%\",\n        \"登记日期\": \"2024年9月21日\"\n      }\n    },\n    {\n      \"subject\": \"柏观环球投资有限公司\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "柏观环球投资有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "周牧之",
+    "type": "个人"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周牧之",
+    "predicate": "持有",
+    "object": "柏观环球投资有限公司",
+    "details": {
+     "持股比例": "30%",
+     "登记日期": "2024年9月21日"
+    }
+   },
+   {
+    "subject": "柏观环球投资有限公司",
+    "predicate": "设有",
+    "object": "投资委员会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 245,
+ "output_tokens": 170,
+ "cached_read_tokens": 0,
+ "latency_ms": 3509.56908299122,
+ "provider": "deepseek"
+}

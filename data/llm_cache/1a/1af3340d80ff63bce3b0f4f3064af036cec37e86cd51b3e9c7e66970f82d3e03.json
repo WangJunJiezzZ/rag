@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"吴知微\",\"type\":\"Person\"},{\"name\":\"汐禾国际控股有限公司\",\"type\":\"Company\"},{\"name\":\"2023年4月9日\",\"type\":\"Date\"},{\"name\":\"25%\",\"type\":\"Percentage\"}],\"relations\":[{\"subject\":\"吴知微\",\"predicate\":\"持有\",\"object\":\"汐禾国际控股有限公司\"},{\"subject\":\"吴知微\",\"predicate\":\"持股比例\",\"object\":\"25%\"},{\"subject\":\"吴知微\",\"predicate\":\"登记日期\",\"object\":\"2023年4月9日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "吴知微",
+    "type": "Person"
+   },
+   {
+    "name": "汐禾国际控股有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2023年4月9日",
+    "type": "Date"
+   },
+   {
+    "name": "25%",
+    "type": "Percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "吴知微",
+    "predicate": "持有",
+    "object": "汐禾国际控股有限公司"
+   },
+   {
+    "subject": "吴知微",
+    "predicate": "持股比例",
+    "object": "25%"
+   },
+   {
+    "subject": "吴知微",
+    "predicate": "登记日期",
+    "object": "2023年4月9日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 401,
+ "output_tokens": 117,
+ "cached_read_tokens": 256,
+ "latency_ms": 3415.5193339684047,
+ "provider": "deepseek"
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+*.egg-info/
+build/
+dist/
+data/index/
+# reports/index.html 是交付物, 保留
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+# 向量模型 24MB —— 用 git 管理时建议 LFS，或按 README 说明单独拷贝
+# models/

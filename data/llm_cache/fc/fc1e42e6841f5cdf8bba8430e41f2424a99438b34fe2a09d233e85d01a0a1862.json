@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2025 年 1 月 4 日 起，委任刘景行为本公司董事\", \"subject\": \"刘景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"翊澜资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2025 年 1 月 4 日 起，委任刘景行为本公司董事",
+    "subject": "刘景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "翊澜资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1629,
+ "output_tokens": 76,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3134.960916999262,
+ "provider": "deepseek"
+}

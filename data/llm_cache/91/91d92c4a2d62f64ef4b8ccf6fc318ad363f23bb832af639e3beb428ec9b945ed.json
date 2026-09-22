@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2022 年 2 月 28 日 完成董事会成员增补，新任董事为刘景行。\", \"subject\": \"刘景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"徽岚投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2022 年 2 月 28 日 完成董事会成员增补，新任董事为刘景行。",
+    "subject": "刘景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "徽岚投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1172,
+ "output_tokens": 81,
+ "cached_read_tokens": 768,
+ "latency_ms": 3271.9618750270456,
+ "provider": "deepseek"
+}

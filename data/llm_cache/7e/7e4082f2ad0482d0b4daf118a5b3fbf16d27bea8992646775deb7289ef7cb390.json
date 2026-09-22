@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2022 年 3 月 5 日，谢志诚直接持有本公司已发行股本的 5%，为本公司主要股东之一\", \"subject\": \"谢志诚\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"松岚环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2022 年 3 月 5 日，谢志诚直接持有本公司已发行股本的 5%，为本公司主要股东之一",
+    "subject": "谢志诚",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "松岚环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1192,
+ "output_tokens": 87,
+ "cached_read_tokens": 768,
+ "latency_ms": 2710.4351250454783,
+ "provider": "deepseek"
+}

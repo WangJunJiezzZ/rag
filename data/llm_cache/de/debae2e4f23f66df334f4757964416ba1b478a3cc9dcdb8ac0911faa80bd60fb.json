@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"「洄川国际控股有限公司」与「洄川投资控股有限公司」名称中「国际」与「投资」不同，指向不同法律主体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "「洄川国际控股有限公司」与「洄川投资控股有限公司」名称中「国际」与「投资」不同，指向不同法律主体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 404,
+ "output_tokens": 51,
+ "cached_read_tokens": 256,
+ "latency_ms": 3946.0052080103196,
+ "provider": "deepseek"
+}

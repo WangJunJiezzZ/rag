@@ -1,0 +1,166 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"砥行全球宏观基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"砥行资本（2）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"临海特区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"全球宏观策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"auditor\",\n      \"name\": \"独立审计机构\",\n      \"type\": \"审计机构\"\n    },\n    {\n      \"id\": \"investors\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2025年3月25日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"jurisdiction\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"审计机构\",\n      \"object\": \"auditor\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"100万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"10万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回申请日\",\n      \"object\": \"每月最后一个工作日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回款项支付期限\",\n      \"object\": \"确认后10个工作日内\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"费用上限\",\n      \"object\": \"基金资产净值的0.30%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"费用上限\",\n      \"object\": \"基金资产净值的0.60%\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"非上市股权投资上限\",\n      \"object\": \"资产净值的15%\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责\",\n      \"object\": \"基金财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"auditor\",\n      \"predicate\": \"负责\",\n      \"object\": \"按年度审计基金账目\"\n    },\n    {\n      \"subject\": \"auditor\",\n      \"predicate\": \"提供审计报告期限\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"committee\",\n      \"predicate\": \"审批\",\n      \"object\": \"非上市股权或流动性受限资产投资\"\n    },\n    {\n      \"subject\": \"investors\",\n      \"predicate\": \"参与\",\n      \"object\": \"fund\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砥行全球宏观基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砥行资本（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "临海特区",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "全球宏观策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   },
+   {
+    "id": "investors",
+    "name": "合资格投资者",
+    "type": "投资者"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2025年3月25日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "审计机构",
+    "object": "auditor"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "100万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "10万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回申请日",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "确认后10个工作日内"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "基金资产净值的0.30%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "基金资产净值的0.60%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权投资上限",
+    "object": "资产净值的15%"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "基金财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "auditor",
+    "predicate": "负责",
+    "object": "按年度审计基金账目"
+   },
+   {
+    "subject": "auditor",
+    "predicate": "提供审计报告期限",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "committee",
+    "predicate": "审批",
+    "object": "非上市股权或流动性受限资产投资"
+   },
+   {
+    "subject": "investors",
+    "predicate": "参与",
+    "object": "fund"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 746,
+ "output_tokens": 931,
+ "cached_read_tokens": 0,
+ "latency_ms": 5207.859084010124,
+ "provider": "deepseek"
+}

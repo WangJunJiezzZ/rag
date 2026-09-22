@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(3)的屿川国际控股有限公司，B为Daiyu Financial Services Ltd.，名称主体与后缀均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(3)的屿川国际控股有限公司，B为Daiyu Financial Services Ltd.，名称主体与后缀均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 55,
+ "cached_read_tokens": 128,
+ "latency_ms": 3120.3001660178415,
+ "provider": "deepseek"
+}

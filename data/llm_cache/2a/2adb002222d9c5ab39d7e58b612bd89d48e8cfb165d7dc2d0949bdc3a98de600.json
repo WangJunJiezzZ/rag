@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（国际 vs 投资），且上下文中的股东与持股比例均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（国际 vs 投资），且上下文中的股东与持股比例均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 431,
+ "output_tokens": 40,
+ "cached_read_tokens": 256,
+ "latency_ms": 3140.5634579714388,
+ "provider": "deepseek"
+}

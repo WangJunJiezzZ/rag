@@ -1,0 +1,51 @@
+{
+ "text": "{\"entities\":[{\"name\":\"刘若谷\",\"type\":\"自然人\"},{\"name\":\"屿川国际控股有限公司\",\"type\":\"公司\"},{\"name\":\"本基金\",\"type\":\"基金\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"刘若谷\",\"predicate\":\"持有\",\"object\":\"屿川国际控股有限公司\",\"details\":{\"持股比例\":\"20%\",\"登记日期\":\"2024年5月10日\"}},{\"subject\":\"刘若谷\",\"predicate\":\"是主要股东之一\",\"object\":\"屿川国际控股有限公司\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"本基金\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "刘若谷",
+    "type": "自然人"
+   },
+   {
+    "name": "屿川国际控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "刘若谷",
+    "predicate": "持有",
+    "object": "屿川国际控股有限公司",
+    "details": {
+     "持股比例": "20%",
+     "登记日期": "2024年5月10日"
+    }
+   },
+   {
+    "subject": "刘若谷",
+    "predicate": "是主要股东之一",
+    "object": "屿川国际控股有限公司"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 334,
+ "output_tokens": 133,
+ "cached_read_tokens": 128,
+ "latency_ms": 5391.639499983285,
+ "provider": "deepseek"
+}

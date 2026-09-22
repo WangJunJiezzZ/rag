@@ -1,0 +1,16 @@
+# Phase 0 (合成语料 + 评测集 + 自检) 仅用 Python 标准库，无需安装任何依赖。
+# 以下为后续阶段所需，按阶段分组，可按需逐步安装。
+
+# --- Phase 1: 索引与检索 ---
+numpy>=1.26
+
+# --- Phase 1: 向量化（本地、离线、免 API key）---
+# 首次安装约 2GB（含 torch）；装好后完全离线运行，面试断网也能演示。
+sentence-transformers>=3.0
+
+# --- Phase 2: 三元组抽取 / 生成（Claude）---
+anthropic>=0.40
+
+# --- Phase 4: 服务与前端 ---
+fastapi>=0.115
+uvicorn[standard]>=0.32

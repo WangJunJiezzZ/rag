@@ -1,0 +1,48 @@
+{
+ "text": "{\"entities\":[{\"name\":\"翊澜资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"黄南星\",\"type\":\"人员\"},{\"name\":\"董事\",\"type\":\"职位\"}],\"relations\":[{\"subject\":\"翊澜资产管理有限公司\",\"predicate\":\"委任\",\"object\":\"黄南星\"},{\"subject\":\"黄南星\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"黄南星\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"黄南星\",\"predicate\":\"生效日期\",\"object\":\"2025年10月14日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "翊澜资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "黄南星",
+    "type": "人员"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "翊澜资产管理有限公司",
+    "predicate": "委任",
+    "object": "黄南星"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "生效日期",
+    "object": "2025年10月14日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 318,
+ "output_tokens": 115,
+ "cached_read_tokens": 128,
+ "latency_ms": 3217.305416997988,
+ "provider": "deepseek"
+}

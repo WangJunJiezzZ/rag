@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"中文名「徽岚」与罗马化名「Huichuan」音译不符，且上下文日期不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "中文名「徽岚」与罗马化名「Huichuan」音译不符，且上下文日期不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 422,
+ "output_tokens": 46,
+ "cached_read_tokens": 256,
+ "latency_ms": 3436.0442089964636,
+ "provider": "deepseek"
+}

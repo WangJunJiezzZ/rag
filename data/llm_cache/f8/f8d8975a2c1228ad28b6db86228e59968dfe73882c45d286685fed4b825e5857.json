@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「松岚」与罗马化名「Yanchi」不对应，且无其他证据表明指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「松岚」与罗马化名「Yanchi」不对应，且无其他证据表明指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 45,
+ "cached_read_tokens": 128,
+ "latency_ms": 3568.4829999809153,
+ "provider": "deepseek"
+}

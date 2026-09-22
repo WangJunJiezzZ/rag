@@ -1,0 +1,39 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"Minggu Investment Holdings Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"松岚资产管理有限公司\",\n      \"type\": \"公司\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"Minggu Investment Holdings Ltd.\",\n      \"predicate\": \"持有100%股权\",\n      \"object\": \"松岚资产管理有限公司\"\n    },\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"是全资附属公司\",\n      \"object\": \"Minggu Investment Holdings Ltd.\"\n    },\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"纳入合并财务报表范围\",\n      \"object\": \"Minggu Investment Holdings Ltd.\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Minggu Investment Holdings Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Minggu Investment Holdings Ltd.",
+    "predicate": "持有100%股权",
+    "object": "松岚资产管理有限公司"
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "是全资附属公司",
+    "object": "Minggu Investment Holdings Ltd."
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "纳入合并财务报表范围",
+    "object": "Minggu Investment Holdings Ltd."
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 230,
+ "output_tokens": 171,
+ "cached_read_tokens": 0,
+ "latency_ms": 3508.756417024415,
+ "provider": "deepseek"
+}

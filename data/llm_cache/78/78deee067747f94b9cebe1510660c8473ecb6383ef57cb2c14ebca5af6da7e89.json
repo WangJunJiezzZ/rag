@@ -1,0 +1,83 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"松岚资产管理有限公司\",\n      \"type\": \"机构\",\n      \"aliases\": [\"Songlan Asset Management Pte. Ltd.\"]\n    },\n    {\n      \"name\": \"松岚新兴市场债券基金\",\n      \"type\": \"产品\"\n    },\n    {\n      \"name\": \"松岚可持续发展基金\",\n      \"type\": \"产品\"\n    },\n    {\n      \"name\": \"新港城\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"白鹭湾\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"机构\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"管理\",\n      \"object\": \"松岚新兴市场债券基金\"\n    },\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"管理\",\n      \"object\": \"松岚可持续发展基金\"\n    },\n    {\n      \"subject\": \"松岚新兴市场债券基金\",\n      \"predicate\": \"采用策略\",\n      \"object\": \"新兴市场债券策略\"\n    },\n    {\n      \"subject\": \"松岚新兴市场债券基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"新港城\"\n    },\n    {\n      \"subject\": \"松岚新兴市场债券基金\",\n      \"predicate\": \"托管人\",\n      \"object\": \"汇川银行新港城分行\"\n    },\n    {\n      \"subject\": \"松岚可持续发展基金\",\n      \"predicate\": \"采用策略\",\n      \"object\": \"可持续发展策略\"\n    },\n    {\n      \"subject\": \"松岚可持续发展基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"白鹭湾\"\n    },\n    {\n      \"subject\": \"松岚可持续发展基金\",\n      \"predicate\": \"托管人\",\n      \"object\": \"汇川银行新港城分行\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "机构",
+    "aliases": [
+     "Songlan Asset Management Pte. Ltd."
+    ]
+   },
+   {
+    "name": "松岚新兴市场债券基金",
+    "type": "产品"
+   },
+   {
+    "name": "松岚可持续发展基金",
+    "type": "产品"
+   },
+   {
+    "name": "新港城",
+    "type": "地点"
+   },
+   {
+    "name": "白鹭湾",
+    "type": "地点"
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "管理",
+    "object": "松岚新兴市场债券基金"
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "管理",
+    "object": "松岚可持续发展基金"
+   },
+   {
+    "subject": "松岚新兴市场债券基金",
+    "predicate": "采用策略",
+    "object": "新兴市场债券策略"
+   },
+   {
+    "subject": "松岚新兴市场债券基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "松岚新兴市场债券基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "松岚可持续发展基金",
+    "predicate": "采用策略",
+    "object": "可持续发展策略"
+   },
+   {
+    "subject": "松岚可持续发展基金",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "松岚可持续发展基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 306,
+ "output_tokens": 433,
+ "cached_read_tokens": 0,
+ "latency_ms": 4963.094374979846,
+ "provider": "deepseek"
+}

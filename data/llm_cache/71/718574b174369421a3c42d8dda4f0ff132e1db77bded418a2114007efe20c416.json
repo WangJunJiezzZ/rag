@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「星海资本管理有限公司（2）」，B为英文名「Linchuan Asset Management Pte. Ltd.」，名称主体不同且A带序号，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「星海资本管理有限公司（2）」，B为英文名「Linchuan Asset Management Pte. Ltd.」，名称主体不同且A带序号，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 385,
+ "output_tokens": 60,
+ "cached_read_tokens": 128,
+ "latency_ms": 3315.6205419800244,
+ "provider": "deepseek"
+}

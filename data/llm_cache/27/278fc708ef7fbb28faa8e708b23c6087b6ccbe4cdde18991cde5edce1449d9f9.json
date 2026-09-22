@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"许慕白\",\"type\":\"person\"},{\"name\":\"沅曦金融服务有限公司\",\"type\":\"organization\"},{\"name\":\"10%\",\"type\":\"percentage\"},{\"name\":\"2022年8月14日\",\"type\":\"date\"}],\"relations\":[{\"subject\":\"许慕白\",\"predicate\":\"持有\",\"object\":\"沅曦金融服务有限公司\"},{\"subject\":\"许慕白\",\"predicate\":\"持股比例\",\"object\":\"10%\"},{\"subject\":\"许慕白\",\"predicate\":\"登记日期\",\"object\":\"2022年8月14日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "许慕白",
+    "type": "person"
+   },
+   {
+    "name": "沅曦金融服务有限公司",
+    "type": "organization"
+   },
+   {
+    "name": "10%",
+    "type": "percentage"
+   },
+   {
+    "name": "2022年8月14日",
+    "type": "date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许慕白",
+    "predicate": "持有",
+    "object": "沅曦金融服务有限公司"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "持股比例",
+    "object": "10%"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "登记日期",
+    "object": "2022年8月14日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 331,
+ "output_tokens": 115,
+ "cached_read_tokens": 128,
+ "latency_ms": 6734.220624959562,
+ "provider": "deepseek"
+}

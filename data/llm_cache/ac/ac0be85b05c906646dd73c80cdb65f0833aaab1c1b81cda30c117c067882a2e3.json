@@ -1,0 +1,86 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Qiwu Global Investments Ltd.\",\"type\":\"公司\",\"aliases\":[\"栖梧环球投资有限公司\"]},{\"name\":\"北屿自治区\",\"type\":\"地区\"},{\"name\":\"1995678856\",\"type\":\"注册编号\"},{\"name\":\"2007年11月20日\",\"type\":\"日期\"},{\"name\":\"存续\",\"type\":\"主体状态\"},{\"name\":\"投资管理\",\"type\":\"业务\"},{\"name\":\"投资顾问\",\"type\":\"业务\"},{\"name\":\"相关配套服务\",\"type\":\"业务\"}],\"relations\":[{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"注册编号\",\"object\":\"1995678856\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"注册地\",\"object\":\"北屿自治区\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"注册日期\",\"object\":\"2007年11月20日\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"主体状态\",\"object\":\"存续\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"经营范围\",\"object\":\"投资管理\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"经营范围\",\"object\":\"投资顾问\"},{\"subject\":\"Qiwu Global Investments Ltd.\",\"predicate\":\"经营范围\",\"object\":\"相关配套服务\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Qiwu Global Investments Ltd.",
+    "type": "公司",
+    "aliases": [
+     "栖梧环球投资有限公司"
+    ]
+   },
+   {
+    "name": "北屿自治区",
+    "type": "地区"
+   },
+   {
+    "name": "1995678856",
+    "type": "注册编号"
+   },
+   {
+    "name": "2007年11月20日",
+    "type": "日期"
+   },
+   {
+    "name": "存续",
+    "type": "主体状态"
+   },
+   {
+    "name": "投资管理",
+    "type": "业务"
+   },
+   {
+    "name": "投资顾问",
+    "type": "业务"
+   },
+   {
+    "name": "相关配套服务",
+    "type": "业务"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "注册编号",
+    "object": "1995678856"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "注册地",
+    "object": "北屿自治区"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "注册日期",
+    "object": "2007年11月20日"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "经营范围",
+    "object": "投资管理"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "经营范围",
+    "object": "投资顾问"
+   },
+   {
+    "subject": "Qiwu Global Investments Ltd.",
+    "predicate": "经营范围",
+    "object": "相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 394,
+ "output_tokens": 274,
+ "cached_read_tokens": 256,
+ "latency_ms": 5941.082750039641,
+ "provider": "deepseek"
+}

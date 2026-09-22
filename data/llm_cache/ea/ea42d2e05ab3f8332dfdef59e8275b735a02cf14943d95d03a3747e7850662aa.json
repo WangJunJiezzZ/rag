@@ -1,0 +1,85 @@
+{
+ "text": "{\"entities\":[{\"name\":\"霁川资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"Jichuan Asset Management Pte. Ltd.\",\"type\":\"公司\"},{\"name\":\"刘知微\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"注册机关\",\"type\":\"机构\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"别名\",\"object\":\"Jichuan Asset Management Pte. Ltd.\"},{\"subject\":\"刘知微\",\"predicate\":\"当选董事\",\"object\":\"霁川资产管理有限公司\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"刘知微当选董事\"},{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"向注册机关备案\",\"object\":\"董事变更\"},{\"subject\":\"刘知微\",\"predicate\":\"持有\",\"object\":\"金融相关专业的硕士学位\"},{\"subject\":\"刘知微\",\"predicate\":\"具备\",\"object\":\"所在司法管辖区认可的从业资格\"},{\"subject\":\"刘知微\",\"predicate\":\"覆盖\",\"object\":\"机构客户业务\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"本基金账目\"},{\"subject\":\"独立审计机构\",\"predicate\":\"提供\",\"object\":\"审计报告\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Jichuan Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "刘知微",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "别名",
+    "object": "Jichuan Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "当选董事",
+    "object": "霁川资产管理有限公司"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "刘知微当选董事"
+   },
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "向注册机关备案",
+    "object": "董事变更"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "持有",
+    "object": "金融相关专业的硕士学位"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "具备",
+    "object": "所在司法管辖区认可的从业资格"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "覆盖",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金账目"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "提供",
+    "object": "审计报告"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 259,
+ "cached_read_tokens": 128,
+ "latency_ms": 5720.1082080136985,
+ "provider": "deepseek"
+}

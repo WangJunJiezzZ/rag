@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2023 年 3 月 24 日 召开的股东大会审议通过，周嘉铭当选为本公司董事，即日生效\", \"subject\": \"周嘉铭\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"霁川环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2023 年 3 月 24 日 召开的股东大会审议通过，周嘉铭当选为本公司董事，即日生效",
+    "subject": "周嘉铭",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "霁川环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1623,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4288.376791984774,
+ "provider": "deepseek"
+}

@@ -1,0 +1,123 @@
+{
+ "text": "{\"entities\":[{\"name\":\"漱玉投资控股有限公司（3）\",\"type\":\"公司\"},{\"name\":\"邱见山\",\"type\":\"人物\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"2024年2月11日\",\"type\":\"日期\"},{\"name\":\"三年\",\"type\":\"时长\"},{\"name\":\"结构化产品与另类投资\",\"type\":\"业务领域\"},{\"name\":\"38亿单位货币\",\"type\":\"金额\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"},{\"name\":\"审计报告\",\"type\":\"文件\"},{\"name\":\"财政年度结束后四个月内\",\"type\":\"时间期限\"},{\"name\":\"投资者\",\"type\":\"群体\"},{\"name\":\"中文版本\",\"type\":\"文件版本\"},{\"name\":\"英文版本\",\"type\":\"文件版本\"}],\"relations\":[{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"委任\",\"object\":\"邱见山\"},{\"subject\":\"邱见山\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"邱见山\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"委任\",\"predicate\":\"生效日期\",\"object\":\"2024年2月11日\"},{\"subject\":\"邱见山\",\"predicate\":\"从事\",\"object\":\"结构化产品与另类投资\"},{\"subject\":\"邱见山\",\"predicate\":\"管理规模\",\"object\":\"38亿单位货币\"},{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"账目审计方\",\"object\":\"独立审计机构\"},{\"subject\":\"独立审计机构\",\"predicate\":\"提供\",\"object\":\"审计报告\"},{\"subject\":\"审计报告\",\"predicate\":\"提供时间\",\"object\":\"财政年度结束后四个月内\"},{\"subject\":\"审计报告\",\"predicate\":\"提供对象\",\"object\":\"投资者\"},{\"subject\":\"中文版本\",\"predicate\":\"优先于\",\"object\":\"英文版本\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "漱玉投资控股有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "邱见山",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2024年2月11日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   },
+   {
+    "name": "结构化产品与另类投资",
+    "type": "业务领域"
+   },
+   {
+    "name": "38亿单位货币",
+    "type": "金额"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "财政年度结束后四个月内",
+    "type": "时间期限"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件版本"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "委任",
+    "object": "邱见山"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "委任",
+    "predicate": "生效日期",
+    "object": "2024年2月11日"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "从事",
+    "object": "结构化产品与另类投资"
+   },
+   {
+    "subject": "邱见山",
+    "predicate": "管理规模",
+    "object": "38亿单位货币"
+   },
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "账目审计方",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "提供",
+    "object": "审计报告"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供对象",
+    "object": "投资者"
+   },
+   {
+    "subject": "中文版本",
+    "predicate": "优先于",
+    "object": "英文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 322,
+ "output_tokens": 376,
+ "cached_read_tokens": 128,
+ "latency_ms": 4792.266250005923,
+ "provider": "deepseek"
+}

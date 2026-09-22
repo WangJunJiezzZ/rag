@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"砥行资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"曾知微\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"曾知微\",\"predicate\":\"任职于\",\"object\":\"砥行资本管理有限公司\"},{\"subject\":\"曾知微\",\"predicate\":\"担任\",\"object\":\"董事会\"},{\"subject\":\"董事会\",\"predicate\":\"隶属于\",\"object\":\"砥行资本管理有限公司\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"砥行资本管理有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砥行资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "曾知微",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "曾知微",
+    "predicate": "任职于",
+    "object": "砥行资本管理有限公司"
+   },
+   {
+    "subject": "曾知微",
+    "predicate": "担任",
+    "object": "董事会"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "隶属于",
+    "object": "砥行资本管理有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "砥行资本管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 325,
+ "output_tokens": 125,
+ "cached_read_tokens": 128,
+ "latency_ms": 3121.734834043309,
+ "provider": "deepseek"
+}

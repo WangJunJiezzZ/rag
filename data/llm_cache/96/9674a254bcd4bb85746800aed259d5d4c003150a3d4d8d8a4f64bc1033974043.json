@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 6 月 28 日，邱之涵直接持有本公司已发行股本的 5%，为本公司主要股东之一\", \"subject\": \"邱之涵\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"燧明投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 6 月 28 日，邱之涵直接持有本公司已发行股本的 5%，为本公司主要股东之一",
+    "subject": "邱之涵",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "燧明投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1631,
+ "output_tokens": 88,
+ "cached_read_tokens": 1280,
+ "latency_ms": 4095.778541988693,
+ "provider": "deepseek"
+}

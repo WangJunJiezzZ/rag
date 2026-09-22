@@ -1,0 +1,61 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"樾川金融服务有限公司（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"郑明远\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"2022年10月6日\",\n      \"type\": \"日期\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"樾川金融服务有限公司（2）\",\n      \"predicate\": \"完成董事会成员增补\",\n      \"object\": \"2022年10月6日\"\n    },\n    {\n      \"subject\": \"郑明远\",\n      \"predicate\": \"新任董事\",\n      \"object\": \"樾川金融服务有限公司（2）\"\n    },\n    {\n      \"subject\": \"董事会\",\n      \"predicate\": \"由五名成员组成\",\n      \"object\": \"樾川金融服务有限公司（2）\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"由不少于三名成员组成\",\n      \"object\": \"樾川金融服务有限公司（2）\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"每月至少召开一次会议\",\n      \"object\": \"樾川金融服务有限公司（2）\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "樾川金融服务有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "郑明远",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   },
+   {
+    "name": "2022年10月6日",
+    "type": "日期"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "樾川金融服务有限公司（2）",
+    "predicate": "完成董事会成员增补",
+    "object": "2022年10月6日"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "新任董事",
+    "object": "樾川金融服务有限公司（2）"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "由五名成员组成",
+    "object": "樾川金融服务有限公司（2）"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "由不少于三名成员组成",
+    "object": "樾川金融服务有限公司（2）"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "每月至少召开一次会议",
+    "object": "樾川金融服务有限公司（2）"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 234,
+ "output_tokens": 314,
+ "cached_read_tokens": 0,
+ "latency_ms": 3743.217666982673,
+ "provider": "deepseek"
+}

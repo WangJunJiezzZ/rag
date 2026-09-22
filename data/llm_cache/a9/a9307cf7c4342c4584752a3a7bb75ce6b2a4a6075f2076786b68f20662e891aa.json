@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为带序号(3)的中文公司名，B为无序号且名称不同的英文公司名，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为带序号(3)的中文公司名，B为无序号且名称不同的英文公司名，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 47,
+ "cached_read_tokens": 128,
+ "latency_ms": 2918.6204579891637,
+ "provider": "deepseek"
+}

@@ -1,0 +1,84 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"Yilan Capital Management Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"砥行资本管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"本集团\",\n      \"type\": \"公司集团\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"砥行资本管理有限公司\",\n      \"predicate\": \"持有\",\n      \"object\": \"Yilan Capital Management Ltd.\",\n      \"attributes\": {\n        \"持股比例\": \"100%\"\n      }\n    },\n    {\n      \"subject\": \"Yilan Capital Management Ltd.\",\n      \"predicate\": \"是\",\n      \"object\": \"砥行资本管理有限公司\",\n      \"attributes\": {\n        \"关系\": \"全资附属公司\"\n      }\n    },\n    {\n      \"subject\": \"Yilan Capital Management Ltd.\",\n      \"predicate\": \"纳入\",\n      \"object\": \"本集团\",\n      \"attributes\": {\n        \"范围\": \"合并财务报表范围\"\n      }\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"设立\",\n      \"object\": \"投资委员会\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"负责\",\n      \"object\": \"重大投资决策及关联交易事项\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"组成\",\n      \"object\": \"不少于三名成员\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"召开会议\",\n      \"object\": \"每月至少一次\",\n      \"attributes\": {}\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Yilan Capital Management Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "砥行资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "本集团",
+    "type": "公司集团"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "砥行资本管理有限公司",
+    "predicate": "持有",
+    "object": "Yilan Capital Management Ltd.",
+    "attributes": {
+     "持股比例": "100%"
+    }
+   },
+   {
+    "subject": "Yilan Capital Management Ltd.",
+    "predicate": "是",
+    "object": "砥行资本管理有限公司",
+    "attributes": {
+     "关系": "全资附属公司"
+    }
+   },
+   {
+    "subject": "Yilan Capital Management Ltd.",
+    "predicate": "纳入",
+    "object": "本集团",
+    "attributes": {
+     "范围": "合并财务报表范围"
+    }
+   },
+   {
+    "subject": "本基金",
+    "predicate": "设立",
+    "object": "投资委员会",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "组成",
+    "object": "不少于三名成员",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "召开会议",
+    "object": "每月至少一次",
+    "attributes": {}
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 225,
+ "output_tokens": 406,
+ "cached_read_tokens": 0,
+ "latency_ms": 5184.535624983255,
+ "provider": "deepseek"
+}

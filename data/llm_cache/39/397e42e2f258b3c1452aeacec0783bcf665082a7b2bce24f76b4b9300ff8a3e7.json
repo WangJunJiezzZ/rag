@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"澜图资本管理有限公司（3）\",\"type\":\"公司\"},{\"name\":\"林嘉铭\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"林嘉铭\",\"predicate\":\"担任董事\",\"object\":\"澜图资本管理有限公司（3）\"},{\"subject\":\"林嘉铭\",\"predicate\":\"任职于\",\"object\":\"董事会\"},{\"subject\":\"董事会\",\"predicate\":\"隶属于\",\"object\":\"澜图资本管理有限公司（3）\"},{\"subject\":\"投资委员会\",\"predicate\":\"隶属于\",\"object\":\"澜图资本管理有限公司（3）\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图资本管理有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "林嘉铭",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "林嘉铭",
+    "predicate": "担任董事",
+    "object": "澜图资本管理有限公司（3）"
+   },
+   {
+    "subject": "林嘉铭",
+    "predicate": "任职于",
+    "object": "董事会"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "隶属于",
+    "object": "澜图资本管理有限公司（3）"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "澜图资本管理有限公司（3）"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 413,
+ "output_tokens": 138,
+ "cached_read_tokens": 256,
+ "latency_ms": 2755.866292049177,
+ "provider": "deepseek"
+}

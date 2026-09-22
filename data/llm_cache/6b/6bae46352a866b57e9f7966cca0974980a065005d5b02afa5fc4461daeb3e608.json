@@ -1,0 +1,206 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"岫云可持续发展基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"岫云资产管理有限公司\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"瑞辰银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"卡瑟尼亚\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"可持续发展策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"auditor\",\n      \"name\": \"独立审计机构\",\n      \"type\": \"审计机构\"\n    },\n    {\n      \"id\": \"investors\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    },\n    {\n      \"id\": \"performance_fee\",\n      \"name\": \"业绩报酬\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"management_fee\",\n      \"name\": \"管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee\",\n      \"name\": \"托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"audit_fee\",\n      \"name\": \"审计费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"legal_fee\",\n      \"name\": \"法律顾问费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"admin_fee\",\n      \"name\": \"行政管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"credit_risk\",\n      \"name\": \"信用风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"concentration_risk\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"liquidity_risk\",\n      \"name\": \"流动性风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"related_party_risk\",\n      \"name\": \"关联交易风险\",\n      \"type\": \"风险\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"卡瑟尼亚\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"美元\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"采用投资策略\",\n      \"object\": \"可持续发展策略\"\n    },\n    {\n      \"subject\": \"岫云资产管理有限公司\",\n      \"predicate\": \"担任基金管理人\",\n      \"object\": \"岫云可持续发展基金\"\n    },\n    {\n      \"subject\": \"瑞辰银行新港城分行\",\n      \"predicate\": \"担任基金托管人\",\n      \"object\": \"岫云可持续发展基金\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"审计\",\n      \"object\": \"岫云可持续发展基金\"\n    },\n    {\n      \"subject\": \"合资格投资者\",\n      \"predicate\": \"认购\",\n      \"object\": \"岫云可持续发展基金\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"审批\",\n      \"object\": \"非上市股权或流动性受限资产投资\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"计提\",\n      \"object\": \"业绩报酬\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"承担\",\n      \"object\": \"管理费\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"承担\",\n      \"object\": \"托管费\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"承担\",\n      \"object\": \"审计费\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"承担\",\n      \"object\": \"法律顾问费\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"承担\",\n      \"object\": \"行政管理费\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"信用风险\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"集中度风险\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"流动性风险\"\n    },\n    {\n      \"subject\": \"岫云可持续发展基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"关联交易风险\"\n    },\n    {\n      \"subject\": \"岫云资产管理有限公司\",\n      \"predicate\": \"可能产生利益冲突\",\n      \"object\": \"岫云可持续发展基金\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "岫云可持续发展基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "岫云资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "瑞辰银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "卡瑟尼亚",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "可持续发展策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "auditor",
+    "name": "独立审计机构",
+    "type": "审计机构"
+   },
+   {
+    "id": "investors",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "performance_fee",
+    "name": "业绩报酬",
+    "type": "费用"
+   },
+   {
+    "id": "management_fee",
+    "name": "管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee",
+    "name": "托管费",
+    "type": "费用"
+   },
+   {
+    "id": "audit_fee",
+    "name": "审计费",
+    "type": "费用"
+   },
+   {
+    "id": "legal_fee",
+    "name": "法律顾问费",
+    "type": "费用"
+   },
+   {
+    "id": "admin_fee",
+    "name": "行政管理费",
+    "type": "费用"
+   },
+   {
+    "id": "credit_risk",
+    "name": "信用风险",
+    "type": "风险"
+   },
+   {
+    "id": "concentration_risk",
+    "name": "集中度风险",
+    "type": "风险"
+   },
+   {
+    "id": "liquidity_risk",
+    "name": "流动性风险",
+    "type": "风险"
+   },
+   {
+    "id": "related_party_risk",
+    "name": "关联交易风险",
+    "type": "风险"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "注册地",
+    "object": "卡瑟尼亚"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "采用投资策略",
+    "object": "可持续发展策略"
+   },
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "担任基金管理人",
+    "object": "岫云可持续发展基金"
+   },
+   {
+    "subject": "瑞辰银行新港城分行",
+    "predicate": "担任基金托管人",
+    "object": "岫云可持续发展基金"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "岫云可持续发展基金"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "认购",
+    "object": "岫云可持续发展基金"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "审批",
+    "object": "非上市股权或流动性受限资产投资"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "计提",
+    "object": "业绩报酬"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "承担",
+    "object": "管理费"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "承担",
+    "object": "托管费"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "承担",
+    "object": "审计费"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "承担",
+    "object": "法律顾问费"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "承担",
+    "object": "行政管理费"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "面临风险",
+    "object": "信用风险"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "面临风险",
+    "object": "集中度风险"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "面临风险",
+    "object": "流动性风险"
+   },
+   {
+    "subject": "岫云可持续发展基金",
+    "predicate": "面临风险",
+    "object": "关联交易风险"
+   },
+   {
+    "subject": "岫云资产管理有限公司",
+    "predicate": "可能产生利益冲突",
+    "object": "岫云可持续发展基金"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 737,
+ "output_tokens": 1192,
+ "cached_read_tokens": 0,
+ "latency_ms": 5900.201916985679,
+ "provider": "deepseek"
+}

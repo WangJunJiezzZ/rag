@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称A为中文'汐禾金融服务有限公司（3）'，名称B为英文'Huilan Investment Holdings Ltd.'，两者名称、语言及业务类型均不同，且A带序号(3)，无法指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称A为中文'汐禾金融服务有限公司（3）'，名称B为英文'Huilan Investment Holdings Ltd.'，两者名称、语言及业务类型均不同，且A带序号(3)，无法指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 381,
+ "output_tokens": 66,
+ "cached_read_tokens": 128,
+ "latency_ms": 2548.6587500199676,
+ "provider": "deepseek"
+}

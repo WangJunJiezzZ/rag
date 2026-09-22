@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「霁川环球投资有限公司」与英文名「Luyan International Holdings Ltd.」音译和含义均不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「霁川环球投资有限公司」与英文名「Luyan International Holdings Ltd.」音译和含义均不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 378,
+ "output_tokens": 51,
+ "cached_read_tokens": 128,
+ "latency_ms": 2490.7676660222933,
+ "provider": "deepseek"
+}

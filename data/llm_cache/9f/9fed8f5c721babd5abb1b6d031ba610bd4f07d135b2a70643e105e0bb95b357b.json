@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"徽岚投资控股有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"孙志诚\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"2023年5月5日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"三年\",\n      \"type\": \"时长\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"徽岚投资控股有限公司\",\n      \"predicate\": \"委任\",\n      \"object\": \"孙志诚\",\n      \"qualifiers\": {\n        \"职位\": \"董事\",\n        \"生效日期\": \"2023年5月5日\",\n        \"任期\": \"三年\"\n      }\n    },\n    {\n      \"subject\": \"孙志诚\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\",\n      \"qualifiers\": {\n        \"所属公司\": \"徽岚投资控股有限公司\",\n        \"生效日期\": \"2023年5月5日\",\n        \"任期\": \"三年\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "徽岚投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "孙志诚",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2023年5月5日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "徽岚投资控股有限公司",
+    "predicate": "委任",
+    "object": "孙志诚",
+    "qualifiers": {
+     "职位": "董事",
+     "生效日期": "2023年5月5日",
+     "任期": "三年"
+    }
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "担任",
+    "object": "董事",
+    "qualifiers": {
+     "所属公司": "徽岚投资控股有限公司",
+     "生效日期": "2023年5月5日",
+     "任期": "三年"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 230,
+ "output_tokens": 256,
+ "cached_read_tokens": 0,
+ "latency_ms": 6413.151916000061,
+ "provider": "deepseek"
+}

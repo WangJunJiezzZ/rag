@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"于 2022 年 8 月 25 日 依法设立并完成注册登记，注册地为新港城\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"}, {\"evidence\": \"于 2022 年 8 月 25 日 依法设立并完成注册登记\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2022 年 8 月 25 日\", \"object_type\": \"Literal\"}, {\"evidence\": \"基金管理人：翊澜资产管理有限公司\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"翊澜资产管理有限公司\", \"object_type\": \"Company\"}, {\"evidence\": \"基金托管人：北岸银行澄江特别行政区分行\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"}, {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 25 万新元\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"25 万新元\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "于 2022 年 8 月 25 日 依法设立并完成注册登记，注册地为新港城",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "于 2022 年 8 月 25 日 依法设立并完成注册登记",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2022 年 8 月 25 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：翊澜资产管理有限公司",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "翊澜资产管理有限公司",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：北岸银行澄江特别行政区分行",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 25 万新元",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "25 万新元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2204,
+ "output_tokens": 344,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3641.7364579974674,
+ "provider": "deepseek"
+}

@@ -1,0 +1,140 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"砺石资产管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"Lishi Asset Management Pte. Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"王沐阳\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"2025年10月8日\",\n      \"type\": \"日期\"\n    },\n    {\n      \"name\": \"董事\",\n      \"type\": \"职位\"\n    },\n    {\n      \"name\": \"三年\",\n      \"type\": \"任期\"\n    },\n    {\n      \"name\": \"金融相关专业硕士学位\",\n      \"type\": \"学历\"\n    },\n    {\n      \"name\": \"机构客户业务\",\n      \"type\": \"业务领域\"\n    },\n    {\n      \"name\": \"独立审计机构\",\n      \"type\": \"机构\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"投资者\",\n      \"type\": \"群体\"\n    },\n    {\n      \"name\": \"审计报告\",\n      \"type\": \"文件\"\n    },\n    {\n      \"name\": \"财政年度\",\n      \"type\": \"时间周期\"\n    },\n    {\n      \"name\": \"四个月\",\n      \"type\": \"时间期限\"\n    },\n    {\n      \"name\": \"中文版本\",\n      \"type\": \"文件版本\"\n    },\n    {\n      \"name\": \"英文版本\",\n      \"type\": \"文件版本\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"砺石资产管理有限公司\",\n      \"predicate\": \"别名\",\n      \"object\": \"Lishi Asset Management Pte. Ltd.\"\n    },\n    {\n      \"subject\": \"砺石资产管理有限公司\",\n      \"predicate\": \"委任\",\n      \"object\": \"王沐阳\"\n    },\n    {\n      \"subject\": \"王沐阳\",\n      \"predicate\": \"职位\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"王沐阳\",\n      \"predicate\": \"任期\",\n      \"object\": \"三年\"\n    },\n    {\n      \"subject\": \"王沐阳\",\n      \"predicate\": \"生效日期\",\n      \"object\": \"2025年10月8日\"\n    },\n    {\n      \"subject\": \"王沐阳\",\n      \"predicate\": \"持有学历\",\n      \"object\": \"金融相关专业硕士学位\"\n    },\n    {\n      \"subject\": \"王沐阳\",\n      \"predicate\": \"业务领域\",\n      \"object\": \"机构客户业务\"\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"审计机构\",\n      \"object\": \"独立审计机构\"\n    },\n    {\n      \"subject\": \"独立审计机构\",\n      \"predicate\": \"审计\",\n      \"object\": \"本基金\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供对象\",\n      \"object\": \"投资者\"\n    },\n    {\n      \"subject\": \"审计报告\",\n      \"predicate\": \"提供时间\",\n      \"object\": \"财政年度结束后四个月内\"\n    },\n    {\n      \"subject\": \"中文版本\",\n      \"predicate\": \"优先于\",\n      \"object\": \"英文版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砺石资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Lishi Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "王沐阳",
+    "type": "人物"
+   },
+   {
+    "name": "2025年10月8日",
+    "type": "日期"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "三年",
+    "type": "任期"
+   },
+   {
+    "name": "金融相关专业硕士学位",
+    "type": "学历"
+   },
+   {
+    "name": "机构客户业务",
+    "type": "业务领域"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "投资者",
+    "type": "群体"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "财政年度",
+    "type": "时间周期"
+   },
+   {
+    "name": "四个月",
+    "type": "时间期限"
+   },
+   {
+    "name": "中文版本",
+    "type": "文件版本"
+   },
+   {
+    "name": "英文版本",
+    "type": "文件版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "砺石资产管理有限公司",
+    "predicate": "别名",
+    "object": "Lishi Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "砺石资产管理有限公司",
+    "predicate": "委任",
+    "object": "王沐阳"
+   },
+   {
+    "subject": "王沐阳",
+    "predicate": "职位",
+    "object": "董事"
+   },
+   {
+    "subject": "王沐阳",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "王沐阳",
+    "predicate": "生效日期",
+    "object": "2025年10月8日"
+   },
+   {
+    "subject": "王沐阳",
+    "predicate": "持有学历",
+    "object": "金融相关专业硕士学位"
+   },
+   {
+    "subject": "王沐阳",
+    "predicate": "业务领域",
+    "object": "机构客户业务"
+   },
+   {
+    "subject": "本基金",
+    "predicate": "审计机构",
+    "object": "独立审计机构"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供对象",
+    "object": "投资者"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供时间",
+    "object": "财政年度结束后四个月内"
+   },
+   {
+    "subject": "中文版本",
+    "predicate": "优先于",
+    "object": "英文版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 227,
+ "output_tokens": 710,
+ "cached_read_tokens": 0,
+ "latency_ms": 5623.164333985187,
+ "provider": "deepseek"
+}

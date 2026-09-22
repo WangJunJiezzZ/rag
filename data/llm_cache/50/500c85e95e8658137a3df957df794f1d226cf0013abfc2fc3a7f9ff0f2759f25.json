@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"昀舟金融服务有限公司\",\"type\":\"公司\"},{\"name\":\"谢志诚\",\"type\":\"人员\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"谢志诚\",\"predicate\":\"持有\",\"object\":\"昀舟金融服务有限公司\",\"attributes\":{\"持股比例\":\"51%\",\"登记日期\":\"2023年1月25日\"}},{\"subject\":\"谢志诚\",\"predicate\":\"是主要股东\",\"object\":\"昀舟金融服务有限公司\"},{\"subject\":\"昀舟金融服务有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"重大投资决策及关联交易事项\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "昀舟金融服务有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "谢志诚",
+    "type": "人员"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "谢志诚",
+    "predicate": "持有",
+    "object": "昀舟金融服务有限公司",
+    "attributes": {
+     "持股比例": "51%",
+     "登记日期": "2023年1月25日"
+    }
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "是主要股东",
+    "object": "昀舟金融服务有限公司"
+   },
+   {
+    "subject": "昀舟金融服务有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "重大投资决策及关联交易事项"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 140,
+ "cached_read_tokens": 256,
+ "latency_ms": 3863.5867080301978,
+ "provider": "deepseek"
+}

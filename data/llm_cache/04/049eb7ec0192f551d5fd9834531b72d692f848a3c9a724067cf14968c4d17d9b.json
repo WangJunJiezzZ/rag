@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「星海资本管理有限公司（2）」，B为「Lishi Asset Management Pte. Ltd.」，名称主体与罗马化均不匹配，且A带序号(2)，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「星海资本管理有限公司（2）」，B为「Lishi Asset Management Pte. Ltd.」，名称主体与罗马化均不匹配，且A带序号(2)，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 389,
+ "output_tokens": 65,
+ "cached_read_tokens": 128,
+ "latency_ms": 3468.114208022598,
+ "provider": "deepseek"
+}

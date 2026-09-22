@@ -1,0 +1,81 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"砺石量化对冲基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"砺石资本\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"环宇银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"investment_committee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"},{\"id\":\"jurisdiction\",\"name\":\"圣维尔\",\"type\":\"司法管辖区\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"货币\"}],\"relations\":[{\"subject\":\"fund\",\"predicate\":\"基金管理人\",\"object\":\"manager\"},{\"subject\":\"fund\",\"predicate\":\"基金托管人\",\"object\":\"custodian\"},{\"subject\":\"fund\",\"predicate\":\"设有\",\"object\":\"investment_committee\"},{\"subject\":\"fund\",\"predicate\":\"注册地\",\"object\":\"jurisdiction\"},{\"subject\":\"fund\",\"predicate\":\"基准货币\",\"object\":\"currency\"},{\"subject\":\"manager\",\"predicate\":\"负责\",\"object\":\"fund\"},{\"subject\":\"custodian\",\"predicate\":\"负责\",\"object\":\"fund\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砺石量化对冲基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砺石资本",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "圣维尔",
+    "type": "司法管辖区"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "货币"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "fund"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 891,
+ "output_tokens": 218,
+ "cached_read_tokens": 640,
+ "latency_ms": 3435.3828339953907,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2022 年 9 月 25 日 起，委任黄明远为本公司董事\", \"subject\": \"黄明远\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"凛川资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2022 年 9 月 25 日 起，委任黄明远为本公司董事",
+    "subject": "黄明远",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "凛川资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1168,
+ "output_tokens": 76,
+ "cached_read_tokens": 768,
+ "latency_ms": 3252.6120839756913,
+ "provider": "deepseek"
+}

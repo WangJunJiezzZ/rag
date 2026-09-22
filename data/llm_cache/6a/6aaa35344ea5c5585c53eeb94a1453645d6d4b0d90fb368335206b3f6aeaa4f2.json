@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.99, \"reason\": \"A是昭明银行的分支机构，B是Lantu Asset Management Pte. Ltd.，两者名称与实体类型均不同。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.99,
+  "reason": "A是昭明银行的分支机构，B是Lantu Asset Management Pte. Ltd.，两者名称与实体类型均不同。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 47,
+ "cached_read_tokens": 256,
+ "latency_ms": 3633.9319590479136,
+ "provider": "deepseek"
+}

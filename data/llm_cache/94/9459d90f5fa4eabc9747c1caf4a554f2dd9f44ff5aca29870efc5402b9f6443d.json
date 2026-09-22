@@ -1,0 +1,30 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"实体名称：沅曦金服（3）\", \"subject\": \"沅曦金服（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"注册地：北屿自治区\", \"subject\": \"沅曦金服（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"北屿自治区\", \"object_type\": \"Jurisdiction\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：沅曦金服（3）",
+    "subject": "沅曦金服（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "注册地：北屿自治区",
+    "subject": "沅曦金服（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "北屿自治区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1637,
+ "output_tokens": 124,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3925.679916050285,
+ "provider": "deepseek"
+}

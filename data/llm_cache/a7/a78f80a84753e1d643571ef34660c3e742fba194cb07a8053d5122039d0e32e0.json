@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(2)，B为英文名Lishi，名称主体不同且A带序号区分，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(2)，B为英文名Lishi，名称主体不同且A带序号区分，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 49,
+ "cached_read_tokens": 256,
+ "latency_ms": 4458.161332993768,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两只基金名称不同（亚洲机会基金 vs 私募信贷基金），设立日期也不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两只基金名称不同（亚洲机会基金 vs 私募信贷基金），设立日期也不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 419,
+ "output_tokens": 40,
+ "cached_read_tokens": 256,
+ "latency_ms": 3076.7275420366786,
+ "provider": "deepseek"
+}

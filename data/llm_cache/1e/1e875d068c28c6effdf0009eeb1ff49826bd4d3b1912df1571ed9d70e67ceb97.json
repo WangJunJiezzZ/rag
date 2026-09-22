@@ -1,0 +1,54 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"于 2022 年 9 月 17 日 依法设立并完成注册登记，注册地为白鹭湾\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"于 2022 年 9 月 17 日 依法设立并完成注册登记\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"LAUNCHED_ON\", \"object\": \"2022 年 9 月 17 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"基金管理人：星海资本管理有限公司（2）\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"MANAGED_BY\", \"object\": \"星海资本管理有限公司\", \"object_type\": \"Company\"},\n {\"evidence\": \"基金托管人：北岸银行澄江特别行政区分行\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"合资格投资者参与本基金的最低认购金额为 50 万美元\", \"subject\": \"星海量化对冲基金\", \"subject_type\": \"Fund\", \"relation\": \"MIN_INVESTMENT\", \"object\": \"50 万美元\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "于 2022 年 9 月 17 日 依法设立并完成注册登记，注册地为白鹭湾",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "于 2022 年 9 月 17 日 依法设立并完成注册登记",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "LAUNCHED_ON",
+    "object": "2022 年 9 月 17 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "基金管理人：星海资本管理有限公司（2）",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "MANAGED_BY",
+    "object": "星海资本管理有限公司",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "基金托管人：北岸银行澄江特别行政区分行",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "合资格投资者参与本基金的最低认购金额为 50 万美元",
+    "subject": "星海量化对冲基金",
+    "subject_type": "Fund",
+    "relation": "MIN_INVESTMENT",
+    "object": "50 万美元",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2136,
+ "output_tokens": 348,
+ "cached_read_tokens": 1280,
+ "latency_ms": 7130.541000049561,
+ "provider": "deepseek"
+}

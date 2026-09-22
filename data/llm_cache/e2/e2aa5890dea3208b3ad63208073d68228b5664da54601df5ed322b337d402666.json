@@ -1,0 +1,236 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"澜图私募信贷基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"澜图资产管理有限公司\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"澄江特别行政区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"私募信贷策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"base_currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"management_fee\",\n      \"name\": \"2.00%年费率管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee\",\n      \"name\": \"0.12%年费率托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"performance_fee\",\n      \"name\": \"10%业绩报酬\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"hurdle_rate\",\n      \"name\": \"5%年化门槛收益率\",\n      \"type\": \"业绩基准\"\n    },\n    {\n      \"id\": \"high_water_mark\",\n      \"name\": \"高水位线法\",\n      \"type\": \"业绩报酬计提方式\"\n    },\n    {\n      \"id\": \"min_initial_subscription\",\n      \"name\": \"100万美元最低认购金额\",\n      \"type\": \"认购规则\"\n    },\n    {\n      \"id\": \"min_additional_subscription\",\n      \"name\": \"1万美元追加认购最低金额\",\n      \"type\": \"认购规则\"\n    },\n    {\n      \"id\": \"redemption_frequency\",\n      \"name\": \"每月最后一个工作日赎回\",\n      \"type\": \"赎回规则\"\n    },\n    {\n      \"id\": \"redemption_payment_period\",\n      \"name\": \"7个工作日内支付赎回款项\",\n      \"type\": \"赎回规则\"\n    },\n    {\n      \"id\": \"market_risk\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"liquidity_risk\",\n      \"name\": \"流动性风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"credit_risk\",\n      \"name\": \"信用风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"valuation_risk\",\n      \"name\": \"估值风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"legal_regulatory_risk\",\n      \"name\": \"法律与监管风险\",\n      \"type\": \"风险因素\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"澄江特别行政区\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"澜图资产管理有限公司\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"北岸银行澄江特别行政区分行\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"采用投资策略\",\n      \"object\": \"私募信贷策略\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"美元\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"收取费用\",\n      \"object\": \"2.00%年费率管理费\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"收取费用\",\n      \"object\": \"0.12%年费率托管费\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"计提业绩报酬\",\n      \"object\": \"10%业绩报酬\"\n    },\n    {\n      \"subject\": \"10%业绩报酬\",\n      \"predicate\": \"门槛收益率\",\n      \"object\": \"5%年化门槛收益率\"\n    },\n    {\n      \"subject\": \"10%业绩报酬\",\n      \"predicate\": \"计提方式\",\n      \"object\": \"高水位线法\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"100万美元最低认购金额\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"1万美元追加认购最低金额\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"赎回安排\",\n      \"object\": \"每月最后一个工作日赎回\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"赎回款项支付期限\",\n      \"object\": \"7个工作日内支付赎回款项\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"市场风险\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"流动性风险\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"信用风险\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"估值风险\"\n    },\n    {\n      \"subject\": \"澜图私募信贷基金\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"法律与监管风险\"\n    },\n    {\n      \"subject\": \"澜图资产管理有限公司\",\n      \"predicate\": \"负责\",\n      \"object\": \"澜图私募信贷基金\"\n    },\n    {\n      \"subject\": \"北岸银行澄江特别行政区分行\",\n      \"predicate\": \"托管\",\n      \"object\": \"澜图私募信贷基金\"\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"隶属于\",\n      \"object\": \"澜图私募信贷基金\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "澜图私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "澜图资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "澄江特别行政区",
+    "type": "注册地"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "strategy",
+    "name": "私募信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "base_currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "management_fee",
+    "name": "2.00%年费率管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee",
+    "name": "0.12%年费率托管费",
+    "type": "费用"
+   },
+   {
+    "id": "performance_fee",
+    "name": "10%业绩报酬",
+    "type": "费用"
+   },
+   {
+    "id": "hurdle_rate",
+    "name": "5%年化门槛收益率",
+    "type": "业绩基准"
+   },
+   {
+    "id": "high_water_mark",
+    "name": "高水位线法",
+    "type": "业绩报酬计提方式"
+   },
+   {
+    "id": "min_initial_subscription",
+    "name": "100万美元最低认购金额",
+    "type": "认购规则"
+   },
+   {
+    "id": "min_additional_subscription",
+    "name": "1万美元追加认购最低金额",
+    "type": "认购规则"
+   },
+   {
+    "id": "redemption_frequency",
+    "name": "每月最后一个工作日赎回",
+    "type": "赎回规则"
+   },
+   {
+    "id": "redemption_payment_period",
+    "name": "7个工作日内支付赎回款项",
+    "type": "赎回规则"
+   },
+   {
+    "id": "market_risk",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "liquidity_risk",
+    "name": "流动性风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "credit_risk",
+    "name": "信用风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "valuation_risk",
+    "name": "估值风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "legal_regulatory_risk",
+    "name": "法律与监管风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "基金管理人",
+    "object": "澜图资产管理有限公司"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "基金托管人",
+    "object": "北岸银行澄江特别行政区分行"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "采用投资策略",
+    "object": "私募信贷策略"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "收取费用",
+    "object": "2.00%年费率管理费"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "收取费用",
+    "object": "0.12%年费率托管费"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "计提业绩报酬",
+    "object": "10%业绩报酬"
+   },
+   {
+    "subject": "10%业绩报酬",
+    "predicate": "门槛收益率",
+    "object": "5%年化门槛收益率"
+   },
+   {
+    "subject": "10%业绩报酬",
+    "predicate": "计提方式",
+    "object": "高水位线法"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "最低认购金额",
+    "object": "100万美元最低认购金额"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "追加认购最低金额",
+    "object": "1万美元追加认购最低金额"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "赎回安排",
+    "object": "每月最后一个工作日赎回"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "赎回款项支付期限",
+    "object": "7个工作日内支付赎回款项"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "面临风险",
+    "object": "市场风险"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "面临风险",
+    "object": "流动性风险"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "面临风险",
+    "object": "信用风险"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "面临风险",
+    "object": "估值风险"
+   },
+   {
+    "subject": "澜图私募信贷基金",
+    "predicate": "面临风险",
+    "object": "法律与监管风险"
+   },
+   {
+    "subject": "澜图资产管理有限公司",
+    "predicate": "负责",
+    "object": "澜图私募信贷基金"
+   },
+   {
+    "subject": "北岸银行澄江特别行政区分行",
+    "predicate": "托管",
+    "object": "澜图私募信贷基金"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "隶属于",
+    "object": "澜图私募信贷基金"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 801,
+ "output_tokens": 1475,
+ "cached_read_tokens": 0,
+ "latency_ms": 6427.945457980968,
+ "provider": "deepseek"
+}

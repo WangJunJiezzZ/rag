@@ -1,0 +1,53 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"栖梧资本管理有限公司\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"周若谷\",\n      \"type\": \"人物\"\n    },\n    {\n      \"name\": \"董事会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"栖梧资本管理有限公司\",\n      \"predicate\": \"完成董事会成员增补\",\n      \"object\": \"董事会\"\n    },\n    {\n      \"subject\": \"栖梧资本管理有限公司\",\n      \"predicate\": \"新任董事\",\n      \"object\": \"周若谷\"\n    },\n    {\n      \"subject\": \"周若谷\",\n      \"predicate\": \"担任\",\n      \"object\": \"董事\"\n    },\n    {\n      \"subject\": \"周若谷\",\n      \"predicate\": \"曾任职于\",\n      \"object\": \"区域性金融机构\"\n    },\n    {\n      \"subject\": \"周若谷\",\n      \"predicate\": \"拥有经验\",\n      \"object\": \"跨境资产配置\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "周若谷",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "栖梧资本管理有限公司",
+    "predicate": "完成董事会成员增补",
+    "object": "董事会"
+   },
+   {
+    "subject": "栖梧资本管理有限公司",
+    "predicate": "新任董事",
+    "object": "周若谷"
+   },
+   {
+    "subject": "周若谷",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "周若谷",
+    "predicate": "曾任职于",
+    "object": "区域性金融机构"
+   },
+   {
+    "subject": "周若谷",
+    "predicate": "拥有经验",
+    "object": "跨境资产配置"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 232,
+ "output_tokens": 233,
+ "cached_read_tokens": 0,
+ "latency_ms": 3231.6837909747846,
+ "provider": "deepseek"
+}

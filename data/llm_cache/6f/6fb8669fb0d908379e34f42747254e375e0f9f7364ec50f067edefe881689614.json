@@ -1,0 +1,73 @@
+{
+ "text": "{\"entities\":[{\"name\":\"珩屿国际控股有限公司\",\"type\":\"公司\"},{\"name\":\"黄明远\",\"type\":\"人员\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"珩屿国际控股有限公司\",\"predicate\":\"委任董事\",\"object\":\"黄明远\"},{\"subject\":\"黄明远\",\"predicate\":\"担任职务\",\"object\":\"珩屿国际控股有限公司董事\"},{\"subject\":\"黄明远\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"黄明远\",\"predicate\":\"生效日期\",\"object\":\"2024年3月4日\"},{\"subject\":\"黄明远\",\"predicate\":\"从业经验\",\"object\":\"超过24年\"},{\"subject\":\"珩屿国际控股有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"成员人数\",\"object\":\"不少于三名\"},{\"subject\":\"投资委员会\",\"predicate\":\"职责\",\"object\":\"审议重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"predicate\":\"会议频率\",\"object\":\"每月至少一次\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "珩屿国际控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "黄明远",
+    "type": "人员"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "珩屿国际控股有限公司",
+    "predicate": "委任董事",
+    "object": "黄明远"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "担任职务",
+    "object": "珩屿国际控股有限公司董事"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "生效日期",
+    "object": "2024年3月4日"
+   },
+   {
+    "subject": "黄明远",
+    "predicate": "从业经验",
+    "object": "超过24年"
+   },
+   {
+    "subject": "珩屿国际控股有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 412,
+ "output_tokens": 220,
+ "cached_read_tokens": 256,
+ "latency_ms": 3732.071459002327,
+ "provider": "deepseek"
+}

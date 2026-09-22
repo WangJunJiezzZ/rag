@@ -1,0 +1,196 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"砚池并购套利基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"砚池资管（2）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"瑞辰银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regplace\",\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"并购套利策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"min_sub\",\n      \"name\": \"10万美元\",\n      \"type\": \"最低认购金额\"\n    },\n    {\n      \"id\": \"add_sub\",\n      \"name\": \"1万美元\",\n      \"type\": \"追加认购最低金额\"\n    },\n    {\n      \"id\": \"redemption\",\n      \"name\": \"季度开放机制\",\n      \"type\": \"赎回安排\"\n    },\n    {\n      \"id\": \"perf_fee\",\n      \"name\": \"业绩报酬\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"hurdle\",\n      \"name\": \"5%年化门槛收益率\",\n      \"type\": \"门槛收益率\"\n    },\n    {\n      \"id\": \"high_water\",\n      \"name\": \"高水位线法\",\n      \"type\": \"业绩报酬计提方法\"\n    },\n    {\n      \"id\": \"expense_cap\",\n      \"name\": \"0.45%\",\n      \"type\": \"费用上限\"\n    },\n    {\n      \"id\": \"risk_market\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_concentration\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_valuation\",\n      \"name\": \"估值风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_related\",\n      \"name\": \"关联交易风险\",\n      \"type\": \"风险因素\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称\",\n      \"object\": \"砚池并购套利基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2022年3月27日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"regplace\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"min_sub\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"add_sub\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回安排\",\n      \"object\": \"redemption\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬\",\n      \"object\": \"perf_fee\"\n    },\n    {\n      \"subject\": \"perf_fee\",\n      \"predicate\": \"门槛收益率\",\n      \"object\": \"hurdle\"\n    },\n    {\n      \"subject\": \"perf_fee\",\n      \"predicate\": \"计提方法\",\n      \"object\": \"high_water\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"费用上限\",\n      \"object\": \"expense_cap\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_market\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_concentration\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_valuation\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"risk_related\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砚池并购套利基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砚池资管（2）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "瑞辰银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "并购套利策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "min_sub",
+    "name": "10万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "add_sub",
+    "name": "1万美元",
+    "type": "追加认购最低金额"
+   },
+   {
+    "id": "redemption",
+    "name": "季度开放机制",
+    "type": "赎回安排"
+   },
+   {
+    "id": "perf_fee",
+    "name": "业绩报酬",
+    "type": "费用"
+   },
+   {
+    "id": "hurdle",
+    "name": "5%年化门槛收益率",
+    "type": "门槛收益率"
+   },
+   {
+    "id": "high_water",
+    "name": "高水位线法",
+    "type": "业绩报酬计提方法"
+   },
+   {
+    "id": "expense_cap",
+    "name": "0.45%",
+    "type": "费用上限"
+   },
+   {
+    "id": "risk_market",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_valuation",
+    "name": "估值风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_related",
+    "name": "关联交易风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "砚池并购套利基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2022年3月27日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "min_sub"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "add_sub"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回安排",
+    "object": "redemption"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬",
+    "object": "perf_fee"
+   },
+   {
+    "subject": "perf_fee",
+    "predicate": "门槛收益率",
+    "object": "hurdle"
+   },
+   {
+    "subject": "perf_fee",
+    "predicate": "计提方法",
+    "object": "high_water"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "expense_cap"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_market"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_concentration"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_valuation"
+   },
+   {
+    "subject": "fund",
+    "predicate": "风险因素",
+    "object": "risk_related"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 853,
+ "output_tokens": 1091,
+ "cached_read_tokens": 640,
+ "latency_ms": 5433.099374989979,
+ "provider": "deepseek"
+}

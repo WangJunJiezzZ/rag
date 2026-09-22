@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2022 年 9 月 25 日，邱嘉铭直接持有本公司已发行股本的 10%，为本公司主要股东之一\", \"subject\": \"邱嘉铭\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"星海资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2022 年 9 月 25 日，邱嘉铭直接持有本公司已发行股本的 10%，为本公司主要股东之一",
+    "subject": "邱嘉铭",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "星海资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1633,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 2892.400084005203,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（环球投资 vs 资产管理），且B带有序号（3），指向不同法律主体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（环球投资 vs 资产管理），且B带有序号（3），指向不同法律主体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 3053.31195803592,
+ "provider": "deepseek"
+}

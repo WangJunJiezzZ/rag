@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2023 年 1 月 13 日 起，委任吴清和为本公司董事\", \"subject\": \"吴清和\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"燧明投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2023 年 1 月 13 日 起，委任吴清和为本公司董事",
+    "subject": "吴清和",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "燧明投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1619,
+ "output_tokens": 78,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3448.6340840230696,
+ "provider": "deepseek"
+}

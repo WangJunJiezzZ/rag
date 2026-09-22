@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任陈行知为本公司董事\", \"subject\": \"陈行知\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"Minggu Investment Holdings Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任陈行知为本公司董事",
+    "subject": "陈行知",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "Minggu Investment Holdings Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1184,
+ "output_tokens": 61,
+ "cached_read_tokens": 768,
+ "latency_ms": 2963.34737498546,
+ "provider": "deepseek"
+}

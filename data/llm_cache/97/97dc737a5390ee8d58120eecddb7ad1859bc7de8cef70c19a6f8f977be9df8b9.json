@@ -1,0 +1,94 @@
+{
+ "text": "{\"entities\":[{\"name\":\"鹤鸣资产管理有限公司\",\"type\":\"机构\",\"aliases\":[\"鹤鸣资管\",\"本公司\"]},{\"name\":\"鹤鸣多空策略基金\",\"type\":\"产品\",\"aliases\":[]},{\"name\":\"鹤鸣房地产收益基金\",\"type\":\"产品\",\"aliases\":[]},{\"name\":\"新港城\",\"type\":\"地点\",\"aliases\":[]},{\"name\":\"白鹭湾\",\"type\":\"地点\",\"aliases\":[]},{\"name\":\"环宇银行新港城分行\",\"type\":\"机构\",\"aliases\":[]},{\"name\":\"北岸银行澄江特别行政区分行\",\"type\":\"机构\",\"aliases\":[]}],\"relations\":[{\"subject\":\"鹤鸣资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"鹤鸣多空策略基金\"},{\"subject\":\"鹤鸣资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"鹤鸣房地产收益基金\"},{\"subject\":\"鹤鸣多空策略基金\",\"predicate\":\"采用策略\",\"object\":\"多空策略\"},{\"subject\":\"鹤鸣房地产收益基金\",\"predicate\":\"采用策略\",\"object\":\"房地产收益策略\"},{\"subject\":\"鹤鸣多空策略基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"鹤鸣房地产收益基金\",\"predicate\":\"注册地\",\"object\":\"白鹭湾\"},{\"subject\":\"鹤鸣多空策略基金\",\"predicate\":\"托管人\",\"object\":\"环宇银行新港城分行\"},{\"subject\":\"鹤鸣房地产收益基金\",\"predicate\":\"托管人\",\"object\":\"北岸银行澄江特别行政区分行\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "鹤鸣资产管理有限公司",
+    "type": "机构",
+    "aliases": [
+     "鹤鸣资管",
+     "本公司"
+    ]
+   },
+   {
+    "name": "鹤鸣多空策略基金",
+    "type": "产品",
+    "aliases": []
+   },
+   {
+    "name": "鹤鸣房地产收益基金",
+    "type": "产品",
+    "aliases": []
+   },
+   {
+    "name": "新港城",
+    "type": "地点",
+    "aliases": []
+   },
+   {
+    "name": "白鹭湾",
+    "type": "地点",
+    "aliases": []
+   },
+   {
+    "name": "环宇银行新港城分行",
+    "type": "机构",
+    "aliases": []
+   },
+   {
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "机构",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鹤鸣资产管理有限公司",
+    "predicate": "管理",
+    "object": "鹤鸣多空策略基金"
+   },
+   {
+    "subject": "鹤鸣资产管理有限公司",
+    "predicate": "管理",
+    "object": "鹤鸣房地产收益基金"
+   },
+   {
+    "subject": "鹤鸣多空策略基金",
+    "predicate": "采用策略",
+    "object": "多空策略"
+   },
+   {
+    "subject": "鹤鸣房地产收益基金",
+    "predicate": "采用策略",
+    "object": "房地产收益策略"
+   },
+   {
+    "subject": "鹤鸣多空策略基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "鹤鸣房地产收益基金",
+    "predicate": "注册地",
+    "object": "白鹭湾"
+   },
+   {
+    "subject": "鹤鸣多空策略基金",
+    "predicate": "托管人",
+    "object": "环宇银行新港城分行"
+   },
+   {
+    "subject": "鹤鸣房地产收益基金",
+    "predicate": "托管人",
+    "object": "北岸银行澄江特别行政区分行"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 482,
+ "output_tokens": 319,
+ "cached_read_tokens": 256,
+ "latency_ms": 5403.6312499665655,
+ "provider": "deepseek"
+}

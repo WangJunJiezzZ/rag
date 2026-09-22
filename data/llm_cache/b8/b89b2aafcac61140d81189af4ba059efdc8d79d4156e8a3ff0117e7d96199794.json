@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"马若谷当选为本公司董事，即日生效\", \"subject\": \"马若谷\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"澜图资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "马若谷当选为本公司董事，即日生效",
+    "subject": "马若谷",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "澜图资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1625,
+ "output_tokens": 63,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3612.1641670470126,
+ "provider": "deepseek"
+}

@@ -1,0 +1,195 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"澜图可持续发展基金\",\n      \"type\": \"基金\",\n      \"attributes\": {\n        \"全称\": \"澜图可持续发展基金\",\n        \"设立日期\": \"2023年6月25日\",\n        \"注册地\": \"圣维尔\",\n        \"基金类型\": \"开放式集合投资计划\",\n        \"基准货币\": \"新元\",\n        \"存续期限\": \"无固定期限\",\n        \"投资策略\": \"可持续发展策略\",\n        \"最低认购金额\": \"50万新元\",\n        \"追加认购最低金额\": \"5万新元\",\n        \"赎回机制\": \"季度开放\",\n        \"管理费年费率\": \"1.75%\",\n        \"托管费年费率\": \"0.08%\",\n        \"其他费用上限\": \"基金资产净值的0.45%\"\n      }\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"澜图资本管理有限公司\",\n      \"type\": \"基金管理人\",\n      \"attributes\": {\n        \"职责\": \"投资决策、日常运作及信息披露\"\n      }\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\",\n      \"attributes\": {\n        \"职责\": \"财产保管、清算交收及对管理人投资运作的监督\"\n      }\n    },\n    {\n      \"id\": \"investment_committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\",\n      \"attributes\": {\n        \"组成\": \"不少于三名成员\",\n        \"职责\": \"审议重大投资决策及关联交易事项\",\n        \"会议频率\": \"每月至少一次\"\n      }\n    },\n    {\n      \"id\": \"jurisdiction_saintville\",\n      \"name\": \"圣维尔\",\n      \"type\": \"司法管辖区\",\n      \"attributes\": {}\n    },\n    {\n      \"id\": \"jurisdiction_chengjiang\",\n      \"name\": \"澄江特别行政区\",\n      \"type\": \"司法管辖区\",\n      \"attributes\": {}\n    },\n    {\n      \"id\": \"currency_sgd\",\n      \"name\": \"新元\",\n      \"type\": \"货币\",\n      \"attributes\": {}\n    },\n    {\n      \"id\": \"risk_concentration\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险因素\",\n      \"attributes\": {\n        \"描述\": \"可能在特定行业、地区或单一发行人上形成较高的持仓集中度，相关标的的不利变动将对本基金产生放大的影响\"\n      }\n    },\n    {\n      \"id\": \"risk_valuation\",\n      \"name\": \"估值风险\",\n      \"type\": \"风险因素\",\n      \"attributes\": {\n        \"描述\": \"对于缺乏公开报价的资产，依赖估值模型及第三方估值服务，估值结果可能与实际变现价格存在差异\"\n      }\n    },\n    {\n      \"id\": \"risk_fx\",\n      \"name\": \"汇率风险\",\n      \"type\": \"风险因素\",\n      \"attributes\": {\n        \"描述\": \"部分资产以非基准货币计价，汇率的不利变动可能侵蚀以基准货币计量的投资回报\"\n      }\n    },\n    {\n      \"id\": \"risk_liquidity\",\n      \"name\": \"流动性风险\",\n      \"type\": \"风险因素\",\n      \"attributes\": {\n        \"描述\": \"部分投资标的可能缺乏活跃的二级市场，可能无法以合理价格及时处置相关资产，影响赎回安排的正常执行\"\n      }\n    },\n    {\n      \"id\": \"risk_legal\",\n      \"name\": \"法律与监管风险\",\n      \"type\": \"风险因素\",\n      \"attributes\": {\n        \"描述\": \"所涉司法管辖区的法律、税务及监管要求可能发生变化，可能对本基金的运作、成本及回报产生不利影响\"\n      }\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册于\",\n      \"object\": \"jurisdiction_saintville\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理人为\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管人为\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设有\",\n      \"object\": \"investment_committee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币为\",\n      \"object\": \"currency_sgd\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"risk_concentration\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"risk_valuation\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"risk_fx\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"risk_liquidity\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"risk_legal\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"收取管理费\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"收取托管费\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"监督\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"investment_committee\",\n      \"predicate\": \"隶属于\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"位于\",\n      \"object\": \"jurisdiction_chengjiang\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "澜图可持续发展基金",
+    "type": "基金",
+    "attributes": {
+     "全称": "澜图可持续发展基金",
+     "设立日期": "2023年6月25日",
+     "注册地": "圣维尔",
+     "基金类型": "开放式集合投资计划",
+     "基准货币": "新元",
+     "存续期限": "无固定期限",
+     "投资策略": "可持续发展策略",
+     "最低认购金额": "50万新元",
+     "追加认购最低金额": "5万新元",
+     "赎回机制": "季度开放",
+     "管理费年费率": "1.75%",
+     "托管费年费率": "0.08%",
+     "其他费用上限": "基金资产净值的0.45%"
+    }
+   },
+   {
+    "id": "manager",
+    "name": "澜图资本管理有限公司",
+    "type": "基金管理人",
+    "attributes": {
+     "职责": "投资决策、日常运作及信息披露"
+    }
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人",
+    "attributes": {
+     "职责": "财产保管、清算交收及对管理人投资运作的监督"
+    }
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构",
+    "attributes": {
+     "组成": "不少于三名成员",
+     "职责": "审议重大投资决策及关联交易事项",
+     "会议频率": "每月至少一次"
+    }
+   },
+   {
+    "id": "jurisdiction_saintville",
+    "name": "圣维尔",
+    "type": "司法管辖区",
+    "attributes": {}
+   },
+   {
+    "id": "jurisdiction_chengjiang",
+    "name": "澄江特别行政区",
+    "type": "司法管辖区",
+    "attributes": {}
+   },
+   {
+    "id": "currency_sgd",
+    "name": "新元",
+    "type": "货币",
+    "attributes": {}
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险因素",
+    "attributes": {
+     "描述": "可能在特定行业、地区或单一发行人上形成较高的持仓集中度，相关标的的不利变动将对本基金产生放大的影响"
+    }
+   },
+   {
+    "id": "risk_valuation",
+    "name": "估值风险",
+    "type": "风险因素",
+    "attributes": {
+     "描述": "对于缺乏公开报价的资产，依赖估值模型及第三方估值服务，估值结果可能与实际变现价格存在差异"
+    }
+   },
+   {
+    "id": "risk_fx",
+    "name": "汇率风险",
+    "type": "风险因素",
+    "attributes": {
+     "描述": "部分资产以非基准货币计价，汇率的不利变动可能侵蚀以基准货币计量的投资回报"
+    }
+   },
+   {
+    "id": "risk_liquidity",
+    "name": "流动性风险",
+    "type": "风险因素",
+    "attributes": {
+     "描述": "部分投资标的可能缺乏活跃的二级市场，可能无法以合理价格及时处置相关资产，影响赎回安排的正常执行"
+    }
+   },
+   {
+    "id": "risk_legal",
+    "name": "法律与监管风险",
+    "type": "风险因素",
+    "attributes": {
+     "描述": "所涉司法管辖区的法律、税务及监管要求可能发生变化，可能对本基金的运作、成本及回报产生不利影响"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "注册于",
+    "object": "jurisdiction_saintville"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人为",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人为",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币为",
+    "object": "currency_sgd"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "risk_concentration"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "risk_valuation"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "risk_fx"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "risk_liquidity"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "risk_legal"
+   },
+   {
+    "subject": "manager",
+    "predicate": "收取管理费",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "收取托管费",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "监督",
+    "object": "manager"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "隶属于",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "位于",
+    "object": "jurisdiction_chengjiang"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 797,
+ "output_tokens": 1259,
+ "cached_read_tokens": 0,
+ "latency_ms": 7172.07483301172,
+ "provider": "deepseek"
+}

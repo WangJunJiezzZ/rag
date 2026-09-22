@@ -1,0 +1,80 @@
+{
+ "text": "{\"entities\":[{\"name\":\"砺石资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"朱叔夜\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"注册机关\",\"type\":\"机构\"},{\"name\":\"合规与风险管理职能\",\"type\":\"职能\"},{\"name\":\"董事会\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"朱叔夜\",\"predicate\":\"当选为\",\"object\":\"砺石资本管理有限公司\",\"qualifier\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"朱叔夜\",\"qualifier\":\"当选董事\"},{\"subject\":\"砺石资本管理有限公司\",\"predicate\":\"向\",\"object\":\"注册机关\",\"qualifier\":\"备案变更\"},{\"subject\":\"朱叔夜\",\"predicate\":\"从事\",\"object\":\"结构化产品与另类投资的设计与分销工作\",\"qualifier\":\"此前长期\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告\",\"object\":\"董事会\",\"qualifier\":\"直接向\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\",\"qualifier\":\"定期\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砺石资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "朱叔夜",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "职能"
+   },
+   {
+    "name": "董事会",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "朱叔夜",
+    "predicate": "当选为",
+    "object": "砺石资本管理有限公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "朱叔夜",
+    "qualifier": "当选董事"
+   },
+   {
+    "subject": "砺石资本管理有限公司",
+    "predicate": "向",
+    "object": "注册机关",
+    "qualifier": "备案变更"
+   },
+   {
+    "subject": "朱叔夜",
+    "predicate": "从事",
+    "object": "结构化产品与另类投资的设计与分销工作",
+    "qualifier": "此前长期"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告",
+    "object": "董事会",
+    "qualifier": "直接向"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况",
+    "qualifier": "定期"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 395,
+ "output_tokens": 235,
+ "cached_read_tokens": 256,
+ "latency_ms": 4114.815791021101,
+ "provider": "deepseek"
+}

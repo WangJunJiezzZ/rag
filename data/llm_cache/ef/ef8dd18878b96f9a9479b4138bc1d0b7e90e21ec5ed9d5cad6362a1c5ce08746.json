@@ -1,0 +1,99 @@
+{
+ "text": "{\"entities\":[{\"name\":\"栖梧环球投资有限公司\",\"type\":\"公司\"},{\"name\":\"郑明远\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"注册机关\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"郑明远\",\"predicate\":\"当选为\",\"object\":\"栖梧环球投资有限公司\",\"object_type\":\"公司\",\"qualifier\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"郑明远\",\"object_type\":\"人物\",\"qualifier\":\"当选董事\"},{\"subject\":\"郑明远\",\"predicate\":\"任职于\",\"object\":\"栖梧环球投资有限公司\",\"object_type\":\"公司\",\"qualifier\":\"董事\"},{\"subject\":\"栖梧环球投资有限公司\",\"predicate\":\"向\",\"object\":\"注册机关\",\"object_type\":\"机构\",\"qualifier\":\"备案董事变更\"},{\"subject\":\"郑明远\",\"predicate\":\"持有\",\"object\":\"硕士学位\",\"object_type\":\"学历\",\"qualifier\":\"金融相关专业\"},{\"subject\":\"郑明远\",\"predicate\":\"具备\",\"object\":\"从业资格\",\"object_type\":\"资质\",\"qualifier\":\"所在司法管辖区认可\"},{\"subject\":\"郑明远\",\"predicate\":\"覆盖\",\"object\":\"机构客户业务\",\"object_type\":\"业务\",\"qualifier\":\"过往主要\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告于\",\"object\":\"董事会\",\"object_type\":\"组织\",\"qualifier\":\"直接\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\",\"object_type\":\"事项\",\"qualifier\":\"定期\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧环球投资有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "郑明远",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "郑明远",
+    "predicate": "当选为",
+    "object": "栖梧环球投资有限公司",
+    "object_type": "公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "郑明远",
+    "object_type": "人物",
+    "qualifier": "当选董事"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "任职于",
+    "object": "栖梧环球投资有限公司",
+    "object_type": "公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "栖梧环球投资有限公司",
+    "predicate": "向",
+    "object": "注册机关",
+    "object_type": "机构",
+    "qualifier": "备案董事变更"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "持有",
+    "object": "硕士学位",
+    "object_type": "学历",
+    "qualifier": "金融相关专业"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "具备",
+    "object": "从业资格",
+    "object_type": "资质",
+    "qualifier": "所在司法管辖区认可"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "覆盖",
+    "object": "机构客户业务",
+    "object_type": "业务",
+    "qualifier": "过往主要"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告于",
+    "object": "董事会",
+    "object_type": "组织",
+    "qualifier": "直接"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况",
+    "object_type": "事项",
+    "qualifier": "定期"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 328,
+ "cached_read_tokens": 128,
+ "latency_ms": 4445.105207967572,
+ "provider": "deepseek"
+}

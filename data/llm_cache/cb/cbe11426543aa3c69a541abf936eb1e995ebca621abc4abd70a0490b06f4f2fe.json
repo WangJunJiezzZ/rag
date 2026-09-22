@@ -1,0 +1,38 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"曾知微\",\n      \"type\": \"person\"\n    },\n    {\n      \"name\": \"青柏投资控股有限公司\",\n      \"type\": \"organization\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"曾知微\",\n      \"predicate\": \"持有\",\n      \"object\": \"青柏投资控股有限公司\",\n      \"details\": {\n        \"持股比例\": \"10%\",\n        \"登记日期\": \"2023年9月13日\"\n      }\n    },\n    {\n      \"subject\": \"曾知微\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"青柏投资控股有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "曾知微",
+    "type": "person"
+   },
+   {
+    "name": "青柏投资控股有限公司",
+    "type": "organization"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "曾知微",
+    "predicate": "持有",
+    "object": "青柏投资控股有限公司",
+    "details": {
+     "持股比例": "10%",
+     "登记日期": "2023年9月13日"
+    }
+   },
+   {
+    "subject": "曾知微",
+    "predicate": "是主要股东",
+    "object": "青柏投资控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 234,
+ "output_tokens": 154,
+ "cached_read_tokens": 0,
+ "latency_ms": 3652.747999993153,
+ "provider": "deepseek"
+}

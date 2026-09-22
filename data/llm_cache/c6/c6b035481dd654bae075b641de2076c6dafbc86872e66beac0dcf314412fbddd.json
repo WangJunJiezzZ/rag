@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「洄川国际控股有限公司」与「Daiyu Financial Services Ltd.」名称、业务及罗马化均不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「洄川国际控股有限公司」与「Daiyu Financial Services Ltd.」名称、业务及罗马化均不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 386,
+ "output_tokens": 50,
+ "cached_read_tokens": 128,
+ "latency_ms": 3193.3565409854054,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.98, \"reason\": \"A是银行分行（托管人），B是资本管理公司（管理人），名称与角色均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.98,
+  "reason": "A是银行分行（托管人），B是资本管理公司（管理人），名称与角色均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 412,
+ "output_tokens": 44,
+ "cached_read_tokens": 256,
+ "latency_ms": 3692.588791018352,
+ "provider": "deepseek"
+}

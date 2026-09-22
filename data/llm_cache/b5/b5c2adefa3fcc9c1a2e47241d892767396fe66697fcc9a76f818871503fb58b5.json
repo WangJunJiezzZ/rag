@@ -1,0 +1,271 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"name\": \"澜图科技成长基金\", \"type\": \"基金\", \"aliases\": [\"本基金\"]},\n    {\"name\": \"Lantu Asset Management Pte. Ltd.\", \"type\": \"机构\", \"aliases\": [\"基金管理人\", \"管理人\"]},\n    {\"name\": \"昭明银行新港城分行\", \"type\": \"机构\", \"aliases\": [\"基金托管人\", \"托管人\"]},\n    {\"name\": \"澄江特别行政区\", \"type\": \"地点\", \"aliases\": []},\n    {\"name\": \"新元\", \"type\": \"货币\", \"aliases\": []},\n    {\"name\": \"投资委员会\", \"type\": \"机构\", \"aliases\": []},\n    {\"name\": \"董事会\", \"type\": \"机构\", \"aliases\": []},\n    {\"name\": \"合资格投资者\", \"type\": \"群体\", \"aliases\": [\"投资者\"]},\n    {\"name\": \"科技成长策略\", \"type\": \"策略\", \"aliases\": []},\n    {\"name\": \"合规与风险管理职能\", \"type\": \"职能\", \"aliases\": []},\n    {\"name\": \"季度开放机制\", \"type\": \"机制\", \"aliases\": []},\n    {\"name\": \"高水位线法\", \"type\": \"机制\", \"aliases\": []},\n    {\"name\": \"管理费\", \"type\": \"费用\", \"aliases\": []},\n    {\"name\": \"托管费\", \"type\": \"费用\", \"aliases\": []},\n    {\"name\": \"业绩报酬\", \"type\": \"费用\", \"aliases\": []},\n    {\"name\": \"法律与监管风险\", \"type\": \"风险\", \"aliases\": []},\n    {\"name\": \"市场风险\", \"type\": \"风险\", \"aliases\": []},\n    {\"name\": \"流动性风险\", \"type\": \"风险\", \"aliases\": []},\n    {\"name\": \"关联交易风险\", \"type\": \"风险\", \"aliases\": []}\n  ],\n  \"relations\": [\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"设立于\", \"object\": \"2019年1月17日\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"注册地\", \"object\": \"澄江特别行政区\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"基准货币\", \"object\": \"新元\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"存续期限\", \"object\": \"无固定期限\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"采用策略\", \"object\": \"科技成长策略\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"管理人为\", \"object\": \"Lantu Asset Management Pte. Ltd.\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"托管人为\", \"object\": \"昭明银行新港城分行\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"负责\", \"object\": \"投资决策\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"负责\", \"object\": \"日常运作\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"负责\", \"object\": \"信息披露\"},\n    {\"subject\": \"昭明银行新港城分行\", \"predicate\": \"负责\", \"object\": \"财产保管\"},\n    {\"subject\": \"昭明银行新港城分行\", \"predicate\": \"负责\", \"object\": \"清算交收\"},\n    {\"subject\": \"昭明银行新港城分行\", \"predicate\": \"负责\", \"object\": \"监督投资运作\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"建立\", \"object\": \"合规与风险管理职能\"},\n    {\"subject\": \"合规与风险管理职能\", \"predicate\": \"报告对象\", \"object\": \"董事会\"},\n    {\"subject\": \"合资格投资者\", \"predicate\": \"最低认购金额\", \"object\": \"100万新元\"},\n    {\"subject\": \"合资格投资者\", \"predicate\": \"追加认购最低金额\", \"object\": \"10万新元\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"赎回安排\", \"object\": \"季度开放机制\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"收取\", \"object\": \"管理费\"},\n    {\"subject\": \"管理费\", \"predicate\": \"费率\", \"object\": \"1.50%年费率\"},\n    {\"subject\": \"昭明银行新港城分行\", \"predicate\": \"收取\", \"object\": \"托管费\"},\n    {\"subject\": \"托管费\", \"predicate\": \"费率\", \"object\": \"0.08%年费率\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"收取\", \"object\": \"业绩报酬\"},\n    {\"subject\": \"业绩报酬\", \"predicate\": \"计提方式\", \"object\": \"超过8%年化门槛收益率部分的10%\"},\n    {\"subject\": \"业绩报酬\", \"predicate\": \"采用\", \"object\": \"高水位线法\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"面临风险\", \"object\": \"法律与监管风险\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"面临风险\", \"object\": \"市场风险\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"面临风险\", \"object\": \"流动性风险\"},\n    {\"subject\": \"澜图科技成长基金\", \"predicate\": \"面临风险\", \"object\": \"关联交易风险\"},\n    {\"subject\": \"Lantu Asset Management Pte. Ltd.\", \"predicate\": \"可能产生\", \"object\": \"关联交易风险\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "澜图科技成长基金",
+    "type": "基金",
+    "aliases": [
+     "本基金"
+    ]
+   },
+   {
+    "name": "Lantu Asset Management Pte. Ltd.",
+    "type": "机构",
+    "aliases": [
+     "基金管理人",
+     "管理人"
+    ]
+   },
+   {
+    "name": "昭明银行新港城分行",
+    "type": "机构",
+    "aliases": [
+     "基金托管人",
+     "托管人"
+    ]
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "地点",
+    "aliases": []
+   },
+   {
+    "name": "新元",
+    "type": "货币",
+    "aliases": []
+   },
+   {
+    "name": "投资委员会",
+    "type": "机构",
+    "aliases": []
+   },
+   {
+    "name": "董事会",
+    "type": "机构",
+    "aliases": []
+   },
+   {
+    "name": "合资格投资者",
+    "type": "群体",
+    "aliases": [
+     "投资者"
+    ]
+   },
+   {
+    "name": "科技成长策略",
+    "type": "策略",
+    "aliases": []
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "职能",
+    "aliases": []
+   },
+   {
+    "name": "季度开放机制",
+    "type": "机制",
+    "aliases": []
+   },
+   {
+    "name": "高水位线法",
+    "type": "机制",
+    "aliases": []
+   },
+   {
+    "name": "管理费",
+    "type": "费用",
+    "aliases": []
+   },
+   {
+    "name": "托管费",
+    "type": "费用",
+    "aliases": []
+   },
+   {
+    "name": "业绩报酬",
+    "type": "费用",
+    "aliases": []
+   },
+   {
+    "name": "法律与监管风险",
+    "type": "风险",
+    "aliases": []
+   },
+   {
+    "name": "市场风险",
+    "type": "风险",
+    "aliases": []
+   },
+   {
+    "name": "流动性风险",
+    "type": "风险",
+    "aliases": []
+   },
+   {
+    "name": "关联交易风险",
+    "type": "风险",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "设立于",
+    "object": "2019年1月17日"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "基准货币",
+    "object": "新元"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "采用策略",
+    "object": "科技成长策略"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "管理人为",
+    "object": "Lantu Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "托管人为",
+    "object": "昭明银行新港城分行"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "负责",
+    "object": "投资决策"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "负责",
+    "object": "日常运作"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "负责",
+    "object": "信息披露"
+   },
+   {
+    "subject": "昭明银行新港城分行",
+    "predicate": "负责",
+    "object": "财产保管"
+   },
+   {
+    "subject": "昭明银行新港城分行",
+    "predicate": "负责",
+    "object": "清算交收"
+   },
+   {
+    "subject": "昭明银行新港城分行",
+    "predicate": "负责",
+    "object": "监督投资运作"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "建立",
+    "object": "合规与风险管理职能"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "最低认购金额",
+    "object": "100万新元"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "追加认购最低金额",
+    "object": "10万新元"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "赎回安排",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "收取",
+    "object": "管理费"
+   },
+   {
+    "subject": "管理费",
+    "predicate": "费率",
+    "object": "1.50%年费率"
+   },
+   {
+    "subject": "昭明银行新港城分行",
+    "predicate": "收取",
+    "object": "托管费"
+   },
+   {
+    "subject": "托管费",
+    "predicate": "费率",
+    "object": "0.08%年费率"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "收取",
+    "object": "业绩报酬"
+   },
+   {
+    "subject": "业绩报酬",
+    "predicate": "计提方式",
+    "object": "超过8%年化门槛收益率部分的10%"
+   },
+   {
+    "subject": "业绩报酬",
+    "predicate": "采用",
+    "object": "高水位线法"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "面临风险",
+    "object": "法律与监管风险"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "面临风险",
+    "object": "市场风险"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "面临风险",
+    "object": "流动性风险"
+   },
+   {
+    "subject": "澜图科技成长基金",
+    "predicate": "面临风险",
+    "object": "关联交易风险"
+   },
+   {
+    "subject": "Lantu Asset Management Pte. Ltd.",
+    "predicate": "可能产生",
+    "object": "关联交易风险"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 857,
+ "output_tokens": 1273,
+ "cached_read_tokens": 640,
+ "latency_ms": 6634.103709016927,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「屿川」与罗马化名「Yuanxi」音译不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「屿川」与罗马化名「Yuanxi」音译不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 42,
+ "cached_read_tokens": 128,
+ "latency_ms": 4950.464083987754,
+ "provider": "deepseek"
+}

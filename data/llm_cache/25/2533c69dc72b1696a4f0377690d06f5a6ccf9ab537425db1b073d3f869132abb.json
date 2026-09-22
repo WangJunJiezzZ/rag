@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"鹤鸣多空策略基金：采用多空策略策略，注册地为新港城，托管人为环宇银行新港城分行\", \"subject\": \"鹤鸣多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"鹤鸣多空策略基金：采用多空策略策略，注册地为新港城，托管人为环宇银行新港城分行\", \"subject\": \"鹤鸣多空策略基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"环宇银行新港城分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"鹤鸣房地产收益基金：采用房地产收益策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"鹤鸣房地产收益基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"鹤鸣房地产收益基金：采用房地产收益策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"鹤鸣房地产收益基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "鹤鸣多空策略基金：采用多空策略策略，注册地为新港城，托管人为环宇银行新港城分行",
+    "subject": "鹤鸣多空策略基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "鹤鸣多空策略基金：采用多空策略策略，注册地为新港城，托管人为环宇银行新港城分行",
+    "subject": "鹤鸣多空策略基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "环宇银行新港城分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "鹤鸣房地产收益基金：采用房地产收益策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行",
+    "subject": "鹤鸣房地产收益基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "鹤鸣房地产收益基金：采用房地产收益策略，注册地为白鹭湾，托管人为北岸银行澄江特别行政区分行",
+    "subject": "鹤鸣房地产收益基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1257,
+ "output_tokens": 322,
+ "cached_read_tokens": 768,
+ "latency_ms": 3693.869167007506,
+ "provider": "deepseek"
+}

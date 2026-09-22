@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"谢怀瑾\",\n      \"type\": \"Person\"\n    },\n    {\n      \"name\": \"霁川资产管理有限公司\",\n      \"type\": \"Company\"\n    },\n    {\n      \"name\": \"25%\",\n      \"type\": \"Percentage\"\n    },\n    {\n      \"name\": \"2025年3月18日\",\n      \"type\": \"Date\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"谢怀瑾\",\n      \"predicate\": \"持有\",\n      \"object\": \"霁川资产管理有限公司\",\n      \"qualifiers\": {\n        \"持股比例\": \"25%\",\n        \"登记日期\": \"2025年3月18日\"\n      }\n    },\n    {\n      \"subject\": \"谢怀瑾\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"霁川资产管理有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "谢怀瑾",
+    "type": "Person"
+   },
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "25%",
+    "type": "Percentage"
+   },
+   {
+    "name": "2025年3月18日",
+    "type": "Date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "谢怀瑾",
+    "predicate": "持有",
+    "object": "霁川资产管理有限公司",
+    "qualifiers": {
+     "持股比例": "25%",
+     "登记日期": "2025年3月18日"
+    }
+   },
+   {
+    "subject": "谢怀瑾",
+    "predicate": "是主要股东",
+    "object": "霁川资产管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 239,
+ "output_tokens": 195,
+ "cached_read_tokens": 0,
+ "latency_ms": 5266.40150003368,
+ "provider": "deepseek"
+}

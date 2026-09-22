@@ -1,0 +1,56 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Daiyu Global Investments Ltd.\",\"type\":\"公司\"},{\"name\":\"鹤鸣金服\",\"type\":\"公司\"},{\"name\":\"本集团\",\"type\":\"公司\"},{\"name\":\"本基金\",\"type\":\"基金\"},{\"name\":\"投资委员会\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"Daiyu Global Investments Ltd.\",\"predicate\":\"持有100%股权\",\"object\":\"鹤鸣金服\"},{\"subject\":\"鹤鸣金服\",\"predicate\":\"是全资附属公司\",\"object\":\"Daiyu Global Investments Ltd.\"},{\"subject\":\"鹤鸣金服\",\"predicate\":\"纳入合并财务报表范围\",\"object\":\"本集团\"},{\"subject\":\"本基金\",\"predicate\":\"设立\",\"object\":\"投资委员会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Daiyu Global Investments Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "鹤鸣金服",
+    "type": "公司"
+   },
+   {
+    "name": "本集团",
+    "type": "公司"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Daiyu Global Investments Ltd.",
+    "predicate": "持有100%股权",
+    "object": "鹤鸣金服"
+   },
+   {
+    "subject": "鹤鸣金服",
+    "predicate": "是全资附属公司",
+    "object": "Daiyu Global Investments Ltd."
+   },
+   {
+    "subject": "鹤鸣金服",
+    "predicate": "纳入合并财务报表范围",
+    "object": "本集团"
+   },
+   {
+    "subject": "本基金",
+    "predicate": "设立",
+    "object": "投资委员会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 313,
+ "output_tokens": 153,
+ "cached_read_tokens": 128,
+ "latency_ms": 3179.4422499951907,
+ "provider": "deepseek"
+}

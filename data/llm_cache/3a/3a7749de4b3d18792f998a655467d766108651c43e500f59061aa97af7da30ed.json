@@ -1,0 +1,58 @@
+{
+ "text": "{\"entities\":[{\"name\":\"栖梧资本管理有限公司\",\"type\":\"公司\"},{\"name\":\"周若谷\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"周若谷\",\"predicate\":\"担任\",\"object\":\"栖梧资本管理有限公司\",\"object_type\":\"公司\",\"qualifier\":\"董事\"},{\"subject\":\"周若谷\",\"predicate\":\"加入\",\"object\":\"栖梧资本管理有限公司\",\"object_type\":\"公司\",\"time\":\"2022年12月7日\"},{\"subject\":\"董事会\",\"predicate\":\"隶属于\",\"object\":\"栖梧资本管理有限公司\",\"object_type\":\"公司\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告给\",\"object\":\"董事会\",\"object_type\":\"组织\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧资本管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "周若谷",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "周若谷",
+    "predicate": "担任",
+    "object": "栖梧资本管理有限公司",
+    "object_type": "公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "周若谷",
+    "predicate": "加入",
+    "object": "栖梧资本管理有限公司",
+    "object_type": "公司",
+    "time": "2022年12月7日"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "隶属于",
+    "object": "栖梧资本管理有限公司",
+    "object_type": "公司"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告给",
+    "object": "董事会",
+    "object_type": "组织"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 323,
+ "output_tokens": 164,
+ "cached_read_tokens": 128,
+ "latency_ms": 3053.8219999871217,
+ "provider": "deepseek"
+}

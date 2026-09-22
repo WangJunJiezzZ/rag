@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（国际控股 vs 环球投资），且董事分别为邱书尧与郑明远，指向不同主体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（国际控股 vs 环球投资），且董事分别为邱书尧与郑明远，指向不同主体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 412,
+ "output_tokens": 45,
+ "cached_read_tokens": 256,
+ "latency_ms": 3449.9032080057077,
+ "provider": "deepseek"
+}

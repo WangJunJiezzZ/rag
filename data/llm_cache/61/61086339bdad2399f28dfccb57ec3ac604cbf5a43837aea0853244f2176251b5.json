@@ -1,0 +1,257 @@
+{
+ "text": "{\"entities\":[{\"name\":\"星海多空策略基金\",\"type\":\"基金\",\"aliases\":[\"本基金\"]},{\"name\":\"星海资本管理有限公司\",\"type\":\"基金管理人\",\"aliases\":[\"管理人\"]},{\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\",\"aliases\":[\"托管人\"]},{\"name\":\"投资委员会\",\"type\":\"内部机构\",\"aliases\":[]},{\"name\":\"澄江特别行政区\",\"type\":\"注册地\",\"aliases\":[]},{\"name\":\"新元\",\"type\":\"基准货币\",\"aliases\":[]},{\"name\":\"多空策略\",\"type\":\"投资策略\",\"aliases\":[]},{\"name\":\"合资格投资者\",\"type\":\"投资者类型\",\"aliases\":[]},{\"name\":\"季度开放机制\",\"type\":\"赎回安排\",\"aliases\":[]},{\"name\":\"高水位线法\",\"type\":\"业绩报酬计提方法\",\"aliases\":[]},{\"name\":\"市场风险\",\"type\":\"风险因素\",\"aliases\":[]},{\"name\":\"流动性风险\",\"type\":\"风险因素\",\"aliases\":[]},{\"name\":\"信用风险\",\"type\":\"风险因素\",\"aliases\":[]},{\"name\":\"法律与监管风险\",\"type\":\"风险因素\",\"aliases\":[]},{\"name\":\"估值风险\",\"type\":\"风险因素\",\"aliases\":[]}],\"relations\":[{\"subject\":\"星海多空策略基金\",\"predicate\":\"设立于\",\"object\":\"2023年4月15日\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"注册地\",\"object\":\"澄江特别行政区\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"基准货币\",\"object\":\"新元\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"存续期限\",\"object\":\"无固定期限\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"采用策略\",\"object\":\"多空策略\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"基金管理人\",\"object\":\"星海资本管理有限公司\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"基金托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"设有\",\"object\":\"投资委员会\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面向\",\"object\":\"合资格投资者\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"赎回安排\",\"object\":\"季度开放机制\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"业绩报酬计提方法\",\"object\":\"高水位线法\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面临风险\",\"object\":\"市场风险\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面临风险\",\"object\":\"流动性风险\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面临风险\",\"object\":\"信用风险\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面临风险\",\"object\":\"法律与监管风险\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"面临风险\",\"object\":\"估值风险\"},{\"subject\":\"星海资本管理有限公司\",\"predicate\":\"负责\",\"object\":\"投资决策\"},{\"subject\":\"星海资本管理有限公司\",\"predicate\":\"负责\",\"object\":\"日常运作\"},{\"subject\":\"星海资本管理有限公司\",\"predicate\":\"负责\",\"object\":\"信息披露\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"负责\",\"object\":\"财产保管\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"负责\",\"object\":\"清算交收\"},{\"subject\":\"汇川银行新港城分行\",\"predicate\":\"负责\",\"object\":\"监督投资运作\"},{\"subject\":\"投资委员会\",\"predicate\":\"负责\",\"object\":\"审议重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"predicate\":\"成员人数\",\"object\":\"不少于三名\"},{\"subject\":\"投资委员会\",\"predicate\":\"会议频率\",\"object\":\"每月至少一次\"},{\"subject\":\"合资格投资者\",\"predicate\":\"最低认购金额\",\"object\":\"50万新元\"},{\"subject\":\"合资格投资者\",\"predicate\":\"追加认购最低金额\",\"object\":\"10万新元\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"业绩报酬计提比例\",\"object\":\"超过5%年化门槛收益率部分的10%\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"业绩报酬计提比例\",\"object\":\"超过8%年化门槛收益率部分的15%\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"结算频率\",\"object\":\"每年一次\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"非上市股权投资上限\",\"object\":\"不超过20%资产净值\"},{\"subject\":\"星海多空策略基金\",\"predicate\":\"赎回延后处理阈值\",\"object\":\"单一开放日赎回总额超过基金资产净值10%\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "星海多空策略基金",
+    "type": "基金",
+    "aliases": [
+     "本基金"
+    ]
+   },
+   {
+    "name": "星海资本管理有限公司",
+    "type": "基金管理人",
+    "aliases": [
+     "管理人"
+    ]
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人",
+    "aliases": [
+     "托管人"
+    ]
+   },
+   {
+    "name": "投资委员会",
+    "type": "内部机构",
+    "aliases": []
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "注册地",
+    "aliases": []
+   },
+   {
+    "name": "新元",
+    "type": "基准货币",
+    "aliases": []
+   },
+   {
+    "name": "多空策略",
+    "type": "投资策略",
+    "aliases": []
+   },
+   {
+    "name": "合资格投资者",
+    "type": "投资者类型",
+    "aliases": []
+   },
+   {
+    "name": "季度开放机制",
+    "type": "赎回安排",
+    "aliases": []
+   },
+   {
+    "name": "高水位线法",
+    "type": "业绩报酬计提方法",
+    "aliases": []
+   },
+   {
+    "name": "市场风险",
+    "type": "风险因素",
+    "aliases": []
+   },
+   {
+    "name": "流动性风险",
+    "type": "风险因素",
+    "aliases": []
+   },
+   {
+    "name": "信用风险",
+    "type": "风险因素",
+    "aliases": []
+   },
+   {
+    "name": "法律与监管风险",
+    "type": "风险因素",
+    "aliases": []
+   },
+   {
+    "name": "估值风险",
+    "type": "风险因素",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "设立于",
+    "object": "2023年4月15日"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "基准货币",
+    "object": "新元"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "采用策略",
+    "object": "多空策略"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "基金管理人",
+    "object": "星海资本管理有限公司"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "基金托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "设有",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面向",
+    "object": "合资格投资者"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "赎回安排",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "业绩报酬计提方法",
+    "object": "高水位线法"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面临风险",
+    "object": "市场风险"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面临风险",
+    "object": "流动性风险"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面临风险",
+    "object": "信用风险"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面临风险",
+    "object": "法律与监管风险"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "面临风险",
+    "object": "估值风险"
+   },
+   {
+    "subject": "星海资本管理有限公司",
+    "predicate": "负责",
+    "object": "投资决策"
+   },
+   {
+    "subject": "星海资本管理有限公司",
+    "predicate": "负责",
+    "object": "日常运作"
+   },
+   {
+    "subject": "星海资本管理有限公司",
+    "predicate": "负责",
+    "object": "信息披露"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "负责",
+    "object": "财产保管"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "负责",
+    "object": "清算交收"
+   },
+   {
+    "subject": "汇川银行新港城分行",
+    "predicate": "负责",
+    "object": "监督投资运作"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "负责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少一次"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "最低认购金额",
+    "object": "50万新元"
+   },
+   {
+    "subject": "合资格投资者",
+    "predicate": "追加认购最低金额",
+    "object": "10万新元"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "业绩报酬计提比例",
+    "object": "超过5%年化门槛收益率部分的10%"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "业绩报酬计提比例",
+    "object": "超过8%年化门槛收益率部分的15%"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "结算频率",
+    "object": "每年一次"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "非上市股权投资上限",
+    "object": "不超过20%资产净值"
+   },
+   {
+    "subject": "星海多空策略基金",
+    "predicate": "赎回延后处理阈值",
+    "object": "单一开放日赎回总额超过基金资产净值10%"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 979,
+ "output_tokens": 986,
+ "cached_read_tokens": 768,
+ "latency_ms": 5516.482874983922,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名且带序号(3)，B为英文名且无序号，名称与后缀均不匹配，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名且带序号(3)，B为英文名且无序号，名称与后缀均不匹配，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 390,
+ "output_tokens": 49,
+ "cached_read_tokens": 256,
+ "latency_ms": 3611.6206670412794,
+ "provider": "deepseek"
+}

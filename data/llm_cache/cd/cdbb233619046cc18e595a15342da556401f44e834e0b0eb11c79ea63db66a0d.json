@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（樾川 vs Yuanxi），且A带序号（3）表明是系列实体之一，无法确认指向同一主体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（樾川 vs Yuanxi），且A带序号（3）表明是系列实体之一，无法确认指向同一主体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 386,
+ "output_tokens": 47,
+ "cached_read_tokens": 128,
+ "latency_ms": 3336.640166991856,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2025 年 9 月 1 日，吴景行直接持有本公司已发行股本的 75%，为本公司主要股东之一\", \"subject\": \"吴景行\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"岱屿金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2025 年 9 月 1 日，吴景行直接持有本公司已发行股本的 75%，为本公司主要股东之一",
+    "subject": "吴景行",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "岱屿金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1628,
+ "output_tokens": 86,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3894.705583981704,
+ "provider": "deepseek"
+}

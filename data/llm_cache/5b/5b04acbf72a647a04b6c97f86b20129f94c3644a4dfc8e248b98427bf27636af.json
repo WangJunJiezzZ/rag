@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2023 年 3 月 27 日，周牧之直接持有本公司已发行股本的 25%，为本公司主要股东之一\", \"subject\": \"周牧之\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"砚池资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2023 年 3 月 27 日，周牧之直接持有本公司已发行股本的 25%，为本公司主要股东之一",
+    "subject": "周牧之",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "砚池资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1193,
+ "output_tokens": 86,
+ "cached_read_tokens": 768,
+ "latency_ms": 2854.052499984391,
+ "provider": "deepseek"
+}

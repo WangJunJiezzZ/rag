@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"实体名称：栖梧国际控股有限公司（2）\", \"subject\": \"栖梧国际控股有限公司（2）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：栖梧国际控股有限公司（2）",
+    "subject": "栖梧国际控股有限公司（2）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1195,
+ "output_tokens": 72,
+ "cached_read_tokens": 768,
+ "latency_ms": 3729.029000038281,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"昭明银行新港城分行是银行分支机构，Luyan International Holdings Ltd. 是控股公司，名称与实体类型均不同。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "昭明银行新港城分行是银行分支机构，Luyan International Holdings Ltd. 是控股公司，名称与实体类型均不同。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 48,
+ "cached_read_tokens": 128,
+ "latency_ms": 2733.9391249697655,
+ "provider": "deepseek"
+}

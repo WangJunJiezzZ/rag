@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"两者名称不同（环球投资 vs 金融服务），且无证据表明为同一实体的不同表述。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "两者名称不同（环球投资 vs 金融服务），且无证据表明为同一实体的不同表述。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 39,
+ "cached_read_tokens": 256,
+ "latency_ms": 3108.3023750106804,
+ "provider": "deepseek"
+}

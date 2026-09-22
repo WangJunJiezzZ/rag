@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"许慕白\",\"type\":\"person\"},{\"name\":\"瑾樾环球投资有限公司\",\"type\":\"organization\"},{\"name\":\"2022年2月2日\",\"type\":\"date\"},{\"name\":\"75%\",\"type\":\"percentage\"}],\"relations\":[{\"subject\":\"许慕白\",\"predicate\":\"持有\",\"object\":\"瑾樾环球投资有限公司\"},{\"subject\":\"许慕白\",\"predicate\":\"持股比例\",\"object\":\"75%\"},{\"subject\":\"许慕白\",\"predicate\":\"登记日期\",\"object\":\"2022年2月2日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "许慕白",
+    "type": "person"
+   },
+   {
+    "name": "瑾樾环球投资有限公司",
+    "type": "organization"
+   },
+   {
+    "name": "2022年2月2日",
+    "type": "date"
+   },
+   {
+    "name": "75%",
+    "type": "percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "许慕白",
+    "predicate": "持有",
+    "object": "瑾樾环球投资有限公司"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "持股比例",
+    "object": "75%"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "登记日期",
+    "object": "2022年2月2日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 332,
+ "output_tokens": 119,
+ "cached_read_tokens": 128,
+ "latency_ms": 3745.5542079987936,
+ "provider": "deepseek"
+}

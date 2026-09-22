@@ -1,0 +1,66 @@
+{
+ "text": "{\"entities\":[{\"name\":\"漱玉投资控股有限公司（3）\",\"type\":\"公司\"},{\"name\":\"许慕白\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"独立审计机构\",\"type\":\"组织\"},{\"name\":\"本基金\",\"type\":\"基金\"}],\"relations\":[{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"聘任\",\"object\":\"许慕白\"},{\"subject\":\"许慕白\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"设有\",\"object\":\"董事会\"},{\"subject\":\"董事会\",\"predicate\":\"成员数量\",\"object\":\"五名\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"本基金\"},{\"subject\":\"漱玉投资控股有限公司（3）\",\"predicate\":\"公告日期\",\"object\":\"2025年8月15日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "漱玉投资控股有限公司（3）",
+    "type": "公司"
+   },
+   {
+    "name": "许慕白",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "组织"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "聘任",
+    "object": "许慕白"
+   },
+   {
+    "subject": "许慕白",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "设有",
+    "object": "董事会"
+   },
+   {
+    "subject": "董事会",
+    "predicate": "成员数量",
+    "object": "五名"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "本基金"
+   },
+   {
+    "subject": "漱玉投资控股有限公司（3）",
+    "predicate": "公告日期",
+    "object": "2025年8月15日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 401,
+ "output_tokens": 186,
+ "cached_read_tokens": 256,
+ "latency_ms": 3808.873958012555,
+ "provider": "deepseek"
+}

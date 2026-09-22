@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2025 年 1 月 1 日，许听澜直接持有本公司已发行股本的 20%，为本公司主要股东之一\", \"subject\": \"许听澜\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"凛川资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2025 年 1 月 1 日，许听澜直接持有本公司已发行股本的 20%，为本公司主要股东之一",
+    "subject": "许听澜",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "凛川资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1628,
+ "output_tokens": 86,
+ "cached_read_tokens": 1280,
+ "latency_ms": 5484.994708036538,
+ "provider": "deepseek"
+}

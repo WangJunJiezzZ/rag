@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 是带序号的中文名称「砥行资本（3）」，B 是英文名称「Qiwu Global Investments Ltd.」，两者名称、语言及标识均不匹配，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 是带序号的中文名称「砥行资本（3）」，B 是英文名称「Qiwu Global Investments Ltd.」，两者名称、语言及标识均不匹配，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 63,
+ "cached_read_tokens": 128,
+ "latency_ms": 4023.803833988495,
+ "provider": "deepseek"
+}

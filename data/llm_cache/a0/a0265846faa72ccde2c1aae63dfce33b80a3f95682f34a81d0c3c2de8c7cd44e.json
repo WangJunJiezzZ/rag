@@ -1,0 +1,276 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"凛川私募信贷基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"凛川资产管理有限公司\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"卡瑟尼亚\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"私募信贷策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"board\",\n      \"name\": \"董事会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"compliance\",\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"内部职能\"\n    },\n    {\n      \"id\": \"investors\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    },\n    {\n      \"id\": \"audit_fee\",\n      \"name\": \"审计费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"legal_fee\",\n      \"name\": \"法律顾问费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"admin_fee\",\n      \"name\": \"行政管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"management_fee\",\n      \"name\": \"管理费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"custody_fee\",\n      \"name\": \"托管费\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"performance_fee\",\n      \"name\": \"业绩报酬\",\n      \"type\": \"费用\"\n    },\n    {\n      \"id\": \"hurdle_rate\",\n      \"name\": \"5% 年化门槛收益率\",\n      \"type\": \"业绩基准\"\n    },\n    {\n      \"id\": \"high_water_mark\",\n      \"name\": \"高水位线法\",\n      \"type\": \"业绩报酬机制\"\n    },\n    {\n      \"id\": \"market_risk\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"related_party_risk\",\n      \"name\": \"关联交易风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"credit_risk\",\n      \"name\": \"信用风险\",\n      \"type\": \"风险\"\n    },\n    {\n      \"id\": \"derivatives\",\n      \"name\": \"利率及外汇衍生品\",\n      \"type\": \"金融工具\"\n    },\n    {\n      \"id\": \"non_listed_equity\",\n      \"name\": \"非上市股权或流动性受限资产\",\n      \"type\": \"资产类别\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"全称为\",\n      \"object\": \"凛川私募信贷基金\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期为\",\n      \"object\": \"2020年10月21日\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地为\",\n      \"object\": \"jurisdiction\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币为\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理人为\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管人为\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"负责\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"custodian\",\n      \"predicate\": \"负责保管\",\n      \"object\": \"fund\"\n    },\n    {\n      \"subject\": \"manager\",\n      \"predicate\": \"建立\",\n      \"object\": \"compliance\"\n    },\n    {\n      \"subject\": \"compliance\",\n      \"predicate\": \"直接向报告\",\n      \"object\": \"board\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面向发售\",\n      \"object\": \"investors\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额为\",\n      \"object\": \"100万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"追加认购最低金额为\",\n      \"object\": \"5万美元\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"采用赎回机制\",\n      \"object\": \"季度开放机制\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"计提\",\n      \"object\": \"performance_fee\"\n    },\n    {\n      \"subject\": \"performance_fee\",\n      \"predicate\": \"基于\",\n      \"object\": \"hurdle_rate\"\n    },\n    {\n      \"subject\": \"performance_fee\",\n      \"predicate\": \"采用\",\n      \"object\": \"high_water_mark\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"audit_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"legal_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"admin_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"management_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"承担费用\",\n      \"object\": \"custody_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"market_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"related_party_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"面临风险\",\n      \"object\": \"credit_risk\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"可使用\",\n      \"object\": \"derivatives\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"可投资\",\n      \"object\": \"non_listed_equity\"\n    },\n    {\n      \"subject\": \"non_listed_equity\",\n      \"predicate\": \"须经审批\",\n      \"object\": \"committee\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "凛川私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "凛川资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "卡瑟尼亚",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "私募信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   },
+   {
+    "id": "compliance",
+    "name": "合规与风险管理职能",
+    "type": "内部职能"
+   },
+   {
+    "id": "investors",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "audit_fee",
+    "name": "审计费",
+    "type": "费用"
+   },
+   {
+    "id": "legal_fee",
+    "name": "法律顾问费",
+    "type": "费用"
+   },
+   {
+    "id": "admin_fee",
+    "name": "行政管理费",
+    "type": "费用"
+   },
+   {
+    "id": "management_fee",
+    "name": "管理费",
+    "type": "费用"
+   },
+   {
+    "id": "custody_fee",
+    "name": "托管费",
+    "type": "费用"
+   },
+   {
+    "id": "performance_fee",
+    "name": "业绩报酬",
+    "type": "费用"
+   },
+   {
+    "id": "hurdle_rate",
+    "name": "5% 年化门槛收益率",
+    "type": "业绩基准"
+   },
+   {
+    "id": "high_water_mark",
+    "name": "高水位线法",
+    "type": "业绩报酬机制"
+   },
+   {
+    "id": "market_risk",
+    "name": "市场风险",
+    "type": "风险"
+   },
+   {
+    "id": "related_party_risk",
+    "name": "关联交易风险",
+    "type": "风险"
+   },
+   {
+    "id": "credit_risk",
+    "name": "信用风险",
+    "type": "风险"
+   },
+   {
+    "id": "derivatives",
+    "name": "利率及外汇衍生品",
+    "type": "金融工具"
+   },
+   {
+    "id": "non_listed_equity",
+    "name": "非上市股权或流动性受限资产",
+    "type": "资产类别"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称为",
+    "object": "凛川私募信贷基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期为",
+    "object": "2020年10月21日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地为",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币为",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人为",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人为",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责保管",
+    "object": "fund"
+   },
+   {
+    "subject": "manager",
+    "predicate": "建立",
+    "object": "compliance"
+   },
+   {
+    "subject": "compliance",
+    "predicate": "直接向报告",
+    "object": "board"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面向发售",
+    "object": "investors"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额为",
+    "object": "100万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额为",
+    "object": "5万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用赎回机制",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "fund",
+    "predicate": "计提",
+    "object": "performance_fee"
+   },
+   {
+    "subject": "performance_fee",
+    "predicate": "基于",
+    "object": "hurdle_rate"
+   },
+   {
+    "subject": "performance_fee",
+    "predicate": "采用",
+    "object": "high_water_mark"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "audit_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "legal_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "admin_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "management_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "承担费用",
+    "object": "custody_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "market_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "related_party_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面临风险",
+    "object": "credit_risk"
+   },
+   {
+    "subject": "fund",
+    "predicate": "可使用",
+    "object": "derivatives"
+   },
+   {
+    "subject": "fund",
+    "predicate": "可投资",
+    "object": "non_listed_equity"
+   },
+   {
+    "subject": "non_listed_equity",
+    "predicate": "须经审批",
+    "object": "committee"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 715,
+ "output_tokens": 1555,
+ "cached_read_tokens": 0,
+ "latency_ms": 6815.638499974739,
+ "provider": "deepseek"
+}

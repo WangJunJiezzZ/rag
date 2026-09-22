@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"委任邱之涵为本公司董事\", \"subject\": \"邱之涵\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"岱屿资本管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "委任邱之涵为本公司董事",
+    "subject": "邱之涵",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "岱屿资本管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1179,
+ "output_tokens": 60,
+ "cached_read_tokens": 768,
+ "latency_ms": 2835.1779999793507,
+ "provider": "deepseek"
+}

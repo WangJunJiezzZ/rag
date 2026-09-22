@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\":[{\"name\":\"孙志诚\",\"type\":\"Person\"},{\"name\":\"麓岩国际控股有限公司\",\"type\":\"Company\"},{\"name\":\"20%\",\"type\":\"ShareholdingRatio\"},{\"name\":\"2024年4月7日\",\"type\":\"Date\"}],\"relations\":[{\"subject\":\"孙志诚\",\"predicate\":\"持有\",\"object\":\"麓岩国际控股有限公司\"},{\"subject\":\"孙志诚\",\"predicate\":\"持股比例\",\"object\":\"20%\"},{\"subject\":\"孙志诚\",\"predicate\":\"登记日期\",\"object\":\"2024年4月7日\"},{\"subject\":\"孙志诚\",\"predicate\":\"主要股东\",\"object\":\"麓岩国际控股有限公司\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "孙志诚",
+    "type": "Person"
+   },
+   {
+    "name": "麓岩国际控股有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "20%",
+    "type": "ShareholdingRatio"
+   },
+   {
+    "name": "2024年4月7日",
+    "type": "Date"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "孙志诚",
+    "predicate": "持有",
+    "object": "麓岩国际控股有限公司"
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "持股比例",
+    "object": "20%"
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "登记日期",
+    "object": "2024年4月7日"
+   },
+   {
+    "subject": "孙志诚",
+    "predicate": "主要股东",
+    "object": "麓岩国际控股有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 334,
+ "output_tokens": 140,
+ "cached_read_tokens": 128,
+ "latency_ms": 2892.2826249618083,
+ "provider": "deepseek"
+}

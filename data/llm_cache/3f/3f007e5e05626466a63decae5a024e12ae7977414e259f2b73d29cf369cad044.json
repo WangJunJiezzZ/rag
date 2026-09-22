@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"鹤鸣金服为Daiyu Global Investments Ltd.之全资附属公司，Daiyu Global Investments Ltd.持有其 100% 股权\", \"subject\": \"鹤鸣金服\", \"subject_type\": \"Company\", \"relation\": \"SUBSIDIARY_OF\", \"object\": \"Daiyu Global Investments Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "鹤鸣金服为Daiyu Global Investments Ltd.之全资附属公司，Daiyu Global Investments Ltd.持有其 100% 股权",
+    "subject": "鹤鸣金服",
+    "subject_type": "Company",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Daiyu Global Investments Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1179,
+ "output_tokens": 89,
+ "cached_read_tokens": 768,
+ "latency_ms": 3904.6815839828923,
+ "provider": "deepseek"
+}

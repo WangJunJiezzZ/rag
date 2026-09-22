@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「汐禾国际控股有限公司」与英文名「Linchuan Asset Management Pte. Ltd.」名称完全不同，无对应关系，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「汐禾国际控股有限公司」与英文名「Linchuan Asset Management Pte. Ltd.」名称完全不同，无对应关系，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 383,
+ "output_tokens": 53,
+ "cached_read_tokens": 128,
+ "latency_ms": 4436.7649590130895,
+ "provider": "deepseek"
+}

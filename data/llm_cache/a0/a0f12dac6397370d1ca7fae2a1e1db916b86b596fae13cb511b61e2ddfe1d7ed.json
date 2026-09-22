@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.3, \"reason\": \"中文名「珩屿」与英文名「Starsea」无对应关系，且上下文中的董事与日期均不同，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.3,
+  "reason": "中文名「珩屿」与英文名「Starsea」无对应关系，且上下文中的董事与日期均不同，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 425,
+ "output_tokens": 51,
+ "cached_read_tokens": 256,
+ "latency_ms": 2306.419500033371,
+ "provider": "deepseek"
+}

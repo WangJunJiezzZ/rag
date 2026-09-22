@@ -1,0 +1,161 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"鹤鸣房地产收益基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"Heming Asset Management Pte. Ltd.\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"北岸银行澄江特别行政区分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regplace\",\n      \"name\": \"白鹭湾\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"date\",\n      \"name\": \"2025年4月10日\",\n      \"type\": \"设立日期\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"房地产收益策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"min_sub\",\n      \"name\": \"100万美元\",\n      \"type\": \"最低认购金额\"\n    },\n    {\n      \"id\": \"min_add\",\n      \"name\": \"1万美元\",\n      \"type\": \"最低追加认购金额\"\n    },\n    {\n      \"id\": \"mgmt_fee\",\n      \"name\": \"2.00%\",\n      \"type\": \"管理费年费率\"\n    },\n    {\n      \"id\": \"cust_fee\",\n      \"name\": \"0.12%\",\n      \"type\": \"托管费年费率\"\n    },\n    {\n      \"id\": \"perf_fee\",\n      \"name\": \"15%\",\n      \"type\": \"业绩报酬计提比例\"\n    },\n    {\n      \"id\": \"hurdle\",\n      \"name\": \"5%\",\n      \"type\": \"年化门槛收益率\"\n    },\n    {\n      \"id\": \"redemption_limit\",\n      \"name\": \"20%\",\n      \"type\": \"赎回总额上限比例\"\n    },\n    {\n      \"id\": \"illiquid_limit\",\n      \"name\": \"10%\",\n      \"type\": \"非上市股权及流动性受限资产投资上限\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"date\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"注册地\",\n      \"object\": \"regplace\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"currency\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"strategy\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"manager\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"custodian\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"min_sub\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"最低追加认购金额\",\n      \"object\": \"min_add\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"管理费年费率\",\n      \"object\": \"mgmt_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"cust_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"业绩报酬计提比例\",\n      \"object\": \"perf_fee\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"年化门槛收益率\",\n      \"object\": \"hurdle\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"赎回总额上限比例\",\n      \"object\": \"redemption_limit\"\n    },\n    {\n      \"subject\": \"fund\",\n      \"predicate\": \"非上市股权及流动性受限资产投资上限\",\n      \"object\": \"illiquid_limit\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "鹤鸣房地产收益基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "Heming Asset Management Pte. Ltd.",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "白鹭湾",
+    "type": "注册地"
+   },
+   {
+    "id": "date",
+    "name": "2025年4月10日",
+    "type": "设立日期"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "房地产收益策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "min_sub",
+    "name": "100万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "min_add",
+    "name": "1万美元",
+    "type": "最低追加认购金额"
+   },
+   {
+    "id": "mgmt_fee",
+    "name": "2.00%",
+    "type": "管理费年费率"
+   },
+   {
+    "id": "cust_fee",
+    "name": "0.12%",
+    "type": "托管费年费率"
+   },
+   {
+    "id": "perf_fee",
+    "name": "15%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "hurdle",
+    "name": "5%",
+    "type": "年化门槛收益率"
+   },
+   {
+    "id": "redemption_limit",
+    "name": "20%",
+    "type": "赎回总额上限比例"
+   },
+   {
+    "id": "illiquid_limit",
+    "name": "10%",
+    "type": "非上市股权及流动性受限资产投资上限"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "date"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "min_sub"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低追加认购金额",
+    "object": "min_add"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费年费率",
+    "object": "mgmt_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费年费率",
+    "object": "cust_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "业绩报酬计提比例",
+    "object": "perf_fee"
+   },
+   {
+    "subject": "fund",
+    "predicate": "年化门槛收益率",
+    "object": "hurdle"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回总额上限比例",
+    "object": "redemption_limit"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权及流动性受限资产投资上限",
+    "object": "illiquid_limit"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 763,
+ "output_tokens": 904,
+ "cached_read_tokens": 0,
+ "latency_ms": 4867.344375001267,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号「（3）」，B为英文名「Yanchi Asset Management Pte. Ltd.」，名称与序号均不匹配，无法确认指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号「（3）」，B为英文名「Yanchi Asset Management Pte. Ltd.」，名称与序号均不匹配，无法确认指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 58,
+ "cached_read_tokens": 256,
+ "latency_ms": 3238.608999992721,
+ "provider": "deepseek"
+}

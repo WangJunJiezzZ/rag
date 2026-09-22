@@ -1,0 +1,41 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"栖梧环球\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"松岚资产管理有限公司\",\n      \"type\": \"公司\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"栖梧环球\",\n      \"predicate\": \"持有\",\n      \"object\": \"松岚资产管理有限公司\",\n      \"attributes\": {\n        \"持股比例\": \"100%\",\n        \"关系\": \"全资附属公司\"\n      }\n    },\n    {\n      \"subject\": \"松岚资产管理有限公司\",\n      \"predicate\": \"纳入合并范围\",\n      \"object\": \"栖梧环球\",\n      \"attributes\": {\n        \"合并范围\": \"合并财务报表\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧环球",
+    "type": "公司"
+   },
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "栖梧环球",
+    "predicate": "持有",
+    "object": "松岚资产管理有限公司",
+    "attributes": {
+     "持股比例": "100%",
+     "关系": "全资附属公司"
+    }
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "纳入合并范围",
+    "object": "栖梧环球",
+    "attributes": {
+     "合并范围": "合并财务报表"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 219,
+ "output_tokens": 163,
+ "cached_read_tokens": 0,
+ "latency_ms": 2814.4147919956595,
+ "provider": "deepseek"
+}

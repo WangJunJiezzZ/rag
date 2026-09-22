@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"中文名「屿川环球投资有限公司」与英文名「Linchuan Asset Management Pte. Ltd.」在名称、业务描述（投资 vs 资产管理）及语言上均不对应，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "中文名「屿川环球投资有限公司」与英文名「Linchuan Asset Management Pte. Ltd.」在名称、业务描述（投资 vs 资产管理）及语言上均不对应，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 390,
+ "output_tokens": 65,
+ "cached_read_tokens": 256,
+ "latency_ms": 2973.8330420223065,
+ "provider": "deepseek"
+}

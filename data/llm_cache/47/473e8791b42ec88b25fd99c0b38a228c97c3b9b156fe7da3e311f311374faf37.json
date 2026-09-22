@@ -1,0 +1,191 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"瑾樾私募信贷基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"瑾樾资本（3）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"汇川银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"regplace\",\n      \"name\": \"新港城\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"美元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"私募信贷策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"min_sub\",\n      \"name\": \"25万美元\",\n      \"type\": \"最低认购金额\"\n    },\n    {\n      \"id\": \"add_sub\",\n      \"name\": \"1万美元\",\n      \"type\": \"追加认购最低金额\"\n    },\n    {\n      \"id\": \"redemption\",\n      \"name\": \"季度开放机制\",\n      \"type\": \"赎回安排\"\n    },\n    {\n      \"id\": \"threshold1\",\n      \"name\": \"6%\",\n      \"type\": \"门槛收益率\"\n    },\n    {\n      \"id\": \"threshold2\",\n      \"name\": \"4%\",\n      \"type\": \"门槛收益率\"\n    },\n    {\n      \"id\": \"perf_fee\",\n      \"name\": \"15%\",\n      \"type\": \"业绩报酬计提比例\"\n    },\n    {\n      \"id\": \"high_water\",\n      \"name\": \"高水位线法\",\n      \"type\": \"业绩报酬计提方法\"\n    },\n    {\n      \"id\": \"risk_liquidity\",\n      \"name\": \"流动性风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_market\",\n      \"name\": \"市场风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_concentration\",\n      \"name\": \"集中度风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_legal\",\n      \"name\": \"法律与监管风险\",\n      \"type\": \"风险因素\"\n    },\n    {\n      \"id\": \"risk_fx\",\n      \"name\": \"汇率风险\",\n      \"type\": \"风险因素\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"瑾樾资本（3）\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"汇川银行新港城分行\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"新港城\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"美元\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"私募信贷策略\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"25万美元\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"1万美元\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"赎回安排\",\n      \"object\": \"季度开放机制\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"业绩报酬门槛收益率\",\n      \"object\": \"6%\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"业绩报酬门槛收益率\",\n      \"object\": \"4%\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"业绩报酬计提比例\",\n      \"object\": \"15%\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"业绩报酬计提方法\",\n      \"object\": \"高水位线法\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"流动性风险\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"市场风险\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"集中度风险\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"法律与监管风险\"\n    },\n    {\n      \"subject\": \"瑾樾私募信贷基金\",\n      \"predicate\": \"风险因素\",\n      \"object\": \"汇率风险\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "瑾樾私募信贷基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "瑾樾资本（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "私募信贷策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "min_sub",
+    "name": "25万美元",
+    "type": "最低认购金额"
+   },
+   {
+    "id": "add_sub",
+    "name": "1万美元",
+    "type": "追加认购最低金额"
+   },
+   {
+    "id": "redemption",
+    "name": "季度开放机制",
+    "type": "赎回安排"
+   },
+   {
+    "id": "threshold1",
+    "name": "6%",
+    "type": "门槛收益率"
+   },
+   {
+    "id": "threshold2",
+    "name": "4%",
+    "type": "门槛收益率"
+   },
+   {
+    "id": "perf_fee",
+    "name": "15%",
+    "type": "业绩报酬计提比例"
+   },
+   {
+    "id": "high_water",
+    "name": "高水位线法",
+    "type": "业绩报酬计提方法"
+   },
+   {
+    "id": "risk_liquidity",
+    "name": "流动性风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_market",
+    "name": "市场风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_concentration",
+    "name": "集中度风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_legal",
+    "name": "法律与监管风险",
+    "type": "风险因素"
+   },
+   {
+    "id": "risk_fx",
+    "name": "汇率风险",
+    "type": "风险因素"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基金管理人",
+    "object": "瑾樾资本（3）"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基金托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "投资策略",
+    "object": "私募信贷策略"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "最低认购金额",
+    "object": "25万美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "追加认购最低金额",
+    "object": "1万美元"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "赎回安排",
+    "object": "季度开放机制"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬门槛收益率",
+    "object": "6%"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬门槛收益率",
+    "object": "4%"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬计提比例",
+    "object": "15%"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "业绩报酬计提方法",
+    "object": "高水位线法"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "风险因素",
+    "object": "流动性风险"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "风险因素",
+    "object": "市场风险"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "风险因素",
+    "object": "集中度风险"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "风险因素",
+    "object": "法律与监管风险"
+   },
+   {
+    "subject": "瑾樾私募信贷基金",
+    "predicate": "风险因素",
+    "object": "汇率风险"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 795,
+ "output_tokens": 1144,
+ "cached_read_tokens": 0,
+ "latency_ms": 5517.707124992739,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"「樾川国际」与「Lishi Asset Management Pte. Ltd.」名称、语言及业务指向均无对应关系，无法认定为同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "「樾川国际」与「Lishi Asset Management Pte. Ltd.」名称、语言及业务指向均无对应关系，无法认定为同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 386,
+ "output_tokens": 52,
+ "cached_read_tokens": 128,
+ "latency_ms": 4682.065249944571,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"翊澜资本（2）为Yanchi Global Investments Ltd.之全资附属公司，Yanchi Global Investments Ltd.持有其 100% 股权\", \"subject\": \"翊澜资本（2）\", \"subject_type\": \"Company\", \"relation\": \"SUBSIDIARY_OF\", \"object\": \"Yanchi Global Investments Ltd.\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "翊澜资本（2）为Yanchi Global Investments Ltd.之全资附属公司，Yanchi Global Investments Ltd.持有其 100% 股权",
+    "subject": "翊澜资本（2）",
+    "subject_type": "Company",
+    "relation": "SUBSIDIARY_OF",
+    "object": "Yanchi Global Investments Ltd.",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1178,
+ "output_tokens": 97,
+ "cached_read_tokens": 768,
+ "latency_ms": 4908.64820900606,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"注册地：新港城\", \"subject\": \"漱玉资管\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：新港城",
+    "subject": "漱玉资管",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1626,
+ "output_tokens": 59,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3532.0508329896256,
+ "provider": "deepseek"
+}

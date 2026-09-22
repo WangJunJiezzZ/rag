@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两家公司名称不同（国际控股 vs 资本管理），且上下文中的董事分别为黄明远与马怀瑾，指向不同主体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两家公司名称不同（国际控股 vs 资本管理），且上下文中的董事分别为黄明远与马怀瑾，指向不同主体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 47,
+ "cached_read_tokens": 256,
+ "latency_ms": 3079.510833020322,
+ "provider": "deepseek"
+}

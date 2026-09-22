@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"谢志诚\",\"type\":\"Person\"},{\"name\":\"松岚环球投资有限公司\",\"type\":\"Company\"},{\"name\":\"2022年3月5日\",\"type\":\"Date\"},{\"name\":\"5%\",\"type\":\"ShareholdingRatio\"}],\"relations\":[{\"subject\":\"谢志诚\",\"predicate\":\"持有股份\",\"object\":\"松岚环球投资有限公司\"},{\"subject\":\"谢志诚\",\"predicate\":\"持股比例\",\"object\":\"5%\"},{\"subject\":\"谢志诚\",\"predicate\":\"登记日期\",\"object\":\"2022年3月5日\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "谢志诚",
+    "type": "Person"
+   },
+   {
+    "name": "松岚环球投资有限公司",
+    "type": "Company"
+   },
+   {
+    "name": "2022年3月5日",
+    "type": "Date"
+   },
+   {
+    "name": "5%",
+    "type": "ShareholdingRatio"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "谢志诚",
+    "predicate": "持有股份",
+    "object": "松岚环球投资有限公司"
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "持股比例",
+    "object": "5%"
+   },
+   {
+    "subject": "谢志诚",
+    "predicate": "登记日期",
+    "object": "2022年3月5日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 120,
+ "cached_read_tokens": 256,
+ "latency_ms": 3001.971625024453,
+ "provider": "deepseek"
+}

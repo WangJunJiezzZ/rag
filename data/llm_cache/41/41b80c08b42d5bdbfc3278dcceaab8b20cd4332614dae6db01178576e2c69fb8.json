@@ -1,0 +1,46 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"邱之涵\",\n      \"type\": \"person\"\n    },\n    {\n      \"name\": \"松岚资产管理有限公司\",\n      \"type\": \"organization\"\n    },\n    {\n      \"name\": \"2022年4月17日\",\n      \"type\": \"date\"\n    },\n    {\n      \"name\": \"15%\",\n      \"type\": \"percentage\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"邱之涵\",\n      \"predicate\": \"持有\",\n      \"object\": \"松岚资产管理有限公司\",\n      \"properties\": {\n        \"持股比例\": \"15%\",\n        \"登记日期\": \"2022年4月17日\"\n      }\n    },\n    {\n      \"subject\": \"邱之涵\",\n      \"predicate\": \"是主要股东\",\n      \"object\": \"松岚资产管理有限公司\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "邱之涵",
+    "type": "person"
+   },
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "organization"
+   },
+   {
+    "name": "2022年4月17日",
+    "type": "date"
+   },
+   {
+    "name": "15%",
+    "type": "percentage"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "邱之涵",
+    "predicate": "持有",
+    "object": "松岚资产管理有限公司",
+    "properties": {
+     "持股比例": "15%",
+     "登记日期": "2022年4月17日"
+    }
+   },
+   {
+    "subject": "邱之涵",
+    "predicate": "是主要股东",
+    "object": "松岚资产管理有限公司"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 239,
+ "output_tokens": 194,
+ "cached_read_tokens": 0,
+ "latency_ms": 3431.601833028253,
+ "provider": "deepseek"
+}

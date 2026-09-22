@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"截至 2024 年 9 月 21 日，周牧之直接持有本公司已发行股本的 30%，为本公司主要股东之一\", \"subject\": \"周牧之\", \"subject_type\": \"Person\", \"relation\": \"SHAREHOLDER_OF\", \"object\": \"柏观环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "截至 2024 年 9 月 21 日，周牧之直接持有本公司已发行股本的 30%，为本公司主要股东之一",
+    "subject": "周牧之",
+    "subject_type": "Person",
+    "relation": "SHAREHOLDER_OF",
+    "object": "柏观环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1639,
+ "output_tokens": 87,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3821.1204579565674,
+ "provider": "deepseek"
+}

@@ -1,0 +1,39 @@
+{
+ "text": "{\"entities\":[{\"name\":\"Dixing Capital Management Ltd.\",\"type\":\"公司\"},{\"name\":\"栖梧国际（2）\",\"type\":\"公司\"}],\"relations\":[{\"subject\":\"Dixing Capital Management Ltd.\",\"predicate\":\"持有100%股权\",\"object\":\"栖梧国际（2）\"},{\"subject\":\"栖梧国际（2）\",\"predicate\":\"全资附属公司\",\"object\":\"Dixing Capital Management Ltd.\"},{\"subject\":\"栖梧国际（2）\",\"predicate\":\"纳入合并财务报表范围\",\"object\":\"Dixing Capital Management Ltd.\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Dixing Capital Management Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "栖梧国际（2）",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Dixing Capital Management Ltd.",
+    "predicate": "持有100%股权",
+    "object": "栖梧国际（2）"
+   },
+   {
+    "subject": "栖梧国际（2）",
+    "predicate": "全资附属公司",
+    "object": "Dixing Capital Management Ltd."
+   },
+   {
+    "subject": "栖梧国际（2）",
+    "predicate": "纳入合并财务报表范围",
+    "object": "Dixing Capital Management Ltd."
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 302,
+ "output_tokens": 115,
+ "cached_read_tokens": 128,
+ "latency_ms": 4672.868917055894,
+ "provider": "deepseek"
+}

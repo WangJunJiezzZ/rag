@@ -1,0 +1,71 @@
+{
+ "text": "{\"entities\":[{\"name\":\"凛川资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"Linchuan Asset Management Pte. Ltd.\",\"type\":\"公司\"},{\"name\":\"黄南星\",\"type\":\"人员\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"凛川资产管理有限公司\",\"predicate\":\"别名\",\"object\":\"Linchuan Asset Management Pte. Ltd.\"},{\"subject\":\"凛川资产管理有限公司\",\"predicate\":\"委任董事\",\"object\":\"黄南星\"},{\"subject\":\"黄南星\",\"predicate\":\"担任董事\",\"object\":\"凛川资产管理有限公司\"},{\"subject\":\"黄南星\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"黄南星\",\"predicate\":\"生效日期\",\"object\":\"2024年11月16日\"},{\"subject\":\"黄南星\",\"predicate\":\"管理规模\",\"object\":\"297亿单位货币\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告对象\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "Linchuan Asset Management Pte. Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "黄南星",
+    "type": "人员"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "凛川资产管理有限公司",
+    "predicate": "别名",
+    "object": "Linchuan Asset Management Pte. Ltd."
+   },
+   {
+    "subject": "凛川资产管理有限公司",
+    "predicate": "委任董事",
+    "object": "黄南星"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "担任董事",
+    "object": "凛川资产管理有限公司"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "生效日期",
+    "object": "2024年11月16日"
+   },
+   {
+    "subject": "黄南星",
+    "predicate": "管理规模",
+    "object": "297亿单位货币"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 389,
+ "output_tokens": 213,
+ "cached_read_tokens": 128,
+ "latency_ms": 3453.9452500175685,
+ "provider": "deepseek"
+}

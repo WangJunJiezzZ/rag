@@ -1,0 +1,57 @@
+{
+ "text": "{\"entities\":[{\"name\":\"青柏投资控股有限公司\",\"type\":\"公司\"},{\"name\":\"刘沐阳\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织\"},{\"name\":\"合规与风险管理职能\",\"type\":\"组织\"}],\"relations\":[{\"subject\":\"青柏投资控股有限公司\",\"predicate\":\"董事变更\",\"object\":\"刘沐阳\"},{\"subject\":\"刘沐阳\",\"predicate\":\"任职于\",\"object\":\"青柏投资控股有限公司\"},{\"subject\":\"刘沐阳\",\"predicate\":\"职位\",\"object\":\"董事\"},{\"subject\":\"青柏投资控股有限公司\",\"predicate\":\"董事会成员\",\"object\":\"刘沐阳\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告对象\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "青柏投资控股有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "刘沐阳",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "青柏投资控股有限公司",
+    "predicate": "董事变更",
+    "object": "刘沐阳"
+   },
+   {
+    "subject": "刘沐阳",
+    "predicate": "任职于",
+    "object": "青柏投资控股有限公司"
+   },
+   {
+    "subject": "刘沐阳",
+    "predicate": "职位",
+    "object": "董事"
+   },
+   {
+    "subject": "青柏投资控股有限公司",
+    "predicate": "董事会成员",
+    "object": "刘沐阳"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 387,
+ "output_tokens": 150,
+ "cached_read_tokens": 128,
+ "latency_ms": 3895.2272920287214,
+ "provider": "deepseek"
+}

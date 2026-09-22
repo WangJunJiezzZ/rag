@@ -1,0 +1,126 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"松岚可持续发展基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"松岚资产管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"汇川银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"regplace\",\"name\":\"白鹭湾\",\"type\":\"注册地\"},{\"id\":\"investcommittee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"},{\"id\":\"board\",\"name\":\"董事会\",\"type\":\"内部机构\"}],\"relations\":[{\"subject\":\"fund\",\"predicate\":\"基金管理人\",\"object\":\"manager\"},{\"subject\":\"fund\",\"predicate\":\"基金托管人\",\"object\":\"custodian\"},{\"subject\":\"fund\",\"predicate\":\"注册地\",\"object\":\"regplace\"},{\"subject\":\"fund\",\"predicate\":\"设立日期\",\"object\":\"2019年7月15日\"},{\"subject\":\"fund\",\"predicate\":\"基准货币\",\"object\":\"美元\"},{\"subject\":\"fund\",\"predicate\":\"存续期限\",\"object\":\"无固定期限\"},{\"subject\":\"fund\",\"predicate\":\"投资策略\",\"object\":\"可持续发展策略\"},{\"subject\":\"fund\",\"predicate\":\"最低认购金额\",\"object\":\"100万美元\"},{\"subject\":\"fund\",\"predicate\":\"追加认购最低金额\",\"object\":\"5万美元\"},{\"subject\":\"fund\",\"predicate\":\"管理费率\",\"object\":\"1.25%\"},{\"subject\":\"fund\",\"predicate\":\"托管费率\",\"object\":\"0.12%\"},{\"subject\":\"fund\",\"predicate\":\"费用上限\",\"object\":\"0.60%\"},{\"subject\":\"manager\",\"predicate\":\"负责\",\"object\":\"投资决策、日常运作及信息披露\"},{\"subject\":\"custodian\",\"predicate\":\"负责\",\"object\":\"财产保管、清算交收及监督\"},{\"subject\":\"manager\",\"predicate\":\"向报告\",\"object\":\"board\"},{\"subject\":\"投资非上市股权\",\"predicate\":\"须经审批\",\"object\":\"investcommittee\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "松岚可持续发展基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "松岚资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "汇川银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "白鹭湾",
+    "type": "注册地"
+   },
+   {
+    "id": "investcommittee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "基金管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基金托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "regplace"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2019年7月15日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "可持续发展策略"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "100万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "5万美元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费率",
+    "object": "1.25%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费率",
+    "object": "0.12%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "费用上限",
+    "object": "0.60%"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "财产保管、清算交收及监督"
+   },
+   {
+    "subject": "manager",
+    "predicate": "向报告",
+    "object": "board"
+   },
+   {
+    "subject": "投资非上市股权",
+    "predicate": "须经审批",
+    "object": "investcommittee"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 801,
+ "output_tokens": 391,
+ "cached_read_tokens": 640,
+ "latency_ms": 4364.059959014412,
+ "provider": "deepseek"
+}

@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"名称不同（投资控股 vs 资本管理），且上下文涉及不同股东（孙志诚 vs 陈敬亭），指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "名称不同（投资控股 vs 资本管理），且上下文涉及不同股东（孙志诚 vs 陈敬亭），指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 432,
+ "output_tokens": 47,
+ "cached_read_tokens": 256,
+ "latency_ms": 4263.047499989625,
+ "provider": "deepseek"
+}

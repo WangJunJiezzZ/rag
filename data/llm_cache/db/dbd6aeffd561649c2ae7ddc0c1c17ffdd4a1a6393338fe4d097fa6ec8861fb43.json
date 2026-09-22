@@ -1,0 +1,114 @@
+{
+ "text": "{\"entities\":[{\"name\":\"凛川资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"郑明远\",\"type\":\"人物\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"2023年2月18日\",\"type\":\"日期\"},{\"name\":\"三年\",\"type\":\"时长\"},{\"name\":\"投资\",\"type\":\"职务\"},{\"name\":\"风险管理\",\"type\":\"职务\"},{\"name\":\"跨境资产配置\",\"type\":\"领域\"},{\"name\":\"23年\",\"type\":\"时长\"},{\"name\":\"独立审计机构\",\"type\":\"机构\"},{\"name\":\"审计报告\",\"type\":\"文件\"},{\"name\":\"投资者\",\"type\":\"人物\"}],\"relations\":[{\"subject\":\"凛川资产管理有限公司\",\"predicate\":\"委任\",\"object\":\"郑明远\"},{\"subject\":\"郑明远\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"郑明远\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"委任\",\"predicate\":\"生效日期\",\"object\":\"2023年2月18日\"},{\"subject\":\"郑明远\",\"predicate\":\"曾担任\",\"object\":\"投资\"},{\"subject\":\"郑明远\",\"predicate\":\"曾担任\",\"object\":\"风险管理\"},{\"subject\":\"郑明远\",\"predicate\":\"积累经验于\",\"object\":\"跨境资产配置\"},{\"subject\":\"郑明远\",\"predicate\":\"从业经验\",\"object\":\"23年\"},{\"subject\":\"独立审计机构\",\"predicate\":\"审计\",\"object\":\"凛川资产管理有限公司\"},{\"subject\":\"审计报告\",\"predicate\":\"提供\",\"object\":\"投资者\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "凛川资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "郑明远",
+    "type": "人物"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "2023年2月18日",
+    "type": "日期"
+   },
+   {
+    "name": "三年",
+    "type": "时长"
+   },
+   {
+    "name": "投资",
+    "type": "职务"
+   },
+   {
+    "name": "风险管理",
+    "type": "职务"
+   },
+   {
+    "name": "跨境资产配置",
+    "type": "领域"
+   },
+   {
+    "name": "23年",
+    "type": "时长"
+   },
+   {
+    "name": "独立审计机构",
+    "type": "机构"
+   },
+   {
+    "name": "审计报告",
+    "type": "文件"
+   },
+   {
+    "name": "投资者",
+    "type": "人物"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "凛川资产管理有限公司",
+    "predicate": "委任",
+    "object": "郑明远"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "委任",
+    "predicate": "生效日期",
+    "object": "2023年2月18日"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "曾担任",
+    "object": "投资"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "曾担任",
+    "object": "风险管理"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "积累经验于",
+    "object": "跨境资产配置"
+   },
+   {
+    "subject": "郑明远",
+    "predicate": "从业经验",
+    "object": "23年"
+   },
+   {
+    "subject": "独立审计机构",
+    "predicate": "审计",
+    "object": "凛川资产管理有限公司"
+   },
+   {
+    "subject": "审计报告",
+    "predicate": "提供",
+    "object": "投资者"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 321,
+ "output_tokens": 313,
+ "cached_read_tokens": 128,
+ "latency_ms": 5563.395541976206,
+ "provider": "deepseek"
+}

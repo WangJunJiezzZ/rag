@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"霁川环球为漱玉资管之全资附属公司，漱玉资管持有其 100% 股权\", \"subject\": \"霁川环球\", \"subject_type\": \"Company\", \"relation\": \"SUBSIDIARY_OF\", \"object\": \"漱玉资管\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "霁川环球为漱玉资管之全资附属公司，漱玉资管持有其 100% 股权",
+    "subject": "霁川环球",
+    "subject_type": "Company",
+    "relation": "SUBSIDIARY_OF",
+    "object": "漱玉资管",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1158,
+ "output_tokens": 79,
+ "cached_read_tokens": 768,
+ "latency_ms": 2762.1398749761283,
+ "provider": "deepseek"
+}

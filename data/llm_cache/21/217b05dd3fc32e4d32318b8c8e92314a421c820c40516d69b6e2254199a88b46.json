@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2022 年 11 月 16 日 召开的股东大会审议通过，王清和当选为本公司董事，即日生效\", \"subject\": \"王清和\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"茗谷环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2022 年 11 月 16 日 召开的股东大会审议通过，王清和当选为本公司董事，即日生效",
+    "subject": "王清和",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "茗谷环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1626,
+ "output_tokens": 83,
+ "cached_read_tokens": 1280,
+ "latency_ms": 2807.3091660044156,
+ "provider": "deepseek"
+}

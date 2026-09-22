@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2022 年 4 月 3 日 起，委任朱叔夜为本公司董事\", \"subject\": \"朱叔夜\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"霁川环球投资有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2022 年 4 月 3 日 起，委任朱叔夜为本公司董事",
+    "subject": "朱叔夜",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "霁川环球投资有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1175,
+ "output_tokens": 77,
+ "cached_read_tokens": 896,
+ "latency_ms": 4488.042042008601,
+ "provider": "deepseek"
+}

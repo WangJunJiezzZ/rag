@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"经 2024 年 7 月 14 日 召开的股东大会审议通过，张慕白当选为本公司董事，即日生效\", \"subject\": \"张慕白\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"燧明投资控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "经 2024 年 7 月 14 日 召开的股东大会审议通过，张慕白当选为本公司董事，即日生效",
+    "subject": "张慕白",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "燧明投资控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1191,
+ "output_tokens": 84,
+ "cached_read_tokens": 768,
+ "latency_ms": 3014.441750012338,
+ "provider": "deepseek"
+}

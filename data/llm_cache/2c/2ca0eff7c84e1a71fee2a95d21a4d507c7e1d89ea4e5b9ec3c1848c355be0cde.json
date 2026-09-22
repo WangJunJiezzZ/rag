@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"徐知微当选为本公司董事，即日生效\", \"subject\": \"徐知微\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"珩屿国际控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "徐知微当选为本公司董事，即日生效",
+    "subject": "徐知微",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "珩屿国际控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1630,
+ "output_tokens": 63,
+ "cached_read_tokens": 1280,
+ "latency_ms": 6289.988834003452,
+ "provider": "deepseek"
+}

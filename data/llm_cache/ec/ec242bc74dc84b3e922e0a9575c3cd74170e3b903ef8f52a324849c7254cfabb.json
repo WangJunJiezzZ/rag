@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者为不同基金名称（全球宏观基金 vs 私募信贷基金），且设立日期不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者为不同基金名称（全球宏观基金 vs 私募信贷基金），且设立日期不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 419,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 3050.4881250089966,
+ "provider": "deepseek"
+}

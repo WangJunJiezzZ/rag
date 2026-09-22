@@ -1,0 +1,92 @@
+{
+ "text": "{\"entities\":[{\"name\":\"松岚资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"马若谷\",\"type\":\"人物\"},{\"name\":\"股东大会\",\"type\":\"会议\"},{\"name\":\"董事\",\"type\":\"职位\"},{\"name\":\"注册机关\",\"type\":\"机构\"},{\"name\":\"合规与风险管理职能\",\"type\":\"职能\"},{\"name\":\"董事会\",\"type\":\"机构\"}],\"relations\":[{\"subject\":\"马若谷\",\"predicate\":\"当选为\",\"object\":\"松岚资产管理有限公司\",\"qualifier\":\"董事\"},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"马若谷\",\"qualifier\":\"当选董事\"},{\"subject\":\"松岚资产管理有限公司\",\"predicate\":\"向\",\"object\":\"注册机关\",\"qualifier\":\"备案董事变更\"},{\"subject\":\"马若谷\",\"predicate\":\"持有\",\"object\":\"金融相关专业的硕士学位\",\"qualifier\":\"\"},{\"subject\":\"马若谷\",\"predicate\":\"具备\",\"object\":\"所在司法管辖区认可的从业资格\",\"qualifier\":\"\"},{\"subject\":\"马若谷\",\"predicate\":\"覆盖\",\"object\":\"机构客户业务\",\"qualifier\":\"过往主要\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告\",\"object\":\"董事会\",\"qualifier\":\"直接向\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\",\"qualifier\":\"定期\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "松岚资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "马若谷",
+    "type": "人物"
+   },
+   {
+    "name": "股东大会",
+    "type": "会议"
+   },
+   {
+    "name": "董事",
+    "type": "职位"
+   },
+   {
+    "name": "注册机关",
+    "type": "机构"
+   },
+   {
+    "name": "合规与风险管理职能",
+    "type": "职能"
+   },
+   {
+    "name": "董事会",
+    "type": "机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "马若谷",
+    "predicate": "当选为",
+    "object": "松岚资产管理有限公司",
+    "qualifier": "董事"
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "马若谷",
+    "qualifier": "当选董事"
+   },
+   {
+    "subject": "松岚资产管理有限公司",
+    "predicate": "向",
+    "object": "注册机关",
+    "qualifier": "备案董事变更"
+   },
+   {
+    "subject": "马若谷",
+    "predicate": "持有",
+    "object": "金融相关专业的硕士学位",
+    "qualifier": ""
+   },
+   {
+    "subject": "马若谷",
+    "predicate": "具备",
+    "object": "所在司法管辖区认可的从业资格",
+    "qualifier": ""
+   },
+   {
+    "subject": "马若谷",
+    "predicate": "覆盖",
+    "object": "机构客户业务",
+    "qualifier": "过往主要"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告",
+    "object": "董事会",
+    "qualifier": "直接向"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况",
+    "qualifier": "定期"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 392,
+ "output_tokens": 275,
+ "cached_read_tokens": 256,
+ "latency_ms": 3565.559042035602,
+ "provider": "deepseek"
+}

@@ -1,0 +1,48 @@
+{
+ "text": "{\"entity_relations\":[{\"subject\":\"王清和\",\"relation\":\"持有\",\"object\":\"徽岚投资控股有限公司\",\"attributes\":{\"持股比例\":\"25%\",\"登记日期\":\"2025年6月6日\"}},{\"subject\":\"王清和\",\"relation\":\"是主要股东之一\",\"object\":\"徽岚投资控股有限公司\"},{\"subject\":\"投资委员会\",\"relation\":\"隶属于\",\"object\":\"徽岚投资控股有限公司\"},{\"subject\":\"投资委员会\",\"relation\":\"负责审议\",\"object\":\"重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"relation\":\"成员人数不少于\",\"object\":\"三名成员\"},{\"subject\":\"投资委员会\",\"relation\":\"召开会议频率\",\"object\":\"每月至少一次\"}]}",
+ "parsed": {
+  "entity_relations": [
+   {
+    "subject": "王清和",
+    "relation": "持有",
+    "object": "徽岚投资控股有限公司",
+    "attributes": {
+     "持股比例": "25%",
+     "登记日期": "2025年6月6日"
+    }
+   },
+   {
+    "subject": "王清和",
+    "relation": "是主要股东之一",
+    "object": "徽岚投资控股有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "relation": "隶属于",
+    "object": "徽岚投资控股有限公司"
+   },
+   {
+    "subject": "投资委员会",
+    "relation": "负责审议",
+    "object": "重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "relation": "成员人数不少于",
+    "object": "三名成员"
+   },
+   {
+    "subject": "投资委员会",
+    "relation": "召开会议频率",
+    "object": "每月至少一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 403,
+ "output_tokens": 142,
+ "cached_read_tokens": 256,
+ "latency_ms": 4300.955708022229,
+ "provider": "deepseek"
+}

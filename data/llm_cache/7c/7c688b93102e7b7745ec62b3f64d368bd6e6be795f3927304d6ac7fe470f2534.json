@@ -1,0 +1,44 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"漱玉资产管理有限公司\",\n      \"type\": \"公司\",\n      \"aliases\": [\"漱玉资管\"]\n    },\n    {\n      \"name\": \"霁川环球\",\n      \"type\": \"公司\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"漱玉资产管理有限公司\",\n      \"predicate\": \"持有\",\n      \"object\": \"霁川环球\",\n      \"attributes\": {\n        \"持股比例\": \"100%\",\n        \"关系类型\": \"全资附属公司\"\n      }\n    },\n    {\n      \"subject\": \"霁川环球\",\n      \"predicate\": \"纳入合并范围\",\n      \"object\": \"漱玉资产管理有限公司\",\n      \"attributes\": {\n        \"合并范围\": \"本集团合并财务报表\"\n      }\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "漱玉资产管理有限公司",
+    "type": "公司",
+    "aliases": [
+     "漱玉资管"
+    ]
+   },
+   {
+    "name": "霁川环球",
+    "type": "公司"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "漱玉资产管理有限公司",
+    "predicate": "持有",
+    "object": "霁川环球",
+    "attributes": {
+     "持股比例": "100%",
+     "关系类型": "全资附属公司"
+    }
+   },
+   {
+    "subject": "霁川环球",
+    "predicate": "纳入合并范围",
+    "object": "漱玉资产管理有限公司",
+    "attributes": {
+     "合并范围": "本集团合并财务报表"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 209,
+ "output_tokens": 177,
+ "cached_read_tokens": 0,
+ "latency_ms": 3385.278500034474,
+ "provider": "deepseek"
+}

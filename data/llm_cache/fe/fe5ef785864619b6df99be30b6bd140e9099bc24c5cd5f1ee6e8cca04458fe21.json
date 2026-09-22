@@ -1,0 +1,181 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"id\": \"fund\",\n      \"name\": \"瑾樾科技成长基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"id\": \"manager\",\n      \"name\": \"瑾樾资本（3）\",\n      \"type\": \"基金管理人\"\n    },\n    {\n      \"id\": \"custodian\",\n      \"name\": \"环宇银行新港城分行\",\n      \"type\": \"基金托管人\"\n    },\n    {\n      \"id\": \"jurisdiction\",\n      \"name\": \"澄江特别行政区\",\n      \"type\": \"注册地\"\n    },\n    {\n      \"id\": \"currency\",\n      \"name\": \"新元\",\n      \"type\": \"基准货币\"\n    },\n    {\n      \"id\": \"strategy\",\n      \"name\": \"科技成长策略\",\n      \"type\": \"投资策略\"\n    },\n    {\n      \"id\": \"committee\",\n      \"name\": \"投资委员会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"board\",\n      \"name\": \"董事会\",\n      \"type\": \"内部机构\"\n    },\n    {\n      \"id\": \"compliance\",\n      \"name\": \"合规与风险管理职能\",\n      \"type\": \"内部职能\"\n    },\n    {\n      \"id\": \"investors\",\n      \"name\": \"合资格投资者\",\n      \"type\": \"投资者\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"设立日期\",\n      \"object\": \"2023年11月13日\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"注册地\",\n      \"object\": \"澄江特别行政区\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"基准货币\",\n      \"object\": \"新元\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"存续期限\",\n      \"object\": \"无固定期限\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"投资策略\",\n      \"object\": \"科技成长策略\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"基金管理人\",\n      \"object\": \"瑾樾资本（3）\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"基金托管人\",\n      \"object\": \"环宇银行新港城分行\"\n    },\n    {\n      \"subject\": \"瑾樾资本（3）\",\n      \"predicate\": \"负责\",\n      \"object\": \"投资决策、日常运作及信息披露\"\n    },\n    {\n      \"subject\": \"环宇银行新港城分行\",\n      \"predicate\": \"负责\",\n      \"object\": \"基金财产保管、清算交收及对管理人投资运作的监督\"\n    },\n    {\n      \"subject\": \"瑾樾资本（3）\",\n      \"predicate\": \"建立\",\n      \"object\": \"合规与风险管理职能\"\n    },\n    {\n      \"subject\": \"合规与风险管理职能\",\n      \"predicate\": \"报告对象\",\n      \"object\": \"董事会\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"最低认购金额\",\n      \"object\": \"25万新元\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"追加认购最低金额\",\n      \"object\": \"1万新元\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"锁定期\",\n      \"object\": \"24个月\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"赎回申请频率\",\n      \"object\": \"每个季度末\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"赎回申请提前送达时间\",\n      \"object\": \"15个工作日\"\n    },\n    {\n      \"subject\": \"瑾樾资本（3）\",\n      \"predicate\": \"管理费年费率\",\n      \"object\": \"1.50%\"\n    },\n    {\n      \"subject\": \"环宇银行新港城分行\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"0.05%\"\n    },\n    {\n      \"subject\": \"瑾樾资本（3）\",\n      \"predicate\": \"管理费年费率\",\n      \"object\": \"1.25%\"\n    },\n    {\n      \"subject\": \"环宇银行新港城分行\",\n      \"predicate\": \"托管费年费率\",\n      \"object\": \"0.12%\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"非上市股权或流动性受限资产投资上限\",\n      \"object\": \"不超过15%的资产净值\"\n    },\n    {\n      \"subject\": \"非上市股权或流动性受限资产投资\",\n      \"predicate\": \"审批机构\",\n      \"object\": \"投资委员会\"\n    },\n    {\n      \"subject\": \"瑾樾科技成长基金\",\n      \"predicate\": \"面向\",\n      \"object\": \"合资格投资者\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "瑾樾科技成长基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "瑾樾资本（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "澄江特别行政区",
+    "type": "注册地"
+   },
+   {
+    "id": "currency",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "科技成长策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   },
+   {
+    "id": "compliance",
+    "name": "合规与风险管理职能",
+    "type": "内部职能"
+   },
+   {
+    "id": "investors",
+    "name": "合资格投资者",
+    "type": "投资者"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "设立日期",
+    "object": "2023年11月13日"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "基准货币",
+    "object": "新元"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "投资策略",
+    "object": "科技成长策略"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "基金管理人",
+    "object": "瑾樾资本（3）"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "基金托管人",
+    "object": "环宇银行新港城分行"
+   },
+   {
+    "subject": "瑾樾资本（3）",
+    "predicate": "负责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "环宇银行新港城分行",
+    "predicate": "负责",
+    "object": "基金财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "瑾樾资本（3）",
+    "predicate": "建立",
+    "object": "合规与风险管理职能"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "最低认购金额",
+    "object": "25万新元"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "追加认购最低金额",
+    "object": "1万新元"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "锁定期",
+    "object": "24个月"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "赎回申请频率",
+    "object": "每个季度末"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "赎回申请提前送达时间",
+    "object": "15个工作日"
+   },
+   {
+    "subject": "瑾樾资本（3）",
+    "predicate": "管理费年费率",
+    "object": "1.50%"
+   },
+   {
+    "subject": "环宇银行新港城分行",
+    "predicate": "托管费年费率",
+    "object": "0.05%"
+   },
+   {
+    "subject": "瑾樾资本（3）",
+    "predicate": "管理费年费率",
+    "object": "1.25%"
+   },
+   {
+    "subject": "环宇银行新港城分行",
+    "predicate": "托管费年费率",
+    "object": "0.12%"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "非上市股权或流动性受限资产投资上限",
+    "object": "不超过15%的资产净值"
+   },
+   {
+    "subject": "非上市股权或流动性受限资产投资",
+    "predicate": "审批机构",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "瑾樾科技成长基金",
+    "predicate": "面向",
+    "object": "合资格投资者"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 803,
+ "output_tokens": 1151,
+ "cached_read_tokens": 0,
+ "latency_ms": 6879.895750025753,
+ "provider": "deepseek"
+}

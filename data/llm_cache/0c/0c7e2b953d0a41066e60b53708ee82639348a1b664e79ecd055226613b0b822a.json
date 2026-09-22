@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.9, \"reason\": \"中文名「屿川环球投资有限公司」与英文名「Yunzhou Investment Holdings Ltd.」在名称上无对应关系，且「Yunzhou」通常对应「云洲」而非「屿川」，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.9,
+  "reason": "中文名「屿川环球投资有限公司」与英文名「Yunzhou Investment Holdings Ltd.」在名称上无对应关系，且「Yunzhou」通常对应「云洲」而非「屿川」，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 67,
+ "cached_read_tokens": 128,
+ "latency_ms": 3111.897750000935,
+ "provider": "deepseek"
+}

@@ -1,0 +1,88 @@
+{
+ "text": "{\"entities\":[{\"name\":\"砺石资产管理有限公司\",\"type\":\"公司\",\"aliases\":[\"Lishi Asset Management Pte. Ltd.\"]},{\"name\":\"砺石可持续发展基金\",\"type\":\"基金\",\"aliases\":[]},{\"name\":\"砺石全球宏观基金\",\"type\":\"基金\",\"aliases\":[]},{\"name\":\"澄江特别行政区\",\"type\":\"地区\",\"aliases\":[]},{\"name\":\"新港城\",\"type\":\"地区\",\"aliases\":[]},{\"name\":\"昭明银行新港城分行\",\"type\":\"机构\",\"aliases\":[]}],\"relations\":[{\"subject\":\"砺石资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"砺石可持续发展基金\"},{\"subject\":\"砺石资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"砺石全球宏观基金\"},{\"subject\":\"砺石可持续发展基金\",\"predicate\":\"采用策略\",\"object\":\"可持续发展策略\"},{\"subject\":\"砺石全球宏观基金\",\"predicate\":\"采用策略\",\"object\":\"全球宏观策略\"},{\"subject\":\"砺石可持续发展基金\",\"predicate\":\"注册地\",\"object\":\"澄江特别行政区\"},{\"subject\":\"砺石全球宏观基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"砺石可持续发展基金\",\"predicate\":\"托管人\",\"object\":\"昭明银行新港城分行\"},{\"subject\":\"砺石全球宏观基金\",\"predicate\":\"托管人\",\"object\":\"昭明银行新港城分行\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "砺石资产管理有限公司",
+    "type": "公司",
+    "aliases": [
+     "Lishi Asset Management Pte. Ltd."
+    ]
+   },
+   {
+    "name": "砺石可持续发展基金",
+    "type": "基金",
+    "aliases": []
+   },
+   {
+    "name": "砺石全球宏观基金",
+    "type": "基金",
+    "aliases": []
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "地区",
+    "aliases": []
+   },
+   {
+    "name": "新港城",
+    "type": "地区",
+    "aliases": []
+   },
+   {
+    "name": "昭明银行新港城分行",
+    "type": "机构",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "砺石资产管理有限公司",
+    "predicate": "管理",
+    "object": "砺石可持续发展基金"
+   },
+   {
+    "subject": "砺石资产管理有限公司",
+    "predicate": "管理",
+    "object": "砺石全球宏观基金"
+   },
+   {
+    "subject": "砺石可持续发展基金",
+    "predicate": "采用策略",
+    "object": "可持续发展策略"
+   },
+   {
+    "subject": "砺石全球宏观基金",
+    "predicate": "采用策略",
+    "object": "全球宏观策略"
+   },
+   {
+    "subject": "砺石可持续发展基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "砺石全球宏观基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "砺石可持续发展基金",
+    "predicate": "托管人",
+    "object": "昭明银行新港城分行"
+   },
+   {
+    "subject": "砺石全球宏观基金",
+    "predicate": "托管人",
+    "object": "昭明银行新港城分行"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 391,
+ "output_tokens": 290,
+ "cached_read_tokens": 256,
+ "latency_ms": 4640.4461250058375,
+ "provider": "deepseek"
+}

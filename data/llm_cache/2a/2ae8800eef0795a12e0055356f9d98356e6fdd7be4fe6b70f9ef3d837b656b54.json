@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名「星海资本管理有限公司（2）」，B为英文名「Yunzhou Investment Holdings Ltd.」，名称完全不同，且A带序号(2)，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名「星海资本管理有限公司（2）」，B为英文名「Yunzhou Investment Holdings Ltd.」，名称完全不同，且A带序号(2)，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 59,
+ "cached_read_tokens": 128,
+ "latency_ms": 4354.027665976901,
+ "provider": "deepseek"
+}

@@ -1,0 +1,56 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"Huichuan Global Investments Ltd.\",\n      \"type\": \"公司\",\n      \"attributes\": {\n        \"注册编号\": \"1998143860\",\n        \"注册地\": \"北屿自治区\",\n        \"注册日期\": \"2007年6月26日\",\n        \"主体状态\": \"存续\",\n        \"经营范围\": \"投资管理、投资顾问及相关配套服务\"\n      }\n    },\n    {\n      \"name\": \"北屿自治区\",\n      \"type\": \"地区\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"Huichuan Global Investments Ltd.\",\n      \"predicate\": \"注册于\",\n      \"object\": \"北屿自治区\"\n    },\n    {\n      \"subject\": \"Huichuan Global Investments Ltd.\",\n      \"predicate\": \"注册日期\",\n      \"object\": \"2007年6月26日\"\n    },\n    {\n      \"subject\": \"Huichuan Global Investments Ltd.\",\n      \"predicate\": \"注册编号\",\n      \"object\": \"1998143860\"\n    },\n    {\n      \"subject\": \"Huichuan Global Investments Ltd.\",\n      \"predicate\": \"主体状态\",\n      \"object\": \"存续\"\n    },\n    {\n      \"subject\": \"Huichuan Global Investments Ltd.\",\n      \"predicate\": \"经营范围\",\n      \"object\": \"投资管理、投资顾问及相关配套服务\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Huichuan Global Investments Ltd.",
+    "type": "公司",
+    "attributes": {
+     "注册编号": "1998143860",
+     "注册地": "北屿自治区",
+     "注册日期": "2007年6月26日",
+     "主体状态": "存续",
+     "经营范围": "投资管理、投资顾问及相关配套服务"
+    }
+   },
+   {
+    "name": "北屿自治区",
+    "type": "地区"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Huichuan Global Investments Ltd.",
+    "predicate": "注册于",
+    "object": "北屿自治区"
+   },
+   {
+    "subject": "Huichuan Global Investments Ltd.",
+    "predicate": "注册日期",
+    "object": "2007年6月26日"
+   },
+   {
+    "subject": "Huichuan Global Investments Ltd.",
+    "predicate": "注册编号",
+    "object": "1998143860"
+   },
+   {
+    "subject": "Huichuan Global Investments Ltd.",
+    "predicate": "主体状态",
+    "object": "存续"
+   },
+   {
+    "subject": "Huichuan Global Investments Ltd.",
+    "predicate": "经营范围",
+    "object": "投资管理、投资顾问及相关配套服务"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 245,
+ "output_tokens": 302,
+ "cached_read_tokens": 0,
+ "latency_ms": 3649.7285829973407,
+ "provider": "deepseek"
+}

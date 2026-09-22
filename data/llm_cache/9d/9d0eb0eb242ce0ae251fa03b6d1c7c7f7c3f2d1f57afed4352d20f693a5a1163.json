@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 为「松岚环球投资有限公司」，B 为「Luyan Financial Services Ltd.」，名称与罗马化均不对应，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 为「松岚环球投资有限公司」，B 为「Luyan Financial Services Ltd.」，名称与罗马化均不对应，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 407,
+ "output_tokens": 52,
+ "cached_read_tokens": 256,
+ "latency_ms": 3483.217917033471,
+ "provider": "deepseek"
+}

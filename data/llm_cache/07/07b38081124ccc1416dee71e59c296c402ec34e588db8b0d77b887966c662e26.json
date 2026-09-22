@@ -1,0 +1,226 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"id\": \"fund\", \"name\": \"鹤鸣多空策略基金\", \"type\": \"基金\"},\n    {\"id\": \"manager\", \"name\": \"鹤鸣资管（3）\", \"type\": \"基金管理人\"},\n    {\"id\": \"custodian\", \"name\": \"环宇银行新港城分行\", \"type\": \"基金托管人\"},\n    {\"id\": \"investment_committee\", \"name\": \"投资委员会\", \"type\": \"内部机构\"},\n    {\"id\": \"new_port_city\", \"name\": \"新港城\", \"type\": \"注册地\"},\n    {\"id\": \"qualified_investors\", \"name\": \"合资格投资者\", \"type\": \"投资者\"},\n    {\"id\": \"new_dollar\", \"name\": \"新元\", \"type\": \"货币\"},\n    {\"id\": \"management_fee_1\", \"name\": \"管理费（1.25%年费率）\", \"type\": \"费用\"},\n    {\"id\": \"custodian_fee_1\", \"name\": \"托管费（0.10%年费率）\", \"type\": \"费用\"},\n    {\"id\": \"management_fee_2\", \"name\": \"管理费（2.00%年费率）\", \"type\": \"费用\"},\n    {\"id\": \"custodian_fee_2\", \"name\": \"托管费（0.08%年费率）\", \"type\": \"费用\"}\n  ],\n  \"relations\": [\n    {\"subject\": \"fund\", \"predicate\": \"全称\", \"object\": \"鹤鸣多空策略基金\"},\n    {\"subject\": \"fund\", \"predicate\": \"设立日期\", \"object\": \"2024年8月3日\"},\n    {\"subject\": \"fund\", \"predicate\": \"注册地\", \"object\": \"new_port_city\"},\n    {\"subject\": \"fund\", \"predicate\": \"基准货币\", \"object\": \"new_dollar\"},\n    {\"subject\": \"fund\", \"predicate\": \"存续期限\", \"object\": \"无固定期限\"},\n    {\"subject\": \"fund\", \"predicate\": \"投资策略\", \"object\": \"多空策略\"},\n    {\"subject\": \"fund\", \"predicate\": \"管理方式\", \"object\": \"开放式集合投资计划\"},\n    {\"subject\": \"fund\", \"predicate\": \"管理人\", \"object\": \"manager\"},\n    {\"subject\": \"fund\", \"predicate\": \"托管人\", \"object\": \"custodian\"},\n    {\"subject\": \"fund\", \"predicate\": \"设有\", \"object\": \"investment_committee\"},\n    {\"subject\": \"manager\", \"predicate\": \"职责\", \"object\": \"投资决策、日常运作及信息披露\"},\n    {\"subject\": \"custodian\", \"predicate\": \"职责\", \"object\": \"财产保管、清算交收及对管理人投资运作的监督\"},\n    {\"subject\": \"investment_committee\", \"predicate\": \"组成\", \"object\": \"不少于三名成员\"},\n    {\"subject\": \"investment_committee\", \"predicate\": \"职责\", \"object\": \"审议重大投资决策及关联交易事项\"},\n    {\"subject\": \"investment_committee\", \"predicate\": \"会议频率\", \"object\": \"每月至少召开一次\"},\n    {\"subject\": \"qualified_investors\", \"predicate\": \"最低认购金额\", \"object\": \"100万新元\"},\n    {\"subject\": \"qualified_investors\", \"predicate\": \"追加认购最低金额\", \"object\": \"1万新元\"},\n    {\"subject\": \"qualified_investors\", \"predicate\": \"赎回申请时间\", \"object\": \"每月最后一个工作日\"},\n    {\"subject\": \"fund\", \"predicate\": \"赎回款项支付期限\", \"object\": \"确认后10个工作日内\"},\n    {\"subject\": \"fund\", \"predicate\": \"管理费\", \"object\": \"management_fee_1\"},\n    {\"subject\": \"fund\", \"predicate\": \"托管费\", \"object\": \"custodian_fee_1\"},\n    {\"subject\": \"fund\", \"predicate\": \"管理费\", \"object\": \"management_fee_2\"},\n    {\"subject\": \"fund\", \"predicate\": \"托管费\", \"object\": \"custodian_fee_2\"},\n    {\"subject\": \"management_fee_1\", \"predicate\": \"年费率\", \"object\": \"1.25%\"},\n    {\"subject\": \"custodian_fee_1\", \"predicate\": \"年费率\", \"object\": \"0.10%\"},\n    {\"subject\": \"management_fee_2\", \"predicate\": \"年费率\", \"object\": \"2.00%\"},\n    {\"subject\": \"custodian_fee_2\", \"predicate\": \"年费率\", \"object\": \"0.08%\"},\n    {\"subject\": \"management_fee_1\", \"predicate\": \"计提方式\", \"object\": \"按月计提、按季支付\"},\n    {\"subject\": \"custodian_fee_1\", \"predicate\": \"计提方式\", \"object\": \"按月计提、按季支付\"},\n    {\"subject\": \"management_fee_2\", \"predicate\": \"计提方式\", \"object\": \"按月计提、按季支付\"},\n    {\"subject\": \"custodian_fee_2\", \"predicate\": \"计提方式\", \"object\": \"按月计提、按季支付\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "鹤鸣多空策略基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "鹤鸣资管（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "new_port_city",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "qualified_investors",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "new_dollar",
+    "name": "新元",
+    "type": "货币"
+   },
+   {
+    "id": "management_fee_1",
+    "name": "管理费（1.25%年费率）",
+    "type": "费用"
+   },
+   {
+    "id": "custodian_fee_1",
+    "name": "托管费（0.10%年费率）",
+    "type": "费用"
+   },
+   {
+    "id": "management_fee_2",
+    "name": "管理费（2.00%年费率）",
+    "type": "费用"
+   },
+   {
+    "id": "custodian_fee_2",
+    "name": "托管费（0.08%年费率）",
+    "type": "费用"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "全称",
+    "object": "鹤鸣多空策略基金"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设立日期",
+    "object": "2024年8月3日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "new_port_city"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "new_dollar"
+   },
+   {
+    "subject": "fund",
+    "predicate": "存续期限",
+    "object": "无固定期限"
+   },
+   {
+    "subject": "fund",
+    "predicate": "投资策略",
+    "object": "多空策略"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理方式",
+    "object": "开放式集合投资计划"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人",
+    "object": "custodian"
+   },
+   {
+    "subject": "fund",
+    "predicate": "设有",
+    "object": "investment_committee"
+   },
+   {
+    "subject": "manager",
+    "predicate": "职责",
+    "object": "投资决策、日常运作及信息披露"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "职责",
+    "object": "财产保管、清算交收及对管理人投资运作的监督"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "组成",
+    "object": "不少于三名成员"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "investment_committee",
+    "predicate": "会议频率",
+    "object": "每月至少召开一次"
+   },
+   {
+    "subject": "qualified_investors",
+    "predicate": "最低认购金额",
+    "object": "100万新元"
+   },
+   {
+    "subject": "qualified_investors",
+    "predicate": "追加认购最低金额",
+    "object": "1万新元"
+   },
+   {
+    "subject": "qualified_investors",
+    "predicate": "赎回申请时间",
+    "object": "每月最后一个工作日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "赎回款项支付期限",
+    "object": "确认后10个工作日内"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费",
+    "object": "management_fee_1"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费",
+    "object": "custodian_fee_1"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费",
+    "object": "management_fee_2"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费",
+    "object": "custodian_fee_2"
+   },
+   {
+    "subject": "management_fee_1",
+    "predicate": "年费率",
+    "object": "1.25%"
+   },
+   {
+    "subject": "custodian_fee_1",
+    "predicate": "年费率",
+    "object": "0.10%"
+   },
+   {
+    "subject": "management_fee_2",
+    "predicate": "年费率",
+    "object": "2.00%"
+   },
+   {
+    "subject": "custodian_fee_2",
+    "predicate": "年费率",
+    "object": "0.08%"
+   },
+   {
+    "subject": "management_fee_1",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   },
+   {
+    "subject": "custodian_fee_1",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   },
+   {
+    "subject": "management_fee_2",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   },
+   {
+    "subject": "custodian_fee_2",
+    "predicate": "计提方式",
+    "object": "按月计提、按季支付"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 830,
+ "output_tokens": 1140,
+ "cached_read_tokens": 640,
+ "latency_ms": 5646.671540976968,
+ "provider": "deepseek"
+}

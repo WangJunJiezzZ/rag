@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A 带序号（2）且中文名为「茗谷」，B 为「Qiwu」，名称与序号均不匹配，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A 带序号（2）且中文名为「茗谷」，B 为「Qiwu」，名称与序号均不匹配，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 384,
+ "output_tokens": 51,
+ "cached_read_tokens": 128,
+ "latency_ms": 3278.202917019371,
+ "provider": "deepseek"
+}

@@ -1,0 +1,46 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"翊澜科技成长基金：采用科技成长策略，注册地为新港城，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"新港城\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"翊澜科技成长基金：采用科技成长策略，注册地为新港城，托管人为北岸银行澄江特别行政区分行\", \"subject\": \"翊澜科技成长基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"北岸银行澄江特别行政区分行\", \"object_type\": \"Company\"},\n {\"evidence\": \"翊澜可持续发展基金：采用可持续发展策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"翊澜可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"DOMICILED_IN\", \"object\": \"临海特区\", \"object_type\": \"Jurisdiction\"},\n {\"evidence\": \"翊澜可持续发展基金：采用可持续发展策略，注册地为临海特区，托管人为汇川银行新港城分行\", \"subject\": \"翊澜可持续发展基金\", \"subject_type\": \"Fund\", \"relation\": \"CUSTODIAN\", \"object\": \"汇川银行新港城分行\", \"object_type\": \"Company\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "翊澜科技成长基金：采用科技成长策略，注册地为新港城，托管人为北岸银行澄江特别行政区分行",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "新港城",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "翊澜科技成长基金：采用科技成长策略，注册地为新港城，托管人为北岸银行澄江特别行政区分行",
+    "subject": "翊澜科技成长基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "北岸银行澄江特别行政区分行",
+    "object_type": "Company"
+   },
+   {
+    "evidence": "翊澜可持续发展基金：采用可持续发展策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "翊澜可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "DOMICILED_IN",
+    "object": "临海特区",
+    "object_type": "Jurisdiction"
+   },
+   {
+    "evidence": "翊澜可持续发展基金：采用可持续发展策略，注册地为临海特区，托管人为汇川银行新港城分行",
+    "subject": "翊澜可持续发展基金",
+    "subject_type": "Fund",
+    "relation": "CUSTODIAN",
+    "object": "汇川银行新港城分行",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1252,
+ "output_tokens": 310,
+ "cached_read_tokens": 768,
+ "latency_ms": 4671.510582964402,
+ "provider": "deepseek"
+}

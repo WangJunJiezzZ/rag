@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"两者名称不同（全球宏观 vs 量化对冲），设立日期与注册地均不同，指向不同基金实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "两者名称不同（全球宏观 vs 量化对冲），设立日期与注册地均不同，指向不同基金实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 450,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 2788.217499968596,
+ "provider": "deepseek"
+}

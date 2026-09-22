@@ -1,0 +1,120 @@
+{
+ "text": "{\"entities\":[{\"name\":\"霁川资产管理有限公司\",\"type\":\"机构\",\"aliases\":[\"霁川资管（3）\",\"本公司\",\"管理人\"]},{\"name\":\"霁川全球宏观基金\",\"type\":\"产品\",\"aliases\":[]},{\"name\":\"霁川私募信贷基金\",\"type\":\"产品\",\"aliases\":[]},{\"name\":\"汇川银行新港城分行\",\"type\":\"机构\",\"aliases\":[]},{\"name\":\"昭明银行新港城分行\",\"type\":\"机构\",\"aliases\":[]},{\"name\":\"圣德罗自由区\",\"type\":\"地点\",\"aliases\":[]},{\"name\":\"新港城\",\"type\":\"地点\",\"aliases\":[]},{\"name\":\"全球宏观策略\",\"type\":\"策略\",\"aliases\":[]},{\"name\":\"私募信贷策略\",\"type\":\"策略\",\"aliases\":[]},{\"name\":\"董事会\",\"type\":\"机构\",\"aliases\":[]}],\"relations\":[{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"霁川全球宏观基金\"},{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"管理\",\"object\":\"霁川私募信贷基金\"},{\"subject\":\"霁川全球宏观基金\",\"predicate\":\"采用策略\",\"object\":\"全球宏观策略\"},{\"subject\":\"霁川私募信贷基金\",\"predicate\":\"采用策略\",\"object\":\"私募信贷策略\"},{\"subject\":\"霁川全球宏观基金\",\"predicate\":\"注册地\",\"object\":\"圣德罗自由区\"},{\"subject\":\"霁川私募信贷基金\",\"predicate\":\"注册地\",\"object\":\"新港城\"},{\"subject\":\"霁川全球宏观基金\",\"predicate\":\"托管人\",\"object\":\"汇川银行新港城分行\"},{\"subject\":\"霁川私募信贷基金\",\"predicate\":\"托管人\",\"object\":\"昭明银行新港城分行\"},{\"subject\":\"霁川资产管理有限公司\",\"predicate\":\"建立\",\"object\":\"合规与风险管理职能\"},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"报告对象\",\"object\":\"董事会\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "霁川资产管理有限公司",
+    "type": "机构",
+    "aliases": [
+     "霁川资管（3）",
+     "本公司",
+     "管理人"
+    ]
+   },
+   {
+    "name": "霁川全球宏观基金",
+    "type": "产品",
+    "aliases": []
+   },
+   {
+    "name": "霁川私募信贷基金",
+    "type": "产品",
+    "aliases": []
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "机构",
+    "aliases": []
+   },
+   {
+    "name": "昭明银行新港城分行",
+    "type": "机构",
+    "aliases": []
+   },
+   {
+    "name": "圣德罗自由区",
+    "type": "地点",
+    "aliases": []
+   },
+   {
+    "name": "新港城",
+    "type": "地点",
+    "aliases": []
+   },
+   {
+    "name": "全球宏观策略",
+    "type": "策略",
+    "aliases": []
+   },
+   {
+    "name": "私募信贷策略",
+    "type": "策略",
+    "aliases": []
+   },
+   {
+    "name": "董事会",
+    "type": "机构",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "管理",
+    "object": "霁川全球宏观基金"
+   },
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "管理",
+    "object": "霁川私募信贷基金"
+   },
+   {
+    "subject": "霁川全球宏观基金",
+    "predicate": "采用策略",
+    "object": "全球宏观策略"
+   },
+   {
+    "subject": "霁川私募信贷基金",
+    "predicate": "采用策略",
+    "object": "私募信贷策略"
+   },
+   {
+    "subject": "霁川全球宏观基金",
+    "predicate": "注册地",
+    "object": "圣德罗自由区"
+   },
+   {
+    "subject": "霁川私募信贷基金",
+    "predicate": "注册地",
+    "object": "新港城"
+   },
+   {
+    "subject": "霁川全球宏观基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   },
+   {
+    "subject": "霁川私募信贷基金",
+    "predicate": "托管人",
+    "object": "昭明银行新港城分行"
+   },
+   {
+    "subject": "霁川资产管理有限公司",
+    "predicate": "建立",
+    "object": "合规与风险管理职能"
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "报告对象",
+    "object": "董事会"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 483,
+ "output_tokens": 400,
+ "cached_read_tokens": 256,
+ "latency_ms": 4194.970207987353,
+ "provider": "deepseek"
+}

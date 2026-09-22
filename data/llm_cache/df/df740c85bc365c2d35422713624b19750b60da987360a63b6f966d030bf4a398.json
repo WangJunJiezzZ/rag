@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"注册地：卡兰群岛\", \"subject\": \"岱屿环球投资有限公司（3）\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"卡兰群岛\", \"object_type\": \"Jurisdiction\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "注册地：卡兰群岛",
+    "subject": "岱屿环球投资有限公司（3）",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "卡兰群岛",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1636,
+ "output_tokens": 66,
+ "cached_read_tokens": 1280,
+ "latency_ms": 6346.246416971553,
+ "provider": "deepseek"
+}

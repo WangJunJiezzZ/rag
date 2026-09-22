@@ -1,0 +1,29 @@
+{
+ "text": "{\"entity_relations\":[{\"subject\":\"周书尧\",\"relation\":\"持有\",\"object\":\"柏观环球投资有限公司\"},{\"subject\":\"周书尧\",\"relation\":\"持股比例\",\"object\":\"51%\"},{\"subject\":\"周书尧\",\"relation\":\"登记日期\",\"object\":\"2022年4月8日\"}]}",
+ "parsed": {
+  "entity_relations": [
+   {
+    "subject": "周书尧",
+    "relation": "持有",
+    "object": "柏观环球投资有限公司"
+   },
+   {
+    "subject": "周书尧",
+    "relation": "持股比例",
+    "object": "51%"
+   },
+   {
+    "subject": "周书尧",
+    "relation": "登记日期",
+    "object": "2022年4月8日"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 325,
+ "output_tokens": 64,
+ "cached_read_tokens": 128,
+ "latency_ms": 2940.340249973815,
+ "provider": "deepseek"
+}

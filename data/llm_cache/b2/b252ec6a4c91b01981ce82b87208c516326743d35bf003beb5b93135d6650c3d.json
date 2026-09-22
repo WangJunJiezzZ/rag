@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.97, \"reason\": \"两只基金名称不同（亚洲机会 vs 基础设施收益），设立日期与注册地均不同，指向不同实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.97,
+  "reason": "两只基金名称不同（亚洲机会 vs 基础设施收益），设立日期与注册地均不同，指向不同实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 452,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 2944.511750014499,
+ "provider": "deepseek"
+}

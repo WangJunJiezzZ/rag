@@ -1,0 +1,126 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"砚池亚洲机会基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"砚池资产管理有限公司\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"环宇银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"regplace\",\"name\":\"新港城\",\"type\":\"注册地\"},{\"id\":\"strategy\",\"name\":\"亚洲机会策略\",\"type\":\"投资策略\"},{\"id\":\"currency\",\"name\":\"美元\",\"type\":\"基准货币\"},{\"id\":\"committee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"},{\"id\":\"board\",\"name\":\"董事会\",\"type\":\"内部机构\"}],\"relations\":[{\"head\":\"fund\",\"relation\":\"管理人为\",\"tail\":\"manager\"},{\"head\":\"fund\",\"relation\":\"托管人为\",\"tail\":\"custodian\"},{\"head\":\"fund\",\"relation\":\"注册地为\",\"tail\":\"regplace\"},{\"head\":\"fund\",\"relation\":\"采用策略\",\"tail\":\"strategy\"},{\"head\":\"fund\",\"relation\":\"基准货币为\",\"tail\":\"currency\"},{\"head\":\"fund\",\"relation\":\"设立日期为\",\"tail\":\"2020年6月10日\"},{\"head\":\"fund\",\"relation\":\"最低认购金额为\",\"tail\":\"10万美元\"},{\"head\":\"fund\",\"relation\":\"追加认购最低金额为\",\"tail\":\"10万美元\"},{\"head\":\"fund\",\"relation\":\"业绩报酬计提标准为\",\"tail\":\"超过8%年化门槛收益率部分的20%\"},{\"head\":\"fund\",\"relation\":\"业绩报酬计提标准为\",\"tail\":\"超过5%年化门槛收益率部分的15%\"},{\"head\":\"manager\",\"relation\":\"负责\",\"tail\":\"fund\"},{\"head\":\"custodian\",\"relation\":\"负责\",\"tail\":\"fund\"},{\"head\":\"committee\",\"relation\":\"审批\",\"tail\":\"fund\"},{\"head\":\"manager\",\"relation\":\"向报告\",\"tail\":\"board\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "砚池亚洲机会基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "砚池资产管理有限公司",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "regplace",
+    "name": "新港城",
+    "type": "注册地"
+   },
+   {
+    "id": "strategy",
+    "name": "亚洲机会策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "currency",
+    "name": "美元",
+    "type": "基准货币"
+   },
+   {
+    "id": "committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "head": "fund",
+    "relation": "管理人为",
+    "tail": "manager"
+   },
+   {
+    "head": "fund",
+    "relation": "托管人为",
+    "tail": "custodian"
+   },
+   {
+    "head": "fund",
+    "relation": "注册地为",
+    "tail": "regplace"
+   },
+   {
+    "head": "fund",
+    "relation": "采用策略",
+    "tail": "strategy"
+   },
+   {
+    "head": "fund",
+    "relation": "基准货币为",
+    "tail": "currency"
+   },
+   {
+    "head": "fund",
+    "relation": "设立日期为",
+    "tail": "2020年6月10日"
+   },
+   {
+    "head": "fund",
+    "relation": "最低认购金额为",
+    "tail": "10万美元"
+   },
+   {
+    "head": "fund",
+    "relation": "追加认购最低金额为",
+    "tail": "10万美元"
+   },
+   {
+    "head": "fund",
+    "relation": "业绩报酬计提标准为",
+    "tail": "超过8%年化门槛收益率部分的20%"
+   },
+   {
+    "head": "fund",
+    "relation": "业绩报酬计提标准为",
+    "tail": "超过5%年化门槛收益率部分的15%"
+   },
+   {
+    "head": "manager",
+    "relation": "负责",
+    "tail": "fund"
+   },
+   {
+    "head": "custodian",
+    "relation": "负责",
+    "tail": "fund"
+   },
+   {
+    "head": "committee",
+    "relation": "审批",
+    "tail": "fund"
+   },
+   {
+    "head": "manager",
+    "relation": "向报告",
+    "tail": "board"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 862,
+ "output_tokens": 375,
+ "cached_read_tokens": 640,
+ "latency_ms": 4227.614832983818,
+ "provider": "deepseek"
+}

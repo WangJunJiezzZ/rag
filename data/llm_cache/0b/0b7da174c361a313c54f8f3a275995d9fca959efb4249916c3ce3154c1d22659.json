@@ -1,0 +1,156 @@
+{
+ "text": "{\"entities\":[{\"id\":\"fund\",\"name\":\"瑾樾科技成长基金\",\"type\":\"基金\"},{\"id\":\"manager\",\"name\":\"瑾樾资本（3）\",\"type\":\"基金管理人\"},{\"id\":\"custodian\",\"name\":\"环宇银行新港城分行\",\"type\":\"基金托管人\"},{\"id\":\"jurisdiction\",\"name\":\"澄江特别行政区\",\"type\":\"司法管辖区\"},{\"id\":\"currency\",\"name\":\"新元\",\"type\":\"基准货币\"},{\"id\":\"strategy\",\"name\":\"科技成长策略\",\"type\":\"投资策略\"},{\"id\":\"investor\",\"name\":\"合资格投资者\",\"type\":\"投资者\"},{\"id\":\"investment_committee\",\"name\":\"投资委员会\",\"type\":\"内部机构\"},{\"id\":\"board\",\"name\":\"董事会\",\"type\":\"内部机构\"}],\"relations\":[{\"subject\":\"fund\",\"predicate\":\"设立于\",\"object\":\"2023年11月13日\"},{\"subject\":\"fund\",\"predicate\":\"注册地\",\"object\":\"jurisdiction\"},{\"subject\":\"fund\",\"predicate\":\"基准货币\",\"object\":\"currency\"},{\"subject\":\"fund\",\"predicate\":\"采用策略\",\"object\":\"strategy\"},{\"subject\":\"fund\",\"predicate\":\"管理人为\",\"object\":\"manager\"},{\"subject\":\"fund\",\"predicate\":\"托管人为\",\"object\":\"custodian\"},{\"subject\":\"manager\",\"predicate\":\"负责\",\"object\":\"fund\"},{\"subject\":\"custodian\",\"predicate\":\"负责\",\"object\":\"fund\"},{\"subject\":\"manager\",\"predicate\":\"向报告\",\"object\":\"board\"},{\"subject\":\"fund\",\"predicate\":\"面向发售\",\"object\":\"investor\"},{\"subject\":\"fund\",\"predicate\":\"最低认购金额\",\"object\":\"25万新元\"},{\"subject\":\"fund\",\"predicate\":\"追加认购最低金额\",\"object\":\"1万新元\"},{\"subject\":\"fund\",\"predicate\":\"锁定期\",\"object\":\"24个月\"},{\"subject\":\"fund\",\"predicate\":\"管理费年费率\",\"object\":\"1.50%\"},{\"subject\":\"fund\",\"predicate\":\"托管费年费率\",\"object\":\"0.05%\"},{\"subject\":\"fund\",\"predicate\":\"管理费年费率\",\"object\":\"1.25%\"},{\"subject\":\"fund\",\"predicate\":\"托管费年费率\",\"object\":\"0.12%\"},{\"subject\":\"fund\",\"predicate\":\"非上市股权投资上限\",\"object\":\"15%\"},{\"subject\":\"fund\",\"predicate\":\"非上市股权投资须经审批\",\"object\":\"investment_committee\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "id": "fund",
+    "name": "瑾樾科技成长基金",
+    "type": "基金"
+   },
+   {
+    "id": "manager",
+    "name": "瑾樾资本（3）",
+    "type": "基金管理人"
+   },
+   {
+    "id": "custodian",
+    "name": "环宇银行新港城分行",
+    "type": "基金托管人"
+   },
+   {
+    "id": "jurisdiction",
+    "name": "澄江特别行政区",
+    "type": "司法管辖区"
+   },
+   {
+    "id": "currency",
+    "name": "新元",
+    "type": "基准货币"
+   },
+   {
+    "id": "strategy",
+    "name": "科技成长策略",
+    "type": "投资策略"
+   },
+   {
+    "id": "investor",
+    "name": "合资格投资者",
+    "type": "投资者"
+   },
+   {
+    "id": "investment_committee",
+    "name": "投资委员会",
+    "type": "内部机构"
+   },
+   {
+    "id": "board",
+    "name": "董事会",
+    "type": "内部机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "fund",
+    "predicate": "设立于",
+    "object": "2023年11月13日"
+   },
+   {
+    "subject": "fund",
+    "predicate": "注册地",
+    "object": "jurisdiction"
+   },
+   {
+    "subject": "fund",
+    "predicate": "基准货币",
+    "object": "currency"
+   },
+   {
+    "subject": "fund",
+    "predicate": "采用策略",
+    "object": "strategy"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理人为",
+    "object": "manager"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管人为",
+    "object": "custodian"
+   },
+   {
+    "subject": "manager",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "custodian",
+    "predicate": "负责",
+    "object": "fund"
+   },
+   {
+    "subject": "manager",
+    "predicate": "向报告",
+    "object": "board"
+   },
+   {
+    "subject": "fund",
+    "predicate": "面向发售",
+    "object": "investor"
+   },
+   {
+    "subject": "fund",
+    "predicate": "最低认购金额",
+    "object": "25万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "追加认购最低金额",
+    "object": "1万新元"
+   },
+   {
+    "subject": "fund",
+    "predicate": "锁定期",
+    "object": "24个月"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费年费率",
+    "object": "1.50%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费年费率",
+    "object": "0.05%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "管理费年费率",
+    "object": "1.25%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "托管费年费率",
+    "object": "0.12%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权投资上限",
+    "object": "15%"
+   },
+   {
+    "subject": "fund",
+    "predicate": "非上市股权投资须经审批",
+    "object": "investment_committee"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 987,
+ "output_tokens": 494,
+ "cached_read_tokens": 768,
+ "latency_ms": 4444.568874954712,
+ "provider": "deepseek"
+}

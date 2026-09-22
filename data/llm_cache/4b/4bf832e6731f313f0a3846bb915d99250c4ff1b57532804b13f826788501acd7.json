@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2023 年 10 月 2 日 完成董事会成员增补，新任董事为林景行\", \"subject\": \"林景行\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"柏观金融服务有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2023 年 10 月 2 日 完成董事会成员增补，新任董事为林景行",
+    "subject": "林景行",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "柏观金融服务有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1623,
+ "output_tokens": 79,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3722.214665962383,
+ "provider": "deepseek"
+}

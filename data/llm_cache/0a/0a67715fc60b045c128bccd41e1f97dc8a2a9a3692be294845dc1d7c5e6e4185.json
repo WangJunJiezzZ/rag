@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"松岚资产管理有限公司（3）为栖梧环球之全资附属公司，栖梧环球持有其 100% 股权。\", \"subject\": \"松岚资产管理有限公司\", \"subject_type\": \"Company\", \"relation\": \"SUBSIDIARY_OF\", \"object\": \"栖梧环球\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "松岚资产管理有限公司（3）为栖梧环球之全资附属公司，栖梧环球持有其 100% 股权。",
+    "subject": "松岚资产管理有限公司",
+    "subject_type": "Company",
+    "relation": "SUBSIDIARY_OF",
+    "object": "栖梧环球",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1168,
+ "output_tokens": 82,
+ "cached_read_tokens": 768,
+ "latency_ms": 3306.9193750270642,
+ "provider": "deepseek"
+}

@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"本公司于 2022 年 7 月 7 日 完成董事会成员增补，新任董事为王敬亭\", \"subject\": \"王敬亭\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"漱玉资产管理有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "本公司于 2022 年 7 月 7 日 完成董事会成员增补，新任董事为王敬亭",
+    "subject": "王敬亭",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "漱玉资产管理有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1619,
+ "output_tokens": 78,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3880.0799589953385,
+ "provider": "deepseek"
+}

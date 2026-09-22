@@ -1,0 +1,67 @@
+{
+ "text": "{\"entities\":[{\"name\":\"瑾樾资产管理有限公司\",\"type\":\"公司\"},{\"name\":\"刘知微\",\"type\":\"人物\"},{\"name\":\"董事会\",\"type\":\"组织机构\"},{\"name\":\"投资委员会\",\"type\":\"组织机构\"}],\"relations\":[{\"subject\":\"瑾樾资产管理有限公司\",\"predicate\":\"委任\",\"object\":\"刘知微\"},{\"subject\":\"刘知微\",\"predicate\":\"担任\",\"object\":\"董事\"},{\"subject\":\"刘知微\",\"predicate\":\"任期\",\"object\":\"三年\"},{\"subject\":\"瑾樾资产管理有限公司\",\"predicate\":\"设立\",\"object\":\"投资委员会\"},{\"subject\":\"投资委员会\",\"predicate\":\"成员人数\",\"object\":\"不少于三名\"},{\"subject\":\"投资委员会\",\"predicate\":\"职责\",\"object\":\"审议重大投资决策及关联交易事项\"},{\"subject\":\"投资委员会\",\"predicate\":\"会议频率\",\"object\":\"每月至少召开一次\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "瑾樾资产管理有限公司",
+    "type": "公司"
+   },
+   {
+    "name": "刘知微",
+    "type": "人物"
+   },
+   {
+    "name": "董事会",
+    "type": "组织机构"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织机构"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "瑾樾资产管理有限公司",
+    "predicate": "委任",
+    "object": "刘知微"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "担任",
+    "object": "董事"
+   },
+   {
+    "subject": "刘知微",
+    "predicate": "任期",
+    "object": "三年"
+   },
+   {
+    "subject": "瑾樾资产管理有限公司",
+    "predicate": "设立",
+    "object": "投资委员会"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项"
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少召开一次"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 322,
+ "output_tokens": 181,
+ "cached_read_tokens": 128,
+ "latency_ms": 2868.224125006236,
+ "provider": "deepseek"
+}

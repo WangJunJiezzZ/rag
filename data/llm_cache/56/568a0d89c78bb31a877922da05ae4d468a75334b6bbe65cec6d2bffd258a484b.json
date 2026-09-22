@@ -1,0 +1,84 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"name\": \"青柏资本管理有限公司（2）\", \"type\": \"公司\"},\n    {\"name\": \"青柏房地产收益基金\", \"type\": \"基金\"},\n    {\"name\": \"青柏多空策略基金\", \"type\": \"基金\"},\n    {\"name\": \"澄江特别行政区\", \"type\": \"地区\"},\n    {\"name\": \"临海特区\", \"type\": \"地区\"},\n    {\"name\": \"北岸银行澄江特别行政区分行\", \"type\": \"银行\"},\n    {\"name\": \"汇川银行新港城分行\", \"type\": \"银行\"}\n  ],\n  \"relations\": [\n    {\"subject\": \"青柏资本管理有限公司（2）\", \"predicate\": \"管理\", \"object\": \"青柏房地产收益基金\"},\n    {\"subject\": \"青柏资本管理有限公司（2）\", \"predicate\": \"管理\", \"object\": \"青柏多空策略基金\"},\n    {\"subject\": \"青柏房地产收益基金\", \"predicate\": \"采用策略\", \"object\": \"房地产收益策略\"},\n    {\"subject\": \"青柏房地产收益基金\", \"predicate\": \"注册地\", \"object\": \"澄江特别行政区\"},\n    {\"subject\": \"青柏房地产收益基金\", \"predicate\": \"托管人\", \"object\": \"北岸银行澄江特别行政区分行\"},\n    {\"subject\": \"青柏多空策略基金\", \"predicate\": \"采用策略\", \"object\": \"多空策略\"},\n    {\"subject\": \"青柏多空策略基金\", \"predicate\": \"注册地\", \"object\": \"临海特区\"},\n    {\"subject\": \"青柏多空策略基金\", \"predicate\": \"托管人\", \"object\": \"汇川银行新港城分行\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "青柏资本管理有限公司（2）",
+    "type": "公司"
+   },
+   {
+    "name": "青柏房地产收益基金",
+    "type": "基金"
+   },
+   {
+    "name": "青柏多空策略基金",
+    "type": "基金"
+   },
+   {
+    "name": "澄江特别行政区",
+    "type": "地区"
+   },
+   {
+    "name": "临海特区",
+    "type": "地区"
+   },
+   {
+    "name": "北岸银行澄江特别行政区分行",
+    "type": "银行"
+   },
+   {
+    "name": "汇川银行新港城分行",
+    "type": "银行"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "青柏资本管理有限公司（2）",
+    "predicate": "管理",
+    "object": "青柏房地产收益基金"
+   },
+   {
+    "subject": "青柏资本管理有限公司（2）",
+    "predicate": "管理",
+    "object": "青柏多空策略基金"
+   },
+   {
+    "subject": "青柏房地产收益基金",
+    "predicate": "采用策略",
+    "object": "房地产收益策略"
+   },
+   {
+    "subject": "青柏房地产收益基金",
+    "predicate": "注册地",
+    "object": "澄江特别行政区"
+   },
+   {
+    "subject": "青柏房地产收益基金",
+    "predicate": "托管人",
+    "object": "北岸银行澄江特别行政区分行"
+   },
+   {
+    "subject": "青柏多空策略基金",
+    "predicate": "采用策略",
+    "object": "多空策略"
+   },
+   {
+    "subject": "青柏多空策略基金",
+    "predicate": "注册地",
+    "object": "临海特区"
+   },
+   {
+    "subject": "青柏多空策略基金",
+    "predicate": "托管人",
+    "object": "汇川银行新港城分行"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 404,
+ "output_tokens": 381,
+ "cached_read_tokens": 256,
+ "latency_ms": 3407.6295829727314,
+ "provider": "deepseek"
+}

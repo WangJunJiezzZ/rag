@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"自 2024 年 10 月 8 日 起，委任邱书尧为本公司董事\", \"subject\": \"邱书尧\", \"subject_type\": \"Person\", \"relation\": \"DIRECTOR_OF\", \"object\": \"栖梧国际控股有限公司\", \"object_type\": \"Company\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "自 2024 年 10 月 8 日 起，委任邱书尧为本公司董事",
+    "subject": "邱书尧",
+    "subject_type": "Person",
+    "relation": "DIRECTOR_OF",
+    "object": "栖梧国际控股有限公司",
+    "object_type": "Company"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1631,
+ "output_tokens": 77,
+ "cached_read_tokens": 1280,
+ "latency_ms": 6290.538624976762,
+ "provider": "deepseek"
+}

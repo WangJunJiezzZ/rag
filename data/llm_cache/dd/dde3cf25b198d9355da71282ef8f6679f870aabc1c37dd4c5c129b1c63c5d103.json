@@ -1,0 +1,92 @@
+{
+ "text": "{\"entities\":[{\"name\":\"栖梧资本管理有限公司\",\"type\":\"公司\",\"aliases\":[\"Qiwu Capital Management Ltd.\"]},{\"name\":\"朱思齐\",\"type\":\"人物\",\"aliases\":[]},{\"name\":\"股东大会\",\"type\":\"会议\",\"aliases\":[]},{\"name\":\"董事会\",\"type\":\"组织\",\"aliases\":[]},{\"name\":\"注册机关\",\"type\":\"机构\",\"aliases\":[]}],\"relations\":[{\"subject\":\"朱思齐\",\"predicate\":\"当选为\",\"object\":\"栖梧资本管理有限公司\",\"qualifiers\":{\"职位\":\"董事\",\"生效日期\":\"2025年12月6日\"}},{\"subject\":\"股东大会\",\"predicate\":\"审议通过\",\"object\":\"朱思齐当选为本公司董事\",\"qualifiers\":{\"日期\":\"2025年12月6日\"}},{\"subject\":\"栖梧资本管理有限公司\",\"predicate\":\"向注册机关备案\",\"object\":\"董事变更\",\"qualifiers\":{}},{\"subject\":\"朱思齐\",\"predicate\":\"从事\",\"object\":\"结构化产品与另类投资的设计与分销工作\",\"qualifiers\":{}},{\"subject\":\"朱思齐\",\"predicate\":\"管理规模逾\",\"object\":\"175亿单位货币\",\"qualifiers\":{}},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"直接向报告\",\"object\":\"董事会\",\"qualifiers\":{}},{\"subject\":\"合规与风险管理职能\",\"predicate\":\"监控\",\"object\":\"投资限制的遵守情况\",\"qualifiers\":{\"频率\":\"定期\"}}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "栖梧资本管理有限公司",
+    "type": "公司",
+    "aliases": [
+     "Qiwu Capital Management Ltd."
+    ]
+   },
+   {
+    "name": "朱思齐",
+    "type": "人物",
+    "aliases": []
+   },
+   {
+    "name": "股东大会",
+    "type": "会议",
+    "aliases": []
+   },
+   {
+    "name": "董事会",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "注册机关",
+    "type": "机构",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "朱思齐",
+    "predicate": "当选为",
+    "object": "栖梧资本管理有限公司",
+    "qualifiers": {
+     "职位": "董事",
+     "生效日期": "2025年12月6日"
+    }
+   },
+   {
+    "subject": "股东大会",
+    "predicate": "审议通过",
+    "object": "朱思齐当选为本公司董事",
+    "qualifiers": {
+     "日期": "2025年12月6日"
+    }
+   },
+   {
+    "subject": "栖梧资本管理有限公司",
+    "predicate": "向注册机关备案",
+    "object": "董事变更",
+    "qualifiers": {}
+   },
+   {
+    "subject": "朱思齐",
+    "predicate": "从事",
+    "object": "结构化产品与另类投资的设计与分销工作",
+    "qualifiers": {}
+   },
+   {
+    "subject": "朱思齐",
+    "predicate": "管理规模逾",
+    "object": "175亿单位货币",
+    "qualifiers": {}
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "直接向报告",
+    "object": "董事会",
+    "qualifiers": {}
+   },
+   {
+    "subject": "合规与风险管理职能",
+    "predicate": "监控",
+    "object": "投资限制的遵守情况",
+    "qualifiers": {
+     "频率": "定期"
+    }
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 389,
+ "output_tokens": 299,
+ "cached_read_tokens": 128,
+ "latency_ms": 3431.232791976072,
+ "provider": "deepseek"
+}

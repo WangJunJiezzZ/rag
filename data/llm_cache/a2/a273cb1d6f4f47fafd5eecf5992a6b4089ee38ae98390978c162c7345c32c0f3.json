@@ -1,0 +1,84 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"Yanchi Global Investments Ltd.\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"翊澜资本（2）\",\n      \"type\": \"公司\"\n    },\n    {\n      \"name\": \"本集团\",\n      \"type\": \"公司集团\"\n    },\n    {\n      \"name\": \"本基金\",\n      \"type\": \"基金\"\n    },\n    {\n      \"name\": \"投资委员会\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"Yanchi Global Investments Ltd.\",\n      \"predicate\": \"持有\",\n      \"object\": \"翊澜资本（2）\",\n      \"attributes\": {\n        \"持股比例\": \"100%\"\n      }\n    },\n    {\n      \"subject\": \"翊澜资本（2）\",\n      \"predicate\": \"是附属公司\",\n      \"object\": \"Yanchi Global Investments Ltd.\",\n      \"attributes\": {\n        \"附属类型\": \"全资附属公司\"\n      }\n    },\n    {\n      \"subject\": \"翊澜资本（2）\",\n      \"predicate\": \"纳入合并范围\",\n      \"object\": \"本集团\",\n      \"attributes\": {\n        \"合并范围\": \"合并财务报表范围\"\n      }\n    },\n    {\n      \"subject\": \"本基金\",\n      \"predicate\": \"设有\",\n      \"object\": \"投资委员会\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"成员人数\",\n      \"object\": \"不少于三名成员\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"职责\",\n      \"object\": \"审议重大投资决策及关联交易事项\",\n      \"attributes\": {}\n    },\n    {\n      \"subject\": \"投资委员会\",\n      \"predicate\": \"会议频率\",\n      \"object\": \"每月至少召开一次会议\",\n      \"attributes\": {}\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "Yanchi Global Investments Ltd.",
+    "type": "公司"
+   },
+   {
+    "name": "翊澜资本（2）",
+    "type": "公司"
+   },
+   {
+    "name": "本集团",
+    "type": "公司集团"
+   },
+   {
+    "name": "本基金",
+    "type": "基金"
+   },
+   {
+    "name": "投资委员会",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "Yanchi Global Investments Ltd.",
+    "predicate": "持有",
+    "object": "翊澜资本（2）",
+    "attributes": {
+     "持股比例": "100%"
+    }
+   },
+   {
+    "subject": "翊澜资本（2）",
+    "predicate": "是附属公司",
+    "object": "Yanchi Global Investments Ltd.",
+    "attributes": {
+     "附属类型": "全资附属公司"
+    }
+   },
+   {
+    "subject": "翊澜资本（2）",
+    "predicate": "纳入合并范围",
+    "object": "本集团",
+    "attributes": {
+     "合并范围": "合并财务报表范围"
+    }
+   },
+   {
+    "subject": "本基金",
+    "predicate": "设有",
+    "object": "投资委员会",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "成员人数",
+    "object": "不少于三名成员",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "职责",
+    "object": "审议重大投资决策及关联交易事项",
+    "attributes": {}
+   },
+   {
+    "subject": "投资委员会",
+    "predicate": "会议频率",
+    "object": "每月至少召开一次会议",
+    "attributes": {}
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 229,
+ "output_tokens": 423,
+ "cached_read_tokens": 0,
+ "latency_ms": 4543.373875028919,
+ "provider": "deepseek"
+}

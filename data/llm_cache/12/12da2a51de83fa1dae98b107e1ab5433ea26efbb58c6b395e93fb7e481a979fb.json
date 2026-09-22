@@ -1,0 +1,15 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"A为中文名带序号(2)的茗谷环球投资有限公司，B为Xiuyun Asset Management Pte. Ltd.，名称主体与语言均不同，无证据指向同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "A为中文名带序号(2)的茗谷环球投资有限公司，B为Xiuyun Asset Management Pte. Ltd.，名称主体与语言均不同，无证据指向同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 390,
+ "output_tokens": 60,
+ "cached_read_tokens": 256,
+ "latency_ms": 3106.2291659764014,
+ "provider": "deepseek"
+}

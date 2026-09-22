@@ -1,0 +1,22 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"实体名称：洄川国际控股有限公司\", \"subject\": \"洄川国际控股有限公司\", \"subject_type\": \"Company\", \"relation\": \"REGISTERED_IN\", \"object\": \"白鹭湾\", \"object_type\": \"Jurisdiction\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "实体名称：洄川国际控股有限公司",
+    "subject": "洄川国际控股有限公司",
+    "subject_type": "Company",
+    "relation": "REGISTERED_IN",
+    "object": "白鹭湾",
+    "object_type": "Jurisdiction"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1635,
+ "output_tokens": 67,
+ "cached_read_tokens": 1280,
+ "latency_ms": 3048.950041993521,
+ "provider": "deepseek"
+}
