@@ -12,20 +12,20 @@
     "dropped_dup": 7,
     "parse_retries": 0,
     "parse_failed": 0,
-    "cost_usd": 0.20483190000000023,
+    "cost_usd": 0.0,
     "reasons": {}
   },
   "resolve_stats": {
     "mentions": 275,
-    "canonical": 250,
-    "merged_by_rule": 20,
+    "canonical": 205,
+    "merged_by_rule": 66,
     "merged_by_vector": 4,
-    "merged_by_llm": 1,
-    "llm_calls": 228,
-    "llm_rejected": 227,
+    "merged_by_llm": 0,
+    "llm_calls": 82,
+    "llm_rejected": 82,
     "blocked_by_lexical": 446,
     "gray_unresolved": 0,
-    "cost_usd": 0.030127799999999993,
+    "cost_usd": 0.0,
     "examples": [
       "[词面-强] 凛川资产管理有限公司 == 凛川资管",
       "[词面-强] 北岸银行 == 北岸银行澄江特别行政区分行",
@@ -41,37 +41,30 @@
       "[词面-强] 砺石资本 == 砺石资本管理有限公司"
     ]
   },
-  "precision": 0.8802992518703242,
-  "recall": 0.7354166666666667,
-  "f1": 0.8013620885357549,
+  "precision": 0.7369614512471655,
+  "recall": 0.6770833333333334,
+  "f1": 0.7057546145494028,
   "by_relation": {
     "REGISTERED_IN": {
       "gold": 85,
-      "ext": 86,
-      "ok": 85,
-      "precision": 0.9883720930232558,
-      "recall": 1.0
+      "ext": 85,
+      "ok": 77,
+      "precision": 0.9058823529411765,
+      "recall": 0.9058823529411765
     },
-    "DOMICILED_IN": {
+    "CUSTODIAN": {
       "gold": 40,
       "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
+      "ok": 27,
+      "precision": 0.675,
+      "recall": 0.675
     },
     "DIRECTOR_OF": {
       "gold": 127,
-      "ext": 76,
-      "ok": 43,
-      "precision": 0.5657894736842105,
-      "recall": 0.33858267716535434
-    },
-    "RISK_LEVEL": {
-      "gold": 12,
-      "ext": 12,
-      "ok": 12,
-      "precision": 1.0,
-      "recall": 1.0
+      "ext": 102,
+      "ok": 44,
+      "precision": 0.43137254901960786,
+      "recall": 0.3464566929133858
     },
     "MIN_INVESTMENT": {
       "gold": 40,
@@ -80,20 +73,6 @@
       "precision": 1.0,
       "recall": 1.0
     },
-    "SUBSIDIARY_OF": {
-      "gold": 16,
-      "ext": 15,
-      "ok": 13,
-      "precision": 0.8666666666666667,
-      "recall": 0.8125
-    },
-    "SHAREHOLDER_OF": {
-      "gold": 40,
-      "ext": 22,
-      "ok": 18,
-      "precision": 0.8181818181818182,
-      "recall": 0.45
-    },
     "LAUNCHED_ON": {
       "gold": 40,
       "ext": 38,
@@ -101,20 +80,41 @@
       "precision": 1.0,
       "recall": 0.95
     },
+    "RISK_LEVEL": {
+      "gold": 12,
+      "ext": 12,
+      "ok": 12,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SHAREHOLDER_OF": {
+      "gold": 40,
+      "ext": 35,
+      "ok": 15,
+      "precision": 0.42857142857142855,
+      "recall": 0.375
+    },
     "MANAGED_BY": {
       "gold": 40,
-      "ext": 32,
-      "ok": 24,
-      "precision": 0.75,
-      "recall": 0.6
+      "ext": 33,
+      "ok": 25,
+      "precision": 0.7575757575757576,
+      "recall": 0.625
     },
-    "CUSTODIAN": {
+    "DOMICILED_IN": {
       "gold": 40,
       "ext": 40,
       "ok": 40,
       "precision": 1.0,
       "recall": 1.0
+    },
+    "SUBSIDIARY_OF": {
+      "gold": 16,
+      "ext": 16,
+      "ok": 7,
+      "precision": 0.4375,
+      "recall": 0.4375
     }
   },
-  "unmapped_entities": 29
+  "unmapped_entities": 10
 }

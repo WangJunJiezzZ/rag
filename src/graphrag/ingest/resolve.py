@@ -31,12 +31,24 @@
   · 都英文:         向量不可信, 改用 token Jaccard
   · 跨文种:         没有任何廉价信号 -> 用"共享邻居"做分块, 再交 LLM 裁决
 
-跨文种分块(blocking)
---------------------
-"岱屿金融服务有限公司"和"Daiyu Financial Services Ltd."在字面和向量上都无关联。
-全量两两送 LLM 是 O(n²)。所以先用**结构信号**分块: 只有当两个名称
-共享至少一个邻居(例如注册在同一辖区)时才成为候选。
-这把候选对从上千降到几十, 再交 LLM。这是实体消歧里的标准做法。
+跨文种: 先用拼音, 不要一上来就找 LLM
+-------------------------------------
+首版用"共享邻居"分块 + LLM 裁决, 实测结果很难看:
+    LLM 调用 228 次 -> 只合并 1 对; 24 个实体仍被拆成中文名 + 罗马化名两个节点。
+看模型的回复才发现问题不在模型:
+    {"same": false, "reason": "中文名「柏观」与罗马化名「Jinyue」不对应"}
+    —— 它判断是对的, 是**分块根本没把正确的对配出来**。
+共享辖区这种信号太弱, 生成的几乎全是错误候选。
+
+缺的信号其实非常显然: **拼音**。
+    岱屿 -> daiyu, 而 "Daiyu Financial Services Ltd." 的首 token 就是 daiyu。
+pypinyin 是纯 Python、3.5MB、完全离线的确定性库, 一次转换就能得到强证据。
+
+教训: **有确定性方法可用时, 不要让 LLM 去做它。**
+228 次 LLM 调用 + 几乎全错的候选, 被一个离线库替代了 ——
+这不是模型不行, 是把模型用在了不该用的地方。
+
+pypinyin 未安装时自动退回"共享邻居 + LLM"路径, 不阻断运行。
 
 自然人的特殊规则
 ----------------
@@ -65,6 +77,7 @@ class ResolveStats:
     llm_calls: int = 0
     llm_rejected: int = 0
     blocked_by_lexical: int = 0   # 向量说像但词面一票否决 —— 避免的错合并
+    blocked_transitive: int = 0   # 被 cannot-link 拦下的传递性错合并
     gray_unresolved: int = 0      # 灰区但无 LLM 可用 -> 留作未合并
     cost_usd: float = 0.0
     examples: list[str] = field(default_factory=list)
@@ -73,30 +86,66 @@ class ResolveStats:
         return (f"提及 {self.mentions} 个名称 -> 归并为 {self.canonical} 个实体\n"
                 f"  规则/词面合并 {self.merged_by_rule} | 向量合并 {self.merged_by_vector} | "
                 f"LLM 裁决合并 {self.merged_by_llm}\n"
-                f"  词面一票否决 {self.blocked_by_lexical} 对 (向量说像但词面不通 -> 避免的错合并)\n"
+                f"  词面一票否决 {self.blocked_by_lexical} 对 | "
+                f"cannot-link 拦下传递性错合并 {self.blocked_transitive} 次\n"
                 f"  LLM 调用 {self.llm_calls} 次 (驳回 {self.llm_rejected}), "
                 f"灰区未解决 {self.gray_unresolved}, 花费 ≈ ${self.cost_usd:.3f}")
 
 
 class UnionFind:
+    """带 cannot-link 约束的并查集。
+
+    为什么需要约束: 合并是**传递**的。a≡b 且 b≡c 就会得到 a≡c,
+    哪怕 a 与 c 明确不同。实测踩过这个坑 ——
+        岱屿资本管理 ≡ Daiyu Capital       (对)
+        岱屿金融服务 ≡ Daiyu Capital       (错, 但品牌拼音相同)
+        => 两家不同公司被传递性地并成一个节点, 连带 3 个标准实体混作一团。
+
+    修法是约束聚类里的标准做法(cannot-link): 合并前检查两个簇的成员之间
+    是否存在已知的"明确不同"关系, 有就拒绝合并。
+    单点的判断可能出错, 但簇级的一票否决能把错误控制住。
+    """
+
     def __init__(self):
         self.parent: dict[str, str] = {}
+        self.members: dict[str, set[str]] = {}
+        self.cannot: set[tuple[str, str]] = set()
+        self.blocked_transitive = 0
 
     def find(self, x: str) -> str:
         self.parent.setdefault(x, x)
+        self.members.setdefault(x, {x})
         while self.parent[x] != x:
             self.parent[x] = self.parent[self.parent[x]]
             x = self.parent[x]
         return x
 
+    def forbid(self, a: str, b: str) -> None:
+        self.cannot.add((a, b) if a < b else (b, a))
+
+    def _conflicts(self, ra: str, rb: str) -> bool:
+        ma, mb = self.members.get(ra, {ra}), self.members.get(rb, {rb})
+        # 簇小的那边遍历, 控制开销
+        if len(ma) > len(mb):
+            ma, mb = mb, ma
+        for x in ma:
+            for y in mb:
+                if ((x, y) if x < y else (y, x)) in self.cannot:
+                    return True
+        return False
+
     def union(self, a: str, b: str) -> bool:
         ra, rb = self.find(a), self.find(b)
         if ra == rb:
+            return False
+        if self._conflicts(ra, rb):
+            self.blocked_transitive += 1
             return False
         # 名字长的做代表 —— 全称比简称信息量大
         if len(rb) > len(ra):
             ra, rb = rb, ra
         self.parent[rb] = ra
+        self.members.setdefault(ra, {ra}).update(self.members.pop(rb, {rb}))
         return True
 
 
@@ -151,10 +200,12 @@ class EntityResolver:
                     a, b = cjk[i], cjk[j]
                     if uf.find(a) == uf.find(b):
                         continue
-                    if lexical_verdict(a, b) == "strong":
-                        if uf.union(a, b):
-                            st.merged_by_rule += 1
-                            self._note(f"[词面-强] {a} == {b}")
+                    v0 = lexical_verdict(a, b)
+                    if v0 == "incompatible":
+                        uf.forbid(a, b)
+                    elif v0 == "strong" and uf.union(a, b):
+                        st.merged_by_rule += 1
+                        self._note(f"[词面-强] {a} == {b}")
 
             # ---- 第 2 级 b: 词面说不清的, 才动用向量 / LLM ----
             if self.embedder is not None and len(cjk) >= 2:
@@ -164,6 +215,7 @@ class EntityResolver:
                     v = lexical_verdict(a, b)
                     if v == "incompatible":
                         st.blocked_by_lexical += 1   # 向量说像, 词面一票否决
+                        uf.forbid(a, b)
                         continue
                     if v == "strong" or sim >= self.high:
                         if uf.union(a, b):
@@ -184,20 +236,27 @@ class EntityResolver:
                             st.merged_by_rule += 1
                             self._note(f"[词面] {a} == {b}")
 
-            # ---- 第 3 级: 跨文种 —— 共享邻居分块 + LLM 裁决 ----
+            # ---- 第 3 级: 跨文种 ----
+            # 先用拼音拿强证据(免费、离线、确定性), 拿不到再退回共享邻居 + LLM。
             for a in cjk:
-                na = neighbors.get(a, set())
-                if not na:
-                    continue
                 for b in ascii_:
                     if uf.find(a) == uf.find(b):
                         continue
-                    if not (na & neighbors.get(b, set())):
-                        continue          # 无共享邻居 -> 不成为候选, 省掉 LLM 调用
-                    self._maybe_llm(uf, a, b, contexts, sim=0.0, cross=True)
+                    v = lexical_verdict(a, b)
+                    if v == "incompatible":
+                        uf.forbid(a, b)
+                    elif v == "strong":
+                        if uf.union(a, b):
+                            st.merged_by_rule += 1
+                            self._note(f"[拼音] {a} == {b}")
+                    elif v == "weak":
+                        na = neighbors.get(a, set())
+                        if na and (na & neighbors.get(b, set())):
+                            self._maybe_llm(uf, a, b, contexts, sim=0.0, cross=True)
 
         mapping = {n: uf.find(n) for n in mentions}
         st.canonical = len(set(mapping.values()))
+        st.blocked_transitive = uf.blocked_transitive
         return mapping
 
     def _note(self, msg: str) -> None:
@@ -266,6 +325,52 @@ class EntityResolver:
 
 _CJK_RANGE = ("\u4e00", "\u9fff")
 
+try:                                    # 可选依赖, 缺了就降级
+    from pypinyin import Style, lazy_pinyin
+
+    def _romanize(text: str, n_chars: int = 3) -> str:
+        """取中文名的品牌部分(前 n 个汉字)转拼音, 用于跨文种比对。
+
+        只转品牌: "岱屿金融服务有限公司" 整体转出来是
+        daiyujinrongfuwuyouxiangongsi, 而英文名是 "Daiyu Financial Services Ltd."
+        —— 只有品牌部分是音译的, 后缀是意译的, 整体比对必然对不上。
+        """
+        cjk = "".join(c for c in text if _CJK_RANGE[0] <= c <= _CJK_RANGE[1])
+        if not cjk:
+            return ""
+        return "".join(lazy_pinyin(cjk[:n_chars], style=Style.NORMAL)).lower()
+
+    HAS_PINYIN = True
+
+# 中英文公司类型后缀对照。
+# 品牌部分是**音译**(岱屿->Daiyu), 后缀部分是**意译**(资本管理->Capital Management),
+# 所以只比拼音会把"岱屿资本管理"和"岱屿金融服务"判成同一家 —— 实测正是这样炸的。
+# 这张表是跨语言实体匹配的标准配置(双语术语表), 不是 ground truth,
+# 生产系统里由业务方维护, 或改用多语言 embedding 模型。
+_SUFFIX_MAP: list[tuple[str, tuple[str, ...]]] = [
+    ("资产管理", ("asset", "assets")),
+    ("资本管理", ("capital",)),
+    ("投资控股", ("investment", "investments")),
+    ("国际控股", ("international",)),
+    ("环球投资", ("global",)),
+    ("金融服务", ("financial", "finance")),
+    ("信托",     ("trust",)),
+    ("银行",     ("bank",)),
+]
+
+
+def _suffix_tokens(cjk_name: str) -> tuple[str, ...] | None:
+    """中文名 -> 期望出现在英文名里的关键词。认不出返回 None(不作判据)。"""
+    for zh, en in _SUFFIX_MAP:
+        if zh in cjk_name:
+            return en
+    return None
+except ImportError:                     # pragma: no cover
+    def _romanize(text: str, n_chars: int = 3) -> str:
+        return ""
+
+    HAS_PINYIN = False
+
 
 def _script(s: str) -> str:
     has_cjk = any(_CJK_RANGE[0] <= c <= _CJK_RANGE[1] for c in s)
@@ -328,8 +433,27 @@ def lexical_verdict(a: str, b: str) -> str:
         short, long_ = (na, nb) if len(na) <= len(nb) else (nb, na)
         if len(short) >= 3 and _is_subsequence(short, long_):
             return "strong"               # 中文缩写: 资产管理 -> 资管
-    # 到这里说明不是明确的缩写关系。品牌前缀不同 -> 否决; 相同 -> 交给向量/LLM
-    if _script(a) == "cjk" == _script(b):
+    # ---- 跨文种: 拼音比对 ----
+    sa, sb = _script(a), _script(b)
+    if {sa, sb} == {"cjk", "ascii"}:
+        cjk, ascii_ = (a, b) if sa == "cjk" else (b, a)
+        roman = _romanize(cjk)
+        first = ascii_.lower().replace(".", " ").split()
+        if roman and first:
+            head = first[0]
+            brand_ok = roman.startswith(head) or head.startswith(_romanize(cjk, 2))
+            if brand_ok:
+                # 品牌对上还不够: 同品牌下有"资本管理/金融服务/环球投资"等多家主体,
+                # 只比品牌会把它们全并成一坨(Union-Find 还会传递性扩散)。
+                want = _suffix_tokens(cjk)
+                if want is None:
+                    return "weak"          # 认不出后缀 -> 不下强判断
+                rest = set(first[1:])
+                return "strong" if rest & set(want) else "incompatible"
+        return "incompatible" if HAS_PINYIN else "weak"
+
+    # 同文种: 品牌前缀不同 -> 否决; 相同 -> 交给向量/LLM
+    if sa == "cjk" == sb:
         return "weak" if same_brand else "incompatible"
     ta, tb = a.lower().split(), b.lower().split()
     if ta and tb and ta[0] == tb[0]:
