@@ -17,13 +17,14 @@
   },
   "resolve_stats": {
     "mentions": 275,
-    "canonical": 205,
-    "merged_by_rule": 66,
+    "canonical": 227,
+    "merged_by_rule": 44,
     "merged_by_vector": 4,
     "merged_by_llm": 0,
     "llm_calls": 82,
     "llm_rejected": 82,
     "blocked_by_lexical": 446,
+    "blocked_transitive": 1,
     "gray_unresolved": 0,
     "cost_usd": 0.0,
     "examples": [
@@ -41,35 +42,35 @@
       "[词面-强] 砺石资本 == 砺石资本管理有限公司"
     ]
   },
-  "precision": 0.7369614512471655,
-  "recall": 0.6770833333333334,
-  "f1": 0.7057546145494028,
+  "precision": 0.8795180722891566,
+  "recall": 0.7604166666666666,
+  "f1": 0.8156424581005586,
   "by_relation": {
+    "MANAGED_BY": {
+      "gold": 40,
+      "ext": 33,
+      "ok": 25,
+      "precision": 0.7575757575757576,
+      "recall": 0.625
+    },
     "REGISTERED_IN": {
       "gold": 85,
-      "ext": 85,
-      "ok": 77,
-      "precision": 0.9058823529411765,
-      "recall": 0.9058823529411765
-    },
-    "CUSTODIAN": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 27,
-      "precision": 0.675,
-      "recall": 0.675
+      "ext": 86,
+      "ok": 84,
+      "precision": 0.9767441860465116,
+      "recall": 0.9882352941176471
     },
     "DIRECTOR_OF": {
       "gold": 127,
-      "ext": 102,
-      "ok": 44,
-      "precision": 0.43137254901960786,
-      "recall": 0.3464566929133858
+      "ext": 87,
+      "ok": 53,
+      "precision": 0.6091954022988506,
+      "recall": 0.41732283464566927
     },
-    "MIN_INVESTMENT": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
+    "RISK_LEVEL": {
+      "gold": 12,
+      "ext": 12,
+      "ok": 12,
       "precision": 1.0,
       "recall": 1.0
     },
@@ -80,26 +81,12 @@
       "precision": 1.0,
       "recall": 0.95
     },
-    "RISK_LEVEL": {
-      "gold": 12,
-      "ext": 12,
-      "ok": 12,
+    "MIN_INVESTMENT": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
       "precision": 1.0,
       "recall": 1.0
-    },
-    "SHAREHOLDER_OF": {
-      "gold": 40,
-      "ext": 35,
-      "ok": 15,
-      "precision": 0.42857142857142855,
-      "recall": 0.375
-    },
-    "MANAGED_BY": {
-      "gold": 40,
-      "ext": 33,
-      "ok": 25,
-      "precision": 0.7575757575757576,
-      "recall": 0.625
     },
     "DOMICILED_IN": {
       "gold": 40,
@@ -110,11 +97,25 @@
     },
     "SUBSIDIARY_OF": {
       "gold": 16,
-      "ext": 16,
-      "ok": 7,
-      "precision": 0.4375,
-      "recall": 0.4375
+      "ext": 15,
+      "ok": 13,
+      "precision": 0.8666666666666667,
+      "recall": 0.8125
+    },
+    "CUSTODIAN": {
+      "gold": 40,
+      "ext": 40,
+      "ok": 40,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SHAREHOLDER_OF": {
+      "gold": 40,
+      "ext": 24,
+      "ok": 20,
+      "precision": 0.8333333333333334,
+      "recall": 0.5
     }
   },
-  "unmapped_entities": 10
+  "unmapped_entities": 22
 }
