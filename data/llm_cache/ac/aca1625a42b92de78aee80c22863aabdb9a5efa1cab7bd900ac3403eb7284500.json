@@ -1,0 +1,11 @@
+{
+ "text": "星海并购套利基金的最低认购金额为 10 万美元，低于该金额的申购指令将不予受理；后续追加认购的最低金额为 5 万美元。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1171,
+ "output_tokens": 38,
+ "cached_read_tokens": 768,
+ "latency_ms": 4146.80954098003,
+ "provider": "deepseek"
+}

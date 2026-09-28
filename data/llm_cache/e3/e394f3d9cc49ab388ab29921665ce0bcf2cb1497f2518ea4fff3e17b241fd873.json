@@ -1,0 +1,11 @@
+{
+ "text": "霁川基础设施收益基金的托管人是**昭明银行新港城分行**，负责本基金财产的保管、清算交收及对管理人投资运作的监督。[3]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1126,
+ "output_tokens": 36,
+ "cached_read_tokens": 768,
+ "latency_ms": 3919.172207999509,
+ "provider": "deepseek"
+}

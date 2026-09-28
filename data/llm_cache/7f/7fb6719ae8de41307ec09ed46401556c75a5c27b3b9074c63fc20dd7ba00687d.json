@@ -1,0 +1,11 @@
+{
+ "text": "资料中未提及青柏房地产收益基金的基金管理人（青柏资本管理有限公司（2））的注册管辖区。\n\n资料能确认的是：该基金管理人为青柏资本管理有限公司（2）[7]，且基金本身注册地为澄江特别行政区[5][6]。但资料中没有关于管理人自身注册地的信息，因此无法回答该问题。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1175,
+ "output_tokens": 75,
+ "cached_read_tokens": 768,
+ "latency_ms": 3945.8397080306895,
+ "provider": "deepseek"
+}
