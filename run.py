@@ -13,6 +13,7 @@ graphrag-lab 任务入口 (跨平台)
     python run.py retrieval    检索评测（切块策略对比 + 检索路径消融）
     python run.py build-graph  抽取知识图谱 + 抽取质量评测
     python run.py e2e          端到端评测 + prompt A/B
+    python run.py verify-replay 离线回放自检（演示前必跑）
     python run.py serve        启动 Web 演示
     python run.py report       生成 HTML 评测报告
     python run.py all          全流程一条龙
@@ -41,6 +42,7 @@ TASKS: dict[str, tuple[str, list[str]]] = {
     "build-graph": ("从文档抽取知识图谱并评测抽取质量", ["scripts/build_graph.py"]),
     "e2e":         ("端到端评测 + prompt A/B", ["scripts/eval_endtoend.py"]),
     "fetch-model": ("下载 ONNX 向量模型 (约 24MB)", ["scripts/fetch_model.py"]),
+    "verify-replay": ("离线回放自检 —— **演示前必跑**", ["scripts/verify_replay.py"]),
     "report":      ("汇总全部评测结果, 生成 HTML 报告", ["scripts/make_report.py"]),
     "serve":       ("启动 Web 演示 (默认 http://127.0.0.1:8000)", ["scripts/serve.py"]),
 }
@@ -144,6 +146,11 @@ def main() -> int:
         usage()
         return 0
     task, extra = argv[0], argv[1:]
+    # `python run.py <task> -- --flag` 里的 `--` 是给 run.py 看的分隔符,
+    # 不该透传给子脚本(argparse 会报 unrecognized arguments)。
+    # 两种写法都支持: 带 `--` 和不带。
+    if extra and extra[0] == "--":
+        extra = extra[1:]
     if task == "doctor":
         return doctor()
     if task in CHAINS:

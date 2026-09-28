@@ -15,8 +15,23 @@ LLM 访问层：可切换 provider + 磁盘缓存。
 
 环境变量
 --------
-    GRAPHRAG_LLM     claude | deepseek | ollama | replay
-                     (默认 claude; 缺对应 key 时自动降级 replay)
+    GRAPHRAG_LLM     claude | deepseek | ollama   (真实 provider)
+    GRAPHRAG_OFFLINE 1 = 只读缓存, 绝不发起网络调用  <- 面试演示用这个
+
+    GRAPHRAG_LLM=replay 是上面两者的简写, 等价于
+    "保持 provider 配置不变, 但强制离线"。
+
+为什么 replay 不是一个 provider
+-------------------------------
+首版把 replay 做成第四个 provider, 结果它的能力位与真实 provider 不同
+(replay 声称支持原生 citations, DeepSeek 不支持), 于是上层构造的请求体不一样,
+**缓存键对不上, 用 DeepSeek 跑出来的缓存在 replay 下永远命中不了**。
+
+这个 bug 一直没暴露, 因为从没端到端验证过"用 A 录、用 replay 放"这条路径。
+
+正确的建模: **provider 是"谁来答", offline 是"能不能联网"**, 两者正交。
+离线模式下 provider 配置完全不变 —— 能力位、模型名、请求体构造全部一致,
+缓存键因此天然匹配。
     GRAPHRAG_CACHE   缓存目录, 默认 <repo>/data/llm_cache
     ANTHROPIC_API_KEY
     DEEPSEEK_API_KEY
@@ -62,12 +77,17 @@ PRICING: dict[str, tuple[float, float]] = {
     "deepseek-reasoner": (0.6, 2.4),
 }
 
+# replay 回放时, 各 provider 实际使用的模型名(缓存键的一部分)
+PROVIDER_DEFAULT_MODEL: dict[str, str] = {
+    "deepseek": os.environ.get("DEEPSEEK_MODEL", "deepseek-chat"),
+    "ollama": os.environ.get("OLLAMA_MODEL", "qwen2.5:7b-instruct"),
+}
+
 CAPABILITIES: dict[str, dict[str, bool]] = {
     # provider -> 能力位。上层据此选择实现路径, 而不是靠 if provider == "claude"
     "claude":   {"strict_schema": True,  "native_citations": True},
     "deepseek": {"strict_schema": False, "native_citations": False},
     "ollama":   {"strict_schema": False, "native_citations": False},
-    "replay":   {"strict_schema": True,  "native_citations": True},
 }
 
 
@@ -156,16 +176,6 @@ class BaseProvider:
                  max_tokens: int, schema: dict | None,
                  documents: list[dict] | None) -> LLMResult:
         raise NotImplementedError
-
-
-class ReplayProvider(BaseProvider):
-    """只读缓存。面试现场用这个: 零网络、零花费、结果完全确定。"""
-    name = "replay"
-
-    def complete(self, **kw) -> LLMResult:
-        raise CacheMissError(
-            "replay 模式下缓存未命中。演示前请先用 GRAPHRAG_LLM=claude 预跑一遍，"
-            "把结果写进 data/llm_cache/。")
 
 
 class ClaudeProvider(BaseProvider):
@@ -404,14 +414,31 @@ class DeepSeekProvider(BaseProvider):
 class LLM:
     """统一入口。缓存在 provider 之前 —— 命中就不产生任何调用与费用。"""
 
-    def __init__(self, provider: str | None = None, cache: DiskCache | None = None):
+    NEED_KEY = {"claude": ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"),
+                "deepseek": ("DEEPSEEK_API_KEY",)}
+
+    def __init__(self, provider: str | None = None, cache: DiskCache | None = None,
+                 offline: bool | None = None):
         self.cache = cache or DiskCache()
         name = (provider or os.environ.get("GRAPHRAG_LLM") or "claude").lower()
-        # 没有对应 key 时不报错, 降级为只读回放 —— 别人拿到仓库也能跑通演示
-        need_key = {"claude": ("ANTHROPIC_API_KEY", "ANTHROPIC_AUTH_TOKEN"),
-                    "deepseek": ("DEEPSEEK_API_KEY",)}
-        if name in need_key and not any(os.environ.get(k) for k in need_key[name]):
-            name = "replay"
+
+        self.offline = (offline if offline is not None
+                        else os.environ.get("GRAPHRAG_OFFLINE", "") in ("1", "true", "yes"))
+
+        if name == "replay":
+            # 兼容写法: 保持 provider 配置不变, 只是强制离线。
+            # 选一个"有凭据"的 provider 作为影子, 这样能力位和模型名
+            # 与当初录制时完全一致, 缓存键才对得上。
+            self.offline = True
+            name = next((p for p in ("deepseek", "claude")
+                         if any(os.environ.get(k) for k in self.NEED_KEY[p])),
+                        "deepseek")
+
+        # 没凭据且未显式离线 -> 自动转离线, 而不是报错。
+        # 别人拿到仓库、一个 key 都没有, 也能靠缓存跑通全部演示。
+        if name in self.NEED_KEY and not any(os.environ.get(k)
+                                             for k in self.NEED_KEY[name]):
+            self.offline = True
         self.provider_name = name
         self._provider: BaseProvider | None = None
         self.calls = 0
@@ -424,31 +451,39 @@ class LLM:
                 "claude": ClaudeProvider,
                 "deepseek": DeepSeekProvider,
                 "ollama": OllamaProvider,
-                "replay": ReplayProvider,
             }[self.provider_name]()
         return self._provider
+
+    def _model_for_key(self, model: str) -> str:
+        """缓存键用的模型名。离线时不实例化 provider(它可能需要 key),
+        直接查默认模型表 —— 与在线时 resolve_model() 的结果一致。"""
+        if self.offline:
+            return PROVIDER_DEFAULT_MODEL.get(self.provider_name, model)
+        try:
+            return self.provider.resolve_model(model)
+        except Exception:
+            return model
 
     def complete(self, *, system: str, user: str,
                  model: str = MODEL_ANSWER, max_tokens: int = 4096,
                  schema: dict | None = None,
                  documents: list[dict] | None = None,
                  cache_tag: str = "") -> LLMResult:
-        # 先问 provider "你实际会用哪个模型", 再拿它建缓存键 ——
-        # 否则用 DeepSeek 跑时缓存键里记的却是 claude-haiku, 换 provider 会误命中。
-        effective = model
-        if self.provider_name != "replay":
-            try:
-                effective = self.provider.resolve_model(model)
-            except Exception:
-                pass
+        effective = self._model_for_key(model)
         key = DiskCache.key({
-            "provider": self.provider_name if self.provider_name != "replay" else "claude",
-            "model": effective, "system": system, "user": user,
-            "schema": schema, "documents": documents, "tag": cache_tag,
+            "provider": self.provider_name, "model": effective,
+            "system": system, "user": user, "schema": schema,
+            "documents": documents, "tag": cache_tag,
         })
         hit = self.cache.get(key)
         if hit is not None:
             return hit
+        if self.offline:
+            raise CacheMissError(
+                f"离线模式(provider={self.provider_name})下缓存未命中。\n"
+                f"演示前请先用真实 provider 预跑一遍, 例如:\n"
+                f"  GRAPHRAG_LLM={self.provider_name} "
+                f"python run.py e2e -- --ab --split train")
 
         res = self.provider.complete(system=system, user=user, model=model,
                                      max_tokens=max_tokens, schema=schema,
@@ -459,11 +494,16 @@ class LLM:
         return res
 
     def supports(self, capability: str) -> bool:
-        """上层据此选择实现路径, 而不是到处写 if provider == 'claude'。"""
+        """上层据此选择实现路径, 而不是到处写 if provider == 'claude'。
+
+        **离线时也返回真实 provider 的能力位** —— 否则上层构造的请求体
+        与录制时不同, 缓存键对不上。这正是首版 replay 失效的原因。
+        """
         return CAPABILITIES.get(self.provider_name, {}).get(capability, False)
 
     def report(self) -> str:
         c = self.cache.stats()
-        return (f"provider={self.provider_name}  实际调用={self.calls}  "
+        mode = "离线" if self.offline else "在线"
+        return (f"provider={self.provider_name}({mode})  实际调用={self.calls}  "
                 f"缓存命中={c['hits']}/{c['hits'] + c['misses']} "
                 f"({c['hit_rate']:.0%})  累计花费≈${self.total_cost:.3f}")
