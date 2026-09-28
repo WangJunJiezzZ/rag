@@ -1,0 +1,11 @@
+{
+ "text": "根据知识图谱推导的关系路径，昀舟金融服务有限公司（3）与以下公司存在共同董事：\n\n- 与砥行资本管理有限公司（Dixing Capital Management Ltd.）存在共同董事陈行知 [2][3]\n- 与茗谷投资控股有限公司（Minggu Investment Holdings Ltd.）存在共同董事陈行知 [2][4]\n\n共同董事姓名为：陈行知 [2][3][4]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1273,
+ "output_tokens": 91,
+ "cached_read_tokens": 0,
+ "latency_ms": 3229.5149579877034,
+ "provider": "deepseek"
+}

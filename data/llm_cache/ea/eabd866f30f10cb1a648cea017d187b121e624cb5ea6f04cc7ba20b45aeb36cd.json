@@ -1,0 +1,11 @@
+{
+ "text": "砥行亚洲机会基金的最低认购金额为 50 万新元，低于该金额的申购指令将不予受理[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 902,
+ "output_tokens": 28,
+ "cached_read_tokens": 0,
+ "latency_ms": 3149.683375027962,
+ "provider": "deepseek"
+}

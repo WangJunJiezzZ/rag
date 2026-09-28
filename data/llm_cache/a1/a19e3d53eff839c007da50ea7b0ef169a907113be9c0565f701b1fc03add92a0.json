@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，无法确认漱玉资本管理有限公司（2）与任何公司存在共同董事。\n\n资料[3]显示，漱玉资本管理有限公司（2）于2023年5月3日增补的新任董事为孙志诚[3]。但资料中未提供漱玉资本管理有限公司（2）与其他公司存在共同董事的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1219,
+ "output_tokens": 75,
+ "cached_read_tokens": 0,
+ "latency_ms": 3280.11533402605,
+ "provider": "deepseek"
+}

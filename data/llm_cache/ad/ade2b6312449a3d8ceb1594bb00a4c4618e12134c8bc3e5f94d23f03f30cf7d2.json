@@ -1,0 +1,11 @@
+{
+ "text": "岫云结构化信贷基金的注册地（注册管辖区）为新港城 [5][6]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1129,
+ "output_tokens": 21,
+ "cached_read_tokens": 128,
+ "latency_ms": 2893.7768330215476,
+ "provider": "deepseek"
+}

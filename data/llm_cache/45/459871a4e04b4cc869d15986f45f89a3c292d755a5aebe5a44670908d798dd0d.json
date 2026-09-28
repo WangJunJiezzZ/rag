@@ -1,0 +1,11 @@
+{
+ "text": "根据参考资料中的关系路径，由昭明银行新港城分行担任托管人的基金共有 **5只**，分别是：\n\n1. 霁川基础设施收益基金\n2. 砺石可持续发展基金\n3. 砺石全球宏观基金\n4. 霁川私募信贷基金\n5. 澜图科技成长基金",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 695,
+ "output_tokens": 69,
+ "cached_read_tokens": 0,
+ "latency_ms": 2801.704791956581,
+ "provider": "deepseek"
+}

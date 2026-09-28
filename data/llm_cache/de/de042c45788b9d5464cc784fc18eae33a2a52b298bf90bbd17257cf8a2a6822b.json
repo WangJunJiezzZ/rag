@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，无法确定栖梧基础设施收益基金的基金管理人注册在哪个管辖区。资料仅显示基金管理人为栖梧资本（3）[6]，但未说明其注册地。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 898,
+ "output_tokens": 40,
+ "cached_read_tokens": 0,
+ "latency_ms": 2622.495457995683,
+ "provider": "deepseek"
+}

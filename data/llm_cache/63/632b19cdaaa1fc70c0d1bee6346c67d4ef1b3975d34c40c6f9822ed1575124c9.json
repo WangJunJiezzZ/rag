@@ -1,0 +1,11 @@
+{
+ "text": "岫云结构化信贷基金的最低认购金额为 50 万新元[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 855,
+ "output_tokens": 19,
+ "cached_read_tokens": 0,
+ "latency_ms": 3413.2132080267183,
+ "provider": "deepseek"
+}

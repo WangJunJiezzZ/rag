@@ -1,0 +1,11 @@
+{
+ "text": "星海并购套利基金的基金管理人是星海资本（2），由管理人负责本基金的投资决策、日常运作及信息披露[4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 905,
+ "output_tokens": 29,
+ "cached_read_tokens": 0,
+ "latency_ms": 3701.33808295941,
+ "provider": "deepseek"
+}

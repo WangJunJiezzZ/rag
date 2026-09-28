@@ -1,0 +1,11 @@
+{
+ "text": "现有资料中没有关于星海多空策略基金管理人母公司及其注册地的信息。\n\n资料仅显示：星海多空策略基金的基金管理人为星海资本管理有限公司（2）[6]，该基金注册地为澄江特别行政区[5][7]。但没有任何资料说明星海资本管理有限公司（2）隶属于哪家母公司，也未说明该母公司的注册地。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 990,
+ "output_tokens": 78,
+ "cached_read_tokens": 0,
+ "latency_ms": 2930.1207079552114,
+ "provider": "deepseek"
+}

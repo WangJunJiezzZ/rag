@@ -1,0 +1,11 @@
+{
+ "text": "松岚可持续发展基金的最低认购金额为 100 万美元，低于该金额的申购指令将不予受理；后续追加认购的最低金额为 5 万美元。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1134,
+ "output_tokens": 36,
+ "cached_read_tokens": 128,
+ "latency_ms": 2983.5380419972353,
+ "provider": "deepseek"
+}

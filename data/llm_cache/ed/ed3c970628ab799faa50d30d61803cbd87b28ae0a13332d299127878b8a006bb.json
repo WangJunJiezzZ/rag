@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，柏观环球投资有限公司与以下公司存在共同董事：\n\n**共同董事：朱思齐**\n\n涉及的公司包括：\n1. **栖梧资本管理有限公司（Qiwu Capital Management Ltd.）**——朱思齐于2025年12月6日当选为该公司董事。\n2. **星海资本管理有限公司（2）**——朱思齐于2024年2月18日当选为该公司董事。\n3. **砥行资本管理有限公司（Dixing Capital Management Ltd.）**——朱思齐自2022年3月11日起被委任为该公司董事。\n\n此外，关系路径中还提到**林嘉铭**同时担任柏观环球投资有限公司与**Lantu Asset Management Pte. Ltd.**的董事，但该信息未在您提供的公告资料[1]–[8]中直接出现，仅来源于知识图谱推导路径。若仅依据上述公告文件，可确认的共同董事为**朱思齐**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1176,
+ "output_tokens": 205,
+ "cached_read_tokens": 512,
+ "latency_ms": 3302.716791979037,
+ "provider": "deepseek"
+}

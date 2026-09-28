@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，无法确定柏观环球投资有限公司（2）与哪些公司存在共同董事。资料中仅包含柏观环球投资有限公司（2）的注册信息摘要[5][6]，未提及该实体的任何董事信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1280,
+ "output_tokens": 51,
+ "cached_read_tokens": 0,
+ "latency_ms": 2977.724500000477,
+ "provider": "deepseek"
+}

@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，无法判断哪些基金是靠公用事业与交通类资产获取稳定现金流的。\n\n资料中仅提到霁川基础设施收益基金采用基础设施收益策略[2]，但未说明其投资标的涉及公用事业与交通类资产；其余基金分别采用科技成长策略[1]和房地产收益策略[3]，均与公用事业及交通类资产无关。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 556,
+ "output_tokens": 77,
+ "cached_read_tokens": 0,
+ "latency_ms": 3048.272874963004,
+ "provider": "deepseek"
+}

@@ -1,0 +1,11 @@
+{
+ "text": "根据现有资料，无法认定砥行亚洲机会基金与高风险管辖区的实体存在关联。\n\n基金注册地为临海特区[6]，而知识图谱推导显示临海特区的风险等级为低风险。知识图谱中与临海特区存在注册关联的实体包括 Dixing Capital Management Ltd.、Huilan Investment Holdings Ltd.、Songlan Asset Management Pte. Ltd. 及栖梧国际控股有限公司，但这些关联均指向低风险的临海特区，未显示任何高风险管辖区。\n\n此外，资料中未提供任何将上述实体或临海特区标注为高风险管辖区的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 922,
+ "output_tokens": 125,
+ "cached_read_tokens": 128,
+ "latency_ms": 3151.093500026036,
+ "provider": "deepseek"
+}

@@ -1,0 +1,11 @@
+{
+ "text": "鹤鸣房地产收益基金的最低认购金额为 100 万美元，低于该金额的申购指令将不予受理[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 894,
+ "output_tokens": 26,
+ "cached_read_tokens": 0,
+ "latency_ms": 2826.350207964424,
+ "provider": "deepseek"
+}

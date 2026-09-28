@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的参考资料，没有任何基金提到将环境与社会责任纳入筛选标准。资料中仅涉及市场风险、关联交易风险、估值风险、流动性风险、集中度风险、法律与监管风险、信用风险等内容，未出现环境与社会责任筛选标准的相关信息。[1][2][3][4]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 730,
+ "output_tokens": 63,
+ "cached_read_tokens": 0,
+ "latency_ms": 2531.725874985568,
+ "provider": "deepseek"
+}

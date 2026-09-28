@@ -1,0 +1,11 @@
+{
+ "text": "资料中未提及「高风险管辖区」的认定标准，也未将任何管辖区标注为高风险。\n\n可确认的部分：\n- 翊澜房地产收益基金的注册地为白鹭湾 [6]。\n- 洄川国际控股有限公司、Daiyu Financial Services Ltd.、Lantu Asset Management Pte. Ltd. 均注册于白鹭湾（依据用户提供的知识图谱路径，各步由 [4] 等文档支撑）。\n\n缺失的一环：资料中没有说明白鹭湾（或任何其他管辖区）属于高风险管辖区，因此无法判断上述实体是否构成「高风险管辖区的实体」，也无法据此认定该基金与高风险管辖区实体存在关联。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1152,
+ "output_tokens": 142,
+ "cached_read_tokens": 128,
+ "latency_ms": 3116.1644579842687,
+ "provider": "deepseek"
+}

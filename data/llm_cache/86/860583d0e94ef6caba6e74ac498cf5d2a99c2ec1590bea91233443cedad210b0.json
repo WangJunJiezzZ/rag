@@ -1,0 +1,11 @@
+{
+ "text": "资料中未提及青柏房地产收益基金的资产管理规模（AUM）。\n\n现有资料仅包含基金的费用与税项、基金概况、投资目标与策略等信息，没有任何一处给出 AUM 数值。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1130,
+ "output_tokens": 42,
+ "cached_read_tokens": 128,
+ "latency_ms": 3399.857125012204,
+ "provider": "deepseek"
+}

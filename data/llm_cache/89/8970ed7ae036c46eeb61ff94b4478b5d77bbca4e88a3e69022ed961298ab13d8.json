@@ -1,0 +1,11 @@
+{
+ "text": "根据提供的资料，漱玉资本管理有限公司（2）与以下公司存在共同董事：\n\n**共同董事：王敬亭**\n- 漱玉资本管理有限公司（2）\n- Yilan Asset Management Pte. Ltd.（翊澜资本管理有限公司）\n\n**共同董事：孙志诚**\n- 漱玉资本管理有限公司（2）\n- Huilan Investment Holdings Ltd.（徽岚投资控股有限公司）\n- 青柏资本管理有限公司\n\n综上，漱玉资本管理有限公司（2）的共同董事为：**王敬亭、孙志诚**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1133,
+ "output_tokens": 116,
+ "cached_read_tokens": 0,
+ "latency_ms": 5799.959582975134,
+ "provider": "deepseek"
+}

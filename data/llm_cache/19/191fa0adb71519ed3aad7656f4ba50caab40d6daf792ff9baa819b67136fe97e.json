@@ -1,0 +1,11 @@
+{
+ "text": "砥行亚洲机会基金的注册地是**临海特区**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 826,
+ "output_tokens": 14,
+ "cached_read_tokens": 0,
+ "latency_ms": 3484.703666996211,
+ "provider": "deepseek"
+}
