@@ -6,6 +6,7 @@ HTTP API —— 演示界面的后端。
 """
 from __future__ import annotations
 
+import os
 import time
 from dataclasses import asdict
 from pathlib import Path
@@ -70,21 +71,38 @@ def health() -> dict:
     }
 
 
+# 示例题优先从哪个划分里挑。
+# 必须与"预跑填缓存"的划分一致 —— 否则离线演示时点按钮没有答案。
+# 这不是理论风险: 首版按题型取第一条, 4 个示例里 3 个落在 dev/test,
+# 而缓存只录了 train, 演示时三个按钮全是空白答案区。
+EXAMPLE_SPLIT = os.environ.get("GRAPHRAG_EXAMPLE_SPLIT", "train")
+
+EXAMPLE_SPEC = [
+    ("fact_direct",    "① 单跳事实 · 谁都能答对"),
+    ("semantic_only",  "② 纯语义 · 词面检索失效，靠向量"),
+    ("hop4_risk",      "③ 四跳关系穿透 · 纯检索必然失败，必须走图"),
+    ("negative",       "④ 幻觉陷阱 · 语料里根本没有，应当拒答"),
+]
+
+
 @app.get("/api/examples")
 def examples() -> list[dict]:
-    """演示用的三个问题 —— 刻意覆盖能力边界的三个档位。"""
+    """演示用的四个问题 —— 刻意覆盖能力边界的四个档位。
+
+    优先取指定划分(默认 train)里的题, 因为离线缓存是按划分预跑的;
+    该划分里没有对应题型时才回退到全集。
+    """
     items = list(read_jsonl(ROOT / "data/eval/eval_set.jsonl"))
+    preferred = [i for i in items if i["split"] == EXAMPLE_SPLIT]
     picks = []
-    for t, label in [("fact_direct", "① 单跳事实 · 谁都能答对"),
-                     ("semantic_only", "② 纯语义 · 词面检索失效，靠向量"),
-                     ("hop4_risk", "③ 四跳关系穿透 · 纯检索必然失败，必须走图"),
-                     ("negative", "④ 幻觉陷阱 · 语料里根本没有，应当拒答")]:
-        for it in items:
-            if it["type"] == t:
-                picks.append({"label": label, "question": it["question"],
-                              "type": t, "gold": it["gold_answer"][:80],
-                              "n_evidence": len(it["gold_docs"])})
-                break
+    for t, label in EXAMPLE_SPEC:
+        it = next((i for i in preferred if i["type"] == t), None) \
+             or next((i for i in items if i["type"] == t), None)
+        if it:
+            picks.append({"label": label, "question": it["question"],
+                          "type": t, "split": it["split"],
+                          "gold": it["gold_answer"][:80],
+                          "n_evidence": len(it["gold_docs"])})
     return picks
 
 
