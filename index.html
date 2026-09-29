@@ -7,7 +7,7 @@
 <style>
 :root{--bg:#0f1115;--panel:#171a21;--panel2:#1d212a;--line:#272c38;--fg:#e6e9ef;
  --muted:#8b93a7;--accent:#5b9dff;--accent2:#7ee0b8;--warn:#ffb454;--danger:#ff6b6b;--ok:#7ee0b8;
- --Fund:#5b9dff;--Company:#b48ead;--Person:#ffb454;--Jurisdiction:#ff6b6b;--Literal:#6b7280;--Unknown:#6b7280;}
+ --Show:#5b9dff;--Character:#ffb454;--Place:#7bd88f;--Group:#b48ead;--Item:#ff6b6b;--Literal:#6b7280;--Unknown:#6b7280;}
 @media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f7f8fa;--panel:#fff;
  --panel2:#f0f2f6;--line:#dfe3ea;--fg:#171a21;--muted:#6b7280;--accent:#2563eb;--accent2:#0f9d76;}}
 *{box-sizing:border-box}
@@ -102,7 +102,8 @@ a{color:var(--accent)}
 <div class="wrap">
   <header>
     <h1>GraphRAG Lab</h1>
-    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">合成数据演示</b></span>
+    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">喜羊羊 × 铁甲小宝</b></span>
+    <a href="agent.html" style="margin-left:auto;font-size:13px">Agent 调用回放（MCP）→</a>
   </header>
   <div class="status" id="status"><span class="chip">加载中…</span></div>
 
@@ -160,8 +161,8 @@ a{color:var(--accent)}
   </div>
 
   <div class="note" style="text-align:center;margin-top:20px">
-    全部语料为程序合成，机构名、人名、管辖区名及风险等级均属虚构，不指涉任何真实主体，
-    不构成投资、法律或合规建议。
+    语料根据维基百科等公开资料整理，角色译名采用中国大陆播出版本；
+    角色及形象权利归原著作权方所有，本页面仅作检索技术演示。
   </div>
 </div>
 
@@ -251,7 +252,7 @@ function ask(){
   const g = GRAPHS[gname];
   const t0 = performance.now();
 
-  const gs = graphSearch(g, q, D2C, topK);
+  const gs = graphSearch(g, q, D2C, topK, CHUNK);
   const useGraph = gs.route.primary === 'graph' && gs.hits.length;
   let hits;
   if (useGraph){
@@ -333,12 +334,11 @@ function drawPath(g){
   order.forEach((id,i) => {
     const n = byId[id], y = PAD + i*H + 18;
     const color = `var(--${n.type||'Unknown'})`;
-    const risky = n.risk === '高风险';
     const label = n.name.length > 16 ? n.name.slice(0,15)+'…' : n.name;
     svg += `<g class="node"><rect x="16" y="${y-15}" width="230" height="30" fill="var(--panel2)"
-      stroke="${risky?'var(--danger)':color}" stroke-width="${risky?2.4:1.6}" rx="7"></rect>
+      stroke="${color}" stroke-width="1.6" rx="7"></rect>
       <text x="28" y="${y+4}">${esc(label)}</text>
-      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">${esc(n.type)}${risky?' ⚠':''}</text></g>`;
+      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">${esc(n.type)}</text></g>`;
     if (i < order.length-1){
       const e = edges.find(e => (e.from===id&&e.to===order[i+1])||(e.to===id&&e.from===order[i+1]));
       const y2 = PAD+(i+1)*H+18;
