@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GraphRAG Lab</title>
+<style>
+:root{--bg:#0f1115;--panel:#171a21;--panel2:#1d212a;--line:#272c38;--fg:#e6e9ef;
+ --muted:#8b93a7;--accent:#5b9dff;--accent2:#7ee0b8;--warn:#ffb454;--danger:#ff6b6b;--ok:#7ee0b8;
+ --Fund:#5b9dff;--Company:#b48ead;--Person:#ffb454;--Jurisdiction:#ff6b6b;--Literal:#6b7280;--Unknown:#6b7280;}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f7f8fa;--panel:#fff;
+ --panel2:#f0f2f6;--line:#dfe3ea;--fg:#171a21;--muted:#6b7280;--accent:#2563eb;--accent2:#0f9d76;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 -apple-system,BlinkMacSystemFont,
+ "Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 16px 60px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:6px}
+h1{font-size:20px;margin:0;letter-spacing:.5px}
+.sub{color:var(--muted);font-size:13px}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 14px}
+.chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:3px 11px;
+ font-size:12px;color:var(--muted)}.chip b{color:var(--fg);font-weight:600}
+.banner{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--warn);
+ border-radius:9px;padding:11px 14px;font-size:12.5px;color:var(--muted);margin-bottom:14px;line-height:1.7}
+.banner b{color:var(--fg)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:13px;margin:0 0 12px;color:var(--muted);font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.examples{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.ex{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:10px 12px;cursor:pointer;
+ text-align:left;color:var(--fg);font-family:inherit;font-size:13px;transition:.15s}
+.ex:hover{border-color:var(--accent);transform:translateY(-1px)}
+.ex .tag{display:block;font-size:11px;color:var(--accent);margin-bottom:4px}
+.ex .meta{font-size:11px;color:var(--muted);margin-top:5px}
+.askrow{display:flex;gap:8px;flex-wrap:wrap}
+input[type=text]{flex:1;min-width:240px;background:var(--panel2);color:var(--fg);border:1px solid var(--line);
+ border-radius:9px;padding:11px 13px;font:inherit}
+input[type=text]:focus{outline:none;border-color:var(--accent)}
+button.primary{background:var(--accent);color:#fff;border:0;border-radius:9px;padding:11px 22px;
+ font:inherit;font-weight:600;cursor:pointer}
+.opts{display:flex;gap:16px;flex-wrap:wrap;margin-top:11px;font-size:12px;color:var(--muted)}
+.opts label{display:flex;align-items:center;gap:5px;cursor:pointer}
+select{background:var(--panel2);color:var(--fg);border:1px solid var(--line);border-radius:6px;
+ padding:3px 7px;font:inherit;font-size:12px}
+.note{color:var(--muted);font-size:11.5px;margin-top:10px;line-height:1.6}
+.grid{display:grid;gap:14px;grid-template-columns:1fr}
+@media(min-width:900px){.grid{grid-template-columns:1.25fr .95fr}}
+.answer{white-space:pre-wrap;line-height:1.8;font-size:15px}
+.answer .cite{display:inline-block;background:var(--accent);color:#fff;border-radius:4px;padding:0 5px;
+ margin:0 1px;font-size:11px;font-weight:700;cursor:pointer;vertical-align:1px}
+.answer .cite.bad{background:var(--danger)}
+.refused{border-left:3px solid var(--warn);padding-left:12px;color:var(--warn)}
+.trace{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.pill{font-size:11px;border-radius:6px;padding:2px 8px;border:1px solid var(--line);background:var(--panel2);color:var(--muted)}
+.pill.route{border-color:var(--accent);color:var(--accent)}
+.pill.graph{border-color:var(--accent2);color:var(--accent2)}
+svg.paths{width:100%;height:auto;display:block}
+.node text{font-size:11px;fill:var(--fg)}
+.edge line{stroke:var(--muted);stroke-width:1.4}
+.edge text{font-size:9.5px;fill:var(--muted)}
+.ev{border:1px solid var(--line);border-radius:9px;margin-bottom:8px;overflow:hidden}
+.ev summary{cursor:pointer;padding:9px 12px;background:var(--panel2);font-size:12.5px;display:flex;
+ gap:8px;align-items:center;list-style:none}
+.ev summary::-webkit-details-marker{display:none}
+.ev summary .idx{background:var(--accent);color:#fff;border-radius:4px;padding:0 6px;font-size:11px;font-weight:700;flex:none}
+.ev summary .ttl{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ev summary .sc{color:var(--muted);font-size:11px;flex:none}
+.ev .body{padding:11px 13px;white-space:pre-wrap;font-size:12.5px;line-height:1.7;color:var(--muted);
+ border-top:1px solid var(--line);max-height:280px;overflow:auto}
+.ev.gold summary{border-left:3px solid var(--ok)}
+.empty{color:var(--muted);font-size:13px;text-align:center;padding:26px 0}
+.info{color:var(--muted);font-size:12.5px;background:var(--panel2);padding:10px 12px;border-radius:8px;
+ border-left:3px solid var(--accent)}
+a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>GraphRAG Lab</h1>
+    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">合成数据演示</b></span>
+  </header>
+  <div class="status" id="status"><span class="chip">加载中…</span></div>
+
+  <div class="banner">
+    <b>这是纯静态版本</b>，检索（BM25 + 实体链接 + 图遍历）全部在你的浏览器里实时运行，没有后端。<br>
+    · 点下面的<b>示例按钮</b> → 完整体验：生成的答案 + 引用溯源 + 关系图<br>
+    · 自己输入<b>任意问题</b> → 检索结果与关系图照常工作，但<b>没有生成的答案文字</b>（那需要调用大模型）<br>
+    · 静态版未包含向量检索（需额外加载 10MB 模型），纯语义类问题会弱于完整版
+  </div>
+
+  <div class="card">
+    <h2>试试这几个问题（按难度递增）</h2>
+    <div class="examples" id="examples"></div>
+  </div>
+
+  <div class="card">
+    <div class="askrow">
+      <input type="text" id="q" placeholder="也可以自己输入，例如：XX基金的管理人注册在哪个管辖区？" autocomplete="off">
+      <button class="primary" id="go">提问</button>
+    </div>
+    <div class="opts">
+      <label>图谱来源
+        <select id="graph">
+          <option value="extracted">抽取图（真实水平）</option>
+          <option value="oracle">标准图（上界）</option>
+        </select>
+      </label>
+      <label>top_k <select id="topk"><option>5</option><option selected>8</option><option>12</option></select></label>
+    </div>
+    <div class="note">切换「图谱来源」可直观看到 LLM 抽取环节的损失：标准图能走通的关系链，抽取图上可能是断的。</div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <div class="card">
+        <h2>回答</h2>
+        <div id="trace" class="trace"></div>
+        <div id="answer"><div class="empty">提出一个问题，或点上面的示例</div></div>
+      </div>
+      <div class="card" id="graphcard" style="display:none">
+        <h2>关系路径（由知识图谱推导）</h2>
+        <div id="paths"></div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>检索到的证据</h2>
+      <div id="evidence"><div class="empty">—</div></div>
+    </div>
+  </div>
+
+  <div class="note" style="text-align:center;margin-top:20px">
+    全部语料为程序合成，机构名、人名、管辖区名及风险等级均属虚构，不指涉任何真实主体，
+    不构成投资、法律或合规建议。
+  </div>
+</div>
+
+<script type="module">
+import { BM25, Graph, graphSearch } from './js/engine.js';
+
+const $ = s => document.querySelector(s);
+const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let DATA = {}, BM = null, GRAPHS = {}, D2C = new Map(), CHUNK = new Map(), LAST = null;
+
+async function boot(){
+  const [chunks, ansers, examples, meta, gE, gO] = await Promise.all(
+    ['chunks','answers','examples','meta','graph_extracted','graph_oracle']
+      .map(n => fetch(`data/${n}.json`).then(r => r.json())));
+  DATA = { chunks, answers: ansers, examples, meta };
+
+  for (const c of chunks){
+    CHUNK.set(c.id, c);
+    if (!D2C.has(c.d)) D2C.set(c.d, []);
+    D2C.get(c.d).push(c.id);
+  }
+  BM = new BM25().index(chunks.map(c => ({ id: c.id, text: c.x })));
+  GRAPHS.extracted = new Graph(gE);
+  GRAPHS.oracle = new Graph(gO);
+
+  $('#status').innerHTML = [
+    `chunk <b>${meta.chunks}</b>`, `文档 <b>${meta.docs}</b>`,
+    `图谱 <b>${meta.graphs.extracted.entities}</b> 实体 / <b>${meta.graphs.extracted.edges}</b> 边`,
+    `预录问答 <b>${meta.answers}</b> 条`, `检索 <b>浏览器内运行</b>`
+  ].map(t => `<span class="chip">${t}</span>`).join('');
+
+  $('#examples').innerHTML = examples.map(e => `
+    <button class="ex" data-q="${esc(e.q)}">
+      <span class="tag">${esc(e.label)}</span>
+      <span class="q">${esc(e.q)}</span>
+      <span class="meta">证据 ${e.n} 份</span>
+    </button>`).join('');
+  document.querySelectorAll('.ex').forEach(b => b.onclick = () => { $('#q').value = b.dataset.q; ask(); });
+}
+
+function ask(){
+  const q = $('#q').value.trim(); if (!q) return;
+  const gname = $('#graph').value, topK = +$('#topk').value;
+  const g = GRAPHS[gname];
+  const t0 = performance.now();
+
+  const gs = graphSearch(g, q, D2C, topK);
+  const useGraph = gs.route.primary === 'graph' && gs.hits.length;
+  let hits;
+  if (useGraph){
+    const head = gs.hits.slice(0, Math.ceil(topK/2));
+    const seen = new Set(head.map(h => h[0]));
+    hits = [...head];
+    for (const [cid, s] of BM.search(q, topK)) if (!seen.has(cid) && hits.length < topK) hits.push([cid, -1 - hits.length*1e-3]);
+  } else {
+    hits = BM.search(q, topK);
+  }
+
+  const pre = DATA.answers[`${gname}|${q}`];
+  if (pre) hits = pre.chunks.map((cid,i) => [cid, 1 - i*0.01]);
+
+  LAST = { q, gname, hits, gs, pre, ms: performance.now() - t0 };
+  render(LAST);
+}
+
+function render(d){
+  const { gs, pre } = d;
+  $('#trace').innerHTML = [
+    `<span class="pill route">路由 ${esc(gs.route.primary)}</span>`,
+    `<span class="pill">${esc(gs.route.reason)}</span>`,
+    gs.intent ? `<span class="pill graph">图模板 ${esc(gs.intent)}</span>` : '',
+    gs.linked.length ? `<span class="pill graph">链接实体 ${gs.linked.map(x=>esc(x[1])).join('、')}</span>` : '',
+    `<span class="pill">${d.ms.toFixed(0)}ms</span>`,
+    `<span class="pill">${d.gname === 'oracle' ? '标准图' : '抽取图'}</span>`,
+    pre ? '' : `<span class="pill" style="border-color:var(--warn);color:var(--warn)">未预录，无生成答案</span>`
+  ].filter(Boolean).join('');
+
+  if (pre){
+    const n = d.hits.length;
+    const html = esc(pre.text).replace(/\[(\d{1,2})\]/g, (m,i) => {
+      const bad = (+i < 1 || +i > n);
+      return `<span class="cite${bad?' bad':''}" data-i="${i}">${i}</span>`;
+    });
+    $('#answer').innerHTML = `<div class="answer${pre.refused?' refused':''}">${html}</div>`;
+    document.querySelectorAll('.cite').forEach(c => c.onclick = () => {
+      const el = document.querySelector(`#ev-${c.dataset.i}`);
+      if (el){ el.open = true; el.scrollIntoView({behavior:'smooth',block:'center'}); }
+    });
+  } else {
+    $('#answer').innerHTML = `<div class="info"><b>这个问题没有预录答案。</b><br>
+      静态版只内置了评测集里 ${DATA.meta.answers/2} 道题的生成结果。<br>
+      不过右侧的<b>检索证据</b>和下方的<b>关系路径</b>都是刚刚在你浏览器里实时算出来的 ——
+      这部分才是这个项目的核心。</div>`;
+  }
+
+  const cited = new Set(pre ? pre.cites.filter(c=>c.d).map(c=>c.d) : []);
+  $('#evidence').innerHTML = d.hits.map(([cid,score],i) => {
+    const c = CHUNK.get(cid); if (!c) return '';
+    return `<details class="ev${cited.has(c.d)?' gold':''}" id="ev-${i+1}">
+      <summary><span class="idx">${i+1}</span><span class="ttl">${esc(c.t)}</span>
+        <span class="sc">${score.toFixed(3)}</span></summary>
+      <div class="body">${esc(c.r)}</div></details>`;
+  }).join('') || '<div class="empty">未召回任何证据</div>';
+
+  const graphs = (pre && pre.graphs && pre.graphs.length) ? pre.graphs : gs.graphs;
+  if (graphs && graphs.length){
+    $('#graphcard').style.display = '';
+    $('#paths').innerHTML = graphs.map(drawPath).join('');
+  } else $('#graphcard').style.display = 'none';
+}
+
+/* 原生 SVG 画关系链 —— 零外部依赖 */
+function drawPath(g){
+  const nodes = g.nodes||[], edges = g.edges||[];
+  if (!nodes.length) return '';
+  const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const order = []; const seen = new Set();
+  const push = id => { if(!seen.has(id) && byId[id]){ seen.add(id); order.push(id);} };
+  if (edges.length) push(edges[0].from);
+  edges.forEach(e => { push(e.from); push(e.to); });
+  nodes.forEach(n => push(n.id));
+
+  const H = 64, PAD = 10, height = order.length*H + PAD*2;
+  let svg = `<svg class="paths" viewBox="0 0 390 ${height}" role="img">`;
+  order.forEach((id,i) => {
+    const n = byId[id], y = PAD + i*H + 18;
+    const color = `var(--${n.type||'Unknown'})`;
+    const risky = n.risk === '高风险';
+    const label = n.name.length > 16 ? n.name.slice(0,15)+'…' : n.name;
+    svg += `<g class="node"><rect x="16" y="${y-15}" width="230" height="30" fill="var(--panel2)"
+      stroke="${risky?'var(--danger)':color}" stroke-width="${risky?2.4:1.6}" rx="7"></rect>
+      <text x="28" y="${y+4}">${esc(label)}</text>
+      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">${esc(n.type)}${risky?' ⚠':''}</text></g>`;
+    if (i < order.length-1){
+      const e = edges.find(e => (e.from===id&&e.to===order[i+1])||(e.to===id&&e.from===order[i+1]));
+      const y2 = PAD+(i+1)*H+18;
+      svg += `<g class="edge"><line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
+        <polygon points="131,${y2-15} 127,${y2-22} 135,${y2-22}" fill="var(--muted)"></polygon>
+        <text x="142" y="${(y+y2)/2+4}">${esc(e?e.rel:'')}</text></g>`;
+    }
+  });
+  return svg + '</svg>';
+}
+
+$('#go').onclick = ask;
+$('#q').addEventListener('keydown', e => { if (e.key === 'Enter') ask(); });
+['#graph','#topk'].forEach(s => $(s).onchange = () => { if (LAST) ask(); });
+boot();
+</script>
+</body>
+</html>

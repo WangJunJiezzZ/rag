@@ -14,6 +14,7 @@ graphrag-lab 任务入口 (跨平台)
     python run.py build-graph  抽取知识图谱 + 抽取质量评测
     python run.py e2e          端到端评测 + prompt A/B
     python run.py verify-replay 离线回放自检（演示前必跑）
+    python run.py build-static 生成纯静态演示站（免费托管用这个）
     python run.py serve        启动 Web 演示
     python run.py report       生成 HTML 评测报告
     python run.py all          全流程一条龙
@@ -43,7 +44,8 @@ TASKS: dict[str, tuple[str, list[str]]] = {
     "e2e":         ("端到端评测 + prompt A/B", ["scripts/eval_endtoend.py"]),
     "fetch-model": ("下载 ONNX 向量模型 (约 24MB)", ["scripts/fetch_model.py"]),
     "verify-replay": ("离线回放自检 —— **演示前必跑**", ["scripts/verify_replay.py"]),
-    "prepare-hf":   ("生成 HuggingFace Space 部署目录", ["scripts/prepare_hf.py"]),
+    "prepare-hf":   ("生成 HuggingFace Space 部署目录 (Docker, 需付费版)", ["scripts/prepare_hf.py"]),
+    "build-static": ("生成纯静态演示站 (可部署到任何静态托管)", ["scripts/export_static.py"]),
     "report":      ("汇总全部评测结果, 生成 HTML 报告", ["scripts/make_report.py"]),
     "serve":       ("启动 Web 演示 (默认 http://127.0.0.1:8000)", ["scripts/serve.py"]),
 }
