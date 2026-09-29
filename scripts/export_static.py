@@ -172,6 +172,9 @@ def main() -> int:
     shutil.copy2(ROOT / "deploy/static/index.html", site / "index.html")
     shutil.copy2(ROOT / "deploy/static/engine.js", site / "js/engine.js")
     write_text(site / "README.md", HF_README)
+    # GitHub Pages 默认用 Jekyll 处理站点, 会忽略下划线开头的目录、
+    # 也会拖慢部署。放一个空的 .nojekyll 关掉它。对其他托管无害。
+    (site / ".nojekyll").write_text("", encoding="utf-8")
 
     total = sum(p.stat().st_size for p in out.glob("*.json"))
     print(f"[ok] 静态数据已导出 -> {out}")
