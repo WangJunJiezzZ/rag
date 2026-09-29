@@ -1,0 +1,33 @@
+{
+ "text": "小让的爷爷是高圆寺寅彦（高圆寺博士）。现在查他封印过谁。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3664,
+ "output_tokens": 112,
+ "cached_read_tokens": 3328,
+ "latency_ms": 3998.684416001197,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_xHYbBAraZ2IZXjknInVp8198",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0029\", \"relation\": \"SEALED_BY\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_U4PkrDJ4EDGjO3oIxQQ89168",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0029\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

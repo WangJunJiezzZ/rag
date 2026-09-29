@@ -1,0 +1,24 @@
+{
+ "text": "卡布达的搭档是小让（高圆寺让）。现在查小让的爷爷。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3340,
+ "output_tokens": 59,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2922.600457968656,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_LWLuhKp5GGew6M7mwrJo5934",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0002\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -96,7 +96,7 @@ a{color:var(--accent)}
 
   <div class="banner">
     <b>这是什么：</b>我把知识图谱做成了一个 <b>MCP Server</b>（可以理解成 AI 的 USB 接口），让 AI 能通过标准协议调用
-    「查角色、查关系、解释两个角色是什么关系、读原文」等 7 个工具。下面是 DeepSeek 回答同一道题的<b>真实运行录像</b>：
+    「查角色、查关系、解释两个角色是什么关系、读原文」等 7 个工具。下面是 DeepSeek 回答问题的<b>真实运行录像</b>，并与写死流程的固定流水线对比：
     每一步调哪个工具、传什么参数、拿到什么结果，<b>都是模型自己决定的</b>。<br>
     <b>怎么看：</b>先看下方对比表，再切换两次运行，点开每一步查看工具的原始返回。
     本页是纯静态回放，不调用任何模型。
@@ -165,23 +165,47 @@ function pretty(text){
   try { return JSON.stringify(JSON.parse(text), null, 2); } catch { return text; }
 }
 
-const cited = r => new Set(r.answer.match(/doc-\d{4}/g) || []);
+const cited = r => new Set(r.cited_docs || r.answer.match(/doc-\d{4}/g) || []);
 const fmt = n => n.toLocaleString('en-US');
 
 function summary(demo){
-  const order = ['oracle', 'extracted'].filter(k => demo.runs[k]);
+  const order = Object.keys(demo.runs);
   const col = k => demo.runs[k];
   const row = (label, f) => `<tr><th>${label}</th>${order.map(k => `<td class="num">${f(col(k))}</td>`).join('')}</tr>`;
-  return `<div class="card"><h2>两次运行对比</h2><div class="tblwrap"><table class="tbl">
+  return `<div class="card"><h2>运行对比</h2><div class="tblwrap"><table class="tbl">
     <tr><th></th>${order.map(k => `<th>${esc(col(k).label)}</th>`).join('')}</tr>
+    ${row('方式', r => r.mode === 'pipeline' ? '固定流水线' : 'Agent')}
+    ${row('图谱', r => GRAPH_LABEL[r.graph] || esc(r.graph || ''))}
     ${row('结论', r => r.verdict === 'correct' ? '<span class="ok">✓ 答对</span>'
       : r.verdict === 'wrong' ? '<span class="bad">✗ 答错</span>' : '待核对')}
-    ${row('工具调用', r => `${r.steps.length} 次`)}
+    ${row('工具调用', r => r.mode === 'pipeline' ? '—（流程写死）' : `${r.steps.length} 次`)}
     ${row('模型调用', r => `${r.llm_calls} 次`)}
     ${row('token（输入 + 输出）', r => `${fmt(r.input_tokens)} + ${fmt(r.output_tokens)}`)}
     ${row('估算花费', r => `$${r.cost_usd.toFixed(4)}`)}
     ${row('引用的标准证据', r => { const c = cited(r); return `${demo.gold_docs.filter(d => c.has(d)).length} / ${demo.gold_docs.length}`; })}
   </table></div></div>`;
+}
+
+const GRAPH_LABEL = {oracle: '标准图谱', extracted: '自动抽取的图谱'};
+
+function pipelineView(run, demo){
+  const p = run.pipeline, gold = new Set(demo.gold_docs);
+  const got = new Set(p.retrieved);
+  const chip = d => `<span class="doc ${gold.has(d) ? 'hit' : ''}">${d}</span>`;
+  const missing = demo.gold_docs.filter(d => !got.has(d));
+  const step = (n, title, body) => `<div class="round"><div class="dot">${n}</div><h3>${title}</h3>${body}</div>`;
+  return [
+    step(1, '规则路由：判断该走哪条检索路径', `<div class="md"><p>${esc(p.route)}</p></div>`),
+    step(2, `图谱推导出关系路径，取前 ${p.paths.length} 条交给模型 <span>（原样，含重复）</span>`,
+      `<div class="card md" style="margin:0"><pre>${esc(p.paths.join('\n'))}</pre></div>`),
+    step(3, `一次性检索，名额固定为 ${p.top_k} 条 <span>（绿色 = 标准证据）</span>`,
+      `<div>${p.retrieved.map(chip).join('')}</div>` + (missing.length
+        ? `<p class="note" style="margin:8px 0 0">没有召回的标准证据：${missing.map(d =>
+            `<span class="doc miss">${d}</span>`).join('')}　流程是写死的，召回不到也不会再查。</p>` : '')),
+    `<div class="round final"><div class="dot">✓</div>
+      <h3>第 4 步 · 用检索到的资料调用 ${run.llm_calls} 次模型，生成答案</h3>
+      <div class="card md" style="margin:0">${md(run.answer)}</div></div>`,
+  ].join('');
 }
 
 function timeline(run){
@@ -215,14 +239,15 @@ function render(demo, key){
       run.verdict === 'correct' ? '✓ 答对了' : run.verdict === 'wrong' ? '✗ 答错了' : '待核对'}</b>　${esc(run.note || '')}</div>` : ''}
     <div class="card"><h2>证据覆盖（绿色 = 已引用，红色 = 漏引）</h2>
       ${demo.gold_docs.map(d => `<span class="doc ${c.has(d) ? 'hit' : 'miss'}">${d}</span>`).join('')}</div>
-    <div class="card"><h2>逐步回放（点开每一步查看工具原始返回）</h2>${timeline(run)}</div>`;
+    <div class="card"><h2>${run.mode === 'pipeline' ? '固定流水线的执行过程（每一步都是写死的）'
+      : '逐步回放（点开每一步查看工具原始返回）'}</h2>${run.mode === 'pipeline' ? pipelineView(run, demo) : timeline(run)}</div>`;
 }
 
 let DATA = null;
 
 function show(idx){
   const demo = DATA.demos[idx];
-  const keys = ['oracle', 'extracted'].filter(k => demo.runs[k]);
+  const keys = Object.keys(demo.runs);
   $('#pick')?.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', +b.dataset.i === idx));
   $('#demo').innerHTML = `
     <div class="card">
@@ -231,13 +256,15 @@ function show(idx){
         <dt>对应评测题</dt><dd>${esc(demo.qid)}（${esc(demo.eval_question)}）</dd>
         <dt>标准答案</dt><dd>${esc(demo.gold_answer)}</dd>
         <dt>标准证据</dt><dd>${demo.gold_docs.map(d => `<span class="doc">${d}</span>`).join('')}</dd>
-        <dt>模型</dt><dd>${esc(DATA.model)}，通过 MCP 调用 7 个工具</dd>
+        <dt>模型</dt><dd>${esc(DATA.model)}；Agent 通过 MCP 调用 7 个工具</dd>
       </dl>
     </div>
     ${summary(demo)}
     <div class="tabs" id="tabs">${keys.map(k => `<button class="tab" data-k="${k}">
       <span class="t">${({correct: '✓ ', wrong: '✗ '})[demo.runs[k].verdict] || ''}${esc(demo.runs[k].label)}</span>
-      <span class="s">${demo.runs[k].steps.length} 次工具调用 · ${demo.runs[k].llm_calls} 轮模型调用</span></button>`).join('')}</div>
+      <span class="s">${demo.runs[k].mode === 'pipeline' ? `固定流程 · ${demo.runs[k].llm_calls} 次模型调用`
+        : `${demo.runs[k].steps.length} 次工具调用 · ${demo.runs[k].llm_calls} 轮模型调用`}
+        · ${GRAPH_LABEL[demo.runs[k].graph] || ''}</span></button>`).join('')}</div>
     <div id="run"></div>`;
   $('#tabs').addEventListener('click', e => {
     const b = e.target.closest('.tab'); if (b) render(demo, b.dataset.k);

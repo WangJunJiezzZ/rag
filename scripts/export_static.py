@@ -87,6 +87,26 @@ short_description: 可评测、可消融的 GraphRAG（喜羊羊 × 铁甲小宝
 # Agent 回放: 同一道题在两份图谱上各跑一遍的真实录像。
 # 只能收录**已在线跑过**的问题 —— 导出时离线重放, 缓存必须逐轮命中。
 AGENT_DEMOS = [{
+    # 同一题、同一份抽取图谱: 固定流水线 vs Agent。
+    # runs 的键可任取; mode 缺省 "agent", graph 缺省取键名(extracted / oracle)。
+    "qid": "q-0082",
+    "question": "卡布达搭档的爷爷封印过哪个机器人？",
+    "runs": {
+        "pipeline": {"mode": "pipeline", "graph": "extracted", "label": "固定流水线",
+                     "verdict": "wrong",
+                     "note": "拒答。图谱其实找到了完整的 3 跳关系链，这条路径也交给了模型；"
+                             "但抽取图谱里多了一条错误的边「卡布达 -搭档-> 卡布达巨人」，"
+                             "它的来源 doc-0041 占掉了一个检索名额（固定 8 条），"
+                             "写着「封印」的原文 doc-0042 被挤了出去。"
+                             "流水线用的是防幻觉 prompt，要求每个结论都有原文支撑：有路径、没原文，于是保守地拒答。"
+                             "同一流程在标准图谱上能召回 doc-0042 并答对。"},
+        "agent": {"mode": "agent", "graph": "extracted", "label": "Agent（MCP 工具）",
+                  "verdict": "correct",
+                  "note": "答对，3 份标准证据全部引用。同一份有错误边的图谱，"
+                          "Agent 查到「小让的爷爷是高圆寺寅彦」之后，自己决定再查一步「谁被他封印过」。"
+                          "它不受固定检索名额的限制，按中间结果选下一步，于是绕开了那条错误支路。"},
+    },
+}, {
     "qid": "q-0084",
     "question": "小灰灰和小香香是什么关系？",
     "runs": {
@@ -131,20 +151,49 @@ def export_agent_traces(out: Path) -> int:
             await chat.setup()
             return await chat.ask(question)
 
+    def run_pipeline(graph_rel: str, question: str) -> dict:
+        """固定流水线(规则路由 -> 一次性检索 -> 一次生成), 与评测跑的是同一个 RAGService。"""
+        from graphrag.service import RAGService
+        svc = RAGService(ServiceConfig(graph_path=graph_rel), quiet=True)
+        calls: list = []
+        inner = svc.llm.complete
+        svc.llm.complete = lambda **kw: calls.append(inner(**kw)) or calls[-1]
+        ans = svc.ask(question)
+        hits = svc.retrieve(question)
+        tr = svc.graph_retriever.last_trace
+        tin = sum(r.input_tokens for r in calls)
+        tout = sum(r.output_tokens for r in calls)
+        return {"answer": ans.text, "refused": ans.refused, "stopped": "final",
+                # 流水线的答案用 [1][4] 编号引用, 页面无法从正文里认出 doc id, 单独给出
+                "cited_docs": list(dict.fromkeys(c.doc_id for c in ans.citations)),
+                "llm_calls": len(calls), "input_tokens": tin, "output_tokens": tout,
+                "cost_usd": round((tin * pin + tout * pout) / 1e6, 4), "steps": [],
+                "pipeline": {"route": ans.route, "intent": tr.intent if tr else "",
+                             "top_k": svc.cfg.top_k,
+                             "retrieved": list(dict.fromkeys(h["doc_id"] for h in hits)),
+                             # 实际交给模型的路径(未去重, 与生成时一致)
+                             "paths": ans.graph_paths}}
+
     demos = []
     for spec in AGENT_DEMOS:
         g = gold[spec["qid"]]
         runs = {}
-        for gname, meta in spec["runs"].items():
+        for key, meta in spec["runs"].items():
+            mode, gname = meta.get("mode", "agent"), meta.get("graph", key)
             try:
+                if mode == "pipeline":
+                    runs[key] = {**meta, "mode": mode, "graph": gname,
+                                 **run_pipeline(GRAPHS[gname], spec["question"])}
+                    continue
                 turn = anyio.run(run, GRAPHS[gname], spec["question"])
             except CacheMissError:
-                print(f"[warn] Agent 回放缓存未命中: {gname} | {spec['question']}\n"
-                      f"       先在线跑一遍: python run.py mcp-chat -- "
-                      f"--graph {GRAPHS[gname]} -q \"{spec['question']}\"")
+                hint = ("python run.py e2e" if mode == "pipeline" else
+                        f"python run.py mcp-chat -- --graph {GRAPHS[gname]} -q \"{spec['question']}\"")
+                print(f"[warn] Agent 回放缓存未命中: {key}({mode}, {gname}) | {spec['question']}\n"
+                      f"       先在线跑一遍: {hint}")
                 continue
-            runs[gname] = {
-                **meta,
+            runs[key] = {
+                **meta, "mode": mode, "graph": gname,
                 "answer": turn.answer,
                 "stopped": turn.stopped,
                 "llm_calls": turn.llm_calls,
