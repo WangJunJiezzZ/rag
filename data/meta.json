@@ -1,0 +1,52 @@
+{
+ "chunks": 1092,
+ "docs": 326,
+ "answers": 78,
+ "split": "train",
+ "graphs": {
+  "extracted": {
+   "entities": 227,
+   "edges": 477,
+   "by_type": {
+    "Jurisdiction": 12,
+    "Company": 115,
+    "Fund": 40,
+    "Person": 60
+   },
+   "by_rel": {
+    "RISK_LEVEL": 12,
+    "REGISTERED_IN": 86,
+    "DOMICILED_IN": 40,
+    "LAUNCHED_ON": 38,
+    "MANAGED_BY": 40,
+    "CUSTODIAN": 40,
+    "MIN_INVESTMENT": 40,
+    "DIRECTOR_OF": 125,
+    "SHAREHOLDER_OF": 40,
+    "SUBSIDIARY_OF": 16
+   }
+  },
+  "oracle": {
+   "entities": 197,
+   "edges": 480,
+   "by_type": {
+    "Jurisdiction": 12,
+    "Company": 85,
+    "Person": 60,
+    "Fund": 40
+   },
+   "by_rel": {
+    "RISK_LEVEL": 12,
+    "REGISTERED_IN": 85,
+    "MANAGED_BY": 40,
+    "CUSTODIAN": 40,
+    "DOMICILED_IN": 40,
+    "MIN_INVESTMENT": 40,
+    "LAUNCHED_ON": 40,
+    "DIRECTOR_OF": 127,
+    "SHAREHOLDER_OF": 40,
+    "SUBSIDIARY_OF": 16
+   }
+  }
+ }
+}
