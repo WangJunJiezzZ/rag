@@ -25,9 +25,9 @@ REPORTS = ROOT / "reports"
 
 TYPE_LABEL = {
     "fact_direct": "单跳事实（原词）", "fact_paraphrase": "单跳事实（同义改写）",
-    "semantic_only": "纯语义（无实体名）", "fact_disambig": "易混实体",
-    "hop2": "两跳关系", "hop3_parent": "三跳关系", "hop4_risk": "四跳风险穿透",
-    "shared_director": "共同董事", "aggregation": "聚合计数", "negative": "幻觉陷阱",
+    "semantic_only": "纯语义（无角色名）", "fact_disambig": "易混角色 / 别名",
+    "hop2": "两跳关系", "hop3": "三跳关系", "relation_path": "关系路径（招牌）",
+    "aggregation": "列举比较", "negative": "幻觉陷阱",
 }
 
 
@@ -72,8 +72,10 @@ def section_retrieval() -> str:
                                        for r in ga])
         out.append("<h3>A 组　切块策略对比（recall@1，检索器固定 BM25）</h3>")
         out.append(table(["题型"] + names, rows, highlight=len(names)))
-        out.append('<p class="note">孤儿 chunk 效应：section 策略把「本基金最低认购金额…」'
-                   '切成不含基金名的独立块，recall@1 掉到 58%；补上文档标题前缀（contextual）后回到 100%。</p>')
+        out.append('<p class="note">孤儿 chunk：档案第二、三节全部用「该角色」指代，'
+                   'section 策略切出来的块不含角色名；contextual 给每块补上「XX 角色档案」前缀。'
+                   '语料很短（平均每份约 300 字），fixed 的大块常常碰巧把角色名和事实装进同一块 —— '
+                   '<b>总分接近不代表机制相同</b>。</p>')
 
     gb = d.get("group_b_ablation", [])
     if gb:
@@ -89,26 +91,47 @@ def section_retrieval() -> str:
 
 
 def section_extraction() -> str:
-    d = load("phase2_extraction_rule.json")
-    if not d:
+    runs = [("规则基线", "phase2_extraction_rule.json"),
+            ("LLM v1 朴素", "phase2_extraction_llm_v1_naive.json"),
+            ("LLM v3 few-shot", "phase2_extraction_llm_v3_fewshot.json"),
+            ("LLM v4 结构感知", "phase2_extraction_llm_v4_structural.json")]
+    loaded = [(n, load(f)) for n, f in runs]
+    loaded = [(n, d) for n, d in loaded if d]
+    if not loaded:
         return '<p class="muted">尚未运行 <code>python run.py build-graph</code></p>'
-    rows = [[r, str(v["gold"]), str(v["ext"]), str(v["ok"]),
-             pct(v["precision"]), pct(v["recall"])]
-            for r, v in sorted(d["by_relation"].items(), key=lambda x: -x[1]["gold"])]
-    es, rs = d["extract_stats"], d["resolve_stats"]
-    return (f'<p class="kpi"><b>{pct(d["precision"])}</b> precision　'
-            f'<b>{pct(d["recall"])}</b> recall　<b>{pct(d["f1"])}</b> F1　'
-            f'<span class="muted">抽取器：{d["extractor"]}</span></p>'
-            + table(["关系", "标准", "抽出", "正确", "precision", "recall"], rows)
-            + f'<p class="note"><b>消歧欠账</b>：提及 {rs["mentions"]} 个名称归并为 '
-              f'{rs["canonical"]} 个实体，其中词面规则合并 {rs["merged_by_rule"]} 对，'
-              f'词面一票否决 {rs.get("blocked_by_lexical", 0)} 对（向量说像但词面不通，'
-              f'避免的错合并），灰区未解决 {rs["gray_unresolved"]} 对。'
-              f'剩余未合并的是<b>跨文种别名</b>（罗马化名），只能靠 LLM 裁决。</p>'
-            + f'<p class="note"><b>evidence 回查</b>拦掉 {es["dropped_evidence"]} 条、'
-              f'schema 校验拦掉 {es["dropped_schema"]} 条。</p>'
-            + '<p class="warn">规则抽取在本项目的模板化语料上接近满分，'
-              '<b>该分数不具外推性</b>，仅作为基线与离线兜底；真实能力取决于 LLM 抽取。</p>')
+    out = ["<h3>抽取 prompt 演进（抽取图 vs 标准图逐条比对）</h3>"]
+    rows = [[n, pct(d["precision"]), pct(d["recall"]), pct(d["f1"]),
+             str(d["extract_stats"]["parse_failed"]),
+             f'{d["extract_stats"]["cost_usd"]:.3f}'] for n, d in loaded]
+    out.append(table(["抽取器", "precision", "recall", "F1", "解析失败(份)", "花费 USD"], rows))
+
+    # 结构型文档那三种关系: v3 -> v4 的主要差异
+    v3 = dict(loaded).get("LLM v3 few-shot")
+    v4 = dict(loaded).get("LLM v4 结构感知")
+    if v3 and v4:
+        rels = ["LIVES_IN", "STUDENT_OF", "FACTION"]
+        rows = [[r, pct(v3["by_relation"].get(r, {}).get("recall")),
+                 pct(v4["by_relation"].get(r, {}).get("recall"))] for r in rels]
+        out.append("<h3>列表型文档（居民登记 / 学生名册 / 阵营一览）的召回</h3>")
+        out.append(table(["关系", "v3 recall", "v4 recall"], rows, highlight=2))
+        out.append('<p class="note">v3 的负例写的是「不推理」，模型把「一、正义阵营 · 卡布达」'
+                   '这种<b>读懂排版</b>也当成了推理，整份跳过。v4 把规则细化为'
+                   '「不许臆测，但必须读懂文档结构」，并补了一个列表型正例。</p>')
+        rs = v4["resolve_stats"]
+        out.append(f'<p class="note"><b>消歧</b>（v4）：提及 {rs["mentions"]} 个名称归并为 '
+                   f'{rs["canonical"]} 个实体；文档声明的「又名」合并 {rs.get("merged_by_alias", 0)} 对，'
+                   f'词面一票否决 {rs.get("blocked_by_lexical", 0)} 对，'
+                   f'关系边一票否决 {rs.get("blocked_by_relation", 0)} 对，'
+                   f'LLM 裁决 {rs["llm_calls"]} 次。</p>')
+    out.append('<p class="warn">规则抽取在本项目的模板化语料上满分，'
+               '<b>该分数不具外推性</b>，仅作为基线与离线兜底；真实能力看 LLM 抽取。</p>')
+    return "".join(out)
+
+
+def _ans(r, key):
+    rows = [x for x in r["details"] if x["type"] != "negative"]
+    vals = [x[key] for x in rows if x[key] == x[key]]
+    return sum(vals) / len(vals) if vals else 0.0
 
 
 def section_e2e() -> str:
@@ -116,11 +139,7 @@ def section_e2e() -> str:
     if not d:
         return '<p class="muted">尚未运行 <code>python run.py e2e</code></p>'
     names = [r["prompt"].split("/")[-1] for r in d]
-
-    def ans(r, key):
-        rows = [x for x in r["details"] if x["type"] != "negative"]
-        vals = [x[key] for x in rows if x[key] == x[key]]
-        return sum(vals) / len(vals) if vals else 0.0
+    ans = _ans
 
     rows = [
         ["可答题答对率"] + [pct(ans(r, "correct")) for r in d],
@@ -132,11 +151,85 @@ def section_e2e() -> str:
         ["引用命中标准证据"] + [pct(r["overall"]["citation_grounded"]) for r in d],
         ["累计花费 (USD)"] + [f'{r["overall"]["cost_usd"]:.3f}' for r in d],
     ]
-    return (table(["指标"] + names, rows)
+    extra = ""
+    ext, orc = load("phase3_e2e.json"), load("phase3_e2e_oracle.json")
+    if ext and orc:
+        extra = ("<h3>抽取图 vs 标准图（v3_guarded，全部可答题）</h3>" + table(
+            ["", "抽取图", "标准图"],
+            [["可答题答对率", pct(_ans(ext[0], "correct")), pct(_ans(orc[0], "correct"))],
+             ["可答题实体召回", pct(_ans(ext[0], "entity_recall")),
+              pct(_ans(orc[0], "entity_recall"))]]))
+    return (table(["指标"] + names, rows) + extra
             + '<p class="note"><b>为什么「答对率」和「拒答率」必须并排看：</b>'
               '只看拒答率，一个永远回答「资料中未提及」的系统能拿满分；'
               '只看答对率，一个从不拒答的系统在陷阱题上会全错但总分未必难看。'
               '单看任何一个都能被轻易刷分 —— 这是 prompt 调优最容易自欺的地方。</p>')
+
+
+def _b(name: str) -> dict:
+    d = load("phase1_retrieval.json") or {}
+    return next((r for r in d.get("group_b_ablation", []) if r["retriever"] == name), {})
+
+
+def _r(name: str, t: str, k: str = "10"):
+    return _b(name).get("by_type", {}).get(t, {}).get("recall", {}).get(k)
+
+
+def section_conclusions() -> str:
+    """结论里的每个数字都从 reports/*.json 现算, 不手写 —— 手写的数字迟早和结果脱节。"""
+    items = []
+    if _b("BM25"):
+        items.append(
+            f"<li><b>纯检索找多跳证据靠堆 k，图检索靠走。</b>两跳题图检索 recall@5 = "
+            f"{pct(_r('Graph(oracle)', 'hop2', '5'))}；BM25 放大到 k=20 也只有 "
+            f"{pct(_r('BM25', 'hop2', '20'))}。关系路径题两端角色从不共现于同一文档"
+            f"（<code>verify_dataset.py</code> 已验证）。语料只有 42 份，k=20 已接近半个语料库。</li>")
+        items.append(
+            f"<li><b>公平对照下，路由仍略优于等权融合。</b>RRF(BM25+Graph) "
+            f"{pct(_b('RRF(朴素)')['overall']['recall']['10'])}、RRF(三路) "
+            f"{pct(_b('RRF(三路)')['overall']['recall']['10'])}、Routed "
+            f"{pct(_b('Routed(完整)')['overall']['recall']['10'])}。"
+            f"早期基金语料上\"融合把分数拉垮\"的结论<b>没有复现</b>；"
+            f"两路融合与三路路由的差距有一半来自向量本身 —— 对照组要对齐。</li>")
+        items.append(
+            f"<li><b>枢纽阻断的价值取决于查询模板。</b>关系路径题：阻断 "
+            f"{pct(_r('Graph(oracle)', 'relation_path'))} vs 不阻断 "
+            f"{pct(_r('Graph(无枢纽阻断)', 'relation_path'))}；三跳题 "
+            f"{pct(_r('Graph(oracle)', 'hop3'))} vs {pct(_r('Graph(无枢纽阻断)', 'hop3'))}。"
+            f"只沿指定关系走的关系链模板本身就绕开了 APPEARS_IN 边，所以差距比无差别扩散时小。</li>")
+    v3, v4 = load("phase2_extraction_llm_v3_fewshot.json"), load("phase2_extraction_llm_v4_structural.json")
+    if v3 and v4:
+        items.append(
+            f"<li><b>抽取 prompt 的失分点是排版，不是语义。</b>v3 recall {pct(v3['recall'])}，"
+            f"居民登记 / 阵营一览整份跳过；v4 把\"不推理\"细化为\"必须读懂列表结构\"后 recall "
+            f"{pct(v4['recall'])}，precision {pct(v3['precision'])} → {pct(v4['precision'])}，"
+            f"代价在 hypothesis 里已预先写明。</li>")
+    ext, orc = load("phase3_e2e.json"), load("phase3_e2e_oracle.json")
+    if ext:
+        h2 = ext[0]["by_type"].get("hop2", {})
+        items.append(
+            f"<li><b>检索 recall 100% 不代表答案对。</b>首版两跳题检索 recall@8 已是 100%，答对率只有 25%："
+            f"图检索按原文顺序发 chunk，每份档案先发出去的是标题块。加上关系链模板与文档内挑块后，"
+            f"两跳题答对率 {pct(h2.get('correct'))}。recall 按文档算，会掩盖块级缺失。</li>")
+    if ext and orc:
+        items.append(
+            f"<li><b>抽取图与标准图的端到端差距：</b>可答题答对率 {pct(_ans(ext[0], 'correct'))} vs "
+            f"{pct(_ans(orc[0], 'correct'))}。v4 抽取 recall 100%，抽取环节在端到端上几乎没有损失。</li>")
+    items.append(
+        "<li><b>实体消歧：子串不等于简称，向量不能单独拍板。</b>「和平星」⊂「射手座和平星」、"
+        "「卡布达」⊂「卡布达巨人」都曾被错并。现在文档声明的「又名」是最强证据；前两字相同的进入灰区交 LLM；"
+        "同一份文档里有关系边相连的两个名字一票否决。</li>")
+    gaps = [
+        "语料只有 42 份文档，检索的绝对分数偏乐观；补充分集剧情时只收可核实的事实。",
+        f"纯语义题路由后 recall@10 {pct(_r('Routed(完整)', 'semantic_only'))}，"
+        f"纯 Dense {pct(_r('Dense', 'semantic_only'))}：融合时 BM25 的噪音把向量的结果挤掉了一部分。",
+        "拒答判定仍是关键词匹配：首版漏认了\"没有关于……的信息\"\"没有记载\"，把正确拒答算成了幻觉；"
+        "补全措辞、误拒答改为\"拒答且没答对\"后，三版 prompt 陷阱题拒答均为 100%。新的说法出现时仍会漏判。",
+        f"列举比较题图检索只有 {pct(_r('Graph(oracle)', 'aggregation'))}：「正义阵营」里的「正义」是字面量，链接不到实体。",
+        "枢纽阈值固定为 12，「羊村」这类小枢纽仍会产生弱关联路径。",
+    ]
+    return ("<ul>" + "".join(items) + "</ul><h2>五、已知缺口</h2><ul>"
+            + "".join(f"<li>{g}</li>" for g in gaps) + "</ul>")
 
 
 def main() -> int:
@@ -178,7 +271,7 @@ td.hi{{background:rgba(37,99,235,.08);font-weight:600}}
 ul{{padding-left:20px}}li{{margin:5px 0}}
 </style></head><body><div class="wrap">
 <h1>GraphRAG Lab 评测报告</h1>
-<div class="sub">生成于 {date.today()}　·　全部语料为程序合成，机构/人名/辖区均属虚构　·　
+<div class="sub">生成于 {date.today()}　·　题材：《喜羊羊与灰太狼》×《铁甲小宝》，事实取自维基百科等公开资料　·　
 检索 recall@10：<b>{best}</b></div>
 
 <h2>一、检索</h2>
@@ -191,30 +284,7 @@ ul{{padding-left:20px}}li{{margin:5px 0}}
 {section_e2e()}
 
 <h2>四、主要结论</h2>
-<ul>
-<li><b>纯检索对多跳关系存在结构性失败，加大 k 无解。</b>hop4_risk 的 recall
-随 k 从 1 放大到 20 仅由 17% 升到 50% 即饱和 —— 关键证据与问题零词面重叠，
-无论 top-k 取多大都召不回。已由 <code>verify_dataset.py</code> 形式化验证。</li>
-<li><b>等权 RRF 融合会把分数拉垮。</b>它只看名次、不看「这一路在这类问题上是否可信」，
-BM25 的高排名噪音把图检索的精确结果挤了出去（聚合类 92%→51%）。
-改为基于查询意图的<b>级联路由</b>后总分反超。</li>
-<li><b>阻断枢纽节点值 23 个点。</b>辖区度数 17~25、托管银行 14，允许穿透会让
-「共用一家托管行的两只基金」被判定为存在关联 —— 关系图谱最常见的假阳性来源。</li>
-<li><b>抽取 F1 高不代表图好用。</b>规则抽取 F1 99.8%，但同一张图跑检索仍低于标准图，
-差距来自<b>未合并的跨文种别名</b>。F1 的计算用标准答案做了实体对齐，掩盖了消歧欠账；
-图检索没有这个外挂。</li>
-<li><b>向量相似度不能单独用于实体合并。</b>中文模型对英文串的表示坍缩，
-两家毫不相干的公司余弦相似度可达 1.00。词面三值判定作为守卫后该类错合并归零。</li>
-</ul>
-
-<h2>五、已知缺口</h2>
-<ul>
-<li>纯语义题 recall@10 仅 63.6%，向量模型为 <code>bge-small-zh</code> 量化版，
-换更大模型或加 rerank 应有提升空间。</li>
-<li>查询路由粒度偏粗：两跳题上「融合」优于「路由」，说明应按题型给融合权重而非一刀切。</li>
-<li>跨文种实体消歧依赖 LLM 裁决，未配置 API key 时留有欠账。</li>
-<li>LLM 抽取与 prompt A/B 需配置 provider 后运行，当前报告中的抽取分数来自规则基线。</li>
-</ul>
+{section_conclusions()}
 </div></body></html>"""
 
     out = REPORTS / "index.html"

@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"暖羊羊是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"暖羊羊\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的身份是班长\", \"subject\": \"暖羊羊\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"班长\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色属于盘羊族，是大肥羊学校的转学生\", \"subject\": \"暖羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "暖羊羊是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "暖羊羊",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的身份是班长",
+    "subject": "暖羊羊",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "班长",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色属于盘羊族，是大肥羊学校的转学生",
+    "subject": "暖羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1974,
+ "output_tokens": 177,
+ "cached_read_tokens": 0,
+ "latency_ms": 2898.761624994222,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

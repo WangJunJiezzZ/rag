@@ -1,0 +1,70 @@
+{
+ "text": "{\"entities\":[{\"name\":\"灰太狼\",\"type\":\"角色\",\"attributes\":{\"生日\":\"羊历 3475 年 9 月 26 日\",\"身份\":\"青青草原上的发明家\",\"口头禅\":\"我一定会回来的\",\"厨艺\":\"很好\",\"性格\":\"怕老婆但很爱她，是好丈夫，也是好爸爸\"}},{\"name\":\"喜羊羊与灰太狼\",\"type\":\"动画\",\"attributes\":{}},{\"name\":\"黑太狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"银太狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"武大狼\",\"type\":\"角色\",\"attributes\":{}}],\"relations\":[{\"subject\":\"灰太狼\",\"predicate\":\"登场作品\",\"object\":\"喜羊羊与灰太狼\"},{\"subject\":\"灰太狼\",\"predicate\":\"父亲\",\"object\":\"黑太狼\"},{\"subject\":\"灰太狼\",\"predicate\":\"母亲\",\"object\":\"银太狼\"},{\"subject\":\"灰太狼\",\"predicate\":\"祖先\",\"object\":\"武大狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "生日": "羊历 3475 年 9 月 26 日",
+     "身份": "青青草原上的发明家",
+     "口头禅": "我一定会回来的",
+     "厨艺": "很好",
+     "性格": "怕老婆但很爱她，是好丈夫，也是好爸爸"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   },
+   {
+    "name": "黑太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "银太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "灰太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "父亲",
+    "object": "黑太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "母亲",
+    "object": "银太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "祖先",
+    "object": "武大狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 519,
+ "output_tokens": 216,
+ "cached_read_tokens": 384,
+ "latency_ms": 3594.0900000277907,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

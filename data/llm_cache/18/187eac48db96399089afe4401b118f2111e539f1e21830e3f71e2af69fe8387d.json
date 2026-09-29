@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及飞翔机器人的原型。\n\n现有资料只包含飞翔机器人的编号（3 号机）、身份（支援型机器人）、性格特长、人物关系及阵营信息 [1][4][5][7]，没有关于其原型的任何记载。资料中虽有田德莉娜的原型是瓢虫 [6]，但那是另一角色的信息，不能作为飞翔机器人的答案。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 985,
+ "output_tokens": 82,
+ "cached_read_tokens": 768,
+ "latency_ms": 3555.2192089962773,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

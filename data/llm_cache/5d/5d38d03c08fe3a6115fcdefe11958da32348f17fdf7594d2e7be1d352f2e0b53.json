@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答喜羊羊的妹妹叫什么名字。资料中没有提到喜羊羊有妹妹。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 768,
+ "output_tokens": 23,
+ "cached_read_tokens": 0,
+ "latency_ms": 2584.1341670020483,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

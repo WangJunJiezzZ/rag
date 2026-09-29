@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊就读于大肥羊学校 [1][8]，该校校长是慢羊羊 [2]。\n\n关联路径：\n  懒羊羊 --[学生]--> 大肥羊学校 [1]\n  慢羊羊 --[校长]--> 大肥羊学校 [2]\n结论：懒羊羊上学的学校（大肥羊学校）的校长是慢羊羊。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1063,
+ "output_tokens": 81,
+ "cached_read_tokens": 256,
+ "latency_ms": 3161.103999998886,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

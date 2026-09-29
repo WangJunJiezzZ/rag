@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及卡布达最喜欢啃什么水果。\n\n资料[3]只提到「该角色最爱吃西瓜」，但西瓜属于瓜类，资料中没有说明它是否被归为水果，也没有提到卡布达喜欢啃的其他水果。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1270,
+ "output_tokens": 51,
+ "cached_read_tokens": 384,
+ "latency_ms": 3124.720834020991,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

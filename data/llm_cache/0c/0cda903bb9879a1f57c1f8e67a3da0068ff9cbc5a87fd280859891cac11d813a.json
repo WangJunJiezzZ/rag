@@ -1,0 +1,14 @@
+{
+ "text": "关联路径：\n  小灰灰 --[父亲]--> 灰太狼 [1]\n  小灰灰 --[母亲]--> 红太狼 [1]\n  红太狼 --[表姐]--> 香太狼（香太狼是红太狼的表妹）[2]\n\n结论：香太狼是红太狼的表妹 [2]，而红太狼是小灰灰的母亲 [1]，因此香太狼是小灰灰母亲的表妹，即小灰灰的表姨（表亲长辈）。资料中未直接给出「表姨」这一称谓，仅能确认上述亲属链条。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1076,
+ "output_tokens": 129,
+ "cached_read_tokens": 896,
+ "latency_ms": 3631.1649170238525,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

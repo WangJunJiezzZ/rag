@@ -1,0 +1,70 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"小灰灰\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"性格\": \"温驯天真\",\n        \"特长\": \"哭声很大\",\n        \"口头禅\": \"爸爸，你又骗我\",\n        \"随身物品\": \"奶嘴\",\n        \"首次出现\": \"2009年的电影\",\n        \"作品\": \"喜羊羊与灰太狼\"\n      }\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"特点\": \"总抓不到羊\"\n      }\n    },\n    {\n      \"name\": \"红太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\"\n    },\n    {\n      \"name\": \"小羊们\",\n      \"type\": \"群体\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"小灰灰\",\n      \"predicate\": \"父亲\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"小灰灰\",\n      \"predicate\": \"母亲\",\n      \"object\": \"红太狼\"\n    },\n    {\n      \"subject\": \"小灰灰\",\n      \"predicate\": \"朋友\",\n      \"object\": \"小羊们\"\n    },\n    {\n      \"subject\": \"小灰灰\",\n      \"predicate\": \"作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "小灰灰",
+    "type": "角色",
+    "attributes": {
+     "性格": "温驯天真",
+     "特长": "哭声很大",
+     "口头禅": "爸爸，你又骗我",
+     "随身物品": "奶嘴",
+     "首次出现": "2009年的电影",
+     "作品": "喜羊羊与灰太狼"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "特点": "总抓不到羊"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色"
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画"
+   },
+   {
+    "name": "小羊们",
+    "type": "群体"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "小灰灰",
+    "predicate": "父亲",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "小灰灰",
+    "predicate": "母亲",
+    "object": "红太狼"
+   },
+   {
+    "subject": "小灰灰",
+    "predicate": "朋友",
+    "object": "小羊们"
+   },
+   {
+    "subject": "小灰灰",
+    "predicate": "作品",
+    "object": "喜羊羊与灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 312,
+ "output_tokens": 330,
+ "cached_read_tokens": 0,
+ "latency_ms": 3797.656167007517,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

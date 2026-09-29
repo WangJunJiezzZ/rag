@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，蝎子莱莱的原型**不是蝎子，而是鲎**。\n\n虽然它的名字里带有“蝎子”，但角色档案明确记载：该角色的原型是鲎，全身是紫色的鲎造型。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 331,
+ "output_tokens": 48,
+ "cached_read_tokens": 0,
+ "latency_ms": 2720.815374981612,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

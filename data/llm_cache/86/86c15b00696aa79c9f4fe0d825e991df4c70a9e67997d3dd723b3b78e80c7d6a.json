@@ -1,0 +1,14 @@
+{
+ "text": "提供的资料中没有关于《铁甲小宝》在中国大陆播出时间的信息。资料只提到该剧于 1997 年 2 月 23 日在日本首播，首播电视台为朝日电视台 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 962,
+ "output_tokens": 48,
+ "cached_read_tokens": 0,
+ "latency_ms": 2901.3162499759346,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

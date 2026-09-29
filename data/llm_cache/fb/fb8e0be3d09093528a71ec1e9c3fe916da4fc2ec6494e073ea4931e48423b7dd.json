@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及美羊羊的口头禅。\n\n现有资料中，[1] 只记载了懒羊羊的口头禅，[3][4] 等美羊羊相关条目均无口头禅信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1073,
+ "output_tokens": 47,
+ "cached_read_tokens": 896,
+ "latency_ms": 2897.2317080479115,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

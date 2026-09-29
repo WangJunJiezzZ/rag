@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"懒羊羊是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"懒羊羊\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"}, {\"evidence\": \"该角色的口头禅是“天下皆醒我独睡，天下皆勤我独懒”\", \"subject\": \"懒羊羊\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"天下皆醒我独睡，天下皆勤我独懒\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色总是随身带着枕头\", \"subject\": \"懒羊羊\", \"subject_type\": \"Character\", \"relation\": \"CARRIES\", \"object\": \"枕头\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "懒羊羊是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "懒羊羊",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的口头禅是“天下皆醒我独睡，天下皆勤我独懒”",
+    "subject": "懒羊羊",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "天下皆醒我独睡，天下皆勤我独懒",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色总是随身带着枕头",
+    "subject": "懒羊羊",
+    "subject_type": "Character",
+    "relation": "CARRIES",
+    "object": "枕头",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2489,
+ "output_tokens": 193,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3557.539541972801,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

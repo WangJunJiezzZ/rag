@@ -1,0 +1,137 @@
+{
+ "text": "{\"entities\": [{\"name\": \"喜羊羊\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"美羊羊\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"懒羊羊\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"沸羊羊\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"暖羊羊\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"慢羊羊村长\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"羊村\"}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"狼堡\"}}, {\"name\": \"红太狼\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"狼堡\"}}, {\"name\": \"小灰灰\", \"type\": \"角色\", \"attributes\": {\"居住地\": \"狼堡\"}}, {\"name\": \"羊村\", \"type\": \"地点\", \"attributes\": {}}, {\"name\": \"狼堡\", \"type\": \"地点\", \"attributes\": {}}], \"relations\": [{\"subject\": \"喜羊羊\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"美羊羊\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"懒羊羊\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"沸羊羊\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"暖羊羊\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"慢羊羊村长\", \"predicate\": \"居住于\", \"object\": \"羊村\"}, {\"subject\": \"灰太狼\", \"predicate\": \"居住于\", \"object\": \"狼堡\"}, {\"subject\": \"红太狼\", \"predicate\": \"居住于\", \"object\": \"狼堡\"}, {\"subject\": \"小灰灰\", \"predicate\": \"居住于\", \"object\": \"狼堡\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "美羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "沸羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "暖羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "慢羊羊村长",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "小灰灰",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "羊村",
+    "type": "地点",
+    "attributes": {}
+   },
+   {
+    "name": "狼堡",
+    "type": "地点",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "美羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "慢羊羊村长",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "居住于",
+    "object": "狼堡"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "居住于",
+    "object": "狼堡"
+   },
+   {
+    "subject": "小灰灰",
+    "predicate": "居住于",
+    "object": "狼堡"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 318,
+ "output_tokens": 490,
+ "cached_read_tokens": 128,
+ "latency_ms": 3563.4597499738447,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

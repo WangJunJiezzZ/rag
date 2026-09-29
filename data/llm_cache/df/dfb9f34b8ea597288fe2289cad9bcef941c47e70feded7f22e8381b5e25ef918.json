@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及「爱钱如命的财迷」这一描述对应的机器人。\n\n现有资料中，[3] 只提到反派三人组「过着穷困的日子，一心想利用和平星统治人类」，并未说明其中任何角色是财迷；[1][2][4] 也没有涉及「爱钱如命」或「财迷」的相关内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 681,
+ "output_tokens": 77,
+ "cached_read_tokens": 512,
+ "latency_ms": 3581.46499999566,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

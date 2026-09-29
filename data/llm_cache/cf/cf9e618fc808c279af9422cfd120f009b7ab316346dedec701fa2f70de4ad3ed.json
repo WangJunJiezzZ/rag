@@ -1,0 +1,41 @@
+{
+ "text": "{\"entities\":[{\"name\":\"中野美树\",\"type\":\"角色\"},{\"name\":\"铁甲小宝\",\"type\":\"作品\"},{\"name\":\"女警\",\"type\":\"身份\"}],\"relations\":[{\"subject\":\"中野美树\",\"predicate\":\"登场作品\",\"object\":\"铁甲小宝\"},{\"subject\":\"中野美树\",\"predicate\":\"身份\",\"object\":\"女警\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "中野美树",
+    "type": "角色"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品"
+   },
+   {
+    "name": "女警",
+    "type": "身份"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "中野美树",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "中野美树",
+    "predicate": "身份",
+    "object": "女警"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 341,
+ "output_tokens": 79,
+ "cached_read_tokens": 128,
+ "latency_ms": 2343.639875005465,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

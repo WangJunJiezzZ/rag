@@ -1,0 +1,81 @@
+{
+ "text": "{\"entities\":[{\"name\":\"呱呱蛙\",\"type\":\"角色\",\"attributes\":{\"别名\":\"聒聒蛙\",\"编号\":\"7号机\",\"原型\":\"青蛙\",\"身份\":\"科学博士\",\"口头禅\":\"从结论上来看\",\"性格特点\":\"说话长篇大论，善于分析敌人\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\",\"attributes\":{}},{\"name\":\"聒聒蛙\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"青蛙\",\"type\":\"生物\",\"attributes\":{}},{\"name\":\"科学博士\",\"type\":\"身份\",\"attributes\":{}}],\"relations\":[{\"subject\":\"呱呱蛙\",\"predicate\":\"又名\",\"object\":\"聒聒蛙\"},{\"subject\":\"呱呱蛙\",\"predicate\":\"登场于\",\"object\":\"铁甲小宝\"},{\"subject\":\"呱呱蛙\",\"predicate\":\"编号\",\"object\":\"7号机\"},{\"subject\":\"呱呱蛙\",\"predicate\":\"原型\",\"object\":\"青蛙\"},{\"subject\":\"呱呱蛙\",\"predicate\":\"身份\",\"object\":\"科学博士\"},{\"subject\":\"呱呱蛙\",\"predicate\":\"口头禅\",\"object\":\"从结论上来看\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "呱呱蛙",
+    "type": "角色",
+    "attributes": {
+     "别名": "聒聒蛙",
+     "编号": "7号机",
+     "原型": "青蛙",
+     "身份": "科学博士",
+     "口头禅": "从结论上来看",
+     "性格特点": "说话长篇大论，善于分析敌人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧",
+    "attributes": {}
+   },
+   {
+    "name": "聒聒蛙",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "青蛙",
+    "type": "生物",
+    "attributes": {}
+   },
+   {
+    "name": "科学博士",
+    "type": "身份",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "呱呱蛙",
+    "predicate": "又名",
+    "object": "聒聒蛙"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "编号",
+    "object": "7号机"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "原型",
+    "object": "青蛙"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "身份",
+    "object": "科学博士"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "口头禅",
+    "object": "从结论上来看"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 369,
+ "output_tokens": 234,
+ "cached_read_tokens": 128,
+ "latency_ms": 3938.1893330137245,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

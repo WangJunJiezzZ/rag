@@ -1,0 +1,14 @@
+{
+ "text": "狼堡里住着灰太狼、红太狼和小灰灰[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 658,
+ "output_tokens": 18,
+ "cached_read_tokens": 0,
+ "latency_ms": 2945.2675829525106,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

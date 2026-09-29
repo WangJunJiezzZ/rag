@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，灰太狼的表哥是夜太狼（资料[3]），夜太狼的妻子是香太狼（资料[5]），而香太狼的女儿叫**小香香**（资料[5]）。\n\n所以，灰太狼表哥家的女儿叫**小香香**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 591,
+ "output_tokens": 64,
+ "cached_read_tokens": 0,
+ "latency_ms": 2847.863667004276,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

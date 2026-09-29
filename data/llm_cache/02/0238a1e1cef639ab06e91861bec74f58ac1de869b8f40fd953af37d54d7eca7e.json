@@ -1,0 +1,99 @@
+{
+ "text": "{\"entities\":[{\"name\":\"卡布达\",\"type\":\"角色\",\"attributes\":{\"编号\":\"1号机\",\"原型\":\"独角仙\",\"颜色\":\"红色\",\"普通形态语气\":\"稚气可爱\",\"超级变换后语气\":\"成熟稳重的英雄语气\",\"口头禅\":\"卡布\",\"武器\":\"电光棒\",\"最爱食物\":\"西瓜\",\"超级变换形态维持时间\":\"3分钟\",\"巨人形态\":\"卡布达巨人\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\"},{\"name\":\"小让\",\"type\":\"角色\"},{\"name\":\"友情呼唤指令器\",\"type\":\"道具\"},{\"name\":\"电光棒\",\"type\":\"武器\"},{\"name\":\"西瓜\",\"type\":\"食物\"},{\"name\":\"卡布达巨人\",\"type\":\"形态\"}],\"relations\":[{\"subject\":\"卡布达\",\"predicate\":\"登场于\",\"object\":\"铁甲小宝\"},{\"subject\":\"卡布达\",\"predicate\":\"编号\",\"object\":\"1号机\"},{\"subject\":\"卡布达\",\"predicate\":\"原型\",\"object\":\"独角仙\"},{\"subject\":\"卡布达\",\"predicate\":\"搭档\",\"object\":\"小让\"},{\"subject\":\"卡布达\",\"predicate\":\"使用\",\"object\":\"友情呼唤指令器\"},{\"subject\":\"卡布达\",\"predicate\":\"武器\",\"object\":\"电光棒\"},{\"subject\":\"卡布达\",\"predicate\":\"最爱吃\",\"object\":\"西瓜\"},{\"subject\":\"卡布达\",\"predicate\":\"可变身\",\"object\":\"卡布达巨人\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "卡布达",
+    "type": "角色",
+    "attributes": {
+     "编号": "1号机",
+     "原型": "独角仙",
+     "颜色": "红色",
+     "普通形态语气": "稚气可爱",
+     "超级变换后语气": "成熟稳重的英雄语气",
+     "口头禅": "卡布",
+     "武器": "电光棒",
+     "最爱食物": "西瓜",
+     "超级变换形态维持时间": "3分钟",
+     "巨人形态": "卡布达巨人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "小让",
+    "type": "角色"
+   },
+   {
+    "name": "友情呼唤指令器",
+    "type": "道具"
+   },
+   {
+    "name": "电光棒",
+    "type": "武器"
+   },
+   {
+    "name": "西瓜",
+    "type": "食物"
+   },
+   {
+    "name": "卡布达巨人",
+    "type": "形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "卡布达",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "编号",
+    "object": "1号机"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "原型",
+    "object": "独角仙"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "搭档",
+    "object": "小让"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "使用",
+    "object": "友情呼唤指令器"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "武器",
+    "object": "电光棒"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "最爱吃",
+    "object": "西瓜"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "可变身",
+    "object": "卡布达巨人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 496,
+ "output_tokens": 302,
+ "cached_read_tokens": 256,
+ "latency_ms": 3486.3732090452686,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

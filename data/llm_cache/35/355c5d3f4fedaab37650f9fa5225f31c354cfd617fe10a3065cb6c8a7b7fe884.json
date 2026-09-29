@@ -1,0 +1,14 @@
+{
+ "text": "香太狼的丈夫是夜太狼。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 846,
+ "output_tokens": 12,
+ "cached_read_tokens": 640,
+ "latency_ms": 3705.572500010021,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

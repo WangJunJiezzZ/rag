@@ -1,0 +1,68 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蝎子莱莱\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"别名\": \"蝎子蓝蓝\",\n        \"编号\": \"4号机\",\n        \"原型\": \"鲎\",\n        \"外观\": \"紫色鲎造型\",\n        \"爱好\": \"喝酒\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"鲎\",\n      \"type\": \"生物\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"别名\",\n      \"object\": \"蝎子蓝蓝\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"编号\",\n      \"object\": \"4号机\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"原型\",\n      \"object\": \"鲎\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"外观\",\n      \"object\": \"紫色鲎造型\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"爱好\",\n      \"object\": \"喝酒\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蝎子莱莱",
+    "type": "角色",
+    "attributes": {
+     "别名": "蝎子蓝蓝",
+     "编号": "4号机",
+     "原型": "鲎",
+     "外观": "紫色鲎造型",
+     "爱好": "喝酒"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "鲎",
+    "type": "生物"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "别名",
+    "object": "蝎子蓝蓝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "编号",
+    "object": "4号机"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "原型",
+    "object": "鲎"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "外观",
+    "object": "紫色鲎造型"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "爱好",
+    "object": "喝酒"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 268,
+ "output_tokens": 315,
+ "cached_read_tokens": 0,
+ "latency_ms": 4145.544625003822,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

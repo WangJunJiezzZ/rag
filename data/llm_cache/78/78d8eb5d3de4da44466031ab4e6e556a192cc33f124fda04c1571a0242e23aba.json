@@ -1,0 +1,14 @@
+{
+ "text": "2005 年。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1153,
+ "output_tokens": 7,
+ "cached_read_tokens": 896,
+ "latency_ms": 2385.078333027195,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

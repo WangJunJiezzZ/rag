@@ -3,14 +3,13 @@
 
 为什么切块值得单独做实验
 ------------------------
-本项目的招募说明书里, "本基金全称为XX基金"在第一节,
-"最低认购金额为10万新元"在第四节。朴素定长切块会把两者切开,
-于是第四节那个 chunk 长这样:
+本项目的角色档案里, 角色名只出现在第一节("小灰灰是动画《喜羊羊与灰太狼》中的角色"),
+第二、三节全部用"该角色"指代。按章节切块后, 第三节那个 chunk 长这样:
 
-    "合资格投资者参与本基金的最低认购金额为 10 万新元..."
+    "三、人物关系  该角色的父亲是灰太狼。该角色的母亲是红太狼。"
 
-它不含任何基金名 —— 对"星海亚洲机会基金最低认购额是多少"这个提问,
-无论 dense 还是 BM25 都无法把它与正确的基金关联起来。
+它不含"小灰灰"三个字 —— 对"小灰灰的爸爸是谁"这个提问,
+无论 dense 还是 BM25 都无法把它与正确的角色关联起来。
 这就是**孤儿 chunk**, 是真实 RAG 系统里最常见也最隐蔽的失分点。
 
 三种策略
@@ -44,7 +43,9 @@ class Chunk:
         return asdict(self)
 
 
-# 章节标题: "第一节　基金概况" / "一、变动概述" / "三、备案说明"
+HEAD_MERGE_CHARS = 120      # 不超过这个长度的前言并入第一节
+
+# 章节标题: "一、基本资料" / "三、人物关系" / "第一节　概况"
 _SECTION_RE = re.compile(
     r"^(?:第[一二三四五六七八九十百]+[节章条]|[一二三四五六七八九十]+、)[^\n]*$",
     re.MULTILINE)
@@ -91,11 +92,16 @@ def _sections(text: str) -> list[tuple[str, str, int]]:
         return [("", text, 0)]
     out: list[tuple[str, str, int]] = []
     head = text[: marks[0].start()].strip()
-    if head:
+    # 短前言(文档标题 + 资料来源说明)并入第一节, 不单独成块。
+    # 实测: 单独成块时它不含任何事实, 却占掉检索名额; 标题里的「蜘蛛侦探」
+    # 还会让它在"原型是蜘蛛"这种匹配上抢分。长前言(真正的导语)仍单独成块。
+    merge_head = bool(head) and len(head) <= HEAD_MERGE_CHARS
+    if head and not merge_head:
         out.append(("", head, 0))
     for i, m in enumerate(marks):
         end = marks[i + 1].start() if i + 1 < len(marks) else len(text)
-        out.append((m.group().strip(), text[m.start():end].strip(), m.start()))
+        start = 0 if (i == 0 and merge_head) else m.start()
+        out.append((m.group().strip(), text[start:end].strip(), start))
     return out
 
 

@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，蕉太狼和爹爹狼之间没有直接的人物关系，但可以通过以下路径建立间接联系：\n\n爹爹狼是红太狼的父亲，红太狼是灰太狼的妻子，而蕉太狼是灰太狼的侄子。因此，爹爹狼是蕉太狼的**二叔（灰太狼）的岳父**，也就是蕉太狼二婶（红太狼）的父亲。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 631,
+ "output_tokens": 86,
+ "cached_read_tokens": 0,
+ "latency_ms": 3061.825332988519,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

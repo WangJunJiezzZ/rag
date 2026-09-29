@@ -1,0 +1,64 @@
+{
+ "text": "{\"entities\": [{\"name\": \"喜羊羊\", \"type\": \"角色\", \"attributes\": {\"作品\": \"喜羊羊与灰太狼\", \"特点\": \"羊族里跑得最快的羊\", \"性格\": \"聪明乐观\", \"爱好\": \"踢足球、做实验\", \"特征\": \"脖子上戴着父母送的铃铛，总是随身带着铃铛\"}}, {\"name\": \"智羊羊\", \"type\": \"角色\", \"attributes\": {\"身份\": \"科学家\"}}, {\"name\": \"丽羊羊\", \"type\": \"角色\", \"attributes\": {\"身份\": \"歌星\"}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"attributes\": {}}], \"relations\": [{\"subject\": \"喜羊羊\", \"predicate\": \"父亲\", \"object\": \"智羊羊\"}, {\"subject\": \"喜羊羊\", \"predicate\": \"母亲\", \"object\": \"丽羊羊\"}, {\"subject\": \"喜羊羊\", \"predicate\": \"识破诡计\", \"object\": \"灰太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "特点": "羊族里跑得最快的羊",
+     "性格": "聪明乐观",
+     "爱好": "踢足球、做实验",
+     "特征": "脖子上戴着父母送的铃铛，总是随身带着铃铛"
+    }
+   },
+   {
+    "name": "智羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "科学家"
+    }
+   },
+   {
+    "name": "丽羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "歌星"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊",
+    "predicate": "父亲",
+    "object": "智羊羊"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "母亲",
+    "object": "丽羊羊"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "识破诡计",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 504,
+ "output_tokens": 227,
+ "cached_read_tokens": 256,
+ "latency_ms": 2807.9731250181794,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

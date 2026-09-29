@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是小让 [1]，小让的爷爷是高圆寺寅彦 [4]。\n\n关联路径：\n  卡布达 --[搭档]--> 小让 [1]\n  小让 --[爷爷]--> 高圆寺寅彦 [4]\n\n结论：卡布达搭档的爷爷叫高圆寺寅彦。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1074,
+ "output_tokens": 72,
+ "cached_read_tokens": 384,
+ "latency_ms": 2963.2689169957303,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

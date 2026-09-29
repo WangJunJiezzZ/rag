@@ -5,7 +5,7 @@
 ------------------
   answer_correct      可答题: 标准答案里的实体是否都出现在回答中(别名感知)
   refusal_correct     陷阱题: 是否正确拒答          <- 幻觉抑制的主指标
-  false_refusal       可答题: 是否**错误地**拒答了   <- 拒答护栏的代价
+  false_refusal       可答题: 拒答了且没答对         <- 拒答护栏的代价
   citation_valid      引用编号是否真实存在
   citation_grounded   引用的文档是否确实在标准证据集里
 
@@ -49,8 +49,13 @@ def _alias_forms(name: str, alias_map: dict[str, list[str]]) -> list[str]:
     return alias_map.get(name, [name])
 
 
+def _squash(s: str) -> str:
+    """判分前去掉空白: 标准答案写"3 分钟", 模型常写"3分钟", 两者是同一个答案。"""
+    return "".join((s or "").split()).replace("　", "")
+
+
 def score_answer(item: dict, ans, alias_map: dict[str, list[str]]) -> dict:
-    text = ans.text or ""
+    text = _squash(ans.text)
     row: dict = {"id": item["id"], "type": item["type"],
                  "refused": bool(ans.refused)}
 
@@ -63,12 +68,14 @@ def score_answer(item: dict, ans, alias_map: dict[str, list[str]]) -> dict:
         golds = item["gold_entities"]
         hit = 0
         for g in golds:
-            if any(f and f in text for f in _alias_forms(g, alias_map)):
+            if any(f and _squash(f) in text for f in _alias_forms(g, alias_map)):
                 hit += 1
         row["entity_recall"] = hit / len(golds) if golds else 1.0
         # 全部关键实体出现才算答对 —— 多跳题答一半不算对
         row["correct"] = 1.0 if golds and hit == len(golds) else 0.0
-        row["false_refusal"] = 1.0 if ans.refused else 0.0
+        # 误拒答 = 拒答了**而且**没答对。答对了但带一句"资料未直接写明"的保留说明,
+        # 不算误拒答 —— 否则 v3 在关系路径题上 5/5 答对也会被计成 100% 误拒答。
+        row["false_refusal"] = 1.0 if ans.refused and not row["correct"] else 0.0
         row["refusal_correct"] = float("nan")
 
     cits = ans.citations
@@ -111,8 +118,7 @@ def aggregate(rows: list[dict], name: str, prompt_id: str,
 
 
 TYPE_ORDER = ["fact_direct", "fact_paraphrase", "semantic_only", "fact_disambig",
-              "hop2", "hop3_parent", "hop4_risk", "shared_director",
-              "aggregation", "negative"]
+              "hop2", "hop3", "relation_path", "aggregation", "negative"]
 
 
 def format_e2e(rep: E2EReport) -> str:

@@ -1,0 +1,57 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"高圆寺寅彦\",\n      \"type\": \"角色\",\n      \"aliases\": [\"高圆寺博士\"],\n      \"description\": \"特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。\"\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\",\n      \"description\": \"特摄剧，高圆寺寅彦登场的作品。\"\n    },\n    {\n      \"name\": \"B机器人\",\n      \"type\": \"机器人\",\n      \"description\": \"剧中由高圆寺寅彦制造的机器人。\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"高圆寺寅彦\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"高圆寺寅彦\",\n      \"predicate\": \"身份是\",\n      \"object\": \"机器人科学家\"\n    },\n    {\n      \"subject\": \"高圆寺寅彦\",\n      \"predicate\": \"制造\",\n      \"object\": \"B机器人\"\n    },\n    {\n      \"subject\": \"高圆寺寅彦\",\n      \"predicate\": \"别名\",\n      \"object\": \"高圆寺博士\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "高圆寺寅彦",
+    "type": "角色",
+    "aliases": [
+     "高圆寺博士"
+    ],
+    "description": "特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "description": "特摄剧，高圆寺寅彦登场的作品。"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人",
+    "description": "剧中由高圆寺寅彦制造的机器人。"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "身份是",
+    "object": "机器人科学家"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "制造",
+    "object": "B机器人"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "别名",
+    "object": "高圆寺博士"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 269,
+ "output_tokens": 283,
+ "cached_read_tokens": 0,
+ "latency_ms": 3805.2788749919273,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

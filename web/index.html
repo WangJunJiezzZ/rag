@@ -9,7 +9,7 @@
   --bg:#0f1115; --panel:#171a21; --panel2:#1d212a; --line:#272c38;
   --fg:#e6e9ef; --muted:#8b93a7; --accent:#5b9dff; --accent2:#7ee0b8;
   --warn:#ffb454; --danger:#ff6b6b; --ok:#7ee0b8;
-  --fund:#5b9dff; --company:#b48ead; --person:#ffb454; --jur:#ff6b6b; --lit:#6b7280;
+  --show:#5b9dff; --character:#ffb454; --place:#7bd88f; --group:#b48ead; --item:#ff6b6b; --lit:#6b7280;
 }
 @media (prefers-color-scheme: light){
   :root:not([data-theme="dark"]){
@@ -88,13 +88,39 @@ svg.paths{width:100%;height:auto;display:block}
 .spin{display:inline-block;width:13px;height:13px;border:2px solid rgba(255,255,255,.3);
   border-top-color:#fff;border-radius:50%;animation:sp .7s linear infinite;vertical-align:-2px}
 @keyframes sp{to{transform:rotate(360deg)}}
+/* 自动补全 */
+.acwrap{position:relative;flex:1;min-width:240px;display:flex}
+.acwrap input{flex:1}
+.ac{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:20;background:var(--panel);
+ border:1px solid var(--line);border-radius:9px;max-height:300px;overflow:auto;
+ box-shadow:0 8px 24px rgba(0,0,0,.28);display:none}
+.ac.on{display:block}
+.ac .it{padding:8px 12px;cursor:pointer;font-size:13px;display:flex;gap:8px;align-items:baseline;
+ border-bottom:1px solid var(--line)}
+.ac .it:last-child{border-bottom:0}
+.ac .it:hover,.ac .it.sel{background:var(--panel2)}
+.ac .it .k{font-size:10.5px;color:var(--accent);flex:none;border:1px solid var(--line);
+ border-radius:4px;padding:0 5px}
+.ac .it .q{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ac .hd{padding:6px 12px;font-size:11px;color:var(--muted);background:var(--panel2)}
+/* 问题清单 */
+.cat{display:none;margin-top:12px}
+.cat.on{display:block}
+.catgrp{margin-bottom:10px}
+.catgrp h3{font-size:11.5px;color:var(--accent);margin:0 0 5px;font-weight:600}
+.catq{display:block;width:100%;text-align:left;background:none;border:0;color:var(--muted);
+ font:inherit;font-size:12.5px;padding:3px 0 3px 10px;cursor:pointer;border-left:2px solid var(--line)}
+.catq:hover{color:var(--fg);border-left-color:var(--accent)}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:7px;
+ padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+.toggle:hover{border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header>
     <h1>GraphRAG Lab</h1>
-    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">合成数据演示</b></span>
+    <span class="sub">检索增强 · 知识图谱 · 可溯源问答　<b style="color:var(--warn)">喜羊羊 × 铁甲小宝</b></span>
   </header>
   <div class="status" id="status"></div>
 
@@ -105,10 +131,15 @@ svg.paths{width:100%;height:auto;display:block}
 
   <div class="card">
     <div class="askrow">
-      <input type="text" id="q" placeholder="输入问题，例如：XX基金是否与高风险管辖区的实体存在关联？"
-             autocomplete="off">
+      <span class="acwrap">
+        <input type="text" id="q" placeholder="输入问题，或按 ↓ 浏览全部可回答的问题"
+               autocomplete="off">
+        <div class="ac" id="ac"></div>
+      </span>
       <button class="primary" id="go">提问</button>
+      <button class="toggle" id="catbtn">全部问题</button>
     </div>
+    <div class="cat" id="cat"></div>
     <div class="opts">
       <label>图谱来源
         <select id="graph">
@@ -152,8 +183,8 @@ svg.paths{width:100%;height:auto;display:block}
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const TYPE_COLOR = {Fund:'--fund',Company:'--company',Person:'--person',
-                    Jurisdiction:'--jur',Literal:'--lit',Unknown:'--lit'};
+const TYPE_COLOR = {Show:'--show',Character:'--character',Place:'--place',
+                    Group:'--group',Item:'--item',Literal:'--lit',Unknown:'--lit'};
 let LAST = null;
 
 async function boot(){
@@ -179,6 +210,46 @@ async function boot(){
   document.querySelectorAll('.ex').forEach(b=>b.onclick=()=>{
     $('#q').value = b.dataset.q; ask();
   });
+}
+
+/* ---------- 全部可回答问题清单 + 自动补全 ---------- */
+let CATALOG = [], acItems = [], acSel = -1;
+async function loadCatalog(){
+  try{ CATALOG = await (await fetch('/api/catalog')).json(); }catch(e){ CATALOG = []; }
+  const byType = new Map();
+  for (const c of CATALOG){
+    if (!byType.has(c.label)) byType.set(c.label, []);
+    byType.get(c.label).push(c);
+  }
+  $('#cat').innerHTML = `<div class="note" style="margin:0 0 10px">
+      共 <b>${CATALOG.length}</b> 道题已预跑进缓存，离线演示时都有答案。其余问题仍可检索，但离线模式下没有生成的答案文字。
+    </div>` + [...byType.entries()].map(([label, qs]) => `
+    <div class="catgrp"><h3>${esc(label)}（${qs.length}）</h3>
+      ${qs.map(c => `<button class="catq" data-q="${esc(c.q)}">${esc(c.q)}</button>`).join('')}
+    </div>`).join('');
+  $('#cat').querySelectorAll('.catq').forEach(b => b.onclick = () => {
+    $('#q').value = b.dataset.q; $('#cat').classList.remove('on'); ask();
+  });
+}
+function acRender(list){
+  acItems = list; acSel = -1;
+  const box = $('#ac');
+  if (!list.length){ box.classList.remove('on'); return; }
+  box.innerHTML = `<div class="hd">${list.length} 道有预录答案的问题</div>` +
+    list.map((c,i) => `<div class="it" data-i="${i}">
+      <span class="k">${esc(c.label)}</span><span class="q">${esc(c.q)}</span></div>`).join('');
+  box.classList.add('on');
+  box.querySelectorAll('.it').forEach(el => el.onclick = () => {
+    $('#q').value = acItems[+el.dataset.i].q; acClose(); ask();
+  });
+}
+function acClose(){ $('#ac').classList.remove('on'); acSel = -1; }
+function acMove(d){
+  if (!acItems.length) return;
+  acSel = (acSel + d + acItems.length) % acItems.length;
+  $('#ac').querySelectorAll('.it').forEach((el,i) => el.classList.toggle('sel', i === acSel));
+  const el = $('#ac').querySelector('.it.sel');
+  if (el) el.scrollIntoView({block:'nearest'});
 }
 
 async function ask(){
@@ -267,14 +338,13 @@ function drawPath(g){
   seq.forEach((id,i)=>{
     const n=byId[id], y=PAD+i*H+18;
     const color=`var(${TYPE_COLOR[n.type]||'--lit'})`;
-    const risky = n.risk==='高风险';
     const label=n.name.length>16?n.name.slice(0,15)+'…':n.name;
     svg+=`<g class="node"><rect x="16" y="${y-15}" width="230" height="30"
-      fill="var(--panel2)" stroke="${risky?'var(--danger)':color}"
-      stroke-width="${risky?2.4:1.6}" rx="7"></rect>
+      fill="var(--panel2)" stroke="${color}"
+      stroke-width="1.6" rx="7"></rect>
       <text x="28" y="${y+4}">${esc(label)}</text>
       <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">
-        ${esc(n.type)}${risky?' ⚠':''}</text></g>`;
+        ${esc(n.type)}</text></g>`;
     if(i<seq.length-1){
       const e=edges.find(e=>(e.from===id&&e.to===seq[i+1])||(e.to===id&&e.from===seq[i+1]));
       const y2=PAD+(i+1)*H+18;
@@ -287,9 +357,28 @@ function drawPath(g){
 }
 
 $('#go').onclick=ask;
-$('#q').addEventListener('keydown',e=>{ if(e.key==='Enter') ask(); });
+$('#catbtn').onclick = () => { $('#cat').classList.toggle('on'); acClose(); };
+$('#q').addEventListener('input', () => {
+  const v = $('#q').value.trim();
+  if (!v){ acClose(); return; }
+  // 中文没有词边界: 先按子串匹配, 再按"包含全部输入字符"补齐
+  const hit = CATALOG.filter(c => c.q.includes(v))
+    .concat(CATALOG.filter(c => !c.q.includes(v) && [...v].every(ch => c.q.includes(ch))))
+    .slice(0, 8);
+  acRender(hit);
+});
+$('#q').addEventListener('keydown', e => {
+  if (e.key === 'ArrowDown'){ e.preventDefault(); if (!acItems.length) acRender(CATALOG.slice(0,8)); else acMove(1); }
+  else if (e.key === 'ArrowUp'){ e.preventDefault(); acMove(-1); }
+  else if (e.key === 'Escape'){ acClose(); }
+  else if (e.key === 'Enter'){
+    if (acSel >= 0 && acItems[acSel]){ $('#q').value = acItems[acSel].q; }
+    acClose(); ask();
+  }
+});
+document.addEventListener('click', e => { if (!e.target.closest('.acwrap')) acClose(); });
 ['#graph','#prompt','#topk'].forEach(s=>$(s).onchange=()=>{ if(LAST) ask(); });
-boot();
+boot(); loadCatalog();
 </script>
 </body>
 </html>

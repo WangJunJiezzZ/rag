@@ -1,0 +1,14 @@
+{
+ "text": "狼堡里住着三只狼：灰太狼、红太狼、小灰灰 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 945,
+ "output_tokens": 23,
+ "cached_read_tokens": 768,
+ "latency_ms": 2544.9592910008505,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

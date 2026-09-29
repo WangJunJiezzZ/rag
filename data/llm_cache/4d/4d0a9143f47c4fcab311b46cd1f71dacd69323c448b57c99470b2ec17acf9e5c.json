@@ -1,0 +1,65 @@
+{
+ "text": "{\"entities\": [{\"name\": \"暖羊羊\", \"type\": \"角色\", \"attributes\": {\"身份\": \"班长\", \"种族\": \"盘羊族\", \"性格\": \"温暖\", \"特长\": \"力大无穷\", \"特点\": \"乌鸦嘴，预言坏事很准\", \"学校\": \"大肥羊学校\", \"身份类型\": \"转学生\"}}, {\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画作品\"}, {\"name\": \"大肥羊学校\", \"type\": \"学校\"}], \"relations\": [{\"subject\": \"暖羊羊\", \"predicate\": \"登场于\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"暖羊羊\", \"predicate\": \"就读于\", \"object\": \"大肥羊学校\"}, {\"subject\": \"暖羊羊\", \"predicate\": \"身份是\", \"object\": \"班长\"}, {\"subject\": \"暖羊羊\", \"predicate\": \"属于\", \"object\": \"盘羊族\"}, {\"subject\": \"暖羊羊\", \"predicate\": \"是\", \"object\": \"转学生\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "暖羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "班长",
+     "种族": "盘羊族",
+     "性格": "温暖",
+     "特长": "力大无穷",
+     "特点": "乌鸦嘴，预言坏事很准",
+     "学校": "大肥羊学校",
+     "身份类型": "转学生"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品"
+   },
+   {
+    "name": "大肥羊学校",
+    "type": "学校"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "暖羊羊",
+    "predicate": "登场于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "身份是",
+    "object": "班长"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "属于",
+    "object": "盘羊族"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "是",
+    "object": "转学生"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 449,
+ "output_tokens": 240,
+ "cached_read_tokens": 256,
+ "latency_ms": 2980.7681670063175,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

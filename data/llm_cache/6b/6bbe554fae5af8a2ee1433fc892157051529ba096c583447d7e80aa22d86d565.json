@@ -1,0 +1,74 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"生日\": \"羊历 3475 年 9 月 26 日\",\n        \"性格\": \"怕老婆但很爱她，是好丈夫，也是好爸爸\",\n        \"特长\": \"发明家，厨艺很好\",\n        \"口头禅\": \"我一定会回来的\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\"\n    },\n    {\n      \"name\": \"青青草原\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"黑太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"银太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"武大狼\",\n      \"type\": \"角色\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"活动地点\",\n      \"object\": \"青青草原\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"父亲\",\n      \"object\": \"黑太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"母亲\",\n      \"object\": \"银太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"祖先\",\n      \"object\": \"武大狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "生日": "羊历 3475 年 9 月 26 日",
+     "性格": "怕老婆但很爱她，是好丈夫，也是好爸爸",
+     "特长": "发明家，厨艺很好",
+     "口头禅": "我一定会回来的"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画"
+   },
+   {
+    "name": "青青草原",
+    "type": "地点"
+   },
+   {
+    "name": "黑太狼",
+    "type": "角色"
+   },
+   {
+    "name": "银太狼",
+    "type": "角色"
+   },
+   {
+    "name": "武大狼",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "灰太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "活动地点",
+    "object": "青青草原"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "父亲",
+    "object": "黑太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "母亲",
+    "object": "银太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "祖先",
+    "object": "武大狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 333,
+ "output_tokens": 362,
+ "cached_read_tokens": 0,
+ "latency_ms": 3889.6974999806844,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

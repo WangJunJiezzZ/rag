@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"蕉太狼是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"蕉太狼\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色最爱吃香蕉\", \"subject\": \"蕉太狼\", \"subject_type\": \"Character\", \"relation\": \"FAVORITE_FOOD\", \"object\": \"香蕉\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色是灰太狼的侄子\", \"subject\": \"灰太狼\", \"subject_type\": \"Character\", \"relation\": \"UNCLE_OF\", \"object\": \"蕉太狼\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色和暖羊羊是好朋友\", \"subject\": \"蕉太狼\", \"subject_type\": \"Character\", \"relation\": \"FRIEND_OF\", \"object\": \"暖羊羊\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "蕉太狼是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "蕉太狼",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色最爱吃香蕉",
+    "subject": "蕉太狼",
+    "subject_type": "Character",
+    "relation": "FAVORITE_FOOD",
+    "object": "香蕉",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色是灰太狼的侄子",
+    "subject": "灰太狼",
+    "subject_type": "Character",
+    "relation": "UNCLE_OF",
+    "object": "蕉太狼",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色和暖羊羊是好朋友",
+    "subject": "蕉太狼",
+    "subject_type": "Character",
+    "relation": "FRIEND_OF",
+    "object": "暖羊羊",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1964,
+ "output_tokens": 227,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3643.3458749670535,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

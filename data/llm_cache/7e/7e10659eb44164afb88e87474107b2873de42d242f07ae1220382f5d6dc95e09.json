@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"蜻蜓队长是特摄剧《铁甲小宝》中的角色\", \"subject\": \"蜻蜓队长\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的原型是蜻蜓\", \"subject\": \"蜻蜓队长\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"蜻蜓\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的身份是裁判机器人\", \"subject\": \"蜻蜓队长\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"裁判机器人\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的口头禅是“绝对裁判的公正漂亮”\", \"subject\": \"蜻蜓队长\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"绝对裁判的公正漂亮\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "蜻蜓队长是特摄剧《铁甲小宝》中的角色",
+    "subject": "蜻蜓队长",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的原型是蜻蜓",
+    "subject": "蜻蜓队长",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "蜻蜓",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是裁判机器人",
+    "subject": "蜻蜓队长",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "裁判机器人",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的口头禅是“绝对裁判的公正漂亮”",
+    "subject": "蜻蜓队长",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "绝对裁判的公正漂亮",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1978,
+ "output_tokens": 223,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3109.1323340078816,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

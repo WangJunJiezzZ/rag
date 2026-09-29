@@ -1,0 +1,14 @@
+{
+ "text": "暖羊羊。资料记载该角色有一张乌鸦嘴，预言坏事很准 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 727,
+ "output_tokens": 20,
+ "cached_read_tokens": 512,
+ "latency_ms": 2490.2627079864033,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰总是随身带着奶嘴。[2]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 730,
+ "output_tokens": 11,
+ "cached_read_tokens": 0,
+ "latency_ms": 2868.7195000238717,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

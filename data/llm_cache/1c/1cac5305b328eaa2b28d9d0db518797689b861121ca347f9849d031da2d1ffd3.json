@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，动作慢吞吞、走路还得撑着棍子的是**慢羊羊**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 294,
+ "output_tokens": 20,
+ "cached_read_tokens": 0,
+ "latency_ms": 2754.3922909535468,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

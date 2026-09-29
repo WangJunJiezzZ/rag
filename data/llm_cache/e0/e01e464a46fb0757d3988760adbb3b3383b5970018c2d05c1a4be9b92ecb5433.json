@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，沸羊羊喜欢美羊羊。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 574,
+ "output_tokens": 11,
+ "cached_read_tokens": 0,
+ "latency_ms": 2694.2337909713387,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

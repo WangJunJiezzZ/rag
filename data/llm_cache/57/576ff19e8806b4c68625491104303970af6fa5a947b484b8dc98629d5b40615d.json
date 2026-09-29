@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及「封印」这一行为，也没有任何资料说明高圆寺寅彦封印过哪个机器人。\n\n可确认的部分：\n- 卡布达的搭档是小让 [1]\n- 小让的爷爷是高圆寺寅彦 [4]\n\n但「高圆寺寅彦封印过哪个机器人」在提供的资料中找不到任何依据，因此无法回答。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1140,
+ "output_tokens": 78,
+ "cached_read_tokens": 512,
+ "latency_ms": 2860.6374170049094,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

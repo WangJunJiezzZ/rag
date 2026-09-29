@@ -1,0 +1,14 @@
+{
+ "text": "小让用**友情呼唤指令器**让卡布达进行超级变换 [1]。\n\n补充：卡布达一般要靠搭档的友情呼唤指令器才能超级变换，而卡布达的搭档正是小让 [2][4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 855,
+ "output_tokens": 50,
+ "cached_read_tokens": 384,
+ "latency_ms": 2787.4227089923806,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

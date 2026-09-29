@@ -1,0 +1,14 @@
+{
+ "text": "关联路径：\n  灰太狼 --[表哥]--> 夜太狼 [3]\n  夜太狼 --[丈夫]--> 香太狼 [5]\n  香太狼 --[女儿]--> 小香香 [5]\n\n结论：灰太狼表哥（夜太狼）家的女儿叫小香香 [3][5]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 964,
+ "output_tokens": 73,
+ "cached_read_tokens": 768,
+ "latency_ms": 3829.1459159809165,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,62 @@
+{
+ "text": "{\n  \"triples\": [\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"编号\",\n      \"object\": \"3号机\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"身份\",\n      \"object\": \"支援型机器人\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"能力\",\n      \"object\": \"与卡布达飞翔连结\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"能力\",\n      \"object\": \"让卡布达获得飞行能力\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"性格\",\n      \"object\": \"说话狂妄\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"性格\",\n      \"object\": \"性格像小孩\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"超级变换形态维持时间\",\n      \"object\": \"最多7分钟\"\n    },\n    {\n      \"subject\": \"飞翔机器人\",\n      \"predicate\": \"喜欢\",\n      \"object\": \"田德莉娜\"\n    }\n  ]\n}",
+ "parsed": {
+  "triples": [
+   {
+    "subject": "飞翔机器人",
+    "predicate": "作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "编号",
+    "object": "3号机"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "身份",
+    "object": "支援型机器人"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "能力",
+    "object": "与卡布达飞翔连结"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "能力",
+    "object": "让卡布达获得飞行能力"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "性格",
+    "object": "说话狂妄"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "性格",
+    "object": "性格像小孩"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "超级变换形态维持时间",
+    "object": "最多7分钟"
+   },
+   {
+    "subject": "飞翔机器人",
+    "predicate": "喜欢",
+    "object": "田德莉娜"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 273,
+ "output_tokens": 282,
+ "cached_read_tokens": 0,
+ "latency_ms": 3130.9721670113504,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

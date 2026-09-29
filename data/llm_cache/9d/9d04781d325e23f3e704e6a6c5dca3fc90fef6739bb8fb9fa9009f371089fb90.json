@@ -1,0 +1,14 @@
+{
+ "text": "藏之助和卡布达都登场于特摄剧《铁甲小宝》[1][2]。藏之助是学生会会长[2]，卡布达是爷爷制造的甲虫机器人[1]。此外，藏之助是金龟次郎的搭档[7]，而卡布达与金龟次郎同为争夺和平星的 B 机器人[1]。资料中未提及藏之助与卡布达之间有直接的人物关系。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 731,
+ "output_tokens": 94,
+ "cached_read_tokens": 0,
+ "latency_ms": 3124.8116670176387,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

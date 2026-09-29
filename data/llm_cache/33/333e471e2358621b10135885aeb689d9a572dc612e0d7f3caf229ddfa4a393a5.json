@@ -1,0 +1,73 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"金龟次郎是特摄剧《铁甲小宝》中的角色\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是2 号机\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"2 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是锹形虫\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"锹形虫\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的口头禅是“男人就应该默默的”\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"男人就应该默默的\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的武器是金龟大剪钳\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"金龟大剪钳\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的超级变换形态最多维持 5 分钟\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"TRANSFORM_TIME\", \"object\": \"5 分钟\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的搭档是藏之助\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"PARTNER_OF\", \"object\": \"藏之助\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "金龟次郎是特摄剧《铁甲小宝》中的角色",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是2 号机",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "2 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是锹形虫",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "锹形虫",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的口头禅是“男人就应该默默的”",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "男人就应该默默的",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的武器是金龟大剪钳",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "金龟大剪钳",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的超级变换形态最多维持 5 分钟",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "TRANSFORM_TIME",
+    "object": "5 分钟",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的搭档是藏之助",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "PARTNER_OF",
+    "object": "藏之助",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1982,
+ "output_tokens": 394,
+ "cached_read_tokens": 1536,
+ "latency_ms": 4009.487083996646,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

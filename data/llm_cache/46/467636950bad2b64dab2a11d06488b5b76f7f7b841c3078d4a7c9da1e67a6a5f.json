@@ -1,0 +1,14 @@
+{
+ "text": "田德莉娜是唯一的女性机器人[1]，她属于正义阵营[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 388,
+ "output_tokens": 18,
+ "cached_read_tokens": 0,
+ "latency_ms": 2987.7713749883696,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

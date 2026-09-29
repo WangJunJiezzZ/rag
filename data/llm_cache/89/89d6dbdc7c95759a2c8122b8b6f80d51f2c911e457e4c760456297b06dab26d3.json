@@ -1,0 +1,14 @@
+{
+ "text": "根据现有资料，没有关于飞翔机器人原型的记载。资料中仅提到田德莉娜的原型是瓢虫[6]，未提及飞翔机器人的原型。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 698,
+ "output_tokens": 35,
+ "cached_read_tokens": 0,
+ "latency_ms": 3487.4152920092456,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "关联路径：\n  卡布达 --[搭档]--> 小让 [1]\n  小让 --[爷爷]--> 高圆寺寅彦 [2]\n  高圆寺寅彦 --[封印]--> 鲨鱼辣椒 [4]\n\n结论：卡布达搭档（小让）的爷爷是高圆寺寅彦，他封印过鲨鱼辣椒 [4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1163,
+ "output_tokens": 80,
+ "cached_read_tokens": 384,
+ "latency_ms": 2665.8988330163993,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

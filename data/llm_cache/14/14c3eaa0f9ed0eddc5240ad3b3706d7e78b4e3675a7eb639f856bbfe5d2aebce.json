@@ -1,0 +1,68 @@
+{
+ "text": "{\"entities\":[{\"name\":\"和平星\",\"type\":\"物体\"},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\"},{\"name\":\"蛇夫座\",\"type\":\"星座\"},{\"name\":\"B机器人\",\"type\":\"机器人\"},{\"name\":\"裁判机器人\",\"type\":\"机器人\"},{\"name\":\"假和平星\",\"type\":\"物体\"}],\"relations\":[{\"subject\":\"和平星\",\"predicate\":\"属于\",\"object\":\"铁甲小宝\"},{\"subject\":\"和平星\",\"predicate\":\"代表\",\"object\":\"蛇夫座\"},{\"subject\":\"B机器人\",\"predicate\":\"争夺\",\"object\":\"和平星\"},{\"subject\":\"裁判机器人\",\"predicate\":\"出现于\",\"object\":\"和平星争夺\"},{\"subject\":\"假和平星\",\"predicate\":\"是\",\"object\":\"和平星\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "和平星",
+    "type": "物体"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "蛇夫座",
+    "type": "星座"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "裁判机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "假和平星",
+    "type": "物体"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "和平星",
+    "predicate": "属于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "代表",
+    "object": "蛇夫座"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "裁判机器人",
+    "predicate": "出现于",
+    "object": "和平星争夺"
+   },
+   {
+    "subject": "假和平星",
+    "predicate": "是",
+    "object": "和平星"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 399,
+ "output_tokens": 158,
+ "cached_read_tokens": 256,
+ "latency_ms": 4230.610041995533,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

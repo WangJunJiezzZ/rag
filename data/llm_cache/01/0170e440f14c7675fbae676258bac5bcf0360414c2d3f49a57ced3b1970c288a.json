@@ -1,0 +1,14 @@
+{
+ "text": "《铁甲小宝》共 52 集。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1218,
+ "output_tokens": 13,
+ "cached_read_tokens": 256,
+ "latency_ms": 2442.354625032749,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

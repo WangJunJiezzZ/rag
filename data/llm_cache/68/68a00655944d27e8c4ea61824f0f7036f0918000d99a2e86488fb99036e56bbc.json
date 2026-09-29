@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及喜羊羊的爱好。\n\n可确认的部分：美羊羊喜欢喜羊羊 [1]，喜羊羊是动画《喜羊羊与灰太狼》中的角色 [3]。但资料中没有关于喜羊羊爱好（性格、特长、兴趣等）的任何记载，因此无法回答。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 855,
+ "output_tokens": 66,
+ "cached_read_tokens": 640,
+ "latency_ms": 2596.1073329672217,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

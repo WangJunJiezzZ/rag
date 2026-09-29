@@ -1,27 +1,34 @@
 """
-Phase 0 - 合成语料生成器  (跨平台: macOS / Linux / Windows)
+Phase 0 - 语料生成器  (跨平台: macOS / Linux / Windows)
+
+题材: 《喜羊羊与灰太狼》与《铁甲小宝》两部动画的角色资料。
+事实取自维基百科等公开资料(见 docs/README.md 的来源清单), 译名统一用中国大陆播出版。
+**只收录至少一个可靠来源明确写出的事实**; 来源互相矛盾的(票房、黑太狼的结局等)一律不收。
 
 设计要点(面试讲解点):
 
 1. **先建图, 再渲染文档**。真实世界是"文档 -> 抽取 -> 图", 这里反着来。
-   于是图就是 ground truth, 评测集可以自动生成且 100% 准确, 无需人工标注。
+   于是图就是 ground truth, 评测集的证据文档可以直接算出来, 无需人工标注。
 
-2. **显式植入多跳模式**。随机生成不保证出现"共同董事穿透到高风险辖区"这类
-   结构, 所以显式 plant, 保证评测集对每种检索能力都有覆盖。
+2. **每条关系只写在一份文档里**。"小灰灰的父亲是灰太狼"只写在小灰灰的档案里,
+   "灰太狼的父亲是黑太狼"只写在灰太狼的档案里。于是"小灰灰的爷爷是谁"
+   必须把两份文档拼起来 —— 没有任何单一文档同时提到小灰灰和黑太狼。
 
-3. **刻意制造实体歧义**。同一家公司在不同文档里用全称/简称/罗马化名称。
-   不做实体消歧, 图就会断成孤立节点 -> 所有多跳查询失败。
+3. **刻意制造别名**。高圆寺寅彦在剧情文档里只以「高圆寺博士」出现,
+   吉祥寺藏之助在搭档关系里只以「藏之助」出现。不做实体消歧, 图就断开。
+   别名只在角色本人的档案里声明一次(「又名……」), 这是消歧唯一可靠的线索。
 
-4. **刻意制造语义干扰段 (distractor)**。每份招募说明书都含有措辞高度雷同的
-   "风险因素""费用结构""赎回安排"章节。问"XX基金最低认购额", 向量检索会召回
-   几十份*别的*基金的认购章节 —— 这正是纯向量 RAG 的典型失败模式,
-   也是 BM25 混合 + rerank 能把分数拉起来的原因。这是 demo 的核心对照实验。
+4. **刻意制造语义干扰段 (distractor)**。每份档案都含措辞几乎相同的
+   「登场说明」「资料说明」章节, 不含任何事实, 却会挤占向量检索的 top-k 名额。
+   加上角色名本身高度雷同(喜羊羊/美羊羊/懒羊羊, 灰太狼/红太狼/蕉太狼/香太狼),
+   向量空间里它们彼此挨得很近 —— 这正是纯向量 RAG 的典型失败模式。
 
-5. **刻意制造指代与跨句依赖**。"本基金""本公司"大量出现, 逼迫切块策略
-   必须补上下文, 否则 chunk 变成孤儿。
+5. **刻意制造指代与跨章节依赖**。档案第二、三节全部用「该角色」指代,
+   不出现角色名。切块不补上下文, 这些 chunk 就成了孤儿。
 
-所有机构名、人名、辖区名均为虚构; 辖区风险等级为虚构设定,
-不指涉任何真实司法管辖区、企业或个人。
+6. **结构型文档**。居民登记、学生名册、阵营一览是「标题 + 列表项」格式,
+   「一、正义阵营」下列出的每一项就是一条阵营事实, 但没有一句话完整写出来 ——
+   这是考验抽取 prompt 能否读懂排版的专用文档。
 """
 from __future__ import annotations
 
@@ -40,131 +47,263 @@ setup_console()
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "data" / "synthetic"
 
+SOURCE_NOTE = "【本资料根据维基百科等公开资料整理，角色译名采用中国大陆播出版本，角色及形象权利归原著作权方所有。】"
+DATE = "2026-09-29"
+
 # ==========================================================================
-# 名称池 (全部虚构)
+# 节目
 # ==========================================================================
 
-BRANDS: list[tuple[str, str]] = [
-    ("星海", "Starsea"), ("澜图", "Lantu"), ("砺石", "Lishi"), ("青柏", "Qingbai"),
-    ("屿川", "Yuchuan"), ("鹤鸣", "Heming"), ("沅曦", "Yuanxi"), ("松岚", "Songlan"),
-    ("燧明", "Suiming"), ("洄川", "Huichuan"), ("栖梧", "Qiwu"), ("砚池", "Yanchi"),
-    ("麓岩", "Luyan"), ("汐禾", "Xihe"), ("昀舟", "Yunzhou"), ("岱屿", "Daiyu"),
-    ("漱玉", "Shuyu"), ("樾川", "Yuechuan"), ("柏观", "Baiguan"), ("徽岚", "Huilan"),
-    ("凛川", "Linchuan"), ("瑾樾", "Jinyue"), ("翊澜", "Yilan"), ("岫云", "Xiuyun"),
-    ("珩屿", "Hengyu"), ("霁川", "Jichuan"), ("茗谷", "Minggu"), ("砥行", "Dixing"),
+SHOWS = {
+    "XYY": {"name": "喜羊羊与灰太狼", "kind": "动画"},
+    "TJ":  {"name": "铁甲小宝", "kind": "特摄剧"},
+}
+
+# ==========================================================================
+# 角色档案
+# 每个字段都对应图里的一条边, 来源文档就是这份档案。
+#   aliases   又名(ALIAS)          unit    编号(UNIT_NO)
+#   proto     原型(PROTOTYPE)      role    身份(ROLE)
+#   birthday  生日(BIRTHDAY)       catch   口头禅(CATCHPHRASE)
+#   weapon    武器(WEAPON)         move    必杀技(SPECIAL_MOVE)
+#   food      最爱吃(FAVORITE_FOOD) carries 随身物品(CARRIES)
+#   time      超级变换时限(TRANSFORM_TIME)  giant  巨人形态(GIANT_FORM)
+#   traits    性格特点 —— 只进正文, 不进图(自由文本不适合做三元组)
+#   rels      人物关系 (关系, 对象, 称谓)。见 REL_SENTENCE
+# ==========================================================================
+
+PROFILES: list[dict] = [
+    # ---------------- 喜羊羊与灰太狼: 羊 ----------------
+    {"name": "喜羊羊", "show": "XYY",
+     "carries": "铃铛",
+     "traits": ["是羊族里跑得最快的羊，聪明乐观，总能识破灰太狼的诡计",
+                "喜欢踢足球和做实验，性子急，常常没听完话就动手，闹出笑话",
+                "脖子上的铃铛是父母送的"],
+     "rels": [("PARENT_OF<", "智羊羊", "父亲"), ("PARENT_OF<", "丽羊羊", "母亲")]},
+    {"name": "美羊羊", "show": "XYY",
+     "traits": ["天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事",
+                "能用任何东西编织饰物"],
+     "rels": [("LIKES", "喜羊羊", "")]},
+    {"name": "懒羊羊", "show": "XYY",
+     "carries": "枕头",
+     "catch": "天下皆醒我独睡，天下皆勤我独懒",
+     "traits": ["是草原上最胖、最懒的羊，所以最常被灰太狼抓走",
+                "最爱睡觉和吃零食，运气特别好"]},
+    {"name": "沸羊羊", "show": "XYY",
+     "traits": ["是一只黑脸羊，最健壮也最鲁莽，做事直率，从不考虑后果",
+                "最爱健身"],
+     "rels": [("LIKES", "美羊羊", "")]},
+    {"name": "暖羊羊", "show": "XYY",
+     "role": "班长",
+     "traits": ["属于盘羊族，是大肥羊学校的转学生",
+                "性格温暖，力大无穷",
+                "有一张乌鸦嘴，预言坏事很准"]},
+    {"name": "慢羊羊", "show": "XYY",
+     "aliases": ["慢羊羊村长"],
+     "traits": ["是羊族里最年长的羊，行动比蜗牛还慢，拄着拐杖，记性不好",
+                "思考时头上会长出一根聪明草",
+                "是个乌龙发明家，发明常让自己吃苦头，危急时刻却又能派上用场"],
+     "rels": [("HEAD_OF", "羊村", "村长"), ("HEAD_OF", "大肥羊学校", "校长")]},
+    {"name": "包包大人", "show": "XYY",
+     "role": "青青草原的管理者",
+     "traits": ["是一只秃头大象",
+                "正义感强，但做事一板一眼，常被灰太狼骗"]},
+    # ---------------- 喜羊羊与灰太狼: 狼 ----------------
+    {"name": "灰太狼", "show": "XYY",
+     "birthday": "羊历 3475 年 9 月 26 日",
+     "catch": "我一定会回来的",
+     "traits": ["是青青草原上的发明家，曾制造各种道具去抓羊，却从没成功过",
+                "每次被羊打败都会喊出自己的口头禅",
+                "怕老婆但很爱她，是好丈夫，也是好爸爸",
+                "厨艺很好"],
+     "rels": [("PARENT_OF<", "黑太狼", "父亲"), ("PARENT_OF<", "银太狼", "母亲"),
+              ("DESCENDANT_OF", "武大狼", "第 250 代孙")]},
+    {"name": "红太狼", "show": "XYY",
+     "weapon": "平底锅", "move": "千手平底锅",
+     "catch": "快去抓羊",
+     "traits": ["出身富裕世家，爱打扮",
+                "总是派丈夫去抓羊，抓不到就动手"],
+     "rels": [("SPOUSE_OF", "灰太狼", "丈夫"),
+              ("PARENT_OF<", "爹爹狼", "父亲"), ("PARENT_OF<", "娘娘狼", "母亲")]},
+    {"name": "小灰灰", "show": "XYY",
+     "carries": "奶嘴",
+     "catch": "爸爸，你又骗我",
+     "traits": ["温驯天真，和小羊们成了朋友",
+                "因为爸爸总抓不到羊，只能一直喝奶",
+                "最喜欢看爸爸飞上天，哭声很大",
+                "首次出现在 2009 年的电影里，是剧场版的新角色"],
+     "rels": [("PARENT_OF<", "灰太狼", "父亲"), ("PARENT_OF<", "红太狼", "母亲")]},
+    {"name": "蕉太狼", "show": "XYY",
+     "food": "香蕉",
+     "traits": ["胆小，从小和父母失散，被猴子收养，吃素",
+                "常常阻止二叔抓羊"],
+     "rels": [("UNCLE_OF<", "灰太狼", "侄子"), ("FRIEND_OF", "暖羊羊", "")]},
+    {"name": "香太狼", "show": "XYY",
+     "weapon": "熨斗",
+     "traits": ["和表姐一样凶悍"],
+     "rels": [("COUSIN_OF", "红太狼", "表妹"), ("SPOUSE_OF", "夜太狼", "丈夫"),
+              ("PARENT_OF", "小香香", "女儿"), ("LIKES", "蕉太狼", "")]},
+    {"name": "夜太狼", "show": "XYY",
+     "traits": ["是狼族里有名的恶狼"],
+     "rels": [("COUSIN_OF", "灰太狼", "表哥")]},
+    {"name": "灰二太太狼", "show": "XYY",
+     "move": "沉默羔羊十二式",
+     "traits": ["总叫侄子的乳名「尿太狼」"],
+     "rels": [("UNCLE_OF", "灰太狼", "二叔")]},
+    {"name": "黑太狼", "show": "XYY",
+     "role": "狼族大王",
+     "traits": ["曾因照顾发烧的儿子放弃抓羊行动，被当作临阵脱逃开除狼籍",
+                "后来在雨天为儿子抓鱼时掉进瀑布，从此下落不明"],
+     "rels": [("SPOUSE_OF", "银太狼", "妻子"),
+              ("DESCENDANT_OF", "武大狼", "第 249 代孙")]},
+    # ---------------- 铁甲小宝: 人类 ----------------
+    {"name": "小让", "show": "TJ",
+     "aliases": ["高圆寺让"],
+     "role": "小学生",
+     "traits": ["今年 9 岁",
+                "能用友情呼唤指令器让卡布达进行超级变换"],
+     "rels": [("GRANDPARENT_OF<", "高圆寺寅彦", "爷爷")]},
+    {"name": "高圆寺寅彦", "show": "TJ",
+     "aliases": ["高圆寺博士"],
+     "role": "机器人科学家",
+     "traits": ["是机器人技术的天才，剧中所有 B 机器人都是他制造的"]},
+    {"name": "吉祥寺藏之助", "show": "TJ",
+     "aliases": ["藏之助"],
+     "role": "学生会会长",
+     "traits": ["今年 11 岁，成绩好，运动也好",
+                "父亲是吉祥寺建设公司的副社长"]},
+    {"name": "中野美树", "show": "TJ",
+     "role": "女警"},
+    # ---------------- 铁甲小宝: 机器人 ----------------
+    {"name": "卡布达", "show": "TJ",
+     "unit": "1 号机", "proto": "独角仙",
+     "catch": "卡布", "weapon": "电光棒", "food": "西瓜",
+     "time": "3 分钟", "giant": "卡布达巨人",
+     "traits": ["全身红色，普通形态说话稚气可爱，超级变换之后会变成成熟稳重的英雄语气",
+                "一般要靠搭档的友情呼唤指令器才能超级变换"],
+     "rels": [("PARTNER_OF", "小让", "")]},
+    {"name": "金龟次郎", "show": "TJ",
+     "unit": "2 号机", "proto": "锹形虫",
+     "catch": "男人就应该默默的", "weapon": "金龟大剪钳",
+     "time": "5 分钟",
+     "traits": ["全身绿色，力气很大"],
+     "rels": [("PARTNER_OF", "藏之助", "")]},        # 刻意只写别名
+    {"name": "飞翔机器人", "show": "TJ",
+     "unit": "3 号机", "role": "支援型机器人",
+     "time": "7 分钟",
+     "traits": ["能和卡布达飞翔连结，让卡布达获得飞行能力",
+                "说话狂妄，性格却像个小孩"],
+     "rels": [("LIKES", "田德莉娜", "")]},
+    {"name": "蝎子莱莱", "show": "TJ",
+     "aliases": ["蝎子蓝蓝"],
+     "unit": "4 号机", "proto": "鲎",
+     "traits": ["虽然名字里有蝎子，全身却是紫色的鲎造型",
+                "爱喝酒"]},
+    {"name": "蜘蛛侦探", "show": "TJ",
+     "unit": "5 号机", "proto": "蜘蛛", "weapon": "巨爪",
+     "traits": ["是个守财奴，擅长数钱",
+                "说话带关西口音"]},
+    {"name": "丸子龙", "show": "TJ",
+     "unit": "6 号机", "proto": "鼠妇", "food": "糯米丸子",
+     "traits": ["肚子里藏着和平星的碎片",
+                "起初保持中立，后来加入了卡布达一方"]},
+    {"name": "呱呱蛙", "show": "TJ",
+     "aliases": ["聒聒蛙"],
+     "unit": "7 号机", "proto": "青蛙", "role": "科学博士",
+     "catch": "从结论上来看",
+     "traits": ["说话长篇大论，善于分析敌人"]},
+    {"name": "蟑螂恶霸", "show": "TJ",
+     "unit": "8 号机", "proto": "眼镜蛇", "weapon": "眼镜蛇尾鞭",
+     "traits": ["虽然名字里有蟑螂，原型却不是蟑螂",
+                "全身蓝黄配色，自称恶之英雄"]},
+    {"name": "鲨鱼辣椒", "show": "TJ",
+     "unit": "9 号机", "proto": "鲨鱼", "weapon": "鲨鱼神斧",
+     "time": "15 分钟", "giant": "超级鲨鱼巨人",
+     "traits": ["全身黑银配色，是战斗力最强的 B 机器人",
+                "额头上有一道伤疤"]},
+    {"name": "田德莉娜", "show": "TJ",
+     "unit": "10 号机", "proto": "瓢虫",
+     "traits": ["是唯一的女性机器人",
+                "能长时间保持超级形态，但几乎没有攻击力"]},
+    {"name": "蜻蜓队长", "show": "TJ",
+     "proto": "蜻蜓", "role": "裁判机器人",
+     "catch": "绝对裁判的公正漂亮",
+     "traits": ["争夺和平星时会突然出现，让大家用各种运动或游戏比赛决出胜负",
+                "对犯规者会用从天而降的巨大铁拳加以惩罚"]},
+    {"name": "警用机器人", "show": "TJ",
+     "aliases": ["AP717"],
+     "traits": ["全身蓝色，容易上当，出场次数不多"],
+     "rels": [("PARTNER_OF", "中野美树", "")]},
 ]
 
-CORP_SUFFIX = [
-    ("资产管理有限公司", "Asset Management Pte. Ltd.", "资管"),
-    ("投资控股有限公司", "Investment Holdings Ltd.", "投资"),
-    ("国际控股有限公司", "International Holdings Ltd.", "国际"),
-    ("资本管理有限公司", "Capital Management Ltd.", "资本"),
-    ("环球投资有限公司", "Global Investments Ltd.", "环球"),
-    ("金融服务有限公司", "Financial Services Ltd.", "金服"),
-]
+# 没有独立档案、只在别人档案里出现的角色
+MINOR_CHARACTERS = {
+    "智羊羊": {"role": "科学家"}, "丽羊羊": {"role": "歌星"},
+    "银太狼": {}, "爹爹狼": {}, "娘娘狼": {}, "小香香": {},
+    "武大狼": {},
+}
 
-BANK_BRANDS = [("环宇", "Huanyu"), ("北岸", "Beian"), ("汇川", "Huichuan"),
-               ("昭明", "Zhaoming"), ("瑞辰", "Ruichen")]
+PLACES = ["青青草原", "羊村", "狼堡", "大肥羊学校"]
+GROUPS = {"七大恶狼": "XYY", "反派三人组": "TJ"}
+ITEMS = ["和平星", "射手座和平星", "蛇夫座和平星"]
 
-STRATEGIES = ["亚洲机会", "全球宏观", "私募信贷", "新兴市场债券", "科技成长",
-              "基础设施收益", "房地产收益", "多空策略", "量化对冲", "可持续发展",
-              "并购套利", "结构化信贷"]
+# 智羊羊、丽羊羊的身份写在喜羊羊的档案里
+MINOR_ROLE_DOC = {"智羊羊": "喜羊羊", "丽羊羊": "喜羊羊"}
 
-SURNAMES = list("李王张陈林黄吴刘郑谢许蔡洪曾邱周徐孙马朱")
-GIVEN = ["明远", "志诚", "嘉铭", "之涵", "舒兰", "沐阳", "允之", "思齐", "景行",
-         "若谷", "承业", "牧之", "秉文", "清和", "书尧", "南星", "砚书", "行知",
-         "怀瑾", "慕白", "知微", "听澜", "见山", "仲康", "敬亭", "叔夜", "衡之"]
+# ==========================================================================
+# 句子模板。RuleExtractor 的正则与这里一一对应 —— 改一边必须改另一边。
+# ==========================================================================
 
-JURISDICTIONS = [
-    ("新港城", "低风险", False), ("白鹭湾", "低风险", False),
-    ("临海特区", "低风险", False), ("北屿自治区", "低风险", False),
-    ("澄江特别行政区", "低风险", False),
-    ("卡兰群岛", "中风险", True), ("圣维尔", "中风险", True),
-    ("图兰海峡区", "中风险", True), ("米德兰", "中风险", False),
-    ("维兰群岛", "高风险", True), ("卡瑟尼亚", "高风险", True),
-    ("圣德罗自由区", "高风险", True),
-]
+LIT_SENTENCE = {
+    "unit":     ("UNIT_NO",        "该角色的编号是{x}。"),
+    "proto":    ("PROTOTYPE",      "该角色的原型是{x}。"),
+    "role":     ("ROLE",           "该角色的身份是{x}。"),
+    "birthday": ("BIRTHDAY",       "该角色的生日是{x}。"),
+    "catch":    ("CATCHPHRASE",    "该角色的口头禅是“{x}”。"),
+    "weapon":   ("WEAPON",         "该角色的武器是{x}。"),
+    "move":     ("SPECIAL_MOVE",   "该角色的必杀技是{x}。"),
+    "food":     ("FAVORITE_FOOD",  "该角色最爱吃{x}。"),
+    "carries":  ("CARRIES",        "该角色总是随身带着{x}。"),
+    "time":     ("TRANSFORM_TIME", "该角色的超级变换形态最多维持 {x}。"),
+    "giant":    ("GIANT_FORM",     "该角色可以变成巨人形态{x}。"),
+}
+BASIC_KEYS = ["unit", "proto", "role", "birthday"]
+TRAIT_KEYS = ["catch", "weapon", "move", "food", "carries", "time", "giant"]
+
+# (关系, 对象, 称谓) -> 句子。关系名以 "<" 结尾表示边的方向是 对象 -> 本角色。
+REL_SENTENCE = {
+    "PARENT_OF<":      "该角色的{label}是{x}。",      # x 是本角色的父/母
+    "PARENT_OF":       "该角色的{label}是{x}。",      # x 是本角色的子女
+    "GRANDPARENT_OF<": "该角色的{label}是{x}。",
+    "SPOUSE_OF":       "该角色的{label}是{x}。",
+    "COUSIN_OF":       "该角色是{x}的{label}。",
+    "UNCLE_OF":        "该角色是{x}的{label}。",
+    "UNCLE_OF<":       "该角色是{x}的{label}。",      # 侄子: 边为 x -UNCLE_OF-> 本角色
+    "DESCENDANT_OF":   "该角色是{x}的{label}。",
+    "HEAD_OF":         "该角色是{x}的{label}。",
+    "LIKES":           "该角色喜欢{x}。",
+    "FRIEND_OF":       "该角色和{x}是好朋友。",
+    "PARTNER_OF":      "该角色的搭档是{x}。",
+}
 
 # ==========================================================================
 # 干扰段落池 (distractor)
-# 关键: 这些段落在几十份文档间措辞几乎相同, 向量空间里彼此距离极近。
-# 它们不含任何可抽取的事实, 却会大量挤占 top-k 名额。
+# 在几十份档案间措辞几乎相同, 不含任何可抽取的事实, 却会大量挤占 top-k 名额。
 # ==========================================================================
 
-RISK_FACTORS = [
-    ("市场风险", "本基金投资的金融工具价格可能因宏观经济环境、利率水平、"
-                 "汇率变动、市场情绪及突发事件而出现大幅波动。在极端市场条件下，"
-                 "本基金资产净值可能在短期内显著下跌，投资者可能损失全部本金。"),
-    ("流动性风险", "本基金部分投资标的可能缺乏活跃的二级市场。在需要变现时，"
-                   "本基金可能无法以合理价格及时处置相关资产，"
-                   "从而影响赎回安排的正常执行。"),
-    ("信用风险", "本基金持有的债务工具发行人可能出现付息或偿本违约。"
-                 "发行人信用评级下调亦可能导致相关资产估值下降。"),
-    ("汇率风险", "本基金部分资产以非基准货币计价。汇率的不利变动"
-                 "可能侵蚀以基准货币计量的投资回报。"),
-    ("集中度风险", "本基金可能在特定行业、地区或单一发行人上形成较高的持仓集中度，"
-                   "相关标的的不利变动将对本基金产生放大的影响。"),
-    ("关联交易风险", "本基金管理人及其关联方可能同时管理其他投资组合，"
-                     "从而产生潜在利益冲突。管理人已建立相应的隔离与披露机制。"),
-    ("法律与监管风险", "本基金所涉司法管辖区的法律、税务及监管要求可能发生变化，"
-                       "该等变化可能对本基金的运作、成本及回报产生不利影响。"),
-    ("估值风险", "对于缺乏公开报价的资产，本基金依赖估值模型及第三方估值服务。"
-                 "估值结果可能与实际变现价格存在差异。"),
+DEBUT_CLAUSES = [
+    "该角色在系列的多部作品中均有登场。不同季度、剧场版及续作中的设定可能存在差异，本档案以原版电视剧集为准。",
+    "该角色的形象与性格在播出期间大体保持稳定。部分细节在后续作品中有所调整，本档案不收录续作设定。",
+    "该角色的相关剧情分散在多集之中。如需了解具体情节，请以正片内容为准。",
+    "该角色在不同地区播出时可能使用不同译名。本档案统一采用中国大陆播出版本的名称。",
 ]
 
-REDEMPTION_CLAUSES = [
-    "本基金设有 {lock} 个月锁定期。锁定期届满后，投资者可于每个季度末提交赎回申请，"
-    "申请须提前 {notice} 个工作日送达管理人。",
-    "投资者可于每月最后一个工作日申请赎回，赎回款项一般于确认后 {settle} 个工作日内支付。"
-    "本基金保留在市场异常情况下暂停赎回的权利。",
-    "赎回安排采用季度开放机制。单一开放日的赎回总额超过基金资产净值 {gate}% 时，"
-    "管理人有权按比例延后处理超出部分。",
+NOTE_CLAUSES = [
+    "本档案根据维基百科等公开资料整理，仅供动画爱好者交流参考。",
+    "角色形象及相关权利归原著作权方所有，本档案不用于任何商业用途。",
+    "本档案内容如与正片不一致，以正片为准。",
+    "如发现本档案有遗漏或错误，欢迎对照正片核实后更正。",
 ]
-
-FEE_CLAUSES = [
-    "管理人按基金资产净值的 {mgmt}% 年费率收取管理费，按月计提、按季支付。"
-    "托管人按 {cust}% 年费率收取托管费。",
-    "本基金的业绩报酬按超过 {hurdle}% 年化门槛收益率部分的 {carry}% 计提，"
-    "采用高水位线法，每年结算一次。",
-    "除管理费与托管费外，本基金还将承担审计费、法律顾问费、行政管理费及"
-    "其他与基金运作直接相关的合理费用。前述费用合计一般不超过基金资产净值的 {other}%。",
-]
-
-SCOPE_CLAUSES = [
-    "本基金的投资范围包括但不限于：于受认可交易所上市的股票及存托凭证、"
-    "政府及公司债务工具、货币市场工具、以及为对冲目的持有的衍生金融工具。",
-    "本基金可将不超过 {cap}% 的资产净值投资于非上市股权或流动性受限的资产。"
-    "该等投资须经投资委员会事前审批。",
-    "本基金一般不进行实物商品交易，亦不以投机为目的持有杠杆敞口。"
-    "为管理组合久期与汇率敞口，本基金可使用利率及外汇衍生品。",
-]
-
-GOVERNANCE_CLAUSES = [
-    "本基金设投资委员会，由不少于三名成员组成，负责审议重大投资决策"
-    "及关联交易事项。委员会每月至少召开一次会议。",
-    "管理人已建立独立的合规与风险管理职能，直接向董事会报告，"
-    "并定期对投资限制的遵守情况进行监控。",
-    "本基金的账目由独立审计机构按年度审计，审计报告将于财政年度结束后"
-    "四个月内向投资者提供。",
-]
-
-BIO_CLAUSES = [
-    "在加入本公司前，{name}曾于多家区域性金融机构担任投资及风险管理职务，"
-    "在跨境资产配置方面积累了超过 {yrs} 年的从业经验。",
-    "{name}持有金融相关专业的硕士学位，并具备所在司法管辖区认可的"
-    "从业资格，过往主要覆盖机构客户业务。",
-    "{name}此前长期从事结构化产品与另类投资的设计与分销工作，"
-    "累计管理规模逾 {aum} 亿单位货币。",
-]
-
-DISCLAIMER = [
-    "本文件所载信息仅供参考，不构成任何投资建议、要约或要约邀请。",
-    "投资涉及风险，过往表现并不代表未来业绩，投资者可能损失全部本金。",
-    "本公告的中英文版本如有歧义，以中文版本为准。",
-    "如对本文件内容有任何疑问，请咨询您的独立专业顾问。",
-]
-
-SYNTHETIC_NOTE = "【本文件为系统演示用合成数据，所述机构、人员及管辖区均属虚构。】"
 
 
 # ==========================================================================
@@ -174,7 +313,7 @@ SYNTHETIC_NOTE = "【本文件为系统演示用合成数据，所述机构、�
 @dataclass
 class Entity:
     id: str
-    type: str                      # Fund | Company | Person | Jurisdiction
+    type: str                      # Show | Character | Place | Group | Item
     name: str                      # 规范名 canonical
     aliases: list[str] = field(default_factory=list)
     props: dict = field(default_factory=dict)
@@ -202,470 +341,312 @@ class World:
     def __init__(self, seed: int):
         self.rng = random.Random(seed)
         self.entities: dict[str, Entity] = {}
+        self.by_name: dict[str, str] = {}
         self.edges: list[Edge] = []
         self.docs: list[Document] = []
-        self.planted: dict[str, list] = {}
-        self._doc_seq = 0
+        self.doc_keys: dict[str, str] = {}       # 语义键 -> 文档 id, 供评测集引用
+        self.planted: dict[str, list] = {"alias_only": []}
+        self._seq: dict[str, int] = {}
 
-    def add(self, e: Entity) -> Entity:
+    def add(self, typ: str, name: str, prefix: str,
+            aliases: list[str] | None = None, **props) -> Entity:
+        n = self._seq.get(prefix, 0) + 1
+        self._seq[prefix] = n
+        e = Entity(id=f"{prefix}{n:02d}", type=typ, name=name,
+                   aliases=list(aliases or []), props=props)
         self.entities[e.id] = e
+        self.by_name[name] = e.id
+        for a in e.aliases:
+            self.by_name[a] = e.id
         return e
 
+    def eid(self, name: str) -> str:
+        return self.by_name[name]
+
     def link(self, src: str, rel: str, dst: str, doc: str) -> None:
-        self.edges.append(Edge(src=src, rel=rel, dst=dst, source_doc=doc))
+        """src/dst 传名称; 以 "lit:" 开头的 dst 是字面量。"""
+        s = self.eid(src)
+        d = dst if dst.startswith("lit:") else self.eid(dst)
+        self.edges.append(Edge(src=s, rel=rel, dst=d, source_doc=doc))
 
-    def next_doc_id(self) -> str:
-        self._doc_seq += 1
-        return f"doc-{self._doc_seq:04d}"
-
-    def emit(self, doc_type: str, title: str, date: str, text: str) -> str:
-        did = self.next_doc_id()
+    def emit(self, key: str, doc_type: str, title: str, text: str) -> str:
+        did = f"doc-{len(self.docs) + 1:04d}"
         self.docs.append(Document(id=did, doc_type=doc_type, title=title,
-                                  date=date, text=text))
+                                  date=DATE, text=text))
+        self.doc_keys[key] = did
         return did
-
-
-# ==========================================================================
-# 渲染工具
-# ==========================================================================
-
-def pick_alias(w: World, e: Entity) -> str:
-    """随机返回全称/简称/罗马化名 —— 实体消歧的燃料。"""
-    r = w.rng.random()
-    if r < 0.58 or not e.aliases:
-        return e.name
-    if r < 0.85:
-        return e.aliases[0]
-    return e.aliases[-1]
-
-
-def fill(w: World, tmpl: str) -> str:
-    rng = w.rng
-    return tmpl.format(
-        lock=rng.choice([6, 12, 18, 24]), notice=rng.choice([15, 30, 45]),
-        settle=rng.choice([5, 7, 10]), gate=rng.choice([10, 15, 20]),
-        mgmt=rng.choice(["1.00", "1.25", "1.50", "1.75", "2.00"]),
-        cust=rng.choice(["0.05", "0.08", "0.10", "0.12"]),
-        hurdle=rng.choice([4, 5, 6, 8]), carry=rng.choice([10, 15, 20]),
-        other=rng.choice(["0.30", "0.45", "0.60"]), cap=rng.choice([10, 15, 20, 30]),
-        yrs=rng.randint(8, 25), aum=rng.randint(10, 300), name="",
-    )
-
-
-def risk_section(w: World, n: int = 4) -> str:
-    picked = w.rng.sample(RISK_FACTORS, n)
-    body = "".join(f"（{i+1}）{title}\n　　{text}\n" for i, (title, text) in enumerate(picked))
-    return "风险因素\n" + body
 
 
 # ==========================================================================
 # 文档渲染
 # ==========================================================================
 
-def render_prospectus(w: World, fund: Entity) -> str:
-    """招募说明书: 长文档, 事实分散在不同章节, 大量'本基金'指代, 含干扰章节。"""
+def render_profile(w: World, p: dict) -> tuple[str, list[tuple[str, str, str]]]:
+    """角色档案。返回 (正文, 待连接的边)。边在拿到 doc id 之后才能落地。"""
     rng = w.rng
-    mgr = w.entities[fund.props["manager"]]
-    cus = w.entities[fund.props["custodian"]]
-    dom = w.entities[fund.props["domicile"]]
-    mgr_name = pick_alias(w, mgr)
+    name = p["name"]
+    show = SHOWS[p["show"]]
+    edges: list[tuple[str, str, str]] = [(name, "APPEARS_IN", show["name"])]
+
+    basic = [f"{name}是{show['kind']}《{show['name']}》中的角色。"]
+    for a in p.get("aliases", []):
+        basic.append(f"{name}又名{a}。")
+        edges.append((name, "ALIAS", f"lit:{a}"))
+    for k in BASIC_KEYS:
+        if k in p:
+            rel, tmpl = LIT_SENTENCE[k]
+            basic.append(tmpl.format(x=p[k]))
+            edges.append((name, rel, f"lit:{p[k]}"))
+
+    traits = ["该角色" + t + "。" for t in p.get("traits", [])]
+    for k in TRAIT_KEYS:
+        if k in p:
+            rel, tmpl = LIT_SENTENCE[k]
+            traits.append(tmpl.format(x=p[k]))
+            edges.append((name, rel, f"lit:{p[k]}"))
+
+    rels: list[str] = []
+    for rel, other, label in p.get("rels", []):
+        rels.append(REL_SENTENCE[rel].format(x=other, label=label))
+        if rel.endswith("<"):
+            edges.append((other, rel[:-1], name))
+        else:
+            edges.append((name, rel, other))
+    # 配角的身份写在主角档案里(如喜羊羊档案里写父亲是科学家)
+    for minor, host in MINOR_ROLE_DOC.items():
+        if host == name:
+            role = MINOR_CHARACTERS[minor]["role"]
+            rels.append(f"{minor}的身份是{role}。")
+            edges.append((minor, "ROLE", f"lit:{role}"))
+    if not rels:
+        rels.append("该角色与其他角色的关系详见相关条目。")
 
     parts = [
-        f"{fund.name}\n招募说明书（节选）\n",
-        SYNTHETIC_NOTE + "\n",
-        "第一节　基金概况\n"
-        f"　　本基金全称为{fund.name}（以下简称“本基金”），"
-        f"于 {fund.props['launch_date']} 依法设立并完成注册登记，注册地为{dom.name}。\n"
-        f"　　本基金为面向合资格投资者发售的开放式集合投资计划，基准货币为"
-        f"{fund.props['base_ccy']}，存续期限为无固定期限。\n",
-        "第二节　投资目标与策略\n"
-        f"　　本基金采用{fund.props['strategy']}策略，"
-        f"力求在严格控制下行风险的前提下实现资本的中长期稳健增值。\n"
-        f"　　{fill(w, rng.choice(SCOPE_CLAUSES))}\n"
-        f"　　{fill(w, rng.choice(SCOPE_CLAUSES))}\n",
-        "第三节　参与机构\n"
-        f"　　基金管理人：{mgr_name}。管理人负责本基金的投资决策、"
-        f"日常运作及信息披露。\n"
-        f"　　基金托管人：{cus.name}。托管人负责本基金财产的保管、"
-        f"清算交收及对管理人投资运作的监督。\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n",
-        "第四节　认购与赎回安排\n"
-        f"　　合资格投资者参与本基金的最低认购金额为 {fund.props['min_investment']}，"
-        f"低于该金额的申购指令将不予受理。后续追加认购的最低金额为"
-        f"{fund.props['min_topup']}。\n"
-        f"　　{fill(w, rng.choice(REDEMPTION_CLAUSES))}\n",
-        "第五节　费用与税项\n"
-        f"　　{fill(w, rng.choice(FEE_CLAUSES))}\n"
-        f"　　{fill(w, rng.choice(FEE_CLAUSES))}\n",
-        "第六节　" + risk_section(w, rng.randint(3, 5)),
-        "第七节　重要提示\n　　" + "\n　　".join(rng.sample(DISCLAIMER, 3)),
+        f"{name}\n角色档案\n",
+        SOURCE_NOTE + "\n",
+        "一、基本资料\n　　" + "".join(basic) + "\n",
+        "二、性格与特长\n　　" + ("\n　　".join(traits) if traits
+                             else "该角色的性格特点详见正片。") + "\n",
+        "三、人物关系\n　　" + "\n　　".join(rels) + "\n",
+        "四、登场说明\n　　" + rng.choice(DEBUT_CLAUSES) + "\n",
+        "五、资料说明\n　　" + "\n　　".join(rng.sample(NOTE_CLAUSES, 2)),
     ]
-    return "\n".join(parts)
+    return "\n".join(parts), edges
 
 
-def render_annual_review(w: World, mgr: Entity, funds: list[Entity]) -> str:
-    """管理人年度回顾: 一份文档里提到多只基金 —— 制造跨实体的 chunk 归属难题。"""
-    rng = w.rng
-    mgr_name = pick_alias(w, mgr)
-    lines = [
-        f"{mgr_name}\n{rng.randint(2023, 2025)} 年度业务回顾（摘要）\n",
-        SYNTHETIC_NOTE + "\n",
-        "一、业务概览\n"
-        f"　　本公司于报告期内持续深化多策略资产管理业务。"
-        f"截至报告期末，本公司管理的集合投资计划共 {len(funds)} 只。\n",
-        "二、旗下产品\n",
-    ]
-    for f in funds:
-        cus = w.entities[f.props["custodian"]]
-        lines.append(
-            f"　　· {f.name}：采用{f.props['strategy']}策略，"
-            f"注册地为{w.entities[f.props['domicile']].name}，"
-            f"托管人为{cus.name}。\n"
-        )
-    lines.append(
-        "三、风险管理\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n"
-    )
-    lines.append("四、免责声明\n　　" + "\n　　".join(rng.sample(DISCLAIMER, 2)))
-    return "\n".join(lines)
-
-
-def render_director_notice(w: World, person: Entity, company: Entity, date: str) -> str:
-    rng = w.rng
-    cname = pick_alias(w, company)
-    head = rng.choice([
-        f"{cname}\n关于董事变更的公告\n",
-        f"{cname}\n董事会人事公告\n",
-        f"{cname}\n董事会组成变动通知\n",
-    ])
-    body = rng.choice([
-        f"　　本公司董事会谨此宣布，自 {date} 起，委任{person.name}为本公司董事，"
-        f"任期三年，自生效之日起算。",
-        f"　　经 {date} 召开的股东大会审议通过，{person.name}当选为本公司董事，"
-        f"即日生效。相关变更已按规定向注册机关备案。",
-        f"　　本公司于 {date} 完成董事会成员增补，新任董事为{person.name}。"
-        f"董事会现由五名成员组成。",
-    ])
-    bio = fill(w, rng.choice(BIO_CLAUSES)).replace("{name}", person.name)
-    bio = rng.choice(BIO_CLAUSES).format(name=person.name,
-                                         yrs=rng.randint(8, 25), aum=rng.randint(10, 300))
-    return "\n".join([
-        head, SYNTHETIC_NOTE + "\n", body + "\n",
-        "董事简历\n　　" + bio + "\n",
-        "其他事项\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n",
-        "　　" + rng.choice(DISCLAIMER),
-    ])
-
-
-def render_shareholding_notice(w: World, person: Entity, company: Entity,
-                               pct: int, date: str) -> str:
-    rng = w.rng
-    cname = pick_alias(w, company)
-    return "\n".join([
-        f"{cname}\n权益变动公告\n", SYNTHETIC_NOTE + "\n",
-        "一、变动概述\n"
-        f"　　截至 {date}，{person.name}直接持有本公司已发行股本的 {pct}%，"
-        f"为本公司主要股东之一。本次权益变动不会导致本公司控制权发生变化。\n",
-        "二、股东信息\n"
-        f"　　股东名称：{person.name}\n"
-        f"　　持股比例：{pct}%\n"
-        f"　　登记日期：{date}\n",
-        "三、其他说明\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n",
-        "　　" + rng.choice(DISCLAIMER),
-    ])
-
-
-def render_registration(w: World, company: Entity) -> str:
-    rng = w.rng
-    dom = w.entities[company.props["jurisdiction"]]
-    cname = pick_alias(w, company)
-    return "\n".join([
-        f"{cname}\n企业注册信息摘要\n", SYNTHETIC_NOTE + "\n",
-        "一、主体信息\n"
-        f"　　实体名称：{cname}\n"
-        f"　　注册编号：{company.props['reg_no']}\n"
-        f"　　注册地：{dom.name}\n"
-        f"　　注册日期：{company.props['reg_date']}\n"
-        f"　　主体状态：存续\n",
-        "二、经营范围\n"
-        f"　　本公司系一家根据{dom.name}法律注册成立的有限责任公司，"
-        f"业务范围涵盖投资管理、投资顾问及相关配套服务。\n",
-        "三、备案说明\n"
-        f"　　本摘要依据登记机关公开信息整理，"
-        f"如与登记机关记载不一致，以登记机关记载为准。\n",
-        "　　" + rng.choice(DISCLAIMER),
-    ])
-
-
-def render_group_structure(w: World, parent: Entity, child: Entity) -> str:
-    rng = w.rng
-    pn, cn = pick_alias(w, parent), pick_alias(w, child)
-    return "\n".join([
-        f"{pn}\n集团架构说明\n", SYNTHETIC_NOTE + "\n",
-        "一、持股关系\n"
-        f"　　{cn}为{pn}之全资附属公司，{pn}持有其 100% 股权。\n"
-        f"　　本集团的相关投资业务主要通过上述附属公司开展。\n",
-        "二、合并范围\n"
-        f"　　该附属公司已纳入本集团合并财务报表范围。\n",
-        "三、其他说明\n"
-        f"　　{fill(w, rng.choice(GOVERNANCE_CLAUSES))}\n",
-        "　　" + rng.choice(DISCLAIMER),
-    ])
-
-
-def render_watchlist(w: World, jurs: list[Entity]) -> str:
-    high = [j.name for j in jurs if j.props["risk"] == "高风险"]
-    mid = [j.name for j in jurs if j.props["risk"] == "中风险"]
-    low = [j.name for j in jurs if j.props["risk"] == "低风险"]
-    return "\n".join([
-        "跨境反洗钱监管观察名单（年度更新）\n", SYNTHETIC_NOTE + "\n",
-        "一、高风险管辖区\n"
-        "　　下列管辖区在反洗钱与反恐融资框架方面存在重大缺陷。"
-        "涉及下列管辖区的客户、交易对手或关联方，应适用强化尽职调查（EDD），"
-        "并由合规部门二次复核：\n"
-        + "".join(f"　　　· {n}\n" for n in high),
-        "二、加强监控管辖区\n"
-        "　　下列管辖区已就其反洗钱框架作出改进承诺，适用中等风险等级，"
-        "需执行标准尽职调查并保留审计轨迹：\n"
-        + "".join(f"　　　· {n}\n" for n in mid),
-        "三、常规管辖区\n"
-        "　　下列管辖区按低风险处理：\n"
-        + "".join(f"　　　· {n}\n" for n in low),
-        "四、适用说明\n"
-        "　　本名单按年度复核更新。名单变更自发布之日起生效，"
-        "对存量业务关系应于六个月内完成重新评估。\n",
-        "　　本名单为虚构数据，仅用于系统演示，不指涉任何真实司法管辖区。",
-    ])
+def render_list(title: str, sections: list[tuple[str, list[str]]],
+                intro: str, outro: str) -> str:
+    """结构型文档: 标题 + 列表项。事实由标题决定, 列表项下没有完整句子。"""
+    nums = "一二三四五六"
+    body = [f"{title}\n", SOURCE_NOTE + "\n", "　　" + intro + "\n"]
+    for i, (head, names) in enumerate(sections):
+        body.append(f"{nums[i]}、{head}\n" + "".join(f"　　　· {n}\n" for n in names))
+    body.append(f"{nums[len(sections)]}、说明\n　　{outro}")
+    return "\n".join(body)
 
 
 # ==========================================================================
 # 世界构建
 # ==========================================================================
 
-def build_world(seed: int, n_companies: int, n_funds: int, n_persons: int) -> World:
+def build_world(seed: int) -> World:
     w = World(seed)
-    rng = w.rng
 
-    def rand_date(y0: int = 2021, y1: int = 2025) -> str:
-        return f"{rng.randint(y0, y1)} 年 {rng.randint(1, 12)} 月 {rng.randint(1, 28)} 日"
+    # ---- 实体 ----
+    for key, s in SHOWS.items():
+        w.add("Show", s["name"], "S")
+    for p in PROFILES:
+        w.add("Character", p["name"], "C", aliases=p.get("aliases", []),
+              show=SHOWS[p["show"]]["name"])
+    for name in MINOR_CHARACTERS:
+        w.add("Character", name, "C", show=SHOWS["XYY"]["name"])
+    for name in PLACES:
+        w.add("Place", name, "P")
+    for name, show in GROUPS.items():
+        w.add("Group", name, "G", show=SHOWS[show]["name"])
+    for name in ITEMS:
+        w.add("Item", name, "I")
 
-    # ---- 辖区 + 观察名单 (辖区风险的唯一来源文档) ----
-    jur_entities = []
-    for i, (name, risk, offshore) in enumerate(JURISDICTIONS):
-        jur_entities.append(w.add(Entity(
-            id=f"J{i:02d}", type="Jurisdiction", name=name,
-            props={"risk": risk, "offshore": offshore})))
-    high_jurs = [e for e in jur_entities if e.props["risk"] == "高风险"]
-    low_jurs = [e for e in jur_entities if e.props["risk"] == "低风险"]
+    # ---- 节目简介 ----
+    d = w.emit("show:喜羊羊与灰太狼", "show_intro", "喜羊羊与灰太狼 节目简介", "\n".join([
+        "喜羊羊与灰太狼\n节目简介\n", SOURCE_NOTE + "\n",
+        "一、基本信息\n"
+        "　　《喜羊羊与灰太狼》是一部中国原创动画，于 2005 年 8 月 3 日首播，"
+        "首播电视台为杭州电视台少儿频道。\n"
+        "　　第 1 季共 530 集，每集 15 分钟，主题曲为《别看我只是一只羊》。\n"
+        "　　系列的首部电影为《喜羊羊与灰太狼之牛气冲天》，于 2009 年上映。\n",
+        "二、创作花絮\n"
+        "　　主角最初打算叫“懒羊羊”，制作团队觉得“喜羊羊”更正面，于是改成了现在的名字。\n"
+        "　　羊的名字都是谐音：喜羊羊取自“喜气洋洋”，懒羊羊取自“懒洋洋”，"
+        "沸羊羊取自“沸沸扬扬”。\n"
+        "　　狼的名字叫“灰太狼”“红太狼”，是为了和传统故事里较为可怕的“大灰狼”区分开来。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[0],
+    ]))
+    w.link("喜羊羊与灰太狼", "FIRST_AIRED", "lit:2005 年 8 月 3 日", d)
+    w.link("喜羊羊与灰太狼", "BROADCASTER", "lit:杭州电视台少儿频道", d)
+    w.link("喜羊羊与灰太狼", "EPISODES", "lit:530 集", d)
+    w.link("喜羊羊与灰太狼", "THEME_SONG", "lit:别看我只是一只羊", d)
+    w.link("喜羊羊与灰太狼", "FIRST_MOVIE", "lit:喜羊羊与灰太狼之牛气冲天", d)
 
-    wl = w.emit("watchlist", "跨境反洗钱监管观察名单（年度更新）", "2025-01-15",
-                render_watchlist(w, jur_entities))
-    for e in jur_entities:
-        w.link(e.id, "RISK_LEVEL", f"lit:{e.props['risk']}", wl)
+    d = w.emit("show:铁甲小宝", "show_intro", "铁甲小宝 节目简介", "\n".join([
+        "铁甲小宝\n节目简介\n", SOURCE_NOTE + "\n",
+        "一、基本信息\n"
+        "　　《铁甲小宝》是日本东映出品的特摄电视剧，于 1997 年 2 月 23 日首播，"
+        "首播电视台为朝日电视台，共 52 集。\n"
+        "　　本剧是金属英雄系列的第 16 部作品。\n",
+        "二、故事梗概\n"
+        "　　小学生小让发现了爷爷制造的甲虫机器人卡布达。"
+        "卡布达和其他 B 机器人为了争夺神秘的和平星，展开了一连串冒险。\n"
+        "　　剧名虽然叫《铁甲小宝》，剧中却没有叫“小宝”的角色。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[0],
+    ]))
+    w.link("铁甲小宝", "FIRST_AIRED", "lit:1997 年 2 月 23 日", d)
+    w.link("铁甲小宝", "BROADCASTER", "lit:朝日电视台", d)
+    w.link("铁甲小宝", "EPISODES", "lit:52 集", d)
 
-    # ---- 公司 ----
-    brand_pool = BRANDS.copy()
-    rng.shuffle(brand_pool)
-    companies: list[Entity] = []
-    for i in range(n_companies):
-        zh, roman = brand_pool[i % len(brand_pool)]
-        suffix_zh, suffix_en, short_suffix = rng.choice(CORP_SUFFIX)
-        dup = i // len(brand_pool)
-        tag = f"（{dup+1}）" if dup else ""
-        e = w.add(Entity(
-            id=f"C{i:03d}", type="Company",
-            name=f"{zh}{suffix_zh}{tag}",
-            aliases=[f"{zh}{short_suffix}{tag}", f"{roman} {suffix_en}"],
-            props={"jurisdiction": (rng.choice(low_jurs) if rng.random() < 0.65
-                                    else rng.choice(jur_entities)).id,
-                   "reg_no": f"{rng.randint(1990, 2024)}{rng.randint(100000, 999999)}",
-                   "reg_date": rand_date(1998, 2023)}))
-        companies.append(e)
-        d = w.emit("registration", f"{e.name} 企业注册信息摘要",
-                   e.props["reg_date"], render_registration(w, e))
-        w.link(e.id, "REGISTERED_IN", e.props["jurisdiction"], d)
+    # ---- 角色档案 ----
+    for p in PROFILES:
+        text, edges = render_profile(w, p)
+        d = w.emit(f"profile:{p['name']}", "profile", f"{p['name']} 角色档案", text)
+        for s, rel, o in edges:
+            w.link(s, rel, o, d)
 
-    # ---- 托管银行 ----
-    banks: list[Entity] = []
-    for i, (zh, roman) in enumerate(BANK_BRANDS):
-        jur = rng.choice(low_jurs)
-        e = w.add(Entity(id=f"B{i:02d}", type="Company",
-                         name=f"{zh}银行{jur.name}分行",
-                         aliases=[f"{zh}银行", f"{roman} Bank"],
-                         props={"jurisdiction": jur.id, "is_bank": True,
-                                "reg_no": f"BK{rng.randint(100000, 999999)}",
-                                "reg_date": rand_date(1990, 2010)}))
-        banks.append(e)
-        d = w.emit("registration", f"{e.name} 企业注册信息摘要",
-                   e.props["reg_date"], render_registration(w, e))
-        w.link(e.id, "REGISTERED_IN", jur.id, d)
+    # ---- 结构型文档: 居民登记 / 学生名册 / 阵营一览 ----
+    sheep = ["喜羊羊", "美羊羊", "懒羊羊", "沸羊羊", "暖羊羊"]
+    d = w.emit("list:居民", "roster", "青青草原居民登记", render_list(
+        "青青草原居民登记（节选）",
+        [("羊村居民", sheep + ["慢羊羊村长"]),          # 刻意只写别名
+         ("狼堡住户", ["灰太狼", "红太狼", "小灰灰"])],
+        "本登记表按居住地列出青青草原上的主要角色。",
+        "本登记表仅收录原版电视剧集中的主要角色，不含客串角色。"))
+    for n in sheep:
+        w.link(n, "LIVES_IN", "羊村", d)
+    w.link("慢羊羊", "LIVES_IN", "羊村", d)
+    w.planted["alias_only"].append({"doc": d, "alias": "慢羊羊村长", "canonical": "慢羊羊"})
+    for n in ["灰太狼", "红太狼", "小灰灰"]:
+        w.link(n, "LIVES_IN", "狼堡", d)
 
-    # ---- 自然人 ----
-    persons: list[Entity] = []
-    seen: set[str] = set()
-    for i in range(n_persons):
-        while True:
-            nm = rng.choice(SURNAMES) + rng.choice(GIVEN)
-            if nm not in seen:
-                seen.add(nm)
-                break
-        persons.append(w.add(Entity(id=f"P{i:03d}", type="Person", name=nm)))
+    d = w.emit("list:学生", "roster", "大肥羊学校学生名册", render_list(
+        "大肥羊学校学生名册",
+        [("在读学生", sheep)],
+        "大肥羊学校是羊村小羊们上学的地方。",
+        "名册按入学先后排列，转学生列在最后。"))
+    for n in sheep:
+        w.link(n, "STUDENT_OF", "大肥羊学校", d)
 
-    # ---- 基金 ----
-    managers = [c for c in companies if "资产管理" in c.name or "资本管理" in c.name]
-    if len(managers) < 8:
-        managers = companies[:12]
-    funds: list[Entity] = []
-    used_names: set[str] = set()
-    for i in range(n_funds):
-        mgr = rng.choice(managers)
-        brand = mgr.name[:2]
-        for _ in range(40):
-            fname = f"{brand}{rng.choice(STRATEGIES)}基金"
-            if fname not in used_names:
-                break
-        else:
-            fname = f"{brand}{rng.choice(STRATEGIES)}基金{i}"
-        used_names.add(fname)
-        ccy = rng.choice(["新元", "美元"])
-        f = w.add(Entity(
-            id=f"F{i:03d}", type="Fund", name=fname,
-            aliases=[fname.replace("基金", ""), brand + "基金"],
-            props={"manager": mgr.id, "custodian": rng.choice(banks).id,
-                   "domicile": (rng.choice(low_jurs) if rng.random() < 0.7
-                                else rng.choice(jur_entities)).id,
-                   "min_investment": rng.choice(
-                       [f"10 万{ccy}", f"25 万{ccy}", f"50 万{ccy}", f"100 万{ccy}"]),
-                   "min_topup": rng.choice([f"1 万{ccy}", f"5 万{ccy}", f"10 万{ccy}"]),
-                   "base_ccy": ccy,
-                   "launch_date": rand_date(2019, 2025),
-                   "strategy": fname[2:].replace("基金", "")}))
-        funds.append(f)
-        d = w.emit("prospectus", f"{fname} 招募说明书（节选）",
-                   f.props["launch_date"], render_prospectus(w, f))
-        w.link(f.id, "MANAGED_BY", mgr.id, d)
-        w.link(f.id, "CUSTODIAN", f.props["custodian"], d)
-        w.link(f.id, "DOMICILED_IN", f.props["domicile"], d)
-        w.link(f.id, "MIN_INVESTMENT", f"lit:{f.props['min_investment']}", d)
-        w.link(f.id, "LAUNCHED_ON", f"lit:{f.props['launch_date']}", d)
+    good = ["卡布达", "金龟次郎", "飞翔机器人", "呱呱蛙", "田德莉娜"]
+    bad = ["蟑螂恶霸", "蜘蛛侦探", "蝎子莱莱", "鲨鱼辣椒"]
+    neutral = ["丸子龙", "蜻蜓队长"]
+    d = w.emit("list:阵营", "roster", "B 机器人阵营一览", render_list(
+        "B 机器人阵营一览",
+        [("正义阵营", good), ("反派阵营", bad), ("中立阵营", neutral)],
+        "下表按剧集前期的立场，列出争夺和平星的各个机器人。",
+        "部分机器人在剧情后期改变了立场，以正片为准。"))
+    for camp, names in (("正义", good), ("反派", bad), ("中立", neutral)):
+        for n in names:
+            w.link(n, "FACTION", f"lit:{camp}", d)
 
-    # ---- 管理人年度回顾 (一文多基金) ----
-    by_mgr: dict[str, list[Entity]] = {}
-    for f in funds:
-        by_mgr.setdefault(f.props["manager"], []).append(f)
-    for mgr_id, fs in by_mgr.items():
-        if len(fs) < 2:
-            continue
-        mgr = w.entities[mgr_id]
-        d = w.emit("annual_review", f"{mgr.name} 年度业务回顾（摘要）", "2025-03-31",
-                   render_annual_review(w, mgr, fs))
-        for f in fs:
-            w.link(f.id, "MANAGED_BY", mgr_id, d)   # 同一事实的第二个来源
+    # ---- 团体 ----
+    d = w.emit("group:反派三人组", "group", "反派三人组 团体资料", "\n".join([
+        "反派三人组\n团体资料\n", SOURCE_NOTE + "\n",
+        "一、成员\n"
+        "　　反派三人组是特摄剧《铁甲小宝》中的反派团体，"
+        "成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。\n"
+        "　　蟑螂恶霸是反派三人组的老大，蜘蛛侦探和蝎子莱莱都称他为“大哥”。\n",
+        "二、事迹\n"
+        "　　三个机器人一起过着穷困的日子，一心想利用和平星统治人类。"
+        "在鲨鱼辣椒出现之前，他们一直是最主要的反派。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[2],
+    ]))
+    for n in ["蟑螂恶霸", "蜘蛛侦探", "蝎子莱莱"]:
+        w.link(n, "MEMBER_OF", "反派三人组", d)
+    w.link("蟑螂恶霸", "LEADER_OF", "反派三人组", d)
 
-    # ---- 董事 / 股东 / 母子公司 (底噪) ----
-    def emit_director(p: Entity, c: Entity) -> None:
-        date = rand_date(2022, 2025)
-        d = w.emit("director_notice", f"{c.name} 关于董事变更的公告", date,
-                   render_director_notice(w, p, c, date))
-        w.link(p.id, "DIRECTOR_OF", c.id, d)
+    d = w.emit("group:七大恶狼", "group", "七大恶狼 团体资料", "\n".join([
+        "七大恶狼\n团体资料\n", SOURCE_NOTE + "\n",
+        "一、成员\n"
+        "　　七大恶狼是动画《喜羊羊与灰太狼》中的狼族团体。\n"
+        "　　灰二太太狼是七大恶狼的首领，夜太狼是七大恶狼的成员之一。\n",
+        "二、资料说明\n　　" + NOTE_CLAUSES[2],
+    ]))
+    w.link("灰二太太狼", "LEADER_OF", "七大恶狼", d)
+    w.link("夜太狼", "MEMBER_OF", "七大恶狼", d)
 
-    for p in persons:
-        for c in rng.sample(companies, rng.randint(1, 2)):
-            emit_director(p, c)
+    # ---- 背景故事与剧情 ----
+    d = w.emit("story:饿狼传说", "story", "羊村的建立与饿狼传说", "\n".join([
+        "羊村的建立与饿狼传说\n背景故事\n", SOURCE_NOTE + "\n",
+        "一、羊村的建立\n"
+        "　　羊历 3010 年，绵羊族先祖软绵绵为了躲避狼群来到青青草原，"
+        "建起了防御坚固的羊村。羊村位于青青草原。\n",
+        "二、饿狼传说\n"
+        "　　狼群首领武大狼为了钻过羊村的铁门而拼命减肥，钻过去之后却误吞石头而死。"
+        "这就是青青草原流传的“饿狼传说”。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[0],
+    ]))
+    w.link("羊村", "LOCATED_IN", "青青草原", d)
 
-    for c in rng.sample(companies, len(companies) // 2):
-        p = rng.choice(persons)
-        pct = rng.choice([5, 10, 15, 20, 25, 30, 51, 75])
-        date = rand_date(2022, 2025)
-        d = w.emit("shareholding", f"{c.name} 权益变动公告", date,
-                   render_shareholding_notice(w, p, c, pct, date))
-        w.link(p.id, "SHAREHOLDER_OF", c.id, d)
+    d = w.emit("story:和平星", "setting", "和平星 设定资料", "\n".join([
+        "和平星\n设定资料\n", SOURCE_NOTE + "\n",
+        "一、设定\n"
+        "　　和平星是特摄剧《铁甲小宝》中的神秘物体，和平星共有 13 颗，"
+        "分别代表包括蛇夫座在内的十三个星座。\n"
+        "　　得到一颗和平星，就可以许一个愿望。另有不具许愿效力的假和平星。\n",
+        "二、争夺\n"
+        "　　B 机器人们争夺和平星时，裁判机器人会突然出现，"
+        "让大家用各种运动或游戏比赛决出胜负。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[0],
+    ]))
+    w.link("和平星", "QUANTITY", "lit:13 颗", d)
 
-    for _ in range(max(5, n_companies // 8)):
-        parent, child = rng.sample(companies, 2)
-        d = w.emit("group_structure", f"{parent.name} 集团架构说明", "2024-06-30",
-                   render_group_structure(w, parent, child))
-        w.link(child.id, "SUBSIDIARY_OF", parent.id, d)
+    d = w.emit("story:卡布达巨人", "story", "卡布达巨人的诞生", "\n".join([
+        "卡布达巨人的诞生\n剧情梗概\n", SOURCE_NOTE + "\n",
+        "一、起因\n"
+        "　　鲨鱼辣椒能变成巨人形态，一般的 B 机器人根本无法与之抗衡。\n",
+        "二、经过\n"
+        "　　为了对抗巨人形态的鲨鱼辣椒，卡布达向射手座和平星许愿，由此诞生了卡布达巨人。"
+        "卡布达坐进驾驶舱，操纵卡布达巨人战斗。\n"
+        "　　卡布达巨人普通形态高 6.5 米，超级形态高 10.8 米。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[2],
+    ]))
+    w.link("卡布达", "WISHED_ON", "射手座和平星", d)
 
-    # ======================================================================
-    # 显式植入多跳模式 —— 保证评测集对每种检索能力都有覆盖
-    # ======================================================================
-    planted: dict[str, list] = {"high_risk_chain": [], "shared_director": [],
-                                "subsidiary_chain": []}
+    d = w.emit("story:鲨鱼辣椒", "story", "鲨鱼辣椒的封印与转变", "\n".join([
+        "鲨鱼辣椒的封印与转变\n剧情梗概\n", SOURCE_NOTE + "\n",
+        "一、封印\n"
+        "　　鲨鱼辣椒因为自我意识扭曲，被高圆寺博士封印。"
+        "它额头上的伤疤是高圆寺博士不小心弄的，它因此一直心怀怨恨。\n"
+        "　　后来，丸子龙解开了鲨鱼辣椒的封印。\n",
+        "二、转变\n"
+        "　　卡布达用蛇夫座和平星的愿望消去了鲨鱼辣椒额头的伤疤。"
+        "鲨鱼辣椒被打动，从此改邪归正。\n",
+        "三、资料说明\n　　" + NOTE_CLAUSES[2],
+    ]))
+    w.link("鲨鱼辣椒", "SEALED_BY", "高圆寺寅彦", d)       # 正文只写「高圆寺博士」
+    w.planted["alias_only"].append({"doc": d, "alias": "高圆寺博士", "canonical": "高圆寺寅彦"})
+    w.link("鲨鱼辣椒", "RELEASED_BY", "丸子龙", d)
+    w.link("卡布达", "WISHED_ON", "蛇夫座和平星", d)
 
-    # 保证有足够多注册在高风险辖区的公司
-    def jur_of(c: Entity) -> Entity:
-        return w.entities[c.props["jurisdiction"]]
-
-    offshore_pool = [c for c in companies if jur_of(c).props["risk"] == "高风险"]
-    need = 8 - len(offshore_pool)
-    if need > 0:
-        for c in rng.sample([c for c in companies if c not in offshore_pool], need):
-            j = rng.choice(high_jurs)
-            c.props["jurisdiction"] = j.id
-            w.edges = [e for e in w.edges
-                       if not (e.src == c.id and e.rel == "REGISTERED_IN")]
-            d = w.emit("registration", f"{c.name} 企业注册信息摘要",
-                       c.props["reg_date"], render_registration(w, c))
-            w.link(c.id, "REGISTERED_IN", j.id, d)
-            offshore_pool.append(c)
-
-    # 模式 A (招牌案例): 基金 -> 管理人 -> 共同董事 -> 高风险辖区公司 -> 高风险
-    for fund in rng.sample(funds, min(10, len(funds))):
-        mgr = w.entities[fund.props["manager"]]
-        risky = rng.choice([c for c in offshore_pool if c.id != mgr.id])
-        bridge = rng.choice(persons)
-        emit_director(bridge, mgr)
-        emit_director(bridge, risky)
-        planted["high_risk_chain"].append({
-            "fund": fund.id, "manager": mgr.id, "bridge_person": bridge.id,
-            "risky_company": risky.id, "jurisdiction": risky.props["jurisdiction"],
-        })
-
-    # 模式 B: 两家公司共享董事 (纯关系, 不涉风险)
-    for _ in range(8):
-        c1, c2 = rng.sample(companies, 2)
-        p = rng.choice(persons)
-        emit_director(p, c1)
-        emit_director(p, c2)
-        planted["shared_director"].append({"person": p.id, "companies": [c1.id, c2.id]})
-
-    # 模式 C: 基金 -> 管理人 -> 母公司 -> 注册辖区 (三跳, 不经过自然人)
-    for fund in rng.sample(funds, min(6, len(funds))):
-        mgr = w.entities[fund.props["manager"]]
-        parent = rng.choice([c for c in companies if c.id != mgr.id])
-        d = w.emit("group_structure", f"{parent.name} 集团架构说明", "2024-06-30",
-                   render_group_structure(w, parent, mgr))
-        w.link(mgr.id, "SUBSIDIARY_OF", parent.id, d)
-        planted["subsidiary_chain"].append({
-            "fund": fund.id, "manager": mgr.id, "parent": parent.id,
-            "parent_jurisdiction": parent.props["jurisdiction"]})
-
-    w.planted = planted
+    pk = w.doc_keys["profile:金龟次郎"]
+    w.planted["alias_only"].append({"doc": pk, "alias": "藏之助", "canonical": "吉祥寺藏之助"})
     return w
 
 
 # ==========================================================================
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description="生成合成语料与 ground-truth 图谱")
+    ap = argparse.ArgumentParser(description="生成语料与 ground-truth 图谱")
     ap.add_argument("--seed", type=int, default=42)
-    ap.add_argument("--companies", type=int, default=80)
-    ap.add_argument("--funds", type=int, default=40)
-    ap.add_argument("--persons", type=int, default=60)
     ap.add_argument("--out", type=Path, default=OUT_DIR)
     args = ap.parse_args()
 
-    w = build_world(args.seed, args.companies, args.funds, args.persons)
+    w = build_world(args.seed)
 
     write_text(args.out / "graph.json", json.dumps({
         "seed": args.seed,
         "entities": [asdict(e) for e in w.entities.values()],
         "edges": [asdict(e) for e in w.edges],
         "planted": w.planted,
+        "doc_keys": w.doc_keys,
     }, ensure_ascii=False, indent=2))
     write_jsonl(args.out / "documents.jsonl", (asdict(d) for d in w.docs))
 
@@ -673,13 +654,15 @@ def main() -> None:
     by_type: dict[str, int] = {}
     for d in w.docs:
         by_type[d.doc_type] = by_type.get(d.doc_type, 0) + 1
+    ent_types: dict[str, int] = {}
+    for e in w.entities.values():
+        ent_types[e.type] = ent_types.get(e.type, 0) + 1
 
     print(f"[ok] 实体 {len(w.entities)}  边 {len(w.edges)}  文档 {len(w.docs)}  "
           f"总字数 {n_char:,}  平均每文档 {n_char // max(1, len(w.docs)):,} 字")
+    print("     实体类型:", "  ".join(f"{k}={v}" for k, v in sorted(ent_types.items())))
     print("     文档类型:", "  ".join(f"{k}={v}" for k, v in sorted(by_type.items())))
-    print(f"     植入: 高风险关联链 {len(w.planted['high_risk_chain'])}  "
-          f"共同董事 {len(w.planted['shared_director'])}  "
-          f"母子公司链 {len(w.planted['subsidiary_chain'])}")
+    print(f"     植入: 仅以别名出现的证据 {len(w.planted['alias_only'])} 处")
     print(f"     -> {args.out / 'graph.json'}")
     print(f"     -> {args.out / 'documents.jsonl'}")
 

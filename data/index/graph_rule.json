@@ -1,0 +1,1757 @@
+{
+  "source": "extracted",
+  "extractor": "rule",
+  "entities": [
+    {
+      "id": "E0000",
+      "type": "Show",
+      "name": "喜羊羊与灰太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0001",
+      "type": "Show",
+      "name": "铁甲小宝",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0002",
+      "type": "Character",
+      "name": "喜羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0003",
+      "type": "Character",
+      "name": "智羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0004",
+      "type": "Character",
+      "name": "丽羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0005",
+      "type": "Character",
+      "name": "美羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0006",
+      "type": "Character",
+      "name": "懒羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0007",
+      "type": "Character",
+      "name": "沸羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0008",
+      "type": "Character",
+      "name": "暖羊羊",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0009",
+      "type": "Character",
+      "name": "慢羊羊",
+      "aliases": [
+        "慢羊羊村长"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0010",
+      "type": "Place",
+      "name": "羊村",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0011",
+      "type": "Place",
+      "name": "大肥羊学校",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0012",
+      "type": "Character",
+      "name": "包包大人",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0013",
+      "type": "Character",
+      "name": "灰太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0014",
+      "type": "Character",
+      "name": "黑太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0015",
+      "type": "Character",
+      "name": "银太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0016",
+      "type": "Character",
+      "name": "武大狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0017",
+      "type": "Character",
+      "name": "红太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0018",
+      "type": "Character",
+      "name": "爹爹狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0019",
+      "type": "Character",
+      "name": "娘娘狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0020",
+      "type": "Character",
+      "name": "小灰灰",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0021",
+      "type": "Character",
+      "name": "蕉太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0022",
+      "type": "Character",
+      "name": "香太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0023",
+      "type": "Character",
+      "name": "夜太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0024",
+      "type": "Character",
+      "name": "小香香",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0025",
+      "type": "Character",
+      "name": "灰二太太狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0026",
+      "type": "Character",
+      "name": "小让",
+      "aliases": [
+        "高圆寺让"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0027",
+      "type": "Character",
+      "name": "高圆寺寅彦",
+      "aliases": [
+        "高圆寺博士"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0028",
+      "type": "Character",
+      "name": "吉祥寺藏之助",
+      "aliases": [
+        "藏之助"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0029",
+      "type": "Character",
+      "name": "中野美树",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0030",
+      "type": "Character",
+      "name": "卡布达",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0031",
+      "type": "Character",
+      "name": "金龟次郎",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0032",
+      "type": "Character",
+      "name": "飞翔机器人",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0033",
+      "type": "Character",
+      "name": "田德莉娜",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0034",
+      "type": "Character",
+      "name": "蝎子莱莱",
+      "aliases": [
+        "蝎子蓝蓝"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0035",
+      "type": "Character",
+      "name": "蜘蛛侦探",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0036",
+      "type": "Character",
+      "name": "丸子龙",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0037",
+      "type": "Character",
+      "name": "呱呱蛙",
+      "aliases": [
+        "聒聒蛙"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0038",
+      "type": "Character",
+      "name": "蟑螂恶霸",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0039",
+      "type": "Character",
+      "name": "鲨鱼辣椒",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0040",
+      "type": "Character",
+      "name": "蜻蜓队长",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0041",
+      "type": "Character",
+      "name": "警用机器人",
+      "aliases": [
+        "AP717"
+      ],
+      "props": {}
+    },
+    {
+      "id": "E0042",
+      "type": "Place",
+      "name": "狼堡",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0043",
+      "type": "Group",
+      "name": "反派三人组",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0044",
+      "type": "Group",
+      "name": "七大恶狼",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0045",
+      "type": "Place",
+      "name": "青青草原",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0046",
+      "type": "Item",
+      "name": "和平星",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0047",
+      "type": "Item",
+      "name": "射手座和平星",
+      "aliases": [],
+      "props": {}
+    },
+    {
+      "id": "E0048",
+      "type": "Item",
+      "name": "蛇夫座和平星",
+      "aliases": [],
+      "props": {}
+    }
+  ],
+  "edges": [
+    {
+      "src": "E0000",
+      "rel": "FIRST_AIRED",
+      "dst": "lit:2005 年 8 月 3 日",
+      "source_doc": "doc-0001",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0000",
+      "rel": "BROADCASTER",
+      "dst": "lit:杭州电视台少儿频道",
+      "source_doc": "doc-0001",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0000",
+      "rel": "EPISODES",
+      "dst": "lit:530 集",
+      "source_doc": "doc-0001",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0000",
+      "rel": "THEME_SONG",
+      "dst": "lit:别看我只是一只羊",
+      "source_doc": "doc-0001",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0000",
+      "rel": "FIRST_MOVIE",
+      "dst": "lit:喜羊羊与灰太狼之牛气冲天",
+      "source_doc": "doc-0001",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0001",
+      "rel": "FIRST_AIRED",
+      "dst": "lit:1997 年 2 月 23 日",
+      "source_doc": "doc-0002",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0001",
+      "rel": "BROADCASTER",
+      "dst": "lit:朝日电视台",
+      "source_doc": "doc-0002",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0001",
+      "rel": "EPISODES",
+      "dst": "lit:52 集",
+      "source_doc": "doc-0002",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0002",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0002",
+      "rel": "CARRIES",
+      "dst": "lit:铃铛",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0003",
+      "rel": "PARENT_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0004",
+      "rel": "PARENT_OF",
+      "dst": "E0002",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0003",
+      "rel": "ROLE",
+      "dst": "lit:科学家",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0004",
+      "rel": "ROLE",
+      "dst": "lit:歌星",
+      "source_doc": "doc-0003",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0005",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0004",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0005",
+      "rel": "LIKES",
+      "dst": "E0002",
+      "source_doc": "doc-0004",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0005",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:天下皆醒我独睡，天下皆勤我独懒",
+      "source_doc": "doc-0005",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "CARRIES",
+      "dst": "lit:枕头",
+      "source_doc": "doc-0005",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0007",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0006",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0007",
+      "rel": "LIKES",
+      "dst": "E0005",
+      "source_doc": "doc-0006",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0008",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0007",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0008",
+      "rel": "ROLE",
+      "dst": "lit:班长",
+      "source_doc": "doc-0007",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0009",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0008",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0009",
+      "rel": "ALIAS",
+      "dst": "lit:慢羊羊村长",
+      "source_doc": "doc-0008",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0009",
+      "rel": "HEAD_OF",
+      "dst": "E0010",
+      "source_doc": "doc-0008",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0009",
+      "rel": "HEAD_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0008",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0012",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0009",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0012",
+      "rel": "ROLE",
+      "dst": "lit:青青草原的管理者",
+      "source_doc": "doc-0009",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "BIRTHDAY",
+      "dst": "lit:羊历 3475 年 9 月 26 日",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:我一定会回来的",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "PARENT_OF",
+      "dst": "E0013",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0015",
+      "rel": "PARENT_OF",
+      "dst": "E0013",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "DESCENDANT_OF",
+      "dst": "E0016",
+      "source_doc": "doc-0010",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:快去抓羊",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "WEAPON",
+      "dst": "lit:平底锅",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "SPECIAL_MOVE",
+      "dst": "lit:千手平底锅",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "SPOUSE_OF",
+      "dst": "E0013",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0018",
+      "rel": "PARENT_OF",
+      "dst": "E0017",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0019",
+      "rel": "PARENT_OF",
+      "dst": "E0017",
+      "source_doc": "doc-0011",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0020",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0020",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:爸爸，你又骗我",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0020",
+      "rel": "CARRIES",
+      "dst": "lit:奶嘴",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "PARENT_OF",
+      "dst": "E0020",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "PARENT_OF",
+      "dst": "E0020",
+      "source_doc": "doc-0012",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0021",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0013",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0021",
+      "rel": "FAVORITE_FOOD",
+      "dst": "lit:香蕉",
+      "source_doc": "doc-0013",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "UNCLE_OF",
+      "dst": "E0021",
+      "source_doc": "doc-0013",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0021",
+      "rel": "FRIEND_OF",
+      "dst": "E0008",
+      "source_doc": "doc-0013",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "WEAPON",
+      "dst": "lit:熨斗",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "SPOUSE_OF",
+      "dst": "E0023",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "PARENT_OF",
+      "dst": "E0024",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "COUSIN_OF",
+      "dst": "E0017",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0022",
+      "rel": "LIKES",
+      "dst": "E0021",
+      "source_doc": "doc-0014",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0023",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0015",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0023",
+      "rel": "COUSIN_OF",
+      "dst": "E0013",
+      "source_doc": "doc-0015",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0016",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "SPECIAL_MOVE",
+      "dst": "lit:沉默羔羊十二式",
+      "source_doc": "doc-0016",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "UNCLE_OF",
+      "dst": "E0013",
+      "source_doc": "doc-0016",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "APPEARS_IN",
+      "dst": "E0000",
+      "source_doc": "doc-0017",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "ROLE",
+      "dst": "lit:狼族大王",
+      "source_doc": "doc-0017",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "SPOUSE_OF",
+      "dst": "E0015",
+      "source_doc": "doc-0017",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0014",
+      "rel": "DESCENDANT_OF",
+      "dst": "E0016",
+      "source_doc": "doc-0017",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0026",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0018",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0026",
+      "rel": "ALIAS",
+      "dst": "lit:高圆寺让",
+      "source_doc": "doc-0018",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0026",
+      "rel": "ROLE",
+      "dst": "lit:小学生",
+      "source_doc": "doc-0018",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0027",
+      "rel": "GRANDPARENT_OF",
+      "dst": "E0026",
+      "source_doc": "doc-0018",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0027",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0019",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0027",
+      "rel": "ALIAS",
+      "dst": "lit:高圆寺博士",
+      "source_doc": "doc-0019",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0027",
+      "rel": "ROLE",
+      "dst": "lit:机器人科学家",
+      "source_doc": "doc-0019",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0028",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0020",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0028",
+      "rel": "ALIAS",
+      "dst": "lit:藏之助",
+      "source_doc": "doc-0020",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0028",
+      "rel": "ROLE",
+      "dst": "lit:学生会会长",
+      "source_doc": "doc-0020",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0029",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0021",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0029",
+      "rel": "ROLE",
+      "dst": "lit:女警",
+      "source_doc": "doc-0021",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "UNIT_NO",
+      "dst": "lit:1 号机",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "PROTOTYPE",
+      "dst": "lit:独角仙",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:卡布",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "WEAPON",
+      "dst": "lit:电光棒",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "FAVORITE_FOOD",
+      "dst": "lit:西瓜",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "TRANSFORM_TIME",
+      "dst": "lit:3 分钟",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "GIANT_FORM",
+      "dst": "lit:卡布达巨人",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "PARTNER_OF",
+      "dst": "E0026",
+      "source_doc": "doc-0022",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "UNIT_NO",
+      "dst": "lit:2 号机",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "PROTOTYPE",
+      "dst": "lit:锹形虫",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:男人就应该默默的",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "WEAPON",
+      "dst": "lit:金龟大剪钳",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "TRANSFORM_TIME",
+      "dst": "lit:5 分钟",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "PARTNER_OF",
+      "dst": "E0028",
+      "source_doc": "doc-0023",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "UNIT_NO",
+      "dst": "lit:3 号机",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "ROLE",
+      "dst": "lit:支援型机器人",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "TRANSFORM_TIME",
+      "dst": "lit:7 分钟",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "LIKES",
+      "dst": "E0033",
+      "source_doc": "doc-0024",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0025",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "ALIAS",
+      "dst": "lit:蝎子蓝蓝",
+      "source_doc": "doc-0025",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "UNIT_NO",
+      "dst": "lit:4 号机",
+      "source_doc": "doc-0025",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "PROTOTYPE",
+      "dst": "lit:鲎",
+      "source_doc": "doc-0025",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0026",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "UNIT_NO",
+      "dst": "lit:5 号机",
+      "source_doc": "doc-0026",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "PROTOTYPE",
+      "dst": "lit:蜘蛛",
+      "source_doc": "doc-0026",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "WEAPON",
+      "dst": "lit:巨爪",
+      "source_doc": "doc-0026",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0027",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "UNIT_NO",
+      "dst": "lit:6 号机",
+      "source_doc": "doc-0027",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "PROTOTYPE",
+      "dst": "lit:鼠妇",
+      "source_doc": "doc-0027",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "FAVORITE_FOOD",
+      "dst": "lit:糯米丸子",
+      "source_doc": "doc-0027",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "ALIAS",
+      "dst": "lit:聒聒蛙",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "UNIT_NO",
+      "dst": "lit:7 号机",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "PROTOTYPE",
+      "dst": "lit:青蛙",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "ROLE",
+      "dst": "lit:科学博士",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:从结论上来看",
+      "source_doc": "doc-0028",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0029",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "UNIT_NO",
+      "dst": "lit:8 号机",
+      "source_doc": "doc-0029",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "PROTOTYPE",
+      "dst": "lit:眼镜蛇",
+      "source_doc": "doc-0029",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "WEAPON",
+      "dst": "lit:眼镜蛇尾鞭",
+      "source_doc": "doc-0029",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "UNIT_NO",
+      "dst": "lit:9 号机",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "PROTOTYPE",
+      "dst": "lit:鲨鱼",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "WEAPON",
+      "dst": "lit:鲨鱼神斧",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "TRANSFORM_TIME",
+      "dst": "lit:15 分钟",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "GIANT_FORM",
+      "dst": "lit:超级鲨鱼巨人",
+      "source_doc": "doc-0030",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0033",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0031",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0033",
+      "rel": "UNIT_NO",
+      "dst": "lit:10 号机",
+      "source_doc": "doc-0031",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0033",
+      "rel": "PROTOTYPE",
+      "dst": "lit:瓢虫",
+      "source_doc": "doc-0031",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0032",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "PROTOTYPE",
+      "dst": "lit:蜻蜓",
+      "source_doc": "doc-0032",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "ROLE",
+      "dst": "lit:裁判机器人",
+      "source_doc": "doc-0032",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "CATCHPHRASE",
+      "dst": "lit:绝对裁判的公正漂亮",
+      "source_doc": "doc-0032",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0041",
+      "rel": "APPEARS_IN",
+      "dst": "E0001",
+      "source_doc": "doc-0033",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0041",
+      "rel": "ALIAS",
+      "dst": "lit:AP717",
+      "source_doc": "doc-0033",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0041",
+      "rel": "PARTNER_OF",
+      "dst": "E0029",
+      "source_doc": "doc-0033",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0002",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0005",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0007",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0008",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0009",
+      "rel": "LIVES_IN",
+      "dst": "E0010",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0013",
+      "rel": "LIVES_IN",
+      "dst": "E0042",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0017",
+      "rel": "LIVES_IN",
+      "dst": "E0042",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0020",
+      "rel": "LIVES_IN",
+      "dst": "E0042",
+      "source_doc": "doc-0034",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0002",
+      "rel": "STUDENT_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0005",
+      "rel": "STUDENT_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0006",
+      "rel": "STUDENT_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0007",
+      "rel": "STUDENT_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0008",
+      "rel": "STUDENT_OF",
+      "dst": "E0011",
+      "source_doc": "doc-0035",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "FACTION",
+      "dst": "lit:正义",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0031",
+      "rel": "FACTION",
+      "dst": "lit:正义",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0032",
+      "rel": "FACTION",
+      "dst": "lit:正义",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0037",
+      "rel": "FACTION",
+      "dst": "lit:正义",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0033",
+      "rel": "FACTION",
+      "dst": "lit:正义",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "FACTION",
+      "dst": "lit:反派",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "FACTION",
+      "dst": "lit:反派",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "FACTION",
+      "dst": "lit:反派",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "FACTION",
+      "dst": "lit:反派",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0036",
+      "rel": "FACTION",
+      "dst": "lit:中立",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0040",
+      "rel": "FACTION",
+      "dst": "lit:中立",
+      "source_doc": "doc-0036",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "MEMBER_OF",
+      "dst": "E0043",
+      "source_doc": "doc-0037",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0035",
+      "rel": "MEMBER_OF",
+      "dst": "E0043",
+      "source_doc": "doc-0037",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0034",
+      "rel": "MEMBER_OF",
+      "dst": "E0043",
+      "source_doc": "doc-0037",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0038",
+      "rel": "LEADER_OF",
+      "dst": "E0043",
+      "source_doc": "doc-0037",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0025",
+      "rel": "LEADER_OF",
+      "dst": "E0044",
+      "source_doc": "doc-0038",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0023",
+      "rel": "MEMBER_OF",
+      "dst": "E0044",
+      "source_doc": "doc-0038",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0010",
+      "rel": "LOCATED_IN",
+      "dst": "E0045",
+      "source_doc": "doc-0039",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0046",
+      "rel": "QUANTITY",
+      "dst": "lit:13 颗",
+      "source_doc": "doc-0040",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "WISHED_ON",
+      "dst": "E0047",
+      "source_doc": "doc-0041",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "SEALED_BY",
+      "dst": "E0027",
+      "source_doc": "doc-0042",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0039",
+      "rel": "RELEASED_BY",
+      "dst": "E0036",
+      "source_doc": "doc-0042",
+      "confidence": 1.0,
+      "extra_docs": []
+    },
+    {
+      "src": "E0030",
+      "rel": "WISHED_ON",
+      "dst": "E0048",
+      "source_doc": "doc-0042",
+      "confidence": 1.0,
+      "extra_docs": []
+    }
+  ]
+}

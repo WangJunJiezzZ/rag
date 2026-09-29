@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，懒羊羊上学的学校是大肥羊学校，而慢羊羊是大肥羊学校的校长。所以，校长是**慢羊羊**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 700,
+ "output_tokens": 34,
+ "cached_read_tokens": 0,
+ "latency_ms": 2896.6042079846375,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,65 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"包包大人\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"身份\": \"青青草原的管理者\",\n        \"种族\": \"秃头大象\",\n        \"性格\": \"正义感强，但做事一板一眼，常被灰太狼骗\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画作品\"\n    },\n    {\n      \"name\": \"青青草原\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"包包大人\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"包包大人\",\n      \"predicate\": \"身份\",\n      \"object\": \"青青草原的管理者\"\n    },\n    {\n      \"subject\": \"包包大人\",\n      \"predicate\": \"种族\",\n      \"object\": \"秃头大象\"\n    },\n    {\n      \"subject\": \"包包大人\",\n      \"predicate\": \"性格\",\n      \"object\": \"正义感强，但做事一板一眼，常被灰太狼骗\"\n    },\n    {\n      \"subject\": \"包包大人\",\n      \"predicate\": \"被欺骗\",\n      \"object\": \"灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "包包大人",
+    "type": "角色",
+    "properties": {
+     "身份": "青青草原的管理者",
+     "种族": "秃头大象",
+     "性格": "正义感强，但做事一板一眼，常被灰太狼骗"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品"
+   },
+   {
+    "name": "青青草原",
+    "type": "地点"
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "包包大人",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "身份",
+    "object": "青青草原的管理者"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "种族",
+    "object": "秃头大象"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "性格",
+    "object": "正义感强，但做事一板一眼，常被灰太狼骗"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "被欺骗",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 263,
+ "output_tokens": 312,
+ "cached_read_tokens": 0,
+ "latency_ms": 5390.648957982194,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

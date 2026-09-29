@@ -1,0 +1,14 @@
+{
+ "text": "根据资料可以这样推导：\n\n1. 灰太狼是武大狼的第 **250 代孙**（资料[2]）。\n2. 小灰灰的父亲是灰太狼（资料[3]）。\n\n因此，小灰灰是灰太狼的下一代，也就是武大狼的第 **251 代孙**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 585,
+ "output_tokens": 70,
+ "cached_read_tokens": 0,
+ "latency_ms": 3867.118833994027,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

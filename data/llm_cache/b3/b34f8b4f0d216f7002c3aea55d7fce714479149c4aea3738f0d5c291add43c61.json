@@ -1,0 +1,63 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"夜太狼\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"种族\": \"狼族\",\n        \"称号\": \"恶狼\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\",\n      \"properties\": {}\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"properties\": {}\n    },\n    {\n      \"name\": \"狼族\",\n      \"type\": \"种族\",\n      \"properties\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"夜太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"夜太狼\",\n      \"predicate\": \"种族\",\n      \"object\": \"狼族\"\n    },\n    {\n      \"subject\": \"夜太狼\",\n      \"predicate\": \"称号\",\n      \"object\": \"恶狼\"\n    },\n    {\n      \"subject\": \"夜太狼\",\n      \"predicate\": \"表哥\",\n      \"object\": \"灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "夜太狼",
+    "type": "角色",
+    "properties": {
+     "作品": "喜羊羊与灰太狼",
+     "种族": "狼族",
+     "称号": "恶狼"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "properties": {}
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "properties": {}
+   },
+   {
+    "name": "狼族",
+    "type": "种族",
+    "properties": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "夜太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "种族",
+    "object": "狼族"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "称号",
+    "object": "恶狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "表哥",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 230,
+ "output_tokens": 273,
+ "cached_read_tokens": 0,
+ "latency_ms": 3705.6039999588393,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

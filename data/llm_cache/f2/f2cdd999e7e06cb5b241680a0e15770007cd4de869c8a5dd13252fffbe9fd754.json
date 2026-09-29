@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，小让的爷爷是高圆寺寅彦（高圆寺博士），他封印过的机器人是**鲨鱼辣椒**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 802,
+ "output_tokens": 29,
+ "cached_read_tokens": 0,
+ "latency_ms": 2565.312041027937,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

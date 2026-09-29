@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的二叔是灰二太太狼 [2]，灰二太太狼是七大恶狼的首领 [3]。\n\n关联路径：\n  灰太狼 --[二叔]--> 灰二太太狼 [2]\n  灰二太太狼 --[首领]--> 七大恶狼 [3]\n\n结论：灰太狼的二叔灰二太太狼是七大恶狼的首领。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 888,
+ "output_tokens": 82,
+ "cached_read_tokens": 640,
+ "latency_ms": 3709.739208978135,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

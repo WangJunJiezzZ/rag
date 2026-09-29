@@ -1,0 +1,84 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"喜羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"特点\": \"羊族里跑得最快的羊，聪明乐观，总能识破灰太狼的诡计\",\n        \"爱好\": \"踢足球和做实验\",\n        \"性格\": \"性子急，常常没听完话就动手，闹出笑话\",\n        \"物品\": \"脖子上的铃铛是父母送的，总是随身带着铃铛\"\n      }\n    },\n    {\n      \"name\": \"智羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"科学家\"\n      }\n    },\n    {\n      \"name\": \"丽羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"歌星\"\n      }\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"作品\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"父亲\",\n      \"object\": \"智羊羊\"\n    },\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"母亲\",\n      \"object\": \"丽羊羊\"\n    },\n    {\n      \"subject\": \"智羊羊\",\n      \"predicate\": \"身份\",\n      \"object\": \"科学家\"\n    },\n    {\n      \"subject\": \"丽羊羊\",\n      \"predicate\": \"身份\",\n      \"object\": \"歌星\"\n    },\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"登场于\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"识破诡计\",\n      \"object\": \"灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "特点": "羊族里跑得最快的羊，聪明乐观，总能识破灰太狼的诡计",
+     "爱好": "踢足球和做实验",
+     "性格": "性子急，常常没听完话就动手，闹出笑话",
+     "物品": "脖子上的铃铛是父母送的，总是随身带着铃铛"
+    }
+   },
+   {
+    "name": "智羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "科学家"
+    }
+   },
+   {
+    "name": "丽羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "歌星"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "作品",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊",
+    "predicate": "父亲",
+    "object": "智羊羊"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "母亲",
+    "object": "丽羊羊"
+   },
+   {
+    "subject": "智羊羊",
+    "predicate": "身份",
+    "object": "科学家"
+   },
+   {
+    "subject": "丽羊羊",
+    "predicate": "身份",
+    "object": "歌星"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "登场于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "识破诡计",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 324,
+ "output_tokens": 439,
+ "cached_read_tokens": 0,
+ "latency_ms": 4257.1247079758905,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

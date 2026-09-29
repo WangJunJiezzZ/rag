@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，灰太狼的老婆是**红太狼**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 500,
+ "output_tokens": 15,
+ "cached_read_tokens": 0,
+ "latency_ms": 2870.1230000006035,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

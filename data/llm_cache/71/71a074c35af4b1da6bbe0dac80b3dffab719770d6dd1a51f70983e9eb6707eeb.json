@@ -1,0 +1,77 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"田德莉娜\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"10号机\",\n      \"type\": \"编号\"\n    },\n    {\n      \"name\": \"瓢虫\",\n      \"type\": \"原型\"\n    },\n    {\n      \"name\": \"女性机器人\",\n      \"type\": \"属性\"\n    },\n    {\n      \"name\": \"超级形态\",\n      \"type\": \"能力\"\n    },\n    {\n      \"name\": \"攻击力\",\n      \"type\": \"属性\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"编号\",\n      \"object\": \"10号机\"\n    },\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"原型\",\n      \"object\": \"瓢虫\"\n    },\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"性别\",\n      \"object\": \"女性机器人\"\n    },\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"能力\",\n      \"object\": \"长时间保持超级形态\"\n    },\n    {\n      \"subject\": \"田德莉娜\",\n      \"predicate\": \"攻击力\",\n      \"object\": \"几乎没有攻击力\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "田德莉娜",
+    "type": "角色"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "10号机",
+    "type": "编号"
+   },
+   {
+    "name": "瓢虫",
+    "type": "原型"
+   },
+   {
+    "name": "女性机器人",
+    "type": "属性"
+   },
+   {
+    "name": "超级形态",
+    "type": "能力"
+   },
+   {
+    "name": "攻击力",
+    "type": "属性"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "田德莉娜",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "编号",
+    "object": "10号机"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "原型",
+    "object": "瓢虫"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "性别",
+    "object": "女性机器人"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "能力",
+    "object": "长时间保持超级形态"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "攻击力",
+    "object": "几乎没有攻击力"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 265,
+ "output_tokens": 342,
+ "cached_read_tokens": 0,
+ "latency_ms": 3396.351124974899,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

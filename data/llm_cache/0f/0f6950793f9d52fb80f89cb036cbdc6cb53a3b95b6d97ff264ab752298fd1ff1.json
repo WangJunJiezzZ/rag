@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"鲨鱼辣椒能变成巨人形态\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"GIANT_FORM\", \"object\": \"巨人形态\", \"object_type\": \"Literal\"},\n {\"evidence\": \"为了对抗巨人形态的鲨鱼辣椒，卡布达向射手座和平星许愿\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"WISHED_ON\", \"object\": \"射手座和平星\", \"object_type\": \"Item\"},\n {\"evidence\": \"卡布达坐进驾驶舱，操纵卡布达巨人战斗\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"PARTNER_OF\", \"object\": \"卡布达巨人\", \"object_type\": \"Character\"},\n {\"evidence\": \"卡布达巨人普通形态高 6.5 米，超级形态高 10.8 米\", \"subject\": \"卡布达巨人\", \"subject_type\": \"Character\", \"relation\": \"GIANT_FORM\", \"object\": \"普通形态高 6.5 米，超级形态高 10.8 米\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "鲨鱼辣椒能变成巨人形态",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "GIANT_FORM",
+    "object": "巨人形态",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "为了对抗巨人形态的鲨鱼辣椒，卡布达向射手座和平星许愿",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "WISHED_ON",
+    "object": "射手座和平星",
+    "object_type": "Item"
+   },
+   {
+    "evidence": "卡布达坐进驾驶舱，操纵卡布达巨人战斗",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "PARTNER_OF",
+    "object": "卡布达巨人",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "卡布达巨人普通形态高 6.5 米，超级形态高 10.8 米",
+    "subject": "卡布达巨人",
+    "subject_type": "Character",
+    "relation": "GIANT_FORM",
+    "object": "普通形态高 6.5 米，超级形态高 10.8 米",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2426,
+ "output_tokens": 264,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3261.914834030904,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

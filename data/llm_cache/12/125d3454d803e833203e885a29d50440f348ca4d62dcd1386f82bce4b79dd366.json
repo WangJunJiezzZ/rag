@@ -1,0 +1,69 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"生日\": \"羊历 3475 年 9 月 26 日\",\n        \"性格\": \"怕老婆但很爱她，是好丈夫，也是好爸爸\",\n        \"特长\": \"发明家，厨艺很好\",\n        \"口头禅\": \"我一定会回来的\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"黑太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"银太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"武大狼\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"父亲\",\n      \"object\": \"黑太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"母亲\",\n      \"object\": \"银太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"第250代孙\",\n      \"object\": \"武大狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "生日": "羊历 3475 年 9 月 26 日",
+     "性格": "怕老婆但很爱她，是好丈夫，也是好爸爸",
+     "特长": "发明家，厨艺很好",
+     "口头禅": "我一定会回来的"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   },
+   {
+    "name": "黑太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "银太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "灰太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "父亲",
+    "object": "黑太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "母亲",
+    "object": "银太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "第250代孙",
+    "object": "武大狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 426,
+ "output_tokens": 336,
+ "cached_read_tokens": 256,
+ "latency_ms": 2883.6904169875197,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

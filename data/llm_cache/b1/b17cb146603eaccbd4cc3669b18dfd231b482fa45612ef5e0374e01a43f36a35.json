@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，负责管理整片草原的角色是**包包大人**。资料中明确提到，包包大人的身份是青青草原的管理者。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 304,
+ "output_tokens": 29,
+ "cached_read_tokens": 0,
+ "latency_ms": 2792.4647080362774,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

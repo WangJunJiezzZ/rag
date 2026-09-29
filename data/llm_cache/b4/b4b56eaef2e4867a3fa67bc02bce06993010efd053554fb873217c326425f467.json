@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，羊村由**慢羊羊**当家。资料明确显示，慢羊羊是羊村的村长（来源：慢羊羊 角色档案），并且知识图谱中的关系路径也表明“羊村 <-[HEAD_OF]- 慢羊羊”，即慢羊羊是羊村的负责人。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 617,
+ "output_tokens": 64,
+ "cached_read_tokens": 0,
+ "latency_ms": 2693.722375028301,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

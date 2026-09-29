@@ -1,0 +1,50 @@
+{
+ "text": "{\"entities\":[{\"name\":\"七大恶狼\",\"type\":\"团体\"},{\"name\":\"喜羊羊与灰太狼\",\"type\":\"动画\"},{\"name\":\"灰二太太狼\",\"type\":\"角色\"},{\"name\":\"夜太狼\",\"type\":\"角色\"}],\"relations\":[{\"subject\":\"七大恶狼\",\"predicate\":\"属于\",\"object\":\"喜羊羊与灰太狼\"},{\"subject\":\"灰二太太狼\",\"predicate\":\"首领\",\"object\":\"七大恶狼\"},{\"subject\":\"夜太狼\",\"predicate\":\"成员\",\"object\":\"七大恶狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "七大恶狼",
+    "type": "团体"
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画"
+   },
+   {
+    "name": "灰二太太狼",
+    "type": "角色"
+   },
+   {
+    "name": "夜太狼",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "七大恶狼",
+    "predicate": "属于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "首领",
+    "object": "七大恶狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "成员",
+    "object": "七大恶狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 355,
+ "output_tokens": 116,
+ "cached_read_tokens": 128,
+ "latency_ms": 3748.609333008062,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

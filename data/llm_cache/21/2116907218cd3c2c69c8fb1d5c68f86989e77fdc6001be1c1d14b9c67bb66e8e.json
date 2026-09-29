@@ -1,0 +1,14 @@
+{
+ "text": "根据现有资料，无法回答蜻蜓队长是几号机——资料中没有提到任何机器人的编号信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 608,
+ "output_tokens": 23,
+ "cached_read_tokens": 0,
+ "latency_ms": 3275.1512080430984,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

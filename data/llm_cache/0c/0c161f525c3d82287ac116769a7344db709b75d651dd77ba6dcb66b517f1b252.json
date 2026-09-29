@@ -1,0 +1,79 @@
+{
+ "text": "{\"entities\": [{\"name\": \"鲨鱼辣椒\", \"type\": \"角色\", \"attributes\": {\"编号\": \"9 号机\", \"原型\": \"鲨鱼\", \"配色\": \"黑银配色\", \"战斗力\": \"最强的 B 机器人\", \"特征\": \"额头上有一道伤疤\", \"武器\": \"鲨鱼神斧\", \"超级变换形态持续时间\": \"最多维持 15 分钟\", \"巨人形态\": \"超级鲨鱼巨人\"}}, {\"name\": \"铁甲小宝\", \"type\": \"特摄剧\"}, {\"name\": \"B 机器人\", \"type\": \"机器人类型\"}, {\"name\": \"鲨鱼神斧\", \"type\": \"武器\"}, {\"name\": \"超级鲨鱼巨人\", \"type\": \"巨人形态\"}], \"relations\": [{\"subject\": \"鲨鱼辣椒\", \"predicate\": \"登场作品\", \"object\": \"铁甲小宝\"}, {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"编号\", \"object\": \"9 号机\"}, {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"原型\", \"object\": \"鲨鱼\"}, {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"类型\", \"object\": \"B 机器人\"}, {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"武器\", \"object\": \"鲨鱼神斧\"}, {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"巨人形态\", \"object\": \"超级鲨鱼巨人\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色",
+    "attributes": {
+     "编号": "9 号机",
+     "原型": "鲨鱼",
+     "配色": "黑银配色",
+     "战斗力": "最强的 B 机器人",
+     "特征": "额头上有一道伤疤",
+     "武器": "鲨鱼神斧",
+     "超级变换形态持续时间": "最多维持 15 分钟",
+     "巨人形态": "超级鲨鱼巨人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "B 机器人",
+    "type": "机器人类型"
+   },
+   {
+    "name": "鲨鱼神斧",
+    "type": "武器"
+   },
+   {
+    "name": "超级鲨鱼巨人",
+    "type": "巨人形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "编号",
+    "object": "9 号机"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "原型",
+    "object": "鲨鱼"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "类型",
+    "object": "B 机器人"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "武器",
+    "object": "鲨鱼神斧"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "巨人形态",
+    "object": "超级鲨鱼巨人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 470,
+ "output_tokens": 310,
+ "cached_read_tokens": 256,
+ "latency_ms": 3867.9889169870876,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

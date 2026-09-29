@@ -1,0 +1,88 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蜻蜓队长\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"原型\": \"蜻蜓\",\n        \"身份\": \"裁判机器人\",\n        \"口头禅\": \"绝对裁判的公正漂亮\",\n        \"登场作品\": \"铁甲小宝\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\"\n    },\n    {\n      \"name\": \"蜻蜓\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"裁判机器人\",\n      \"type\": \"身份\"\n    },\n    {\n      \"name\": \"和平星\",\n      \"type\": \"物品\"\n    },\n    {\n      \"name\": \"巨大铁拳\",\n      \"type\": \"物品\"\n    },\n    {\n      \"name\": \"中国大陆播出版本\",\n      \"type\": \"版本\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"原型\",\n      \"object\": \"蜻蜓\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"身份\",\n      \"object\": \"裁判机器人\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"争夺\",\n      \"object\": \"和平星\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"惩罚工具\",\n      \"object\": \"巨大铁拳\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"口头禅\",\n      \"object\": \"绝对裁判的公正漂亮\"\n    },\n    {\n      \"subject\": \"蜻蜓队长\",\n      \"predicate\": \"译名采用\",\n      \"object\": \"中国大陆播出版本\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蜻蜓队长",
+    "type": "角色",
+    "properties": {
+     "原型": "蜻蜓",
+     "身份": "裁判机器人",
+     "口头禅": "绝对裁判的公正漂亮",
+     "登场作品": "铁甲小宝"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品"
+   },
+   {
+    "name": "蜻蜓",
+    "type": "生物"
+   },
+   {
+    "name": "裁判机器人",
+    "type": "身份"
+   },
+   {
+    "name": "和平星",
+    "type": "物品"
+   },
+   {
+    "name": "巨大铁拳",
+    "type": "物品"
+   },
+   {
+    "name": "中国大陆播出版本",
+    "type": "版本"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "原型",
+    "object": "蜻蜓"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "身份",
+    "object": "裁判机器人"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "惩罚工具",
+    "object": "巨大铁拳"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "口头禅",
+    "object": "绝对裁判的公正漂亮"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "译名采用",
+    "object": "中国大陆播出版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 281,
+ "output_tokens": 414,
+ "cached_read_tokens": 0,
+ "latency_ms": 4419.00216700742,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

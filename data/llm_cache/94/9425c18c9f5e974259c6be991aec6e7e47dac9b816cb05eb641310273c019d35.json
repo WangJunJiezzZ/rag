@@ -1,0 +1,88 @@
+{
+ "text": "{\"entities\":[{\"name\":\"和平星\",\"type\":\"物体\"},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\"},{\"name\":\"蛇夫座\",\"type\":\"星座\"},{\"name\":\"B机器人\",\"type\":\"机器人\"},{\"name\":\"裁判机器人\",\"type\":\"机器人\"},{\"name\":\"假和平星\",\"type\":\"物体\"}],\"relations\":[{\"subject\":\"和平星\",\"predicate\":\"属于\",\"object\":\"铁甲小宝\"},{\"subject\":\"和平星\",\"predicate\":\"数量为\",\"object\":\"13颗\"},{\"subject\":\"和平星\",\"predicate\":\"代表\",\"object\":\"十三个星座\"},{\"subject\":\"十三个星座\",\"predicate\":\"包括\",\"object\":\"蛇夫座\"},{\"subject\":\"和平星\",\"predicate\":\"具有效力\",\"object\":\"许愿\"},{\"subject\":\"假和平星\",\"predicate\":\"不具有效力\",\"object\":\"许愿\"},{\"subject\":\"B机器人\",\"predicate\":\"争夺\",\"object\":\"和平星\"},{\"subject\":\"裁判机器人\",\"predicate\":\"出现于\",\"object\":\"争夺和平星时\"},{\"subject\":\"裁判机器人\",\"predicate\":\"组织\",\"object\":\"运动或游戏比赛\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "和平星",
+    "type": "物体"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "蛇夫座",
+    "type": "星座"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "裁判机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "假和平星",
+    "type": "物体"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "和平星",
+    "predicate": "属于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "数量为",
+    "object": "13颗"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "代表",
+    "object": "十三个星座"
+   },
+   {
+    "subject": "十三个星座",
+    "predicate": "包括",
+    "object": "蛇夫座"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "具有效力",
+    "object": "许愿"
+   },
+   {
+    "subject": "假和平星",
+    "predicate": "不具有效力",
+    "object": "许愿"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "裁判机器人",
+    "predicate": "出现于",
+    "object": "争夺和平星时"
+   },
+   {
+    "subject": "裁判机器人",
+    "predicate": "组织",
+    "object": "运动或游戏比赛"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 318,
+ "output_tokens": 230,
+ "cached_read_tokens": 128,
+ "latency_ms": 3154.143000021577,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

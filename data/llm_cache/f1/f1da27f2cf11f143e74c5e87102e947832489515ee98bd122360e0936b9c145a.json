@@ -1,0 +1,14 @@
+{
+ "text": "被高圆寺博士封印的机器人是鲨鱼辣椒[1]，它的武器是鲨鱼神斧[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 831,
+ "output_tokens": 25,
+ "cached_read_tokens": 0,
+ "latency_ms": 2381.6133340005763,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

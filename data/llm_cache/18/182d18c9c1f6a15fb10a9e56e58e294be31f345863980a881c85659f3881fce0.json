@@ -1,0 +1,14 @@
+{
+ "text": "反派三人组的老大是蟑螂恶霸 [1]。其武器是眼镜蛇尾鞭 [4]。\n\n关联路径：\n  反派三人组 --[老大]--> 蟑螂恶霸 [1]\n  蟑螂恶霸 --[武器]--> 眼镜蛇尾鞭 [4]\n\n结论：反派三人组老大的武器是眼镜蛇尾鞭。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 995,
+ "output_tokens": 78,
+ "cached_read_tokens": 768,
+ "latency_ms": 2867.3921250156127,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

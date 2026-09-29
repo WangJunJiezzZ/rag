@@ -1,0 +1,14 @@
+{
+ "text": "香太狼是红太狼的表妹[2]，而红太狼是小灰灰的母亲[1]，所以香太狼是小灰灰母亲的表妹，即小灰灰的表姨。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 789,
+ "output_tokens": 41,
+ "cached_read_tokens": 0,
+ "latency_ms": 2663.040874991566,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

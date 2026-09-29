@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的外公是**爹爹狼**。\n\n关联路径：\n- 小灰灰 --[母亲]--> 红太狼 [1]\n- 红太狼 --[父亲]--> 爹爹狼 [3]\n\n结论：小灰灰的外公（母亲的父亲）是爹爹狼 [1][3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 974,
+ "output_tokens": 66,
+ "cached_read_tokens": 768,
+ "latency_ms": 3151.280999998562,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

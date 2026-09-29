@@ -4,117 +4,307 @@
   "resolve": true,
   "evidence_check": true,
   "extract_stats": {
-    "docs": 326,
-    "raw": 629,
-    "kept": 589,
+    "docs": 42,
+    "raw": 174,
+    "kept": 174,
     "dropped_schema": 0,
     "dropped_evidence": 0,
-    "dropped_dup": 40,
+    "dropped_dup": 0,
     "parse_retries": 0,
     "parse_failed": 0,
     "cost_usd": 0.0,
     "reasons": {}
   },
   "resolve_stats": {
-    "mentions": 230,
-    "canonical": 212,
-    "merged_by_rule": 18,
+    "mentions": 52,
+    "canonical": 49,
+    "merged_by_alias": 3,
+    "merged_by_rule": 0,
     "merged_by_vector": 0,
     "merged_by_llm": 0,
     "llm_calls": 0,
     "llm_rejected": 0,
-    "blocked_by_lexical": 360,
-    "gray_unresolved": 110,
+    "blocked_by_lexical": 34,
+    "blocked_by_relation": 11,
+    "blocked_transitive": 0,
+    "gray_unresolved": 0,
     "cost_usd": 0.0,
     "examples": [
-      "[词面-强] 凛川资产管理有限公司 == 凛川资管",
-      "[词面-强] 徽岚资产管理有限公司（3） == 徽岚资管（3）",
-      "[词面-强] 星海资本管理有限公司（2） == 星海资本（2）",
-      "[词面-强] 松岚资产管理有限公司（3） == 松岚资管（3）",
-      "[词面-强] 栖梧国际控股有限公司（2） == 栖梧国际（2）",
-      "[词面-强] 栖梧环球 == 栖梧环球投资有限公司",
-      "[词面-强] 栖梧资本管理有限公司（3） == 栖梧资本（3）",
-      "[词面-强] 漱玉资产管理有限公司 == 漱玉资管",
-      "[词面-强] 瑾樾资本管理有限公司（3） == 瑾樾资本（3）",
-      "[词面-强] 砚池资产管理有限公司（2） == 砚池资管（2）",
-      "[词面-强] 砥行资本管理有限公司（2） == 砥行资本（2）",
-      "[词面-强] 砺石资产管理有限公司（2） == 砺石资管（2）"
+      "[又名] 慢羊羊村长 -> 慢羊羊",
+      "[又名] 高圆寺博士 -> 高圆寺寅彦",
+      "[又名] 藏之助 -> 吉祥寺藏之助"
     ]
   },
-  "precision": 0.995850622406639,
+  "precision": 1.0,
   "recall": 1.0,
-  "f1": 0.997920997920998,
+  "f1": 1.0,
   "by_relation": {
-    "REGISTERED_IN": {
-      "gold": 85,
-      "ext": 86,
-      "ok": 85,
-      "precision": 0.9883720930232558,
-      "recall": 1.0
-    },
-    "DOMICILED_IN": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "SHAREHOLDER_OF": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "LAUNCHED_ON": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "MIN_INVESTMENT": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "DIRECTOR_OF": {
-      "gold": 127,
-      "ext": 127,
-      "ok": 127,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "MANAGED_BY": {
-      "gold": 40,
-      "ext": 41,
-      "ok": 40,
-      "precision": 0.975609756097561,
-      "recall": 1.0
-    },
-    "CUSTODIAN": {
-      "gold": 40,
-      "ext": 40,
-      "ok": 40,
-      "precision": 1.0,
-      "recall": 1.0
-    },
-    "RISK_LEVEL": {
+    "ROLE": {
       "gold": 12,
       "ext": 12,
       "ok": 12,
       "precision": 1.0,
       "recall": 1.0
     },
-    "SUBSIDIARY_OF": {
-      "gold": 16,
-      "ext": 16,
-      "ok": 16,
+    "UNIT_NO": {
+      "gold": 10,
+      "ext": 10,
+      "ok": 10,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "APPEARS_IN": {
+      "gold": 31,
+      "ext": 31,
+      "ok": 31,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "EPISODES": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "FACTION": {
+      "gold": 11,
+      "ext": 11,
+      "ok": 11,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "ALIAS": {
+      "gold": 7,
+      "ext": 7,
+      "ok": 7,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "LOCATED_IN": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "COUSIN_OF": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "HEAD_OF": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "DESCENDANT_OF": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "CATCHPHRASE": {
+      "gold": 8,
+      "ext": 8,
+      "ok": 8,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "FIRST_AIRED": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "TRANSFORM_TIME": {
+      "gold": 4,
+      "ext": 4,
+      "ok": 4,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "UNCLE_OF": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SPOUSE_OF": {
+      "gold": 3,
+      "ext": 3,
+      "ok": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "PARENT_OF": {
+      "gold": 9,
+      "ext": 9,
+      "ok": 9,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "LIVES_IN": {
+      "gold": 9,
+      "ext": 9,
+      "ok": 9,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "WEAPON": {
+      "gold": 7,
+      "ext": 7,
+      "ok": 7,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "PROTOTYPE": {
+      "gold": 10,
+      "ext": 10,
+      "ok": 10,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "STUDENT_OF": {
+      "gold": 5,
+      "ext": 5,
+      "ok": 5,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SEALED_BY": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "RELEASED_BY": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "FAVORITE_FOOD": {
+      "gold": 3,
+      "ext": 3,
+      "ok": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "QUANTITY": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "LEADER_OF": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "BIRTHDAY": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "MEMBER_OF": {
+      "gold": 4,
+      "ext": 4,
+      "ok": 4,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "CARRIES": {
+      "gold": 3,
+      "ext": 3,
+      "ok": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "LIKES": {
+      "gold": 4,
+      "ext": 4,
+      "ok": 4,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "SPECIAL_MOVE": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "WISHED_ON": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "PARTNER_OF": {
+      "gold": 3,
+      "ext": 3,
+      "ok": 3,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "THEME_SONG": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "GIANT_FORM": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "GRANDPARENT_OF": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "BROADCASTER": {
+      "gold": 2,
+      "ext": 2,
+      "ok": 2,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "FRIEND_OF": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "FIRST_MOVIE": {
+      "gold": 1,
+      "ext": 1,
+      "ok": 1,
       "precision": 1.0,
       "recall": 1.0
     }
   },
-  "unmapped_entities": 1
+  "unmapped_entities": 0
 }

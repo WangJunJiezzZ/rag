@@ -1,0 +1,89 @@
+{
+ "text": "{\"entities\":[{\"name\":\"铁甲小宝\",\"type\":\"作品\",\"aliases\":[]},{\"name\":\"日本东映\",\"type\":\"组织\",\"aliases\":[]},{\"name\":\"朝日电视台\",\"type\":\"组织\",\"aliases\":[]},{\"name\":\"金属英雄系列\",\"type\":\"作品系列\",\"aliases\":[]},{\"name\":\"小让\",\"type\":\"角色\",\"aliases\":[]},{\"name\":\"卡布达\",\"type\":\"角色\",\"aliases\":[]},{\"name\":\"B机器人\",\"type\":\"角色群体\",\"aliases\":[]},{\"name\":\"和平星\",\"type\":\"物品\",\"aliases\":[]}],\"relations\":[{\"subject\":\"铁甲小宝\",\"predicate\":\"出品方\",\"object\":\"日本东映\"},{\"subject\":\"铁甲小宝\",\"predicate\":\"首播电视台\",\"object\":\"朝日电视台\"},{\"subject\":\"铁甲小宝\",\"predicate\":\"所属系列\",\"object\":\"金属英雄系列\"},{\"subject\":\"小让\",\"predicate\":\"发现\",\"object\":\"卡布达\"},{\"subject\":\"卡布达\",\"predicate\":\"属于\",\"object\":\"B机器人\"},{\"subject\":\"B机器人\",\"predicate\":\"争夺\",\"object\":\"和平星\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "aliases": []
+   },
+   {
+    "name": "日本东映",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "朝日电视台",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "金属英雄系列",
+    "type": "作品系列",
+    "aliases": []
+   },
+   {
+    "name": "小让",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "卡布达",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "B机器人",
+    "type": "角色群体",
+    "aliases": []
+   },
+   {
+    "name": "和平星",
+    "type": "物品",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "铁甲小宝",
+    "predicate": "出品方",
+    "object": "日本东映"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "首播电视台",
+    "object": "朝日电视台"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "所属系列",
+    "object": "金属英雄系列"
+   },
+   {
+    "subject": "小让",
+    "predicate": "发现",
+    "object": "卡布达"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "属于",
+    "object": "B机器人"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "争夺",
+    "object": "和平星"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 347,
+ "output_tokens": 236,
+ "cached_read_tokens": 128,
+ "latency_ms": 3246.407999948133,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

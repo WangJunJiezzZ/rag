@@ -1,0 +1,14 @@
+{
+ "text": "红太狼的武器是平底锅[7]，她总是派丈夫去抓羊，抓不到就动手[7]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 700,
+ "output_tokens": 27,
+ "cached_read_tokens": 0,
+ "latency_ms": 2542.42987500038,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

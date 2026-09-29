@@ -1,0 +1,63 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"灰二太太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"必杀技\": \"沉默羔羊十二式\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"作品\"\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"尿太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"沉默羔羊十二式\",\n      \"type\": \"技能\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"必杀技\",\n      \"object\": \"沉默羔羊十二式\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"二叔\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"叫乳名\",\n      \"object\": \"尿太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "灰二太太狼",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "必杀技": "沉默羔羊十二式"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "作品"
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色"
+   },
+   {
+    "name": "尿太狼",
+    "type": "角色"
+   },
+   {
+    "name": "沉默羔羊十二式",
+    "type": "技能"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "灰二太太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "必杀技",
+    "object": "沉默羔羊十二式"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "二叔",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "叫乳名",
+    "object": "尿太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 346,
+ "output_tokens": 292,
+ "cached_read_tokens": 128,
+ "latency_ms": 3377.9192909714766,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

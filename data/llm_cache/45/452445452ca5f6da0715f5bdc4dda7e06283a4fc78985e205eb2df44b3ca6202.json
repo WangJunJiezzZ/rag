@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"香太狼是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"香太狼\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的武器是熨斗\", \"subject\": \"香太狼\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"熨斗\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色是红太狼的表妹\", \"subject\": \"香太狼\", \"subject_type\": \"Character\", \"relation\": \"COUSIN_OF\", \"object\": \"红太狼\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色的丈夫是夜太狼\", \"subject\": \"夜太狼\", \"subject_type\": \"Character\", \"relation\": \"SPOUSE_OF\", \"object\": \"香太狼\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色的女儿是小香香\", \"subject\": \"香太狼\", \"subject_type\": \"Character\", \"relation\": \"PARENT_OF\", \"object\": \"小香香\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色喜欢蕉太狼\", \"subject\": \"香太狼\", \"subject_type\": \"Character\", \"relation\": \"LIKES\", \"object\": \"蕉太狼\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "香太狼是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "香太狼",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的武器是熨斗",
+    "subject": "香太狼",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "熨斗",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色是红太狼的表妹",
+    "subject": "香太狼",
+    "subject_type": "Character",
+    "relation": "COUSIN_OF",
+    "object": "红太狼",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色的丈夫是夜太狼",
+    "subject": "夜太狼",
+    "subject_type": "Character",
+    "relation": "SPOUSE_OF",
+    "object": "香太狼",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色的女儿是小香香",
+    "subject": "香太狼",
+    "subject_type": "Character",
+    "relation": "PARENT_OF",
+    "object": "小香香",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色喜欢蕉太狼",
+    "subject": "香太狼",
+    "subject_type": "Character",
+    "relation": "LIKES",
+    "object": "蕉太狼",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1964,
+ "output_tokens": 323,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3679.6811249805614,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

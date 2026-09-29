@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，小灰灰的爷爷是黑太狼，而黑太狼的妻子是**银太狼**。所以，小灰灰爷爷的妻子是银太狼。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 587,
+ "output_tokens": 37,
+ "cached_read_tokens": 0,
+ "latency_ms": 3848.6414999933913,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

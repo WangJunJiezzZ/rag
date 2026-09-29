@@ -1,0 +1,64 @@
+{
+ "text": "{\"entities\": [{\"name\": \"软绵绵\", \"type\": \"角色\", \"description\": \"绵羊族先祖\"}, {\"name\": \"羊村\", \"type\": \"地点\", \"description\": \"位于青青草原的防御坚固的村庄\"}, {\"name\": \"青青草原\", \"type\": \"地点\", \"description\": \"羊村所在地\"}, {\"name\": \"武大狼\", \"type\": \"角色\", \"description\": \"狼群首领\"}, {\"name\": \"饿狼传说\", \"type\": \"事件\", \"description\": \"青青草原流传的传说\"}], \"relations\": [{\"subject\": \"软绵绵\", \"predicate\": \"建立\", \"object\": \"羊村\"}, {\"subject\": \"羊村\", \"predicate\": \"位于\", \"object\": \"青青草原\"}, {\"subject\": \"武大狼\", \"predicate\": \"首领\", \"object\": \"狼群\"}, {\"subject\": \"武大狼\", \"predicate\": \"误吞石头而死\", \"object\": \"饿狼传说\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "软绵绵",
+    "type": "角色",
+    "description": "绵羊族先祖"
+   },
+   {
+    "name": "羊村",
+    "type": "地点",
+    "description": "位于青青草原的防御坚固的村庄"
+   },
+   {
+    "name": "青青草原",
+    "type": "地点",
+    "description": "羊村所在地"
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "description": "狼群首领"
+   },
+   {
+    "name": "饿狼传说",
+    "type": "事件",
+    "description": "青青草原流传的传说"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "软绵绵",
+    "predicate": "建立",
+    "object": "羊村"
+   },
+   {
+    "subject": "羊村",
+    "predicate": "位于",
+    "object": "青青草原"
+   },
+   {
+    "subject": "武大狼",
+    "predicate": "首领",
+    "object": "狼群"
+   },
+   {
+    "subject": "武大狼",
+    "predicate": "误吞石头而死",
+    "object": "饿狼传说"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 393,
+ "output_tokens": 216,
+ "cached_read_tokens": 256,
+ "latency_ms": 3304.7065830323845,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

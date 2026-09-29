@@ -1,0 +1,98 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"小让\",\n      \"type\": \"角色\",\n      \"aliases\": [\"高圆寺让\"],\n      \"attributes\": {\n        \"身份\": \"小学生\",\n        \"年龄\": \"9岁\"\n      }\n    },\n    {\n      \"name\": \"高圆寺让\",\n      \"type\": \"角色\",\n      \"aliases\": [\"小让\"],\n      \"attributes\": {\n        \"身份\": \"小学生\",\n        \"年龄\": \"9岁\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\",\n      \"attributes\": {\n        \"类型\": \"特摄剧\"\n      }\n    },\n    {\n      \"name\": \"卡布达\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"友情呼唤指令器\",\n      \"type\": \"道具\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"高圆寺寅彦\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"又名\",\n      \"object\": \"高圆寺让\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"身份是\",\n      \"object\": \"小学生\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"年龄是\",\n      \"object\": \"9岁\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"使用\",\n      \"object\": \"友情呼唤指令器\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"让卡布达进行超级变换\",\n      \"object\": \"卡布达\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"爷爷是\",\n      \"object\": \"高圆寺寅彦\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "小让",
+    "type": "角色",
+    "aliases": [
+     "高圆寺让"
+    ],
+    "attributes": {
+     "身份": "小学生",
+     "年龄": "9岁"
+    }
+   },
+   {
+    "name": "高圆寺让",
+    "type": "角色",
+    "aliases": [
+     "小让"
+    ],
+    "attributes": {
+     "身份": "小学生",
+     "年龄": "9岁"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "attributes": {
+     "类型": "特摄剧"
+    }
+   },
+   {
+    "name": "卡布达",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "友情呼唤指令器",
+    "type": "道具",
+    "attributes": {}
+   },
+   {
+    "name": "高圆寺寅彦",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "小让",
+    "predicate": "又名",
+    "object": "高圆寺让"
+   },
+   {
+    "subject": "小让",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "小让",
+    "predicate": "身份是",
+    "object": "小学生"
+   },
+   {
+    "subject": "小让",
+    "predicate": "年龄是",
+    "object": "9岁"
+   },
+   {
+    "subject": "小让",
+    "predicate": "使用",
+    "object": "友情呼唤指令器"
+   },
+   {
+    "subject": "小让",
+    "predicate": "让卡布达进行超级变换",
+    "object": "卡布达"
+   },
+   {
+    "subject": "小让",
+    "predicate": "爷爷是",
+    "object": "高圆寺寅彦"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 254,
+ "output_tokens": 448,
+ "cached_read_tokens": 0,
+ "latency_ms": 4515.405958984047,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

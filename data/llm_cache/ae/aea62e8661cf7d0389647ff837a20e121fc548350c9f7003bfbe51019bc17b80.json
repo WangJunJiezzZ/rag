@@ -1,0 +1,41 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"中野美树\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\"\n    },\n    {\n      \"name\": \"女警\",\n      \"type\": \"身份\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"中野美树\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"中野美树\",\n      \"predicate\": \"身份\",\n      \"object\": \"女警\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "中野美树",
+    "type": "角色"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品"
+   },
+   {
+    "name": "女警",
+    "type": "身份"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "中野美树",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "中野美树",
+    "predicate": "身份",
+    "object": "女警"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 247,
+ "output_tokens": 138,
+ "cached_read_tokens": 0,
+ "latency_ms": 2870.5526660196483,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

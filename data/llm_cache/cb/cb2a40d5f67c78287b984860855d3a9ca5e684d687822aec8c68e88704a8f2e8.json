@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，被猴子带大的素食者是**蕉太狼**。\n\n资料中提到，蕉太狼从小和父母失散，被猴子收养，并且吃素。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 333,
+ "output_tokens": 35,
+ "cached_read_tokens": 0,
+ "latency_ms": 2679.9497500178404,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

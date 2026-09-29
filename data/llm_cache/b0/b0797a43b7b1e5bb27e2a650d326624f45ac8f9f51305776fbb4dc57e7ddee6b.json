@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的母亲是红太狼[1]，红太狼是香太狼的表姐[2]，而香太狼的女儿是小香香[2]。因此，小灰灰和小香香是表亲关系（小灰灰是小香香的表哥）。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 829,
+ "output_tokens": 55,
+ "cached_read_tokens": 128,
+ "latency_ms": 2766.6111669968814,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

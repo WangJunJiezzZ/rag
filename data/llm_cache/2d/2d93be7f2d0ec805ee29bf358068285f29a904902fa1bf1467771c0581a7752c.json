@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"高圆寺寅彦是特摄剧《铁甲小宝》中的角色\", \"subject\": \"高圆寺寅彦\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"高圆寺寅彦又名高圆寺博士\", \"subject\": \"高圆寺寅彦\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"高圆寺博士\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的身份是机器人科学家\", \"subject\": \"高圆寺寅彦\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"机器人科学家\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "高圆寺寅彦是特摄剧《铁甲小宝》中的角色",
+    "subject": "高圆寺寅彦",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "高圆寺寅彦又名高圆寺博士",
+    "subject": "高圆寺寅彦",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "高圆寺博士",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是机器人科学家",
+    "subject": "高圆寺寅彦",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "机器人科学家",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2467,
+ "output_tokens": 173,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3354.3552919873036,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

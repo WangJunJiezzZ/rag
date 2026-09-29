@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"蟑螂恶霸是特摄剧《铁甲小宝》中的角色\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是8 号机\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"8 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是眼镜蛇\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"眼镜蛇\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的武器是眼镜蛇尾鞭\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"眼镜蛇尾鞭\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "蟑螂恶霸是特摄剧《铁甲小宝》中的角色",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是8 号机",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "8 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是眼镜蛇",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "眼镜蛇",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的武器是眼镜蛇尾鞭",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "眼镜蛇尾鞭",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1986,
+ "output_tokens": 230,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3255.236125027295,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

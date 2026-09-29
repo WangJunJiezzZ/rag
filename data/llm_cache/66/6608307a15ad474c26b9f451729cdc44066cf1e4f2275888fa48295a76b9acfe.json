@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎的原型是**锹形虫**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 347,
+ "output_tokens": 14,
+ "cached_read_tokens": 0,
+ "latency_ms": 3875.861792010255,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

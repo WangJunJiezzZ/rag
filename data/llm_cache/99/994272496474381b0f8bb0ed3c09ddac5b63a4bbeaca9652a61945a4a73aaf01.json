@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的原型是独角仙。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 926,
+ "output_tokens": 11,
+ "cached_read_tokens": 768,
+ "latency_ms": 3022.487165988423,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,8 +1,9 @@
 """
 Phase 2 - 从文档抽取知识图谱, 并评测抽取质量。
 
-    python run.py build-graph                    # 规则抽取(无需 API key)
-    python run.py build-graph -- --extractor llm # LLM 抽取(需要 key)
+    python run.py build-graph                    # 规则抽取(无需 API key) -> graph_rule.json
+    python run.py build-graph -- --extractor llm --prompt extract_triples/v4_structural
+                                                 # LLM 抽取 -> extracted_graph.json
 """
 from __future__ import annotations
 
@@ -36,8 +37,14 @@ def main() -> int:
     ap.add_argument("--limit", type=int, default=0, help="只处理前 N 份文档")
     ap.add_argument("--workers", type=int, default=8,
                     help="抽取并发度 (LLM 模式生效)")
-    ap.add_argument("--out", default="data/index/extracted_graph.json")
+    ap.add_argument("--out", default=None,
+                    help="缺省: LLM 抽取写 extracted_graph.json(演示与评测用的那张图); "
+                         "规则抽取写 graph_rule.json —— 不能让 `run.py all` 里的规则基线"
+                         "覆盖掉 LLM 抽取图, 否则离线演示的缓存全部对不上")
     args = ap.parse_args()
+    if args.out is None:
+        args.out = ("data/index/extracted_graph.json" if args.extractor == "llm"
+                    else "data/index/graph_rule.json")
 
     docs = list(read_jsonl(ROOT / "data/synthetic/documents.jsonl"))
     if args.limit:

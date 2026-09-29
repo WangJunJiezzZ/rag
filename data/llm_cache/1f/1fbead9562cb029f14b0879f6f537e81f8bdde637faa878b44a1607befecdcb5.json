@@ -1,0 +1,14 @@
+{
+ "text": "喜羊羊的父亲是智羊羊，身份是科学家。[2]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1223,
+ "output_tokens": 15,
+ "cached_read_tokens": 256,
+ "latency_ms": 2914.9096670444123,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

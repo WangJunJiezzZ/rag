@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法确定哪个机器人是爱钱如命的财迷。资料中没有提到任何机器人有“爱钱如命”或“财迷”的设定。[1][2][3][4]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 394,
+ "output_tokens": 44,
+ "cached_read_tokens": 0,
+ "latency_ms": 2768.208749999758,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

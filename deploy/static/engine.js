@@ -1,7 +1,7 @@
 /* 检索引擎的浏览器实现 —— 与 Python 版保持算法一致。
  *
  * 为什么能搬过来: BM25、实体链接、图遍历都是确定性算法，数据量也小
- * (1092 个 chunk / 227 实体 / 477 条边)，浏览器毫秒级跑完。
+ * (两百来个 chunk / 几十个实体 / 不到两百条边)，浏览器毫秒级跑完。
  * 唯一没搬的是 dense 向量检索 —— 那需要额外加载 10MB 的 ONNX WASM，
  * 对演示页面不划算。所以静态版的语义类问题会弱于完整版，页面上有注明。
  */
@@ -71,14 +71,11 @@ export class BM25 {
 }
 
 /* ---------- 知识图谱 ---------- */
-const PUNCT = "（）()。，,、．. 　\t\r\n·:：“”\"'-—_/\\";
-const NOISE = ["有限公司", "股份有限公司", "ltd", "limited", "pte", "inc",
-               "corp", "corporation", "co", "company"];
+const PUNCT = "（）()。，,、．. 　\t\r\n·:：“”\"'-—_/\\《》「」！!？?…";
 
 export function normalizeName(s) {
   s = (s || "").trim().toLowerCase();
   for (const c of PUNCT) s = s.split(c).join("");
-  for (const w of NOISE) s = s.split(w).join("");
   return s;
 }
 
@@ -93,7 +90,7 @@ export class Graph {
       if (!this.in.has(e.o)) this.in.set(e.o, []);
       this.out.get(e.s).push(e); this.in.get(e.o).push(e);
     }
-    // 实体表面形式，长的优先 —— 保证最长匹配
+    // 实体表面形式，长的优先 —— 保证最长匹配("灰二太太狼"不被"灰太狼"吃掉)
     this.surface = [];
     for (const e of raw.entities)
       for (const f of [e.n, ...(e.a || [])])
@@ -111,12 +108,14 @@ export class Graph {
     const e = this.ent.get(id);
     return e ? e.t : "Unknown";
   }
-  risk(id) { const e = this.ent.get(id); return e ? e.risk : null; }
-  degree(id) {
-    return (this.out.get(id) || []).length + (this.in.get(id) || []).length;
+  /* 只数连向实体的边 —— 字面量边(口头禅、原型……)不让普通角色变成枢纽 */
+  entityDegree(id) {
+    return (this.out.get(id) || []).filter(e => !e.o.startsWith("lit:")).length
+         + (this.in.get(id) || []).length;
   }
+  isHub(id, hubDegree) { return hubDegree != null && this.entityDegree(id) > hubDegree; }
 
-  /* 字面量不得作为遍历中转 —— 两只基金因金额数字相同就"有关联"是假阳性 */
+  /* 字面量不得作为遍历中转 —— 两个角色因变身时限相同就"有关系"是假阳性 */
   steps(id) {
     if (id.startsWith("lit:")) return [];
     const r = [];
@@ -144,22 +143,23 @@ export class Graph {
     return [...found.entries()];
   }
 
-  /* 枚举到目标的多条简单路径，不穿透枢纽节点 */
-  pathsTo(start, pred, maxHops = 4, maxPaths = 12, hubDegree = 12) {
+  /* src -> dst 的简单路径，按层 BFS(短的在前)，不穿透枢纽 —— 与 Python find_paths 一致 */
+  findPaths(src, dst, maxHops = 4, limit = 12, hubDegree = 12) {
     const out = [];
-    const stack = [[start, [], new Set([start])]];
-    while (stack.length && out.length < maxPaths) {
-      const [node, path, seen] = stack.pop();
-      if (path.length >= maxHops) continue;
-      if (path.length && hubDegree != null && this.degree(node) > hubDegree) continue;
-      for (const st of this.steps(node)) {
-        if (seen.has(st.to)) continue;
-        const np = [...path, st];
-        if (pred(st.to)) { out.push(np); if (out.length >= maxPaths) break; }
-        else stack.push([st.to, np, new Set([...seen, st.to])]);
+    let frontier = [[src, [], new Set([src])]];
+    for (let h = 0; h < maxHops && frontier.length; h++) {
+      const next = [];
+      for (const [node, path, seen] of frontier) {
+        if (path.length && this.isHub(node, hubDegree)) continue;
+        for (const st of this.steps(node)) {
+          if (seen.has(st.to)) continue;
+          const np = [...path, st];
+          if (st.to === dst) { out.push(np); if (out.length >= limit) return out; }
+          else next.push([st.to, np, new Set([...seen, st.to])]);
+        }
       }
+      frontier = next;
     }
-    out.sort((a, b) => a.length - b.length);
     return out;
   }
 
@@ -168,7 +168,7 @@ export class Graph {
     const push = (id) => {
       if (seen.has(id)) return;
       seen.add(id);
-      nodes.push({ id, name: this.name(id), type: this.type(id), risk: this.risk(id) });
+      nodes.push({ id, name: this.name(id), type: this.type(id) });
     };
     if (!path.length) return { nodes: [], edges: [] };
     push(path[0].from);
@@ -182,18 +182,50 @@ export class Graph {
 }
 
 /* ---------- 意图路由 + 图查询模板 ---------- */
-const RISK_HINTS = ["高风险", "风险", "制裁", "可疑", "关联方", "穿透", "关联"];
-const SHARED_HINTS = ["共同董事", "共同", "同时担任", "同时是"];
-const COUNT_HINTS = ["几只", "几家", "多少", "数量", "列出", "哪些"];
-const REL_HINTS = ["管理人", "托管", "注册在", "母公司", "隶属", "股东", "董事",
-                   "关联", "穿透", "旗下"];
+const HUB_DEGREE = 12;
+const PATH_HINTS = ["什么关系", "有关系", "有什么联系", "什么联系", "有联系", "关联",
+                    "有什么关系", "是什么人", "的什么人"];
+const COUNT_HINTS = ["哪些", "哪几", "几个", "几只", "几台", "多少", "列出", "都有谁", "有谁"];
+const REL_HINTS = ["爸爸", "妈妈", "父亲", "母亲", "爷爷", "奶奶", "外公", "外婆",
+                   "老婆", "妻子", "老公", "丈夫", "儿子", "女儿", "表哥", "表妹", "表姐",
+                   "表姨", "侄子", "二叔", "岳父", "搭档", "大哥", "老大", "首领", "成员",
+                   "喜欢的", "好朋友", "校长", "村长", "封印", "住着", "住在", "学生",
+                   "阵营", "三人组", "解开"];
+/* 问题里的关系词 -> 图里的关系类型 —— 与 Python 版 REL_WORDS 逐项一致 */
+const REL_WORDS = {
+  "爸爸": ["PARENT_OF"], "妈妈": ["PARENT_OF"], "父亲": ["PARENT_OF"],
+  "母亲": ["PARENT_OF"], "儿子": ["PARENT_OF"], "女儿": ["PARENT_OF"],
+  "爷爷": ["PARENT_OF", "GRANDPARENT_OF"], "奶奶": ["PARENT_OF", "GRANDPARENT_OF"],
+  "外公": ["PARENT_OF", "GRANDPARENT_OF"], "外婆": ["PARENT_OF", "GRANDPARENT_OF"],
+  "代孙": ["DESCENDANT_OF", "PARENT_OF"],
+  "老婆": ["SPOUSE_OF"], "妻子": ["SPOUSE_OF"], "老公": ["SPOUSE_OF"],
+  "丈夫": ["SPOUSE_OF"], "岳父": ["SPOUSE_OF", "PARENT_OF"],
+  "岳母": ["SPOUSE_OF", "PARENT_OF"],
+  "表哥": ["COUSIN_OF"], "表妹": ["COUSIN_OF"], "表姐": ["COUSIN_OF"],
+  "表弟": ["COUSIN_OF"], "表姨": ["COUSIN_OF", "PARENT_OF"],
+  "二叔": ["UNCLE_OF"], "叔叔": ["UNCLE_OF"], "侄子": ["UNCLE_OF"],
+  "搭档": ["PARTNER_OF"],
+  "大哥": ["LEADER_OF", "MEMBER_OF"], "老大": ["LEADER_OF", "MEMBER_OF"],
+  "首领": ["LEADER_OF"], "成员": ["MEMBER_OF"], "组成": ["MEMBER_OF"],
+  "喜欢": ["LIKES"], "好朋友": ["FRIEND_OF"],
+  "校长": ["HEAD_OF"], "村长": ["HEAD_OF"], "当家": ["HEAD_OF"],
+  "上学": ["STUDENT_OF"], "学生": ["STUDENT_OF"],
+  "住着": ["LIVES_IN"], "住在": ["LIVES_IN"],
+  "坐落": ["LOCATED_IN"], "位于": ["LOCATED_IN"],
+  "封印": ["SEALED_BY", "RELEASED_BY"],
+  "许愿": ["WISHED_ON"],
+  "原型": ["PROTOTYPE"], "武器": ["WEAPON"], "兵器": ["WEAPON"],
+  "爱吃": ["FAVORITE_FOOD"], "口头禅": ["CATCHPHRASE"],
+  "职务": ["ROLE"], "身份": ["ROLE"], "做什么": ["ROLE"], "干什么": ["ROLE"],
+  "必杀技": ["SPECIAL_MOVE"], "编号": ["UNIT_NO"], "号机": ["UNIT_NO"],
+  "变换": ["TRANSFORM_TIME"], "变身": ["TRANSFORM_TIME"],
+  "巨人": ["GIANT_FORM"], "阵营": ["FACTION"], "生日": ["BIRTHDAY"],
+};
 
 export function route(question, linked) {
   if (!linked.length) return { primary: "lexical", reason: "未链接到任何图实体" };
-  if (SHARED_HINTS.some(h => question.includes(h)))
-    return { primary: "graph", reason: "共同董事类: 证据跨多家主体, 无词面重叠" };
-  if (RISK_HINTS.some(h => question.includes(h)))
-    return { primary: "graph", reason: "风险穿透类: 需沿关系链多跳" };
+  if (linked.length >= 2 && PATH_HINTS.some(h => question.includes(h)))
+    return { primary: "graph", reason: "关系路径类: 两端实体之间的中间环节无词面重叠" };
   if (COUNT_HINTS.some(h => question.includes(h)) && REL_HINTS.some(h => question.includes(h)))
     return { primary: "graph", reason: "聚合类: top-k 范式无法覆盖全部证据" };
   if (REL_HINTS.some(h => question.includes(h)))
@@ -201,47 +233,63 @@ export function route(question, linked) {
   return { primary: "lexical", reason: "单跳属性类: 词面检索已足够" };
 }
 
-export function graphSearch(g, question, docToChunks, topK) {
+/* chunks: 可选的 Map(chunkId -> {r: 原文})。给了就在文档内优先发写着这条关系的那一块 */
+export function graphSearch(g, question, docToChunks, topK, chunks = null) {
   const linked = g.link(question);
   const r = route(question, linked);
   if (!linked.length) return { hits: [], graphs: [], linked, route: r, intent: "" };
 
   const seeds = linked.map(([id]) => id);
-  const hits = new Map();          // doc -> {hop, path}
+  const hits = new Map();          // doc -> {hop, focus:Set}
   const graphs = [];
   let intent = "neighborhood";
 
-  const addPath = (path) => {
-    const gd = g.pathDict(path);
-    if (graphs.length < 4) graphs.push(gd);
-    for (const st of path)
-      for (const d of st.e.d || [])
-        if (!hits.has(d)) hits.set(d, path.length);
+  const forms = (id) => {
+    if (id.startsWith("lit:")) return [id.slice(4)];
+    if (g.isHub(id, HUB_DEGREE)) return [];
+    const e = g.ent.get(id);
+    return e ? [e.n, ...(e.a || [])] : [];
+  };
+  const add = (doc, e, hop) => {
+    if (!doc) return;
+    if (!hits.has(doc)) hits.set(doc, { hop, focus: new Set() });
+    for (const f of [...forms(e.s), ...forms(e.o)]) hits.get(doc).focus.add(f);
   };
 
-  if (SHARED_HINTS.some(h => question.includes(h))) {
-    intent = "shared_director";
-    for (const seed of seeds)
-      for (const e1 of g.in.get(seed) || []) {
-        if (e1.r !== "DIRECTOR_OF") continue;
-        for (const e2 of g.out.get(e1.s) || []) {
-          if (e2.r !== "DIRECTOR_OF" || e2.o === seed) continue;
-          addPath([{ e: e1, dir: -1, from: seed, to: e1.s },
-                   { e: e2, dir: 1, from: e1.s, to: e2.o }]);
+  if (seeds.length >= 2 && PATH_HINTS.some(h => question.includes(h))) {
+    intent = "relation_path";
+    for (let i = 0; i < seeds.length; i++)
+      for (let j = i + 1; j < seeds.length; j++)
+        for (const path of g.findPaths(seeds[i], seeds[j], 4, 12, HUB_DEGREE)) {
+          if (graphs.length < 4) graphs.push(g.pathDict(path));
+          for (const st of path) for (const d of st.e.d || []) add(d, st.e, path.length);
         }
+  } else {
+    const rels = new Set();
+    for (const [w, rs] of Object.entries(REL_WORDS)) if (question.includes(w)) rs.forEach(x => rels.add(x));
+    if (rels.size) {
+      intent = "relation_chain";
+      let frontier = seeds.map(s => [s, []]);
+      const seen = new Set(seeds), reached = [];
+      for (let hop = 1; hop < 4 && frontier.length; hop++) {
+        const next = [];
+        for (const [node, path] of frontier)
+          for (const st of g.steps(node)) {
+            if (!rels.has(st.e.r)) continue;
+            const np = [...path, st];
+            for (const d of st.e.d || []) add(d, st.e, hop);
+            if (graphs.length < 3) graphs.push(g.pathDict(np));
+            if (!seen.has(st.to) && !g.isHub(st.to, HUB_DEGREE)) {
+              seen.add(st.to); next.push([st.to, np]); reached.push([st.to, hop]);
+            }
+          }
+        frontier = next;
       }
-  } else if (RISK_HINTS.some(h => question.includes(h))) {
-    intent = "risk_path";
-    const risky = (id) => id === "lit:高风险" || g.risk(id) === "高风险";
-    for (const seed of seeds)
-      for (const path of g.pathsTo(seed, risky)) {
-        addPath(path);
-        // 目标辖区的"高风险"这一事实来自监管名单，证据要带上
-        const tail = path[path.length - 1].to;
-        for (const e of g.out.get(tail) || [])
-          if (e.r === "RISK_LEVEL")
-            for (const d of e.d || []) if (!hits.has(d)) hits.set(d, path.length);
-      }
+      // 终点实体再补上它自己的档案 —— 性格、爱好只写在档案里, 不在任何一条边上
+      for (const [node, hop] of reached)
+        for (const e of g.out.get(node) || [])
+          if (e.r === "APPEARS_IN") for (const d of e.d || []) if (!hits.has(d)) add(d, e, hop + 1);
+    }
   }
 
   if (!hits.size) {              // 兜底: 邻域扩散
@@ -250,26 +298,51 @@ export function graphSearch(g, question, docToChunks, topK) {
     intent = intent === "neighborhood" ? "neighborhood" : "neighborhood(fallback)";
     let frontier = seeds.map(s => [s, []]);
     const seen = new Set(seeds);
-    for (let hop = 1; hop <= 3 && frontier.length; hop++) {
+    for (let hop = 1; hop <= 4 && frontier.length; hop++) {
       const next = [];
       for (const [node, path] of frontier)
         for (const st of g.steps(node)) {
           const np = [...path, st];
-          for (const d of st.e.d || []) if (!hits.has(d)) hits.set(d, hop);
-          if (!seen.has(st.to)) { seen.add(st.to); next.push([st.to, np]); }
+          for (const d of st.e.d || []) add(d, st.e, hits.has(d) ? hits.get(d).hop : hop);
+          // 枢纽(节目节点)可以作为终点，不能再往外扩
+          if (!seen.has(st.to) && !g.isHub(st.to, HUB_DEGREE)) {
+            seen.add(st.to); next.push([st.to, np]);
+          }
           if (graphs.length < 3 && hop <= 2) graphs.push(g.pathDict(np));
         }
       frontier = next;
     }
   }
 
+  // 文档内的块顺序: 提到 focus 名称多的块优先(不数档案主人自己的名字, 先抹掉节目名)
+  const subjectOf = g.subjectOf || (g.subjectOf = (() => {
+    const m = new Map();
+    for (const e of g.edges) if (e.r === "APPEARS_IN") for (const d of e.d || []) if (!m.has(d)) m.set(d, e.s);
+    return m;
+  })());
+  const hubNames = g.hubNames || (g.hubNames = [...g.ent.values()]
+    .filter(e => g.isHub(e.id, HUB_DEGREE)).flatMap(e => [e.n, ...(e.a || [])])
+    .sort((a, b) => b.length - a.length));
+  const order = (doc, focus) => {
+    const cs = docToChunks.get(doc) || [];
+    if (!chunks || !focus.size) return cs;
+    const own = new Set(subjectOf.has(doc) ? forms(subjectOf.get(doc)) : []);
+    const fs = [...focus].filter(f => f && !own.has(f));
+    const score = (cid) => {
+      let t = (chunks.get(cid) || {}).r || "";
+      for (const n of hubNames) t = t.split(n).join("");
+      return fs.reduce((a, f) => a + (t.includes(f) ? 1 : 0), 0);
+    };
+    return cs.map((c, i) => [c, score(c), i]).sort((a, b) => b[1] - a[1] || a[2] - b[2]).map(x => x[0]);
+  };
+
   // 按文档轮转发放预算，保证与 BM25 在同一量纲上比较
-  const docs = [...hits.entries()].sort((a, b) => a[1] - b[1] || (a[0] < b[0] ? -1 : 1));
+  const docs = [...hits.entries()].sort((a, b) => a[1].hop - b[1].hop || (a[0] < b[0] ? -1 : 1))
+    .map(([d, h]) => [d, h.hop, order(d, h.focus)]);
   const out = [];
-  const maxR = Math.max(0, ...docs.map(([d]) => (docToChunks.get(d) || []).length));
+  const maxR = Math.max(0, ...docs.map(([, , cs]) => cs.length));
   for (let r0 = 0; r0 < maxR && out.length < topK; r0++)
-    for (const [doc, hop] of docs) {
-      const cs = docToChunks.get(doc) || [];
+    for (const [doc, hop, cs] of docs) {
       if (r0 < cs.length) { out.push([cs[r0], 1 / hop - r0 * 1e-4]); if (out.length >= topK) break; }
     }
   return { hits: out, graphs: graphs.slice(0, 3), linked, route: r, intent };

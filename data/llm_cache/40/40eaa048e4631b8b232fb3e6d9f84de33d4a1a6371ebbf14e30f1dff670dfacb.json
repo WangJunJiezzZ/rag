@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎的武器是金龟大剪钳。[5]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1019,
+ "output_tokens": 15,
+ "cached_read_tokens": 256,
+ "latency_ms": 2894.342958985362,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "《铁甲小宝》中所有 B 机器人都是高圆寺寅彦制造的[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 910,
+ "output_tokens": 20,
+ "cached_read_tokens": 0,
+ "latency_ms": 2820.903208979871,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

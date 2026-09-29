@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"大肥羊学校是羊村小羊们上学的地方\", \"subject\": \"大肥羊学校\", \"subject_type\": \"Place\", \"relation\": \"LOCATED_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、在读学生 · 喜羊羊\", \"subject\": \"喜羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、在读学生 · 美羊羊\", \"subject\": \"美羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、在读学生 · 懒羊羊\", \"subject\": \"懒羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、在读学生 · 沸羊羊\", \"subject\": \"沸羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、在读学生 · 暖羊羊\", \"subject\": \"暖羊羊\", \"subject_type\": \"Character\", \"relation\": \"STUDENT_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "大肥羊学校是羊村小羊们上学的地方",
+    "subject": "大肥羊学校",
+    "subject_type": "Place",
+    "relation": "LOCATED_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、在读学生 · 喜羊羊",
+    "subject": "喜羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、在读学生 · 美羊羊",
+    "subject": "美羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、在读学生 · 懒羊羊",
+    "subject": "懒羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、在读学生 · 沸羊羊",
+    "subject": "沸羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、在读学生 · 暖羊羊",
+    "subject": "暖羊羊",
+    "subject_type": "Character",
+    "relation": "STUDENT_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2387,
+ "output_tokens": 335,
+ "cached_read_tokens": 2048,
+ "latency_ms": 4472.506417019758,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的爷爷是黑太狼。灰太狼是小灰灰的父亲[1]，而黑太狼是灰太狼的父亲[2]，因此黑太狼是小灰灰的爷爷。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 688,
+ "output_tokens": 42,
+ "cached_read_tokens": 128,
+ "latency_ms": 2357.4937919620425,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

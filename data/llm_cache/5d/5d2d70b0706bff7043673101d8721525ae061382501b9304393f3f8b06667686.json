@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及喜羊羊有妹妹，也没有任何关于其妹妹姓名的信息。\n\n资料[2]只记载了喜羊羊的父亲是智羊羊、母亲是丽羊羊，未提及兄弟姐妹。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1091,
+ "output_tokens": 45,
+ "cached_read_tokens": 384,
+ "latency_ms": 3169.4595830049366,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

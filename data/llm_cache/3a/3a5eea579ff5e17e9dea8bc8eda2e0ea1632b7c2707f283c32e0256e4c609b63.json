@@ -1,0 +1,88 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"和平星\",\n      \"type\": \"物体\"\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"蛇夫座\",\n      \"type\": \"星座\"\n    },\n    {\n      \"name\": \"B机器人\",\n      \"type\": \"机器人\"\n    },\n    {\n      \"name\": \"裁判机器人\",\n      \"type\": \"机器人\"\n    },\n    {\n      \"name\": \"假和平星\",\n      \"type\": \"物体\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"和平星\",\n      \"predicate\": \"属于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"和平星\",\n      \"predicate\": \"数量\",\n      \"object\": \"13颗\"\n    },\n    {\n      \"subject\": \"和平星\",\n      \"predicate\": \"代表\",\n      \"object\": \"十三个星座\"\n    },\n    {\n      \"subject\": \"十三个星座\",\n      \"predicate\": \"包括\",\n      \"object\": \"蛇夫座\"\n    },\n    {\n      \"subject\": \"和平星\",\n      \"predicate\": \"具有效力\",\n      \"object\": \"许愿\"\n    },\n    {\n      \"subject\": \"假和平星\",\n      \"predicate\": \"不具有效力\",\n      \"object\": \"许愿\"\n    },\n    {\n      \"subject\": \"B机器人\",\n      \"predicate\": \"争夺\",\n      \"object\": \"和平星\"\n    },\n    {\n      \"subject\": \"裁判机器人\",\n      \"predicate\": \"出现于\",\n      \"object\": \"争夺和平星时\"\n    },\n    {\n      \"subject\": \"裁判机器人\",\n      \"predicate\": \"组织\",\n      \"object\": \"运动或游戏比赛\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "和平星",
+    "type": "物体"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "蛇夫座",
+    "type": "星座"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "裁判机器人",
+    "type": "机器人"
+   },
+   {
+    "name": "假和平星",
+    "type": "物体"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "和平星",
+    "predicate": "属于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "数量",
+    "object": "13颗"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "代表",
+    "object": "十三个星座"
+   },
+   {
+    "subject": "十三个星座",
+    "predicate": "包括",
+    "object": "蛇夫座"
+   },
+   {
+    "subject": "和平星",
+    "predicate": "具有效力",
+    "object": "许愿"
+   },
+   {
+    "subject": "假和平星",
+    "predicate": "不具有效力",
+    "object": "许愿"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "裁判机器人",
+    "predicate": "出现于",
+    "object": "争夺和平星时"
+   },
+   {
+    "subject": "裁判机器人",
+    "predicate": "组织",
+    "object": "运动或游戏比赛"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 224,
+ "output_tokens": 399,
+ "cached_read_tokens": 0,
+ "latency_ms": 3449.8780840076506,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

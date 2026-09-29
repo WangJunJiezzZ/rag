@@ -1,0 +1,33 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"夜太狼是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"夜太狼\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色是灰太狼的表哥\", \"subject\": \"夜太狼\", \"subject_type\": \"Character\", \"relation\": \"COUSIN_OF\", \"object\": \"灰太狼\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "夜太狼是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "夜太狼",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色是灰太狼的表哥",
+    "subject": "夜太狼",
+    "subject_type": "Character",
+    "relation": "COUSIN_OF",
+    "object": "灰太狼",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1927,
+ "output_tokens": 126,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3122.4822080112062,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

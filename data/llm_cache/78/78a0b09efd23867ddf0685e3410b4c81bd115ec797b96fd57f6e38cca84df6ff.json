@@ -1,0 +1,14 @@
+{
+ "text": "小让的爷爷是高圆寺寅彦[1]，高圆寺寅彦又名高圆寺博士，身份是机器人科学家[2]。鲨鱼辣椒因为自我意识扭曲，被高圆寺博士封印[3]。所以小让的爷爷封印过鲨鱼辣椒[1][2][3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 888,
+ "output_tokens": 64,
+ "cached_read_tokens": 0,
+ "latency_ms": 4087.1515839826316,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答这个问题——资料中没有提到任何机器人“讲起话来又臭又长”或“很会研究对手”的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 371,
+ "output_tokens": 31,
+ "cached_read_tokens": 0,
+ "latency_ms": 3291.4887919905595,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

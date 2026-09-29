@@ -1,0 +1,14 @@
+{
+ "text": "卡布达最爱吃西瓜。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 847,
+ "output_tokens": 7,
+ "cached_read_tokens": 0,
+ "latency_ms": 2855.8824170031585,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

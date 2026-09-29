@@ -1,0 +1,14 @@
+{
+ "text": "卡布达是1号机，鲨鱼辣椒是9号机。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 648,
+ "output_tokens": 16,
+ "cached_read_tokens": 0,
+ "latency_ms": 2680.881749955006,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

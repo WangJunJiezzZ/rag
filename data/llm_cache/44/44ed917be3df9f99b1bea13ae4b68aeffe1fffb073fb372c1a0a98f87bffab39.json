@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答这个问题。资料中只说明了小灰灰的母亲是红太狼[1]，红太狼的丈夫是灰太狼[3]，但没有任何资料提到红太狼用什么打灰太狼。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 706,
+ "output_tokens": 48,
+ "cached_read_tokens": 256,
+ "latency_ms": 2610.2876670192927,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及红太狼生气时拿什么招呼老公。\n\n资料[7]提到红太狼的武器是平底锅、必杀技是千手平底锅，且「抓不到就动手」，但并未说明她生气时用平底锅招呼老公这一具体行为。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 987,
+ "output_tokens": 62,
+ "cached_read_tokens": 256,
+ "latency_ms": 2952.680332993623,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

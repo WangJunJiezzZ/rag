@@ -1,0 +1,14 @@
+{
+ "text": "蜘蛛侦探口中的“大哥”是蟑螂恶霸 [2]，其原型是眼镜蛇 [4]。\n\n关联路径：\n  蜘蛛侦探 --[称其为“大哥”]--> 蟑螂恶霸 [2]\n  蟑螂恶霸 --[原型]--> 眼镜蛇 [4]\n\n结论：原型是眼镜蛇。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1087,
+ "output_tokens": 71,
+ "cached_read_tokens": 896,
+ "latency_ms": 2913.803833012935,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

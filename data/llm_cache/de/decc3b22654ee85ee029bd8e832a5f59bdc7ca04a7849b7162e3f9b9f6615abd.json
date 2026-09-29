@@ -1,0 +1,14 @@
+{
+ "text": "羊村由慢羊羊当家。\n\n依据：\n- 慢羊羊是羊村的村长 [5]。\n- 慢羊羊是羊村居民之一 [2]。\n\n关联路径：\n  慢羊羊 --[村长]--> 羊村 [5]\n\n结论：羊村的当家（村长）是慢羊羊。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 990,
+ "output_tokens": 67,
+ "cached_read_tokens": 256,
+ "latency_ms": 3246.783583017532,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

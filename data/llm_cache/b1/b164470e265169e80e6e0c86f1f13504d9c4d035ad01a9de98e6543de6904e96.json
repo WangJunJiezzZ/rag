@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，反派三人组由**蟑螂恶霸、蜘蛛侦探和蝎子莱莱**这三个机器人组成。其中蟑螂恶霸是老大，蜘蛛侦探和蝎子莱莱都称他为“大哥”。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 747,
+ "output_tokens": 48,
+ "cached_read_tokens": 0,
+ "latency_ms": 2418.6219590483233,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

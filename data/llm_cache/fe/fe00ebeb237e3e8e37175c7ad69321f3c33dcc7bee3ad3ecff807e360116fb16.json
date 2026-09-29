@@ -1,0 +1,14 @@
+{
+ "text": "资料中明确提到：主角最初打算叫“懒羊羊”，制作团队觉得“喜羊羊”更正面，于是改成了现在的名字 [1]。\n\n所以答案是：**懒羊羊** [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1144,
+ "output_tokens": 44,
+ "cached_read_tokens": 384,
+ "latency_ms": 2954.7123329830356,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

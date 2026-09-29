@@ -1,0 +1,14 @@
+{
+ "text": "羊村里住着以下角色：\n\n- 喜羊羊 [1]\n- 美羊羊 [1]\n- 懒羊羊 [1]\n- 沸羊羊 [1]\n- 暖羊羊 [1]\n- 慢羊羊村长 [1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1043,
+ "output_tokens": 56,
+ "cached_read_tokens": 256,
+ "latency_ms": 2693.688415980432,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

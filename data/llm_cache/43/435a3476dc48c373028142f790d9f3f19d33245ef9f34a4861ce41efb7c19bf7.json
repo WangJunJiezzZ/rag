@@ -1,0 +1,66 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"黑太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"狼族大王\",\n        \"登场作品\": \"《喜羊羊与灰太狼》\"\n      }\n    },\n    {\n      \"name\": \"银太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"黑太狼的妻子\"\n      }\n    },\n    {\n      \"name\": \"武大狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"黑太狼的祖先\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"作品\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"黑太狼\",\n      \"predicate\": \"身份\",\n      \"object\": \"狼族大王\"\n    },\n    {\n      \"subject\": \"黑太狼\",\n      \"predicate\": \"妻子\",\n      \"object\": \"银太狼\"\n    },\n    {\n      \"subject\": \"黑太狼\",\n      \"predicate\": \"是...的第249代孙\",\n      \"object\": \"武大狼\"\n    },\n    {\n      \"subject\": \"黑太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "黑太狼",
+    "type": "角色",
+    "attributes": {
+     "身份": "狼族大王",
+     "登场作品": "《喜羊羊与灰太狼》"
+    }
+   },
+   {
+    "name": "银太狼",
+    "type": "角色",
+    "attributes": {
+     "身份": "黑太狼的妻子"
+    }
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "attributes": {
+     "身份": "黑太狼的祖先"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "作品",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "黑太狼",
+    "predicate": "身份",
+    "object": "狼族大王"
+   },
+   {
+    "subject": "黑太狼",
+    "predicate": "妻子",
+    "object": "银太狼"
+   },
+   {
+    "subject": "黑太狼",
+    "predicate": "是...的第249代孙",
+    "object": "武大狼"
+   },
+   {
+    "subject": "黑太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 293,
+ "output_tokens": 302,
+ "cached_read_tokens": 0,
+ "latency_ms": 3447.800334019121,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

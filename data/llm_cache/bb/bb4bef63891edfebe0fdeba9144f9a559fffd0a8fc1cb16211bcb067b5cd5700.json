@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，队伍里仅有的女生是**田德莉娜**。\n\n资料[1]明确指出，田德莉娜是“唯一的女性机器人”；资料[2]也将田德莉娜列入正义阵营的机器人之中。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 302,
+ "output_tokens": 48,
+ "cached_read_tokens": 0,
+ "latency_ms": 3853.9156669867225,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

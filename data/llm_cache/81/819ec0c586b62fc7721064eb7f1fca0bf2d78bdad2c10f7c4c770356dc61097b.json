@@ -1,0 +1,14 @@
+{
+ "text": "鲨鱼辣椒的超级变换形态维持得最久，最多可维持 15 分钟[2]。相比之下，卡布达最多维持 3 分钟[3]，金龟次郎最多维持 5 分钟[4]，飞翔机器人最多维持 7 分钟[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 882,
+ "output_tokens": 60,
+ "cached_read_tokens": 0,
+ "latency_ms": 2654.3691660044715,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

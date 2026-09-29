@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答鲨鱼辣椒最爱吃什么。所有参考资料中均未提及鲨鱼辣椒的饮食偏好或任何与“吃”相关的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 815,
+ "output_tokens": 33,
+ "cached_read_tokens": 0,
+ "latency_ms": 3457.61262497399,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

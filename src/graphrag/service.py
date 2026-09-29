@@ -72,6 +72,9 @@ class RAGService:
                 lexical = RRFFusion([bm25, dense], name="BM25+Dense")
                 self.dense_enabled = True
 
+        # 单独留一份不经路由的词面/语义检索器: 工具层(mcp_app/)要把它
+        # 作为独立工具暴露, 让调用方自己决定何时走图、何时走文本。
+        self.lexical = lexical
         self.graph: KnowledgeGraph | None = None
         self.retriever = lexical
         if self.cfg.use_graph:
@@ -79,7 +82,8 @@ class RAGService:
             if gp.exists():
                 self.graph = KnowledgeGraph.load(gp)
                 gr = GraphRetriever(self.graph, self.doc_to_chunks,
-                                    name="Graph")
+                                    name="Graph",
+                                    chunk_text={c.id: c.raw_text for c in chunks})
                 self.graph_retriever = gr
                 self.retriever = (
                     RoutedRetriever(lexical, gr,

@@ -1,0 +1,14 @@
+{
+ "text": "反派三人组由蟑螂恶霸、蜘蛛侦探和蝎子莱莱组成[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 833,
+ "output_tokens": 21,
+ "cached_read_tokens": 128,
+ "latency_ms": 2496.621208032593,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

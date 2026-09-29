@@ -1,0 +1,74 @@
+{
+ "text": "{\"entities\":[{\"name\":\"卡布达巨人\",\"type\":\"角色/机体\"},{\"name\":\"鲨鱼辣椒\",\"type\":\"角色/机体\"},{\"name\":\"卡布达\",\"type\":\"角色/机体\"},{\"name\":\"射手座和平星\",\"type\":\"物品\"},{\"name\":\"B机器人\",\"type\":\"角色/机体\"}],\"relations\":[{\"subject\":\"鲨鱼辣椒\",\"predicate\":\"拥有形态\",\"object\":\"巨人形态\"},{\"subject\":\"卡布达\",\"predicate\":\"许愿对象\",\"object\":\"射手座和平星\"},{\"subject\":\"卡布达\",\"predicate\":\"许愿产生\",\"object\":\"卡布达巨人\"},{\"subject\":\"卡布达\",\"predicate\":\"操纵\",\"object\":\"卡布达巨人\"},{\"subject\":\"卡布达巨人\",\"predicate\":\"普通形态身高\",\"object\":\"6.5米\"},{\"subject\":\"卡布达巨人\",\"predicate\":\"超级形态身高\",\"object\":\"10.8米\"},{\"subject\":\"鲨鱼辣椒\",\"predicate\":\"对抗\",\"object\":\"B机器人\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "卡布达巨人",
+    "type": "角色/机体"
+   },
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色/机体"
+   },
+   {
+    "name": "卡布达",
+    "type": "角色/机体"
+   },
+   {
+    "name": "射手座和平星",
+    "type": "物品"
+   },
+   {
+    "name": "B机器人",
+    "type": "角色/机体"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "拥有形态",
+    "object": "巨人形态"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "许愿对象",
+    "object": "射手座和平星"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "许愿产生",
+    "object": "卡布达巨人"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "操纵",
+    "object": "卡布达巨人"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "普通形态身高",
+    "object": "6.5米"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "超级形态身高",
+    "object": "10.8米"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "对抗",
+    "object": "B机器人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 415,
+ "output_tokens": 212,
+ "cached_read_tokens": 256,
+ "latency_ms": 3291.5680840378627,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

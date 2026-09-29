@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼。资料记载：该角色胆小，从小和父母失散，被猴子收养，吃素 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 706,
+ "output_tokens": 26,
+ "cached_read_tokens": 512,
+ "latency_ms": 3582.831750041805,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

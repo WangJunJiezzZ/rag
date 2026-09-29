@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及。提供的资料里没有关于卡布达配音演员的任何信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1089,
+ "output_tokens": 18,
+ "cached_read_tokens": 384,
+ "latency_ms": 2885.497667011805,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

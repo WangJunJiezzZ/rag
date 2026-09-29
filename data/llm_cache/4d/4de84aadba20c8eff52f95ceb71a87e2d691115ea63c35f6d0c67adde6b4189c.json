@@ -1,0 +1,14 @@
+{
+ "text": "和平星共有 13 颗，分别代表包括蛇夫座在内的十三个星座 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 672,
+ "output_tokens": 21,
+ "cached_read_tokens": 512,
+ "latency_ms": 2580.984541971702,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

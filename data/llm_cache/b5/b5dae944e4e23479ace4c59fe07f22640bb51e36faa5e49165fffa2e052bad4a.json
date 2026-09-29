@@ -1,0 +1,64 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"软绵绵\",\n      \"type\": \"角色\",\n      \"description\": \"绵羊族先祖\"\n    },\n    {\n      \"name\": \"羊村\",\n      \"type\": \"地点\",\n      \"description\": \"防御坚固的村庄\"\n    },\n    {\n      \"name\": \"青青草原\",\n      \"type\": \"地点\",\n      \"description\": \"羊村所在地\"\n    },\n    {\n      \"name\": \"武大狼\",\n      \"type\": \"角色\",\n      \"description\": \"狼群首领\"\n    },\n    {\n      \"name\": \"饿狼传说\",\n      \"type\": \"事件\",\n      \"description\": \"青青草原流传的传说\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"软绵绵\",\n      \"predicate\": \"建立\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"羊村\",\n      \"predicate\": \"位于\",\n      \"object\": \"青青草原\"\n    },\n    {\n      \"subject\": \"武大狼\",\n      \"predicate\": \"是首领\",\n      \"object\": \"狼群\"\n    },\n    {\n      \"subject\": \"武大狼\",\n      \"predicate\": \"误吞石头而死\",\n      \"object\": \"饿狼传说\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "软绵绵",
+    "type": "角色",
+    "description": "绵羊族先祖"
+   },
+   {
+    "name": "羊村",
+    "type": "地点",
+    "description": "防御坚固的村庄"
+   },
+   {
+    "name": "青青草原",
+    "type": "地点",
+    "description": "羊村所在地"
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "description": "狼群首领"
+   },
+   {
+    "name": "饿狼传说",
+    "type": "事件",
+    "description": "青青草原流传的传说"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "软绵绵",
+    "predicate": "建立",
+    "object": "羊村"
+   },
+   {
+    "subject": "羊村",
+    "predicate": "位于",
+    "object": "青青草原"
+   },
+   {
+    "subject": "武大狼",
+    "predicate": "是首领",
+    "object": "狼群"
+   },
+   {
+    "subject": "武大狼",
+    "predicate": "误吞石头而死",
+    "object": "饿狼传说"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 224,
+ "output_tokens": 281,
+ "cached_read_tokens": 0,
+ "latency_ms": 3374.3386659771204,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

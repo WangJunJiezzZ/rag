@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊是草原上最胖、最懒的羊[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 502,
+ "output_tokens": 16,
+ "cached_read_tokens": 128,
+ "latency_ms": 3527.3649159935303,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

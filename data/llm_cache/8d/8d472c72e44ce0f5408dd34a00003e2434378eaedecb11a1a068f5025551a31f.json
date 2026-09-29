@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，小灰灰的母亲是红太狼，而红太狼的母亲是娘娘狼。因此，**小灰灰的外婆是娘娘狼**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 615,
+ "output_tokens": 34,
+ "cached_read_tokens": 256,
+ "latency_ms": 2609.5972909824923,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

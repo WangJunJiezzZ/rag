@@ -1,0 +1,14 @@
+{
+ "text": "没有叫“小宝”的角色，剧中并没有叫“小宝”的角色[1]。\n\n主角是小学生小让，他发现了爷爷制造的甲虫机器人卡布达[1]。小让又名高圆寺让，身份是小学生[5]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 913,
+ "output_tokens": 50,
+ "cached_read_tokens": 0,
+ "latency_ms": 3305.0121249980293,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

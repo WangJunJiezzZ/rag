@@ -1,0 +1,14 @@
+{
+ "text": "《铁甲小宝》于 1997 年 2 月 23 日首播，《喜羊羊与灰太狼》于 2005 年 8 月 3 日首播。因此，《铁甲小宝》比《喜羊羊与灰太狼》早 **8 年**首播。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 811,
+ "output_tokens": 72,
+ "cached_read_tokens": 0,
+ "latency_ms": 2652.721417020075,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

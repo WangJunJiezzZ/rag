@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是小让[1]。小让的爷爷是高圆寺寅彦[4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 787,
+ "output_tokens": 22,
+ "cached_read_tokens": 128,
+ "latency_ms": 2472.0146249746904,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

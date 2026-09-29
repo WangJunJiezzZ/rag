@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的外婆是娘娘狼。小灰灰的母亲是红太狼[1]，红太狼的母亲是娘娘狼[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 701,
+ "output_tokens": 30,
+ "cached_read_tokens": 256,
+ "latency_ms": 3294.710624963045,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

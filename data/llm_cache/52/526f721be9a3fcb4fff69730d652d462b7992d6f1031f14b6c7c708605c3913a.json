@@ -1,0 +1,99 @@
+{
+ "text": "{\"entities\":[{\"name\":\"反派三人组\",\"type\":\"团体\",\"description\":\"特摄剧《铁甲小宝》中的反派团体\"},{\"name\":\"蟑螂恶霸\",\"type\":\"角色\",\"description\":\"反派三人组的老大\"},{\"name\":\"蜘蛛侦探\",\"type\":\"角色\",\"description\":\"反派三人组成员，称蟑螂恶霸为大哥\"},{\"name\":\"蝎子莱莱\",\"type\":\"角色\",\"description\":\"反派三人组成员，称蟑螂恶霸为大哥\"},{\"name\":\"铁甲小宝\",\"type\":\"作品\",\"description\":\"特摄剧\"},{\"name\":\"和平星\",\"type\":\"物品\",\"description\":\"反派三人组想利用其统治人类\"},{\"name\":\"鲨鱼辣椒\",\"type\":\"角色\",\"description\":\"在鲨鱼辣椒出现之前，反派三人组是最主要的反派\"}],\"relations\":[{\"subject\":\"反派三人组\",\"predicate\":\"成员\",\"object\":\"蟑螂恶霸\"},{\"subject\":\"反派三人组\",\"predicate\":\"成员\",\"object\":\"蜘蛛侦探\"},{\"subject\":\"反派三人组\",\"predicate\":\"成员\",\"object\":\"蝎子莱莱\"},{\"subject\":\"蟑螂恶霸\",\"predicate\":\"身份\",\"object\":\"老大\"},{\"subject\":\"蜘蛛侦探\",\"predicate\":\"称呼\",\"object\":\"蟑螂恶霸\"},{\"subject\":\"蝎子莱莱\",\"predicate\":\"称呼\",\"object\":\"蟑螂恶霸\"},{\"subject\":\"反派三人组\",\"predicate\":\"登场作品\",\"object\":\"铁甲小宝\"},{\"subject\":\"反派三人组\",\"predicate\":\"目标\",\"object\":\"和平星\"},{\"subject\":\"反派三人组\",\"predicate\":\"主要反派时期\",\"object\":\"鲨鱼辣椒出现之前\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "反派三人组",
+    "type": "团体",
+    "description": "特摄剧《铁甲小宝》中的反派团体"
+   },
+   {
+    "name": "蟑螂恶霸",
+    "type": "角色",
+    "description": "反派三人组的老大"
+   },
+   {
+    "name": "蜘蛛侦探",
+    "type": "角色",
+    "description": "反派三人组成员，称蟑螂恶霸为大哥"
+   },
+   {
+    "name": "蝎子莱莱",
+    "type": "角色",
+    "description": "反派三人组成员，称蟑螂恶霸为大哥"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "description": "特摄剧"
+   },
+   {
+    "name": "和平星",
+    "type": "物品",
+    "description": "反派三人组想利用其统治人类"
+   },
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色",
+    "description": "在鲨鱼辣椒出现之前，反派三人组是最主要的反派"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "反派三人组",
+    "predicate": "成员",
+    "object": "蟑螂恶霸"
+   },
+   {
+    "subject": "反派三人组",
+    "predicate": "成员",
+    "object": "蜘蛛侦探"
+   },
+   {
+    "subject": "反派三人组",
+    "predicate": "成员",
+    "object": "蝎子莱莱"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "身份",
+    "object": "老大"
+   },
+   {
+    "subject": "蜘蛛侦探",
+    "predicate": "称呼",
+    "object": "蟑螂恶霸"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "称呼",
+    "object": "蟑螂恶霸"
+   },
+   {
+    "subject": "反派三人组",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "反派三人组",
+    "predicate": "目标",
+    "object": "和平星"
+   },
+   {
+    "subject": "反派三人组",
+    "predicate": "主要反派时期",
+    "object": "鲨鱼辣椒出现之前"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 400,
+ "output_tokens": 343,
+ "cached_read_tokens": 256,
+ "latency_ms": 3689.152832957916,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

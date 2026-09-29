@@ -1,0 +1,55 @@
+{
+ "text": "{\"entities\": [{\"name\": \"懒羊羊\", \"type\": \"角色\", \"attributes\": {\"作品\": \"喜羊羊与灰太狼\", \"性格\": \"最胖、最懒\", \"爱好\": \"睡觉、吃零食\", \"口头禅\": \"天下皆醒我独睡，天下皆勤我独懒\", \"随身物品\": \"枕头\"}}, {\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画\", \"attributes\": {}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"attributes\": {}}], \"relations\": [{\"subject\": \"懒羊羊\", \"predicate\": \"登场作品\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"懒羊羊\", \"predicate\": \"常被\", \"object\": \"灰太狼\"}, {\"subject\": \"懒羊羊\", \"predicate\": \"抓走\", \"object\": \"灰太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "性格": "最胖、最懒",
+     "爱好": "睡觉、吃零食",
+     "口头禅": "天下皆醒我独睡，天下皆勤我独懒",
+     "随身物品": "枕头"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "懒羊羊",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "常被",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "抓走",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 471,
+ "output_tokens": 204,
+ "cached_read_tokens": 256,
+ "latency_ms": 3296.3669580058195,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

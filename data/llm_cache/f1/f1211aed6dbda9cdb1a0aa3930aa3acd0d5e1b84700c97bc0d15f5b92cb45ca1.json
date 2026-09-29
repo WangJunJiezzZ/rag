@@ -1,0 +1,14 @@
+{
+ "text": "沸羊羊特别热衷锻炼肌肉，它最爱健身[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 499,
+ "output_tokens": 14,
+ "cached_read_tokens": 0,
+ "latency_ms": 2635.3367079864256,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

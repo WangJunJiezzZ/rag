@@ -1,0 +1,53 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"慢羊羊\",\n      \"type\": \"角色\",\n      \"aliases\": [\"慢羊羊村长\"]\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\"\n    },\n    {\n      \"name\": \"羊村\",\n      \"type\": \"组织\"\n    },\n    {\n      \"name\": \"大肥羊学校\",\n      \"type\": \"组织\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"慢羊羊\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"慢羊羊\",\n      \"predicate\": \"担任\",\n      \"object\": \"羊村村长\"\n    },\n    {\n      \"subject\": \"慢羊羊\",\n      \"predicate\": \"担任\",\n      \"object\": \"大肥羊学校校长\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "慢羊羊",
+    "type": "角色",
+    "aliases": [
+     "慢羊羊村长"
+    ]
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画"
+   },
+   {
+    "name": "羊村",
+    "type": "组织"
+   },
+   {
+    "name": "大肥羊学校",
+    "type": "组织"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "慢羊羊",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "慢羊羊",
+    "predicate": "担任",
+    "object": "羊村村长"
+   },
+   {
+    "subject": "慢羊羊",
+    "predicate": "担任",
+    "object": "大肥羊学校校长"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 397,
+ "output_tokens": 208,
+ "cached_read_tokens": 256,
+ "latency_ms": 3488.4202090324834,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

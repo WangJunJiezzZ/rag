@@ -1,0 +1,14 @@
+{
+ "text": "《喜羊羊与灰太狼》的主题曲叫《别看我只是一只羊》。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 776,
+ "output_tokens": 19,
+ "cached_read_tokens": 0,
+ "latency_ms": 2601.0482080164365,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

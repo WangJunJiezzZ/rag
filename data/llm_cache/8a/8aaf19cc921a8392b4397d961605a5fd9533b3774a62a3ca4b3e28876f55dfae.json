@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的爷爷是黑太狼。\n\n关联路径：\n- 小灰灰 --[父亲]--> 灰太狼 [1]\n- 灰太狼 --[父亲]--> 黑太狼 [2]\n\n结论：小灰灰的爷爷是黑太狼 [1][2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 975,
+ "output_tokens": 63,
+ "cached_read_tokens": 768,
+ "latency_ms": 4053.2436249777675,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

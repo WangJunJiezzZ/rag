@@ -3,16 +3,16 @@
 
 为什么需要路由(有实测证据, 不是想当然)
 --------------------------------------
-Phase 1 消融实验里, 等权 RRF 融合的表现**低于图检索单独使用**:
+早期基金语料上, 等权 RRF 融合的表现**低于图检索单独使用**
+(四跳关系题 Graph 78.6% -> 朴素RRF 48.3%)。换成动画语料后(recall@10):
 
-    recall@10          BM25    Graph   朴素RRF
-    hop4_risk          45.0%   78.6%    48.3%   <- 融合把分数拉垮了
-    shared_director    31.2%   93.8%    72.9%
-    aggregation        37.5%   92.3%    51.1%
-    semantic_only      22.8%    0.0%    22.8%   <- 这里反过来, 图完全无能为力
+                     RRF(BM25+Dense+Graph)   Routed
+    关系路径                 90.0%            100%
+    三跳关系                 93.3%            100%
+    总计                     92.9%            94.4%
 
-原因很直接: RRF 只看名次, 不看"这一路在这类问题上到底可不可信"。
-BM25 对关系类问题返回的是一堆高排名噪音, 等权融合后把图检索的精确结果挤了出去。
+差距小了, 但方向没变。原因: RRF 只看名次, 不看"这一路在这类问题上到底可不可信"。
+BM25 对关系类问题返回的是一堆高排名噪音, 等权融合会把图检索的精确结果往后挤。
 
 所以正确做法不是"都要, 加起来", 而是**先判断这个问题该问谁**。
 这也是真实系统里最常被跳过的一步 —— 大多数 RAG 实现直接 top-k 一把梭。
@@ -29,12 +29,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from .graph_retriever import (COUNT_HINTS, RISK_HINTS, SHARED_HINTS,
-                              EntityLinker)
+from .graph_retriever import COUNT_HINTS, PATH_HINTS, EntityLinker
 
 # 关系类意图: 这类问题的证据天然分散在多份互不重叠的文档里, 只有图走得到
-RELATION_HINTS = ("管理人", "托管", "注册在", "母公司", "隶属", "股东",
-                  "董事", "关联", "穿透", "旗下")
+RELATION_HINTS = ("爸爸", "妈妈", "父亲", "母亲", "爷爷", "奶奶", "外公", "外婆",
+                  "老婆", "妻子", "老公", "丈夫", "儿子", "女儿", "表哥", "表妹", "表姐",
+                  "表姨", "侄子", "二叔", "岳父", "搭档", "大哥", "老大", "首领", "成员",
+                  "喜欢的", "好朋友", "校长", "村长", "封印", "住着", "住在", "学生",
+                  "阵营", "三人组", "解开")
 
 
 @dataclass
@@ -58,10 +60,8 @@ class QueryRouter:
             # 认不出任何实体 -> 图检索没有起点, 只能走词面/语义
             return Route("lexical", "未链接到任何图实体", names)
 
-        if any(h in question for h in SHARED_HINTS):
-            return Route("graph", "共同董事类: 证据跨多家主体, 无词面重叠", names)
-        if any(h in question for h in RISK_HINTS):
-            return Route("graph", "风险穿透类: 需沿关系链多跳", names)
+        if len(linked) >= 2 and any(h in question for h in PATH_HINTS):
+            return Route("graph", "关系路径类: 两端实体之间的中间环节无词面重叠", names)
         if any(h in question for h in COUNT_HINTS) and \
            any(h in question for h in RELATION_HINTS):
             return Route("graph", "聚合类: top-k 范式无法覆盖全部证据", names)

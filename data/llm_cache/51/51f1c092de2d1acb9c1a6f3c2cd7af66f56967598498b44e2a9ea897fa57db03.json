@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，蕉太狼的二叔是**灰太狼**（资料[1]和[5]都提到蕉太狼叫灰太狼“二叔”）。\n\n灰太狼的岳父是**爹爹狼**（资料[3]：红太狼的父亲是爹爹狼，而红太狼是灰太狼的妻子）。\n\n所以，蕉太狼二叔的岳父是**爹爹狼**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 579,
+ "output_tokens": 88,
+ "cached_read_tokens": 0,
+ "latency_ms": 3378.2752089900896,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

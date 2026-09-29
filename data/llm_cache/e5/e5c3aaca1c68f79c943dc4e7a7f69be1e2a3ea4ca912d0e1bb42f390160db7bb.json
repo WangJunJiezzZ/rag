@@ -1,0 +1,14 @@
+{
+ "text": "美羊羊。资料显示她天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事，并且能用任何东西编织饰物[4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 664,
+ "output_tokens": 38,
+ "cached_read_tokens": 384,
+ "latency_ms": 2895.849708991591,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰和小香香是表亲（远房表亲）关系**，具体链条是：\n\n- 小灰灰的母亲是**红太狼**（doc-0012）\n- 红太狼的表妹是**香太狼**（doc-0014）\n- 香太狼的女儿是**小香香**（doc-0014）\n\n所以：小香香是小灰灰母亲的表妹（香太狼）的女儿，即小灰灰的**表姨/表姑家的孩子**——按辈分算，两人是同辈的表亲（表兄妹/表姐弟一类）。\n\n图谱中给出的最短路径为：小灰灰 ←[PARENT_OF]— 红太狼 —[COUSIN_OF]— 香太狼 —[PARENT_OF]→ 小香香（3 跳）。\n\n依据: doc-0012, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4403,
+ "output_tokens": 190,
+ "cached_read_tokens": 3712,
+ "latency_ms": 5129.496374982409,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

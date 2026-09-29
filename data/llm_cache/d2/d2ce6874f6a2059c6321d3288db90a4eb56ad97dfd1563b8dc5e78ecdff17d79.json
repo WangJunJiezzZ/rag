@@ -1,0 +1,14 @@
+{
+ "text": "蝎子蓝蓝的原型是**鲎**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 328,
+ "output_tokens": 12,
+ "cached_read_tokens": 0,
+ "latency_ms": 2777.0019589806907,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

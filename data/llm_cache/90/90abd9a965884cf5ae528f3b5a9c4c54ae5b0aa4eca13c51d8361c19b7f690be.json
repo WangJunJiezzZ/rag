@@ -1,0 +1,66 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"警用机器人\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"别名\": \"AP717\",\n        \"颜色\": \"蓝色\",\n        \"性格\": \"容易上当\",\n        \"出场次数\": \"不多\",\n        \"登场作品\": \"铁甲小宝\"\n      }\n    },\n    {\n      \"name\": \"AP717\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"别名\": \"警用机器人\"\n      }\n    },\n    {\n      \"name\": \"中野美树\",\n      \"type\": \"人物\",\n      \"properties\": {\n        \"关系\": \"搭档\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\",\n      \"properties\": {\n        \"类型\": \"特摄剧\"\n      }\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"警用机器人\",\n      \"predicate\": \"别名\",\n      \"object\": \"AP717\"\n    },\n    {\n      \"subject\": \"警用机器人\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"警用机器人\",\n      \"predicate\": \"搭档\",\n      \"object\": \"中野美树\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "警用机器人",
+    "type": "角色",
+    "properties": {
+     "别名": "AP717",
+     "颜色": "蓝色",
+     "性格": "容易上当",
+     "出场次数": "不多",
+     "登场作品": "铁甲小宝"
+    }
+   },
+   {
+    "name": "AP717",
+    "type": "角色",
+    "properties": {
+     "别名": "警用机器人"
+    }
+   },
+   {
+    "name": "中野美树",
+    "type": "人物",
+    "properties": {
+     "关系": "搭档"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "properties": {
+     "类型": "特摄剧"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "警用机器人",
+    "predicate": "别名",
+    "object": "AP717"
+   },
+   {
+    "subject": "警用机器人",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "警用机器人",
+    "predicate": "搭档",
+    "object": "中野美树"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 241,
+ "output_tokens": 281,
+ "cached_read_tokens": 0,
+ "latency_ms": 3342.3803750192747,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

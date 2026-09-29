@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及小让妈妈的名字。提供的资料只包含小让本人的基本资料、性格特长，以及卡布达、高圆寺寅彦的相关信息，没有任何关于小让母亲的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1055,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 3389.5566249848343,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

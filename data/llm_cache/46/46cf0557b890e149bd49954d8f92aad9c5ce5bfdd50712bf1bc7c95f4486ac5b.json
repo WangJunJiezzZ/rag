@@ -1,0 +1,78 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"暖羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"身份\": \"班长\",\n        \"种族\": \"盘羊族\",\n        \"学校\": \"大肥羊学校\",\n        \"性格\": \"温暖\",\n        \"特长\": \"力大无穷\",\n        \"特殊能力\": \"乌鸦嘴，预言坏事很准\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画作品\"\n    },\n    {\n      \"name\": \"大肥羊学校\",\n      \"type\": \"学校\"\n    },\n    {\n      \"name\": \"盘羊族\",\n      \"type\": \"种族\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"登场于\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"身份是\",\n      \"object\": \"班长\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"属于\",\n      \"object\": \"盘羊族\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"是\",\n      \"object\": \"大肥羊学校的转学生\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"性格\",\n      \"object\": \"温暖\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"特长\",\n      \"object\": \"力大无穷\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"拥有\",\n      \"object\": \"乌鸦嘴\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "暖羊羊",
+    "type": "角色",
+    "attributes": {
+     "身份": "班长",
+     "种族": "盘羊族",
+     "学校": "大肥羊学校",
+     "性格": "温暖",
+     "特长": "力大无穷",
+     "特殊能力": "乌鸦嘴，预言坏事很准"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品"
+   },
+   {
+    "name": "大肥羊学校",
+    "type": "学校"
+   },
+   {
+    "name": "盘羊族",
+    "type": "种族"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "暖羊羊",
+    "predicate": "登场于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "身份是",
+    "object": "班长"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "属于",
+    "object": "盘羊族"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "是",
+    "object": "大肥羊学校的转学生"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "性格",
+    "object": "温暖"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "特长",
+    "object": "力大无穷"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "拥有",
+    "object": "乌鸦嘴"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 277,
+ "output_tokens": 379,
+ "cached_read_tokens": 0,
+ "latency_ms": 4224.470582965296,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

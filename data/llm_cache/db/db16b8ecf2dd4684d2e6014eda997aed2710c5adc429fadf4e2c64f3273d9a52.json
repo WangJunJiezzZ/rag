@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"呱呱蛙是特摄剧《铁甲小宝》中的角色\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"呱呱蛙又名聒聒蛙\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"聒聒蛙\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的编号是7 号机\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"7 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是青蛙\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"青蛙\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的身份是科学博士\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"科学博士\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的口头禅是“从结论上来看”\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"从结论上来看\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "呱呱蛙是特摄剧《铁甲小宝》中的角色",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "呱呱蛙又名聒聒蛙",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "聒聒蛙",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的编号是7 号机",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "7 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是青蛙",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "青蛙",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是科学博士",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "科学博士",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的口头禅是“从结论上来看”",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "从结论上来看",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1976,
+ "output_tokens": 321,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3354.782791051548,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

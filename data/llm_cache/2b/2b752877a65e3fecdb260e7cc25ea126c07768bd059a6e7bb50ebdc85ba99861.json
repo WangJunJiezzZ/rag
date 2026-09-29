@@ -1,0 +1,14 @@
+{
+ "text": "根据现有资料，无法确定带编号的 B 机器人一共有几台。资料中只提到两台带编号的机器人：飞翔机器人编号是 3 号机[2]，警用机器人又名 AP717[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 904,
+ "output_tokens": 47,
+ "cached_read_tokens": 0,
+ "latency_ms": 2660.8517090207897,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

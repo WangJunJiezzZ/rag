@@ -1,0 +1,14 @@
+{
+ "text": "沸羊羊特别热衷锻炼肌肉：资料称它最健壮也最鲁莽，最爱健身 [2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 786,
+ "output_tokens": 24,
+ "cached_read_tokens": 640,
+ "latency_ms": 3661.778250010684,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

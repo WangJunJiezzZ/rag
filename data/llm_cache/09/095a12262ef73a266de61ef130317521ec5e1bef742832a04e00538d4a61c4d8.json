@@ -1,0 +1,33 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"中野美树是特摄剧《铁甲小宝》中的角色\", \"subject\": \"中野美树\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"该角色的身份是女警\", \"subject\": \"中野美树\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"女警\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "中野美树是特摄剧《铁甲小宝》中的角色",
+    "subject": "中野美树",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的身份是女警",
+    "subject": "中野美树",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "女警",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2445,
+ "output_tokens": 115,
+ "cached_read_tokens": 2048,
+ "latency_ms": 2866.775417001918,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

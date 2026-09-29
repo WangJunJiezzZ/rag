@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"鲨鱼辣椒因为自我意识扭曲，被高圆寺博士封印\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"SEALED_BY\", \"object\": \"高圆寺博士\", \"object_type\": \"Character\"},\n {\"evidence\": \"后来，丸子龙解开了鲨鱼辣椒的封印\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"RELEASED_BY\", \"object\": \"丸子龙\", \"object_type\": \"Character\"},\n {\"evidence\": \"卡布达用蛇夫座和平星的愿望消去了鲨鱼辣椒额头的伤疤\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"WISHED_ON\", \"object\": \"蛇夫座和平星\", \"object_type\": \"Item\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "鲨鱼辣椒因为自我意识扭曲，被高圆寺博士封印",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "SEALED_BY",
+    "object": "高圆寺博士",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "后来，丸子龙解开了鲨鱼辣椒的封印",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "RELEASED_BY",
+    "object": "丸子龙",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "卡布达用蛇夫座和平星的愿望消去了鲨鱼辣椒额头的伤疤",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "WISHED_ON",
+    "object": "蛇夫座和平星",
+    "object_type": "Item"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1922,
+ "output_tokens": 190,
+ "cached_read_tokens": 1536,
+ "latency_ms": 2950.6179579766467,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "红太狼的必杀技是千手平底锅 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 836,
+ "output_tokens": 16,
+ "cached_read_tokens": 640,
+ "latency_ms": 2663.216166954953,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

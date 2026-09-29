@@ -1,0 +1,14 @@
+{
+ "text": "资料中能确认的是：慢羊羊是羊族里最年长的羊，行动比蜗牛还慢，拄着拐杖 [1]。\n\n结论：动作慢吞吞、走路撑棍子的是慢羊羊 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 667,
+ "output_tokens": 51,
+ "cached_read_tokens": 512,
+ "latency_ms": 2883.5555829573423,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

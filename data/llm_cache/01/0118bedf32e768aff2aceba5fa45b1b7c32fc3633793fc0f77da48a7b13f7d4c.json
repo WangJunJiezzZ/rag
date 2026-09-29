@@ -1,0 +1,14 @@
+{
+ "text": "羊村由慢羊羊当家。慢羊羊是羊村的村长[5]，也是羊村居民之一[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 703,
+ "output_tokens": 26,
+ "cached_read_tokens": 0,
+ "latency_ms": 2617.298541008495,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,57 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蟑螂恶霸\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"编号\": \"8 号机\",\n        \"原型\": \"眼镜蛇\",\n        \"配色\": \"蓝黄\",\n        \"自称\": \"恶之英雄\",\n        \"武器\": \"眼镜蛇尾鞭\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"眼镜蛇\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"眼镜蛇尾鞭\",\n      \"type\": \"武器\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蟑螂恶霸\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"蟑螂恶霸\",\n      \"predicate\": \"原型是\",\n      \"object\": \"眼镜蛇\"\n    },\n    {\n      \"subject\": \"蟑螂恶霸\",\n      \"predicate\": \"武器是\",\n      \"object\": \"眼镜蛇尾鞭\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蟑螂恶霸",
+    "type": "角色",
+    "attributes": {
+     "编号": "8 号机",
+     "原型": "眼镜蛇",
+     "配色": "蓝黄",
+     "自称": "恶之英雄",
+     "武器": "眼镜蛇尾鞭"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "眼镜蛇",
+    "type": "生物"
+   },
+   {
+    "name": "眼镜蛇尾鞭",
+    "type": "武器"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "原型是",
+    "object": "眼镜蛇"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "武器是",
+    "object": "眼镜蛇尾鞭"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 289,
+ "output_tokens": 251,
+ "cached_read_tokens": 0,
+ "latency_ms": 3295.6422079587355,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,83 @@
+{
+ "text": "{\"entities\": [{\"name\": \"蕉太狼\", \"type\": \"角色\", \"properties\": {\"性格\": \"胆小\", \"特长\": \"吃素\", \"最爱食物\": \"香蕉\"}}, {\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画\", \"properties\": {}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"properties\": {}}, {\"name\": \"暖羊羊\", \"type\": \"角色\", \"properties\": {}}, {\"name\": \"猴子\", \"type\": \"角色\", \"properties\": {}}], \"relations\": [{\"subject\": \"蕉太狼\", \"predicate\": \"登场作品\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"性格\", \"object\": \"胆小\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"特长\", \"object\": \"吃素\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"最爱食物\", \"object\": \"香蕉\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"叔叔\", \"object\": \"灰太狼\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"好朋友\", \"object\": \"暖羊羊\"}, {\"subject\": \"蕉太狼\", \"predicate\": \"被收养\", \"object\": \"猴子\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蕉太狼",
+    "type": "角色",
+    "properties": {
+     "性格": "胆小",
+     "特长": "吃素",
+     "最爱食物": "香蕉"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "properties": {}
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "properties": {}
+   },
+   {
+    "name": "暖羊羊",
+    "type": "角色",
+    "properties": {}
+   },
+   {
+    "name": "猴子",
+    "type": "角色",
+    "properties": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蕉太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "性格",
+    "object": "胆小"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "特长",
+    "object": "吃素"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "最爱食物",
+    "object": "香蕉"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "叔叔",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "好朋友",
+    "object": "暖羊羊"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "被收养",
+    "object": "猴子"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 443,
+ "output_tokens": 288,
+ "cached_read_tokens": 256,
+ "latency_ms": 3211.161874991376,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

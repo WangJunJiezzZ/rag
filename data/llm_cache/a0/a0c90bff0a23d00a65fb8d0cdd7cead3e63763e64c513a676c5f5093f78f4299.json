@@ -1,0 +1,14 @@
+{
+ "text": "不是。根据角色档案，蟑螂恶霸的原型是**眼镜蛇**，虽然名字里有“蟑螂”，但原型并不是蟑螂。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 34,
+ "cached_read_tokens": 0,
+ "latency_ms": 2712.303999986034,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

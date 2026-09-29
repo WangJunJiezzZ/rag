@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"蜘蛛侦探是特摄剧《铁甲小宝》中的角色\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"该角色的编号是5 号机\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"5 号机\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的原型是蜘蛛\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"蜘蛛\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的武器是巨爪\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"巨爪\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "蜘蛛侦探是特摄剧《铁甲小宝》中的角色",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是5 号机",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "5 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是蜘蛛",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "蜘蛛",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的武器是巨爪",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "巨爪",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2468,
+ "output_tokens": 206,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3561.135458003264,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

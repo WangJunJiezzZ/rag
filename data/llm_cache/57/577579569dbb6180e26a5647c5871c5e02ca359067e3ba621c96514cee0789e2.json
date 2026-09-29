@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼的二叔是灰太狼 [1][6]。灰太狼的妻子是红太狼 [3]。红太狼的父亲是爹爹狼 [3]。因此，蕉太狼二叔的岳父是爹爹狼 [1][3][6]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 665,
+ "output_tokens": 55,
+ "cached_read_tokens": 0,
+ "latency_ms": 3330.643041001167,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

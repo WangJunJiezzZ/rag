@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，最爱打扮、还会用各种材料编小首饰的羊是**美羊羊**。\n\n美羊羊天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事，并且能用任何东西编织饰物。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 291,
+ "output_tokens": 54,
+ "cached_read_tokens": 0,
+ "latency_ms": 3624.0374589688145,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

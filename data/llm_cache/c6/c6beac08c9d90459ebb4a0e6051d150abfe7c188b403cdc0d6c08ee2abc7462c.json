@@ -1,0 +1,14 @@
+{
+ "text": "提供的资料中没有小让妈妈的名字。资料只提到小让的爷爷是高圆寺寅彦（高圆寺博士）[4]，未提及他的妈妈。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 768,
+ "output_tokens": 34,
+ "cached_read_tokens": 0,
+ "latency_ms": 3189.5857080235146,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

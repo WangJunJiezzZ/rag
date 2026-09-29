@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，我无法回答懒羊羊的生日是哪一天。\n\n资料中只提到了灰太狼的生日是羊历 3475 年 9 月 26 日（见参考资料[3]），但关于懒羊羊的角色档案（参考资料[2]、[4]、[5]）中并没有记载懒羊羊的生日信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 894,
+ "output_tokens": 76,
+ "cached_read_tokens": 0,
+ "latency_ms": 2664.624458993785,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

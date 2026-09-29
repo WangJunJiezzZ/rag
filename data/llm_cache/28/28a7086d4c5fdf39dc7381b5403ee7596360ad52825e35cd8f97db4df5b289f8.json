@@ -1,0 +1,14 @@
+{
+ "text": "蜘蛛侦探口中的“大哥”是蟑螂恶霸，他的原型是**眼镜蛇**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 714,
+ "output_tokens": 21,
+ "cached_read_tokens": 0,
+ "latency_ms": 2611.0397090087645,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

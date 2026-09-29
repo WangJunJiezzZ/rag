@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"MEMBER_OF\", \"object\": \"反派三人组\", \"object_type\": \"Group\"},\n {\"evidence\": \"反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"MEMBER_OF\", \"object\": \"反派三人组\", \"object_type\": \"Group\"},\n {\"evidence\": \"反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"MEMBER_OF\", \"object\": \"反派三人组\", \"object_type\": \"Group\"},\n {\"evidence\": \"蟑螂恶霸是反派三人组的老大\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"LEADER_OF\", \"object\": \"反派三人组\", \"object_type\": \"Group\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "MEMBER_OF",
+    "object": "反派三人组",
+    "object_type": "Group"
+   },
+   {
+    "evidence": "反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "MEMBER_OF",
+    "object": "反派三人组",
+    "object_type": "Group"
+   },
+   {
+    "evidence": "反派三人组是特摄剧《铁甲小宝》中的反派团体，成员为蟑螂恶霸、蜘蛛侦探和蝎子莱莱。",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "MEMBER_OF",
+    "object": "反派三人组",
+    "object_type": "Group"
+   },
+   {
+    "evidence": "蟑螂恶霸是反派三人组的老大",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "LEADER_OF",
+    "object": "反派三人组",
+    "object_type": "Group"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1924,
+ "output_tokens": 294,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3471.093500033021,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

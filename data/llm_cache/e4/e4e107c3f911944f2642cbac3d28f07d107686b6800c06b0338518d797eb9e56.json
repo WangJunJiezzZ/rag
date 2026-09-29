@@ -1,0 +1,50 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"七大恶狼\",\n      \"type\": \"团体\"\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\"\n    },\n    {\n      \"name\": \"灰二太太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"夜太狼\",\n      \"type\": \"角色\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"七大恶狼\",\n      \"predicate\": \"属于\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"首领\",\n      \"object\": \"七大恶狼\"\n    },\n    {\n      \"subject\": \"夜太狼\",\n      \"predicate\": \"成员\",\n      \"object\": \"七大恶狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "七大恶狼",
+    "type": "团体"
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画"
+   },
+   {
+    "name": "灰二太太狼",
+    "type": "角色"
+   },
+   {
+    "name": "夜太狼",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "七大恶狼",
+    "predicate": "属于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "首领",
+    "object": "七大恶狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "成员",
+    "object": "七大恶狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 177,
+ "output_tokens": 196,
+ "cached_read_tokens": 0,
+ "latency_ms": 3646.1683330126107,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 857,
+ "output_tokens": 6,
+ "cached_read_tokens": 0,
+ "latency_ms": 2438.492125016637,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

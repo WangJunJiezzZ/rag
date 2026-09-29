@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"七大恶狼是动画《喜羊羊与灰太狼》中的狼族团体\", \"subject\": \"七大恶狼\", \"subject_type\": \"Group\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"灰二太太狼是七大恶狼的首领\", \"subject\": \"灰二太太狼\", \"subject_type\": \"Character\", \"relation\": \"LEADER_OF\", \"object\": \"七大恶狼\", \"object_type\": \"Group\"},\n {\"evidence\": \"夜太狼是七大恶狼的成员之一\", \"subject\": \"夜太狼\", \"subject_type\": \"Character\", \"relation\": \"MEMBER_OF\", \"object\": \"七大恶狼\", \"object_type\": \"Group\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "七大恶狼是动画《喜羊羊与灰太狼》中的狼族团体",
+    "subject": "七大恶狼",
+    "subject_type": "Group",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "灰二太太狼是七大恶狼的首领",
+    "subject": "灰二太太狼",
+    "subject_type": "Character",
+    "relation": "LEADER_OF",
+    "object": "七大恶狼",
+    "object_type": "Group"
+   },
+   {
+    "evidence": "夜太狼是七大恶狼的成员之一",
+    "subject": "夜太狼",
+    "subject_type": "Character",
+    "relation": "MEMBER_OF",
+    "object": "七大恶狼",
+    "object_type": "Group"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1874,
+ "output_tokens": 184,
+ "cached_read_tokens": 1536,
+ "latency_ms": 4491.146374959499,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

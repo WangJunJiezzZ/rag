@@ -1,0 +1,14 @@
+{
+ "text": "美羊羊喜欢的是喜羊羊[1]。关于喜羊羊的爱好，提供的资料中没有相关信息[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 568,
+ "output_tokens": 25,
+ "cached_read_tokens": 0,
+ "latency_ms": 3329.6515000401996,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

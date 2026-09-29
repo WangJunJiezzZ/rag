@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰发现被爸爸骗了会嚷：“爸爸，你又骗我”。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 620,
+ "output_tokens": 17,
+ "cached_read_tokens": 0,
+ "latency_ms": 2877.1718330099247,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

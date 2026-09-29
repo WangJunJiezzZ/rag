@@ -1,0 +1,57 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"《铁甲小宝》是日本东映出品的特摄电视剧，于 1997 年 2 月 23 日首播\", \"subject\": \"铁甲小宝\", \"subject_type\": \"Show\", \"relation\": \"FIRST_AIRED\", \"object\": \"1997 年 2 月 23 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"首播电视台为朝日电视台\", \"subject\": \"铁甲小宝\", \"subject_type\": \"Show\", \"relation\": \"BROADCASTER\", \"object\": \"朝日电视台\", \"object_type\": \"Literal\"},\n {\"evidence\": \"共 52 集\", \"subject\": \"铁甲小宝\", \"subject_type\": \"Show\", \"relation\": \"EPISODES\", \"object\": \"52 集\", \"object_type\": \"Literal\"},\n {\"evidence\": \"小学生小让发现了爷爷制造的甲虫机器人卡布达\", \"subject\": \"小让\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"小学生小让发现了爷爷制造的甲虫机器人卡布达\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "《铁甲小宝》是日本东映出品的特摄电视剧，于 1997 年 2 月 23 日首播",
+    "subject": "铁甲小宝",
+    "subject_type": "Show",
+    "relation": "FIRST_AIRED",
+    "object": "1997 年 2 月 23 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "首播电视台为朝日电视台",
+    "subject": "铁甲小宝",
+    "subject_type": "Show",
+    "relation": "BROADCASTER",
+    "object": "朝日电视台",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "共 52 集",
+    "subject": "铁甲小宝",
+    "subject_type": "Show",
+    "relation": "EPISODES",
+    "object": "52 集",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "小学生小让发现了爷爷制造的甲虫机器人卡布达",
+    "subject": "小让",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "小学生小让发现了爷爷制造的甲虫机器人卡布达",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1953,
+ "output_tokens": 306,
+ "cached_read_tokens": 0,
+ "latency_ms": 3255.826708045788,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

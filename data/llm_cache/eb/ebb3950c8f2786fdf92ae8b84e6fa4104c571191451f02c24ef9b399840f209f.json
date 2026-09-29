@@ -1,0 +1,14 @@
+{
+ "text": "反派三人组的老大是蟑螂恶霸[1]，他的武器是眼镜蛇尾鞭[4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 708,
+ "output_tokens": 24,
+ "cached_read_tokens": 0,
+ "latency_ms": 2558.35104099242,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

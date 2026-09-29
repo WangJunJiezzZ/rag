@@ -1,0 +1,18 @@
+{
+ "text": "{\"same\": false, \"confidence\": 0.95, \"reason\": \"卡布达巨人是卡布达的巨人形态/变身形态，属于角色与其变身形态的关系，不是同一实体。\"}",
+ "parsed": {
+  "same": false,
+  "confidence": 0.95,
+  "reason": "卡布达巨人是卡布达的巨人形态/变身形态，属于角色与其变身形态的关系，不是同一实体。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 362,
+ "output_tokens": 44,
+ "cached_read_tokens": 0,
+ "latency_ms": 3271.1057089618407,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

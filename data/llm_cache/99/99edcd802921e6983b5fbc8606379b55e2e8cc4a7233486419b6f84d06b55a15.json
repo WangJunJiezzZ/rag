@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答中国大陆版里是谁给卡布达配的音。资料中只提到角色译名采用中国大陆播出版本，但没有记载配音演员的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 716,
+ "output_tokens": 36,
+ "cached_read_tokens": 0,
+ "latency_ms": 3775.1097500440665,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

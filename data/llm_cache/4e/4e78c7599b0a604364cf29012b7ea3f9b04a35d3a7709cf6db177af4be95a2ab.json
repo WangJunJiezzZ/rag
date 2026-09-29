@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎的搭档是藏之助[1]。藏之助又名吉祥寺藏之助[2]，其身份是学生会会长[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 630,
+ "output_tokens": 33,
+ "cached_read_tokens": 0,
+ "latency_ms": 3694.385458016768,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

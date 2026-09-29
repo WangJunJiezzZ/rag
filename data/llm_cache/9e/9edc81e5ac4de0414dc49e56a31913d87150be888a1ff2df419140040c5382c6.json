@@ -1,0 +1,125 @@
+{
+ "text": "{\"entities\": [{\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画作品\", \"attributes\": {\"首播时间\": \"2005年8月3日\", \"首播电视台\": \"杭州电视台少儿频道\", \"第1季集数\": \"530集\", \"每集时长\": \"15分钟\", \"主题曲\": \"别看我只是一只羊\", \"首部电影\": \"喜羊羊与灰太狼之牛气冲天\", \"首部电影上映时间\": \"2009年\"}}, {\"name\": \"杭州电视台少儿频道\", \"type\": \"电视台频道\", \"attributes\": {}}, {\"name\": \"别看我只是一只羊\", \"type\": \"歌曲\", \"attributes\": {}}, {\"name\": \"喜羊羊与灰太狼之牛气冲天\", \"type\": \"电影\", \"attributes\": {\"上映时间\": \"2009年\"}}, {\"name\": \"喜羊羊\", \"type\": \"角色\", \"attributes\": {\"名字来源\": \"喜气洋洋\"}}, {\"name\": \"懒羊羊\", \"type\": \"角色\", \"attributes\": {\"名字来源\": \"懒洋洋\"}}, {\"name\": \"沸羊羊\", \"type\": \"角色\", \"attributes\": {\"名字来源\": \"沸沸扬扬\"}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"attributes\": {}}, {\"name\": \"红太狼\", \"type\": \"角色\", \"attributes\": {}}, {\"name\": \"大灰狼\", \"type\": \"传统故事角色\", \"attributes\": {}}], \"relations\": [{\"subject\": \"喜羊羊与灰太狼\", \"predicate\": \"首播电视台\", \"object\": \"杭州电视台少儿频道\"}, {\"subject\": \"喜羊羊与灰太狼\", \"predicate\": \"主题曲\", \"object\": \"别看我只是一只羊\"}, {\"subject\": \"喜羊羊与灰太狼\", \"predicate\": \"首部电影\", \"object\": \"喜羊羊与灰太狼之牛气冲天\"}, {\"subject\": \"喜羊羊\", \"predicate\": \"名字取自谐音\", \"object\": \"喜气洋洋\"}, {\"subject\": \"懒羊羊\", \"predicate\": \"名字取自谐音\", \"object\": \"懒洋洋\"}, {\"subject\": \"沸羊羊\", \"predicate\": \"名字取自谐音\", \"object\": \"沸沸扬扬\"}, {\"subject\": \"灰太狼\", \"predicate\": \"名字用于区分\", \"object\": \"大灰狼\"}, {\"subject\": \"红太狼\", \"predicate\": \"名字用于区分\", \"object\": \"大灰狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品",
+    "attributes": {
+     "首播时间": "2005年8月3日",
+     "首播电视台": "杭州电视台少儿频道",
+     "第1季集数": "530集",
+     "每集时长": "15分钟",
+     "主题曲": "别看我只是一只羊",
+     "首部电影": "喜羊羊与灰太狼之牛气冲天",
+     "首部电影上映时间": "2009年"
+    }
+   },
+   {
+    "name": "杭州电视台少儿频道",
+    "type": "电视台频道",
+    "attributes": {}
+   },
+   {
+    "name": "别看我只是一只羊",
+    "type": "歌曲",
+    "attributes": {}
+   },
+   {
+    "name": "喜羊羊与灰太狼之牛气冲天",
+    "type": "电影",
+    "attributes": {
+     "上映时间": "2009年"
+    }
+   },
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "喜气洋洋"
+    }
+   },
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "懒洋洋"
+    }
+   },
+   {
+    "name": "沸羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "沸沸扬扬"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "红太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "大灰狼",
+    "type": "传统故事角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "首播电视台",
+    "object": "杭州电视台少儿频道"
+   },
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "主题曲",
+    "object": "别看我只是一只羊"
+   },
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "首部电影",
+    "object": "喜羊羊与灰太狼之牛气冲天"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "名字取自谐音",
+    "object": "喜气洋洋"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "名字取自谐音",
+    "object": "懒洋洋"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "名字取自谐音",
+    "object": "沸沸扬扬"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "名字用于区分",
+    "object": "大灰狼"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "名字用于区分",
+    "object": "大灰狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 524,
+ "output_tokens": 562,
+ "cached_read_tokens": 384,
+ "latency_ms": 4212.283875036519,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

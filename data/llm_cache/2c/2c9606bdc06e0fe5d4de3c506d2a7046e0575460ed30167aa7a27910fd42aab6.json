@@ -1,0 +1,88 @@
+{
+ "text": "{\"entities\":[{\"name\":\"蜻蜓队长\",\"type\":\"角色\",\"properties\":{\"原型\":\"蜻蜓\",\"身份\":\"裁判机器人\",\"口头禅\":\"绝对裁判的公正漂亮\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\",\"properties\":{}},{\"name\":\"蜻蜓\",\"type\":\"生物\",\"properties\":{}},{\"name\":\"和平星\",\"type\":\"物品\",\"properties\":{}},{\"name\":\"巨大铁拳\",\"type\":\"物品\",\"properties\":{}},{\"name\":\"中国大陆播出版本\",\"type\":\"版本\",\"properties\":{}}],\"relations\":[{\"subject\":\"蜻蜓队长\",\"predicate\":\"登场作品\",\"object\":\"铁甲小宝\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"原型\",\"object\":\"蜻蜓\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"身份\",\"object\":\"裁判机器人\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"口头禅\",\"object\":\"绝对裁判的公正漂亮\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"争夺\",\"object\":\"和平星\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"惩罚工具\",\"object\":\"巨大铁拳\"},{\"subject\":\"蜻蜓队长\",\"predicate\":\"译名采用\",\"object\":\"中国大陆播出版本\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蜻蜓队长",
+    "type": "角色",
+    "properties": {
+     "原型": "蜻蜓",
+     "身份": "裁判机器人",
+     "口头禅": "绝对裁判的公正漂亮"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧",
+    "properties": {}
+   },
+   {
+    "name": "蜻蜓",
+    "type": "生物",
+    "properties": {}
+   },
+   {
+    "name": "和平星",
+    "type": "物品",
+    "properties": {}
+   },
+   {
+    "name": "巨大铁拳",
+    "type": "物品",
+    "properties": {}
+   },
+   {
+    "name": "中国大陆播出版本",
+    "type": "版本",
+    "properties": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "原型",
+    "object": "蜻蜓"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "身份",
+    "object": "裁判机器人"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "口头禅",
+    "object": "绝对裁判的公正漂亮"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "惩罚工具",
+    "object": "巨大铁拳"
+   },
+   {
+    "subject": "蜻蜓队长",
+    "predicate": "译名采用",
+    "object": "中国大陆播出版本"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 368,
+ "output_tokens": 248,
+ "cached_read_tokens": 128,
+ "latency_ms": 3135.7398749678396,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

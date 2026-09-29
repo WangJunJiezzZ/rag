@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊的校长是慢羊羊[5]，慢羊羊是羊村的村长[5]，而羊村位于青青草原[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 841,
+ "output_tokens": 31,
+ "cached_read_tokens": 0,
+ "latency_ms": 2508.4622080321424,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰是武大狼的第 251 代孙。\n\n推导依据：灰太狼是武大狼的第 250 代孙[2]，而小灰灰的父亲是灰太狼[3]，因此小灰灰是武大狼的第 251 代孙。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 671,
+ "output_tokens": 60,
+ "cached_read_tokens": 128,
+ "latency_ms": 3063.8530839933082,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

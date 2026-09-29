@@ -1,0 +1,89 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"一、羊村居民 · 喜羊羊\", \"subject\": \"喜羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、羊村居民 · 美羊羊\", \"subject\": \"美羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、羊村居民 · 懒羊羊\", \"subject\": \"懒羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、羊村居民 · 沸羊羊\", \"subject\": \"沸羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、羊村居民 · 暖羊羊\", \"subject\": \"暖羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"一、羊村居民 · 慢羊羊村长\", \"subject\": \"慢羊羊村长\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"二、狼堡住户 · 灰太狼\", \"subject\": \"灰太狼\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"狼堡\", \"object_type\": \"Place\"},\n {\"evidence\": \"二、狼堡住户 · 红太狼\", \"subject\": \"红太狼\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"狼堡\", \"object_type\": \"Place\"},\n {\"evidence\": \"二、狼堡住户 · 小灰灰\", \"subject\": \"小灰灰\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"狼堡\", \"object_type\": \"Place\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "一、羊村居民 · 喜羊羊",
+    "subject": "喜羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、羊村居民 · 美羊羊",
+    "subject": "美羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、羊村居民 · 懒羊羊",
+    "subject": "懒羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、羊村居民 · 沸羊羊",
+    "subject": "沸羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、羊村居民 · 暖羊羊",
+    "subject": "暖羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "一、羊村居民 · 慢羊羊村长",
+    "subject": "慢羊羊村长",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "二、狼堡住户 · 灰太狼",
+    "subject": "灰太狼",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "狼堡",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "二、狼堡住户 · 红太狼",
+    "subject": "红太狼",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "狼堡",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "二、狼堡住户 · 小灰灰",
+    "subject": "小灰灰",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "狼堡",
+    "object_type": "Place"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2428,
+ "output_tokens": 480,
+ "cached_read_tokens": 2048,
+ "latency_ms": 4577.243208012078,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

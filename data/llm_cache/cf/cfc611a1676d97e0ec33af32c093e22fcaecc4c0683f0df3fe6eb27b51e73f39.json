@@ -1,0 +1,14 @@
+{
+ "text": "卡布达巨人是卡布达向**射手座和平星**许愿诞生的 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1143,
+ "output_tokens": 22,
+ "cached_read_tokens": 256,
+ "latency_ms": 2402.2452909848653,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法确定哪个机器人“讲起话来又臭又长，还很会研究对手”。资料中没有提到任何机器人具有这一特征。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 285,
+ "output_tokens": 31,
+ "cached_read_tokens": 128,
+ "latency_ms": 2557.3212920571677,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

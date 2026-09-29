@@ -1,0 +1,80 @@
+{
+ "text": "{\"entities\": [{\"name\": \"高圆寺寅彦\", \"type\": \"角色\", \"aliases\": [\"高圆寺博士\"], \"description\": \"特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。\"}, {\"name\": \"高圆寺博士\", \"type\": \"角色\", \"aliases\": [\"高圆寺寅彦\"], \"description\": \"高圆寺寅彦的别名。\"}, {\"name\": \"铁甲小宝\", \"type\": \"作品\", \"description\": \"特摄剧，高圆寺寅彦登场的作品。\"}, {\"name\": \"B机器人\", \"type\": \"机器人\", \"description\": \"剧中所有B机器人均由高圆寺寅彦制造。\"}, {\"name\": \"机器人科学家\", \"type\": \"身份\", \"description\": \"高圆寺寅彦的身份。\"}, {\"name\": \"机器人技术天才\", \"type\": \"特质\", \"description\": \"高圆寺寅彦的特长。\"}], \"relations\": [{\"subject\": \"高圆寺寅彦\", \"predicate\": \"又名\", \"object\": \"高圆寺博士\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"登场于\", \"object\": \"铁甲小宝\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"身份是\", \"object\": \"机器人科学家\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"是\", \"object\": \"机器人技术天才\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"制造\", \"object\": \"B机器人\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "高圆寺寅彦",
+    "type": "角色",
+    "aliases": [
+     "高圆寺博士"
+    ],
+    "description": "特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。"
+   },
+   {
+    "name": "高圆寺博士",
+    "type": "角色",
+    "aliases": [
+     "高圆寺寅彦"
+    ],
+    "description": "高圆寺寅彦的别名。"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "description": "特摄剧，高圆寺寅彦登场的作品。"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人",
+    "description": "剧中所有B机器人均由高圆寺寅彦制造。"
+   },
+   {
+    "name": "机器人科学家",
+    "type": "身份",
+    "description": "高圆寺寅彦的身份。"
+   },
+   {
+    "name": "机器人技术天才",
+    "type": "特质",
+    "description": "高圆寺寅彦的特长。"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "又名",
+    "object": "高圆寺博士"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "身份是",
+    "object": "机器人科学家"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "是",
+    "object": "机器人技术天才"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "制造",
+    "object": "B机器人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 359,
+ "output_tokens": 346,
+ "cached_read_tokens": 128,
+ "latency_ms": 3413.715415983461,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

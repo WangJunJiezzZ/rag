@@ -1,0 +1,81 @@
+{
+ "text": "{\n  \"entities\": [\n    {\"name\": \"卡布达巨人\", \"type\": \"角色/机体\"},\n    {\"name\": \"鲨鱼辣椒\", \"type\": \"角色/机体\"},\n    {\"name\": \"卡布达\", \"type\": \"角色\"},\n    {\"name\": \"射手座和平星\", \"type\": \"物品\"},\n    {\"name\": \"B机器人\", \"type\": \"角色/机体\"},\n    {\"name\": \"驾驶舱\", \"type\": \"物品\"},\n    {\"name\": \"普通形态\", \"type\": \"形态\"},\n    {\"name\": \"超级形态\", \"type\": \"形态\"}\n  ],\n  \"relations\": [\n    {\"subject\": \"鲨鱼辣椒\", \"predicate\": \"能变成\", \"object\": \"巨人形态\"},\n    {\"subject\": \"卡布达\", \"predicate\": \"向...许愿\", \"object\": \"射手座和平星\"},\n    {\"subject\": \"卡布达\", \"predicate\": \"操纵\", \"object\": \"卡布达巨人\"},\n    {\"subject\": \"卡布达\", \"predicate\": \"坐进\", \"object\": \"驾驶舱\"},\n    {\"subject\": \"卡布达巨人\", \"predicate\": \"普通形态高\", \"object\": \"6.5米\"},\n    {\"subject\": \"卡布达巨人\", \"predicate\": \"超级形态高\", \"object\": \"10.8米\"}\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "卡布达巨人",
+    "type": "角色/机体"
+   },
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色/机体"
+   },
+   {
+    "name": "卡布达",
+    "type": "角色"
+   },
+   {
+    "name": "射手座和平星",
+    "type": "物品"
+   },
+   {
+    "name": "B机器人",
+    "type": "角色/机体"
+   },
+   {
+    "name": "驾驶舱",
+    "type": "物品"
+   },
+   {
+    "name": "普通形态",
+    "type": "形态"
+   },
+   {
+    "name": "超级形态",
+    "type": "形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "能变成",
+    "object": "巨人形态"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "向...许愿",
+    "object": "射手座和平星"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "操纵",
+    "object": "卡布达巨人"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "坐进",
+    "object": "驾驶舱"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "普通形态高",
+    "object": "6.5米"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "超级形态高",
+    "object": "10.8米"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 321,
+ "output_tokens": 297,
+ "cached_read_tokens": 128,
+ "latency_ms": 3387.5548749929294,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

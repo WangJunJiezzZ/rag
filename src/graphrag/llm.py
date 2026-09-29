@@ -104,6 +104,11 @@ class LLMResult:
     from_cache: bool = False
     alias_hit: bool = False      # 经稳定键兜底命中(检索上下文可能与当前略有出入)
     provider: str = ""
+    # 工具调用(多轮 chat 才有)。OpenAI 兼容格式:
+    #   [{"id": "...", "type": "function", "function": {"name": ..., "arguments": "<json 字符串>"}}]
+    # 有默认值 —— 旧缓存文件没有这两个字段, 读回来不能报错。
+    tool_calls: list[dict] = field(default_factory=list)
+    finish_reason: str = ""
 
     @property
     def cost_usd(self) -> float:
@@ -203,6 +208,11 @@ class BaseProvider:
                  max_tokens: int, schema: dict | None,
                  documents: list[dict] | None) -> LLMResult:
         raise NotImplementedError
+
+    def chat(self, *, messages: list[dict], tools: list[dict] | None,
+             max_tokens: int) -> LLMResult:
+        """多轮对话 + 工具调用。消息与工具均为 OpenAI 兼容格式。"""
+        raise NotImplementedError(f"provider={self.name} 未实现工具调用; 用 deepseek")
 
 
 class ClaudeProvider(BaseProvider):
@@ -350,11 +360,14 @@ class DeepSeekProvider(BaseProvider):
       请求体就是一个扁平 JSON, 非流式, 无需重试策略以外的东西。
       为省 30 行代码引入一个 SDK, 会让"零依赖兜底"这条路径失效 ——
       本项目的约束是"搬到别人的 Windows 上要能跑", 依赖越少越好。
-      若将来需要流式/工具调用, 再换 openai SDK 不迟。
+      若将来需要流式, 再换 openai SDK 不迟。
 
     两个能力缺口(已在 CAPABILITIES 里声明, 由上层处理):
       · 无严格 schema 约束 -> 只能开 JSON mode, 由调用方做 schema 校验与重试
       · 无原生 citations   -> 由 generate/ 的"标记+span 对齐"兜底
+
+    工具调用(chat): 请求体多一个 tools 字段, 响应里多一个 tool_calls。
+    仍是扁平 JSON, 所以依然不需要 SDK —— 省下的依赖换来"零依赖兜底"不失效。
     """
     name = "deepseek"
     BASE = "https://api.deepseek.com/v1/chat/completions"
@@ -371,9 +384,6 @@ class DeepSeekProvider(BaseProvider):
     def complete(self, *, system: str, user: str, model: str,
                  max_tokens: int, schema: dict | None,
                  documents: list[dict] | None) -> LLMResult:
-        import urllib.error
-        import urllib.request
-
         if documents:
             refs = "\n\n".join(
                 f"[{i + 1}]（{d.get('title') or d.get('id', '')}）\n{d['text']}"
@@ -392,6 +402,23 @@ class DeepSeekProvider(BaseProvider):
             # 只有 JSON mode, 不保证符合 schema。schema 本身塞进 prompt,
             # 结构校验与重试由调用方(ingest/extract.py)负责。
             body["response_format"] = {"type": "json_object"}
+
+        data, latency = self._post(body)
+
+        text = data["choices"][0]["message"]["content"] or ""
+        parsed = None
+        if schema is not None:
+            try:
+                parsed = json.loads(text)
+            except json.JSONDecodeError:
+                parsed = None       # 交由上层做修复重试 —— 这是无严格 schema 的代价
+
+        return LLMResult(text=text, parsed=parsed, model=self.model,
+                         latency_ms=latency, provider=self.name, **self._usage(data))
+
+    def _post(self, body: dict) -> tuple[dict, float]:
+        import urllib.error
+        import urllib.request
 
         req = urllib.request.Request(
             self.BASE,
@@ -415,23 +442,29 @@ class DeepSeekProvider(BaseProvider):
                                    f"{e.read().decode('utf-8', 'replace')[:200]}") from e
         else:                                       # pragma: no cover
             raise RuntimeError(f"DeepSeek 重试耗尽: {last_err}")
-        latency = (time.perf_counter() - t0) * 1000
+        return data, (time.perf_counter() - t0) * 1000
 
-        text = data["choices"][0]["message"]["content"] or ""
-        parsed = None
-        if schema is not None:
-            try:
-                parsed = json.loads(text)
-            except json.JSONDecodeError:
-                parsed = None       # 交由上层做修复重试 —— 这是无严格 schema 的代价
-
+    def _usage(self, data: dict) -> dict:
         u = data.get("usage", {})
+        return {"input_tokens": u.get("prompt_tokens", 0),
+                "output_tokens": u.get("completion_tokens", 0),
+                "cached_read_tokens": u.get("prompt_cache_hit_tokens", 0) or 0}
+
+    def chat(self, *, messages: list[dict], tools: list[dict] | None,
+             max_tokens: int) -> LLMResult:
+        body: dict[str, Any] = {"model": self.model, "messages": messages,
+                                "max_tokens": max_tokens, "temperature": 0,
+                                "stream": False}
+        if tools:
+            body["tools"] = tools
+        data, latency = self._post(body)
+        choice = data["choices"][0]
+        msg = choice["message"]
         return LLMResult(
-            text=text, parsed=parsed, model=self.model,
-            input_tokens=u.get("prompt_tokens", 0),
-            output_tokens=u.get("completion_tokens", 0),
-            cached_read_tokens=u.get("prompt_cache_hit_tokens", 0) or 0,
-            latency_ms=latency, provider=self.name)
+            text=msg.get("content") or "", model=self.model,
+            tool_calls=msg.get("tool_calls") or [],
+            finish_reason=choice.get("finish_reason") or "",
+            latency_ms=latency, provider=self.name, **self._usage(data))
 
 
 # --------------------------------------------------------------------------
@@ -537,6 +570,32 @@ class LLM:
         self.cache.put(key, res)
         if stable_key:
             self.cache.put_alias(DiskCache.key({"stable": stable_key}), key)
+        self.calls += 1
+        self.total_cost += res.cost_usd
+        return res
+
+    def chat(self, *, messages: list[dict], tools: list[dict] | None = None,
+             max_tokens: int = 2048) -> LLMResult:
+        """多轮 + 工具调用。缓存键 = 完整消息历史 + 工具定义。
+
+        Agent 每一步的输入都包含之前所有工具结果, 所以只要工具是确定性的,
+        整条轨迹就能从缓存逐步回放 —— Agent 评测因此可复现、重跑零成本。
+        工具描述改一个字, 键就变, 会重新调用: 这是对的, 描述本身就是被评测的变量。
+        """
+        model = self._model_for_key("")
+        key = DiskCache.key({"provider": self.provider_name, "model": model,
+                             "kind": "chat", "messages": messages,
+                             "tools": tools, "max_tokens": max_tokens})
+        hit = self.cache.get(key)
+        if hit is not None:
+            return hit
+        if self.offline:
+            raise CacheMissError(
+                f"离线模式(provider={self.provider_name})下 chat 缓存未命中。"
+                f"在线调用需要: 设置 API key, 且 GRAPHRAG_OFFLINE 未开启")
+        res = self.provider.chat(messages=messages, tools=tools,
+                                 max_tokens=max_tokens)
+        self.cache.put(key, res)
         self.calls += 1
         self.total_cost += res.cost_usd
         return res

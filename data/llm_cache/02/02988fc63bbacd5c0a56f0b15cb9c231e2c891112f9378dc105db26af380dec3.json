@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"夜太狼\",\"type\":\"角色\",\"properties\":{\"作品\":\"喜羊羊与灰太狼\",\"性格与特长\":\"狼族里有名的恶狼\"}},{\"name\":\"灰太狼\",\"type\":\"角色\",\"properties\":{}}],\"relations\":[{\"subject\":\"夜太狼\",\"predicate\":\"登场作品\",\"object\":\"喜羊羊与灰太狼\"},{\"subject\":\"夜太狼\",\"predicate\":\"性格与特长\",\"object\":\"狼族里有名的恶狼\"},{\"subject\":\"夜太狼\",\"predicate\":\"表哥\",\"object\":\"灰太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "夜太狼",
+    "type": "角色",
+    "properties": {
+     "作品": "喜羊羊与灰太狼",
+     "性格与特长": "狼族里有名的恶狼"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "properties": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "夜太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "性格与特长",
+    "object": "狼族里有名的恶狼"
+   },
+   {
+    "subject": "夜太狼",
+    "predicate": "表哥",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 405,
+ "output_tokens": 122,
+ "cached_read_tokens": 256,
+ "latency_ms": 2530.9755420312285,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

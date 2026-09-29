@@ -1,0 +1,14 @@
+{
+ "text": "蟑螂恶霸的武器是眼镜蛇尾鞭。[2]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 782,
+ "output_tokens": 15,
+ "cached_read_tokens": 256,
+ "latency_ms": 3021.7336250352673,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

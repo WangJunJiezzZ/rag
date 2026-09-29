@@ -1,0 +1,14 @@
+{
+ "text": "提供的资料中没有关于鲨鱼辣椒饮食或喜好的信息，无法回答。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 901,
+ "output_tokens": 16,
+ "cached_read_tokens": 0,
+ "latency_ms": 3238.673915970139,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

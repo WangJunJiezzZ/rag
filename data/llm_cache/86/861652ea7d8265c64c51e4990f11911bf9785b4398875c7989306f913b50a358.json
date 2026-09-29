@@ -1,0 +1,14 @@
+{
+ "text": "暖羊羊是班长。\n\n根据角色档案资料，暖羊羊在动画《喜羊羊与灰太狼》中的身份是班长。而懒羊羊的资料中没有提到其担任班长职务，只提到他是草原上最胖、最懒的羊，最爱睡觉和吃零食。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 752,
+ "output_tokens": 61,
+ "cached_read_tokens": 0,
+ "latency_ms": 3243.1743340566754,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

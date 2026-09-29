@@ -113,7 +113,9 @@ def main() -> int:
         print(compare_prompts(reps))
         print("=" * 76)
 
-    out = ROOT / "reports" / f"phase3_e2e{'_ab' if args.ab else ''}.json"
+    # 标准图的结果单独存一份: 与抽取图对比, 差值就是抽取环节在端到端上的损失
+    suffix = ("_ab" if args.ab else "") + ("_oracle" if "synthetic" in args.graph else "")
+    out = ROOT / "reports" / f"phase3_e2e{suffix}.json"
     write_text(out, json.dumps([{
         "prompt": r.prompt_id, "name": r.name,
         "overall": r.overall.__dict__,

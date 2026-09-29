@@ -1,0 +1,57 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"飞翔机器人是特摄剧《铁甲小宝》中的角色\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是3 号机\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"3 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的身份是支援型机器人\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"支援型机器人\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的超级变换形态最多维持 7 分钟\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"TRANSFORM_TIME\", \"object\": \"7 分钟\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色喜欢田德莉娜\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"LIKES\", \"object\": \"田德莉娜\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "飞翔机器人是特摄剧《铁甲小宝》中的角色",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是3 号机",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "3 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是支援型机器人",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "支援型机器人",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的超级变换形态最多维持 7 分钟",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "TRANSFORM_TIME",
+    "object": "7 分钟",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色喜欢田德莉娜",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "LIKES",
+    "object": "田德莉娜",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1970,
+ "output_tokens": 268,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3234.342416981235,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

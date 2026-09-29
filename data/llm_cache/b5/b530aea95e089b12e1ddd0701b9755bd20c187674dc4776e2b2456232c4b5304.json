@@ -1,0 +1,14 @@
+{
+ "text": "小让的爷爷是高圆寺寅彦[1]，而鲨鱼辣椒是被高圆寺博士封印的[2]，因此高圆寺寅彦（高圆寺博士）是封印鲨鱼辣椒的人，小让则是封印者的孙子。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 666,
+ "output_tokens": 52,
+ "cached_read_tokens": 0,
+ "latency_ms": 2788.671791960951,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

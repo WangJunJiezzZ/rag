@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"警用机器人是特摄剧《铁甲小宝》中的角色\", \"subject\": \"警用机器人\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"警用机器人又名AP717\", \"subject\": \"警用机器人\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"AP717\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的搭档是中野美树\", \"subject\": \"警用机器人\", \"subject_type\": \"Character\", \"relation\": \"PARTNER_OF\", \"object\": \"中野美树\", \"object_type\": \"Character\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "警用机器人是特摄剧《铁甲小宝》中的角色",
+    "subject": "警用机器人",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "警用机器人又名AP717",
+    "subject": "警用机器人",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "AP717",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的搭档是中野美树",
+    "subject": "警用机器人",
+    "subject_type": "Character",
+    "relation": "PARTNER_OF",
+    "object": "中野美树",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2439,
+ "output_tokens": 163,
+ "cached_read_tokens": 2048,
+ "latency_ms": 4527.6760830311105,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，**鲨鱼辣椒**的超级变换形态维持得最久，最多可以维持 **15 分钟**。\n\n对比一下：\n- 卡布达：3 分钟\n- 金龟次郎：5 分钟\n- 飞翔机器人：7 分钟\n- 鲨鱼辣椒：15 分钟\n\n所以答案是：**鲨鱼辣椒**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 796,
+ "output_tokens": 78,
+ "cached_read_tokens": 0,
+ "latency_ms": 2786.426709033549,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

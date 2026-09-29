@@ -1,0 +1,58 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蜘蛛侦探\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"编号\": \"5 号机\",\n        \"原型\": \"蜘蛛\",\n        \"性格\": \"守财奴\",\n        \"特长\": \"数钱\",\n        \"说话口音\": \"关西口音\",\n        \"武器\": \"巨爪\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"蜘蛛\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"巨爪\",\n      \"type\": \"武器\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蜘蛛侦探\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"蜘蛛侦探\",\n      \"predicate\": \"原型是\",\n      \"object\": \"蜘蛛\"\n    },\n    {\n      \"subject\": \"蜘蛛侦探\",\n      \"predicate\": \"使用武器\",\n      \"object\": \"巨爪\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蜘蛛侦探",
+    "type": "角色",
+    "attributes": {
+     "编号": "5 号机",
+     "原型": "蜘蛛",
+     "性格": "守财奴",
+     "特长": "数钱",
+     "说话口音": "关西口音",
+     "武器": "巨爪"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "蜘蛛",
+    "type": "生物"
+   },
+   {
+    "name": "巨爪",
+    "type": "武器"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蜘蛛侦探",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蜘蛛侦探",
+    "predicate": "原型是",
+    "object": "蜘蛛"
+   },
+   {
+    "subject": "蜘蛛侦探",
+    "predicate": "使用武器",
+    "object": "巨爪"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 357,
+ "output_tokens": 242,
+ "cached_read_tokens": 128,
+ "latency_ms": 3092.7578340051696,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及小灰灰是武大狼的第几代孙。\n\n现有资料只能确认：\n- 小灰灰的父亲是灰太狼 [3]\n- 灰太狼是武大狼的第 250 代孙 [2]\n\n但资料中没有给出「小灰灰相对于武大狼是第几代孙」这一信息，因此无法推算或补全。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 958,
+ "output_tokens": 80,
+ "cached_read_tokens": 768,
+ "latency_ms": 3173.2506250264123,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

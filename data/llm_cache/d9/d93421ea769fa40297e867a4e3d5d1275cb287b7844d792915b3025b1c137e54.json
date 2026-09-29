@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，美羊羊的口头禅在现有信息中没有记载。资料中提到的口头禅“天下皆醒我独睡，天下皆勤我独懒”是**懒羊羊**的口头禅，并非美羊羊的。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 705,
+ "output_tokens": 52,
+ "cached_read_tokens": 0,
+ "latency_ms": 2971.044125035405,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

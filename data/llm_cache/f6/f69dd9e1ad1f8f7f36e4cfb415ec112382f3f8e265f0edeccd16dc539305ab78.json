@@ -1,0 +1,69 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"卡布达巨人\",\n      \"type\": \"角色/机体\"\n    },\n    {\n      \"name\": \"鲨鱼辣椒\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"卡布达\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"射手座和平星\",\n      \"type\": \"物品\"\n    },\n    {\n      \"name\": \"B机器人\",\n      \"type\": \"角色类型\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"能变成\",\n      \"object\": \"巨人形态\"\n    },\n    {\n      \"subject\": \"B机器人\",\n      \"predicate\": \"无法抗衡\",\n      \"object\": \"鲨鱼辣椒\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"向...许愿\",\n      \"object\": \"射手座和平星\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"操纵\",\n      \"object\": \"卡布达巨人\"\n    },\n    {\n      \"subject\": \"卡布达巨人\",\n      \"predicate\": \"普通形态高\",\n      \"object\": \"6.5米\"\n    },\n    {\n      \"subject\": \"卡布达巨人\",\n      \"predicate\": \"超级形态高\",\n      \"object\": \"10.8米\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "卡布达巨人",
+    "type": "角色/机体"
+   },
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色"
+   },
+   {
+    "name": "卡布达",
+    "type": "角色"
+   },
+   {
+    "name": "射手座和平星",
+    "type": "物品"
+   },
+   {
+    "name": "B机器人",
+    "type": "角色类型"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "能变成",
+    "object": "巨人形态"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "无法抗衡",
+    "object": "鲨鱼辣椒"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "向...许愿",
+    "object": "射手座和平星"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "操纵",
+    "object": "卡布达巨人"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "普通形态高",
+    "object": "6.5米"
+   },
+   {
+    "subject": "卡布达巨人",
+    "predicate": "超级形态高",
+    "object": "10.8米"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 228,
+ "output_tokens": 313,
+ "cached_read_tokens": 0,
+ "latency_ms": 3161.450917017646,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

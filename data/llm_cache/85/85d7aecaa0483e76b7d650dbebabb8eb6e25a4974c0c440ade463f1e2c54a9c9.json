@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及。现有资料只记录了人物关系（小灰灰的母亲是红太狼、父亲是灰太狼）[1]，没有任何关于红太狼用什么打灰太狼的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 993,
+ "output_tokens": 42,
+ "cached_read_tokens": 768,
+ "latency_ms": 3072.0662500243634,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

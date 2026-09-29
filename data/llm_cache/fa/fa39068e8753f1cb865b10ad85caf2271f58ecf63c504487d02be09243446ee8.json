@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，只能确认两台带编号的 B 机器人：**飞翔机器人（3 号机）**和**警用机器人（AP717）**。资料中没有给出 B 机器人带编号角色的完整名单或总数，因此无法确定“一共有几台”。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 818,
+ "output_tokens": 57,
+ "cached_read_tokens": 0,
+ "latency_ms": 2789.102000009734,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

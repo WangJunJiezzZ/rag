@@ -116,8 +116,7 @@ class RetrievalEvaluator:
 # --------------------------------------------------------------------------
 
 TYPE_ORDER = ["fact_direct", "fact_paraphrase", "semantic_only",
-              "fact_disambig", "hop2",
-              "hop3_parent", "hop4_risk", "shared_director", "aggregation"]
+              "fact_disambig", "hop2", "hop3", "relation_path", "aggregation"]
 
 
 def format_report(rep: Report, ks: tuple[int, ...] = (1, 5, 10, 20)) -> str:

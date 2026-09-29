@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎撑得更久。\n\n- 卡布达的超级变换形态最多维持 3 分钟 [2]\n- 金龟次郎的超级变换形态最多维持 5 分钟 [1]\n\n5 分钟 > 3 分钟，因此金龟次郎的超级变换形态维持时间更长。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 971,
+ "output_tokens": 67,
+ "cached_read_tokens": 768,
+ "latency_ms": 3583.0024169990793,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,52 @@
+{
+ "text": "{\"entities\": [{\"name\": \"高圆寺寅彦\", \"type\": \"角色\", \"aliases\": [\"高圆寺博士\"], \"description\": \"特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。\"}, {\"name\": \"铁甲小宝\", \"type\": \"作品\", \"description\": \"特摄剧。\"}, {\"name\": \"B机器人\", \"type\": \"机器人\", \"description\": \"剧中所有B机器人均由高圆寺寅彦制造。\"}], \"relations\": [{\"subject\": \"高圆寺寅彦\", \"predicate\": \"登场于\", \"object\": \"铁甲小宝\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"身份是\", \"object\": \"机器人科学家\"}, {\"subject\": \"高圆寺寅彦\", \"predicate\": \"制造\", \"object\": \"B机器人\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "高圆寺寅彦",
+    "type": "角色",
+    "aliases": [
+     "高圆寺博士"
+    ],
+    "description": "特摄剧《铁甲小宝》中的角色，机器人科学家，机器人技术天才，制造了剧中所有B机器人。"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "description": "特摄剧。"
+   },
+   {
+    "name": "B机器人",
+    "type": "机器人",
+    "description": "剧中所有B机器人均由高圆寺寅彦制造。"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "身份是",
+    "object": "机器人科学家"
+   },
+   {
+    "subject": "高圆寺寅彦",
+    "predicate": "制造",
+    "object": "B机器人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 450,
+ "output_tokens": 195,
+ "cached_read_tokens": 256,
+ "latency_ms": 3276.1422080220655,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

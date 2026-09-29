@@ -1,0 +1,14 @@
+{
+ "text": "灰二太太狼是七大恶狼的首领 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 872,
+ "output_tokens": 13,
+ "cached_read_tokens": 640,
+ "latency_ms": 2915.187624981627,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

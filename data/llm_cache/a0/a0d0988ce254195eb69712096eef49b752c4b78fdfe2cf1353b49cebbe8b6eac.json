@@ -1,0 +1,77 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"大肥羊学校\",\n      \"type\": \"学校\"\n    },\n    {\n      \"name\": \"羊村\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"喜羊羊\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"美羊羊\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"懒羊羊\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"沸羊羊\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"暖羊羊\",\n      \"type\": \"角色\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"大肥羊学校\",\n      \"predicate\": \"位于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"就读于\",\n      \"object\": \"大肥羊学校\"\n    },\n    {\n      \"subject\": \"美羊羊\",\n      \"predicate\": \"就读于\",\n      \"object\": \"大肥羊学校\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"就读于\",\n      \"object\": \"大肥羊学校\"\n    },\n    {\n      \"subject\": \"沸羊羊\",\n      \"predicate\": \"就读于\",\n      \"object\": \"大肥羊学校\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"就读于\",\n      \"object\": \"大肥羊学校\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "大肥羊学校",
+    "type": "学校"
+   },
+   {
+    "name": "羊村",
+    "type": "地点"
+   },
+   {
+    "name": "喜羊羊",
+    "type": "角色"
+   },
+   {
+    "name": "美羊羊",
+    "type": "角色"
+   },
+   {
+    "name": "懒羊羊",
+    "type": "角色"
+   },
+   {
+    "name": "沸羊羊",
+    "type": "角色"
+   },
+   {
+    "name": "暖羊羊",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "大肥羊学校",
+    "predicate": "位于",
+    "object": "羊村"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   },
+   {
+    "subject": "美羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "就读于",
+    "object": "大肥羊学校"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 189,
+ "output_tokens": 346,
+ "cached_read_tokens": 0,
+ "latency_ms": 4260.941499960609,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

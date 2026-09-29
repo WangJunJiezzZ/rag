@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及蜻蜓队长的编号。现有资料只说明他是《铁甲小宝》中的裁判机器人、属于中立阵营，没有任何关于\"几号机\"的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 895,
+ "output_tokens": 37,
+ "cached_read_tokens": 640,
+ "latency_ms": 2774.724500020966,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

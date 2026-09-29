@@ -1,0 +1,86 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"丸子龙\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"编号\": \"6 号机\",\n        \"原型\": \"鼠妇\",\n        \"特点\": \"肚子里藏着和平星的碎片\",\n        \"立场\": \"起初保持中立，后来加入了卡布达一方\",\n        \"喜好\": \"最爱吃糯米丸子\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"鼠妇\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"和平星的碎片\",\n      \"type\": \"物品\"\n    },\n    {\n      \"name\": \"卡布达\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"糯米丸子\",\n      \"type\": \"食物\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"是\",\n      \"object\": \"铁甲小宝\",\n      \"description\": \"丸子龙是特摄剧《铁甲小宝》中的角色\"\n    },\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"编号\",\n      \"object\": \"6 号机\",\n      \"description\": \"该角色的编号是6 号机\"\n    },\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"原型\",\n      \"object\": \"鼠妇\",\n      \"description\": \"该角色的原型是鼠妇\"\n    },\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"藏着\",\n      \"object\": \"和平星的碎片\",\n      \"description\": \"该角色肚子里藏着和平星的碎片\"\n    },\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"加入\",\n      \"object\": \"卡布达\",\n      \"description\": \"该角色起初保持中立，后来加入了卡布达一方\"\n    },\n    {\n      \"subject\": \"丸子龙\",\n      \"predicate\": \"爱吃\",\n      \"object\": \"糯米丸子\",\n      \"description\": \"该角色最爱吃糯米丸子\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "丸子龙",
+    "type": "角色",
+    "properties": {
+     "编号": "6 号机",
+     "原型": "鼠妇",
+     "特点": "肚子里藏着和平星的碎片",
+     "立场": "起初保持中立，后来加入了卡布达一方",
+     "喜好": "最爱吃糯米丸子"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "鼠妇",
+    "type": "生物"
+   },
+   {
+    "name": "和平星的碎片",
+    "type": "物品"
+   },
+   {
+    "name": "卡布达",
+    "type": "角色"
+   },
+   {
+    "name": "糯米丸子",
+    "type": "食物"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "丸子龙",
+    "predicate": "是",
+    "object": "铁甲小宝",
+    "description": "丸子龙是特摄剧《铁甲小宝》中的角色"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "编号",
+    "object": "6 号机",
+    "description": "该角色的编号是6 号机"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "原型",
+    "object": "鼠妇",
+    "description": "该角色的原型是鼠妇"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "藏着",
+    "object": "和平星的碎片",
+    "description": "该角色肚子里藏着和平星的碎片"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "加入",
+    "object": "卡布达",
+    "description": "该角色起初保持中立，后来加入了卡布达一方"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "爱吃",
+    "object": "糯米丸子",
+    "description": "该角色最爱吃糯米丸子"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 266,
+ "output_tokens": 458,
+ "cached_read_tokens": 0,
+ "latency_ms": 4111.881709017325,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

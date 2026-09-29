@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法确定红太狼最喜欢什么颜色。资料中只提到她“爱打扮”，但没有提及她最喜欢的颜色。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 653,
+ "output_tokens": 28,
+ "cached_read_tokens": 0,
+ "latency_ms": 2890.0680000078864,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"蝎子莱莱是特摄剧《铁甲小宝》中的角色\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"蝎子莱莱又名蝎子蓝蓝\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"蝎子蓝蓝\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的编号是4 号机\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"4 号机\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的原型是鲎\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"鲎\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "蝎子莱莱是特摄剧《铁甲小宝》中的角色",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "蝎子莱莱又名蝎子蓝蓝",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "蝎子蓝蓝",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的编号是4 号机",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "4 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是鲎",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "鲎",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2466,
+ "output_tokens": 222,
+ "cached_read_tokens": 2048,
+ "latency_ms": 4521.1915000109,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

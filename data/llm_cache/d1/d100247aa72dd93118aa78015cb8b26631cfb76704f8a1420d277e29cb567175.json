@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，羊村里住着以下角色：\n\n- 喜羊羊\n- 美羊羊\n- 懒羊羊\n- 沸羊羊\n- 暖羊羊\n- 慢羊羊村长\n\n此外，羊村的建立者软绵绵也住在羊村。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 632,
+ "output_tokens": 60,
+ "cached_read_tokens": 0,
+ "latency_ms": 3618.737999990117,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

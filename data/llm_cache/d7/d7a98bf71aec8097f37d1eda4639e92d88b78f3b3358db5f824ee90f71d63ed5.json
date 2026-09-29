@@ -1,0 +1,74 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蝎子莱莱\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"别名\": \"蝎子蓝蓝\",\n        \"编号\": \"4号机\",\n        \"原型\": \"鲎\",\n        \"性格\": \"爱喝酒\",\n        \"外观\": \"全身紫色，鲎造型\"\n      }\n    },\n    {\n      \"name\": \"蝎子蓝蓝\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"别名\": \"蝎子莱莱\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\",\n      \"attributes\": {\n        \"类型\": \"特摄剧\"\n      }\n    },\n    {\n      \"name\": \"鲎\",\n      \"type\": \"生物\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"别名\",\n      \"object\": \"蝎子蓝蓝\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"编号\",\n      \"object\": \"4号机\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"原型\",\n      \"object\": \"鲎\"\n    },\n    {\n      \"subject\": \"蝎子莱莱\",\n      \"predicate\": \"性格\",\n      \"object\": \"爱喝酒\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蝎子莱莱",
+    "type": "角色",
+    "attributes": {
+     "别名": "蝎子蓝蓝",
+     "编号": "4号机",
+     "原型": "鲎",
+     "性格": "爱喝酒",
+     "外观": "全身紫色，鲎造型"
+    }
+   },
+   {
+    "name": "蝎子蓝蓝",
+    "type": "角色",
+    "attributes": {
+     "别名": "蝎子莱莱"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "attributes": {
+     "类型": "特摄剧"
+    }
+   },
+   {
+    "name": "鲎",
+    "type": "生物",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "别名",
+    "object": "蝎子蓝蓝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "编号",
+    "object": "4号机"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "原型",
+    "object": "鲎"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "性格",
+    "object": "爱喝酒"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 357,
+ "output_tokens": 344,
+ "cached_read_tokens": 128,
+ "latency_ms": 3969.4475830183364,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

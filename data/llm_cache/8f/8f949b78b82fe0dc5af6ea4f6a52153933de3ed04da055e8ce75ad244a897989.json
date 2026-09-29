@@ -1,0 +1,14 @@
+{
+ "text": "提供的资料中没有关于卡布达配音演员的信息，无法回答。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 802,
+ "output_tokens": 14,
+ "cached_read_tokens": 0,
+ "latency_ms": 3081.0436669853516,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

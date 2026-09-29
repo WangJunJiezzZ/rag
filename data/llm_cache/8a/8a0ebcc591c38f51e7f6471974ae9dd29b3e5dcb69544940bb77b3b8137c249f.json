@@ -1,0 +1,54 @@
+{
+ "text": "{\"entities\": [{\"name\": \"蟑螂恶霸\", \"type\": \"角色\", \"attributes\": {\"编号\": \"8 号机\", \"原型\": \"眼镜蛇\", \"配色\": \"蓝黄\", \"自称\": \"恶之英雄\", \"武器\": \"眼镜蛇尾鞭\"}}, {\"name\": \"铁甲小宝\", \"type\": \"特摄剧\"}], \"relations\": [{\"subject\": \"蟑螂恶霸\", \"predicate\": \"登场作品\", \"object\": \"铁甲小宝\"}, {\"subject\": \"蟑螂恶霸\", \"predicate\": \"编号\", \"object\": \"8 号机\"}, {\"subject\": \"蟑螂恶霸\", \"predicate\": \"原型\", \"object\": \"眼镜蛇\"}, {\"subject\": \"蟑螂恶霸\", \"predicate\": \"武器\", \"object\": \"眼镜蛇尾鞭\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蟑螂恶霸",
+    "type": "角色",
+    "attributes": {
+     "编号": "8 号机",
+     "原型": "眼镜蛇",
+     "配色": "蓝黄",
+     "自称": "恶之英雄",
+     "武器": "眼镜蛇尾鞭"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "编号",
+    "object": "8 号机"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "原型",
+    "object": "眼镜蛇"
+   },
+   {
+    "subject": "蟑螂恶霸",
+    "predicate": "武器",
+    "object": "眼镜蛇尾鞭"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 379,
+ "output_tokens": 189,
+ "cached_read_tokens": 128,
+ "latency_ms": 3278.023833001498,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

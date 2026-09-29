@@ -1,0 +1,14 @@
+{
+ "text": "《喜羊羊与灰太狼》系列的首部电影是《喜羊羊与灰太狼之牛气冲天》，于 2009 年上映。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1150,
+ "output_tokens": 37,
+ "cached_read_tokens": 896,
+ "latency_ms": 2750.967749976553,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

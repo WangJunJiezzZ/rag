@@ -1,0 +1,77 @@
+{
+ "text": "{\"entities\":[{\"name\":\"丸子龙\",\"type\":\"角色\",\"properties\":{\"编号\":\"6 号机\",\"原型\":\"鼠妇\",\"性格\":\"起初保持中立，后来加入了卡布达一方\",\"特长\":\"肚子里藏着和平星的碎片\",\"喜好\":\"最爱吃糯米丸子\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\",\"properties\":{}},{\"name\":\"卡布达\",\"type\":\"角色\",\"properties\":{}},{\"name\":\"和平星\",\"type\":\"物品\",\"properties\":{\"碎片位置\":\"丸子龙肚子里\"}}],\"relations\":[{\"subject\":\"丸子龙\",\"predicate\":\"登场于\",\"object\":\"铁甲小宝\"},{\"subject\":\"丸子龙\",\"predicate\":\"编号是\",\"object\":\"6 号机\"},{\"subject\":\"丸子龙\",\"predicate\":\"原型是\",\"object\":\"鼠妇\"},{\"subject\":\"丸子龙\",\"predicate\":\"肚子里藏着\",\"object\":\"和平星的碎片\"},{\"subject\":\"丸子龙\",\"predicate\":\"起初保持中立，后来加入了\",\"object\":\"卡布达一方\"},{\"subject\":\"丸子龙\",\"predicate\":\"最爱吃\",\"object\":\"糯米丸子\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "丸子龙",
+    "type": "角色",
+    "properties": {
+     "编号": "6 号机",
+     "原型": "鼠妇",
+     "性格": "起初保持中立，后来加入了卡布达一方",
+     "特长": "肚子里藏着和平星的碎片",
+     "喜好": "最爱吃糯米丸子"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧",
+    "properties": {}
+   },
+   {
+    "name": "卡布达",
+    "type": "角色",
+    "properties": {}
+   },
+   {
+    "name": "和平星",
+    "type": "物品",
+    "properties": {
+     "碎片位置": "丸子龙肚子里"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "丸子龙",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "编号是",
+    "object": "6 号机"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "原型是",
+    "object": "鼠妇"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "肚子里藏着",
+    "object": "和平星的碎片"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "起初保持中立，后来加入了",
+    "object": "卡布达一方"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "最爱吃",
+    "object": "糯米丸子"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 353,
+ "output_tokens": 225,
+ "cached_read_tokens": 128,
+ "latency_ms": 3324.362666986417,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

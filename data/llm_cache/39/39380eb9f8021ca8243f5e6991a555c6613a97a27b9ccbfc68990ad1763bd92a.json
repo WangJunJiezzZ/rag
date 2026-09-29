@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊就读于大肥羊学校[1][5]。大肥羊学校的校长是慢羊羊[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 786,
+ "output_tokens": 26,
+ "cached_read_tokens": 0,
+ "latency_ms": 3024.5985420187935,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

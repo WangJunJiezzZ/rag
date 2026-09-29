@@ -1,0 +1,47 @@
+{
+ "text": "{\"entities\":[{\"name\":\"美羊羊\",\"type\":\"角色\",\"attributes\":{\"性格\":\"天真善良，爱美也爱哭\",\"特长\":\"精通营养、美容、服装等一切和美有关的事；能用任何东西编织饰物\"}},{\"name\":\"喜羊羊与灰太狼\",\"type\":\"动画作品\",\"attributes\":{}},{\"name\":\"喜羊羊\",\"type\":\"角色\",\"attributes\":{}}],\"relations\":[{\"subject\":\"美羊羊\",\"predicate\":\"登场于\",\"object\":\"喜羊羊与灰太狼\"},{\"subject\":\"美羊羊\",\"predicate\":\"喜欢\",\"object\":\"喜羊羊\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "美羊羊",
+    "type": "角色",
+    "attributes": {
+     "性格": "天真善良，爱美也爱哭",
+     "特长": "精通营养、美容、服装等一切和美有关的事；能用任何东西编织饰物"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品",
+    "attributes": {}
+   },
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "美羊羊",
+    "predicate": "登场于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "美羊羊",
+    "predicate": "喜欢",
+    "object": "喜羊羊"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 433,
+ "output_tokens": 130,
+ "cached_read_tokens": 256,
+ "latency_ms": 2992.028250009753,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

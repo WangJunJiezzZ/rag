@@ -1,0 +1,14 @@
+{
+ "text": "关联路径：\n  蕉太狼 --[二叔]--> 灰太狼 [5][6]\n  灰太狼 --[妻子]--> 红太狼 [3]\n  红太狼 --[父亲]--> 爹爹狼 [3]\n\n结论：蕉太狼的二叔是灰太狼 [5][6]，灰太狼的妻子是红太狼 [3]，红太狼的父亲是爹爹狼 [3]。因此蕉太狼二叔的岳父是**爹爹狼**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 952,
+ "output_tokens": 105,
+ "cached_read_tokens": 768,
+ "latency_ms": 3160.8063329476863,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

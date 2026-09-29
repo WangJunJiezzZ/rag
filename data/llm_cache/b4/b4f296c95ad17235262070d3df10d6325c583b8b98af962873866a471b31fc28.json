@@ -1,0 +1,14 @@
+{
+ "text": "小让用友情呼唤指令器让卡布达进行超级变换。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 568,
+ "output_tokens": 17,
+ "cached_read_tokens": 128,
+ "latency_ms": 2815.3535000164993,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

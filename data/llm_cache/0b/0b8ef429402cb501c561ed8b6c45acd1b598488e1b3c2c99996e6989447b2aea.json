@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是小让[1]。小让的爷爷是高圆寺寅彦[4]。高圆寺寅彦封印过鲨鱼辣椒[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 853,
+ "output_tokens": 35,
+ "cached_read_tokens": 128,
+ "latency_ms": 2803.0459999572486,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

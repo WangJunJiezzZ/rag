@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"吉祥寺藏之助是特摄剧《铁甲小宝》中的角色\", \"subject\": \"吉祥寺藏之助\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"}, {\"evidence\": \"吉祥寺藏之助又名藏之助\", \"subject\": \"吉祥寺藏之助\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"藏之助\", \"object_type\": \"Literal\"}, {\"evidence\": \"该角色的身份是学生会会长\", \"subject\": \"吉祥寺藏之助\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"学生会会长\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "吉祥寺藏之助是特摄剧《铁甲小宝》中的角色",
+    "subject": "吉祥寺藏之助",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "吉祥寺藏之助又名藏之助",
+    "subject": "吉祥寺藏之助",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "藏之助",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是学生会会长",
+    "subject": "吉祥寺藏之助",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "学生会会长",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2472,
+ "output_tokens": 171,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3636.661374999676,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

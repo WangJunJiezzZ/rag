@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎的搭档是吉祥寺藏之助，他在学校担任的职务是学生会会长。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 544,
+ "output_tokens": 22,
+ "cached_read_tokens": 0,
+ "latency_ms": 2366.918374958914,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

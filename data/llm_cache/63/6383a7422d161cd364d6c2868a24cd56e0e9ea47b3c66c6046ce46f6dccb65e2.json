@@ -1,0 +1,68 @@
+{
+ "text": "{\"entities\": [{\"name\": \"包包大人\", \"type\": \"角色\", \"properties\": {\"身份\": \"青青草原的管理者\", \"性格\": \"正义感强，但做事一板一眼\", \"特征\": \"秃头大象\"}}, {\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画\", \"properties\": {}}, {\"name\": \"青青草原\", \"type\": \"地点\", \"properties\": {}}, {\"name\": \"灰太狼\", \"type\": \"角色\", \"properties\": {}}], \"relations\": [{\"subject\": \"包包大人\", \"predicate\": \"登场作品\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"包包大人\", \"predicate\": \"身份\", \"object\": \"青青草原的管理者\"}, {\"subject\": \"包包大人\", \"predicate\": \"性格\", \"object\": \"正义感强，但做事一板一眼\"}, {\"subject\": \"包包大人\", \"predicate\": \"特征\", \"object\": \"秃头大象\"}, {\"subject\": \"包包大人\", \"predicate\": \"常被欺骗\", \"object\": \"灰太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "包包大人",
+    "type": "角色",
+    "properties": {
+     "身份": "青青草原的管理者",
+     "性格": "正义感强，但做事一板一眼",
+     "特征": "秃头大象"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "properties": {}
+   },
+   {
+    "name": "青青草原",
+    "type": "地点",
+    "properties": {}
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "properties": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "包包大人",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "身份",
+    "object": "青青草原的管理者"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "性格",
+    "object": "正义感强，但做事一板一眼"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "特征",
+    "object": "秃头大象"
+   },
+   {
+    "subject": "包包大人",
+    "predicate": "常被欺骗",
+    "object": "灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 435,
+ "output_tokens": 243,
+ "cached_read_tokens": 256,
+ "latency_ms": 3528.1905839801766,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

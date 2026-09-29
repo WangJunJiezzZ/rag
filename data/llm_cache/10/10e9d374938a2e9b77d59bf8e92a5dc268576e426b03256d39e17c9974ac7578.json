@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及卡布达的体重。现有资料只提到卡布达巨人普通形态高 6.5 米、超级形态高 10.8 米[1]，以及卡布达的编号、原型、颜色、武器、口头禅等信息[2][5]，均未涉及体重。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1205,
+ "output_tokens": 66,
+ "cached_read_tokens": 384,
+ "latency_ms": 2938.832084008027,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,63 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"懒羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"特点\": \"草原上最胖、最懒的羊\",\n        \"爱好\": \"睡觉和吃零食\",\n        \"运气\": \"特别好\",\n        \"口头禅\": \"天下皆醒我独睡，天下皆勤我独懒\",\n        \"随身物品\": \"枕头\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画作品\"\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"维基百科\",\n      \"type\": \"网站\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"常被\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"抓走\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"资料整理自\",\n      \"object\": \"维基百科\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "特点": "草原上最胖、最懒的羊",
+     "爱好": "睡觉和吃零食",
+     "运气": "特别好",
+     "口头禅": "天下皆醒我独睡，天下皆勤我独懒",
+     "随身物品": "枕头"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品"
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色"
+   },
+   {
+    "name": "维基百科",
+    "type": "网站"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "懒羊羊",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "常被",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "抓走",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "资料整理自",
+    "object": "维基百科"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 291,
+ "output_tokens": 310,
+ "cached_read_tokens": 0,
+ "latency_ms": 4748.95237502642,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "小让的爷爷是高圆寺寅彦 [1]，高圆寺寅彦又名高圆寺博士，身份是机器人科学家 [2]。\n\n关联路径：\n  小让 --[爷爷]--> 高圆寺寅彦 [1]\n  高圆寺寅彦（高圆寺博士）--[封印]--> 鲨鱼辣椒 [3]\n\n结论：小让的爷爷封印过鲨鱼辣椒 [3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1175,
+ "output_tokens": 88,
+ "cached_read_tokens": 1024,
+ "latency_ms": 2972.7194579900242,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

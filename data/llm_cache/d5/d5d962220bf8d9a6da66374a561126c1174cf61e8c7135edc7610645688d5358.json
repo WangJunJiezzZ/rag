@@ -1,0 +1,49 @@
+{
+ "text": "{\"entities\": [{\"name\": \"沸羊羊\", \"type\": \"角色\", \"attributes\": {\"作品\": \"喜羊羊与灰太狼\", \"性格\": \"鲁莽\", \"特长\": \"健身\", \"外貌\": \"黑脸羊\"}}, {\"name\": \"喜羊羊与灰太狼\", \"type\": \"动画\", \"attributes\": {}}, {\"name\": \"美羊羊\", \"type\": \"角色\", \"attributes\": {}}], \"relations\": [{\"subject\": \"沸羊羊\", \"predicate\": \"登场于\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"沸羊羊\", \"predicate\": \"喜欢\", \"object\": \"美羊羊\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "沸羊羊",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "性格": "鲁莽",
+     "特长": "健身",
+     "外貌": "黑脸羊"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   },
+   {
+    "name": "美羊羊",
+    "type": "角色",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "沸羊羊",
+    "predicate": "登场于",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "喜欢",
+    "object": "美羊羊"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 443,
+ "output_tokens": 155,
+ "cached_read_tokens": 256,
+ "latency_ms": 3075.75670798542,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

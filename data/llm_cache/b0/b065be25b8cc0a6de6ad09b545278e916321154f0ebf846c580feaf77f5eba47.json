@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的表哥是夜太狼[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 490,
+ "output_tokens": 12,
+ "cached_read_tokens": 0,
+ "latency_ms": 3505.256291013211,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

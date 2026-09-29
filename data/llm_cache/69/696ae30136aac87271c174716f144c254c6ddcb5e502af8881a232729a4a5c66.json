@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，是**暖羊羊**。资料[1]提到，暖羊羊有一张“乌鸦嘴”，预言坏事很准，也就是一开口说坏事就会应验。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 354,
+ "output_tokens": 39,
+ "cached_read_tokens": 0,
+ "latency_ms": 2560.9212910057977,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

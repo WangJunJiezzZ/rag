@@ -1,0 +1,83 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"鲨鱼辣椒\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"编号\": \"9 号机\",\n        \"原型\": \"鲨鱼\",\n        \"配色\": \"黑银配色\",\n        \"战斗力\": \"最强的 B 机器人\",\n        \"特征\": \"额头上有一道伤疤\",\n        \"武器\": \"鲨鱼神斧\",\n        \"超级变换形态持续时间\": \"最多维持 15 分钟\",\n        \"巨人形态\": \"超级鲨鱼巨人\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"鲨鱼\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"B 机器人\",\n      \"type\": \"机器人类型\"\n    },\n    {\n      \"name\": \"鲨鱼神斧\",\n      \"type\": \"武器\"\n    },\n    {\n      \"name\": \"超级鲨鱼巨人\",\n      \"type\": \"形态\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"编号是\",\n      \"object\": \"9 号机\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"原型是\",\n      \"object\": \"鲨鱼\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"属于\",\n      \"object\": \"B 机器人\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"武器是\",\n      \"object\": \"鲨鱼神斧\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"可以变成\",\n      \"object\": \"超级鲨鱼巨人\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色",
+    "attributes": {
+     "编号": "9 号机",
+     "原型": "鲨鱼",
+     "配色": "黑银配色",
+     "战斗力": "最强的 B 机器人",
+     "特征": "额头上有一道伤疤",
+     "武器": "鲨鱼神斧",
+     "超级变换形态持续时间": "最多维持 15 分钟",
+     "巨人形态": "超级鲨鱼巨人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "鲨鱼",
+    "type": "生物"
+   },
+   {
+    "name": "B 机器人",
+    "type": "机器人类型"
+   },
+   {
+    "name": "鲨鱼神斧",
+    "type": "武器"
+   },
+   {
+    "name": "超级鲨鱼巨人",
+    "type": "形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "编号是",
+    "object": "9 号机"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "原型是",
+    "object": "鲨鱼"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "属于",
+    "object": "B 机器人"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "武器是",
+    "object": "鲨鱼神斧"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "可以变成",
+    "object": "超级鲨鱼巨人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 294,
+ "output_tokens": 419,
+ "cached_read_tokens": 0,
+ "latency_ms": 3705.9453339898027,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

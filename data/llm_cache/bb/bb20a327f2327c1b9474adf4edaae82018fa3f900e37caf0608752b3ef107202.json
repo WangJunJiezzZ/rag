@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，无法回答哪个机器人贪杯好饮——资料中没有提到任何机器人有贪杯好饮的特征。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 385,
+ "output_tokens": 25,
+ "cached_read_tokens": 0,
+ "latency_ms": 2693.115125002805,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

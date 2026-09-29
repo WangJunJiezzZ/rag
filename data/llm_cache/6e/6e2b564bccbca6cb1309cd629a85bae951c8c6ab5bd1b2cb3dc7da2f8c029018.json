@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，灰二太太狼是灰太狼的二叔。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 570,
+ "output_tokens": 14,
+ "cached_read_tokens": 0,
+ "latency_ms": 3078.2253749785013,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

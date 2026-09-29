@@ -1,0 +1,14 @@
+{
+ "text": "最爱吃水果的两个角色是蕉太狼和香太狼。\n\n- 蕉太狼最爱吃香蕉[1]。\n- 香太狼喜欢蕉太狼[4]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 376,
+ "output_tokens": 38,
+ "cached_read_tokens": 128,
+ "latency_ms": 3318.32525000209,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

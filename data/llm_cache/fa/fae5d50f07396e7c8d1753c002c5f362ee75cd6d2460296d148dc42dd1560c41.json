@@ -1,0 +1,135 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"喜羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"美羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"懒羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"沸羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"暖羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"慢羊羊村长\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"羊村\"\n      }\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"狼堡\"\n      }\n    },\n    {\n      \"name\": \"红太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"狼堡\"\n      }\n    },\n    {\n      \"name\": \"小灰灰\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"居住地\": \"狼堡\"\n      }\n    },\n    {\n      \"name\": \"羊村\",\n      \"type\": \"地点\"\n    },\n    {\n      \"name\": \"狼堡\",\n      \"type\": \"地点\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"美羊羊\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"沸羊羊\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"暖羊羊\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"慢羊羊村长\",\n      \"predicate\": \"居住于\",\n      \"object\": \"羊村\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"居住于\",\n      \"object\": \"狼堡\"\n    },\n    {\n      \"subject\": \"红太狼\",\n      \"predicate\": \"居住于\",\n      \"object\": \"狼堡\"\n    },\n    {\n      \"subject\": \"小灰灰\",\n      \"predicate\": \"居住于\",\n      \"object\": \"狼堡\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "美羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "沸羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "暖羊羊",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "慢羊羊村长",
+    "type": "角色",
+    "attributes": {
+     "居住地": "羊村"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "小灰灰",
+    "type": "角色",
+    "attributes": {
+     "居住地": "狼堡"
+    }
+   },
+   {
+    "name": "羊村",
+    "type": "地点"
+   },
+   {
+    "name": "狼堡",
+    "type": "地点"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "美羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "暖羊羊",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "慢羊羊村长",
+    "predicate": "居住于",
+    "object": "羊村"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "居住于",
+    "object": "狼堡"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "居住于",
+    "object": "狼堡"
+   },
+   {
+    "subject": "小灰灰",
+    "predicate": "居住于",
+    "object": "狼堡"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 230,
+ "output_tokens": 650,
+ "cached_read_tokens": 0,
+ "latency_ms": 4012.53916695714,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

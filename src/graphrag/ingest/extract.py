@@ -38,17 +38,49 @@ from ..store.graph import Edge, Entity
 
 # 关系白名单 + 类型约束。抽取结果不符者直接丢弃。
 RELATION_SCHEMA: dict[str, tuple[str, str]] = {
-    "MANAGED_BY":     ("Fund", "Company"),
-    "CUSTODIAN":      ("Fund", "Company"),
-    "DOMICILED_IN":   ("Fund", "Jurisdiction"),
-    "MIN_INVESTMENT": ("Fund", "Literal"),
-    "LAUNCHED_ON":    ("Fund", "Literal"),
-    "DIRECTOR_OF":    ("Person", "Company"),
-    "SHAREHOLDER_OF": ("Person", "Company"),
-    "REGISTERED_IN":  ("Company", "Jurisdiction"),
-    "SUBSIDIARY_OF":  ("Company", "Company"),
-    "RISK_LEVEL":     ("Jurisdiction", "Literal"),
+    # ---- 实体 -> 实体 ----
+    "APPEARS_IN":     ("Character", "Show"),
+    "PARENT_OF":      ("Character", "Character"),
+    "GRANDPARENT_OF": ("Character", "Character"),
+    "SPOUSE_OF":      ("Character", "Character"),
+    "COUSIN_OF":      ("Character", "Character"),
+    "UNCLE_OF":       ("Character", "Character"),
+    "DESCENDANT_OF":  ("Character", "Character"),
+    "LIKES":          ("Character", "Character"),
+    "FRIEND_OF":      ("Character", "Character"),
+    "PARTNER_OF":     ("Character", "Character"),
+    "SEALED_BY":      ("Character", "Character"),
+    "RELEASED_BY":    ("Character", "Character"),
+    "HEAD_OF":        ("Character", "Place"),
+    "LIVES_IN":       ("Character", "Place"),
+    "STUDENT_OF":     ("Character", "Place"),
+    "LOCATED_IN":     ("Place", "Place"),
+    "MEMBER_OF":      ("Character", "Group"),
+    "LEADER_OF":      ("Character", "Group"),
+    "WISHED_ON":      ("Character", "Item"),
+    # ---- 实体 -> 字面量 ----
+    "ALIAS":          ("Character", "Literal"),
+    "UNIT_NO":        ("Character", "Literal"),
+    "PROTOTYPE":      ("Character", "Literal"),
+    "ROLE":           ("Character", "Literal"),
+    "BIRTHDAY":       ("Character", "Literal"),
+    "CATCHPHRASE":    ("Character", "Literal"),
+    "WEAPON":         ("Character", "Literal"),
+    "SPECIAL_MOVE":   ("Character", "Literal"),
+    "FAVORITE_FOOD":  ("Character", "Literal"),
+    "CARRIES":        ("Character", "Literal"),
+    "TRANSFORM_TIME": ("Character", "Literal"),
+    "GIANT_FORM":     ("Character", "Literal"),
+    "FACTION":        ("Character", "Literal"),
+    "FIRST_AIRED":    ("Show", "Literal"),
+    "BROADCASTER":    ("Show", "Literal"),
+    "EPISODES":       ("Show", "Literal"),
+    "THEME_SONG":     ("Show", "Literal"),
+    "FIRST_MOVIE":    ("Show", "Literal"),
+    "QUANTITY":       ("Item", "Literal"),
 }
+
+ENTITY_TYPES = ["Show", "Character", "Place", "Group", "Item"]
 
 JSON_SCHEMA = {
     "type": "object",
@@ -60,15 +92,12 @@ JSON_SCHEMA = {
                 "properties": {
                     "evidence": {"type": "string"},
                     "subject": {"type": "string"},
-                    "subject_type": {"type": "string",
-                                     "enum": ["Fund", "Company", "Person",
-                                              "Jurisdiction"]},
+                    "subject_type": {"type": "string", "enum": ENTITY_TYPES},
                     "relation": {"type": "string",
                                  "enum": list(RELATION_SCHEMA)},
                     "object": {"type": "string"},
                     "object_type": {"type": "string",
-                                    "enum": ["Fund", "Company", "Person",
-                                             "Jurisdiction", "Literal"]},
+                                    "enum": [*ENTITY_TYPES, "Literal"]},
                 },
                 "required": ["subject", "subject_type", "relation",
                              "object", "object_type"],
@@ -133,9 +162,9 @@ def evidence_in_text(evidence: str, text: str, threshold: float = 0.82,
 
     支持**组合式 evidence**。这是被实测逼出来的:
       v4 prompt 要求结构化文档写「标题 · 列表项」形式的 evidence,
-      例如 `一、高风险管辖区 · 维兰群岛`。这个串在原文里并不连续存在
-      (标题和列表项隔了好几行), 首版按整串比对, 12 条全部正确的三元组
-      被判成 100% 幻觉。
+      例如 `一、正义阵营 · 卡布达`。这个串在原文里并不连续存在
+      (标题和列表项隔了好几行)。早期版本按整串比对, 一份名单上 12 条
+      全部正确的三元组被判成 100% 幻觉。
 
     正确的语义是: **evidence 可以由多个片段拼成, 但每个片段都必须逐字出自原文。**
     这样既保留了反幻觉能力(编造的片段一样查不到), 又支持了跨行的结构化证据。
@@ -171,91 +200,143 @@ class BaseExtractor:
 # ==========================================================================
 
 class RuleExtractor(BaseExtractor):
-    """正则抽取。**只在本项目的模板化语料上有效**, 不具外推性。"""
+    """正则抽取。**只在本项目的模板化语料上有效**, 不具外推性。
+
+    每条正则与 scripts/gen_synthetic_data.py 里的句子模板一一对应。
+    这正是规则抽取的本质: 它不是在"读懂"文档, 而是在"认出"自己的模板。
+    """
     name = "rule"
 
-    PATTERNS: list[tuple[str, str, str, str]] = [
-        # (正则, 关系, 主体类型, 客体类型)
-        (r"本基金全称为([^（(]+)（?[^）)]*）?[，,]?于\s*([^\n，,]+?)\s*依法设立",
-         "LAUNCHED_ON", "Fund", "Literal"),
-        (r"基金管理人[：:]\s*([^\n。，,]+)", "MANAGED_BY", "Fund", "Company"),
-        (r"基金托管人[：:]\s*([^\n。，,]+)", "CUSTODIAN", "Fund", "Company"),
-        (r"注册登记[，,]?\s*注册地为([^\n。，,]+)", "DOMICILED_IN", "Fund", "Jurisdiction"),
-        (r"最低认购金额为\s*([^\n，,。]+?)[，,。]", "MIN_INVESTMENT", "Fund", "Literal"),
-        (r"委任([一-鿿]{2,4})为本公司董事", "DIRECTOR_OF", "Person", "Company"),
-        (r"([一-鿿]{2,4})当选为本公司董事", "DIRECTOR_OF", "Person", "Company"),
-        (r"新任董事为([一-鿿]{2,4})", "DIRECTOR_OF", "Person", "Company"),
-        (r"([一-鿿]{2,4})直接持有本公司已发行股本的\s*\d+%",
-         "SHAREHOLDER_OF", "Person", "Company"),
-        (r"股东名称[：:]\s*([一-鿿]{2,4})", "SHAREHOLDER_OF", "Person", "Company"),
-        (r"注册地[：:]\s*([^\n。，,]+)", "REGISTERED_IN", "Company", "Jurisdiction"),
-        # 注意: 这条必须同时捕获子公司与母公司。首版只捕获了母公司、
-        # 主体用文档标题填充, 而集团架构说明的标题就是母公司 -> 抽出自环, precision 归零。
-        (r"([^\n。，,　]+?)为([^\n。，,]+?)之全资附属公司",
-         "SUBSIDIARY_OF", "Company", "Company"),
-        (r"([^\n。，,　]+?)持有([^\n。，,]+?)\s*100%\s*股权",
-         "_PARENT_HOLDS", "Company", "Company"),
+    # 档案里的字面量句: (关系, 正则)。主体是档案的主人。
+    LIT_PATTERNS: list[tuple[str, str]] = [
+        ("UNIT_NO",        r"该角色的编号是([^。]+?)。"),
+        ("PROTOTYPE",      r"该角色的原型是([^。]+?)。"),
+        ("ROLE",           r"该角色的身份是([^。]+?)。"),
+        ("BIRTHDAY",       r"该角色的生日是([^。]+?)。"),
+        ("CATCHPHRASE",    r"该角色的口头禅是“([^”]+)”"),
+        ("WEAPON",         r"该角色的武器是([^。]+?)。"),
+        ("SPECIAL_MOVE",   r"该角色的必杀技是([^。]+?)。"),
+        ("FAVORITE_FOOD",  r"该角色最爱吃([^。]+?)。"),
+        ("CARRIES",        r"该角色总是随身带着([^。]+?)。"),
+        ("TRANSFORM_TIME", r"该角色的超级变换形态最多维持\s*([^。]+?)。"),
+        ("GIANT_FORM",     r"该角色可以变成巨人形态([^。]+?)。"),
     ]
+
+    # "该角色的{称谓}是X" / "该角色是X的{称谓}": 称谓决定关系与方向。
+    #   +1: 本角色 -> X      -1: X -> 本角色
+    LABEL_OF: dict[str, tuple[str, int, str]] = {
+        "父亲": ("PARENT_OF", -1, "Character"), "母亲": ("PARENT_OF", -1, "Character"),
+        "儿子": ("PARENT_OF", +1, "Character"), "女儿": ("PARENT_OF", +1, "Character"),
+        "爷爷": ("GRANDPARENT_OF", -1, "Character"),
+        "丈夫": ("SPOUSE_OF", +1, "Character"), "妻子": ("SPOUSE_OF", +1, "Character"),
+    }
+    LABEL_IS: dict[str, tuple[str, int, str]] = {
+        "表哥": ("COUSIN_OF", +1, "Character"), "表妹": ("COUSIN_OF", +1, "Character"),
+        "表姐": ("COUSIN_OF", +1, "Character"), "表弟": ("COUSIN_OF", +1, "Character"),
+        "二叔": ("UNCLE_OF", +1, "Character"), "侄子": ("UNCLE_OF", -1, "Character"),
+        "村长": ("HEAD_OF", +1, "Place"), "校长": ("HEAD_OF", +1, "Place"),
+    }
 
     def _title_entity(self, doc: dict) -> str:
         t = doc["title"]
-        for suf in ("招募说明书（节选）", "企业注册信息摘要", "关于董事变更的公告",
-                    "权益变动公告", "集团架构说明", "年度业务回顾（摘要）"):
+        for suf in (" 角色档案", " 节目简介", " 团体资料", "学生名册"):
             t = t.replace(suf, "")
         return t.strip()
 
+    def _t(self, s, st, rel, o, ot, ev, doc) -> Triple:
+        return Triple(s.strip(), st, rel, o.strip(), ot, evidence=ev, source_doc=doc["id"])
+
     def extract_doc(self, doc: dict) -> list[Triple]:
         text, dtype = doc["text"], doc["doc_type"]
-        主体 = self._title_entity(doc)
+        me = self._title_entity(doc)
         out: list[Triple] = []
+        T = lambda *a: out.append(self._t(*a, doc))       # noqa: E731
 
-        if dtype == "watchlist":
-            for level, block in re.findall(
-                    r"[一二三]、(高风险|加强监控|常规)管辖区\n(.*?)(?=\n[一二三四]、|\Z)",
-                    text, re.DOTALL):
-                lv = {"高风险": "高风险", "加强监控": "中风险", "常规": "低风险"}[level]
-                for name in re.findall(r"·\s*([^\n]+)", block):
-                    out.append(Triple(name.strip(), "Jurisdiction", "RISK_LEVEL",
-                                      lv, "Literal", evidence=name.strip(),
-                                      source_doc=doc["id"]))
+        if dtype == "profile":
+            for m in re.finditer(r"([一-鿿A-Za-z0-9]+)是(?:动画|特摄剧)《([^》]+)》中的角色", text):
+                T(m.group(1), "Character", "APPEARS_IN", m.group(2), "Show", m.group())
+            for m in re.finditer(r"([一-鿿A-Za-z0-9]+)又名([^。]+?)。", text):
+                T(m.group(1), "Character", "ALIAS", m.group(2), "Literal", m.group())
+            for rel, pat in self.LIT_PATTERNS:
+                for m in re.finditer(pat, text):
+                    T(me, "Character", rel, m.group(1), "Literal", m.group())
+            for m in re.finditer(r"该角色的(\S{2})是([^。，]+?)。", text):
+                spec = self.LABEL_OF.get(m.group(1))
+                if spec:
+                    rel, d, ot = spec
+                    s, o = (me, m.group(2)) if d > 0 else (m.group(2), me)
+                    T(s, "Character", rel, o, ot, m.group())
+            for m in re.finditer(r"该角色是([^。，]+?)的(第\s*\d+\s*代孙|\S{2})。", text):
+                other, label = m.group(1), m.group(2)
+                if "代孙" in label:
+                    T(me, "Character", "DESCENDANT_OF", other, "Character", m.group())
+                    continue
+                spec = self.LABEL_IS.get(label)
+                if spec:
+                    rel, d, ot = spec
+                    s, o = (me, other) if d > 0 else (other, me)
+                    T(s, "Character", rel, o, ot, m.group())
+            for m in re.finditer(r"该角色喜欢([^。，]+?)。", text):
+                T(me, "Character", "LIKES", m.group(1), "Character", m.group())
+            for m in re.finditer(r"该角色和([^。，]+?)是好朋友。", text):
+                T(me, "Character", "FRIEND_OF", m.group(1), "Character", m.group())
+            for m in re.finditer(r"该角色的搭档是([^。，]+?)。", text):
+                T(me, "Character", "PARTNER_OF", m.group(1), "Character", m.group())
+            # 配角的身份写在主角档案里: "智羊羊的身份是科学家。"
+            for m in re.finditer(r"(?<![该角色])([一-鿿]{2,5})的身份是([^。]+?)。", text):
+                if m.group(1) != "该角色":
+                    T(m.group(1), "Character", "ROLE", m.group(2), "Literal", m.group())
             return out
 
-        if dtype == "annual_review":
-            for fname, strat, jur, cus in re.findall(
-                    r"·\s*([^\n：]+)：采用([^\n，]+)策略[^\n]*?注册地为([^\n，]+)[^\n]*?"
-                    r"托管人为([^\n。]+)。", text):
-                out.append(Triple(fname, "Fund", "MANAGED_BY", 主体, "Company",
-                                  evidence=fname, source_doc=doc["id"]))
-                out.append(Triple(fname, "Fund", "DOMICILED_IN", jur, "Jurisdiction",
-                                  evidence=fname, source_doc=doc["id"]))
-                out.append(Triple(fname, "Fund", "CUSTODIAN", cus, "Company",
-                                  evidence=fname, source_doc=doc["id"]))
+        if dtype == "roster":
+            for head, block in re.findall(
+                    r"[一二三四]、(\S+)\n(.*?)(?=\n[一二三四五]、|\Z)", text, re.DOTALL):
+                names = [n.strip() for n in re.findall(r"·\s*([^\n]+)", block)]
+                if head.endswith(("居民", "住户")):
+                    place = head[:-2]
+                    for n in names:
+                        T(n, "Character", "LIVES_IN", place, "Place", f"{head} · {n}")
+                elif head == "在读学生":
+                    for n in names:
+                        T(n, "Character", "STUDENT_OF", me, "Place", f"{head} · {n}")
+                elif head.endswith("阵营"):
+                    for n in names:
+                        T(n, "Character", "FACTION", head[:-2], "Literal", f"{head} · {n}")
             return out
 
-        for pat, rel, stype, otype in self.PATTERNS:
-            for m in re.finditer(pat, text):
-                g = [x.strip() for x in m.groups()]
-                if rel == "SUBSIDIARY_OF" and len(g) == 2:
-                    out.append(Triple(g[0], "Company", "SUBSIDIARY_OF", g[1],
-                                      "Company", evidence=m.group(),
-                                      source_doc=doc["id"]))
-                    continue
-                if rel == "_PARENT_HOLDS" and len(g) == 2:
-                    # "A 持有 B 100% 股权" 等价于 "B 是 A 的子公司"
-                    out.append(Triple(g[1], "Company", "SUBSIDIARY_OF", g[0],
-                                      "Company", evidence=m.group(),
-                                      source_doc=doc["id"]))
-                    continue
-                if rel == "LAUNCHED_ON" and len(g) == 2:
-                    out.append(Triple(g[0], "Fund", "LAUNCHED_ON", g[1], "Literal",
-                                      evidence=m.group(), source_doc=doc["id"]))
-                    continue
-                if stype in ("Person",):
-                    subj, obj = g[0], 主体
-                else:
-                    subj, obj = 主体, g[0]
-                out.append(Triple(subj, stype, rel, obj, otype,
-                                  evidence=m.group(), source_doc=doc["id"]))
+        if dtype == "show_intro":
+            pats = [("FIRST_AIRED", r"于\s*(\d{4}\s*年\s*\d+\s*月\s*\d+\s*日)\s*首播"),
+                    ("BROADCASTER", r"首播电视台为([^，。]+)"),
+                    ("EPISODES", r"共\s*(\d+\s*集)"),
+                    ("THEME_SONG", r"主题曲为《([^》]+)》"),
+                    ("FIRST_MOVIE", r"首部电影为《([^》]+)》")]
+            for rel, pat in pats:
+                for m in re.finditer(pat, text):
+                    T(me, "Show", rel, m.group(1), "Literal", m.group())
+            return out
+
+        if dtype == "group":
+            for m in re.finditer(r"成员为([^。]+?)。", text):
+                for n in re.split(r"[、和]", m.group(1)):
+                    T(n, "Character", "MEMBER_OF", me, "Group", m.group())
+            for m in re.finditer(r"([一-鿿]{2,6})是[^，。]+?的(?:老大|首领)", text):
+                T(m.group(1), "Character", "LEADER_OF", me, "Group", m.group())
+            for m in re.finditer(r"([一-鿿]{2,6})是[^，。]+?的成员之一", text):
+                T(m.group(1), "Character", "MEMBER_OF", me, "Group", m.group())
+            return out
+
+        # story / setting
+        for m in re.finditer(r"([一-鿿]{2,6})位于([一-鿿]{2,6})。", text):
+            T(m.group(1), "Place", "LOCATED_IN", m.group(2), "Place", m.group())
+        for m in re.finditer(r"([一-鿿]{2,6})共有\s*(\d+\s*颗)", text):
+            T(m.group(1), "Item", "QUANTITY", m.group(2), "Literal", m.group())
+        for m in re.finditer(r"([一-鿿]{2,6})(?:因为[^，。]*，)?被([一-鿿]{2,6}?)封印", text):
+            T(m.group(1), "Character", "SEALED_BY", m.group(2), "Character", m.group())
+        for m in re.finditer(r"([一-鿿]{2,6})解开了([一-鿿]{2,6}?)的封印", text):
+            T(m.group(2), "Character", "RELEASED_BY", m.group(1), "Character", m.group())
+        for m in re.finditer(r"([一-鿿]{2,6}?)(?:向|用)([一-鿿]{2,4}座和平星)", text):
+            subj = re.sub(r"^.*，", "", m.group(1))
+            T(subj, "Character", "WISHED_ON", m.group(2), "Item", m.group())
         return out
 
 

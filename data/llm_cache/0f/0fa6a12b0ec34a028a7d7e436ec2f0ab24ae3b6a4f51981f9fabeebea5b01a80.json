@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的生日是羊历 3475 年 9 月 26 日。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 872,
+ "output_tokens": 24,
+ "cached_read_tokens": 640,
+ "latency_ms": 2885.306624986697,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

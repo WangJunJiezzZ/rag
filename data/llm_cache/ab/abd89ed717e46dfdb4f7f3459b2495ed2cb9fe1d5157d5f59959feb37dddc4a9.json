@@ -1,0 +1,14 @@
+{
+ "text": "飞翔机器人喜欢的机器人是田德莉娜 [1]。田德莉娜的原型是瓢虫 [2]。\n\n关联路径：\n  飞翔机器人 --[喜欢]--> 田德莉娜 [1]\n  田德莉娜 --[原型]--> 瓢虫 [2]\n\n结论：飞翔机器人喜欢的机器人（田德莉娜）原型是瓢虫。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 966,
+ "output_tokens": 76,
+ "cached_read_tokens": 768,
+ "latency_ms": 2865.01391697675,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及蕉太狼与爹爹狼之间的直接关系。\n\n可确认的关联路径只有一段：\n\n```\n关联路径：\n  蕉太狼 --[是灰太狼的侄子]--> 灰太狼   [2]\n  灰太狼 --[是红太狼的丈夫]--> 红太狼   [1]\n  红太狼 --[父亲是爹爹狼]--> 爹爹狼   [1]\n```\n\n即：蕉太狼是灰太狼的侄子 [2]，灰太狼是红太狼的丈夫 [1]，红太狼的父亲是爹爹狼 [1]。\n\n但资料中没有说明蕉太狼与爹爹狼之间属于何种亲属关系（例如是否为祖孙、姻亲等），因此无法给出结论。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1004,
+ "output_tokens": 156,
+ "cached_read_tokens": 256,
+ "latency_ms": 3024.187916016672,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

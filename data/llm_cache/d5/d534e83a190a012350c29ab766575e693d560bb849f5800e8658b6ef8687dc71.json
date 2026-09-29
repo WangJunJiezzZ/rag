@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，黑太狼和爹爹狼之间没有直接的人物关系。\n\n具体来说：\n\n- **黑太狼**是灰太狼的父亲（资料[1]、[4]）。\n- **爹爹狼**是红太狼的父亲（资料[2]）。\n- **灰太狼**和**红太狼**是夫妻（资料[2]）。\n\n因此，黑太狼和爹爹狼是**亲家关系**——黑太狼是灰太狼的父亲，爹爹狼是红太狼的父亲，两人的子女结为夫妻，所以他们是姻亲关系中的亲家。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 611,
+ "output_tokens": 122,
+ "cached_read_tokens": 0,
+ "latency_ms": 3784.613666997757,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

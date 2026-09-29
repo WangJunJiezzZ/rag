@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及鲨鱼辣椒的饮食偏好。现有资料只包含其封印经历、转变、编号、原型、性格特长、武器、变换时限和巨人形态等信息，没有任何关于它爱吃什么的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1188,
+ "output_tokens": 44,
+ "cached_read_tokens": 640,
+ "latency_ms": 3032.258416991681,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

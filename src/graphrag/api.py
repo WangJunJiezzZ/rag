@@ -80,7 +80,7 @@ EXAMPLE_SPLIT = os.environ.get("GRAPHRAG_EXAMPLE_SPLIT", "train")
 EXAMPLE_SPEC = [
     ("fact_direct",    "① 单跳事实 · 谁都能答对"),
     ("semantic_only",  "② 纯语义 · 词面检索失效，靠向量"),
-    ("hop4_risk",      "③ 四跳关系穿透 · 纯检索必然失败，必须走图"),
+    ("relation_path",  "③ 关系路径 · 两端有名字、中间全靠图"),
     ("negative",       "④ 幻觉陷阱 · 语料里根本没有，应当拒答"),
 ]
 
@@ -104,6 +104,29 @@ def examples() -> list[dict]:
                           "gold": it["gold_answer"][:80],
                           "n_evidence": len(it["gold_docs"])})
     return picks
+
+
+TYPE_LABEL = {
+    "fact_direct": "单跳事实", "fact_paraphrase": "同义改写",
+    "semantic_only": "纯语义", "fact_disambig": "易混角色",
+    "hop2": "两跳关系", "hop3": "三跳关系", "relation_path": "关系路径",
+    "aggregation": "列举比较", "negative": "幻觉陷阱",
+}
+
+
+@app.get("/api/catalog")
+def catalog() -> list[dict]:
+    """评测集全部问题 —— 输入框自动补全与「全部问题」清单用。
+
+    这些题的答案都已预跑进缓存, 离线演示时点哪道都有答案;
+    清单外的问题仍可检索, 但离线模式下没有生成的答案文字。
+    """
+    order = list(TYPE_LABEL)
+    items = sorted(read_jsonl(ROOT / "data/eval/eval_set.jsonl"),
+                   key=lambda i: (order.index(i["type"]) if i["type"] in order else 99,
+                                  i["question"]))
+    return [{"q": i["question"], "t": i["type"],
+             "label": TYPE_LABEL.get(i["type"], i["type"])} for i in items]
 
 
 @app.post("/api/ask")

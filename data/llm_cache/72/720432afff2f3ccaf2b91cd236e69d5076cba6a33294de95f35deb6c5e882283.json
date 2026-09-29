@@ -1,0 +1,14 @@
+{
+ "text": "提供的资料中没有关于灰太狼抓到过多少只羊的信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 822,
+ "output_tokens": 14,
+ "cached_read_tokens": 128,
+ "latency_ms": 3054.9691670457833,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

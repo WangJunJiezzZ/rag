@@ -1,0 +1,66 @@
+{
+ "text": "{\"entities\":[{\"name\":\"吉祥寺藏之助\",\"type\":\"角色\",\"attributes\":{\"别名\":\"藏之助\",\"年龄\":\"11岁\",\"身份\":\"学生会会长\",\"特点\":\"成绩好，运动也好\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\",\"attributes\":{}},{\"name\":\"吉祥寺建设公司\",\"type\":\"公司\",\"attributes\":{}},{\"name\":\"吉祥寺藏之助的父亲\",\"type\":\"人物\",\"attributes\":{\"职务\":\"吉祥寺建设公司副社长\"}}],\"relations\":[{\"subject\":\"吉祥寺藏之助\",\"predicate\":\"登场作品\",\"object\":\"铁甲小宝\"},{\"subject\":\"吉祥寺藏之助\",\"predicate\":\"父亲\",\"object\":\"吉祥寺藏之助的父亲\"},{\"subject\":\"吉祥寺藏之助的父亲\",\"predicate\":\"所属公司\",\"object\":\"吉祥寺建设公司\"},{\"subject\":\"吉祥寺藏之助的父亲\",\"predicate\":\"职务\",\"object\":\"副社长\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "吉祥寺藏之助",
+    "type": "角色",
+    "attributes": {
+     "别名": "藏之助",
+     "年龄": "11岁",
+     "身份": "学生会会长",
+     "特点": "成绩好，运动也好"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧",
+    "attributes": {}
+   },
+   {
+    "name": "吉祥寺建设公司",
+    "type": "公司",
+    "attributes": {}
+   },
+   {
+    "name": "吉祥寺藏之助的父亲",
+    "type": "人物",
+    "attributes": {
+     "职务": "吉祥寺建设公司副社长"
+    }
+   }
+  ],
+  "relations": [
+   {
+    "subject": "吉祥寺藏之助",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "吉祥寺藏之助",
+    "predicate": "父亲",
+    "object": "吉祥寺藏之助的父亲"
+   },
+   {
+    "subject": "吉祥寺藏之助的父亲",
+    "predicate": "所属公司",
+    "object": "吉祥寺建设公司"
+   },
+   {
+    "subject": "吉祥寺藏之助的父亲",
+    "predicate": "职务",
+    "object": "副社长"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 445,
+ "output_tokens": 194,
+ "cached_read_tokens": 256,
+ "latency_ms": 3527.6370419887826,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -159,11 +159,11 @@ class KnowledgeGraph:
     def steps_from(self, eid: str) -> Iterator[Step]:
         """从某节点可走的所有边(无向)。
 
-        **字面量节点不得作为中转。** 首版漏了这条, 产生过这样的伪路径:
-            基金A -[MIN_INVESTMENT]-> "25 万新元" <-[MIN_INVESTMENT]- 基金B -> ...
-        两只基金仅因最低认购额数值相同就被判定为存在关联。
-        字面量(金额/日期/风险等级)是**属性值**不是实体, 数值相同不构成任何关系。
-        它可以是路径的终点(例如"走到了'高风险'"), 但永远不能是中间节点。
+        **字面量节点不得作为中转。** 否则会产生这样的伪路径:
+            卡布达 -[TRANSFORM_TIME]-> "3 分钟" <-[TRANSFORM_TIME]- 某机器人 -> ...
+        两个角色仅因某个属性值相同就被判定为存在关联。
+        字面量(原型/编号/阵营)是**属性值**不是实体, 数值相同不构成任何关系。
+        它可以是路径的终点(例如"走到了'正义'阵营"), 但永远不能是中间节点。
         """
         if eid.startswith(LITERAL_PREFIX):
             return
@@ -179,7 +179,8 @@ class KnowledgeGraph:
         """从 start 出发做 BFS, 返回 (命中的实体id, 最短路径)。
 
         无向遍历 —— 关系穿透天然是无向的:
-        "基金->管理人" 与 "董事->管理人" 方向相反, 但同属一条关联链。
+        "灰太狼->小灰灰"(父子) 与 "红太狼->小灰灰"(母子) 方向相同, 但从小灰灰出发
+        要逆着边才能走到父母 —— 亲属链天然需要双向走。
         """
         allow = set(rel_whitelist) if rel_whitelist else None
         seen = {start}
@@ -205,19 +206,31 @@ class KnowledgeGraph:
     def degree(self, eid: str) -> int:
         return len(self._out.get(eid, [])) + len(self._in.get(eid, []))
 
+    def entity_degree(self, eid: str) -> int:
+        """只数连向**实体**的边。字面量边(口头禅、原型、编号……)不算。
+
+        枢纽判定要用这个而不是 degree(): 卡布达有十几条字面量边,
+        但它不是枢纽 —— 字面量本来就不能中转, 数进去只会把普通角色误判成枢纽。
+        """
+        return (sum(1 for e in self._out.get(eid, []) if not e.dst.startswith(LITERAL_PREFIX))
+                + len(self._in.get(eid, [])))
+
+    def is_hub(self, eid: str, hub_degree: int | None) -> bool:
+        return hub_degree is not None and self.entity_degree(eid) > hub_degree
+
     def paths_to(self, start: str, predicate: Callable[[str], bool],
                  max_hops: int = 4, max_paths: int = 12,
                  hub_degree: int | None = None) -> list[Path_]:
         """枚举 start 出发、终点满足 predicate 的**多条**简单路径。
 
         与 reach() 的关键区别: reach 对每个节点只保留最短路径, 于是
-        "基金自己就注册在高风险辖区"(1跳)会把"经共同董事穿透到同一辖区"(4跳)
-        整条路径吞掉 —— 而后者才是真正要展示的关联。这里不按节点去重。
+        一条短路径会把经过同一节点的长路径整条吞掉 —— 而长的那条可能才是
+        真正要展示的关系。这里不按节点去重。
 
         hub_degree: 度数超过该阈值的节点**不允许作为中转**(仍可作为终点)。
-          本项目的辖区节点度数 17~25、托管银行 14, 若允许穿透,
-          任意两家注册地相同的公司、或共用一家托管行的两只基金
-          都会被判定为"存在关联" —— 这是关系图谱里最常见的假阳性来源。
+          本项目的节目节点(《喜羊羊与灰太狼》《铁甲小宝》)各连着十几个角色,
+          若允许穿透, 同一部剧里任意两个角色都会被判定为"存在关联"
+          —— 这是关系图谱里最常见的假阳性来源。
           阻断枢纽中转是图分析里的标准做法, 代价是可能漏掉真实的弱关联,
           所以它是一个可消融的参数, 而不是写死的规则。
         """
@@ -227,7 +240,7 @@ class KnowledgeGraph:
             node, path, visited = stack.pop()
             if len(path) >= max_hops:
                 continue
-            if path and hub_degree is not None and self.degree(node) > hub_degree:
+            if path and self.is_hub(node, hub_degree):
                 continue                       # 枢纽节点: 到此为止, 不再往外扩
             for step in self.steps_from(node):
                 nxt = step.to
@@ -244,25 +257,33 @@ class KnowledgeGraph:
         return out
 
     def find_paths(self, src: str, dst: str, max_hops: int = 4,
-                   limit: int = 8) -> list[Path_]:
-        """枚举 src -> dst 的所有不超过 max_hops 跳的简单路径。"""
+                   limit: int = 8, hub_degree: int | None = None) -> list[Path_]:
+        """枚举 src -> dst 的所有不超过 max_hops 跳的简单路径(短的在前)。
+
+        按层 BFS 而不是 DFS: DFS 会先钻进一条深路径把 limit 用完,
+        最短的那条反而没被找到。hub_degree 的含义同 paths_to()。
+        """
         out: list[Path_] = []
-        stack: list[tuple[str, Path_, set[str]]] = [(src, [], {src})]
-        while stack and len(out) < limit:
-            node, path, visited = stack.pop()
-            if len(path) >= max_hops:
-                continue
-            for step in self.steps_from(node):
-                nxt = step.to
-                if nxt in visited:
+        frontier: list[tuple[str, Path_, set[str]]] = [(src, [], {src})]
+        for _ in range(max_hops):
+            nxt: list[tuple[str, Path_, set[str]]] = []
+            for node, path, visited in frontier:
+                if path and self.is_hub(node, hub_degree):
                     continue
-                new_path = path + [step]
-                if nxt == dst:
-                    out.append(new_path)
-                    if len(out) >= limit:
-                        break
-                else:
-                    stack.append((nxt, new_path, visited | {nxt}))
+                for step in self.steps_from(node):
+                    to = step.to
+                    if to in visited:
+                        continue
+                    new_path = path + [step]
+                    if to == dst:
+                        out.append(new_path)
+                        if len(out) >= limit:
+                            return out
+                    else:
+                        nxt.append((to, new_path, visited | {to}))
+            frontier = nxt
+            if not frontier:
+                break
         return out
 
     def path_docs(self, path: Path_) -> list[str]:
@@ -290,7 +311,6 @@ class KnowledgeGraph:
                 "id": nid, "name": self.name(nid),
                 "type": "Literal" if nid.startswith(LITERAL_PREFIX)
                         else (e.type if e else "Unknown"),
-                "risk": (e.props.get("risk") if e else None),
             })
 
         push(path[0].frm)
@@ -347,19 +367,16 @@ class KnowledgeGraph:
 
 # --------------------------------------------------------------------------
 
-_PUNCT = "（）()。，,、．. 　\t\r\n·:：“”\"'-—_/\\"
+_PUNCT = "（）()。，,、．. 　\t\r\n·:：“”\"'-—_/\\《》「」！!？?…"
 
 
 def normalize_name(s: str) -> str:
     """名称规范化 —— 实体消歧的第一道(也是最廉价的一道)工序。
 
-    只做确定性的规则归一; 语义层面的归一(简称 <-> 全称 <-> 罗马化名)
-    由 ingest/resolve.py 用 embedding + LLM 处理。
+    只做确定性的规则归一(大小写/标点/空白); 语义层面的归一(本名 <-> 又名 <-> 译名)
+    由 ingest/resolve.py 用声明别名 + embedding + LLM 处理。
     """
     s = (s or "").strip().lower()
     for ch in _PUNCT:
         s = s.replace(ch, "")
-    for noise in ("有限公司", "股份有限公司", "ltd", "limited", "pte", "inc",
-                  "corp", "corporation", "co", "company"):
-        s = s.replace(noise, "")
     return s

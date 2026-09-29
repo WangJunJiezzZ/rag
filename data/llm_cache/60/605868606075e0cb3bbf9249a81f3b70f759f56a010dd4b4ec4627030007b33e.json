@@ -1,0 +1,99 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"卡布达\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"编号\": \"1 号机\",\n        \"原型\": \"独角仙\",\n        \"颜色\": \"全身红色\",\n        \"普通形态说话风格\": \"稚气可爱\",\n        \"超级变换后说话风格\": \"成熟稳重的英雄语气\",\n        \"口头禅\": \"卡布\",\n        \"武器\": \"电光棒\",\n        \"最爱食物\": \"西瓜\",\n        \"超级变换形态维持时间\": \"最多 3 分钟\",\n        \"超级变换形态\": \"卡布达巨人\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"小让\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"友情呼唤指令器\",\n      \"type\": \"道具\"\n    },\n    {\n      \"name\": \"电光棒\",\n      \"type\": \"武器\"\n    },\n    {\n      \"name\": \"西瓜\",\n      \"type\": \"食物\"\n    },\n    {\n      \"name\": \"卡布达巨人\",\n      \"type\": \"形态\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"登场于\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"编号\",\n      \"object\": \"1 号机\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"原型\",\n      \"object\": \"独角仙\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"搭档\",\n      \"object\": \"小让\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"依靠\",\n      \"object\": \"友情呼唤指令器\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"武器\",\n      \"object\": \"电光棒\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"最爱吃\",\n      \"object\": \"西瓜\"\n    },\n    {\n      \"subject\": \"卡布达\",\n      \"predicate\": \"可以变成\",\n      \"object\": \"卡布达巨人\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "卡布达",
+    "type": "角色",
+    "attributes": {
+     "编号": "1 号机",
+     "原型": "独角仙",
+     "颜色": "全身红色",
+     "普通形态说话风格": "稚气可爱",
+     "超级变换后说话风格": "成熟稳重的英雄语气",
+     "口头禅": "卡布",
+     "武器": "电光棒",
+     "最爱食物": "西瓜",
+     "超级变换形态维持时间": "最多 3 分钟",
+     "超级变换形态": "卡布达巨人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "小让",
+    "type": "角色"
+   },
+   {
+    "name": "友情呼唤指令器",
+    "type": "道具"
+   },
+   {
+    "name": "电光棒",
+    "type": "武器"
+   },
+   {
+    "name": "西瓜",
+    "type": "食物"
+   },
+   {
+    "name": "卡布达巨人",
+    "type": "形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "卡布达",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "编号",
+    "object": "1 号机"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "原型",
+    "object": "独角仙"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "搭档",
+    "object": "小让"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "依靠",
+    "object": "友情呼唤指令器"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "武器",
+    "object": "电光棒"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "最爱吃",
+    "object": "西瓜"
+   },
+   {
+    "subject": "卡布达",
+    "predicate": "可以变成",
+    "object": "卡布达巨人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 320,
+ "output_tokens": 512,
+ "cached_read_tokens": 0,
+ "latency_ms": 4712.929959001485,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

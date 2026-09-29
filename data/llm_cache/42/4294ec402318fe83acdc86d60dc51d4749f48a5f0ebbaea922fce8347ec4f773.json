@@ -1,0 +1,14 @@
+{
+ "text": "卡布达搭档的爷爷叫**高圆寺寅彦**。\n\n根据资料，卡布达的搭档是小让，而小让的爷爷是高圆寺寅彦。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 701,
+ "output_tokens": 37,
+ "cached_read_tokens": 0,
+ "latency_ms": 2891.5895000100136,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

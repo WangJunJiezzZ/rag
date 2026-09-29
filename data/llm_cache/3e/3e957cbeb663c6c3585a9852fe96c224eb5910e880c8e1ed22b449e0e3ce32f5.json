@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，黑太狼是灰太狼的父亲[1]，爹爹狼是红太狼的父亲[2]，而红太狼是灰太狼的妻子[2]。因此，黑太狼与爹爹狼是亲家关系（即灰太狼与红太狼双方的父辈）[1][2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 697,
+ "output_tokens": 66,
+ "cached_read_tokens": 0,
+ "latency_ms": 2898.1686669867486,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

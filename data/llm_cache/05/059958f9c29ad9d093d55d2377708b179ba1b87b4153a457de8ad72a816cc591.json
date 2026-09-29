@@ -1,0 +1,57 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"《喜羊羊与灰太狼》是一部中国原创动画，于 2005 年 8 月 3 日首播，首播电视台为杭州电视台少儿频道。\", \"subject\": \"喜羊羊与灰太狼\", \"subject_type\": \"Show\", \"relation\": \"FIRST_AIRED\", \"object\": \"2005 年 8 月 3 日\", \"object_type\": \"Literal\"},\n {\"evidence\": \"《喜羊羊与灰太狼》是一部中国原创动画，于 2005 年 8 月 3 日首播，首播电视台为杭州电视台少儿频道。\", \"subject\": \"喜羊羊与灰太狼\", \"subject_type\": \"Show\", \"relation\": \"BROADCASTER\", \"object\": \"杭州电视台少儿频道\", \"object_type\": \"Literal\"},\n {\"evidence\": \"第 1 季共 530 集，每集 15 分钟，主题曲为《别看我只是一只羊》。\", \"subject\": \"喜羊羊与灰太狼\", \"subject_type\": \"Show\", \"relation\": \"EPISODES\", \"object\": \"530 集\", \"object_type\": \"Literal\"},\n {\"evidence\": \"第 1 季共 530 集，每集 15 分钟，主题曲为《别看我只是一只羊》。\", \"subject\": \"喜羊羊与灰太狼\", \"subject_type\": \"Show\", \"relation\": \"THEME_SONG\", \"object\": \"《别看我只是一只羊》\", \"object_type\": \"Literal\"},\n {\"evidence\": \"系列的首部电影为《喜羊羊与灰太狼之牛气冲天》，于 2009 年上映。\", \"subject\": \"喜羊羊与灰太狼\", \"subject_type\": \"Show\", \"relation\": \"FIRST_MOVIE\", \"object\": \"《喜羊羊与灰太狼之牛气冲天》\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "《喜羊羊与灰太狼》是一部中国原创动画，于 2005 年 8 月 3 日首播，首播电视台为杭州电视台少儿频道。",
+    "subject": "喜羊羊与灰太狼",
+    "subject_type": "Show",
+    "relation": "FIRST_AIRED",
+    "object": "2005 年 8 月 3 日",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "《喜羊羊与灰太狼》是一部中国原创动画，于 2005 年 8 月 3 日首播，首播电视台为杭州电视台少儿频道。",
+    "subject": "喜羊羊与灰太狼",
+    "subject_type": "Show",
+    "relation": "BROADCASTER",
+    "object": "杭州电视台少儿频道",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "第 1 季共 530 集，每集 15 分钟，主题曲为《别看我只是一只羊》。",
+    "subject": "喜羊羊与灰太狼",
+    "subject_type": "Show",
+    "relation": "EPISODES",
+    "object": "530 集",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "第 1 季共 530 集，每集 15 分钟，主题曲为《别看我只是一只羊》。",
+    "subject": "喜羊羊与灰太狼",
+    "subject_type": "Show",
+    "relation": "THEME_SONG",
+    "object": "《别看我只是一只羊》",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "系列的首部电影为《喜羊羊与灰太狼之牛气冲天》，于 2009 年上映。",
+    "subject": "喜羊羊与灰太狼",
+    "subject_type": "Show",
+    "relation": "FIRST_MOVIE",
+    "object": "《喜羊羊与灰太狼之牛气冲天》",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2035,
+ "output_tokens": 438,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3840.6239169999026,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

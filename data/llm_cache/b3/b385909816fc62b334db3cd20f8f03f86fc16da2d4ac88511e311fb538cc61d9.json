@@ -1,0 +1,77 @@
+{
+ "text": "{\"entities\":[{\"name\":\"田德莉娜\",\"type\":\"角色\"},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\"},{\"name\":\"10号机\",\"type\":\"编号\"},{\"name\":\"瓢虫\",\"type\":\"原型\"},{\"name\":\"女性机器人\",\"type\":\"属性\"},{\"name\":\"超级形态\",\"type\":\"形态\"},{\"name\":\"攻击力\",\"type\":\"能力\"}],\"relations\":[{\"subject\":\"田德莉娜\",\"predicate\":\"登场于\",\"object\":\"铁甲小宝\"},{\"subject\":\"田德莉娜\",\"predicate\":\"编号\",\"object\":\"10号机\"},{\"subject\":\"田德莉娜\",\"predicate\":\"原型\",\"object\":\"瓢虫\"},{\"subject\":\"田德莉娜\",\"predicate\":\"是\",\"object\":\"女性机器人\"},{\"subject\":\"田德莉娜\",\"predicate\":\"能保持\",\"object\":\"超级形态\"},{\"subject\":\"田德莉娜\",\"predicate\":\"几乎没有\",\"object\":\"攻击力\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "田德莉娜",
+    "type": "角色"
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "10号机",
+    "type": "编号"
+   },
+   {
+    "name": "瓢虫",
+    "type": "原型"
+   },
+   {
+    "name": "女性机器人",
+    "type": "属性"
+   },
+   {
+    "name": "超级形态",
+    "type": "形态"
+   },
+   {
+    "name": "攻击力",
+    "type": "能力"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "田德莉娜",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "编号",
+    "object": "10号机"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "原型",
+    "object": "瓢虫"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "是",
+    "object": "女性机器人"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "能保持",
+    "object": "超级形态"
+   },
+   {
+    "subject": "田德莉娜",
+    "predicate": "几乎没有",
+    "object": "攻击力"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 443,
+ "output_tokens": 196,
+ "cached_read_tokens": 256,
+ "latency_ms": 3093.748291954398,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

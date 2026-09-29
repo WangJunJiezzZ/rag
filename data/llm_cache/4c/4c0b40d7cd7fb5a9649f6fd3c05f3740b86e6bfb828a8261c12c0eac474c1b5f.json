@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼最喜欢吃香蕉。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 488,
+ "output_tokens": 7,
+ "cached_read_tokens": 0,
+ "latency_ms": 2273.7576669896953,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

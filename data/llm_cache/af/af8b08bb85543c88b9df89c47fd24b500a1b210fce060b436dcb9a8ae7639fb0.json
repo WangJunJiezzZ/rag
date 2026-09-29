@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，体型最圆、最不爱干活的是**懒羊羊**。\n\n资料[3]中提到，懒羊羊是“草原上最胖、最懒的羊”，最爱睡觉和吃零食，口头禅是“天下皆醒我独睡，天下皆勤我独懒”。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 416,
+ "output_tokens": 62,
+ "cached_read_tokens": 0,
+ "latency_ms": 2698.9138750359416,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

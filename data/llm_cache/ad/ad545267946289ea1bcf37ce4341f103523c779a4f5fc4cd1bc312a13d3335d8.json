@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"小灰灰是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"小灰灰\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色温驯天真，和小羊们成了朋友\", \"subject\": \"小灰灰\", \"subject_type\": \"Character\", \"relation\": \"FRIEND_OF\", \"object\": \"小羊们\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色的口头禅是“爸爸，你又骗我”\", \"subject\": \"小灰灰\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"爸爸，你又骗我\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色总是随身带着奶嘴\", \"subject\": \"小灰灰\", \"subject_type\": \"Character\", \"relation\": \"CARRIES\", \"object\": \"奶嘴\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的父亲是灰太狼\", \"subject\": \"灰太狼\", \"subject_type\": \"Character\", \"relation\": \"PARENT_OF\", \"object\": \"小灰灰\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色的母亲是红太狼\", \"subject\": \"红太狼\", \"subject_type\": \"Character\", \"relation\": \"PARENT_OF\", \"object\": \"小灰灰\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "小灰灰是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "小灰灰",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色温驯天真，和小羊们成了朋友",
+    "subject": "小灰灰",
+    "subject_type": "Character",
+    "relation": "FRIEND_OF",
+    "object": "小羊们",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色的口头禅是“爸爸，你又骗我”",
+    "subject": "小灰灰",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "爸爸，你又骗我",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色总是随身带着奶嘴",
+    "subject": "小灰灰",
+    "subject_type": "Character",
+    "relation": "CARRIES",
+    "object": "奶嘴",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的父亲是灰太狼",
+    "subject": "灰太狼",
+    "subject_type": "Character",
+    "relation": "PARENT_OF",
+    "object": "小灰灰",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色的母亲是红太狼",
+    "subject": "红太狼",
+    "subject_type": "Character",
+    "relation": "PARENT_OF",
+    "object": "小灰灰",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2510,
+ "output_tokens": 337,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3519.220124988351,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

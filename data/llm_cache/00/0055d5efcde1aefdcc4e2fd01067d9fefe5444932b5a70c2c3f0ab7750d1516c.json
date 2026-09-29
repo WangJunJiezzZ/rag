@@ -1,0 +1,33 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"和平星是特摄剧《铁甲小宝》中的神秘物体\", \"subject\": \"和平星\", \"subject_type\": \"Item\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"和平星共有 13 颗\", \"subject\": \"和平星\", \"subject_type\": \"Item\", \"relation\": \"QUANTITY\", \"object\": \"13 颗\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "和平星是特摄剧《铁甲小宝》中的神秘物体",
+    "subject": "和平星",
+    "subject_type": "Item",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "和平星共有 13 颗",
+    "subject": "和平星",
+    "subject_type": "Item",
+    "relation": "QUANTITY",
+    "object": "13 颗",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1921,
+ "output_tokens": 116,
+ "cached_read_tokens": 1536,
+ "latency_ms": 3026.745999988634,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

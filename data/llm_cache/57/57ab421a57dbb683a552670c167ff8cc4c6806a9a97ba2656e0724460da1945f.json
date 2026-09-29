@@ -1,0 +1,82 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"香太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"武器\": \"熨斗\",\n        \"性格\": \"凶悍\"\n      }\n    },\n    {\n      \"name\": \"红太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"夜太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"小香香\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"蕉太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"作品\"\n    },\n    {\n      \"name\": \"熨斗\",\n      \"type\": \"物品\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"表姐\",\n      \"object\": \"红太狼\"\n    },\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"丈夫\",\n      \"object\": \"夜太狼\"\n    },\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"女儿\",\n      \"object\": \"小香香\"\n    },\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"喜欢\",\n      \"object\": \"蕉太狼\"\n    },\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"武器\",\n      \"object\": \"熨斗\"\n    },\n    {\n      \"subject\": \"香太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "香太狼",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "武器": "熨斗",
+     "性格": "凶悍"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色"
+   },
+   {
+    "name": "夜太狼",
+    "type": "角色"
+   },
+   {
+    "name": "小香香",
+    "type": "角色"
+   },
+   {
+    "name": "蕉太狼",
+    "type": "角色"
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "作品"
+   },
+   {
+    "name": "熨斗",
+    "type": "物品"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "香太狼",
+    "predicate": "表姐",
+    "object": "红太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "丈夫",
+    "object": "夜太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "女儿",
+    "object": "小香香"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "喜欢",
+    "object": "蕉太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "武器",
+    "object": "熨斗"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 267,
+ "output_tokens": 380,
+ "cached_read_tokens": 0,
+ "latency_ms": 3569.7311249678023,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

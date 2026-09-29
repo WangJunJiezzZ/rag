@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼是灰太狼的侄子[2]，而灰太狼是红太狼的丈夫[1]，红太狼的父亲是爹爹狼[1]。因此，蕉太狼是爹爹狼的女婿（灰太狼）的侄子[1][2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 717,
+ "output_tokens": 57,
+ "cached_read_tokens": 0,
+ "latency_ms": 2890.374874987174,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

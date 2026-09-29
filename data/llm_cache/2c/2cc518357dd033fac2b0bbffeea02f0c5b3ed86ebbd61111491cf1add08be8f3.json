@@ -1,0 +1,14 @@
+{
+ "text": "根据大肥羊学校学生名册，大肥羊学校的在读学生有：喜羊羊、美羊羊、懒羊羊、沸羊羊、暖羊羊。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 651,
+ "output_tokens": 37,
+ "cached_read_tokens": 0,
+ "latency_ms": 3826.403916988056,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

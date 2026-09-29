@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是小让 [1][5]。\n\n关联路径：\n  卡布达 --[搭档]--> 小让 [1][5]\n\n结论：卡布达的搭档是小让。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 928,
+ "output_tokens": 42,
+ "cached_read_tokens": 256,
+ "latency_ms": 2617.182624991983,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

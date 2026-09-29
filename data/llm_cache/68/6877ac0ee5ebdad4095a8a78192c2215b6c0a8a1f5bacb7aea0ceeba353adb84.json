@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"绵羊族先祖软绵绵为了躲避狼群来到青青草原，建起了防御坚固的羊村\", \"subject\": \"软绵绵\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"绵羊族先祖\", \"object_type\": \"Literal\"},\n {\"evidence\": \"绵羊族先祖软绵绵为了躲避狼群来到青青草原，建起了防御坚固的羊村\", \"subject\": \"软绵绵\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"羊村位于青青草原\", \"subject\": \"羊村\", \"subject_type\": \"Place\", \"relation\": \"LOCATED_IN\", \"object\": \"青青草原\", \"object_type\": \"Place\"},\n {\"evidence\": \"狼群首领武大狼为了钻过羊村的铁门而拼命减肥\", \"subject\": \"武大狼\", \"subject_type\": \"Character\", \"relation\": \"LEADER_OF\", \"object\": \"狼群\", \"object_type\": \"Group\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "绵羊族先祖软绵绵为了躲避狼群来到青青草原，建起了防御坚固的羊村",
+    "subject": "软绵绵",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "绵羊族先祖",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "绵羊族先祖软绵绵为了躲避狼群来到青青草原，建起了防御坚固的羊村",
+    "subject": "软绵绵",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "羊村位于青青草原",
+    "subject": "羊村",
+    "subject_type": "Place",
+    "relation": "LOCATED_IN",
+    "object": "青青草原",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "狼群首领武大狼为了钻过羊村的铁门而拼命减肥",
+    "subject": "武大狼",
+    "subject_type": "Character",
+    "relation": "LEADER_OF",
+    "object": "狼群",
+    "object_type": "Group"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2422,
+ "output_tokens": 240,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3497.5255420431495,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

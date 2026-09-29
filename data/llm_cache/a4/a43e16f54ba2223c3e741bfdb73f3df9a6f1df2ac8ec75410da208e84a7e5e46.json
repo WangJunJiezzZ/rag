@@ -1,0 +1,14 @@
+{
+ "text": "警用机器人的搭档是中野美树[1]。中野美树的身份是女警[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 557,
+ "output_tokens": 23,
+ "cached_read_tokens": 0,
+ "latency_ms": 2617.0587909873575,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

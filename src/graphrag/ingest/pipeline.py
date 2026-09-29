@@ -38,8 +38,7 @@ def build_graph(docs: list[dict], extractor: BaseExtractor,
                 workers: int = 8) -> IngestResult:
     """workers: 抽取阶段的并发度。
 
-    每份文档的抽取彼此独立, 是天然可并行的。串行跑 326 份文档约 19 分钟,
-    8 并发约 2.5 分钟。并发只放在**网络等待**这一段:
+    每份文档的抽取彼此独立, 是天然可并行的。8 并发时耗时约为串行的 1/7。并发只放在**网络等待**这一段:
     校验、消歧、建图仍是单线程的确定性流程 —— 否则结果会随线程调度而变,
     评测就不可复现了。
     """
@@ -87,7 +86,13 @@ def build_graph(docs: list[dict], extractor: BaseExtractor,
         contexts.setdefault(t.subject, t.evidence[:120])
         contexts.setdefault(t.object, t.evidence[:120])
 
-    # 共享邻居签名 —— 跨文种消歧的分块依据
+    # 文档声明的「又名」: 字面量客体其实是主体的另一个名字
+    declared = [(t.subject, t.object) for t in all_triples if t.relation == "ALIAS"]
+    # 有关系边直接相连的两个名称, 必不是同一实体 —— 消歧的 cannot-link
+    related = {tuple(sorted((t.subject, t.object))) for t in all_triples
+               if t.object_type != "Literal"}
+
+    # 共享邻居签名
     neighbors: dict[str, set[str]] = {}
     for tr in all_triples:
         if tr.object_type != "Literal":
@@ -95,7 +100,8 @@ def build_graph(docs: list[dict], extractor: BaseExtractor,
             neighbors.setdefault(tr.object, set()).add(tr.subject)
 
     if resolver is not None:
-        mapping = resolver.resolve(mentions, contexts, neighbors)
+        mapping = resolver.resolve(mentions, contexts, neighbors,
+                                   aliases=declared, related=related)
         rstats = resolver.stats
     else:
         mapping = {m: m for m in mentions}
@@ -107,12 +113,17 @@ def build_graph(docs: list[dict], extractor: BaseExtractor,
     alias_of: dict[str, set[str]] = {}
     for m, canon in mapping.items():
         alias_of.setdefault(canon, set()).add(m)
+    # 声明过的别名即使没在别处出现, 也要挂到实体上 —— 问题里可能只用别名提问
+    if resolver is not None:
+        for subj, alias in declared:
+            if subj in mapping:
+                alias_of[mapping[subj]].add(alias)
 
     id_of: dict[str, str] = {}
     for canon, aliases in alias_of.items():
         eid = f"E{len(id_of):04d}"
         id_of[canon] = eid
-        kg.add_entity(Entity(id=eid, type=mentions.get(canon, "Company"),
+        kg.add_entity(Entity(id=eid, type=mentions.get(canon, "Character"),
                              name=canon,
                              aliases=sorted(a for a in aliases if a != canon)))
 

@@ -1,0 +1,49 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"小让是特摄剧《铁甲小宝》中的角色\", \"subject\": \"小让\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"小让又名高圆寺让\", \"subject\": \"小让\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"高圆寺让\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的身份是小学生\", \"subject\": \"小让\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"小学生\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的爷爷是高圆寺寅彦\", \"subject\": \"高圆寺寅彦\", \"subject_type\": \"Character\", \"relation\": \"GRANDPARENT_OF\", \"object\": \"小让\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "小让是特摄剧《铁甲小宝》中的角色",
+    "subject": "小让",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "小让又名高圆寺让",
+    "subject": "小让",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "高圆寺让",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的身份是小学生",
+    "subject": "小让",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "小学生",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的爷爷是高圆寺寅彦",
+    "subject": "高圆寺寅彦",
+    "subject_type": "Character",
+    "relation": "GRANDPARENT_OF",
+    "object": "小让",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1951,
+ "output_tokens": 214,
+ "cached_read_tokens": 1664,
+ "latency_ms": 4764.008124999236,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

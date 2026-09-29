@@ -1,0 +1,60 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"鲨鱼辣椒\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"编号\": \"9 号机\",\n        \"原型\": \"鲨鱼\",\n        \"配色\": \"黑银配色\",\n        \"战斗力\": \"最强的 B 机器人\",\n        \"特征\": \"额头上有一道伤疤\",\n        \"武器\": \"鲨鱼神斧\",\n        \"超级变换形态维持时间\": \"最多 15 分钟\",\n        \"巨人形态\": \"超级鲨鱼巨人\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"鲨鱼神斧\",\n      \"type\": \"武器\"\n    },\n    {\n      \"name\": \"超级鲨鱼巨人\",\n      \"type\": \"形态\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"使用武器\",\n      \"object\": \"鲨鱼神斧\"\n    },\n    {\n      \"subject\": \"鲨鱼辣椒\",\n      \"predicate\": \"可变身\",\n      \"object\": \"超级鲨鱼巨人\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "鲨鱼辣椒",
+    "type": "角色",
+    "attributes": {
+     "编号": "9 号机",
+     "原型": "鲨鱼",
+     "配色": "黑银配色",
+     "战斗力": "最强的 B 机器人",
+     "特征": "额头上有一道伤疤",
+     "武器": "鲨鱼神斧",
+     "超级变换形态维持时间": "最多 15 分钟",
+     "巨人形态": "超级鲨鱼巨人"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "鲨鱼神斧",
+    "type": "武器"
+   },
+   {
+    "name": "超级鲨鱼巨人",
+    "type": "形态"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "使用武器",
+    "object": "鲨鱼神斧"
+   },
+   {
+    "subject": "鲨鱼辣椒",
+    "predicate": "可变身",
+    "object": "超级鲨鱼巨人"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 382,
+ "output_tokens": 287,
+ "cached_read_tokens": 128,
+ "latency_ms": 3564.685667050071,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

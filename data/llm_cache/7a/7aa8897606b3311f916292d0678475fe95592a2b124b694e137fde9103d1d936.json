@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及「体型最圆」这一描述，无法据此判断。\n\n能确认的部分：懒羊羊是「草原上最胖、最懒的羊」[3]，且「最爱睡觉和吃零食」[3]。若问题指的是「最胖、最懒」，则答案是懒羊羊[3]；但「体型最圆」在资料中没有对应表述。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 789,
+ "output_tokens": 80,
+ "cached_read_tokens": 640,
+ "latency_ms": 3284.8666249774396,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

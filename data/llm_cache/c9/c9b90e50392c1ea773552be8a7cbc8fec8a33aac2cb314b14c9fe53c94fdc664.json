@@ -1,0 +1,14 @@
+{
+ "text": "暖羊羊是班长[1]。资料中未提及懒羊羊担任班长。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1125,
+ "output_tokens": 18,
+ "cached_read_tokens": 896,
+ "latency_ms": 2809.8373750108294,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

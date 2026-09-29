@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的奶奶是银太狼。小灰灰的父亲是灰太狼[1]，灰太狼的母亲是银太狼[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 701,
+ "output_tokens": 32,
+ "cached_read_tokens": 256,
+ "latency_ms": 2663.525083044078,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

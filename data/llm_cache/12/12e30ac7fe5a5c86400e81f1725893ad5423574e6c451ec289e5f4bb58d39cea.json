@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的参考资料，没有关于卡布达体重的信息。资料中只提到了卡布达巨人的身高（普通形态 6.5 米，超级形态 10.8 米）[1]，以及卡布达的编号、原型、颜色、武器、口头禅、最爱吃的食物、超级变换形态维持时间等[2][6]，但均未涉及体重。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 881,
+ "output_tokens": 82,
+ "cached_read_tokens": 128,
+ "latency_ms": 3016.6090420098044,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

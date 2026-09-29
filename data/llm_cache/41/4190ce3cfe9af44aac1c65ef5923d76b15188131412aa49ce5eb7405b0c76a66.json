@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，灰太狼的二叔是灰二太太狼，而灰二太太狼是七大恶狼的首领。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 515,
+ "output_tokens": 26,
+ "cached_read_tokens": 0,
+ "latency_ms": 2228.440082981251,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

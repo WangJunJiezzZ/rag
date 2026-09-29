@@ -1,0 +1,14 @@
+{
+ "text": "根据提供的资料，我无法回答这个问题。\n\n资料中虽然说明了小灰灰的妈妈是红太狼、爸爸是灰太狼，但**没有任何文档提到红太狼用什么打灰太狼**。这类具体情节属于正片内容，参考资料中并未涉及。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 620,
+ "output_tokens": 56,
+ "cached_read_tokens": 256,
+ "latency_ms": 2481.6467500058934,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

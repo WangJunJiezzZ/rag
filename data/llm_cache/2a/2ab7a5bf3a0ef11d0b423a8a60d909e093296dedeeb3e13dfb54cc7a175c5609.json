@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的老婆是红太狼。\n\n关联路径：\n  灰太狼 --[配偶]--> 红太狼   [1]\n\n依据：资料[1]明确记载「该角色的丈夫是灰太狼」，该角色即红太狼[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 873,
+ "output_tokens": 56,
+ "cached_read_tokens": 256,
+ "latency_ms": 3371.7982090311125,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

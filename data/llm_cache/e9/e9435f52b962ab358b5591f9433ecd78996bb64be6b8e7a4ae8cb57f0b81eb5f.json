@@ -1,0 +1,105 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"一、正义阵营 · 卡布达\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"正义\", \"object_type\": \"Literal\"}, {\"evidence\": \"一、正义阵营 · 金龟次郎\", \"subject\": \"金龟次郎\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"正义\", \"object_type\": \"Literal\"}, {\"evidence\": \"一、正义阵营 · 飞翔机器人\", \"subject\": \"飞翔机器人\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"正义\", \"object_type\": \"Literal\"}, {\"evidence\": \"一、正义阵营 · 呱呱蛙\", \"subject\": \"呱呱蛙\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"正义\", \"object_type\": \"Literal\"}, {\"evidence\": \"一、正义阵营 · 田德莉娜\", \"subject\": \"田德莉娜\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"正义\", \"object_type\": \"Literal\"}, {\"evidence\": \"二、反派阵营 · 蟑螂恶霸\", \"subject\": \"蟑螂恶霸\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"反派\", \"object_type\": \"Literal\"}, {\"evidence\": \"二、反派阵营 · 蜘蛛侦探\", \"subject\": \"蜘蛛侦探\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"反派\", \"object_type\": \"Literal\"}, {\"evidence\": \"二、反派阵营 · 蝎子莱莱\", \"subject\": \"蝎子莱莱\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"反派\", \"object_type\": \"Literal\"}, {\"evidence\": \"二、反派阵营 · 鲨鱼辣椒\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"反派\", \"object_type\": \"Literal\"}, {\"evidence\": \"三、中立阵营 · 丸子龙\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"中立\", \"object_type\": \"Literal\"}, {\"evidence\": \"三、中立阵营 · 蜻蜓队长\", \"subject\": \"蜻蜓队长\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"中立\", \"object_type\": \"Literal\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "一、正义阵营 · 卡布达",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "正义",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "一、正义阵营 · 金龟次郎",
+    "subject": "金龟次郎",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "正义",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "一、正义阵营 · 飞翔机器人",
+    "subject": "飞翔机器人",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "正义",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "一、正义阵营 · 呱呱蛙",
+    "subject": "呱呱蛙",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "正义",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "一、正义阵营 · 田德莉娜",
+    "subject": "田德莉娜",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "正义",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "二、反派阵营 · 蟑螂恶霸",
+    "subject": "蟑螂恶霸",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "反派",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "二、反派阵营 · 蜘蛛侦探",
+    "subject": "蜘蛛侦探",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "反派",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "二、反派阵营 · 蝎子莱莱",
+    "subject": "蝎子莱莱",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "反派",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "二、反派阵营 · 鲨鱼辣椒",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "反派",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "三、中立阵营 · 丸子龙",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "中立",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "三、中立阵营 · 蜻蜓队长",
+    "subject": "蜻蜓队长",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "中立",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2445,
+ "output_tokens": 550,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3757.5845420360565,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

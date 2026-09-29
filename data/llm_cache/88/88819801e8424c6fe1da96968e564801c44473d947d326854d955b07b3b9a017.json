@@ -1,0 +1,14 @@
+{
+ "text": "根据创作花絮资料，喜羊羊这个主角最初打算叫“懒羊羊”，后来制作团队觉得“喜羊羊”更正面，于是改成了现在的名字。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 771,
+ "output_tokens": 37,
+ "cached_read_tokens": 0,
+ "latency_ms": 2911.32541699335,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

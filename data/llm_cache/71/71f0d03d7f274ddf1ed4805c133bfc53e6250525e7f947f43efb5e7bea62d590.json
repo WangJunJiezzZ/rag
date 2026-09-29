@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是小让。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1075,
+ "output_tokens": 10,
+ "cached_read_tokens": 256,
+ "latency_ms": 2372.7974999928847,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

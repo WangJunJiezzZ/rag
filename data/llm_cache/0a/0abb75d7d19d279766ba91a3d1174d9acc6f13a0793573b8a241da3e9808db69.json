@@ -1,0 +1,57 @@
+{
+ "text": "{\"triples\": [{\"subject\": \"红太狼\", \"predicate\": \"出处\", \"object\": \"喜羊羊与灰太狼\"}, {\"subject\": \"红太狼\", \"predicate\": \"性格\", \"object\": \"爱打扮\"}, {\"subject\": \"红太狼\", \"predicate\": \"口头禅\", \"object\": \"快去抓羊\"}, {\"subject\": \"红太狼\", \"predicate\": \"武器\", \"object\": \"平底锅\"}, {\"subject\": \"红太狼\", \"predicate\": \"必杀技\", \"object\": \"千手平底锅\"}, {\"subject\": \"红太狼\", \"predicate\": \"丈夫\", \"object\": \"灰太狼\"}, {\"subject\": \"红太狼\", \"predicate\": \"父亲\", \"object\": \"爹爹狼\"}, {\"subject\": \"红太狼\", \"predicate\": \"母亲\", \"object\": \"娘娘狼\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "subject": "红太狼",
+    "predicate": "出处",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "性格",
+    "object": "爱打扮"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "口头禅",
+    "object": "快去抓羊"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "武器",
+    "object": "平底锅"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "必杀技",
+    "object": "千手平底锅"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "丈夫",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "父亲",
+    "object": "爹爹狼"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "母亲",
+    "object": "娘娘狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 410,
+ "output_tokens": 197,
+ "cached_read_tokens": 256,
+ "latency_ms": 2974.819041963201,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

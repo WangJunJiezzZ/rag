@@ -1,0 +1,14 @@
+{
+ "text": "根据红太狼的角色档案，她生气时拿**平底锅**招呼老公（灰太狼）。资料中明确提到，她的武器是平底锅，必杀技是“千手平底锅”，而且她“总是派丈夫去抓羊，抓不到就动手”。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 614,
+ "output_tokens": 61,
+ "cached_read_tokens": 0,
+ "latency_ms": 2664.3259580014274,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

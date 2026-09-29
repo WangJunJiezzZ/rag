@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，专门在比赛里当公证人的是**裁判机器人**。资料提到，B机器人们争夺和平星时，裁判机器人会突然出现，让大家用各种运动或游戏比赛决出胜负。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 353,
+ "output_tokens": 44,
+ "cached_read_tokens": 0,
+ "latency_ms": 2817.9024169803597,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

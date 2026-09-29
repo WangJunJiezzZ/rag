@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"慢羊羊是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"慢羊羊又名慢羊羊村长\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"ALIAS\", \"object\": \"慢羊羊村长\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色是羊族里最年长的羊，行动比蜗牛还慢，拄着拐杖，记性不好\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"CARRIES\", \"object\": \"拐杖\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色是羊村的村长\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"HEAD_OF\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"该角色是羊村的村长\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIVES_IN\", \"object\": \"羊村\", \"object_type\": \"Place\"},\n {\"evidence\": \"该角色是大肥羊学校的校长\", \"subject\": \"慢羊羊\", \"subject_type\": \"Character\", \"relation\": \"HEAD_OF\", \"object\": \"大肥羊学校\", \"object_type\": \"Place\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "慢羊羊是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "慢羊羊又名慢羊羊村长",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "ALIAS",
+    "object": "慢羊羊村长",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色是羊族里最年长的羊，行动比蜗牛还慢，拄着拐杖，记性不好",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "CARRIES",
+    "object": "拐杖",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色是羊村的村长",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "HEAD_OF",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "该角色是羊村的村长",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "LIVES_IN",
+    "object": "羊村",
+    "object_type": "Place"
+   },
+   {
+    "evidence": "该角色是大肥羊学校的校长",
+    "subject": "慢羊羊",
+    "subject_type": "Character",
+    "relation": "HEAD_OF",
+    "object": "大肥羊学校",
+    "object_type": "Place"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2503,
+ "output_tokens": 339,
+ "cached_read_tokens": 0,
+ "latency_ms": 3704.8185410094447,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

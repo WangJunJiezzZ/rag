@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰和小香香是表亲（远房表兄妹）关系。**\n\n关系路径：小灰灰的母亲**红太狼**与**香太狼**是表亲（COUSIN_OF），而香太狼是**小香香**的母亲（PARENT_OF）。因此小灰灰与小香香是隔了一代的表亲关系。\n\n依据: doc-0012, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3743,
+ "output_tokens": 87,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3118.5733329621144,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

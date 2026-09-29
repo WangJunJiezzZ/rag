@@ -51,7 +51,9 @@ def main() -> int:
     ap.add_argument("--strategy", default="contextual", help="B 组使用的切块策略")
     ap.add_argument("--detail", action="store_true")
     ap.add_argument("--with-extracted", action="store_true",
-                    help="同时评测用抽取图/无消歧图的检索 —— 上界 vs 实测")
+                    help="(已默认开启, 保留以兼容旧命令)")
+    ap.add_argument("--no-extracted", action="store_true",
+                    help="不评测抽取图/无消歧图; 缺省时只要文件存在就一起评 —— 上界 vs 实测")
     args = ap.parse_args()
 
     docs = list(read_jsonl(ROOT / "data/synthetic/documents.jsonl"))
@@ -82,8 +84,10 @@ def main() -> int:
         d2c[c.doc_id].append(c.id)
 
     bm25 = BM25Retriever(chunks, "BM25")
-    graph = GraphRetriever(kg, d2c, name="Graph(oracle)")
-    graph_nohub = GraphRetriever(kg, d2c, name="Graph(无枢纽阻断)", hub_degree=None)
+    ctext = {c.id: c.raw_text for c in chunks}
+    graph = GraphRetriever(kg, d2c, name="Graph(oracle)", chunk_text=ctext)
+    graph_nohub = GraphRetriever(kg, d2c, name="Graph(无枢纽阻断)", hub_degree=None,
+                                 chunk_text=ctext)
     hybrid = RRFFusion([bm25, graph], name="RRF(朴素)")
 
     retrievers = [bm25]
@@ -99,8 +103,11 @@ def main() -> int:
         lexical = bm25
 
     retrievers += [graph, graph_nohub, hybrid]
+    if dense is not None:
+        # 与 Routed 同样三路都有, 只差"融合 vs 路由" —— 否则比较的其实是有没有向量
+        retrievers.append(RRFFusion([bm25, dense, graph], name="RRF(三路)"))
 
-    if args.with_extracted:
+    if not args.no_extracted:
         for path, label in [("data/index/extracted_graph.json", "Graph(抽取)"),
                             ("data/index/graph_noresolve.json", "Graph(无消歧)")]:
             fp = ROOT / path
@@ -108,7 +115,7 @@ def main() -> int:
                 print(f"[warn] 缺少 {path}, 跳过 —— 先跑 python run.py build-graph")
                 continue
             kg2 = KnowledgeGraph.load(fp)
-            g2 = GraphRetriever(kg2, d2c, name=label)
+            g2 = GraphRetriever(kg2, d2c, name=label, chunk_text=ctext)
             retrievers.append(g2)
             retrievers.append(RoutedRetriever(
                 lexical, g2, QueryRouter(EntityLinker(kg2)),

@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，最爱吃水果的两个角色是**蕉太狼**和**香太狼**。\n\n- **蕉太狼**：资料中明确写到“该角色最爱吃香蕉”，香蕉属于水果。\n- **香太狼**：资料中写到“该角色喜欢蕉太狼”，而蕉太狼最爱吃香蕉，因此香太狼也与“爱吃水果（香蕉）”这一特征相关联。\n\n其他角色中，丸子龙最爱吃糯米丸子，小灰灰没有提到爱吃水果。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 290,
+ "output_tokens": 103,
+ "cached_read_tokens": 0,
+ "latency_ms": 2984.9664170178585,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

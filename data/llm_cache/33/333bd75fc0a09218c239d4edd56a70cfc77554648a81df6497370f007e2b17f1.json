@@ -1,0 +1,14 @@
+{
+ "text": "慢羊羊动作比蜗牛还慢，拄着拐杖。[1]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 380,
+ "output_tokens": 18,
+ "cached_read_tokens": 128,
+ "latency_ms": 2785.140375024639,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

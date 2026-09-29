@@ -1,0 +1,14 @@
+{
+ "text": "根据资料，红太狼的武器是**平底锅**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 394,
+ "output_tokens": 15,
+ "cached_read_tokens": 0,
+ "latency_ms": 2316.5402919985354,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

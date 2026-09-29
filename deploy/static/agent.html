@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent 调用回放</title>
+<style>
+/* 色板与 index.html 保持一致 */
+:root{--bg:#0f1115;--panel:#171a21;--panel2:#1d212a;--line:#272c38;--fg:#e6e9ef;
+ --muted:#8b93a7;--accent:#5b9dff;--accent2:#7ee0b8;--warn:#ffb454;--danger:#ff6b6b;--ok:#7ee0b8;}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f7f8fa;--panel:#fff;
+ --panel2:#f0f2f6;--line:#dfe3ea;--fg:#171a21;--muted:#6b7280;--accent:#2563eb;--accent2:#0f9d76;
+ --ok:#0f9d76;--warn:#b45309;--danger:#dc2626;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.6 -apple-system,BlinkMacSystemFont,
+ "Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+.wrap{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:14px}
+h1{font-size:20px;margin:0;letter-spacing:.5px}
+.sub{color:var(--muted);font-size:13px}
+.back{margin-left:auto;font-size:13px}
+a{color:var(--accent)}
+.banner{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+ border-radius:9px;padding:12px 14px;font-size:13px;color:var(--muted);margin-bottom:14px;line-height:1.8}
+.banner b{color:var(--fg)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+.card h2{font-size:13px;margin:0 0 12px;color:var(--muted);font-weight:600;letter-spacing:.6px}
+.q{font-size:17px;font-weight:600;margin:0 0 10px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:13px}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.doc{display:inline-block;font:12px ui-monospace,SFMono-Regular,Menlo,monospace;border:1px solid var(--line);
+ border-radius:5px;padding:0 6px;margin:2px 3px 2px 0;background:var(--panel2)}
+.doc.hit{border-color:var(--ok);color:var(--ok)}
+.doc.miss{border-color:var(--danger);color:var(--danger)}
+/* 对比表 */
+.tbl{width:100%;border-collapse:collapse;font-size:13px}
+.tbl th,.tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{color:var(--muted);font-weight:600;font-size:12px}
+.tbl td.num{font-variant-numeric:tabular-nums}
+.tblwrap{overflow-x:auto}
+.ok{color:var(--ok);font-weight:600}.bad{color:var(--danger);font-weight:600}
+/* 切换 */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{flex:1;min-width:200px;background:var(--panel);border:1px solid var(--line);border-radius:10px;
+ padding:11px 14px;cursor:pointer;color:var(--fg);font:inherit;text-align:left;transition:.15s}
+.tab:hover{border-color:var(--accent)}
+.tab.on{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.tab .t{font-weight:600}.tab .s{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.verdict{border-radius:9px;padding:11px 14px;font-size:13px;line-height:1.8;margin-bottom:14px;
+ background:var(--panel);border:1px solid var(--line)}
+.verdict.correct{border-left:3px solid var(--ok)}
+.verdict.wrong{border-left:3px solid var(--danger)}
+/* 时间线 */
+.round{position:relative;padding:0 0 18px 26px}
+.round::before{content:"";position:absolute;left:8px;top:22px;bottom:0;width:2px;background:var(--line)}
+.round:last-child::before{display:none}
+.round .dot{position:absolute;left:0;top:3px;width:18px;height:18px;border-radius:50%;background:var(--panel2);
+ border:2px solid var(--accent);font-size:10px;line-height:14px;text-align:center;color:var(--accent);font-weight:700}
+.round.final .dot{border-color:var(--ok);color:var(--ok)}
+.round h3{font-size:13px;margin:0 0 8px;font-weight:600}
+.round h3 span{color:var(--muted);font-weight:400}
+.call{border:1px solid var(--line);border-radius:9px;margin-bottom:8px;overflow:hidden;background:var(--panel)}
+.call summary{cursor:pointer;padding:9px 12px;display:flex;gap:10px;align-items:baseline;list-style:none;
+ flex-wrap:wrap}
+.call summary::-webkit-details-marker{display:none}
+.call .fn{font:600 12.5px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent)}
+.call .args{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--fg);flex:1;min-width:0;
+ overflow-wrap:anywhere}
+.call .why{display:block;width:100%;font-size:12px;color:var(--muted)}
+.call .sz{font-size:11px;color:var(--muted);flex:none}
+.call .sz::after{content:" ▸"}.call[open] .sz::after{content:" ▾"}
+.call pre{margin:0;padding:10px 12px;border-top:1px solid var(--line);background:var(--panel2);
+ font:11.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);max-height:320px;overflow:auto;
+ white-space:pre-wrap;overflow-wrap:anywhere}
+/* 答案 markdown */
+.md{line-height:1.8;font-size:14px;overflow-wrap:anywhere}
+.md h1,.md h2,.md h3,.md h4{font-size:15px;margin:10px 0 6px}
+.md p{margin:6px 0}.md ul,.md ol{margin:6px 0;padding-left:22px}
+.md pre{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;
+ overflow-x:auto;font:12.5px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace}
+.md table{border-collapse:collapse;font-size:13px;margin:8px 0;display:block;overflow-x:auto}
+.md th,.md td{border:1px solid var(--line);padding:5px 9px;text-align:left}
+.md th{background:var(--panel2)}
+.md code{font:12.5px ui-monospace,SFMono-Regular,Menlo,monospace}
+.note{color:var(--muted);font-size:11.5px;line-height:1.7}
+.empty{color:var(--muted);text-align:center;padding:30px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Agent 调用回放</h1>
+    <span class="sub">MCP · 工具调用 · DeepSeek　<b style="color:var(--warn)">喜羊羊 × 铁甲小宝</b></span>
+    <a class="back" href="index.html">← 返回检索演示</a>
+  </header>
+
+  <div class="banner">
+    <b>这是什么：</b>我把知识图谱做成了一个 <b>MCP Server</b>（可以理解成 AI 的 USB 接口），让 AI 能通过标准协议调用
+    「查角色、查关系、解释两个角色是什么关系、读原文」等 7 个工具。下面是 DeepSeek 回答同一道题的<b>真实运行录像</b>：
+    每一步调哪个工具、传什么参数、拿到什么结果，<b>都是模型自己决定的</b>。<br>
+    <b>怎么看：</b>先看下方对比表，再切换两次运行，点开每一步查看工具的原始返回。
+    本页是纯静态回放，不调用任何模型。
+  </div>
+
+  <div id="app"><div class="empty">加载中…</div></div>
+
+  <div class="note" style="text-align:center;margin-top:20px">
+    语料根据维基百科等公开资料整理，角色及形象权利归原著作权方所有，本页面仅作技术演示。
+    花费按 deepseek-chat 近似单价估算，仅作量级参考。
+  </div>
+</div>
+
+<script type="module">
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// 每个工具一句白话, 让没看过代码的人也知道这一步在干什么
+const WHY = {
+  find_entity: '把名称解析成图谱里的实体',
+  get_neighbors: '列出这个实体的一跳关系',
+  find_paths: '找两个实体之间的关系路径',
+  explain_relation: '关系解释：找两个角色之间的亲属/搭档路径',
+  search_text: '在全部文档里做全文检索',
+  read_document: '读取原始文档，核实证据',
+  ask: '走内置的固定问答流水线',
+};
+
+// 极简 markdown: 先整体转义, 再处理标题 / 粗体 / 表格 / 代码块 / 列表 —— 不引入任何库
+function md(src){
+  const lines = esc(src).split('\n'), out = [];
+  let i = 0;
+  const inline = s => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/`([^`]+)`/g, '<code>$1</code>');
+  while (i < lines.length){
+    const l = lines[i];
+    if (l.startsWith('```')){
+      const buf = []; i++;
+      while (i < lines.length && !lines[i].startsWith('```')) buf.push(lines[i++]);
+      i++; out.push(`<pre>${buf.join('\n')}</pre>`); continue;
+    }
+    if (/^\s*\|/.test(l)){
+      const rows = [];
+      while (i < lines.length && /^\s*\|/.test(lines[i])) rows.push(lines[i++]);
+      const cells = r => r.trim().replace(/^\||\|$/g, '').split('|').map(c => inline(c.trim()));
+      const body = rows.filter(r => !/^\s*\|[\s:|-]+\|\s*$/.test(r));
+      const [head, ...rest] = body;
+      out.push('<table><tr>' + cells(head).map(c => `<th>${c}</th>`).join('') + '</tr>'
+        + rest.map(r => '<tr>' + cells(r).map(c => `<td>${c}</td>`).join('') + '</tr>').join('') + '</table>');
+      continue;
+    }
+    const h = l.match(/^(#{1,4})\s+(.*)/);
+    if (h){ out.push(`<h3>${inline(h[2])}</h3>`); i++; continue; }
+    if (/^\s*([-*]|\d+\.)\s+/.test(l)){
+      const ordered = /^\s*\d+\./.test(l), buf = [];
+      while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i]))
+        buf.push(`<li>${inline(lines[i++].replace(/^\s*([-*]|\d+\.)\s+/, ''))}</li>`);
+      out.push(ordered ? `<ol>${buf.join('')}</ol>` : `<ul>${buf.join('')}</ul>`); continue;
+    }
+    if (l.trim()) out.push(`<p>${inline(l)}</p>`);
+    i++;
+  }
+  return out.join('');
+}
+
+function pretty(text){
+  try { return JSON.stringify(JSON.parse(text), null, 2); } catch { return text; }
+}
+
+const cited = r => new Set(r.answer.match(/doc-\d{4}/g) || []);
+const fmt = n => n.toLocaleString('en-US');
+
+function summary(demo){
+  const order = ['oracle', 'extracted'].filter(k => demo.runs[k]);
+  const col = k => demo.runs[k];
+  const row = (label, f) => `<tr><th>${label}</th>${order.map(k => `<td class="num">${f(col(k))}</td>`).join('')}</tr>`;
+  return `<div class="card"><h2>两次运行对比</h2><div class="tblwrap"><table class="tbl">
+    <tr><th></th>${order.map(k => `<th>${esc(col(k).label)}</th>`).join('')}</tr>
+    ${row('结论', r => r.verdict === 'correct' ? '<span class="ok">✓ 答对</span>'
+      : r.verdict === 'wrong' ? '<span class="bad">✗ 答错</span>' : '待核对')}
+    ${row('工具调用', r => `${r.steps.length} 次`)}
+    ${row('模型调用', r => `${r.llm_calls} 次`)}
+    ${row('token（输入 + 输出）', r => `${fmt(r.input_tokens)} + ${fmt(r.output_tokens)}`)}
+    ${row('估算花费', r => `$${r.cost_usd.toFixed(4)}`)}
+    ${row('引用的标准证据', r => { const c = cited(r); return `${demo.gold_docs.filter(d => c.has(d)).length} / ${demo.gold_docs.length}`; })}
+  </table></div></div>`;
+}
+
+function timeline(run){
+  const rounds = new Map();
+  for (const s of run.steps){
+    if (!rounds.has(s.round)) rounds.set(s.round, []);
+    rounds.get(s.round).push(s);
+  }
+  const parts = [...rounds.entries()].map(([n, steps]) => `
+    <div class="round"><div class="dot">${n}</div>
+      <h3>第 ${n} 轮 · 模型决定调用 ${steps.length} 个工具
+        <span>${steps.length > 1 ? '（同一轮并行发出）' : ''}</span></h3>
+      ${steps.map(s => `<details class="call">
+        <summary><span class="fn">${esc(s.tool)}</span>
+          <span class="args">${esc(JSON.stringify(s.args))}</span>
+          <span class="sz">${s.error ? '出错 · ' : ''}${fmt(s.result.length)} 字符</span>
+          <span class="why">${esc(WHY[s.tool] || '')}</span></summary>
+        <pre>${esc(pretty(s.result))}</pre></details>`).join('')}
+    </div>`);
+  parts.push(`<div class="round final"><div class="dot">✓</div>
+    <h3>第 ${run.llm_calls} 轮 · 模型不再调用工具，给出最终答案</h3>
+    <div class="card md" style="margin:0">${md(run.answer)}</div></div>`);
+  return parts.join('');
+}
+
+function render(demo, key){
+  const run = demo.runs[key], c = cited(run);
+  $('#tabs').querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.dataset.k === key));
+  $('#run').innerHTML = `
+    ${run.verdict || run.note ? `<div class="verdict ${run.verdict || ''}"><b>${
+      run.verdict === 'correct' ? '✓ 答对了' : run.verdict === 'wrong' ? '✗ 答错了' : '待核对'}</b>　${esc(run.note || '')}</div>` : ''}
+    <div class="card"><h2>证据覆盖（绿色 = 已引用，红色 = 漏引）</h2>
+      ${demo.gold_docs.map(d => `<span class="doc ${c.has(d) ? 'hit' : 'miss'}">${d}</span>`).join('')}</div>
+    <div class="card"><h2>逐步回放（点开每一步查看工具原始返回）</h2>${timeline(run)}</div>`;
+}
+
+let DATA = null;
+
+function show(idx){
+  const demo = DATA.demos[idx];
+  const keys = ['oracle', 'extracted'].filter(k => demo.runs[k]);
+  $('#pick')?.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', +b.dataset.i === idx));
+  $('#demo').innerHTML = `
+    <div class="card">
+      <p class="q">${esc(demo.question)}</p>
+      <dl class="kv">
+        <dt>对应评测题</dt><dd>${esc(demo.qid)}（${esc(demo.eval_question)}）</dd>
+        <dt>标准答案</dt><dd>${esc(demo.gold_answer)}</dd>
+        <dt>标准证据</dt><dd>${demo.gold_docs.map(d => `<span class="doc">${d}</span>`).join('')}</dd>
+        <dt>模型</dt><dd>${esc(DATA.model)}，通过 MCP 调用 7 个工具</dd>
+      </dl>
+    </div>
+    ${summary(demo)}
+    <div class="tabs" id="tabs">${keys.map(k => `<button class="tab" data-k="${k}">
+      <span class="t">${({correct: '✓ ', wrong: '✗ '})[demo.runs[k].verdict] || ''}${esc(demo.runs[k].label)}</span>
+      <span class="s">${demo.runs[k].steps.length} 次工具调用 · ${demo.runs[k].llm_calls} 轮模型调用</span></button>`).join('')}</div>
+    <div id="run"></div>`;
+  $('#tabs').addEventListener('click', e => {
+    const b = e.target.closest('.tab'); if (b) render(demo, b.dataset.k);
+  });
+  render(demo, keys[0]);
+}
+
+async function boot(){
+  DATA = await fetch('data/agent_traces.json').then(r => r.json());
+  if (!DATA.demos.length){ $('#app').innerHTML = '<div class="empty">没有可回放的运行记录</div>'; return; }
+  // 只有一道题时不显示选题栏
+  const pick = DATA.demos.length > 1 ? `<div class="tabs" id="pick">${DATA.demos.map((d, i) =>
+    `<button class="tab" data-i="${i}"><span class="t">${esc(d.question)}</span>
+     <span class="s">${esc(d.qid)} · ${esc(d.label || d.type)}</span></button>`).join('')}</div>` : '';
+  $('#app').innerHTML = pick + '<div id="demo"></div>';
+  $('#pick')?.addEventListener('click', e => {
+    const b = e.target.closest('.tab'); if (b) show(+b.dataset.i);
+  });
+  show(0);
+}
+boot().catch(e => { $('#app').innerHTML = `<div class="empty">加载失败：${esc(e.message)}</div>`; });
+</script>
+</body>
+</html>

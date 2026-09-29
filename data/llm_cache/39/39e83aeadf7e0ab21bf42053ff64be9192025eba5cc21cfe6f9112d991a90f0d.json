@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的外公是爹爹狼。小灰灰的母亲是红太狼[1]，红太狼的父亲是爹爹狼[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 687,
+ "output_tokens": 30,
+ "cached_read_tokens": 256,
+ "latency_ms": 4499.6839159866795,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

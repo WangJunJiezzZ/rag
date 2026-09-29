@@ -1,0 +1,89 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"卡布达是特摄剧《铁甲小宝》中的角色\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是1 号机\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"1 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是独角仙\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"独角仙\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的口头禅是“卡布”\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"CATCHPHRASE\", \"object\": \"卡布\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的武器是电光棒\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"电光棒\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色最爱吃西瓜\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"FAVORITE_FOOD\", \"object\": \"西瓜\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的超级变换形态最多维持 3 分钟\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"TRANSFORM_TIME\", \"object\": \"3 分钟\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色可以变成巨人形态卡布达巨人\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"GIANT_FORM\", \"object\": \"卡布达巨人\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的搭档是小让\", \"subject\": \"卡布达\", \"subject_type\": \"Character\", \"relation\": \"PARTNER_OF\", \"object\": \"小让\", \"object_type\": \"Character\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "卡布达是特摄剧《铁甲小宝》中的角色",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是1 号机",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "1 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是独角仙",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "独角仙",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的口头禅是“卡布”",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "CATCHPHRASE",
+    "object": "卡布",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的武器是电光棒",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "电光棒",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色最爱吃西瓜",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "FAVORITE_FOOD",
+    "object": "西瓜",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的超级变换形态最多维持 3 分钟",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "TRANSFORM_TIME",
+    "object": "3 分钟",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色可以变成巨人形态卡布达巨人",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "GIANT_FORM",
+    "object": "卡布达巨人",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的搭档是小让",
+    "subject": "卡布达",
+    "subject_type": "Character",
+    "relation": "PARTNER_OF",
+    "object": "小让",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2017,
+ "output_tokens": 477,
+ "cached_read_tokens": 1536,
+ "latency_ms": 5013.520625012461,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

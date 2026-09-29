@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的口头禅是“爸爸，你又骗我”[5]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 993,
+ "output_tokens": 16,
+ "cached_read_tokens": 256,
+ "latency_ms": 2830.1115409703925,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

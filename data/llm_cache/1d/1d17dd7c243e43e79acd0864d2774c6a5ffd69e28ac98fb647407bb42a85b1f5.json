@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及卡布达最喜欢啃什么水果。\n\n资料[3]只提到「该角色最爱吃西瓜」，但未说明这是否为\"水果\"或\"最喜欢啃\"的水果，也未提及其他水果。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1220,
+ "output_tokens": 46,
+ "cached_read_tokens": 384,
+ "latency_ms": 2980.8247089968063,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

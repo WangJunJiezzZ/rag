@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及。提供的资料只包含角色档案、人物关系和节目基本信息，没有任何关于灰太狼抓羊数量的记录。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1109,
+ "output_tokens": 27,
+ "cached_read_tokens": 896,
+ "latency_ms": 3539.9161250097677,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

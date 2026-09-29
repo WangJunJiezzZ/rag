@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼是被猴子带大的素食者，他从小和父母失散，被猴子收养，吃素[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 419,
+ "output_tokens": 26,
+ "cached_read_tokens": 0,
+ "latency_ms": 2949.3035830091685,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

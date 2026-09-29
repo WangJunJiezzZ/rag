@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"鲨鱼辣椒是特摄剧《铁甲小宝》中的角色\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是9 号机\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"9 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是鲨鱼\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"鲨鱼\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的武器是鲨鱼神斧\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"WEAPON\", \"object\": \"鲨鱼神斧\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的超级变换形态最多维持 15 分钟\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"TRANSFORM_TIME\", \"object\": \"15 分钟\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色可以变成巨人形态超级鲨鱼巨人\", \"subject\": \"鲨鱼辣椒\", \"subject_type\": \"Character\", \"relation\": \"GIANT_FORM\", \"object\": \"超级鲨鱼巨人\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "鲨鱼辣椒是特摄剧《铁甲小宝》中的角色",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是9 号机",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "9 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是鲨鱼",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "鲨鱼",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的武器是鲨鱼神斧",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "WEAPON",
+    "object": "鲨鱼神斧",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的超级变换形态最多维持 15 分钟",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "TRANSFORM_TIME",
+    "object": "15 分钟",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色可以变成巨人形态超级鲨鱼巨人",
+    "subject": "鲨鱼辣椒",
+    "subject_type": "Character",
+    "relation": "GIANT_FORM",
+    "object": "超级鲨鱼巨人",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2492,
+ "output_tokens": 329,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3759.012750000693,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "资料中提到的羊村居民有：\n\n- 喜羊羊 [2]\n- 美羊羊 [2]\n- 懒羊羊 [2]\n- 沸羊羊 [2]\n- 暖羊羊 [2]\n- 慢羊羊村长 [2]\n\n此外，资料还提到绵羊族先祖软绵绵建立了羊村 [3]，但未明确说明软绵绵是否住在羊村。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1005,
+ "output_tokens": 85,
+ "cached_read_tokens": 256,
+ "latency_ms": 2983.517875021789,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

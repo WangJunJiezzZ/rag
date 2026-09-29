@@ -1,0 +1,72 @@
+{
+ "text": "{\"entities\": [{\"name\": \"蝎子莱莱\", \"type\": \"角色\", \"attributes\": {\"别名\": \"蝎子蓝蓝\", \"编号\": \"4号机\", \"原型\": \"鲎\", \"造型颜色\": \"紫色\", \"爱好\": \"喝酒\"}}, {\"name\": \"蝎子蓝蓝\", \"type\": \"角色\", \"attributes\": {}}, {\"name\": \"铁甲小宝\", \"type\": \"作品\", \"attributes\": {\"类型\": \"特摄剧\"}}, {\"name\": \"鲎\", \"type\": \"生物\", \"attributes\": {}}], \"relations\": [{\"subject\": \"蝎子莱莱\", \"predicate\": \"又名\", \"object\": \"蝎子蓝蓝\"}, {\"subject\": \"蝎子莱莱\", \"predicate\": \"登场于\", \"object\": \"铁甲小宝\"}, {\"subject\": \"蝎子莱莱\", \"predicate\": \"编号是\", \"object\": \"4号机\"}, {\"subject\": \"蝎子莱莱\", \"predicate\": \"原型是\", \"object\": \"鲎\"}, {\"subject\": \"蝎子莱莱\", \"predicate\": \"爱好是\", \"object\": \"喝酒\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蝎子莱莱",
+    "type": "角色",
+    "attributes": {
+     "别名": "蝎子蓝蓝",
+     "编号": "4号机",
+     "原型": "鲎",
+     "造型颜色": "紫色",
+     "爱好": "喝酒"
+    }
+   },
+   {
+    "name": "蝎子蓝蓝",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "attributes": {
+     "类型": "特摄剧"
+    }
+   },
+   {
+    "name": "鲎",
+    "type": "生物",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "又名",
+    "object": "蝎子蓝蓝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "编号是",
+    "object": "4号机"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "原型是",
+    "object": "鲎"
+   },
+   {
+    "subject": "蝎子莱莱",
+    "predicate": "爱好是",
+    "object": "喝酒"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 446,
+ "output_tokens": 253,
+ "cached_read_tokens": 256,
+ "latency_ms": 3894.844333990477,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

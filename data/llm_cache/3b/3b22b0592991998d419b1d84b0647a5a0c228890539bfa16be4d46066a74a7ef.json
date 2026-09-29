@@ -1,0 +1,14 @@
+{
+ "text": "根据参考资料，铁甲小宝里的 B 机器人都是**高圆寺寅彦**（又名高圆寺博士）制造出来的。他是机器人科学家，也是机器人技术的天才，剧中所有 B 机器人都是他制造的。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 824,
+ "output_tokens": 46,
+ "cached_read_tokens": 0,
+ "latency_ms": 2605.954832979478,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

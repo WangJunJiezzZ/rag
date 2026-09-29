@@ -1,0 +1,41 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"田德莉娜是特摄剧《铁甲小宝》中的角色\", \"subject\": \"田德莉娜\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是10 号机\", \"subject\": \"田德莉娜\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"10 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是瓢虫\", \"subject\": \"田德莉娜\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"瓢虫\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "田德莉娜是特摄剧《铁甲小宝》中的角色",
+    "subject": "田德莉娜",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是10 号机",
+    "subject": "田德莉娜",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "10 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是瓢虫",
+    "subject": "田德莉娜",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "瓢虫",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2463,
+ "output_tokens": 172,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3908.6022910196334,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

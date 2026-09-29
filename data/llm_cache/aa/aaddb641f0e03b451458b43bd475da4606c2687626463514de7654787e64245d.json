@@ -1,0 +1,14 @@
+{
+ "text": "没有叫“小宝”的角色——剧名虽然叫《铁甲小宝》，剧中却没有叫“小宝”的角色 [1]。\n\n主角是小让（又名高圆寺让），身份是小学生 [5]。他发现了爷爷制造的甲虫机器人卡布达 [1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1200,
+ "output_tokens": 55,
+ "cached_read_tokens": 1024,
+ "latency_ms": 2744.3585000000894,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

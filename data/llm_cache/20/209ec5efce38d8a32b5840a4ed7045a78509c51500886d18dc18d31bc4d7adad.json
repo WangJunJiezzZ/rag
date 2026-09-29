@@ -1,0 +1,58 @@
+{
+ "text": "{\"entities\":[{\"name\":\"黑太狼\",\"type\":\"角色\",\"attributes\":{\"身份\":\"狼族大王\"}},{\"name\":\"银太狼\",\"type\":\"角色\",\"attributes\":{\"身份\":\"黑太狼的妻子\"}},{\"name\":\"武大狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"喜羊羊与灰太狼\",\"type\":\"动画作品\",\"attributes\":{}}],\"relations\":[{\"subject\":\"黑太狼\",\"predicate\":\"妻子\",\"object\":\"银太狼\"},{\"subject\":\"黑太狼\",\"predicate\":\"祖先\",\"object\":\"武大狼\"},{\"subject\":\"黑太狼\",\"predicate\":\"登场作品\",\"object\":\"喜羊羊与灰太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "黑太狼",
+    "type": "角色",
+    "attributes": {
+     "身份": "狼族大王"
+    }
+   },
+   {
+    "name": "银太狼",
+    "type": "角色",
+    "attributes": {
+     "身份": "黑太狼的妻子"
+    }
+   },
+   {
+    "name": "武大狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "黑太狼",
+    "predicate": "妻子",
+    "object": "银太狼"
+   },
+   {
+    "subject": "黑太狼",
+    "predicate": "祖先",
+    "object": "武大狼"
+   },
+   {
+    "subject": "黑太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 458,
+ "output_tokens": 143,
+ "cached_read_tokens": 256,
+ "latency_ms": 3054.518208024092,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

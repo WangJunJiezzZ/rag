@@ -1,0 +1,14 @@
+{
+ "text": "美羊羊喜欢喜羊羊 [1][3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 927,
+ "output_tokens": 12,
+ "cached_read_tokens": 768,
+ "latency_ms": 2649.0041670040227,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

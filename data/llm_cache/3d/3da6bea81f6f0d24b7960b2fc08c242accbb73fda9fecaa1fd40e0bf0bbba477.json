@@ -1,0 +1,33 @@
+{
+ "text": "{\"triples\": [{\"evidence\": \"美羊羊是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"美羊羊\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"}, {\"evidence\": \"该角色喜欢喜羊羊\", \"subject\": \"美羊羊\", \"subject_type\": \"Character\", \"relation\": \"LIKES\", \"object\": \"喜羊羊\", \"object_type\": \"Character\"}]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "美羊羊是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "美羊羊",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色喜欢喜羊羊",
+    "subject": "美羊羊",
+    "subject_type": "Character",
+    "relation": "LIKES",
+    "object": "喜羊羊",
+    "object_type": "Character"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1952,
+ "output_tokens": 120,
+ "cached_read_tokens": 0,
+ "latency_ms": 2943.555625039153,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,77 @@
+{
+ "text": "{\"entities\":[{\"name\":\"香太狼\",\"type\":\"角色\",\"attributes\":{\"作品\":\"喜羊羊与灰太狼\",\"武器\":\"熨斗\"}},{\"name\":\"红太狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"夜太狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"小香香\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"蕉太狼\",\"type\":\"角色\",\"attributes\":{}},{\"name\":\"喜羊羊与灰太狼\",\"type\":\"动画\",\"attributes\":{}}],\"relations\":[{\"subject\":\"香太狼\",\"predicate\":\"登场作品\",\"object\":\"喜羊羊与灰太狼\"},{\"subject\":\"香太狼\",\"predicate\":\"表姐\",\"object\":\"红太狼\"},{\"subject\":\"香太狼\",\"predicate\":\"丈夫\",\"object\":\"夜太狼\"},{\"subject\":\"香太狼\",\"predicate\":\"女儿\",\"object\":\"小香香\"},{\"subject\":\"香太狼\",\"predicate\":\"喜欢\",\"object\":\"蕉太狼\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "香太狼",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "武器": "熨斗"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "夜太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "小香香",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "蕉太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "香太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "表姐",
+    "object": "红太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "丈夫",
+    "object": "夜太狼"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "女儿",
+    "object": "小香香"
+   },
+   {
+    "subject": "香太狼",
+    "predicate": "喜欢",
+    "object": "蕉太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 357,
+ "output_tokens": 212,
+ "cached_read_tokens": 128,
+ "latency_ms": 3711.454165983014,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

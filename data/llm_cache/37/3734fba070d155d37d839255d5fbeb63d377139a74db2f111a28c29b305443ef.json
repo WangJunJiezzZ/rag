@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及懒羊羊的生日。\n\n现有资料中，懒羊羊的角色档案只包含基本资料、性格与特长、登场说明等内容[2][4][5]，均未记载其生日。资料中唯一出现的生日信息是灰太狼的生日（羊历 3475 年 9 月 26 日）[3]，但那是灰太狼的，不能当作懒羊羊的生日。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1267,
+ "output_tokens": 91,
+ "cached_read_tokens": 256,
+ "latency_ms": 2516.6487080277875,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

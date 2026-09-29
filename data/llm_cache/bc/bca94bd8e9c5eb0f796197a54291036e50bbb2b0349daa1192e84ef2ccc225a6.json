@@ -1,0 +1,73 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"丸子龙是特摄剧《铁甲小宝》中的角色\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"铁甲小宝\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色的编号是6 号机\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"UNIT_NO\", \"object\": \"6 号机\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的原型是鼠妇\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"PROTOTYPE\", \"object\": \"鼠妇\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色肚子里藏着和平星的碎片\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"CARRIES\", \"object\": \"和平星的碎片\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色起初保持中立，后来加入了卡布达一方\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"中立\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色起初保持中立，后来加入了卡布达一方\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"FACTION\", \"object\": \"卡布达一方\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色最爱吃糯米丸子\", \"subject\": \"丸子龙\", \"subject_type\": \"Character\", \"relation\": \"FAVORITE_FOOD\", \"object\": \"糯米丸子\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "丸子龙是特摄剧《铁甲小宝》中的角色",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "铁甲小宝",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色的编号是6 号机",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "UNIT_NO",
+    "object": "6 号机",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的原型是鼠妇",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "PROTOTYPE",
+    "object": "鼠妇",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色肚子里藏着和平星的碎片",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "CARRIES",
+    "object": "和平星的碎片",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色起初保持中立，后来加入了卡布达一方",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "中立",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色起初保持中立，后来加入了卡布达一方",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "FACTION",
+    "object": "卡布达一方",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色最爱吃糯米丸子",
+    "subject": "丸子龙",
+    "subject_type": "Character",
+    "relation": "FAVORITE_FOOD",
+    "object": "糯米丸子",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2464,
+ "output_tokens": 369,
+ "cached_read_tokens": 2048,
+ "latency_ms": 3466.5863750269637,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

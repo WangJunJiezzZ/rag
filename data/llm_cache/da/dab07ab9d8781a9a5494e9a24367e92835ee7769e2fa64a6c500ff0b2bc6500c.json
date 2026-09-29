@@ -1,0 +1,149 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"作品\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"日本东映\",\n      \"type\": \"组织\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"特摄电视剧\",\n      \"type\": \"类型\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"1997年2月23日\",\n      \"type\": \"时间\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"朝日电视台\",\n      \"type\": \"组织\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"52集\",\n      \"type\": \"数量\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"金属英雄系列\",\n      \"type\": \"系列\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"第16部作品\",\n      \"type\": \"作品\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"小让\",\n      \"type\": \"角色\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"爷爷\",\n      \"type\": \"角色\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"甲虫机器人卡布达\",\n      \"type\": \"角色\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"B机器人\",\n      \"type\": \"角色\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"和平星\",\n      \"type\": \"物品\",\n      \"aliases\": []\n    },\n    {\n      \"name\": \"小宝\",\n      \"type\": \"角色\",\n      \"aliases\": []\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"出品公司\",\n      \"object\": \"日本东映\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"类型\",\n      \"object\": \"特摄电视剧\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"首播时间\",\n      \"object\": \"1997年2月23日\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"首播电视台\",\n      \"object\": \"朝日电视台\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"集数\",\n      \"object\": \"52集\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"所属系列\",\n      \"object\": \"金属英雄系列\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"系列地位\",\n      \"object\": \"第16部作品\"\n    },\n    {\n      \"subject\": \"小让\",\n      \"predicate\": \"发现\",\n      \"object\": \"甲虫机器人卡布达\"\n    },\n    {\n      \"subject\": \"爷爷\",\n      \"predicate\": \"制造\",\n      \"object\": \"甲虫机器人卡布达\"\n    },\n    {\n      \"subject\": \"甲虫机器人卡布达\",\n      \"predicate\": \"争夺\",\n      \"object\": \"和平星\"\n    },\n    {\n      \"subject\": \"B机器人\",\n      \"predicate\": \"争夺\",\n      \"object\": \"和平星\"\n    },\n    {\n      \"subject\": \"铁甲小宝\",\n      \"predicate\": \"没有角色\",\n      \"object\": \"小宝\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "铁甲小宝",
+    "type": "作品",
+    "aliases": []
+   },
+   {
+    "name": "日本东映",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "特摄电视剧",
+    "type": "类型",
+    "aliases": []
+   },
+   {
+    "name": "1997年2月23日",
+    "type": "时间",
+    "aliases": []
+   },
+   {
+    "name": "朝日电视台",
+    "type": "组织",
+    "aliases": []
+   },
+   {
+    "name": "52集",
+    "type": "数量",
+    "aliases": []
+   },
+   {
+    "name": "金属英雄系列",
+    "type": "系列",
+    "aliases": []
+   },
+   {
+    "name": "第16部作品",
+    "type": "作品",
+    "aliases": []
+   },
+   {
+    "name": "小让",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "爷爷",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "甲虫机器人卡布达",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "B机器人",
+    "type": "角色",
+    "aliases": []
+   },
+   {
+    "name": "和平星",
+    "type": "物品",
+    "aliases": []
+   },
+   {
+    "name": "小宝",
+    "type": "角色",
+    "aliases": []
+   }
+  ],
+  "relations": [
+   {
+    "subject": "铁甲小宝",
+    "predicate": "出品公司",
+    "object": "日本东映"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "类型",
+    "object": "特摄电视剧"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "首播时间",
+    "object": "1997年2月23日"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "首播电视台",
+    "object": "朝日电视台"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "集数",
+    "object": "52集"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "所属系列",
+    "object": "金属英雄系列"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "系列地位",
+    "object": "第16部作品"
+   },
+   {
+    "subject": "小让",
+    "predicate": "发现",
+    "object": "甲虫机器人卡布达"
+   },
+   {
+    "subject": "爷爷",
+    "predicate": "制造",
+    "object": "甲虫机器人卡布达"
+   },
+   {
+    "subject": "甲虫机器人卡布达",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "B机器人",
+    "predicate": "争夺",
+    "object": "和平星"
+   },
+   {
+    "subject": "铁甲小宝",
+    "predicate": "没有角色",
+    "object": "小宝"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 256,
+ "output_tokens": 754,
+ "cached_read_tokens": 0,
+ "latency_ms": 5848.085874982644,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,14 @@
+{
+ "text": "丸子龙最爱吃糯米丸子[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 434,
+ "output_tokens": 9,
+ "cached_read_tokens": 0,
+ "latency_ms": 2877.714542031754,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

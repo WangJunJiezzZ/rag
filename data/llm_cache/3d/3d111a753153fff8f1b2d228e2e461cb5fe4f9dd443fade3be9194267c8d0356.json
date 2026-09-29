@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的口头禅是“我一定会回来的”。[1][8]",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 952,
+ "output_tokens": 16,
+ "cached_read_tokens": 768,
+ "latency_ms": 2835.8653750037774,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

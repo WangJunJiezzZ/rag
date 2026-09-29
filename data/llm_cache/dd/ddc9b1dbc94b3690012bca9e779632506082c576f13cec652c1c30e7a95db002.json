@@ -1,0 +1,74 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"蕉太狼\",\n      \"type\": \"角色\",\n      \"properties\": {\n        \"性格\": \"胆小\",\n        \"特长\": \"吃素\",\n        \"最爱食物\": \"香蕉\",\n        \"背景\": \"从小和父母失散，被猴子收养\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画作品\"\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"暖羊羊\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"猴子\",\n      \"type\": \"角色\"\n    },\n    {\n      \"name\": \"二叔\",\n      \"type\": \"角色\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"蕉太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"蕉太狼\",\n      \"predicate\": \"侄子\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"蕉太狼\",\n      \"predicate\": \"好朋友\",\n      \"object\": \"暖羊羊\"\n    },\n    {\n      \"subject\": \"蕉太狼\",\n      \"predicate\": \"被收养\",\n      \"object\": \"猴子\"\n    },\n    {\n      \"subject\": \"蕉太狼\",\n      \"predicate\": \"阻止\",\n      \"object\": \"二叔\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "蕉太狼",
+    "type": "角色",
+    "properties": {
+     "性格": "胆小",
+     "特长": "吃素",
+     "最爱食物": "香蕉",
+     "背景": "从小和父母失散，被猴子收养"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品"
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色"
+   },
+   {
+    "name": "暖羊羊",
+    "type": "角色"
+   },
+   {
+    "name": "猴子",
+    "type": "角色"
+   },
+   {
+    "name": "二叔",
+    "type": "角色"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "蕉太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "侄子",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "好朋友",
+    "object": "暖羊羊"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "被收养",
+    "object": "猴子"
+   },
+   {
+    "subject": "蕉太狼",
+    "predicate": "阻止",
+    "object": "二叔"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 267,
+ "output_tokens": 336,
+ "cached_read_tokens": 0,
+ "latency_ms": 3524.159624997992,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

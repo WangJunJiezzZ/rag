@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及任何机器人有「贪杯好饮」的特征。现有资料只包含阵营名单和警用机器人的基本资料，没有涉及角色性格或饮酒习惯的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 672,
+ "output_tokens": 38,
+ "cached_read_tokens": 512,
+ "latency_ms": 3444.6032499545254,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

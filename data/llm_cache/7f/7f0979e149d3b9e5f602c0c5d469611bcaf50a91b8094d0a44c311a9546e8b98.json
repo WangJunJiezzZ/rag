@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及红太狼最喜欢的颜色。现有资料只包含她的基本资料、人物关系、性格与特长、登场说明，没有关于她个人喜好的颜色的内容。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1026,
+ "output_tokens": 37,
+ "cached_read_tokens": 256,
+ "latency_ms": 3283.2803340279497,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

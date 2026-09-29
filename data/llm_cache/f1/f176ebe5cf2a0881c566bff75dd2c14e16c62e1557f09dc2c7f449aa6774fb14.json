@@ -1,0 +1,14 @@
+{
+ "text": "资料中未提及小让妈妈的名字。所提供的资料只包含小让本人的基本资料、性格特长、登场说明，以及卡布达、高圆寺寅彦、B 机器人阵营的相关信息，没有任何关于小让母亲的记载。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1112,
+ "output_tokens": 50,
+ "cached_read_tokens": 256,
+ "latency_ms": 3106.1563750263304,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

@@ -1,0 +1,65 @@
+{
+ "text": "{\"triples\": [\n {\"evidence\": \"喜羊羊是动画《喜羊羊与灰太狼》中的角色\", \"subject\": \"喜羊羊\", \"subject_type\": \"Character\", \"relation\": \"APPEARS_IN\", \"object\": \"喜羊羊与灰太狼\", \"object_type\": \"Show\"},\n {\"evidence\": \"该角色总是随身带着铃铛\", \"subject\": \"喜羊羊\", \"subject_type\": \"Character\", \"relation\": \"CARRIES\", \"object\": \"铃铛\", \"object_type\": \"Literal\"},\n {\"evidence\": \"该角色的父亲是智羊羊\", \"subject\": \"智羊羊\", \"subject_type\": \"Character\", \"relation\": \"PARENT_OF\", \"object\": \"喜羊羊\", \"object_type\": \"Character\"},\n {\"evidence\": \"该角色的母亲是丽羊羊\", \"subject\": \"丽羊羊\", \"subject_type\": \"Character\", \"relation\": \"PARENT_OF\", \"object\": \"喜羊羊\", \"object_type\": \"Character\"},\n {\"evidence\": \"智羊羊的身份是科学家\", \"subject\": \"智羊羊\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"科学家\", \"object_type\": \"Literal\"},\n {\"evidence\": \"丽羊羊的身份是歌星\", \"subject\": \"丽羊羊\", \"subject_type\": \"Character\", \"relation\": \"ROLE\", \"object\": \"歌星\", \"object_type\": \"Literal\"}\n]}",
+ "parsed": {
+  "triples": [
+   {
+    "evidence": "喜羊羊是动画《喜羊羊与灰太狼》中的角色",
+    "subject": "喜羊羊",
+    "subject_type": "Character",
+    "relation": "APPEARS_IN",
+    "object": "喜羊羊与灰太狼",
+    "object_type": "Show"
+   },
+   {
+    "evidence": "该角色总是随身带着铃铛",
+    "subject": "喜羊羊",
+    "subject_type": "Character",
+    "relation": "CARRIES",
+    "object": "铃铛",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "该角色的父亲是智羊羊",
+    "subject": "智羊羊",
+    "subject_type": "Character",
+    "relation": "PARENT_OF",
+    "object": "喜羊羊",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "该角色的母亲是丽羊羊",
+    "subject": "丽羊羊",
+    "subject_type": "Character",
+    "relation": "PARENT_OF",
+    "object": "喜羊羊",
+    "object_type": "Character"
+   },
+   {
+    "evidence": "智羊羊的身份是科学家",
+    "subject": "智羊羊",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "科学家",
+    "object_type": "Literal"
+   },
+   {
+    "evidence": "丽羊羊的身份是歌星",
+    "subject": "丽羊羊",
+    "subject_type": "Character",
+    "relation": "ROLE",
+    "object": "歌星",
+    "object_type": "Literal"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 2522,
+ "output_tokens": 317,
+ "cached_read_tokens": 0,
+ "latency_ms": 3185.32570800744,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

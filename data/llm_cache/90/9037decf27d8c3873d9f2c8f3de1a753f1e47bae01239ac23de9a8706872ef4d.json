@@ -1,0 +1,75 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"灰二太太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"作品\": \"喜羊羊与灰太狼\",\n        \"必杀技\": \"沉默羔羊十二式\",\n        \"称呼侄子\": \"尿太狼\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {}\n    },\n    {\n      \"name\": \"尿太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"说明\": \"灰太狼的乳名\"\n      }\n    },\n    {\n      \"name\": \"沉默羔羊十二式\",\n      \"type\": \"技能\",\n      \"attributes\": {}\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"喜羊羊与灰太狼\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"必杀技\",\n      \"object\": \"沉默羔羊十二式\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"二叔\",\n      \"object\": \"灰太狼\"\n    },\n    {\n      \"subject\": \"灰二太太狼\",\n      \"predicate\": \"称呼乳名\",\n      \"object\": \"尿太狼\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"乳名\",\n      \"object\": \"尿太狼\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "灰二太太狼",
+    "type": "角色",
+    "attributes": {
+     "作品": "喜羊羊与灰太狼",
+     "必杀技": "沉默羔羊十二式",
+     "称呼侄子": "尿太狼"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画",
+    "attributes": {}
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {}
+   },
+   {
+    "name": "尿太狼",
+    "type": "角色",
+    "attributes": {
+     "说明": "灰太狼的乳名"
+    }
+   },
+   {
+    "name": "沉默羔羊十二式",
+    "type": "技能",
+    "attributes": {}
+   }
+  ],
+  "relations": [
+   {
+    "subject": "灰二太太狼",
+    "predicate": "登场作品",
+    "object": "喜羊羊与灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "必杀技",
+    "object": "沉默羔羊十二式"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "二叔",
+    "object": "灰太狼"
+   },
+   {
+    "subject": "灰二太太狼",
+    "predicate": "称呼乳名",
+    "object": "尿太狼"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "乳名",
+    "object": "尿太狼"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 255,
+ "output_tokens": 367,
+ "cached_read_tokens": 0,
+ "latency_ms": 3582.7544999774545,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

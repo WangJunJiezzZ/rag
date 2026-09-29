@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的表哥是夜太狼。\n\n关联路径：\n  夜太狼 --[表哥]--> 灰太狼   [1]\n\n资料[1]明确记载夜太狼是灰太狼的表哥。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 777,
+ "output_tokens": 46,
+ "cached_read_tokens": 256,
+ "latency_ms": 3986.6003330098465,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

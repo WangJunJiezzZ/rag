@@ -3,16 +3,17 @@
 
 比对的难点在实体对齐
 --------------------
-抽取出的名称是"星海资管", 标准答案里是"星海资产管理有限公司"。
+抽取出的名称是"藏之助", 标准答案里是"吉祥寺藏之助"。
 直接比字符串会把正确的抽取判成错误。所以先用 ground-truth 的
 名称+别名索引把抽取实体映射回标准实体 id, 再比三元组。
 
 **注意这会让分数偏乐观**, 而且已经被实测证实:
 
-    规则抽取的 F1 = 99.8%, 但用同一张抽取图跑图检索, recall@10 比 oracle 掉了 7.6 点。
+    早期基金语料上: 规则抽取的 F1 = 99.8%, 但用同一张抽取图跑图检索,
+    recall@10 比 oracle 掉了 7.6 点。
 
-原因就在这里 —— F1 的计算过程用标准答案的别名索引把"澜图资管"对齐回了
-"澜图资产管理有限公司", 于是消歧失败被**掩盖**了; 而图检索没有这个外挂,
+原因就在这里 —— F1 的计算过程用标准答案的别名索引把"藏之助"对齐回了
+"吉祥寺藏之助", 于是消歧失败被**掩盖**了; 而图检索没有这个外挂,
 两个未合并的节点之间的路径是断的。
 
 所以本报告额外输出 `entity_dedup_ratio`: 抽取实体数 / 标准实体数。
@@ -25,6 +26,22 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from ..store.graph import KnowledgeGraph, normalize_name
+
+
+# 对称关系: 「A 的丈夫是 B」与「B 的妻子是 A」是同一条事实, 比对时不区分方向
+SYMMETRIC = {"SPOUSE_OF", "FRIEND_OF"}
+
+
+def _key(s: str, r: str, d: str) -> tuple[str, str, str]:
+    if r in SYMMETRIC and d < s:
+        s, d = d, s
+    return (s, r, d)
+
+
+def _lit(x: str) -> str:
+    """字面量比对前的归一: 去空白与标点。
+    "我一定会回来的！" 与 "我一定会回来的"、"3 分钟" 与 "3分钟" 是同一个值。"""
+    return "lit:" + normalize_name(x[4:])
 
 
 @dataclass
@@ -60,8 +77,7 @@ def evaluate_extraction(extracted: KnowledgeGraph,
 
     def to_gold(eid: str) -> str | None:
         if eid.startswith("lit:"):
-            # 字面量: 归一空白后比对
-            return "lit:" + eid[4:].replace(" ", "").replace("　", "")
+            return _lit(eid)
         e = extracted.entities.get(eid)
         if e is None:
             return None
@@ -85,16 +101,15 @@ def evaluate_extraction(extracted: KnowledgeGraph,
                               if gold.entities else 1.0)
 
     def norm_lit(x: str) -> str:
-        return ("lit:" + x[4:].replace(" ", "").replace("　", "")
-                if x.startswith("lit:") else x)
+        return _lit(x) if x.startswith("lit:") else x
 
-    gold_set: set[tuple] = {(e.src, e.rel, norm_lit(e.dst)) for e in gold.edges}
+    gold_set: set[tuple] = {_key(e.src, e.rel, norm_lit(e.dst)) for e in gold.edges}
     ext_set: set[tuple] = set()
     for e in extracted.edges:
         s = mapping.get(e.src)
         d = to_gold(e.dst) if e.dst.startswith("lit:") else mapping.get(e.dst)
         if s and d:
-            ext_set.add((s, e.rel, d))
+            ext_set.add(_key(s, e.rel, d))
         else:
             rep.n_extracted += 0     # 无法对齐的三元组不计入分子分母, 单独报告
 

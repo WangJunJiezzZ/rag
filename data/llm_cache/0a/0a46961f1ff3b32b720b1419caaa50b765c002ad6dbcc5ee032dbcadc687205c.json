@@ -1,0 +1,120 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"喜羊羊与灰太狼\",\n      \"type\": \"动画作品\",\n      \"attributes\": {\n        \"首播时间\": \"2005年8月3日\",\n        \"首播电视台\": \"杭州电视台少儿频道\",\n        \"第1季集数\": \"530集\",\n        \"每集时长\": \"15分钟\",\n        \"主题曲\": \"别看我只是一只羊\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊与灰太狼之牛气冲天\",\n      \"type\": \"电影\",\n      \"attributes\": {\n        \"上映时间\": \"2009年\"\n      }\n    },\n    {\n      \"name\": \"喜羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"名字来源\": \"喜气洋洋\"\n      }\n    },\n    {\n      \"name\": \"懒羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"名字来源\": \"懒洋洋\"\n      }\n    },\n    {\n      \"name\": \"沸羊羊\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"名字来源\": \"沸沸扬扬\"\n      }\n    },\n    {\n      \"name\": \"灰太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"命名目的\": \"和传统故事里较为可怕的“大灰狼”区分开来\"\n      }\n    },\n    {\n      \"name\": \"红太狼\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"命名目的\": \"和传统故事里较为可怕的“大灰狼”区分开来\"\n      }\n    },\n    {\n      \"name\": \"杭州电视台少儿频道\",\n      \"type\": \"电视台\"\n    },\n    {\n      \"name\": \"别看我只是一只羊\",\n      \"type\": \"歌曲\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"喜羊羊与灰太狼\",\n      \"predicate\": \"首播于\",\n      \"object\": \"杭州电视台少儿频道\"\n    },\n    {\n      \"subject\": \"喜羊羊与灰太狼\",\n      \"predicate\": \"主题曲\",\n      \"object\": \"别看我只是一只羊\"\n    },\n    {\n      \"subject\": \"喜羊羊与灰太狼\",\n      \"predicate\": \"首部电影\",\n      \"object\": \"喜羊羊与灰太狼之牛气冲天\"\n    },\n    {\n      \"subject\": \"喜羊羊\",\n      \"predicate\": \"名字取自\",\n      \"object\": \"喜气洋洋\"\n    },\n    {\n      \"subject\": \"懒羊羊\",\n      \"predicate\": \"名字取自\",\n      \"object\": \"懒洋洋\"\n    },\n    {\n      \"subject\": \"沸羊羊\",\n      \"predicate\": \"名字取自\",\n      \"object\": \"沸沸扬扬\"\n    },\n    {\n      \"subject\": \"灰太狼\",\n      \"predicate\": \"命名目的\",\n      \"object\": \"和传统故事里较为可怕的“大灰狼”区分开来\"\n    },\n    {\n      \"subject\": \"红太狼\",\n      \"predicate\": \"命名目的\",\n      \"object\": \"和传统故事里较为可怕的“大灰狼”区分开来\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "喜羊羊与灰太狼",
+    "type": "动画作品",
+    "attributes": {
+     "首播时间": "2005年8月3日",
+     "首播电视台": "杭州电视台少儿频道",
+     "第1季集数": "530集",
+     "每集时长": "15分钟",
+     "主题曲": "别看我只是一只羊"
+    }
+   },
+   {
+    "name": "喜羊羊与灰太狼之牛气冲天",
+    "type": "电影",
+    "attributes": {
+     "上映时间": "2009年"
+    }
+   },
+   {
+    "name": "喜羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "喜气洋洋"
+    }
+   },
+   {
+    "name": "懒羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "懒洋洋"
+    }
+   },
+   {
+    "name": "沸羊羊",
+    "type": "角色",
+    "attributes": {
+     "名字来源": "沸沸扬扬"
+    }
+   },
+   {
+    "name": "灰太狼",
+    "type": "角色",
+    "attributes": {
+     "命名目的": "和传统故事里较为可怕的“大灰狼”区分开来"
+    }
+   },
+   {
+    "name": "红太狼",
+    "type": "角色",
+    "attributes": {
+     "命名目的": "和传统故事里较为可怕的“大灰狼”区分开来"
+    }
+   },
+   {
+    "name": "杭州电视台少儿频道",
+    "type": "电视台"
+   },
+   {
+    "name": "别看我只是一只羊",
+    "type": "歌曲"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "首播于",
+    "object": "杭州电视台少儿频道"
+   },
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "主题曲",
+    "object": "别看我只是一只羊"
+   },
+   {
+    "subject": "喜羊羊与灰太狼",
+    "predicate": "首部电影",
+    "object": "喜羊羊与灰太狼之牛气冲天"
+   },
+   {
+    "subject": "喜羊羊",
+    "predicate": "名字取自",
+    "object": "喜气洋洋"
+   },
+   {
+    "subject": "懒羊羊",
+    "predicate": "名字取自",
+    "object": "懒洋洋"
+   },
+   {
+    "subject": "沸羊羊",
+    "predicate": "名字取自",
+    "object": "沸沸扬扬"
+   },
+   {
+    "subject": "灰太狼",
+    "predicate": "命名目的",
+    "object": "和传统故事里较为可怕的“大灰狼”区分开来"
+   },
+   {
+    "subject": "红太狼",
+    "predicate": "命名目的",
+    "object": "和传统故事里较为可怕的“大灰狼”区分开来"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 338,
+ "output_tokens": 695,
+ "cached_read_tokens": 0,
+ "latency_ms": 4826.738458010368,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

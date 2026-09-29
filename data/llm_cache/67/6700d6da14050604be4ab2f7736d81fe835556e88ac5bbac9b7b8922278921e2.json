@@ -1,0 +1,14 @@
+{
+ "text": "解开鲨鱼辣椒封印的是丸子龙 [1]，丸子龙最爱吃糯米丸子 [3]。\n\n结论：糯米丸子。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 1005,
+ "output_tokens": 25,
+ "cached_read_tokens": 768,
+ "latency_ms": 2799.2697080480866,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

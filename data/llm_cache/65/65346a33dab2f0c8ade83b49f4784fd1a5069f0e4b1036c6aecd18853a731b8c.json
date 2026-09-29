@@ -1,0 +1,14 @@
+{
+ "text": "羊村里住着以下角色：喜羊羊[2]、美羊羊[2]、懒羊羊[2]、沸羊羊[2]、暖羊羊[2]、慢羊羊村长[2]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 718,
+ "output_tokens": 44,
+ "cached_read_tokens": 0,
+ "latency_ms": 2549.122750002425,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

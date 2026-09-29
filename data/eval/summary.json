@@ -1,27 +1,26 @@
 {
   "total": 109,
   "by_type": {
-    "fact_direct": 12,
+    "fact_direct": 18,
     "fact_paraphrase": 16,
-    "fact_disambig": 11,
+    "fact_disambig": 12,
     "semantic_only": 12,
-    "hop2": 14,
-    "hop3_parent": 6,
-    "hop4_risk": 10,
-    "shared_director": 8,
-    "aggregation": 8,
+    "hop2": 20,
+    "hop3": 5,
+    "relation_path": 5,
+    "aggregation": 9,
     "negative": 12
   },
   "by_split": {
-    "test": 43,
-    "train": 39,
-    "dev": 27
+    "test": 41,
+    "train": 45,
+    "dev": 23
   },
   "by_requires": {
-    "vector": 28,
-    "hybrid": 11,
+    "vector": 34,
+    "hybrid": 12,
     "dense": 12,
-    "graph": 46,
+    "graph": 39,
     "refusal": 12
   }
 }

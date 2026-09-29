@@ -19,3 +19,7 @@ anthropic>=0.40
 # --- Phase 4: 服务与前端 ---
 fastapi>=0.115
 uvicorn[standard]>=0.32
+
+# --- Phase 5: MCP Server / Client ---
+# 2.x 与网上多数教程(1.x)API 不兼容: FastMCP 已改名 MCPServer。
+mcp>=2.2

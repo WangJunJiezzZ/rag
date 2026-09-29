@@ -1,0 +1,14 @@
+{
+ "text": "《喜羊羊与灰太狼》于 **2005 年** 8 月 3 日首播，首播电视台为杭州电视台少儿频道。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 780,
+ "output_tokens": 36,
+ "cached_read_tokens": 512,
+ "latency_ms": 2779.6746660023928,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

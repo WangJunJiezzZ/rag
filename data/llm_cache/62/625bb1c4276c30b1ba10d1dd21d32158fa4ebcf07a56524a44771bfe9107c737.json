@@ -1,0 +1,86 @@
+{
+ "text": "{\n  \"entities\": [\n    {\n      \"name\": \"呱呱蛙\",\n      \"type\": \"角色\",\n      \"attributes\": {\n        \"别名\": \"聒聒蛙\",\n        \"编号\": \"7号机\",\n        \"原型\": \"青蛙\",\n        \"身份\": \"科学博士\",\n        \"性格\": \"说话长篇大论，善于分析敌人\",\n        \"口头禅\": \"从结论上来看\"\n      }\n    },\n    {\n      \"name\": \"铁甲小宝\",\n      \"type\": \"特摄剧\"\n    },\n    {\n      \"name\": \"青蛙\",\n      \"type\": \"生物\"\n    },\n    {\n      \"name\": \"科学博士\",\n      \"type\": \"身份\"\n    },\n    {\n      \"name\": \"聒聒蛙\",\n      \"type\": \"别名\"\n    },\n    {\n      \"name\": \"7号机\",\n      \"type\": \"编号\"\n    }\n  ],\n  \"relations\": [\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"登场作品\",\n      \"object\": \"铁甲小宝\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"别名\",\n      \"object\": \"聒聒蛙\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"编号\",\n      \"object\": \"7号机\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"原型\",\n      \"object\": \"青蛙\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"身份\",\n      \"object\": \"科学博士\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"性格\",\n      \"object\": \"说话长篇大论，善于分析敌人\"\n    },\n    {\n      \"subject\": \"呱呱蛙\",\n      \"predicate\": \"口头禅\",\n      \"object\": \"从结论上来看\"\n    }\n  ]\n}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "呱呱蛙",
+    "type": "角色",
+    "attributes": {
+     "别名": "聒聒蛙",
+     "编号": "7号机",
+     "原型": "青蛙",
+     "身份": "科学博士",
+     "性格": "说话长篇大论，善于分析敌人",
+     "口头禅": "从结论上来看"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "青蛙",
+    "type": "生物"
+   },
+   {
+    "name": "科学博士",
+    "type": "身份"
+   },
+   {
+    "name": "聒聒蛙",
+    "type": "别名"
+   },
+   {
+    "name": "7号机",
+    "type": "编号"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "呱呱蛙",
+    "predicate": "登场作品",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "别名",
+    "object": "聒聒蛙"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "编号",
+    "object": "7号机"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "原型",
+    "object": "青蛙"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "身份",
+    "object": "科学博士"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "性格",
+    "object": "说话长篇大论，善于分析敌人"
+   },
+   {
+    "subject": "呱呱蛙",
+    "predicate": "口头禅",
+    "object": "从结论上来看"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 279,
+ "output_tokens": 419,
+ "cached_read_tokens": 0,
+ "latency_ms": 3620.609334029723,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

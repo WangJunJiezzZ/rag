@@ -4,57 +4,40 @@
 为什么这一步是图谱的生死线
 --------------------------
 抽取出来的名称是散的:
-    "星海资产管理有限公司" / "星海资管" / "Starsea Asset Management Pte. Ltd."
-不归并, 图里就是三个孤立节点, **所有跨文档的多跳查询全部失效**。
-本项目已验证: 有 12 道题的答案实体在证据文档中只以别名出现。
+    "高圆寺寅彦" / "高圆寺博士"      "吉祥寺藏之助" / "藏之助"
+不归并, 图里就是两个孤立节点, **所有经过它的多跳查询全部失效**。
+本项目刻意植入了 3 处"证据文档只写别名"(见 verify_dataset.py 的 B 项)。
 
-三级级联, 成本递增
+四级级联, 成本递增
 ------------------
-    1. 规则归一   normalize_name(): 去后缀/标点/大小写。O(n), 免费, 覆盖大多数
+    0. 声明别名   文档里明确写着「A又名B」 -> 直接合并。这是最强的证据, 且免费
+    1. 规则归一   normalize_name(): 去标点/空白/大小写。O(n), 免费
     2. 向量召回   同类型实体两两算相似度, 只保留候选对。O(n²) 但纯矩阵运算, 毫秒级
-    3. LLM 裁决   只处理落在灰区 [low, high] 的候选对
+    3. LLM 裁决   只处理词面说不清、且向量相似度 >= low 的候选对
 
-为什么不直接全量 LLM 两两比较: n=200 时是 2 万次调用, 而其中 99% 的对比是
-显然的("星海资管" vs "李明远")。**把 LLM 用在它不可替代的地方, 而不是所有地方。**
+为什么不直接全量 LLM 两两比较: n=50 时就是 1200 多次调用, 而其中 99% 的对比是
+显然的("卡布达" vs "暖羊羊")。**把 LLM 用在它不可替代的地方, 而不是所有地方。**
 
-一次真实的事故: 向量相似度 1.00 却是两家不同公司
---------------------------------------------------
-首次跑通时出现:
-    [向量 1.00] Daiyu Capital Management Ltd. == Dixing Capital Management Ltd.
-    [向量 1.00] Daiyu Capital Management Ltd. == Heming Financial Services Ltd.
-原因: bge-small-zh 是**中文**模型, 对纯英文串的表示几乎坍缩到同一点,
-余弦相似度全是 1.00。若只看向量, 所有英文公司名会被并成一个节点, 整张图作废。
+两条一票否决 (cannot-link)
+--------------------------
+**单一信号永远不足以触发合并**, 但单一信号足以**阻止**合并:
 
-由此得出本模块的核心原则:
-    **单一信号永远不足以触发合并。**
-  · 同文种(都中文): 向量 + 词面守卫, 两者一致才合并
-  · 都英文:         向量不可信, 改用 token Jaccard
-  · 跨文种:         没有任何廉价信号 -> 用"共享邻居"做分块, 再交 LLM 裁决
+  · 词面不相容  前两字不同的两个名称, 向量再像也不合并。
+                喜羊羊/美羊羊/懒羊羊、灰太狼/红太狼/蕉太狼在向量空间里挨得极近,
+                只看向量会把整个羊村并成一只羊。
+  · 有关系边    同一份文档里"A 是 B 的爷爷", A 和 B 就一定不是同一个实体。
+                「高圆寺寅彦」与「高圆寺让」前三个字相同、向量高度相似,
+                LLM 看名字也可能犹豫 —— 但抽取结果里有一条爷孙关系边, 这就够了。
 
-跨文种: 先用拼音, 不要一上来就找 LLM
--------------------------------------
-首版用"共享邻居"分块 + LLM 裁决, 实测结果很难看:
-    LLM 调用 228 次 -> 只合并 1 对; 24 个实体仍被拆成中文名 + 罗马化名两个节点。
-看模型的回复才发现问题不在模型:
-    {"same": false, "reason": "中文名「柏观」与罗马化名「Jinyue」不对应"}
-    —— 它判断是对的, 是**分块根本没把正确的对配出来**。
-共享辖区这种信号太弱, 生成的几乎全是错误候选。
-
-缺的信号其实非常显然: **拼音**。
-    岱屿 -> daiyu, 而 "Daiyu Financial Services Ltd." 的首 token 就是 daiyu。
-pypinyin 是纯 Python、3.5MB、完全离线的确定性库, 一次转换就能得到强证据。
-
-教训: **有确定性方法可用时, 不要让 LLM 去做它。**
-228 次 LLM 调用 + 几乎全错的候选, 被一个离线库替代了 ——
-这不是模型不行, 是把模型用在了不该用的地方。
-
-pypinyin 未安装时自动退回"共享邻居 + LLM"路径, 不阻断运行。
-
-自然人的特殊规则
-----------------
-同名自然人在真实数据里极常见。没有强标识(证件号)时一律不合并 ——
-漏合并只是少一条边, **错合并会把两个人的关系网连成一张图, 伪造出不存在的关联路径**。
-在反洗钱场景里, 后者是要出事的。这条规则写死, 不交给模型判断。
+子串不等于简称
+--------------
+公司名里"星海资管"⊂"星海资产管理有限公司"几乎总是简称; 角色名里却经常相反:
+    「和平星」⊂「射手座和平星」      「卡布达」⊂「卡布达巨人」
+前者是总称与个体, 后者是机器人与它的变身形态。照搬"子串即简称"的规则, 实测踩了两次:
+  · 第一次把三颗和平星并成了一颗 -> 加上"前两字相同"的限制
+  · 第二次 LLM 抽取把「卡布达巨人」抽成了实体, 与「卡布达」前两字相同, 又被并掉
+所以子串现在只算**弱证据**: 前两字相同的名称进入灰区, 交给 LLM 裁决;
+真正的别名(「慢羊羊村长」「藏之助」)靠文档里声明的「又名」合并, 不靠猜。
 """
 from __future__ import annotations
 
@@ -71,12 +54,14 @@ from ..store.graph import normalize_name
 class ResolveStats:
     mentions: int = 0
     canonical: int = 0
+    merged_by_alias: int = 0      # 文档声明的「又名」
     merged_by_rule: int = 0
     merged_by_vector: int = 0
     merged_by_llm: int = 0
     llm_calls: int = 0
     llm_rejected: int = 0
     blocked_by_lexical: int = 0   # 向量说像但词面一票否决 —— 避免的错合并
+    blocked_by_relation: int = 0  # 两者之间有关系边 -> 一票否决
     blocked_transitive: int = 0   # 被 cannot-link 拦下的传递性错合并
     gray_unresolved: int = 0      # 灰区但无 LLM 可用 -> 留作未合并
     cost_usd: float = 0.0
@@ -84,9 +69,10 @@ class ResolveStats:
 
     def summary(self) -> str:
         return (f"提及 {self.mentions} 个名称 -> 归并为 {self.canonical} 个实体\n"
-                f"  规则/词面合并 {self.merged_by_rule} | 向量合并 {self.merged_by_vector} | "
-                f"LLM 裁决合并 {self.merged_by_llm}\n"
+                f"  声明别名合并 {self.merged_by_alias} | 规则/词面合并 {self.merged_by_rule} | "
+                f"向量合并 {self.merged_by_vector} | LLM 裁决合并 {self.merged_by_llm}\n"
                 f"  词面一票否决 {self.blocked_by_lexical} 对 | "
+                f"关系边一票否决 {self.blocked_by_relation} 对 | "
                 f"cannot-link 拦下传递性错合并 {self.blocked_transitive} 次\n"
                 f"  LLM 调用 {self.llm_calls} 次 (驳回 {self.llm_rejected}), "
                 f"灰区未解决 {self.gray_unresolved}, 花费 ≈ ${self.cost_usd:.3f}")
@@ -96,11 +82,10 @@ class UnionFind:
     """带 cannot-link 约束的并查集。
 
     为什么需要约束: 合并是**传递**的。a≡b 且 b≡c 就会得到 a≡c,
-    哪怕 a 与 c 明确不同。实测踩过这个坑 ——
-        岱屿资本管理 ≡ Daiyu Capital       (对)
-        岱屿金融服务 ≡ Daiyu Capital       (错, 但品牌拼音相同)
-        => 两家不同公司被传递性地并成一个节点, 连带 3 个标准实体混作一团。
-
+    哪怕 a 与 c 明确不同。例如
+        高圆寺让 ≡ 小让          (对, 文档声明的又名)
+        高圆寺让 ≡ 高圆寺博士    (错, 但前三个字相同, 向量也像)
+        => 爷爷和孙子被传递性地并成一个节点, 爷孙关系变成了自环。
     修法是约束聚类里的标准做法(cannot-link): 合并前检查两个簇的成员之间
     是否存在已知的"明确不同"关系, 有就拒绝合并。
     单点的判断可能出错, 但簇级的一票否决能把错误控制住。
@@ -125,7 +110,6 @@ class UnionFind:
 
     def _conflicts(self, ra: str, rb: str) -> bool:
         ma, mb = self.members.get(ra, {ra}), self.members.get(rb, {rb})
-        # 簇小的那边遍历, 控制开销
         if len(ma) > len(mb):
             ma, mb = mb, ma
         for x in ma:
@@ -134,15 +118,19 @@ class UnionFind:
                     return True
         return False
 
-    def union(self, a: str, b: str) -> bool:
+    def union(self, a: str, b: str, prefer: str | None = None) -> bool:
+        """prefer: 指定用哪个名字做簇代表(声明别名时, 档案主人的名字是规范名)。"""
         ra, rb = self.find(a), self.find(b)
         if ra == rb:
             return False
         if self._conflicts(ra, rb):
             self.blocked_transitive += 1
             return False
-        # 名字长的做代表 —— 全称比简称信息量大
-        if len(rb) > len(ra):
+        if prefer is not None:
+            keep = self.find(prefer)
+            ra, rb = (keep, rb if keep == ra else ra)
+        elif len(rb) > len(ra):
+            # 名字长的做代表 —— 全称比简称信息量大
             ra, rb = rb, ra
         self.parent[rb] = ra
         self.members.setdefault(ra, {ra}).update(self.members.pop(rb, {rb}))
@@ -155,21 +143,34 @@ class EntityResolver:
                  prompt_id: str = "resolve_entity/v1_adjudicate"):
         self.embedder = embedder
         self.llm = llm
-        self.high = high          # 高于此: 直接合并, 不问 LLM
-        self.low = low            # 低于此: 直接判不同
+        self.high = high          # 保留参数以兼容旧调用; 向量不再单独拍板
+        self.low = low            # 低于此: 直接判不同, 不送 LLM
         self.prompt_id = prompt_id
         self.stats = ResolveStats()
 
     # ------------------------------------------------------------------
     def resolve(self, mentions: dict[str, str],
                 contexts: dict[str, str] | None = None,
-                neighbors: dict[str, set[str]] | None = None) -> dict[str, str]:
-        """mentions: {名称 -> 类型}。neighbors: {名称 -> 邻居名称集合}, 用于跨文种分块。"""
+                neighbors: dict[str, set[str]] | None = None,
+                aliases: list[tuple[str, str]] | None = None,
+                related: set[tuple[str, str]] | None = None) -> dict[str, str]:
+        """mentions: {名称 -> 类型}
+        aliases:  [(规范名, 别名)] —— 文档声明的「又名」
+        related:  {(a, b)} —— 抽取结果里有关系边直接相连的名称对, 必不相同
+        """
         st = self.stats
         st.mentions = len(mentions)
         uf = UnionFind()
         contexts = contexts or {}
-        neighbors = neighbors or {}
+        related = related or set()
+        for a, b in related:
+            uf.forbid(a, b)
+
+        # ---- 第 0 级: 文档声明的别名 ----
+        for canon, alias in aliases or []:
+            if alias in mentions and canon in mentions and uf.union(canon, alias, prefer=canon):
+                st.merged_by_alias += 1
+                self._note(f"[又名] {alias} -> {canon}")
 
         # ---- 第 1 级: 规则归一 ----
         by_norm: dict[tuple[str, str], list[str]] = defaultdict(list)
@@ -185,19 +186,14 @@ class EntityResolver:
             by_type[typ].append(name)
 
         for typ, names in by_type.items():
-            if typ == "Person":
-                continue          # 自然人不做模糊合并, 见模块文档
             reps = sorted({uf.find(n) for n in names})
             if len(reps) < 2:
                 continue
-            cjk = [r for r in reps if _script(r) == "cjk"]
-            ascii_ = [r for r in reps if _script(r) == "ascii"]
 
-            # ---- 第 2 级 a0: 强词面证据 —— 不依赖向量, 也不花钱 ----
-            # 必须先于向量路径执行: 强证据对不该排队等 LLM。
-            for i in range(len(cjk)):
-                for j in range(i + 1, len(cjk)):
-                    a, b = cjk[i], cjk[j]
+            # ---- 第 2 级 a: 强词面证据 —— 不依赖向量, 也不花钱 ----
+            for i in range(len(reps)):
+                for j in range(i + 1, len(reps)):
+                    a, b = reps[i], reps[j]
                     if uf.find(a) == uf.find(b):
                         continue
                     v0 = lexical_verdict(a, b)
@@ -208,51 +204,27 @@ class EntityResolver:
                         self._note(f"[词面-强] {a} == {b}")
 
             # ---- 第 2 级 b: 词面说不清的, 才动用向量 / LLM ----
-            if self.embedder is not None and len(cjk) >= 2:
-                for a, b, sim in self._candidate_pairs(cjk):
+            reps = sorted({uf.find(n) for n in names})
+            if self.embedder is not None and len(reps) >= 2:
+                for a, b, sim in self._candidate_pairs(reps):
                     if uf.find(a) == uf.find(b):
+                        continue
+                    if _pair(a, b) in related or _pair(uf.find(a), uf.find(b)) in related:
+                        st.blocked_by_relation += 1
                         continue
                     v = lexical_verdict(a, b)
                     if v == "incompatible":
                         st.blocked_by_lexical += 1   # 向量说像, 词面一票否决
-                        uf.forbid(a, b)
                         continue
-                    if v == "strong" or sim >= self.high:
+                    # 向量只负责**提名**候选, 不负责拍板: 词面说不清(weak)时,
+                    # 相似度再高也要 LLM 裁决。「卡布达」与「卡布达巨人」向量几乎一样,
+                    # 但一个是机器人, 一个是它的变身形态。
+                    if v == "strong":
                         if uf.union(a, b):
                             st.merged_by_vector += 1
-                            self._note(f"[向量 {sim:.2f}] {a} == {b}")
-                    elif sim >= self.low:
+                            self._note(f"[向量 {sim:.2f} + 词面] {a} == {b}")
+                    else:
                         self._maybe_llm(uf, a, b, contexts, sim)
-
-            # ---- 第 2 级 b: 同为英文 —— 向量不可信, 用 token Jaccard ----
-            for i in range(len(ascii_)):
-                for j in range(i + 1, len(ascii_)):
-                    a, b = ascii_[i], ascii_[j]
-                    if uf.find(a) == uf.find(b):
-                        continue
-                    if _token_jaccard(a, b) >= 0.85 and \
-                       lexical_verdict(a, b) != "incompatible":
-                        if uf.union(a, b):
-                            st.merged_by_rule += 1
-                            self._note(f"[词面] {a} == {b}")
-
-            # ---- 第 3 级: 跨文种 ----
-            # 先用拼音拿强证据(免费、离线、确定性), 拿不到再退回共享邻居 + LLM。
-            for a in cjk:
-                for b in ascii_:
-                    if uf.find(a) == uf.find(b):
-                        continue
-                    v = lexical_verdict(a, b)
-                    if v == "incompatible":
-                        uf.forbid(a, b)
-                    elif v == "strong":
-                        if uf.union(a, b):
-                            st.merged_by_rule += 1
-                            self._note(f"[拼音] {a} == {b}")
-                    elif v == "weak":
-                        na = neighbors.get(a, set())
-                        if na and (na & neighbors.get(b, set())):
-                            self._maybe_llm(uf, a, b, contexts, sim=0.0, cross=True)
 
         mapping = {n: uf.find(n) for n in mentions}
         st.canonical = len(set(mapping.values()))
@@ -264,22 +236,19 @@ class EntityResolver:
             self.stats.examples.append(msg)
 
     def _maybe_llm(self, uf: "UnionFind", a: str, b: str,
-                   contexts: dict[str, str], sim: float,
-                   cross: bool = False) -> None:
+                   contexts: dict[str, str], sim: float) -> None:
         verdict = self._adjudicate(a, b, contexts)
         if verdict is None:
             self.stats.gray_unresolved += 1
         elif verdict:
             if uf.union(a, b):
                 self.stats.merged_by_llm += 1
-                tag = "LLM跨文种" if cross else f"LLM {sim:.2f}"
-                self._note(f"[{tag}] {a} == {b}")
+                self._note(f"[LLM {sim:.2f}] {a} == {b}")
         else:
             self.stats.llm_rejected += 1
 
     # ------------------------------------------------------------------
     def _candidate_pairs(self, names: list[str]) -> list[tuple[str, str, float]]:
-        import numpy as np
         vecs = self.embedder.encode(names, is_query=False)
         sims = vecs @ vecs.T
         out: list[tuple[str, str, float]] = []
@@ -319,59 +288,16 @@ class EntityResolver:
         return bool(d["same"]) and float(d.get("confidence", 0)) >= 0.7
 
 
+def _pair(a: str, b: str) -> tuple[str, str]:
+    return (a, b) if a < b else (b, a)
+
+
 # --------------------------------------------------------------------------
 # 词面守卫 —— 向量的安全带
 # --------------------------------------------------------------------------
 
-_CJK_RANGE = ("\u4e00", "\u9fff")
+_CJK_RANGE = ("一", "鿿")
 
-try:                                    # 可选依赖, 缺了就降级
-    from pypinyin import Style, lazy_pinyin
-
-    def _romanize(text: str, n_chars: int = 3) -> str:
-        """取中文名的品牌部分(前 n 个汉字)转拼音, 用于跨文种比对。
-
-        只转品牌: "岱屿金融服务有限公司" 整体转出来是
-        daiyujinrongfuwuyouxiangongsi, 而英文名是 "Daiyu Financial Services Ltd."
-        —— 只有品牌部分是音译的, 后缀是意译的, 整体比对必然对不上。
-        """
-        cjk = "".join(c for c in text if _CJK_RANGE[0] <= c <= _CJK_RANGE[1])
-        if not cjk:
-            return ""
-        return "".join(lazy_pinyin(cjk[:n_chars], style=Style.NORMAL)).lower()
-
-    HAS_PINYIN = True
-
-except ImportError:                     # pragma: no cover
-    def _romanize(text: str, n_chars: int = 3) -> str:
-        return ""
-
-    HAS_PINYIN = False
-
-
-# 中英文公司类型后缀对照。
-# 品牌部分是**音译**(岱屿->Daiyu), 后缀部分是**意译**(资本管理->Capital Management),
-# 所以只比拼音会把"岱屿资本管理"和"岱屿金融服务"判成同一家 —— 实测正是这样炸的。
-# 这张表是跨语言实体匹配的标准配置(双语术语表), 不是 ground truth,
-# 生产系统里由业务方维护, 或改用多语言 embedding 模型。
-_SUFFIX_MAP: list[tuple[str, tuple[str, ...]]] = [
-    ("资产管理", ("asset", "assets")),
-    ("资本管理", ("capital",)),
-    ("投资控股", ("investment", "investments")),
-    ("国际控股", ("international",)),
-    ("环球投资", ("global",)),
-    ("金融服务", ("financial", "finance")),
-    ("信托",     ("trust",)),
-    ("银行",     ("bank",)),
-]
-
-
-def _suffix_tokens(cjk_name: str) -> tuple[str, ...] | None:
-    """中文名 -> 期望出现在英文名里的关键词。认不出返回 None(不作判据)。"""
-    for zh, en in _SUFFIX_MAP:
-        if zh in cjk_name:
-            return en
-    return None
 
 def _script(s: str) -> str:
     has_cjk = any(_CJK_RANGE[0] <= c <= _CJK_RANGE[1] for c in s)
@@ -385,16 +311,10 @@ _DISCRIMINATOR_RE = re.compile(r"[（(]\s*([0-9０-９]{1,3})\s*[）)]")
 
 
 def _discriminator(name: str) -> str | None:
-    """抽出名称里的**区分标记**, 如「澜图资产管理有限公司（2）」中的 2。
+    """抽出名称里的**区分标记**, 如「卡布达（2）」中的 2。
 
-    为什么单独处理: 规范化会把括号当标点洗掉, 于是
-    「澜图资管」和「澜图资产管理有限公司（2）」看起来品牌前缀一致, 被判为可合并 ——
-    但它们是两家不同主体。区分标记是**区分性信息, 不是噪音**,
-    规范化不能把它一起洗掉。
-
-    现实中的同类标记: 「XX有限公司（北京）」「XX（上海）有限公司」「XX银行深圳分行」。
+    规范化会把括号当标点洗掉, 但区分标记是**区分性信息, 不是噪音**。
     规则: 两个名称的区分标记必须完全一致(同为无, 或同值), 否则不得合并。
-    一方有、一方无 -> 归属不明, 同样不合并。
     """
     m = _DISCRIMINATOR_RE.search(name)
     if not m:
@@ -405,71 +325,30 @@ def _discriminator(name: str) -> str | None:
 def lexical_verdict(a: str, b: str) -> str:
     """词面证据的三值判定: strong / weak / incompatible。
 
-    首版把词面只当作"守卫"(二值), 结果是: 简称明明匹配上了, 却因为向量相似度
-    落在灰区而去排队等 LLM 裁决 —— 没有 API key 时整个消歧环节合并数为 0,
-    消歧欠账 1.17。
-
-    正确的理解是: **词面既是守卫也是证据。**
+    **词面既是守卫也是证据。**
       strong        本身就足以合并, 不需要向量或 LLM 背书
-                    (连续子串 / 中文缩写子序列, 且品牌前缀与区分标记一致)
+                    (规范化后完全相同, 如「蝎子莱莱」与「蝎子 莱莱」)
       incompatible  一票否决, 向量再像也不合并
-                    (区分标记不一致, 或品牌前缀不同)
-      weak          说不清 -> 才需要向量高分或 LLM 裁决
+                    (前两字不同, 或区分标记不一致, 或文种不同)
+      weak          说不清 -> 交给 LLM 裁决
+                    (前两字相同: 慢羊羊 vs 慢羊羊村长, 卡布达 vs 卡布达巨人,
+                     高圆寺让 vs 高圆寺博士 —— 有的是同一实体, 有的不是)
     """
-    # 区分标记不一致 -> 一票否决, 优先于其他所有判据
-    da, db = _discriminator(a), _discriminator(b)
-    if da != db:
+    if _discriminator(a) != _discriminator(b):
         return "incompatible"
-
     na, nb = normalize_name(a), normalize_name(b)
     if not na or not nb:
         return "incompatible"
-    if na == nb or na in nb or nb in na:
-        return "strong"                   # 简称 / 全称(连续子串)
-    # 中文简称通常是"品牌 + 各语义段首字": 资产管理->资管, 投资控股->投资。
-    # 连续子串匹配不了这种缩写, 但**子序列**可以。
-    # 加上"品牌前缀一致"的约束, 避免把任意两个短名判成缩写关系。
-    same_brand = na[:2] == nb[:2]
-    if _script(a) == "cjk" == _script(b) and same_brand:
-        short, long_ = (na, nb) if len(na) <= len(nb) else (nb, na)
-        if len(short) >= 3 and _is_subsequence(short, long_):
-            return "strong"               # 中文缩写: 资产管理 -> 资管
-    # ---- 跨文种: 拼音比对 ----
-    sa, sb = _script(a), _script(b)
-    if {sa, sb} == {"cjk", "ascii"}:
-        cjk, ascii_ = (a, b) if sa == "cjk" else (b, a)
-        roman = _romanize(cjk)
-        first = ascii_.lower().replace(".", " ").split()
-        if roman and first:
-            head = first[0]
-            brand_ok = roman.startswith(head) or head.startswith(_romanize(cjk, 2))
-            if brand_ok:
-                # 品牌对上还不够: 同品牌下有"资本管理/金融服务/环球投资"等多家主体,
-                # 只比品牌会把它们全并成一坨(Union-Find 还会传递性扩散)。
-                want = _suffix_tokens(cjk)
-                if want is None:
-                    return "weak"          # 认不出后缀 -> 不下强判断
-                rest = set(first[1:])
-                return "strong" if rest & set(want) else "incompatible"
-        return "incompatible" if HAS_PINYIN else "weak"
-
-    # 同文种: 品牌前缀不同 -> 否决; 相同 -> 交给向量/LLM
-    if sa == "cjk" == sb:
-        return "weak" if same_brand else "incompatible"
-    ta, tb = a.lower().split(), b.lower().split()
-    if ta and tb and ta[0] == tb[0]:
-        return "weak"
-    return "incompatible"
-
-
-def _token_jaccard(a: str, b: str) -> float:
-    ta = {t for t in a.lower().replace(".", " ").split() if t}
-    tb = {t for t in b.lower().replace(".", " ").split() if t}
-    if not ta or not tb:
-        return 0.0
-    return len(ta & tb) / len(ta | tb)
-
-
-def _is_subsequence(short: str, long_: str) -> bool:
-    it = iter(long_)
-    return all(c in it for c in short)
+    if na == nb:
+        return "strong"
+    if _script(a) != _script(b):
+        # 跨文种(如 AP717 vs 警用机器人)没有任何廉价的词面信号 ——
+        # 只认文档声明的「又名」, 不猜。
+        return "incompatible"
+    # 品牌前缀取前两个字: 只比首字会让「小灰灰」「小香香」「小让」互相进入灰区
+    same_head = na[:2] == nb[:2]
+    if not same_head:
+        return "incompatible"
+    # 子串只是弱证据: 「慢羊羊」⊂「慢羊羊村长」是同一只羊,
+    # 「卡布达」⊂「卡布达巨人」却是机器人和它的变身形态 —— 词面分不出来, 交给 LLM。
+    return "weak"

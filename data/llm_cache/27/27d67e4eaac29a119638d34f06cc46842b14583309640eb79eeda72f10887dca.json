@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼是灰太狼的侄子[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 721,
+ "output_tokens": 12,
+ "cached_read_tokens": 0,
+ "latency_ms": 2645.320834009908,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

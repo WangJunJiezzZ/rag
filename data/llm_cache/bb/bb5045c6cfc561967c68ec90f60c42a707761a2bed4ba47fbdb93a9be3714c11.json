@@ -1,0 +1,14 @@
+{
+ "text": "正义阵营的机器人有：卡布达、金龟次郎、飞翔机器人、呱呱蛙、田德莉娜[1]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 338,
+ "output_tokens": 29,
+ "cached_read_tokens": 0,
+ "latency_ms": 4339.93570797611,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

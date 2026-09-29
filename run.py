@@ -7,7 +7,7 @@ graphrag-lab 任务入口 (跨平台)
     python run.py <task> [args...]
 
     python run.py phase0       生成语料 + 评测集 + 自检 (一条龙)
-    python run.py gen          只生成合成语料
+    python run.py gen          只生成语料与标准图谱
     python run.py eval-set     只生成评测集
     python run.py verify       只跑数据集自检
     python run.py retrieval    检索评测（切块策略对比 + 检索路径消融）
@@ -16,6 +16,9 @@ graphrag-lab 任务入口 (跨平台)
     python run.py verify-replay 离线回放自检（演示前必跑）
     python run.py build-static 生成纯静态演示站（免费托管用这个）
     python run.py serve        启动 Web 演示
+    python run.py mcp-server   启动 MCP Server (stdio; 加 -- --http 走 HTTP)
+    python run.py mcp-chat     DeepSeek 驱动的 MCP 客户端 (交互式)
+    python run.py verify-mcp   MCP 链路离线自检 (无需 API key)
     python run.py report       生成 HTML 评测报告
     python run.py all          全流程一条龙
     python run.py doctor       检查运行环境(Python 版本 / 依赖 / 编码)
@@ -36,7 +39,7 @@ setup_console()
 MIN_PY = (3, 10)
 
 TASKS: dict[str, tuple[str, list[str]]] = {
-    "gen":      ("生成合成语料与 ground-truth 图谱", ["scripts/gen_synthetic_data.py"]),
+    "gen":      ("生成语料与 ground-truth 图谱", ["scripts/gen_synthetic_data.py"]),
     "eval-set": ("从图谱生成评测集",                 ["scripts/gen_eval_set.py"]),
     "verify":   ("数据集自检",                       ["scripts/verify_dataset.py"]),
     "retrieval":   ("检索评测: 切块策略对比 + 检索路径消融", ["scripts/eval_retrieval.py"]),
@@ -46,8 +49,13 @@ TASKS: dict[str, tuple[str, list[str]]] = {
     "verify-replay": ("离线回放自检 —— **演示前必跑**", ["scripts/verify_replay.py"]),
     "prepare-hf":   ("生成 HuggingFace Space 部署目录 (Docker, 需付费版)", ["scripts/prepare_hf.py"]),
     "build-static": ("生成纯静态演示站 (可部署到任何静态托管)", ["scripts/export_static.py"]),
+    "verify-static": ("静态站 JS 检索与 Python 版逐题比对 (需要 node)", ["scripts/verify_static.py"]),
     "report":      ("汇总全部评测结果, 生成 HTML 报告", ["scripts/make_report.py"]),
     "serve":       ("启动 Web 演示 (默认 http://127.0.0.1:8000)", ["scripts/serve.py"]),
+    "mcp-server":  ("启动 MCP Server (stdio; -- --http 走 Streamable HTTP)",
+                    ["src/graphrag/mcp_app/server.py"]),
+    "mcp-chat":    ("DeepSeek 驱动的 MCP 客户端", ["src/graphrag/mcp_app/client.py"]),
+    "verify-mcp":  ("MCP 链路离线自检 (无需 API key)", ["scripts/verify_mcp.py"]),
 }
 
 CHAINS: dict[str, tuple[str, list[str]]] = {
@@ -63,7 +71,11 @@ CHAINS: dict[str, tuple[str, list[str]]] = {
 def run_script(rel: str, extra: list[str]) -> int:
     """用当前解释器执行脚本 —— 避免 Windows 上 'python' 指向别的版本。"""
     cmd = [sys.executable, str(ROOT / rel), *extra]
-    print(f"\n$ {Path(sys.executable).name} {rel} {' '.join(extra)}".rstrip())
+    # 回显走 stderr: `run.py mcp-server` 被 MCP 客户端当 stdio Server 拉起时,
+    # stdout 是 JSON-RPC 通道。实测官方 Python SDK 客户端遇到这行非 JSON 输出
+    # 会报 "Failed to parse JSONRPC message" 并跳过; 不保证别的客户端同样宽容。
+    print(f"\n$ {Path(sys.executable).name} {rel} {' '.join(extra)}".rstrip(),
+          file=sys.stderr, flush=True)
     return subprocess.call(cmd, cwd=str(ROOT))
 
 
@@ -84,12 +96,13 @@ def doctor() -> int:
         print("    [warn] 非 UTF-8; compat.setup_console() 已尝试纠正")
     else:
         print("    [ok] 中文输出安全")
-    print("  中文输出测试: 星海亚洲机会基金 · 高风险管辖区 · ✓")
+    print("  中文输出测试: 喜羊羊与灰太狼 · 铁甲小宝 · 卡布达 · ✓")
 
     print("\n  依赖 (Phase 0 全部为 Python 标准库, 无需安装):")
     for mod, need in [("json", True), ("sqlite3", True), ("hashlib", True),
                       ("numpy", False), ("anthropic", False),
-                      ("sentence_transformers", False), ("fastapi", False)]:
+                      ("sentence_transformers", False), ("fastapi", False),
+                      ("mcp", False)]:
         try:
             __import__(mod)
             print(f"    [ok]   {mod}")

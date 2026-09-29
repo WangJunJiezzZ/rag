@@ -1,0 +1,14 @@
+{
+ "text": "关联路径：\n  小灰灰 --[父亲]--> 灰太狼 [1]\n  灰太狼 --[父亲]--> 黑太狼 [2]\n  黑太狼 --[妻子]--> 银太狼 [4]\n\n结论：小灰灰的爷爷是黑太狼 [1][2]，黑太狼的妻子是银太狼 [4]，因此小灰灰爷爷的妻子是**银太狼**。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 960,
+ "output_tokens": 91,
+ "cached_read_tokens": 384,
+ "latency_ms": 2939.11641696468,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

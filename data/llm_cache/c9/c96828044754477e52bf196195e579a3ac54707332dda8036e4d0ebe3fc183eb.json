@@ -1,0 +1,80 @@
+{
+ "text": "{\"entities\":[{\"name\":\"丸子龙\",\"type\":\"角色\",\"properties\":{\"编号\":\"6号机\",\"原型\":\"鼠妇\",\"性格\":\"起初保持中立，后来加入了卡布达一方\",\"特长\":\"肚子里藏着和平星的碎片\",\"爱好\":\"最爱吃糯米丸子\"}},{\"name\":\"铁甲小宝\",\"type\":\"特摄剧\"},{\"name\":\"鼠妇\",\"type\":\"生物\"},{\"name\":\"和平星\",\"type\":\"物品\"},{\"name\":\"卡布达\",\"type\":\"角色\"},{\"name\":\"糯米丸子\",\"type\":\"食物\"}],\"relations\":[{\"subject\":\"丸子龙\",\"predicate\":\"登场于\",\"object\":\"铁甲小宝\"},{\"subject\":\"丸子龙\",\"predicate\":\"编号\",\"object\":\"6号机\"},{\"subject\":\"丸子龙\",\"predicate\":\"原型\",\"object\":\"鼠妇\"},{\"subject\":\"丸子龙\",\"predicate\":\"藏着\",\"object\":\"和平星\"},{\"subject\":\"丸子龙\",\"predicate\":\"加入\",\"object\":\"卡布达\"},{\"subject\":\"丸子龙\",\"predicate\":\"爱吃\",\"object\":\"糯米丸子\"}]}",
+ "parsed": {
+  "entities": [
+   {
+    "name": "丸子龙",
+    "type": "角色",
+    "properties": {
+     "编号": "6号机",
+     "原型": "鼠妇",
+     "性格": "起初保持中立，后来加入了卡布达一方",
+     "特长": "肚子里藏着和平星的碎片",
+     "爱好": "最爱吃糯米丸子"
+    }
+   },
+   {
+    "name": "铁甲小宝",
+    "type": "特摄剧"
+   },
+   {
+    "name": "鼠妇",
+    "type": "生物"
+   },
+   {
+    "name": "和平星",
+    "type": "物品"
+   },
+   {
+    "name": "卡布达",
+    "type": "角色"
+   },
+   {
+    "name": "糯米丸子",
+    "type": "食物"
+   }
+  ],
+  "relations": [
+   {
+    "subject": "丸子龙",
+    "predicate": "登场于",
+    "object": "铁甲小宝"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "编号",
+    "object": "6号机"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "原型",
+    "object": "鼠妇"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "藏着",
+    "object": "和平星"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "加入",
+    "object": "卡布达"
+   },
+   {
+    "subject": "丸子龙",
+    "predicate": "爱吃",
+    "object": "糯米丸子"
+   }
+  ]
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 436,
+ "output_tokens": 214,
+ "cached_read_tokens": 256,
+ "latency_ms": 4134.586832951754,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

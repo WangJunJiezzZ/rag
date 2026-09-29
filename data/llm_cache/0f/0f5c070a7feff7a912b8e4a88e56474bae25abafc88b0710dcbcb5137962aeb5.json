@@ -1,0 +1,14 @@
+{
+ "text": "鲨鱼辣椒的武器是鲨鱼神斧[3]。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 629,
+ "output_tokens": 13,
+ "cached_read_tokens": 0,
+ "latency_ms": 3296.547708043363,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}
