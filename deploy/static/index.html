@@ -71,6 +71,31 @@ svg.paths{width:100%;height:auto;display:block}
 .info{color:var(--muted);font-size:12.5px;background:var(--panel2);padding:10px 12px;border-radius:8px;
  border-left:3px solid var(--accent)}
 a{color:var(--accent)}
+/* 自动补全 */
+.acwrap{position:relative;flex:1;min-width:240px;display:flex}
+.ac{position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:20;background:var(--panel);
+ border:1px solid var(--line);border-radius:9px;max-height:300px;overflow:auto;
+ box-shadow:0 8px 24px rgba(0,0,0,.28);display:none}
+.ac.on{display:block}
+.ac .it{padding:8px 12px;cursor:pointer;font-size:13px;display:flex;gap:8px;align-items:baseline;
+ border-bottom:1px solid var(--line)}
+.ac .it:last-child{border-bottom:0}
+.ac .it:hover,.ac .it.sel{background:var(--panel2)}
+.ac .it .k{font-size:10.5px;color:var(--accent);flex:none;border:1px solid var(--line);
+ border-radius:4px;padding:0 5px}
+.ac .it .q{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ac .hd{padding:6px 12px;font-size:11px;color:var(--muted);background:var(--panel2)}
+/* 问题清单 */
+.cat{display:none;margin-top:12px}
+.cat.on{display:block}
+.catgrp{margin-bottom:10px}
+.catgrp h3{font-size:11.5px;color:var(--accent);margin:0 0 5px;font-weight:600}
+.catq{display:block;width:100%;text-align:left;background:none;border:0;color:var(--muted);
+ font:inherit;font-size:12.5px;padding:3px 0 3px 10px;cursor:pointer;border-left:2px solid var(--line)}
+.catq:hover{color:var(--fg);border-left-color:var(--accent)}
+.toggle{background:none;border:1px solid var(--line);color:var(--muted);border-radius:7px;
+ padding:4px 10px;font:inherit;font-size:12px;cursor:pointer}
+.toggle:hover{border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
 <body>
@@ -95,9 +120,14 @@ a{color:var(--accent)}
 
   <div class="card">
     <div class="askrow">
-      <input type="text" id="q" placeholder="也可以自己输入，例如：XX基金的管理人注册在哪个管辖区？" autocomplete="off">
+      <span class="acwrap">
+        <input type="text" id="q" placeholder="输入问题，或按 ↓ 浏览全部可回答的问题" autocomplete="off">
+        <div class="ac" id="ac"></div>
+      </span>
       <button class="primary" id="go">提问</button>
+      <button class="toggle" id="catbtn">全部问题</button>
     </div>
+    <div class="cat" id="cat"></div>
     <div class="opts">
       <label>图谱来源
         <select id="graph">
@@ -107,7 +137,8 @@ a{color:var(--accent)}
       </label>
       <label>top_k <select id="topk"><option>5</option><option selected>8</option><option>12</option></select></label>
     </div>
-    <div class="note">切换「图谱来源」可直观看到 LLM 抽取环节的损失：标准图能走通的关系链，抽取图上可能是断的。</div>
+    <div class="note">切换「图谱来源」可直观看到 LLM 抽取环节的损失：标准图能走通的关系链，抽取图上可能是断的。<br>
+    输入框里打字会提示<b>有预录答案的问题</b>；点「全部问题」可看完整清单。</div>
   </div>
 
   <div class="grid">
@@ -140,12 +171,14 @@ import { BM25, Graph, graphSearch } from './js/engine.js';
 const $ = s => document.querySelector(s);
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let DATA = {}, BM = null, GRAPHS = {}, D2C = new Map(), CHUNK = new Map(), LAST = null;
+let CATALOG = [], acItems = [], acSel = -1;
 
 async function boot(){
-  const [chunks, ansers, examples, meta, gE, gO] = await Promise.all(
-    ['chunks','answers','examples','meta','graph_extracted','graph_oracle']
+  const [chunks, ansers, examples, meta, gE, gO, catalog] = await Promise.all(
+    ['chunks','answers','examples','meta','graph_extracted','graph_oracle','catalog']
       .map(n => fetch(`data/${n}.json`).then(r => r.json())));
   DATA = { chunks, answers: ansers, examples, meta };
+  CATALOG = catalog;
 
   for (const c of chunks){
     CHUNK.set(c.id, c);
@@ -169,6 +202,47 @@ async function boot(){
       <span class="meta">证据 ${e.n} 份</span>
     </button>`).join('');
   document.querySelectorAll('.ex').forEach(b => b.onclick = () => { $('#q').value = b.dataset.q; ask(); });
+  buildCatalog();
+}
+
+/* ---------- 全部可回答问题清单 ---------- */
+function buildCatalog(){
+  const byType = new Map();
+  for (const c of CATALOG){
+    if (!byType.has(c.label)) byType.set(c.label, []);
+    byType.get(c.label).push(c);
+  }
+  $('#cat').innerHTML = `<div class="note" style="margin:0 0 10px">
+      静态版共 <b>${CATALOG.length}</b> 道题有预录答案。其余问题仍可检索，但没有生成的答案文字。
+    </div>` + [...byType.entries()].map(([label, qs]) => `
+    <div class="catgrp"><h3>${esc(label)}（${qs.length}）</h3>
+      ${qs.map(c => `<button class="catq" data-q="${esc(c.q)}">${esc(c.q)}</button>`).join('')}
+    </div>`).join('');
+  $('#cat').querySelectorAll('.catq').forEach(b => b.onclick = () => {
+    $('#q').value = b.dataset.q; $('#cat').classList.remove('on'); ask();
+  });
+}
+
+/* ---------- 自动补全 ---------- */
+function acRender(list){
+  acItems = list; acSel = -1;
+  const box = $('#ac');
+  if (!list.length){ box.classList.remove('on'); return; }
+  box.innerHTML = `<div class="hd">${list.length} 道有预录答案的问题</div>` +
+    list.map((c,i) => `<div class="it" data-i="${i}">
+      <span class="k">${esc(c.label)}</span><span class="q">${esc(c.q)}</span></div>`).join('');
+  box.classList.add('on');
+  box.querySelectorAll('.it').forEach(el => el.onclick = () => {
+    $('#q').value = acItems[+el.dataset.i].q; acClose(); ask();
+  });
+}
+function acClose(){ $('#ac').classList.remove('on'); acSel = -1; }
+function acMove(d){
+  if (!acItems.length) return;
+  acSel = (acSel + d + acItems.length) % acItems.length;
+  $('#ac').querySelectorAll('.it').forEach((el,i) => el.classList.toggle('sel', i === acSel));
+  const el = $('#ac').querySelector('.it.sel');
+  if (el) el.scrollIntoView({block:'nearest'});
 }
 
 function ask(){
@@ -221,7 +295,8 @@ function render(d){
     });
   } else {
     $('#answer').innerHTML = `<div class="info"><b>这个问题没有预录答案。</b><br>
-      静态版只内置了评测集里 ${DATA.meta.answers/2} 道题的生成结果。<br>
+      静态版内置了 <b>${CATALOG.length}</b> 道题的生成结果——点上方「全部问题」查看，
+      或在输入框里打几个字会自动提示。<br>
       不过右侧的<b>检索证据</b>和下方的<b>关系路径</b>都是刚刚在你浏览器里实时算出来的 ——
       这部分才是这个项目的核心。</div>`;
   }
@@ -276,7 +351,29 @@ function drawPath(g){
 }
 
 $('#go').onclick = ask;
-$('#q').addEventListener('keydown', e => { if (e.key === 'Enter') ask(); });
+$('#catbtn').onclick = () => { $('#cat').classList.toggle('on'); acClose(); };
+
+$('#q').addEventListener('input', () => {
+  const v = $('#q').value.trim();
+  if (!v){ acClose(); return; }
+  // 按"包含全部输入字符"打分，短问题优先 —— 中文没有词边界，子串匹配最稳
+  const hit = CATALOG.filter(c => c.q.includes(v))
+    .concat(CATALOG.filter(c => !c.q.includes(v) && [...v].every(ch => c.q.includes(ch))))
+    .slice(0, 8);
+  acRender(hit);
+});
+$('#q').addEventListener('keydown', e => {
+  if (e.key === 'ArrowDown'){ e.preventDefault(); if (!acItems.length) acRender(CATALOG.slice(0,8)); else acMove(1); }
+  else if (e.key === 'ArrowUp'){ e.preventDefault(); acMove(-1); }
+  else if (e.key === 'Escape'){ acClose(); }
+  else if (e.key === 'Enter'){
+    if (acSel >= 0 && acItems[acSel]){ $('#q').value = acItems[acSel].q; acClose(); }
+    else acClose();
+    ask();
+  }
+});
+document.addEventListener('click', e => { if (!e.target.closest('.acwrap')) acClose(); });
+
 ['#graph','#topk'].forEach(s => $(s).onchange = () => { if (LAST) ask(); });
 boot();
 </script>

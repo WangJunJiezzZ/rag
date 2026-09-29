@@ -158,6 +158,30 @@ def main() -> int:
     write_text(out / "examples.json",
                json.dumps(examples, ensure_ascii=False))
 
+    # ---- 可回答问题清单 ----
+    # 静态版只有这些题有生成的答案。把清单显式交给前端, 让访客
+    # **先看到能问什么**, 而不是随便试几个都没答案后就走了。
+    TYPE_LABEL = {
+        "fact_direct": "单跳事实", "fact_paraphrase": "同义改写",
+        "semantic_only": "纯语义", "fact_disambig": "易混实体",
+        "hop2": "两跳关系", "hop3_parent": "三跳关系",
+        "hop4_risk": "四跳风险穿透", "shared_director": "共同董事",
+        "aggregation": "聚合计数", "negative": "幻觉陷阱",
+    }
+    catalog = []
+    for it in items:
+        if f"extracted|{it['question']}" not in answers:
+            continue
+        catalog.append({"q": it["question"],
+                        "t": it["type"],
+                        "label": TYPE_LABEL.get(it["type"], it["type"]),
+                        "hops": it["hops"]})
+    order = list(TYPE_LABEL)
+    catalog.sort(key=lambda x: (order.index(x["t"]) if x["t"] in order else 99,
+                                x["q"]))
+    write_text(out / "catalog.json",
+               json.dumps(catalog, ensure_ascii=False, separators=(",", ":")))
+
     # ---- 元信息 ----
     write_text(out / "meta.json", json.dumps({
         "chunks": len(chunks), "docs": len(docs),
