@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import sys
 from pathlib import Path
 
@@ -13,8 +14,10 @@ setup_console()
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--host", default="127.0.0.1")
-    ap.add_argument("--port", type=int, default=8000)
+    # PORT 环境变量优先于 --port。托管平台(HF Spaces / Render / Railway)
+    # 都是通过 PORT 注入端口的, 本地默认仍是 8000, 行为不变。
+    ap.add_argument("--host", default=os.environ.get("HOST", "127.0.0.1"))
+    ap.add_argument("--port", type=int, default=int(os.environ.get("PORT", 8000)))
     ap.add_argument("--reload", action="store_true")
     args = ap.parse_args()
     try:

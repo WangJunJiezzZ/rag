@@ -14,6 +14,7 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+# prepare-hf 的产物，可随时重新生成
 
 # ── 系统 / 编辑器 ──────────────────────────────────
 .DS_Store

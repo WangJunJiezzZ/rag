@@ -58,6 +58,7 @@ class Answer:
     from_cache: bool = False
     prompt_id: str = ""
     n_invalid_citations: int = 0
+    alias_hit: bool = False      # 经稳定键兜底命中(跨平台回放)
     trace: dict = field(default_factory=dict)   # 检索链路痕迹, 供前端展示
 
     @property
@@ -105,7 +106,8 @@ class AnswerGenerator:
         self.native = use_native_citations and llm.supports("native_citations")
 
     def answer(self, question: str, chunks: list[dict],
-               route: str = "", graph_paths: list[str] | None = None) -> Answer:
+               route: str = "", graph_paths: list[str] | None = None,
+               cache_identity: str = "") -> Answer:
         p = registry.get(self.prompt_id)
         context, used = build_context(chunks, self.max_context_chars)
 
@@ -122,15 +124,19 @@ class AnswerGenerator:
                      "id": c["doc_id"]} for c in used]
 
         system, user = p.render(context=context, question=question)
+        # 稳定键只含**语义身份**, 不含检索结果 —— 跨平台一致。
+        # 检索结果会因 ONNX 浮点差异在不同操作系统上微变, 导致精确键对不上。
+        stable = f"answer|{self.prompt_id}|{self.model}|{cache_identity}|{question}"
         res = self.llm.complete(system=system, user=user, model=self.model,
                                 max_tokens=2048, documents=docs,
-                                cache_tag=self.prompt_id)
+                                cache_tag=self.prompt_id, stable_key=stable)
 
         ans = Answer(text=res.text, refused=_looks_refused(res.text),
                      context_chunks=[c["id"] for c in used], route=route,
                      graph_paths=list(graph_paths or []),
                      latency_ms=res.latency_ms, cost_usd=res.cost_usd,
                      from_cache=res.from_cache, prompt_id=self.prompt_id)
+        ans.alias_hit = res.alias_hit
         ans.citations = self._collect_citations(res, used)
         ans.n_invalid_citations = sum(1 for c in ans.citations if not c.valid)
         return ans
@@ -185,7 +191,8 @@ class ExtractiveGenerator:
     prompt_id = "extractive/none"
 
     def answer(self, question: str, chunks: list[dict], route: str = "",
-               graph_paths: list[str] | None = None) -> Answer:
+               graph_paths: list[str] | None = None,
+               cache_identity: str = "") -> Answer:
         if not chunks:
             return Answer(text="资料中未提及。", refused=True, route=route)
         top = chunks[0]

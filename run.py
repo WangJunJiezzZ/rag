@@ -43,6 +43,7 @@ TASKS: dict[str, tuple[str, list[str]]] = {
     "e2e":         ("端到端评测 + prompt A/B", ["scripts/eval_endtoend.py"]),
     "fetch-model": ("下载 ONNX 向量模型 (约 24MB)", ["scripts/fetch_model.py"]),
     "verify-replay": ("离线回放自检 —— **演示前必跑**", ["scripts/verify_replay.py"]),
+    "prepare-hf":   ("生成 HuggingFace Space 部署目录", ["scripts/prepare_hf.py"]),
     "report":      ("汇总全部评测结果, 生成 HTML 报告", ["scripts/make_report.py"]),
     "serve":       ("启动 Web 演示 (默认 http://127.0.0.1:8000)", ["scripts/serve.py"]),
 }

@@ -10,8 +10,8 @@
       "false_refusal": 0.4722222222222222,
       "citation_valid": 1.0,
       "citation_grounded": 0.7638888888888888,
-      "latency_ms": 2920.2702971300682,
-      "cost_usd": 0.0162354
+      "latency_ms": 21.45261220031012,
+      "cost_usd": 0.0
     },
     "by_type": {
       "fact_direct": {
@@ -22,8 +22,8 @@
         "false_refusal": 0.0,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3492.1305001771543,
-        "cost_usd": 0.00234
+        "latency_ms": 17.90509699882629,
+        "cost_usd": 0.0
       },
       "fact_paraphrase": {
         "n": 4,
@@ -33,8 +33,8 @@
         "false_refusal": 0.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.75,
-        "latency_ms": 3510.6171147490386,
-        "cost_usd": 0.0017628
+        "latency_ms": 22.342978991218843,
+        "cost_usd": 0.0
       },
       "fact_disambig": {
         "n": 3,
@@ -44,8 +44,8 @@
         "false_refusal": 0.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.6666666666666666,
-        "latency_ms": 3783.098139004627,
-        "cost_usd": 0.0011817
+        "latency_ms": 29.72758365406965,
+        "cost_usd": 0.0
       },
       "semantic_only": {
         "n": 5,
@@ -55,7 +55,7 @@
         "false_refusal": 1.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.875,
-        "latency_ms": 7.3054502019658685,
+        "latency_ms": 14.195533585734665,
         "cost_usd": 0.0
       },
       "hop2": {
@@ -66,8 +66,8 @@
         "false_refusal": 1.0,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3717.609792004805,
-        "cost_usd": 0.0022611
+        "latency_ms": 26.656783383805305,
+        "cost_usd": 0.0
       },
       "hop3_parent": {
         "n": 2,
@@ -77,8 +77,8 @@
         "false_refusal": 1.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.5833333333333333,
-        "latency_ms": 3294.397041987395,
-        "cost_usd": 0.0010344
+        "latency_ms": 18.32910400116816,
+        "cost_usd": 0.0
       },
       "hop4_risk": {
         "n": 4,
@@ -88,8 +88,8 @@
         "false_refusal": 1.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.875,
-        "latency_ms": 4067.371166747762,
-        "cost_usd": 0.0032667
+        "latency_ms": 23.235468746861443,
+        "cost_usd": 0.0
       },
       "shared_director": {
         "n": 5,
@@ -99,8 +99,8 @@
         "false_refusal": 0.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.3333333333333333,
-        "latency_ms": 3716.1205998039804,
-        "cost_usd": 0.0034292999999999997
+        "latency_ms": 24.22487500589341,
+        "cost_usd": 0.0
       },
       "aggregation": {
         "n": 2,
@@ -110,8 +110,8 @@
         "false_refusal": 0.5,
         "citation_valid": 1.0,
         "citation_grounded": 0.5625,
-        "latency_ms": 2214.777208486339,
-        "cost_usd": 0.0005652000000000001
+        "latency_ms": 36.51925001759082,
+        "cost_usd": 0.0
       },
       "negative": {
         "n": 3,
@@ -121,8 +121,8 @@
         "false_refusal": 0.0,
         "citation_valid": 1.0,
         "citation_grounded": 0.0,
-        "latency_ms": 1017.6611110024775,
-        "cost_usd": 0.0003942
+        "latency_ms": 7.5473613299739855,
+        "cost_usd": 0.0
       }
     },
     "details": [
@@ -136,8 +136,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 4224.765292019583,
-        "cost_usd": 0.00039690000000000005
+        "latency_ms": 9.300375008024275,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0005",
@@ -149,8 +149,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 5600.878916040529,
-        "cost_usd": 0.00039179999999999993
+        "latency_ms": 7.406208023894578,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0006",
@@ -162,8 +162,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2900.654917000793,
-        "cost_usd": 0.0003831
+        "latency_ms": 9.276832977775484,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0009",
@@ -175,8 +175,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2755.2070840029046,
-        "cost_usd": 0.000396
+        "latency_ms": 33.578458009287715,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0011",
@@ -188,8 +188,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2800.7428330020048,
-        "cost_usd": 0.00038879999999999996
+        "latency_ms": 22.646165976766497,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0012",
@@ -201,8 +201,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2670.5339589971118,
-        "cost_usd": 0.0003834
+        "latency_ms": 25.22254199720919,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0014",
@@ -214,8 +214,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3094.267625012435,
-        "cost_usd": 0.00036389999999999995
+        "latency_ms": 14.167167013511062,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0017",
@@ -227,8 +227,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3938.7549169478007,
-        "cost_usd": 0.000381
+        "latency_ms": 39.45495799416676,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0020",
@@ -240,8 +240,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 3932.1826670202427,
-        "cost_usd": 0.0005064
+        "latency_ms": 22.695833002217114,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0027",
@@ -253,8 +253,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 3077.263250015676,
-        "cost_usd": 0.0005115
+        "latency_ms": 13.053957954980433,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0029",
@@ -266,8 +266,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2791.8183330330066,
-        "cost_usd": 0.00036540000000000005
+        "latency_ms": 15.042458951938897,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0030",
@@ -279,8 +279,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 2896.143833990209,
-        "cost_usd": 0.00045119999999999996
+        "latency_ms": 21.8784169992432,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0034",
@@ -292,8 +292,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 5661.332249990664,
-        "cost_usd": 0.0003651
+        "latency_ms": 52.26187501102686,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0045",
@@ -305,7 +305,7 @@
         "refusal_correct": NaN,
         "citation_valid": NaN,
         "citation_grounded": NaN,
-        "latency_ms": 12.35258299857378,
+        "latency_ms": 11.905667022801936,
         "cost_usd": 0.0
       },
       {
@@ -318,7 +318,7 @@
         "refusal_correct": NaN,
         "citation_valid": NaN,
         "citation_grounded": NaN,
-        "latency_ms": 6.504499993752688,
+        "latency_ms": 11.46754197543487,
         "cost_usd": 0.0
       },
       {
@@ -331,7 +331,7 @@
         "refusal_correct": NaN,
         "citation_valid": NaN,
         "citation_grounded": NaN,
-        "latency_ms": 5.194834026042372,
+        "latency_ms": 6.554124993272126,
         "cost_usd": 0.0
       },
       {
@@ -344,7 +344,7 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.75,
-        "latency_ms": 4.114958981517702,
+        "latency_ms": 17.557291954290122,
         "cost_usd": 0.0
       },
       {
@@ -357,7 +357,7 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 8.3603750099428,
+        "latency_ms": 23.493041982874274,
         "cost_usd": 0.0
       },
       {
@@ -370,8 +370,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3768.133667006623,
-        "cost_usd": 0.0004302
+        "latency_ms": 22.89933298015967,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0059",
@@ -383,8 +383,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3969.0986670320854,
-        "cost_usd": 0.0004425
+        "latency_ms": 25.260041991714388,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0062",
@@ -396,8 +396,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3519.6458339923993,
-        "cost_usd": 0.0004398
+        "latency_ms": 27.874124993104488,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0063",
@@ -409,8 +409,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 4403.085750003811,
-        "cost_usd": 0.0005034
+        "latency_ms": 36.852541961707175,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0064",
@@ -422,8 +422,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 2928.0850419891067,
-        "cost_usd": 0.0004452
+        "latency_ms": 20.397874992340803,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0068",
@@ -435,8 +435,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.6666666666666666,
-        "latency_ms": 3089.467749989126,
-        "cost_usd": 0.0005151
+        "latency_ms": 17.641958023887128,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0071",
@@ -448,8 +448,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 3499.326333985664,
-        "cost_usd": 0.0005193
+        "latency_ms": 19.016249978449196,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0072",
@@ -461,8 +461,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 3787.2279589646496,
-        "cost_usd": 0.0008031
+        "latency_ms": 9.774875012226403,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0073",
@@ -474,8 +474,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 3782.040041987784,
-        "cost_usd": 0.0007878
+        "latency_ms": 21.84649999253452,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0075",
@@ -487,8 +487,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 4048.133583040908,
-        "cost_usd": 0.0008118
+        "latency_ms": 25.125082989688963,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0077",
@@ -500,8 +500,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 1.0,
-        "latency_ms": 4652.083082997706,
-        "cost_usd": 0.000864
+        "latency_ms": 36.19541699299589,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0082",
@@ -513,8 +513,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.25,
-        "latency_ms": 3824.6148750185966,
-        "cost_usd": 0.0006728999999999999
+        "latency_ms": 18.70804198551923,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0084",
@@ -526,8 +526,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.0,
-        "latency_ms": 3694.8270000284538,
-        "cost_usd": 0.0008502
+        "latency_ms": 26.88354201382026,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0087",
@@ -539,8 +539,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.25,
-        "latency_ms": 3280.21220798837,
-        "cost_usd": 0.000702
+        "latency_ms": 33.506166015286,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0088",
@@ -552,8 +552,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.6666666666666666,
-        "latency_ms": 3514.3355829641223,
-        "cost_usd": 0.0005826
+        "latency_ms": 21.31608297349885,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0089",
@@ -565,8 +565,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.5,
-        "latency_ms": 4266.613333020359,
-        "cost_usd": 0.0006216
+        "latency_ms": 20.710542041342705,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0093",
@@ -578,7 +578,7 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.375,
-        "latency_ms": 18.357374996412545,
+        "latency_ms": 46.22154199751094,
         "cost_usd": 0.0
       },
       {
@@ -591,8 +591,8 @@
         "refusal_correct": NaN,
         "citation_valid": 1.0,
         "citation_grounded": 0.75,
-        "latency_ms": 4411.197041976266,
-        "cost_usd": 0.0005652000000000001
+        "latency_ms": 26.8169580376707,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0100",
@@ -604,8 +604,8 @@
         "false_refusal": NaN,
         "citation_valid": NaN,
         "citation_grounded": NaN,
-        "latency_ms": 3020.226166001521,
-        "cost_usd": 0.0003942
+        "latency_ms": 10.578458954114467,
+        "cost_usd": 0.0
       },
       {
         "id": "q-0107",
@@ -617,7 +617,7 @@
         "false_refusal": NaN,
         "citation_valid": 1.0,
         "citation_grounded": NaN,
-        "latency_ms": 10.288583987858146,
+        "latency_ms": 7.715957995969802,
         "cost_usd": 0.0
       },
       {
@@ -630,7 +630,7 @@
         "false_refusal": NaN,
         "citation_valid": 1.0,
         "citation_grounded": NaN,
-        "latency_ms": 22.468583018053323,
+        "latency_ms": 4.347667039837688,
         "cost_usd": 0.0
       }
     ]

@@ -1,0 +1,11 @@
+# 部署到托管平台时的最小依赖集。
+# 刻意不含 anthropic / sentence-transformers / pypinyin:
+#   · anthropic 在 llm.py 里是懒加载, 离线模式永不触发
+#   · sentence-transformers 被 ONNX 方案取代
+#   · pypinyin 只在离线抽取/消歧阶段用到, 服务端不跑那些
+# 少装一个包就少一份构建失败的可能。
+fastapi>=0.115
+uvicorn[standard]>=0.32
+numpy>=1.26
+onnxruntime>=1.20
+tokenizers>=0.20

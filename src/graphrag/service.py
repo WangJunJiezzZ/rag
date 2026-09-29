@@ -124,8 +124,11 @@ class RAGService:
             linked = [n for _, n in tr.linked]
             intent = tr.intent
 
+        # 图谱来源必须进身份: 同一问题在抽取图和标准图下检索到的证据不同,
+        # 答案也不同, 不能互相顶替。
         ans = self.generator.answer(question, chunks, route=route or "lexical",
-                                    graph_paths=paths)
+                                    graph_paths=paths,
+                                    cache_identity=self.cfg.graph_path)
         ans.route = f"{route or 'lexical'}（{reason}）" if reason else ans.route
         ans.latency_ms = (time.perf_counter() - t0) * 1000
         ans.trace = {"route": route or "lexical", "reason": reason,

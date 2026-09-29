@@ -102,6 +102,7 @@ class LLMResult:
     cached_read_tokens: int = 0
     latency_ms: float = 0.0
     from_cache: bool = False
+    alias_hit: bool = False      # 经稳定键兜底命中(检索上下文可能与当前略有出入)
     provider: str = ""
 
     @property
@@ -126,6 +127,7 @@ class DiskCache:
                          or project_root() / "data" / "llm_cache")
         self.hits = 0
         self.misses = 0
+        self.alias_hits = 0        # 经稳定键兜底命中的次数
 
     @staticmethod
     def key(payload: dict) -> str:
@@ -135,6 +137,30 @@ class DiskCache:
     def path(self, key: str) -> Path:
         # 两级目录, 避免单目录下上万个文件
         return self.root / key[:2] / f"{key}.json"
+
+    def alias_path(self, stable: str) -> Path:
+        return self.root / "_alias" / stable[:2] / f"{stable}.txt"
+
+    def put_alias(self, stable: str, primary: str) -> None:
+        """语义稳定键 -> 精确键 的指针。
+
+        为什么需要: 精确键 = hash(完整 prompt), 而 prompt 里含检索到的文档。
+        检索用到 ONNX 浮点运算, **同一份代码在 macOS 与 Linux 上 top-k 排序
+        会有细微差别**(实测: 本地 39/39 命中, 同版本容器只有 29/39)。
+        于是"在这台机器录、到那台机器放"就会大面积失效 ——
+        这不只影响 Docker 部署, 换一台 Windows 电脑同样会中招。
+
+        稳定键只取**语义身份**(prompt 版本 + 问题 + 图谱来源 + 模型),
+        不含检索结果, 因此跨平台一致。
+        """
+        write_text(self.alias_path(stable), primary)
+
+    def get_by_alias(self, stable: str) -> "LLMResult | None":
+        p = self.alias_path(stable)
+        if not p.exists():
+            return None
+        primary = p.read_text(encoding="utf-8").strip()
+        return self.get(primary) if primary else None
 
     def get(self, key: str) -> LLMResult | None:
         p = self.path(key)
@@ -152,6 +178,7 @@ class DiskCache:
     def stats(self) -> dict:
         total = self.hits + self.misses
         return {"hits": self.hits, "misses": self.misses,
+                "alias_hits": self.alias_hits,
                 "hit_rate": self.hits / total if total else 0.0}
 
 
@@ -468,7 +495,14 @@ class LLM:
                  model: str = MODEL_ANSWER, max_tokens: int = 4096,
                  schema: dict | None = None,
                  documents: list[dict] | None = None,
-                 cache_tag: str = "") -> LLMResult:
+                 cache_tag: str = "",
+                 stable_key: str | None = None) -> LLMResult:
+        """stable_key: 与检索结果无关的语义身份, 用于跨平台回放兜底。
+
+        在线时**只认精确键** —— prompt 改一个字就该重新调用, 否则评测会读到旧结果。
+        离线时精确键未命中才退到稳定键, 并在返回值上标记 `alias_hit`,
+        让上层知道这条结果对应的检索上下文可能与当前略有出入。
+        """
         effective = self._model_for_key(model)
         key = DiskCache.key({
             "provider": self.provider_name, "model": effective,
@@ -477,7 +511,19 @@ class LLM:
         })
         hit = self.cache.get(key)
         if hit is not None:
+            # 命中精确键时也补写别名 —— 幂等且零成本。
+            # 否则别名只会在"未命中→调用"的路径上生成, 而一台已经录满缓存的
+            # 机器永远走不到那条路径, 索引就建不起来。
+            if stable_key:
+                self.cache.put_alias(DiskCache.key({"stable": stable_key}), key)
             return hit
+        if self.offline and stable_key:
+            # 跨平台兜底: 精确键对不上, 但语义身份一致
+            alias = self.cache.get_by_alias(DiskCache.key({"stable": stable_key}))
+            if alias is not None:
+                self.cache.alias_hits += 1
+                alias.alias_hit = True
+                return alias
         if self.offline:
             raise CacheMissError(
                 f"离线模式(provider={self.provider_name})下缓存未命中。\n"
@@ -489,6 +535,8 @@ class LLM:
                                      max_tokens=max_tokens, schema=schema,
                                      documents=documents)
         self.cache.put(key, res)
+        if stable_key:
+            self.cache.put_alias(DiskCache.key({"stable": stable_key}), key)
         self.calls += 1
         self.total_cost += res.cost_usd
         return res
@@ -504,6 +552,7 @@ class LLM:
     def report(self) -> str:
         c = self.cache.stats()
         mode = "离线" if self.offline else "在线"
+        alias = f"  其中稳定键兜底={c['alias_hits']}" if c.get("alias_hits") else ""
         return (f"provider={self.provider_name}({mode})  实际调用={self.calls}  "
                 f"缓存命中={c['hits']}/{c['hits'] + c['misses']} "
-                f"({c['hit_rate']:.0%})  累计花费≈${self.total_cost:.3f}")
+                f"({c['hit_rate']:.0%}){alias}  累计花费≈${self.total_cost:.3f}")

@@ -1,0 +1,15 @@
+# 绝不进镜像
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+
+# 无用体积
+.git/
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
+build/
