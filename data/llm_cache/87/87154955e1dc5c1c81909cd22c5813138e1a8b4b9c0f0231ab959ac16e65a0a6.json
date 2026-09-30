@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰的外婆是「娘娘狼」（E0021）。**\n\n关系链：小灰灰 ← 母亲 红太狼（E0019）← 母亲 娘娘狼（E0021），即娘娘狼是小灰灰的外婆（母系外祖母）。红太狼的父亲是爹爹狼（E0020），也就是小灰灰的外公。\n\n依据: doc-0011, doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4685,
+ "output_tokens": 89,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3705.7418749900535,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

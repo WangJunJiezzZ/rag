@@ -1,0 +1,14 @@
+{
+ "text": "被高圆寺博士封印的机器人是**鲨鱼辣椒**（9 号机，原型为鲨鱼），它的武器是**鲨鱼神斧**。\n\n补充说明：鲨鱼辣椒因自我意识扭曲被高圆寺博士封印，后来由丸子龙解开封印；它额头上的伤疤是高圆寺博士不小心弄的，因此一直心怀怨恨。\n\n依据: doc-0042, doc-0030",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4966,
+ "output_tokens": 88,
+ "cached_read_tokens": 4352,
+ "latency_ms": 3292.2095420071855,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity \"狼堡\" and see who lives there.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 54,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2917.0529160182923,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_TRc8KOjSPJwlPD3582hC6655",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"狼堡\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

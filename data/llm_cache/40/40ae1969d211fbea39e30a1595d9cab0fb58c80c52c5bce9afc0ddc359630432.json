@@ -1,0 +1,24 @@
+{
+ "text": "Let me confirm via the graph relation.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3706,
+ "output_tokens": 66,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2707.775583025068,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_AgiQDWFARM85lbLFc9Su0736",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\", \"relation\": \"TRANSFORM_TIME\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,69 @@
+{
+ "text": "Let me check the remaining characters and search documents for the trait.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 6499,
+ "output_tokens": 210,
+ "cached_read_tokens": 5120,
+ "latency_ms": 3525.646540976595,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_BpIXIGWa1QkYIDZhf4TK4523",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蝎子莱莱\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_dSVUTvyVpHZzt8GM0Xj21707",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_4lwVFgkY5AvP7K0fptno2976",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蜻蜓队长\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_3aurrOJ93ZDNUXxF48Su6360",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  },
+  {
+   "index": 4,
+   "id": "call_04_KCz3jo1adq4Yt9Ml5Tio8080",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 5,
+   "id": "call_05_949TzDw6K9AuAGHaRA240381",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"田德莉娜\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

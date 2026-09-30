@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答通过父亲灰太狼的母亲推导出小灰灰的奶奶是银太狼，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答通过父亲灰太狼的母亲推导出小灰灰的奶奶是银太狼，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 483,
+ "output_tokens": 36,
+ "cached_read_tokens": 256,
+ "latency_ms": 2748.0641250149347,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

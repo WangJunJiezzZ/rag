@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论为卡布达搭档的爷爷叫高圆寺寅彦，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论为卡布达搭档的爷爷叫高圆寺寅彦，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 507,
+ "output_tokens": 34,
+ "cached_read_tokens": 256,
+ "latency_ms": 2178.8249170058407,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

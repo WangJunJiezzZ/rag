@@ -1,0 +1,42 @@
+{
+ "text": "Let me verify the favorite food relations in the graph for these candidates.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4091,
+ "output_tokens": 136,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3480.987625021953,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_cWUaSXHB3Wra036eaLPn1911",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蕉太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_koKpwmN9hm4Fnda9holw1601",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_2Cv3jvOfECNVlNvD5ITD2905",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"最爱吃 西瓜 香蕉 水果\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

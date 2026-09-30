@@ -1,0 +1,14 @@
+{
+ "text": "是**呱呱蛙**（又名聒聒蛙）。\n\n- 它是特摄剧《铁甲小宝》中的 B 机器人，编号 7 号机，原型是青蛙，身份是科学博士。\n- 性格与特长：**说话长篇大论，善于分析敌人**——正对应\"讲起话来又臭又长、还很会研究对手\"。\n- 口头禅是\"从结论上来看\"。\n\n依据: doc-0028",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 8745,
+ "output_tokens": 97,
+ "cached_read_tokens": 8448,
+ "latency_ms": 4161.681415978819,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

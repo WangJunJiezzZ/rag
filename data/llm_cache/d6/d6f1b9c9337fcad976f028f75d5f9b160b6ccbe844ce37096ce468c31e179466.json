@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph and documents for information about this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3037,
+ "output_tokens": 88,
+ "cached_read_tokens": 2816,
+ "latency_ms": 4488.760750042275,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_eBvUa8ZPQyb9WBAhpIHP4941",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_8akW3PD0vaOGBr3uiBa25997",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"灰太狼 抓到 羊 数量\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

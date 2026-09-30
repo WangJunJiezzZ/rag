@@ -1,0 +1,24 @@
+{
+ "text": "The partner is 中野美树. Let me find out what she does.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3363,
+ "output_tokens": 56,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2925.674375030212,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_w0IFYl3xNmzHHdw2bEhI2673",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0031\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

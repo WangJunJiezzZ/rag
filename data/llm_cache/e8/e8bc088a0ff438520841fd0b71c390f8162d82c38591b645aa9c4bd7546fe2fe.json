@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and trace their relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3035,
+ "output_tokens": 80,
+ "cached_read_tokens": 2816,
+ "latency_ms": 4033.8577500078827,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_5NkGQsUY2j003lKONi1l8869",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小让\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_BRnERgDog88Jkv2aZVjI4881",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

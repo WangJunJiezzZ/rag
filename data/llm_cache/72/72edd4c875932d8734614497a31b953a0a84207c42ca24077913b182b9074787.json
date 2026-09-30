@@ -1,0 +1,14 @@
+{
+ "text": "**羊村由慢羊羊当家。**\n\n图谱依据：慢羊羊（别名「慢羊羊村长」）有一条 `HEAD_OF` 关系指向羊村，即他是羊村的村长；同时他也住在羊村，并兼任大肥羊学校的校长（另一条 `HEAD_OF` 指向大肥羊学校）。\n\n依据: doc-0008",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3695,
+ "output_tokens": 74,
+ "cached_read_tokens": 3200,
+ "latency_ms": 2499.4041249738075,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

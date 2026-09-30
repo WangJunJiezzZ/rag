@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱中「美羊羊」(E0007) 没有任何 CATCHPHRASE 关系边，其角色档案 doc-0004 的「性格与特长」一节也只提到\"天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事\"\"能用任何东西编织饰物\"，并未记载口头禅。全文检索\"美羊羊 口头禅\"命中的口头禅记录属于灰太狼（\"我一定会回来的\"，doc-0010），与美羊羊无关。\n\n依据: doc-0004, doc-0010",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4257,
+ "output_tokens": 124,
+ "cached_read_tokens": 3968,
+ "latency_ms": 3343.2009170064703,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

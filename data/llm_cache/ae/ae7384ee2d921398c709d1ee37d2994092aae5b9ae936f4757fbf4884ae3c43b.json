@@ -1,0 +1,33 @@
+{
+ "text": "The sealed robot is 鲨鱼辣椒 (E0040). Now let me find its weapon.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3689,
+ "output_tokens": 108,
+ "cached_read_tokens": 3328,
+ "latency_ms": 2701.519958965946,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_JtMiZIbkfYmkylH4xhiF8144",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\", \"relation\": \"WEAPON\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_PV9NxfaO2ZWhDPSCkh3J0481",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

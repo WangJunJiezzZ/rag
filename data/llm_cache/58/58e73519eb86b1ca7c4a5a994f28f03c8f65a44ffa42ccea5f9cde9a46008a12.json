@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph and documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3037,
+ "output_tokens": 83,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3169.6317919995636,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_rCRXx3EqW0DDHvRNxMK78351",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"素食\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_3yWaVMIVvbsz7ypleh2n5503",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"被猴子带大的狼 素食者\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

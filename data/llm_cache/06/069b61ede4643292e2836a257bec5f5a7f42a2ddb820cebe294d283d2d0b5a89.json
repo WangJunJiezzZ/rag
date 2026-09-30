@@ -1,0 +1,24 @@
+{
+ "text": "红太狼的父亲是爹爹狼。让我核实一下这条路径。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4550,
+ "output_tokens": 71,
+ "cached_read_tokens": 4096,
+ "latency_ms": 2837.8180830040947,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_TueAqlL0IO8y3Wp1Tvpr4057",
+   "type": "function",
+   "function": {
+    "name": "explain_relation",
+    "arguments": "{\"a\": \"蕉太狼\", \"b\": \"爹爹狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

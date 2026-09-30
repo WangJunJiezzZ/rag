@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论为小灰灰爷爷的妻子是银太狼，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论为小灰灰爷爷的妻子是银太狼，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 523,
+ "output_tokens": 31,
+ "cached_read_tokens": 384,
+ "latency_ms": 2944.1115829977207,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

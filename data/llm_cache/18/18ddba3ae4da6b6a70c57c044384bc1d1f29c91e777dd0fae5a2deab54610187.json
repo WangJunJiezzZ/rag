@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3526,
+ "output_tokens": 41,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3010.5459580081515,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_8MxwAQANCoDPDuTCmmev2089",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"懒羊羊 生日\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

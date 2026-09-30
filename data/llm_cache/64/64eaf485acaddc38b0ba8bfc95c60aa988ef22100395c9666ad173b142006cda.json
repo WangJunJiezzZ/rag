@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 80,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3059.0583750163205,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_fuoGbBXFA2iuc72qVutk1950",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"黑太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_zYV7Tls6oCX2zEsyXktH2952",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"爹爹狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

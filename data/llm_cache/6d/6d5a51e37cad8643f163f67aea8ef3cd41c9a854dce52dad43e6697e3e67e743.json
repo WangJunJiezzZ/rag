@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3551,
+ "output_tokens": 74,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3025.31870896928,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_aCQq3Ignd20pSoz23gI72416",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"田德莉娜\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_7fVjg3KCaAXHao6Gu3gj1951",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0031\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

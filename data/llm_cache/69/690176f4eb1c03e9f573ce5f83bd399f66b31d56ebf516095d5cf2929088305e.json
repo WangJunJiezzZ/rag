@@ -1,0 +1,51 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5090,
+ "output_tokens": 133,
+ "cached_read_tokens": 4864,
+ "latency_ms": 2852.2139160195366,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_n5DypzaoREBNCMocvZNX9090",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0037\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_NAOiRAn7wWV8kyT2dBFz2627",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0038\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_z4BQ1iA1PYUSvQG2Ju9r9254",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0039\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_fyLaLlzekr4yi8h9yUTb4386",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0036\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

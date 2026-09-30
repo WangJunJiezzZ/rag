@@ -1,0 +1,14 @@
+{
+ "text": "卡布达巨人是卡布达向**射手座和平星**许愿诞生的。\n\n图谱中卡布达有两条 WISHED_ON 关系：射手座和平星（doc-0041）和蛇夫座和平星（doc-0042）。其中射手座和平星对应的是卡布达巨人的诞生——为了对抗能变成巨人形态的鲨鱼辣椒，卡布达向射手座和平星许愿，由此诞生了卡布达巨人，卡布达坐进驾驶舱操纵它战斗。而蛇夫座和平星的愿望是消去鲨鱼辣椒额头的伤疤，与卡布达巨人无关。\n\n依据: doc-0041, doc-0042",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4096,
+ "output_tokens": 147,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3367.5373750156723,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

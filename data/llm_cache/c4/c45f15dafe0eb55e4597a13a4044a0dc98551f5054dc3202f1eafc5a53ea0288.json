@@ -1,0 +1,33 @@
+{
+ "text": "Let me verify with the source document.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4333,
+ "output_tokens": 118,
+ "cached_read_tokens": 3712,
+ "latency_ms": 4231.159333023243,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_VkPzrQieAFgAasqJjea82312",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0030\", \"max_chars\": 800}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_21Dwg1tVq8NXE0BGsXnp0247",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0042\", \"max_chars\": 800}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

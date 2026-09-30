@@ -1,0 +1,33 @@
+{
+ "text": "I found no voice actor information in the graph or the character document. Let me do a broader text search to be sure.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4595,
+ "output_tokens": 142,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2955.9422089951113,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_2xGOCkK037M4NIYTfSb44289",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"铁甲小宝 配音演员 中文配音 声优\", \"top_k\": 8}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_iLAHeeQppCTyhUFsZ2jG8435",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"卡布达 配音 谁配的音\", \"top_k\": 8}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

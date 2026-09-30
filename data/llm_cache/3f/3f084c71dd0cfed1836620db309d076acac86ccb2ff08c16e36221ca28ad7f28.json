@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰嘴里老叼着的是**奶嘴**。\n\n图谱中「小灰灰」有一条 CARRIES（随身物品）关系指向「奶嘴」，来源为 doc-0012。\n\n依据: doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3488,
+ "output_tokens": 47,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2973.3334169723094,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

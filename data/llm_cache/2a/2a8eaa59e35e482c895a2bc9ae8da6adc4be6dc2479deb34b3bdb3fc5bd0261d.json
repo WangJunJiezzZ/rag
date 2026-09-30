@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3749,
+ "output_tokens": 92,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3765.6035000109114,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Wv68wbUsmb6L0c686wej6548",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0002\", \"max_chars\": 3000}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_oKXLH7R1rUUrvjohrtkr4175",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0001\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

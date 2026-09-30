@@ -1,0 +1,14 @@
+{
+ "text": "两部剧里最爱吃水果的两个角色是：\n\n- **《喜羊羊与灰太狼》——蕉太狼**：图谱中 FAVORITE_FOOD 指向「香蕉」，文档也写明\"该角色最爱吃香蕉\"（他吃素，从小被猴子收养）。\n- **《铁甲小宝》——卡布达**：图谱中 FAVORITE_FOOD 指向「西瓜」，文档写明\"该角色最爱吃西瓜\"。\n\n（图谱里 FAVORITE_FOOD 关系共 3 条，另一条是丸子龙→糯米丸子，不属于水果。）\n\n依据: doc-0013, doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5483,
+ "output_tokens": 139,
+ "cached_read_tokens": 5248,
+ "latency_ms": 4978.692625008989,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

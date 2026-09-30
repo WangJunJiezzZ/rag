@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph and documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3037,
+ "output_tokens": 84,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3270.54075000342,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Kr1xptFUagEvyYwL6yB85225",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"公证人\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_IdJahPsGTmbbxXdh2h4q5653",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"机器人 比赛 公证人 裁判\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

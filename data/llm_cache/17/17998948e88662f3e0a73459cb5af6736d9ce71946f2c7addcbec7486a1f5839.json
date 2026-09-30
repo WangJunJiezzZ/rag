@@ -1,0 +1,14 @@
+{
+ "text": "**蜘蛛侦探**（《铁甲小宝》中的 B 机器人，编号 5 号机，原型是蜘蛛）。\n\n依据：其角色档案明确记载\"该角色是个守财奴，擅长数钱\"，即爱钱如命的财迷性格。\n\n- 编号：5 号机；原型：蜘蛛；武器：巨爪；阵营：反派；所属团体：反派三人组\n- 说话带关西口音\n\n依据: doc-0026, doc-0036, doc-0037",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 6554,
+ "output_tokens": 108,
+ "cached_read_tokens": 5888,
+ "latency_ms": 3648.440374992788,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

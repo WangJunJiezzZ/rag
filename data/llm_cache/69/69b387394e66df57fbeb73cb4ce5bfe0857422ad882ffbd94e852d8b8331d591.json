@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4134,
+ "output_tokens": 99,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3573.5286670387723,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_K2hN0U3xMByA55wzztSD2776",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"铁甲小宝 主角 小让 卡布达 B系列机器人\", \"top_k\": 5}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_rTN9hIKexQbzQdRXM0Qg7521",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0002\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

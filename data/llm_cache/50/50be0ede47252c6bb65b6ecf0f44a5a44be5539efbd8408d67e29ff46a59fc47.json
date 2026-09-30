@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出灰太狼的二叔灰二太太狼是七大恶狼的首领，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出灰太狼的二叔灰二太太狼是七大恶狼的首领，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 518,
+ "output_tokens": 35,
+ "cached_read_tokens": 384,
+ "latency_ms": 2601.9329999689944,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

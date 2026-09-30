@@ -1,0 +1,33 @@
+{
+ "text": "Let me query the graph for all UNIT_NO relations to count the numbered B robots.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4021,
+ "output_tokens": 166,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3145.653250045143,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_QLaT5UWpxER4PdzrGo0z5887",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0001\", \"relation\": \"APPEARS_IN\", \"limit\": 50}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_cNRPu3wj0YPwV8Zczphl7752",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"编号 号机 卡布达 金龟次郎 蟑螂恶霸 蜘蛛侦探 蝎子莱莱 鲨鱼辣椒\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

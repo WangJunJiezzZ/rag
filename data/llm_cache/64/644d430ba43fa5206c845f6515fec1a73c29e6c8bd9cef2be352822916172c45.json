@@ -1,0 +1,42 @@
+{
+ "text": "The graph only tells me 小灰灰 → 灰太狼 → 武大狼 (descendant), but not the generation number. Let me check the source documents.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4711,
+ "output_tokens": 149,
+ "cached_read_tokens": 3328,
+ "latency_ms": 3668.265708955005,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ChdxtAYcOrWFzIxpnUHV6335",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0010\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_BOSoMqCdvsQcbRWRh2K74113",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0012\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_7RQ38dwlrURvVqn0FZI48696",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"小灰灰 武大狼 第几代孙\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

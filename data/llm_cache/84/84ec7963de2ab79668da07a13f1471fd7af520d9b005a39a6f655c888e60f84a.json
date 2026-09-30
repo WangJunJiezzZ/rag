@@ -1,0 +1,14 @@
+{
+ "text": "**银太狼**。\n\n推理链：小灰灰 → 父亲灰太狼（doc-0012）→ 灰太狼的父亲是黑太狼（doc-0010）→ 黑太狼的妻子是银太狼（doc-0017）。所以小灰灰的爷爷是黑太狼，爷爷的妻子（奶奶）是银太狼。\n\n依据: doc-0012, doc-0010, doc-0017",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3863,
+ "output_tokens": 93,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3220.0443749898113,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "是**暖羊羊**。\n\n依据: doc-0007\n\n（该档案记载：暖羊羊属于盘羊族，是大肥羊学校的转学生，性格温暖、力大无穷，并且\"有一张乌鸦嘴，预言坏事很准\"。）",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3981,
+ "output_tokens": 54,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2735.0667089922354,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

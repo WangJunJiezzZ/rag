@@ -1,0 +1,33 @@
+{
+ "text": "Let me search with different wording.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3817,
+ "output_tokens": 89,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3581.3331669778563,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_OO4z06KIjP66O3AsdGZ80509",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"贪杯好饮 机器人 角色特点\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_NiqZVNaBmYwt99zFLTQP6883",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"酒鬼 嗜酒 机器人 铁甲小宝\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

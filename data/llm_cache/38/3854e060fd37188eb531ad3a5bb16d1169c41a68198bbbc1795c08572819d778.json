@@ -1,0 +1,24 @@
+{
+ "text": "小灰灰的母亲是红太狼（E0019）。外婆应该是红太狼的母亲，我来查一下红太狼的父母。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4176,
+ "output_tokens": 67,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3672.68120899098,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_gN9gHddwIxdsJVzAYsdm8861",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0019\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

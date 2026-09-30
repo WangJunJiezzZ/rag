@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论为平底锅，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论为平底锅，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 488,
+ "output_tokens": 25,
+ "cached_read_tokens": 128,
+ "latency_ms": 2323.2366670272313,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

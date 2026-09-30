@@ -1,0 +1,33 @@
+{
+ "text": "Let me search the documents for \"B机器人\" and related terms.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3212,
+ "output_tokens": 128,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2931.8910419824533,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_wl5cUKCSqt0dyx0zFwfl0278",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"B机器人 制造者 谁制造的\", \"top_k\": 8}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_8HEDEhKBF4G1dnFq8qnM0271",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"B系列机器人 高圆寺博士 制造\", \"top_k\": 8}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

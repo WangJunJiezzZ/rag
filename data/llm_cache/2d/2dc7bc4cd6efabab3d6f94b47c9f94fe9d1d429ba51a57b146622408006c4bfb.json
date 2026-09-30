@@ -1,0 +1,14 @@
+{
+ "text": "田德莉娜的原型是**瓢虫**。\n\n依据: doc-0031",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3265,
+ "output_tokens": 18,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2591.555833001621,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

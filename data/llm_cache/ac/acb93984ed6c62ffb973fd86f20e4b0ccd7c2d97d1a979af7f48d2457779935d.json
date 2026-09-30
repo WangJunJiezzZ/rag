@@ -1,0 +1,14 @@
+{
+ "text": "**答案：爹爹狼**\n\n推理链：\n- 蕉太狼的\"二叔\"是**灰太狼**（灰太狼 —UNCLE_OF→ 蕉太狼）\n- 灰太狼的妻子是**红太狼**（SPOUSE_OF）\n- 红太狼的父亲是**爹爹狼**（爹爹狼 —PARENT_OF→ 红太狼）\n\n所以灰太狼的岳父 = 红太狼的父亲 = **爹爹狼**，即蕉太狼二叔的岳父是爹爹狼。\n\n依据: doc-0013, doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4921,
+ "output_tokens": 124,
+ "cached_read_tokens": 4608,
+ "latency_ms": 3447.1625830046833,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

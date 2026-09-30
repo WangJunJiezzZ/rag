@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the first-aired dates for both shows.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3047,
+ "output_tokens": 87,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3756.391458970029,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Y9boki0z33XvxMjnKnDZ4695",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"铁甲小宝\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_KqSvG7tyyuMmKfYTYI4I0790",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊与灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

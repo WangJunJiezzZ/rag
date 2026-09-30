@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship between 喜羊羊 and his father.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 103,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2950.1322919968516,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_kkRwbIAUCZHyYmbAG4056848",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_QKcFMbpWtIMJUZLDvAXQ8230",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"喜羊羊\", \"relation\": \"PARENT_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

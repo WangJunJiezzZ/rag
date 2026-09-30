@@ -1,0 +1,24 @@
+{
+ "text": "Now let me look at the LIKES relation from 飞翔机器人.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3120,
+ "output_tokens": 72,
+ "cached_read_tokens": 2944,
+ "latency_ms": 2842.1312080463395,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_8aoITdR8dx7QoSOQyPqD0474",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0033\", \"relation\": \"LIKES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

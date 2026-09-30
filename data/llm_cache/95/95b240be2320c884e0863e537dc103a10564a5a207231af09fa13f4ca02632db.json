@@ -1,0 +1,14 @@
+{
+ "text": "不是。蟑螂恶霸的原型是**眼镜蛇**，不是蟑螂。\n\n- 图谱中「蟑螂恶霸」(E0039) 的 PROTOTYPE 关系指向「眼镜蛇」。\n- 角色档案里也明确写着：「该角色的原型是眼镜蛇」，并特别说明「该角色虽然名字里有蟑螂，原型却不是蟑螂」。\n- 旁证：他的武器是「眼镜蛇尾鞭」，编号为 8 号机，出自特摄剧《铁甲小宝》。\n\n依据: doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4051,
+ "output_tokens": 121,
+ "cached_read_tokens": 3584,
+ "latency_ms": 5318.171125021763,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

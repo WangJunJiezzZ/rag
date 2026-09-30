@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 金龟次郎 and its weapon.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 88,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2991.894458013121,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_60BQH9IfGRfEtnqgAj4c4805",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_7kVjO1Ne6VEW5XiOyH2F1808",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"金龟次郎 武器 打架\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

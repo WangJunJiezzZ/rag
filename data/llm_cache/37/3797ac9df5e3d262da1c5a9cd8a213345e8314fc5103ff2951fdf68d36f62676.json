@@ -1,0 +1,14 @@
+{
+ "text": "**灰太狼表哥的老婆是「香太狼」。**\n\n推理路径：\n- 灰太狼（E0015）的 COUSIN_OF 入边来自**夜太狼**（E0026），即夜太狼是灰太狼的表哥（doc-0015）\n- 夜太狼的 SPOUSE_OF 入边来自**香太狼**（E0025），即香太狼是夜太狼的妻子（doc-0014）\n\n依据: doc-0015, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4199,
+ "output_tokens": 112,
+ "cached_read_tokens": 3968,
+ "latency_ms": 3974.050124990754,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

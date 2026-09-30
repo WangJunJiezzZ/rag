@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确给出最终结论「小香香」，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确给出最终结论「小香香」，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 522,
+ "output_tokens": 27,
+ "cached_read_tokens": 384,
+ "latency_ms": 2828.3700839965604,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

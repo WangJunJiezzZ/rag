@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3117,
+ "output_tokens": 62,
+ "cached_read_tokens": 2944,
+ "latency_ms": 3118.0802910239436,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Xp4cuvlBMgm4fEQX76KT2878",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\", \"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

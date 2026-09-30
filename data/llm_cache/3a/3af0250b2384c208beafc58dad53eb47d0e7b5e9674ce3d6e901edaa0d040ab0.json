@@ -1,0 +1,14 @@
+{
+ "text": "**平底锅。**\n\n依据图谱与角色档案：红太狼的武器是**平底锅**（必杀技为「千手平底锅」），档案同时记载她「总是派丈夫去抓羊，抓不到就动手」，丈夫是灰太狼。\n\n依据: doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4062,
+ "output_tokens": 64,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2537.5051670125686,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

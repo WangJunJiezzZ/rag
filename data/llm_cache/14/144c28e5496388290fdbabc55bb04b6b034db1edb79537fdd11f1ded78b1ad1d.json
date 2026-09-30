@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4031,
+ "output_tokens": 73,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2869.5414579706267,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_8yVcsSTIAP6uiAW4GV1e9727",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"慢羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_gTr40LXziX6OEsvcCB2U5189",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0008\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

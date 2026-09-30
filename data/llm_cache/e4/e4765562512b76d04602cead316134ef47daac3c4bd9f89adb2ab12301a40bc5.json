@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3511,
+ "output_tokens": 42,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3157.6262910384685,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_0V9YH4Kq9cXQKW5SPgoy2868",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"美羊羊 口头禅\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

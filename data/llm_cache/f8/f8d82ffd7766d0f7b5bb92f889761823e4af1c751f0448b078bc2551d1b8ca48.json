@@ -1,0 +1,33 @@
+{
+ "text": "The group's leader is 蟑螂恶霸. Let me look up his weapon.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3593,
+ "output_tokens": 110,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2879.7751670354046,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_acadeRtFGzTCTRZFvjax8595",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蟑螂恶霸\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_G0npcyc87vg6us1tzX4Q7229",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0044\", \"relation\": \"LEADER_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"incorrect\", \"reason\": \"回答最终结论是“资料中未提及”，未给出标准答案“平底锅”，因此错误。\"}",
+ "parsed": {
+  "verdict": "incorrect",
+  "reason": "回答最终结论是“资料中未提及”，未给出标准答案“平底锅”，因此错误。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 406,
+ "output_tokens": 35,
+ "cached_read_tokens": 128,
+ "latency_ms": 3130.2237500203773,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

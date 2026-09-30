@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 126,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2929.470165981911,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_QbbgI2Jk0pXCQPzw3gbf4540",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"羊 体型圆 不爱干活 懒\", \"top_k\": 5}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_Vyp6Cii3xKHcXoq7cCl16284",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"懒羊羊 又圆又胖 懒惰 爱睡觉\", \"top_k\": 5}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

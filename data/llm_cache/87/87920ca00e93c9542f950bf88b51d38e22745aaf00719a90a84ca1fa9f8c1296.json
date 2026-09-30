@@ -1,0 +1,60 @@
+{
+ "text": "Let me also verify via the graph's FACTION relations to cross-check.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4469,
+ "output_tokens": 179,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3248.421791999135,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_qC8YwsmbWGEiFI6GzXpk2041",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_An5FgLffwFwECwlPdmot6939",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_3tOEkzeU1xJ3HDWMhAuZ4747",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"飞翔机器人\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_tJUopUqFshnIu2JrFrKX5994",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"呱呱蛙\"}"
+   }
+  },
+  {
+   "index": 4,
+   "id": "call_04_aYRRfzGFwWUrrsJMbNaI7070",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"田德莉娜\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

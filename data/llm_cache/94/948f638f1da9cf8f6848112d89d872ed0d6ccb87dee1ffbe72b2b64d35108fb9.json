@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the school entity and its students.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3034,
+ "output_tokens": 51,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2925.866917008534,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_fafFkBpluDhmpoNSfHMz4691",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"大肥羊学校\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3039,
+ "output_tokens": 83,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2968.484457989689,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_jU3j7tfgfGs66YyANQYc6092",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_gerGqXGW0EMxg9Ndl4Ip2153",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"小灰灰 被爸爸骗了 口头禅\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me first find the relevant entities.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3041,
+ "output_tokens": 109,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2833.6769160232507,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_DkiLZ94e9NGKpo6Rys1B1815",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"铁甲小宝\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_mLRrURzQL3ukJOGuLZMm8581",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"B机器人 编号 1号机 2号机\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "飞翔机器人喜欢的是田德莉娜。现在查田德莉娜的原型。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3275,
+ "output_tokens": 76,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2832.119458995294,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_W29MH3g5LkshubPKYLRQ4886",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0034\", \"relation\": \"PROTOTYPE\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

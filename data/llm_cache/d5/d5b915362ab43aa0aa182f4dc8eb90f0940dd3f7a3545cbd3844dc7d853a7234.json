@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出解开封印的机器人是丸子龙，最爱吃糯米丸子，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出解开封印的机器人是丸子龙，最爱吃糯米丸子，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 470,
+ "output_tokens": 32,
+ "cached_read_tokens": 256,
+ "latency_ms": 2856.1761250020936,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

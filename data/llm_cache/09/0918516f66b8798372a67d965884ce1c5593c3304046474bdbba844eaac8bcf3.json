@@ -1,0 +1,33 @@
+{
+ "text": "I need to find who 蜘蛛侦探 calls \"大哥\" — likely 蟑螂恶霸. Let me check the graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3553,
+ "output_tokens": 99,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2841.9127499801107,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_U1RzYWz9N7TKge95Rzg74840",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0036\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_dUCHOUi59LuQ70d2w0gD5480",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蟑螂恶霸\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

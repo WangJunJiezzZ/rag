@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for information about the original planned name for the protagonist 喜羊羊.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 97,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3012.2171670082025,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_wzcmR2Lxn3DIwUhVQJyK6529",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜羊羊 主角 最初 原名 打算叫什么名字\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_PNoR49dW0K4TTct9bYRN9808",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

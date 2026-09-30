@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the character \"小让\" first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3033,
+ "output_tokens": 50,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2458.336583978962,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_LFIRhTlziU8uSk2QuULJ2883",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小让\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

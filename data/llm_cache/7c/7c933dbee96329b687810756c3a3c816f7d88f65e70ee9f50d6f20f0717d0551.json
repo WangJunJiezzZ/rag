@@ -1,0 +1,14 @@
+{
+ "text": "**美羊羊喜欢喜羊羊。**\n\n图谱中的依据：\n- 美羊羊（E0007）—LIKES→ 喜羊羊（E0004），来源 doc-0004\n- 另外，沸羊羊（E0009）—LIKES→ 美羊羊（E0007），来源 doc-0006（即沸羊羊喜欢美羊羊，方向相反）\n\n依据: doc-0004, doc-0006",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3299,
+ "output_tokens": 98,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2638.132249994669,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll trace this step by step: first find 懒羊羊, then its principal/head, then the village, then where that village is located.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3039,
+ "output_tokens": 102,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3007.2614169912413,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Xyc1YDs6llFBAGu5NdQn3401",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"懒羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_cB5IeUBQhKbYya75uqWS6361",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"慢羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

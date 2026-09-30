@@ -1,0 +1,14 @@
+{
+ "text": "**答案：** 飞翔机器人喜欢的机器人是**田德莉娜**，她的原型是**瓢虫**。\n\n依据: doc-0024, doc-0031",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3436,
+ "output_tokens": 36,
+ "cached_read_tokens": 3200,
+ "latency_ms": 4424.770542012993,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

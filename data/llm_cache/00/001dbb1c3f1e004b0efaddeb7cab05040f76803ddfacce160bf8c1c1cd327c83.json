@@ -1,0 +1,14 @@
+{
+ "text": "**沸羊羊喜欢美羊羊。**\n\n图谱中 沸羊羊（E0009）有一条 `LIKES` 出边指向 美羊羊（E0007）。\n\n依据: doc-0006",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3262,
+ "output_tokens": 45,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2771.3487499859184,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

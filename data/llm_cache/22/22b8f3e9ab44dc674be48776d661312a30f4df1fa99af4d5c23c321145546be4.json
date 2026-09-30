@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and their roles.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 80,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3065.1714589912444,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_flMQTfutW7L3yrgaVBAh9968",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"暖羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_BC95iNA8BBa7p9RHzsCh1635",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"懒羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

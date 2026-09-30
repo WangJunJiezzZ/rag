@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论明确给出小灰灰的外公是爹爹狼，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论明确给出小灰灰的外公是爹爹狼，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 424,
+ "output_tokens": 31,
+ "cached_read_tokens": 128,
+ "latency_ms": 3393.113625003025,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

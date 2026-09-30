@@ -1,0 +1,24 @@
+{
+ "text": "Found it — 呱呱蛙.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 8416,
+ "output_tokens": 49,
+ "cached_read_tokens": 6656,
+ "latency_ms": 3369.9652909999713,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_vgvxTBbZVolUPS04vsq55737",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0028\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

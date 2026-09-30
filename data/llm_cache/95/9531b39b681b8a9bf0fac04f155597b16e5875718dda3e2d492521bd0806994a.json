@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the relationship in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3033,
+ "output_tokens": 50,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3149.754792044405,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_t3e9ir6YnsCjgZ0NYr5d6688",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"美羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

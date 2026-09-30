@@ -1,0 +1,24 @@
+{
+ "text": "蕉太狼的\"二叔\"是灰太狼（灰太狼 UNCLE_OF 蕉太狼）。现在查灰太狼的岳父。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3405,
+ "output_tokens": 72,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3018.021541996859,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_BLICrmH6HoUIeToxmg9J9453",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0015\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

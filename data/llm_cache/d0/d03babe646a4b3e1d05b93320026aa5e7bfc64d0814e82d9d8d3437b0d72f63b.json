@@ -1,0 +1,14 @@
+{
+ "text": "**灰二太太狼是灰太狼的二叔**（即灰太狼父亲的弟弟）。\n\n依据：\n- 图谱关系：`灰二太太狼 -[UNCLE_OF]-> 灰太狼`（doc-0016）\n- 角色档案原文：「该角色是灰太狼的二叔。」（doc-0016）\n\n补充：灰二太太狼同时是「七大恶狼」的首领（LEADER_OF，doc-0038），必杀技为「沉默羔羊十二式」，并总叫侄子灰太狼的乳名「尿太狼」（doc-0016）。\n\n依据: doc-0016, doc-0038",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3974,
+ "output_tokens": 138,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3398.2687910320237,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

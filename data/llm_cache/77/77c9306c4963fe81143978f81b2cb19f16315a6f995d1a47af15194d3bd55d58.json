@@ -1,0 +1,14 @@
+{
+ "text": "**田德莉娜**（10 号机，原型为瓢虫）是队伍里唯一的女性机器人。\n\n依据: doc-0031",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3925,
+ "output_tokens": 30,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3069.3632909678854,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

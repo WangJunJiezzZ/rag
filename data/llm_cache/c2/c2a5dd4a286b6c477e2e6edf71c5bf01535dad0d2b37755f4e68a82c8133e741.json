@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的原型是**独角仙**（甲虫）。\n\n依据: doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3287,
+ "output_tokens": 20,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2201.400750025641,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

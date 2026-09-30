@@ -1,0 +1,14 @@
+{
+ "text": "图谱中「羊村」的 LIVES_IN 关系共 7 条，住着以下角色：\n\n| 角色 | 备注 |\n|---|---|\n| 慢羊羊 | 别名「慢羊羊村长」 |\n| 喜羊羊 | |\n| 美羊羊 | |\n| 懒羊羊 | |\n| 沸羊羊 | |\n| 暖羊羊 | |\n| 软绵绵 | |\n\n其中慢羊羊、喜羊羊、美羊羊、懒羊羊、沸羊羊、暖羊羊 6 人的居住记录来自同一份文档（doc-0034），软绵绵来自 doc-0039，慢羊羊另有 doc-0008 佐证。\n\n依据: doc-0008, doc-0034, doc-0039",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3547,
+ "output_tokens": 164,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3416.258125042077,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

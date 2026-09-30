@@ -1,0 +1,33 @@
+{
+ "text": "图谱中「飞翔机器人」没有 PROTOTYPE 关系。我再查一下文档原文确认。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3536,
+ "output_tokens": 92,
+ "cached_read_tokens": 3200,
+ "latency_ms": 2956.782417022623,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_XF8qcc0D8NhgZkG5sfnK4675",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0024\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_vw4POdFFdOymWmedbAVu7069",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"飞翔机器人 原型\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

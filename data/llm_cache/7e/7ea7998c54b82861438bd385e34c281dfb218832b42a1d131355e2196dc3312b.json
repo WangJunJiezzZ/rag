@@ -1,0 +1,33 @@
+{
+ "text": "夜太狼的配偶是香太狼，但图谱里没有夜太狼的子女关系。查一下香太狼，以及是否有角色以夜太狼/香太狼为父母。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3664,
+ "output_tokens": 116,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2972.9402500088327,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_u3TFYOYkJ3BNDL2cj1NL7919",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0025\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_xXJvmBGxyBi9HxmUNj2G4500",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"夜太狼 香太狼 女儿\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the character first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3032,
+ "output_tokens": 46,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3325.2802090137266,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_PN9pqopVs6CFEgNVWXx52586",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"丸子龙\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

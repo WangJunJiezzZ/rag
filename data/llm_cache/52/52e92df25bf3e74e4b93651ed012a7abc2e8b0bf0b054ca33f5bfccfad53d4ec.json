@@ -1,0 +1,24 @@
+{
+ "text": "I'll start by finding the entity for \"警用机器人\" (police robot).",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 57,
+ "cached_read_tokens": 2816,
+ "latency_ms": 4841.2423330009915,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_y14aiOaeR8LhbH7D30us8685",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"警用机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

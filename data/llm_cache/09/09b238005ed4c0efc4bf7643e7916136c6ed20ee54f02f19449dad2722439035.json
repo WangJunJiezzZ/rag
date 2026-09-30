@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3127,
+ "output_tokens": 59,
+ "cached_read_tokens": 2944,
+ "latency_ms": 2887.1033749892376,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ghQwtCG6EI3Jl59irdC55793",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0001\", \"relation\": \"EPISODES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

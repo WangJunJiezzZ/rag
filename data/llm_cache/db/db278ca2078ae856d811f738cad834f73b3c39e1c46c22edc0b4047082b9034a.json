@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the show's theme song in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3040,
+ "output_tokens": 57,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3306.96016602451,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_a4ey4kpEdkQIL3H3a4fb7802",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊与灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

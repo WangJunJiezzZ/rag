@@ -1,0 +1,14 @@
+{
+ "text": "小让用的是**友情呼唤指令器**。\n\n依据文档：\n- 卡布达角色档案：「该角色一般要靠搭档的**友情呼唤指令器**才能超级变换。」（doc-0022）\n- 小让角色档案：「该角色能用**友情呼唤指令器**让卡布达进行超级变换。」（doc-0018）\n\n依据: doc-0022, doc-0018",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5008,
+ "output_tokens": 84,
+ "cached_read_tokens": 4096,
+ "latency_ms": 3606.1234579537995,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3216,
+ "output_tokens": 72,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3080.682125000749,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_RjgwgH2o29dKF6cN2E678485",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0002\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_ldWvDPQdmo4hlyTTQEuz0830",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"高圆寺博士\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

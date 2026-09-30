@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5941,
+ "output_tokens": 72,
+ "cached_read_tokens": 4992,
+ "latency_ms": 3220.4728340147994,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_mdUwXey2O1J7Ep7yQeFn6570",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0026\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_JkUKBHclIQPwiZzwUAex1167",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"蜘蛛侦探\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

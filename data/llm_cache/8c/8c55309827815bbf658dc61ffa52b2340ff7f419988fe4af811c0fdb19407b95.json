@@ -1,0 +1,14 @@
+{
+ "text": "蜘蛛侦探口中的“大哥”是**蟑螂恶霸**（反派三人组的老大，蜘蛛侦探和蝎子莱莱都称他为“大哥”）。\n\n而蟑螂恶霸的原型是**眼镜蛇**（编号 8 号机，武器为眼镜蛇尾鞭）。\n\n依据: doc-0037, doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4865,
+ "output_tokens": 74,
+ "cached_read_tokens": 3968,
+ "latency_ms": 2939.9560000165366,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

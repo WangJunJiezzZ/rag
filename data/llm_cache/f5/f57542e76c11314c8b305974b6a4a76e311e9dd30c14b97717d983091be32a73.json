@@ -1,0 +1,14 @@
+{
+ "text": "未找到依据。\n\n我查了知识图谱中「鲨鱼辣椒」（E0040）的全部一跳关系，其中并没有 FAVORITE_FOOD（最爱吃的食物）这一项；它的档案文档（doc-0030）里也只记录了编号（9 号机）、原型（鲨鱼）、武器（鲨鱼神斧）、超级变换形态维持时间（15 分钟）、巨人形态（超级鲨鱼巨人）等信息，没有提到饮食偏好。文本检索同样没有返回相关内容。\n\n所以关于「鲨鱼辣椒最爱吃什么」，现有资料中未找到依据。\n\n依据: doc-0030, doc-0042",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4625,
+ "output_tokens": 130,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3617.3627499956638,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

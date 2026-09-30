@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and trace their relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 82,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3482.1307500242256,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_0M3iulgLjVGZg3qtSLqk2764",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰二太太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_ALm1FPywJi2E6wagThem2710",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

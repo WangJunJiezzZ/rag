@@ -1,0 +1,14 @@
+{
+ "text": "和平星共有 **13 颗**。\n\n依据: doc-0040",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3284,
+ "output_tokens": 15,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2609.8881660145707,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll trace this step by step: first find who released 鲨鱼辣椒's seal, then look up that character's favorite food.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3037,
+ "output_tokens": 118,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2852.529499970842,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Xqg4aZEnO5IgkER1CwAF1934",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_G9hMbe2fEegmmzEjV4sZ1698",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"鲨鱼辣椒\", \"relation\": \"RELEASED_BY\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

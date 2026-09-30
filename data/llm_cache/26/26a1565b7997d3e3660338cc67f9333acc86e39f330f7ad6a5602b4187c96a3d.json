@@ -1,0 +1,33 @@
+{
+ "text": "灰太狼的父母是黑太狼和银太狼。确认一下这两位与灰太狼的关系方向及性别信息。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4336,
+ "output_tokens": 96,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3017.090792011004,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_K6n8he6UiBKuLKXHHwG26484",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0016\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_wXgxaRAiZlcVwuck5IR28698",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0017\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3034,
+ "output_tokens": 98,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2904.8315419931896,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Jese6ATh4dmCaLYP4RdB6042",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_MNamf78YcyqObp76lia50366",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"小灰灰\", \"relation\": \"GRANDPARENT_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎的武器是**金龟大剪钳**。\n\n补充：他是《铁甲小宝》中的角色，编号 2 号机，原型是锹形虫，全身绿色、力气很大，口头禅是\"男人就应该默默的\"，超级变换形态最多维持 5 分钟。\n\n依据: doc-0023",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3736,
+ "output_tokens": 70,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2929.8503330210224,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

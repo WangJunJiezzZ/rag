@@ -1,0 +1,14 @@
+{
+ "text": "**高圆寺寅彦**（又名「高圆寺博士」）。\n\n推理链：卡布达 —(PARTNER_OF)→ 小让（高圆寺让）—(GRANDPARENT_OF 入边)→ 高圆寺寅彦。\n\n依据: doc-0022, doc-0018",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3812,
+ "output_tokens": 67,
+ "cached_read_tokens": 3328,
+ "latency_ms": 3762.975124991499,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

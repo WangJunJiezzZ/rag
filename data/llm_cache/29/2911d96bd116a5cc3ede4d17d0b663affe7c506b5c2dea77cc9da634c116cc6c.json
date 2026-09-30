@@ -1,0 +1,14 @@
+{
+ "text": "**答案：青青草原。**\n\n推理链（均来自图谱）：\n\n1. 懒羊羊（E0008）住在**羊村**（LIVES_IN，doc-0034），并在**大肥羊学校**上学（STUDENT_OF，doc-0035）。\n2. 懒羊羊的校长/村长是**慢羊羊**（E0012，别名\"慢羊羊村长\"），他是羊村的村长（HEAD_OF，doc-0008），同时也是大肥羊学校的校长（HEAD_OF，doc-0008）。\n3. 羊村（E0013）**位于青青草原**（LOCATED_IN，doc-0039）。\n\n所以，懒羊羊的校长（兼村长）慢羊羊所当家的村子——羊村——坐落在**青青草原**。\n\n依据: doc-0008, doc-0034, doc-0035, doc-0039",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4331,
+ "output_tokens": 190,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3197.0775409718044,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

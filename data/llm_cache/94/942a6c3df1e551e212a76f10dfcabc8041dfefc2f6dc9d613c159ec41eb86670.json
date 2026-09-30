@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 83,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2938.0740000051446,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ouvkxkBI14U0niAPZRpA1980",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"机器人 队伍 唯一的女生 女性\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_9HNmMmiZaAhCrwYLvsvW5857",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"铁甲小宝\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

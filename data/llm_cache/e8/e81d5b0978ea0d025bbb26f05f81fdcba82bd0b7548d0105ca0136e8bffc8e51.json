@@ -1,0 +1,33 @@
+{
+ "text": "Let me search with different phrasing.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3853,
+ "output_tokens": 88,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3360.2277919999324,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Pog3CzNGqKiMp6tDUkuo7175",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"说话啰嗦 长篇大论 机器人 铁甲小宝\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_SLuLpMX9pWYQmSVhZ5Zw6704",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"擅长分析对手弱点 机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

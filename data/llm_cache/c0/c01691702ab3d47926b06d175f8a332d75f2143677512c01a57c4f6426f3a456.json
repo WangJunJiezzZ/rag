@@ -1,0 +1,42 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3196,
+ "output_tokens": 139,
+ "cached_read_tokens": 2944,
+ "latency_ms": 3502.509082958568,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_OvMRJ0gVqKc2MLQBpUqi3758",
+   "type": "function",
+   "function": {
+    "name": "explain_relation",
+    "arguments": "{\"a\": \"小灰灰\", \"b\": \"武大狼\", \"max_hops\": 5}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_xRR6Nr5Mz7HA8ttBARxz0992",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0022\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_2aNuJDlOFvIbqG1PjRoQ2594",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0018\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

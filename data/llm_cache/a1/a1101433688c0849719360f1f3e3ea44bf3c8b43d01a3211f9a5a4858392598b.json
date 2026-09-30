@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出飞翔机器人喜欢的机器人田德莉娜的原型是瓢虫，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出飞翔机器人喜欢的机器人田德莉娜的原型是瓢虫，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 475,
+ "output_tokens": 33,
+ "cached_read_tokens": 256,
+ "latency_ms": 2529.71641701879,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

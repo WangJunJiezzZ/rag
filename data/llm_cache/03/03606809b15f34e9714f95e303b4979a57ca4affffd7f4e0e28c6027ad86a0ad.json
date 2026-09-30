@@ -1,0 +1,69 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 6945,
+ "output_tokens": 195,
+ "cached_read_tokens": 6656,
+ "latency_ms": 3131.7267910344526,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Pq35s0izZ0ArUm1HuCxH0969",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0035\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_invMZLNyVgQKoh3GPW791719",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_vzGEG0f9usJpIxFFMViW5588",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0041\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_yr0e1PUAoC5YB1TArZsQ4105",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0032\"}"
+   }
+  },
+  {
+   "index": 4,
+   "id": "call_04_mgQogU0eacyGUvImj4ma8870",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\"}"
+   }
+  },
+  {
+   "index": 5,
+   "id": "call_05_oDfLKtVqE7bmcVAIqFUB7110",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0034\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

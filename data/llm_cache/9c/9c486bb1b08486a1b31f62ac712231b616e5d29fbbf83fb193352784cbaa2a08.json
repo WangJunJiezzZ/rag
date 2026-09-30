@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n我查询了知识图谱中「红太狼」的全部一跳关系（共 10 条），以及文档检索结果，其中都没有关于她最喜欢的颜色的记录。\n\n图谱中红太狼的相关属性只有：口头禅「快去抓羊」、武器「平底锅」、必杀技「千手平底锅」，以及丈夫灰太狼、父亲爹爹狼、母亲娘娘狼、儿子小灰灰、表妹香太狼、居住地狼堡等关系；角色档案里也只提到她「出身富裕世家，爱打扮」，并未提及颜色偏好。\n\n依据: doc-0011, doc-0014, doc-0034",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4433,
+ "output_tokens": 140,
+ "cached_read_tokens": 3584,
+ "latency_ms": 4564.215208985843,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

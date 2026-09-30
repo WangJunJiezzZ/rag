@@ -1,0 +1,51 @@
+{
+ "text": "Let me check the character profiles directly, especially ones likely to have such traits.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4795,
+ "output_tokens": 148,
+ "cached_read_tokens": 3840,
+ "latency_ms": 4036.681499972474,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_2KclQB2buL1KqkdowFe86138",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"丸子龙\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_rD5pTSVnjQONglUynJ071816",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"呱呱蛙\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_QKqdo4eU1zulsuxaP3mT5399",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蟑螂恶霸\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_zeTaDvI6RDQWiHJm2Jlt7180",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蜘蛛侦探\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

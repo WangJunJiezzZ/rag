@@ -1,0 +1,14 @@
+{
+ "text": "是**美羊羊**。\n\n依据文档记载，美羊羊\"天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事\"，并且\"能用任何东西编织饰物\"——正是最爱打扮、会用各种材料编小首饰的那只羊。\n\n（注：红太狼也\"爱打扮\"，但\"用任何东西编织饰物\"这一条只出现在美羊羊的档案里。）\n\n依据: doc-0004",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3956,
+ "output_tokens": 97,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3437.3862499487586,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

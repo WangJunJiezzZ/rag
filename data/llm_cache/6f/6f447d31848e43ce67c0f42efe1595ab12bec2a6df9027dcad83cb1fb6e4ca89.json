@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3041,
+ "output_tokens": 87,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3641.6050419793464,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_tGOaAhfYFfWN4DYMZnRa2779",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"最爱打扮 用材料编小首饰 羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_7qkBL5owLdHNxmbooT7J1739",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜欢打扮 编织首饰 美羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

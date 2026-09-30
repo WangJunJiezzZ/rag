@@ -1,0 +1,33 @@
+{
+ "text": "The graph doesn't have personality traits. Let me search the documents for the specific description.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 6552,
+ "output_tokens": 138,
+ "cached_read_tokens": 5120,
+ "latency_ms": 3645.418374973815,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_WVHSsQ8QdtrHERTvy3fu2135",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"讲话又臭又长 喜欢研究对手 机器人 性格\", \"top_k\": 10}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_c3bNZ25W6IUhntdJr69U9049",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"口头禅 啰嗦 长篇大论 分析\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "**蕉太狼**。\n\n依据 doc-0013《蕉太狼 角色档案》：「该角色胆小，从小和父母失散，被猴子收养，吃素。」该角色是《喜羊羊与灰太狼》中的狼族角色，是灰太狼的侄子，最爱吃香蕉，常阻止二叔抓羊。\n\n依据: doc-0013",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4011,
+ "output_tokens": 78,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2799.4135419721715,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "Found it. Let me verify by reading the document.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 10975,
+ "output_tokens": 52,
+ "cached_read_tokens": 9344,
+ "latency_ms": 3729.7776250052266,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_DA3Q75UHPYcODdYluxqb2327",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0025\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

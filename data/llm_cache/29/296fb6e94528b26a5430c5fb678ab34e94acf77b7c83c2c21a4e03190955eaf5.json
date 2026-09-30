@@ -1,0 +1,33 @@
+{
+ "text": "Let me check the full character document and the graph relations for 卡布达.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3586,
+ "output_tokens": 108,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2678.6681670346297,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_W1bjUMBhzhZtks9wNcGI6055",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0022\", \"max_chars\": 3000}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_9iwwJQJtlXdkvLLskQYG2989",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

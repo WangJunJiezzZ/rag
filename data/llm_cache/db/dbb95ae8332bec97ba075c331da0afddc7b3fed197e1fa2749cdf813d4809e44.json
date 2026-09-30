@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论为小灰灰和小香香是表亲（远房表兄妹），与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论为小灰灰和小香香是表亲（远房表兄妹），与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 465,
+ "output_tokens": 36,
+ "cached_read_tokens": 128,
+ "latency_ms": 2445.623707957566,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

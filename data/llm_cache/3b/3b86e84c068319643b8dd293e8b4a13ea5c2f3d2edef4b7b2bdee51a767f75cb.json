@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3212,
+ "output_tokens": 90,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3057.564957998693,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_aL9OEIV0NrEbZefZFXtC1205",
+   "type": "function",
+   "function": {
+    "name": "explain_relation",
+    "arguments": "{\"a\": \"蕉太狼\", \"b\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_kvWzSGkqNtjsctABCOFx6370",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0024\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

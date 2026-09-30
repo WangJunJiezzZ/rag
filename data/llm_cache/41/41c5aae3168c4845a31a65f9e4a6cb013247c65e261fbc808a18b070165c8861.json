@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3521,
+ "output_tokens": 124,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3089.3462920212187,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_G8QrNoZlIb1rkrlI4pA30858",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"贪财 喜欢钱 金币 财迷机器人 铁甲小宝\", \"top_k\": 8}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_tJ6wlM6vZpzlYfR4JCDo9328",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"性格 爱财 吝啬 机器人 角色档案\", \"top_k\": 8}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "I found a document listing the factions. Let me read it in full to confirm.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4172,
+ "output_tokens": 58,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2822.152749984525,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_5RwvRnWkk6hoDQKyACte5601",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0036\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

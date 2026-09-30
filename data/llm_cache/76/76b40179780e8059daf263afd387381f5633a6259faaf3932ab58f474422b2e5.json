@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 蜘蛛侦探 and its \"大哥\" relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 85,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2541.3469999912195,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_50yAcC9qWseSS6xD8owa5533",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蜘蛛侦探\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_13pkjRB1CmY4oOG4RG3h4796",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"蜘蛛侦探 大哥 原型\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

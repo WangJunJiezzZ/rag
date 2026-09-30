@@ -1,0 +1,33 @@
+{
+ "text": "I'll start by finding the relevant entities.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 78,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2926.3272089883685,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_bDlZmCeO7ChckjHenzFg8589",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"高圆寺博士\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_RMhRubZoeoiZhOFJCVMR2959",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"封印\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

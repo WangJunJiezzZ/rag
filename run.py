@@ -19,6 +19,8 @@ graphrag-lab 任务入口 (跨平台)
     python run.py mcp-server   启动 MCP Server (stdio; 加 -- --http 走 HTTP)
     python run.py mcp-chat     DeepSeek 驱动的 MCP 客户端 (交互式)
     python run.py verify-mcp   MCP 链路离线自检 (无需 API key)
+    python run.py eval-agent   固定流水线 vs Agent 评测 (默认不联网)
+    python run.py calibrate-judge  校准 LLM 判官 (默认不联网)
     python run.py report       生成 HTML 评测报告
     python run.py all          全流程一条龙
     python run.py doctor       检查运行环境(Python 版本 / 依赖 / 编码)
@@ -56,6 +58,10 @@ TASKS: dict[str, tuple[str, list[str]]] = {
                     ["src/graphrag/mcp_app/server.py"]),
     "mcp-chat":    ("DeepSeek 驱动的 MCP 客户端", ["src/graphrag/mcp_app/client.py"]),
     "verify-mcp":  ("MCP 链路离线自检 (无需 API key)", ["scripts/verify_mcp.py"]),
+    "eval-agent":  ("固定流水线 vs Agent 评测 (默认只读缓存; --online 才联网)",
+                    ["scripts/eval_agent.py"]),
+    "calibrate-judge": ("校准 LLM 判官: 与标注集比对一致率 (默认只读缓存)",
+                        ["scripts/calibrate_judge.py"]),
 }
 
 CHAINS: dict[str, tuple[str, list[str]]] = {

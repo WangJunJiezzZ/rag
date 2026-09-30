@@ -1,0 +1,14 @@
+{
+ "text": "I found the answer in the source document.\n\n**喜羊羊这个主角最初打算叫「懒羊羊」。**\n\n制作团队觉得「喜羊羊」这个名字更正面，于是改成了现在的名字。\n\n（顺带一提，文档里还提到羊的名字都是谐音：喜羊羊取自「喜气洋洋」，懒羊羊取自「懒洋洋」，沸羊羊取自「沸沸扬扬」。）\n\n依据: doc-0001",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3686,
+ "output_tokens": 91,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3003.6715419846587,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答最终结论为爹爹狼是蕉太狼二叔灰太狼的岳父、即二婶红太狼的父亲，与标准答案的核心关系一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答最终结论为爹爹狼是蕉太狼二叔灰太狼的岳父、即二婶红太狼的父亲，与标准答案的核心关系一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 556,
+ "output_tokens": 46,
+ "cached_read_tokens": 128,
+ "latency_ms": 2948.1172090163454,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

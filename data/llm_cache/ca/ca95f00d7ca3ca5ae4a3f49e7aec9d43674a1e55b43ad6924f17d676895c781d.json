@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 75,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2706.8387499894015,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_vQD7zO2ATGYmc8klNbnw1490",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小让\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_W8q73ccrctl0WX3jyOVj2335",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

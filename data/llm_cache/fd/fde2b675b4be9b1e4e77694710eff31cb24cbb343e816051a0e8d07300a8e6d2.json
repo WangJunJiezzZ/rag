@@ -1,0 +1,14 @@
+{
+ "text": "**金龟次郎撑得更久。**\n\n- 卡布达的超级变换形态维持时间：**3 分钟**（doc-0022）\n- 金龟次郎的超级变换形态维持时间：**5 分钟**（doc-0023）\n\n所以金龟次郎比卡布达多 2 分钟。\n\n依据: doc-0022, doc-0023",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3495,
+ "output_tokens": 82,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3020.3473329893313,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

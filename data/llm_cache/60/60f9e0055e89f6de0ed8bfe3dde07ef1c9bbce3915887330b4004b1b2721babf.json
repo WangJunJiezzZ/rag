@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the character 卡布达 and its transformation time.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 91,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2871.661374985706,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_yk9NWROdd3RnvmLlAZwj0377",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_wk9HLdKACCQzVr05o3dl1602",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"卡布达 超级变换形态 维持时间\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

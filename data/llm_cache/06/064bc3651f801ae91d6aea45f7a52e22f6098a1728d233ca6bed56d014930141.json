@@ -1,0 +1,24 @@
+{
+ "text": "灰太狼的表哥是夜太狼。现在查夜太狼的女儿。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3274,
+ "output_tokens": 74,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2957.6163750025444,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_faUnIGr9toEL9iB4plpI7617",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0026\", \"relation\": \"PARENT_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

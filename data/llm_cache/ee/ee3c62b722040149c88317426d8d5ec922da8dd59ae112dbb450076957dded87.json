@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph and documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3034,
+ "output_tokens": 89,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3068.823917012196,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_xch6NKd0cGWPlm1wmYHt4748",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"机器人 贪杯 好饮 爱喝酒\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_npkZoZqt68k6wqbl5KQp9764",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜欢喝酒的机器人 酒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

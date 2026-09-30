@@ -1,0 +1,14 @@
+{
+ "text": "图谱和文档中都没有找到喜羊羊有妹妹的记录。\n\n**未找到依据。**\n\n在知识图谱中，喜羊羊（E0004）的一跳关系只有：出自《喜羊羊与灰太狼》、随身物品铃铛、住在羊村、就读大肥羊学校，以及父母智羊羊和丽羊羊（PARENT_OF 入边）、被美羊羊喜欢（LIKES 入边）。图谱中没有任何指向\"妹妹\"的边（也没有 SIBLING 类关系）。\n\n文档检索（doc-0003《喜羊羊 角色档案》）的\"人物关系\"一节也只列出了父亲智羊羊、母亲丽羊羊，未提及妹妹。\n\n因此，关于\"喜羊羊的妹妹叫什么名字\"，现有资料中未找到依据，无法作答。\n\n依据: doc-0003",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4132,
+ "output_tokens": 175,
+ "cached_read_tokens": 3328,
+ "latency_ms": 3566.592874994967,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

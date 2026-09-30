@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的超级变换形态最多维持 **3 分钟**。\n\n依据: doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3858,
+ "output_tokens": 21,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3086.486749991309,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

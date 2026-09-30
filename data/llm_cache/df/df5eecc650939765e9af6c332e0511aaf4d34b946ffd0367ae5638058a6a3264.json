@@ -1,0 +1,33 @@
+{
+ "text": "The search points to 蜻蜓队长 (doc-0032). Let me verify with the graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3613,
+ "output_tokens": 93,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3130.020374956075,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_kcYQxRZkHSEUFtuNvFfk7752",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蜻蜓队长\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_5kKtm0Ir3p2gGZTKQzwb9207",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0032\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

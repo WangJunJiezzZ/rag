@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph and documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3037,
+ "output_tokens": 85,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2562.9137919750065,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_vd9DgLdi2ZfxzexY64ZK7971",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"爱钱如命 财迷 机器人\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_lFahG9czBf9G1jElZqjD4830",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"财迷\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3138,
+ "output_tokens": 110,
+ "cached_read_tokens": 2944,
+ "latency_ms": 3739.681874983944,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Q9HpZeuHJZ9Nh27mfYmI3598",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0000\", \"relation\": \"FIRST_AIRED\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_UDj7ctzojyFBlyVVWAYj9020",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0000\", \"relation\": \"BROADCASTER\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

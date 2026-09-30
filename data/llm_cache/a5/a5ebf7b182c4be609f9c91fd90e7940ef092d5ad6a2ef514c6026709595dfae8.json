@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n资料中没有给出灰太狼抓到羊的具体数量。现有文档只提到相反的情况：\n\n- 灰太狼\"曾制造各种道具去抓羊，**却从没成功过**\"（doc-0010）\n- 小灰灰\"因为爸爸**总抓不到羊**，只能一直喝奶\"（doc-0012）\n\n也就是说，语料里既没有\"抓到过多少只羊\"的统计数字，也没有任何一次成功抓羊的记录，因此无法回答具体数量。\n\n依据: doc-0010, doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4947,
+ "output_tokens": 120,
+ "cached_read_tokens": 3712,
+ "latency_ms": 5278.712083993014,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

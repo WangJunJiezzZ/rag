@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this character description.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3039,
+ "output_tokens": 92,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2886.5632499800995,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_3sAKamFNPMDKr03ZoIZe7208",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"动作慢吞吞 走路撑着棍子 拐杖\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_elpmppRY6P5RX7l3uL0Y8579",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"行动缓慢 拄着拐杖 老人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

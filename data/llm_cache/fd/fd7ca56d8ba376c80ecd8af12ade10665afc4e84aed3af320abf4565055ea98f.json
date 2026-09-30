@@ -1,0 +1,42 @@
+{
+ "text": "I'll trace the family relationships first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3039,
+ "output_tokens": 109,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2847.0172500237823,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_yrPmwiArbbUSHM5kM9Wy8672",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_VBhkiB9wikFQXAiKRKbr9241",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"红太狼\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_DY53OfzpUYUU3eN7W1ME0662",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the entity for 羊村 and check who heads it.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3033,
+ "output_tokens": 85,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3927.6046250015497,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_AZUT6GhpiHn090ASd8MM5386",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"羊村\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_YfJ2cVRvmqE7Qe1WWsqJ6121",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"慢羊羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

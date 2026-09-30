@@ -1,0 +1,14 @@
+{
+ "text": "图谱中带 UNIT_NO（编号）关系的角色共 10 个，编号从 1 号机到 10 号机连续无缺：\n\n| 编号 | 角色 |\n|---|---|\n| 1 号机 | 卡布达 |\n| 2 号机 | 金龟次郎 |\n| 3 号机 | 飞翔机器人 |\n| 4 号机 | 蝎子莱莱（又名蝎子蓝蓝） |\n| 5 号机 | 蜘蛛侦探 |\n| 6 号机 | 丸子龙 |\n| 7 号机 | 呱呱蛙（又名聒聒蛙） |\n| 8 号机 | 蟑螂恶霸 |\n| 9 号机 | 鲨鱼辣椒 |\n| 10 号机 | 田德莉娜 |\n\n**答案：10 台。**\n\n补充说明：蜻蜓队长和警用机器人（AP717）在《铁甲小宝》中登场，但图谱里没有它们的编号记录，因此不计入。另外，这些 B 机器人按剧中设定均由高圆寺寅彦（高圆寺博士）制造。\n\n依据: doc-0022, doc-0023, doc-0024, doc-0025, doc-0026, doc-0027, doc-0028, doc-0029, doc-0030, doc-0031, doc-0019",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 7401,
+ "output_tokens": 300,
+ "cached_read_tokens": 6400,
+ "latency_ms": 4405.833374999929,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

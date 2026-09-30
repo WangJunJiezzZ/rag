@@ -1,0 +1,33 @@
+{
+ "text": "The graph doesn't have a \"drinks alcohol\" attribute. Let me search the documents more specifically.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 9294,
+ "output_tokens": 130,
+ "cached_read_tokens": 7040,
+ "latency_ms": 4463.301334006246,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_CyqxRicq6rUORHZK9kBi3852",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"贪杯好饮\", \"top_k\": 10}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_xVZdRuk6Xxau9Qb9RXQL4565",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"机器人 爱喝酒 醉 酒壶\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "灰太狼的叔叔是「灰二太太狼」。现在查他的团体首领关系。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3320,
+ "output_tokens": 108,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3573.7734170397744,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_DSMSSjjq32lPFQoZFCBN8416",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0028\", \"relation\": \"LEADER_OF\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_6sxriZLLyfd1NUhiJcwH7002",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0028\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

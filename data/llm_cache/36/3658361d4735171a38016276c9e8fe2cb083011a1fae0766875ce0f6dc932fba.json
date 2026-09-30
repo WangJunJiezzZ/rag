@@ -1,0 +1,14 @@
+{
+ "text": "不是。虽然名字里带\"蝎子\"，但蝎子莱莱的原型是**鲎**（hòu），造型也是紫色的鲎，而不是蝎子。\n\n- 图谱关系：蝎子莱莱 —PROTOTYPE→ 鲎（doc-0025）\n- 档案原文也明确写着\"该角色的原型是鲎\"\"虽然名字里有蝎子，全身却是紫色的鲎造型\"（doc-0025）\n\n补充：他是《铁甲小宝》中的角色，编号 4 号机，又名蝎子蓝蓝，属反派阵营、是反派三人组成员（doc-0025、doc-0036、doc-0037）。\n\n依据: doc-0025, doc-0036, doc-0037",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3852,
+ "output_tokens": 159,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3152.836792054586,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

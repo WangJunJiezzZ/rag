@@ -18,6 +18,7 @@
 """
 from __future__ import annotations
 
+import re
 from collections import defaultdict
 from dataclasses import dataclass, field
 
@@ -54,8 +55,14 @@ def _squash(s: str) -> str:
     return "".join((s or "").split()).replace("　", "")
 
 
+# 引用标记不是答案内容。不去掉的话, 标准答案是数字的题(如"8""10")
+# 会被"[8]"或"doc-0018"命中 —— 只要引用了某份文档就算答对。
+# 修复时核对过: 固定流水线在两份图谱上 109 题的判分结果均无变化。
+_CITE_MARK = re.compile(r"doc-\d{4}|\[\d+\]")
+
+
 def score_answer(item: dict, ans, alias_map: dict[str, list[str]]) -> dict:
-    text = _squash(ans.text)
+    text = _squash(_CITE_MARK.sub("", ans.text))
     row: dict = {"id": item["id"], "type": item["type"],
                  "refused": bool(ans.refused)}
 

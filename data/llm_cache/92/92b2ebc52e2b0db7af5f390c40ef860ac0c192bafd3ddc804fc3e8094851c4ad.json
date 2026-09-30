@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship between 灰太狼 and his uncle.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3038,
+ "output_tokens": 103,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3223.9451249479316,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_cO4DT5aVSdpuWAXeZuTe8004",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_P3bO8pIteXjrcUwaX9d96010",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"灰太狼\", \"relation\": \"UNCLE_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

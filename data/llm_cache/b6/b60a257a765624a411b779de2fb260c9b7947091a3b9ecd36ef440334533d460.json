@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3042,
+ "output_tokens": 88,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2940.149084024597,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_lDtcGth56Clb5ljF4oBp1440",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"机器人 讲话又臭又长 研究对手\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_uj0u75ujIrquowsPg0oz8078",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"话多 啰嗦 分析对手 机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

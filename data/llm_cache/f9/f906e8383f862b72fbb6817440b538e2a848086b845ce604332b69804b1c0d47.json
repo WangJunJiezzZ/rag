@@ -1,0 +1,14 @@
+{
+ "text": "卡布达最爱吃的是**西瓜**。\n\n图谱中「卡布达」的 FAVORITE_FOOD 关系指向「西瓜」，来源文档《卡布达 角色档案》也明确写着\"该角色最爱吃西瓜\"。\n\n依据: doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3839,
+ "output_tokens": 58,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2634.910207998473,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

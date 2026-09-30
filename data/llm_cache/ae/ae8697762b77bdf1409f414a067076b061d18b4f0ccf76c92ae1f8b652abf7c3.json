@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出美羊羊喜欢的是喜羊羊，并给出其爱好为踢足球和做实验，与标准答案核心结论一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出美羊羊喜欢的是喜羊羊，并给出其爱好为踢足球和做实验，与标准答案核心结论一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 480,
+ "output_tokens": 41,
+ "cached_read_tokens": 128,
+ "latency_ms": 2936.063874978572,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

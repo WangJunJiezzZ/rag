@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰发现被爸爸骗了会嚷：**“爸爸，你又骗我”**。\n\n图谱中「小灰灰」的口头禅（CATCHPHRASE）正是“爸爸，你又骗我”，来源文档也记载“该角色的口头禅是‘爸爸，你又骗我’”。\n\n依据: doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3807,
+ "output_tokens": 70,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2602.908375032712,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

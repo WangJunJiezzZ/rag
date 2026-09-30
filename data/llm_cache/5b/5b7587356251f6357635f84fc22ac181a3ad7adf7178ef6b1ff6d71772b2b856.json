@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n关于「飞翔机器人」的原型，图谱和文档中都没有相关记录：\n\n- 图谱中「飞翔机器人」(E0033) 的一跳关系里没有 PROTOTYPE 边，只有：出自《铁甲小宝》、编号「3 号机」、身份「支援型机器人」、超级变换形态维持「7 分钟」、喜欢田德莉娜、阵营「正义」。\n- 其角色档案文档中也没有「原型」这一项，只提到它能与卡布达飞翔连结、让卡布达获得飞行能力，说话狂妄但性格像小孩。\n\n（注：图谱中其他角色确实有 PROTOTYPE 关系，但飞翔机器人不在其中。）\n\n依据: doc-0024",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4308,
+ "output_tokens": 155,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3686.237166984938,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

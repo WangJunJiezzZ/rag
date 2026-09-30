@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼最爱吃的是**香蕉**。\n\n图谱中「蕉太狼 —FAVORITE_FOOD→ 香蕉」这条关系，以及角色档案中\"该角色最爱吃香蕉\"的记载一致（他从小被猴子收养、吃素，这也与爱吃香蕉的设定相符）。\n\n依据: doc-0013",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3715,
+ "output_tokens": 69,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2999.565041041933,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

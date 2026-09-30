@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确给出最终结论“小灰灰的爷爷是黑太狼”，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确给出最终结论“小灰灰的爷爷是黑太狼”，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 453,
+ "output_tokens": 33,
+ "cached_read_tokens": 128,
+ "latency_ms": 2659.3672090093605,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

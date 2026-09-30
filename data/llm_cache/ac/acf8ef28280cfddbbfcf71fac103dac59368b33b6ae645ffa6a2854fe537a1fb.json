@@ -1,0 +1,14 @@
+{
+ "text": "小让的爷爷是**高圆寺寅彦**（高圆寺博士），他封印的机器人是**鲨鱼辣椒**。\n\n图谱中有一条 `SEALED_BY` 关系：鲨鱼辣椒 → 被高圆寺寅彦封印（doc-0042）。\n\n依据: doc-0018, doc-0019, doc-0042",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3902,
+ "output_tokens": 76,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3178.3715420169756,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "香太狼的丈夫是**夜太狼**。\n\n依据: doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3263,
+ "output_tokens": 18,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2673.9299159962684,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

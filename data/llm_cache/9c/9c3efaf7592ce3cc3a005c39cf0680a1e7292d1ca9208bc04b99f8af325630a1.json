@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰是武大狼的第 251 代孙。**\n\n推理依据（文档中没有直接写小灰灰的代数，但可由三代人的记载推出）：\n- 黑太狼是武大狼的第 **249** 代孙（doc-0017）\n- 灰太狼是黑太狼的儿子，是武大狼的第 **250** 代孙（doc-0010）\n- 小灰灰是灰太狼的儿子（doc-0012）\n\n因此小灰灰比灰太狼晚一代，即武大狼的第 251 代孙。图谱中的血缘链也与此一致：小灰灰 ←PARENT_OF— 灰太狼 —DESCENDANT_OF→ 武大狼。\n\n注：图谱本身只记录了「灰太狼是武大狼的后代」这一关系，并未直接给出小灰灰的代数；251 是由上述三份档案的代数递推得出。\n\n依据: doc-0010, doc-0012, doc-0017",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5941,
+ "output_tokens": 214,
+ "cached_read_tokens": 4736,
+ "latency_ms": 3998.8112499704584,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

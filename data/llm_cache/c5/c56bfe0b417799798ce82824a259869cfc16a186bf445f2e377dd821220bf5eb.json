@@ -1,0 +1,14 @@
+{
+ "text": "**慢羊羊（慢羊羊村长）** 是负责管理草原上羊村的角色。\n\n图谱依据：\n- 慢羊羊 —HEAD_OF→ 羊村（doc-0008）\n- 羊村 —LOCATED_IN→ 青青草原（doc-0039）\n- 慢羊羊的别名即「慢羊羊村长」（doc-0008）\n\n角色档案中明确写道：「该角色是羊村的村长」「该角色是大肥羊学校的校长」，并且他是羊族里最年长的羊（doc-0008）。居民登记表也把「慢羊羊村长」列在羊村居民首位（doc-0034）。\n\n需要说明的是：图谱中并没有「管理整片青青草原」这一职务的记载——慢羊羊的 HEAD_OF 关系只指向**羊村**（以及大肥羊学校），青青草原本身只是一个地点，没有对应的管理者实体。所以严格来说，他是羊村的村长，而非整片草原的管理者。\n\n依据: doc-0008, doc-0034, doc-0039",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4976,
+ "output_tokens": 221,
+ "cached_read_tokens": 4608,
+ "latency_ms": 3726.7743749544024,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

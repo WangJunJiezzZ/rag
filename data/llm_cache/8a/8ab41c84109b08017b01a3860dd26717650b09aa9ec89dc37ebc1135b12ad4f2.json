@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确给出最终结论“小灰灰的外婆是娘娘狼”，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确给出最终结论“小灰灰的外婆是娘娘狼”，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 447,
+ "output_tokens": 32,
+ "cached_read_tokens": 128,
+ "latency_ms": 3071.8645000015385,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

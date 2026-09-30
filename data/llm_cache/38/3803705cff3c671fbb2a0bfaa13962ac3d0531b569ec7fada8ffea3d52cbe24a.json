@@ -1,0 +1,14 @@
+{
+ "text": "正义阵营的机器人共 5 个（图谱 FACTION 关系与阵营一览文档一致）：\n\n| 机器人 | 备注 |\n|---|---|\n| 卡布达 | 主角，甲虫机器人 |\n| 金龟次郎 | |\n| 飞翔机器人 | 3 号机，支援型机器人 |\n| 呱呱蛙 | 又名「聒聒蛙」 |\n| 田德莉娜 | |\n\n补充说明：\n- 该表按**剧集前期的立场**划分；文档注明「部分机器人在剧情后期改变了立场，以正片为准」。\n- 作为对照，反派阵营为蟑螂恶霸、蜘蛛侦探、蝎子莱莱、鲨鱼辣椒；中立阵营为丸子龙、蜻蜓队长。\n\n依据: doc-0036, doc-0024",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5495,
+ "output_tokens": 171,
+ "cached_read_tokens": 4992,
+ "latency_ms": 3725.808374991175,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

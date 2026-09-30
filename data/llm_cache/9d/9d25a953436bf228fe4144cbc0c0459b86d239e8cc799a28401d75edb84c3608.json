@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4998,
+ "output_tokens": 97,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3481.309416005388,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_BxEBOLCD4v7ukvTvMBZG5346",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"贪财 爱钱 金钱 财迷 角色\", \"top_k\": 10}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_4WfUTEHJWS9I4xqvxaUL8272",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蝎子蓝蓝\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

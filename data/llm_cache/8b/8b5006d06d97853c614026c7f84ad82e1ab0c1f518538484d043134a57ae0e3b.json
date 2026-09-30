@@ -1,0 +1,14 @@
+{
+ "text": "红太狼的武器是**平底锅**。\n\n依据: doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3266,
+ "output_tokens": 18,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2797.8057920117863,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

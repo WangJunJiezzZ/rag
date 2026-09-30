@@ -1,0 +1,33 @@
+{
+ "text": "I'll trace this relationship step by step.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3035,
+ "output_tokens": 80,
+ "cached_read_tokens": 2816,
+ "latency_ms": 3200.0442079734057,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_v16V855ps0ZhoV3qruMH6785",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_6pVkilUIxX0V5FoT20eB1696",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼表哥\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

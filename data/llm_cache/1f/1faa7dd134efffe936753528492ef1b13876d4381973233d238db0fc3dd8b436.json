@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3662,
+ "output_tokens": 115,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2834.327166026924,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_KfvZ3s1R4HPpLFQ8b4Mj2354",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0010\", \"max_chars\": 3000}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_n400cX9ULImNH8ibl3pb7121",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"灰太狼 从没成功 抓到羊\", \"top_k\": 8}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

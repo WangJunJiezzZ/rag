@@ -1,0 +1,14 @@
+{
+ "text": "**蜻蜓队长**（《铁甲小宝》）。\n\n- 身份：裁判机器人（原型是蜻蜓），阵营为中立\n- 行为：B 机器人们争夺和平星时，他会突然出现，让大家用各种运动或游戏比赛决出胜负；对犯规者会用从天而降的巨大铁拳加以惩罚\n- 口头禅：「绝对裁判的公正漂亮」\n\n依据: doc-0032, doc-0036, doc-0040",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4304,
+ "output_tokens": 95,
+ "cached_read_tokens": 3968,
+ "latency_ms": 3089.3347499659285,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "喜羊羊的 PARENT_OF 只有入边（父母），没有出边。让我查一下他是否有兄弟姐妹关系。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3316,
+ "output_tokens": 100,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3113.472208031453,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_oo1GwGhvx7pdtBFhpHo78489",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0004\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_96gDuKNaCAvL9HGj3DjO2528",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜羊羊 妹妹 冰冰羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

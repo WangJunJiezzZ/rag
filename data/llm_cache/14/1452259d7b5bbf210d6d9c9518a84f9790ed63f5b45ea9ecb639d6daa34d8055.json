@@ -1,0 +1,14 @@
+{
+ "text": "**蕉太狼和爹爹狼之间没有直接关系**，图谱里只能通过中间角色连起来。\n\n已知的直接事实：\n- 爹爹狼 → 红太狼：`PARENT_OF`（爹爹狼是红太狼的父亲），依据 doc-0011\n- 灰太狼 → 蕉太狼：`UNCLE_OF`（灰太狼是蕉太狼的叔叔，即蕉太狼是灰太狼的侄子），依据 doc-0013\n- 灰太狼 ↔ 红太狼：`SPOUSE_OF`（夫妻），依据 doc-0011\n\n由此推出的间接关系：爹爹狼是红太狼的父亲，红太狼是灰太狼的妻子，灰太狼是蕉太狼的叔叔 —— 所以**爹爹狼是蕉太狼的婶婶（红太狼）的父亲**，即蕉太狼的姻亲长辈（婶婶的娘家父亲），两人之间没有血缘关系。\n\n另外图谱里还有一条旁路：香太狼 `LIKES` 蕉太狼，而香太狼 `COUSIN_OF` 红太狼（doc-0014、doc-0011），同样绕经红太狼才连到爹爹狼。\n\n依据: doc-0011, doc-0013, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3921,
+ "output_tokens": 273,
+ "cached_read_tokens": 3200,
+ "latency_ms": 3668.935416964814,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

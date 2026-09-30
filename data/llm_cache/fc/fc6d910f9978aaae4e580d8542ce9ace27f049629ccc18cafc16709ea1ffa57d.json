@@ -1,0 +1,24 @@
+{
+ "text": "The seal was released by 丸子龙. Now let me check 丸子龙's favorite food.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3272,
+ "output_tokens": 81,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2760.955917008687,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Iu3dauAuUg60Le5D9zgj7829",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0037\", \"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

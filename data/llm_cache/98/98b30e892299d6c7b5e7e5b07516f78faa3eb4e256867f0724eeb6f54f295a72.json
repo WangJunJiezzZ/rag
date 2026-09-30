@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me start by finding the relevant entities.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 82,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2963.0743750021793,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_MEhJnT4orbGpD5UV8h8k3415",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小让\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_FyObnfndtUcJapBrQPeT1478",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"爷爷\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

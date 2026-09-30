@@ -1,0 +1,14 @@
+{
+ "text": "警用机器人（又名 AP717）的搭档是**中野美树**，她的身份是**女警**。\n\n依据: doc-0033, doc-0021",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4151,
+ "output_tokens": 37,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3179.073666979093,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

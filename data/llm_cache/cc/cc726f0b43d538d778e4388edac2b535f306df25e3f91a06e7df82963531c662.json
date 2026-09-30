@@ -1,0 +1,123 @@
+{
+ "text": "Let me check the UNIT_NO relations for each character to get the complete list.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5864,
+ "output_tokens": 600,
+ "cached_read_tokens": 4096,
+ "latency_ms": 5006.77091703983,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_2bVKKCCVh1DuBQ0PylXQ1122",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_EkYVXL4AUMXRhwoaLwzP7193",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0032\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_1cSgCsTfrHsTH1rH8ERb5921",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0033\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_3wmCNfatqG4NF1x4u9Lj7103",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0035\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 4,
+   "id": "call_04_BLGVjceDTcYPbImXcmP27285",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0036\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 5,
+   "id": "call_05_k7yp97YKto68sf0cksEz8041",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0037\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 6,
+   "id": "call_06_eiciTjsQP776o9MilWLK3950",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0038\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 7,
+   "id": "call_07_NfqQeR7DBmCn6JucPklq2031",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0039\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 8,
+   "id": "call_08_T12s1PIP57Zc71vK5KrL3096",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 9,
+   "id": "call_09_3V98lFk9XLDaXZhHgjgj0368",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0034\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 10,
+   "id": "call_10_DQplTMGBHkTqmPuZOB9G9744",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0041\", \"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 11,
+   "id": "call_11_lY1EkIdWmtbc1zFsQ9Mz4800",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0042\", \"relation\": \"UNIT_NO\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

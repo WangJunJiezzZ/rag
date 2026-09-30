@@ -1,0 +1,14 @@
+{
+ "text": "符合这个描述的是**慢羊羊**（又名慢羊羊村长），出自《喜羊羊与灰太狼》。\n\n依据文档记载：他是羊族里最年长的羊，**行动比蜗牛还慢，拄着拐杖**，记性不好；思考时头上会长出一根聪明草，还是个乌龙发明家。他同时是羊村的村长和大肥羊学校的校长。\n\n依据: doc-0008",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4457,
+ "output_tokens": 90,
+ "cached_read_tokens": 4096,
+ "latency_ms": 2765.725167002529,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

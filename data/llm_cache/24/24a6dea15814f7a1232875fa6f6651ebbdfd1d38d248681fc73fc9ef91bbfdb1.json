@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱中「卡布达」的属性只有编号（1 号机）、原型（独角仙）、口头禅、武器、最爱食物、超级变换时间、巨人形态等，没有体重这一项；文档检索也只返回身高信息（卡布达巨人普通形态 6.5 米、超级形态 10.8 米），没有卡布达的体重数据。\n\n依据: doc-0022, doc-0041",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4636,
+ "output_tokens": 95,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3465.7107910024934,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

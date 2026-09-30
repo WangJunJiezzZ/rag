@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的老婆是**红太狼**。\n\n图谱中灰太狼（E0015）与红太狼（E0019）之间存在 SPOUSE_OF（夫妻）关系。\n\n依据: doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3288,
+ "output_tokens": 47,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2667.847000004258,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

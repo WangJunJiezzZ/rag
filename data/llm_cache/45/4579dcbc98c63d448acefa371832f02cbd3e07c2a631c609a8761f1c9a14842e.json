@@ -1,0 +1,33 @@
+{
+ "text": "喜羊羊的父亲是**智羊羊**（母亲是丽羊羊）。接下来查智羊羊的身份/职业。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3317,
+ "output_tokens": 101,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3295.4155419720337,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_3eUTb5pQAHPvdOIFwP278186",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0005\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_vHPZPe8qXm9hJKtHRD8c6950",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"智羊羊 职业 身份 科学家\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

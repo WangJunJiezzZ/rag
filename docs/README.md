@@ -8,6 +8,7 @@
 | [04-面试问答](04-面试问答.md) | **被追问时的弹药**，21 个高频问题 + 真实答案 |
 | [05-部署说明](05-部署说明.md) | 想把演示放到线上时看（HF Static / GitHub Pages / Netlify）|
 | [06-MCP](06-MCP.md) | 把检索做成 **MCP Server** + DeepSeek 驱动的 **MCP Client**：原理、踩坑、面试问答 |
+| [07-Agent](07-Agent.md) | **Agent vs 固定流水线**：109 题实测对比、失败分析、LLM 判官校准、面试问答 |
 
 ## 建议阅读顺序
 

@@ -1,0 +1,14 @@
+{
+ "text": "**暖羊羊是班长**，懒羊羊没有班长的身份记录。\n\n- 暖羊羊 → ROLE → 班长（依据 doc-0007）\n- 懒羊羊：图谱中没有任何 ROLE 关系，未找到其担任班长的依据。\n\n依据: doc-0007",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3414,
+ "output_tokens": 63,
+ "cached_read_tokens": 3200,
+ "latency_ms": 2885.2617920492776,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

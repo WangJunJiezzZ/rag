@@ -1,0 +1,60 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4850,
+ "output_tokens": 249,
+ "cached_read_tokens": 4608,
+ "latency_ms": 3199.784957978409,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_UU2k6qWTDy8t56dM701I2513",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\", \"relation\": \"FACTION\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_nXJyRth1Q5s6eWvZUrSf5984",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0032\", \"relation\": \"FACTION\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_kIE2o4TgDTIwZwqCf1Zh7608",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0033\", \"relation\": \"FACTION\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_Nx3Jo9WfuqFoShme3PFF5910",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0038\", \"relation\": \"FACTION\"}"
+   }
+  },
+  {
+   "index": 4,
+   "id": "call_04_WS0zQMusZLilxu7Zdtna5813",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0034\", \"relation\": \"FACTION\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3434,
+ "output_tokens": 79,
+ "cached_read_tokens": 3072,
+ "latency_ms": 2558.988415985368,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_km7nGap7QhB0r8IqlqCK2460",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"小让 妈妈 母亲 高圆寺\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_ykppDDF2acvNi2bS64Ah3239",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0018\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

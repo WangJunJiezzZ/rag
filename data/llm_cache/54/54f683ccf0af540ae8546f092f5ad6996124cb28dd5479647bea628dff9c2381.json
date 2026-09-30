@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me first find the relevant entities.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3036,
+ "output_tokens": 86,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2708.8134170044214,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_vLdRsK9wRChCmXyNwxWl0114",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"反派三人组\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_xhrI8mbEtWbzzKVUfzDJ4010",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"反派三人组 三个机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

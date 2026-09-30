@@ -1,0 +1,14 @@
+{
+ "text": "**蕉太狼是灰太狼的侄子。**\n\n图谱中的关系方向为 `灰太狼 -[UNCLE_OF]-> 蕉太狼`（灰太狼是蕉太狼的叔叔），角色档案也明确写着\"该角色是灰太狼的侄子\"，并且蕉太狼在剧中常阻止\"二叔\"抓羊，与这层叔侄关系一致。\n\n补充：蕉太狼与灰太狼之间还存在一条间接关系——香太狼喜欢蕉太狼，而香太狼是红太狼的表亲（也与夜太狼有配偶关系），所以蕉太狼与灰太狼家还有一层姻亲上的牵连，但直接关系就是叔侄。\n\n依据: doc-0013, doc-0014, doc-0011, doc-0015",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4183,
+ "output_tokens": 166,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3159.4323340104893,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

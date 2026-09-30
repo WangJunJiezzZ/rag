@@ -1,0 +1,33 @@
+{
+ "text": "Let me verify with the graph as well.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3570,
+ "output_tokens": 99,
+ "cached_read_tokens": 3072,
+ "latency_ms": 3283.3137499983422,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_jbRY3sdaDKRUsJ3s664k2262",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0044\", \"relation\": \"MEMBER_OF\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_b11kaaUvmprtm3sTCLBt8844",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0037\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

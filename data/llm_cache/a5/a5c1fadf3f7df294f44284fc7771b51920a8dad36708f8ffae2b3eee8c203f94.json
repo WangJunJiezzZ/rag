@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up 小灰灰 in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3035,
+ "output_tokens": 52,
+ "cached_read_tokens": 2816,
+ "latency_ms": 2745.146166009363,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_rp7Ewvvj8cgJp3RWDdma9533",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}
