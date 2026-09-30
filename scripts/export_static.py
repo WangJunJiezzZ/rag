@@ -193,6 +193,9 @@ def load_eval_results() -> dict | None:
             "details": {"pipeline": pm, "agent": {r["id"]: r for r in A}}}
 
 
+TRACE_MISSES: list[str] = []      # 严格模式据此判定构建是否完整
+
+
 def export_agent_traces(out: Path) -> int:
     """离线重放 MCP Agent 的运行, 导出逐步轨迹。
 
@@ -219,7 +222,12 @@ def export_agent_traces(out: Path) -> int:
         async with Client(server) as c:
             chat = MCPChat(c, LLM(provider="deepseek", offline=True), verbose=False)
             await chat.setup()
-            return await chat.ask(question)
+            # 必须在 Client 的任务组里面捕获: 异常一旦穿出任务组, 会被包成 ExceptionGroup,
+            # 外面的 except CacheMissError 接不住, 整个构建直接崩(linux 容器里实测)
+            try:
+                return await chat.ask(question)
+            except CacheMissError:
+                return None
 
     def run_pipeline(graph_rel: str, question: str) -> dict:
         """固定流水线(规则路由 -> 一次性检索 -> 一次生成), 与评测跑的是同一个 RAGService。"""
@@ -276,14 +284,18 @@ def export_agent_traces(out: Path) -> int:
                                  **run_pipeline(GRAPHS[gname], spec["question"])}
                     continue
                 turn = anyio.run(run, GRAPHS[gname], spec["question"])
+                if turn is None:
+                    raise CacheMissError(spec["question"])
             except CacheMissError:
                 hint = ("python run.py e2e" if mode == "pipeline" else
                         f"python run.py mcp-chat -- --graph {GRAPHS[gname]} -q \"{spec['question']}\"")
+                TRACE_MISSES.append(f"{spec['qid']}:{key}")
                 print(f"[warn] Agent 回放缓存未命中: {key}({mode}, {gname}) | {spec['question']}\n"
                       f"       先在线跑一遍: {hint}")
                 continue
             runs[key] = {
                 **meta, "mode": mode, "graph": gname,
+                "alias_rounds": getattr(turn, "alias_rounds", 0),
                 "answer": turn.answer,
                 "stopped": turn.stopped,
                 "llm_calls": turn.llm_calls,
@@ -313,6 +325,8 @@ def main() -> int:
     ap.add_argument("--split", default="train",
                     help="train / dev / test / all; 只导出缓存里已有答案的题")
     ap.add_argument("--out", default="build/static/data")
+    ap.add_argument("--strict", action="store_true",
+                    help="任何缓存未命中都以失败退出 —— 自动发布用, 宁可不发也不发残缺的站")
     args = ap.parse_args()
 
     import os
@@ -439,7 +453,12 @@ def main() -> int:
     print(f"     {'合计':<22} {total/1024:>7.0f} KB")
     print(f"     预录问答 {len(answers)} 条 ({len(items)} 题 × {len(GRAPHS)} 种图谱)"
           + (f", {miss} 条缓存未命中" if miss else ""))
-    print(f"     Agent 回放 {n_traces} 条")
+    print(f"     Agent 回放 {n_traces} 条"
+          + (f", {len(TRACE_MISSES)} 条缓存未命中" if TRACE_MISSES else ""))
+    if args.strict and (miss or TRACE_MISSES):
+        print(f"[FAIL] 严格模式: 预录问答未命中 {miss} 条, Agent 回放未命中 {len(TRACE_MISSES)} 条"
+              f"{' ' + ', '.join(TRACE_MISSES[:10]) if TRACE_MISSES else ''}")
+        return 1
     return 0
 
 

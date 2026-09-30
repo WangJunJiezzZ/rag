@@ -1,0 +1,7 @@
+# 换行符一律 LF —— Windows 上的 Git 默认 core.autocrlf=true, 会在检出时把 LF 改成 CRLF。
+# prompt / 数据 / 缓存的字节内容是 LLM 缓存键的一部分, 换行符变了, 离线回放就可能对不上。
+* text=auto eol=lf
+
+*.onnx   binary
+*.png    binary
+*.pdf    binary

@@ -1,0 +1,8 @@
+# 自动发布(.github/workflows/pages.yml)构建静态站所需的最小依赖。
+# 版本锁定与录制缓存时的本地环境一致: onnxruntime / numpy 的版本会影响向量检索的浮点结果,
+# 进而影响 Agent 回放能否逐轮命中缓存(不命中时由稳定键兜底, 版本越接近兜底越少)。
+numpy==2.5.3
+onnxruntime==1.30.0
+tokenizers==0.23.2
+mcp==2.2.0
+pypinyin==0.55.0

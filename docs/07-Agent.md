@@ -186,7 +186,7 @@ Agent 平均每题 4.5 次工具调用、3.6 次模型调用。**每一轮都要
 ## 五、怎么跑
 
 ```bash
-source .venv/bin/activate
+source .venv/bin/activate          # Windows: .\.venv\Scripts\Activate.ps1
 
 # 默认只读缓存，不联网、不花钱。这些题都已缓存，可以直接复现上面的数字
 python run.py eval-agent -- --split test

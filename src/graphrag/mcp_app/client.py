@@ -82,6 +82,7 @@ class Turn:
     input_tokens: int = 0
     output_tokens: int = 0
     stopped: str = ""           # "final" | "max_steps"
+    alias_rounds: int = 0       # 离线回放时经稳定键兜底命中的轮数(跨平台工具结果有细微差异)
 
 
 class MCPChat:
@@ -118,6 +119,7 @@ class MCPChat:
             res = await anyio.to_thread.run_sync(
                 lambda: self.llm.chat(messages=messages, tools=self.tools))
             turn.llm_calls += 1
+            turn.alias_rounds += 1 if res.alias_hit else 0
             turn.input_tokens += res.input_tokens
             turn.output_tokens += res.output_tokens
 

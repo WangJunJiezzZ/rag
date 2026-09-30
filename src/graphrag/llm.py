@@ -586,19 +586,47 @@ class LLM:
         key = DiskCache.key({"provider": self.provider_name, "model": model,
                              "kind": "chat", "messages": messages,
                              "tools": tools, "max_tokens": max_tokens})
+        stable = DiskCache.key({"stable": self._chat_stable_key(model, messages, tools,
+                                                                 max_tokens)})
         hit = self.cache.get(key)
         if hit is not None:
+            # 命中精确键时补写稳定键 —— 录满缓存的机器永远走不到下面的写入路径
+            self.cache.put_alias(stable, key)
             return hit
         if self.offline:
+            alias = self.cache.get_by_alias(stable)
+            if alias is not None:
+                self.cache.alias_hits += 1
+                alias.alias_hit = True
+                return alias
             raise CacheMissError(
                 f"离线模式(provider={self.provider_name})下 chat 缓存未命中。"
                 f"在线调用需要: 设置 API key, 且 GRAPHRAG_OFFLINE 未开启")
         res = self.provider.chat(messages=messages, tools=tools,
                                  max_tokens=max_tokens)
         self.cache.put(key, res)
+        self.cache.put_alias(stable, key)
         self.calls += 1
         self.total_cost += res.cost_usd
         return res
+
+    def _chat_stable_key(self, model: str, messages: list[dict],
+                         tools: list[dict] | None, max_tokens: int) -> dict:
+        """chat 的跨平台稳定键: 去掉工具返回的内容, 只留"问了什么 + 模型每一步做了什么"。
+
+        为什么需要: search_text 的返回里有向量检索的分数和排序, ONNX 的浮点运算在
+        macOS / Linux / Windows 上有细微差异(实测 linux/amd64 容器里, 用到全文检索的
+        Agent 轨迹在第 2 轮就对不上精确键)。工具结果只要差一个字, 精确键就变。
+
+        稳定键 = 工具定义 + system + 用户问题 + 模型此前每一轮的输出(含 tool_calls)。
+        只要模型每一步的动作与录制时一致, 就回放录制下来的下一步回应。
+        只在离线且精确键未命中时使用, 命中会记入 alias_hits 并在结果上标记 alias_hit ——
+        在线时永远只认精确键, 否则改了工具实现也会读到旧结果。
+        """
+        skeleton = [{k: v for k, v in m.items() if k != "content"} if m.get("role") == "tool"
+                    else m for m in messages]
+        return {"provider": self.provider_name, "model": model, "kind": "chat",
+                "messages": skeleton, "tools": tools, "max_tokens": max_tokens}
 
     def supports(self, capability: str) -> bool:
         """上层据此选择实现路径, 而不是到处写 if provider == 'claude'。

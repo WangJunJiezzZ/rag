@@ -1,0 +1,49 @@
+# 推送 main -> 自动构建静态演示站 -> 发布到 gh-pages 分支 -> GitHub Pages 自动部署。
+#
+# 构建全程离线: 只读仓库里的 LLM 缓存, 不调用任何模型, 不需要任何 API key。
+# 严格模式: 任何一条预录问答或 Agent 回放缓存未命中, 构建失败、不发布 ——
+# 线上保持上一个完整的版本, 宁可不更新也不发布残缺的站。
+name: 发布静态演示站
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:          # 也可以在 GitHub 的 Actions 页面手动触发
+
+permissions:
+  contents: write             # 需要往 gh-pages 分支推送
+
+concurrency:                  # 连续推送时只保留最新的一次发布
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0      # publish_pages.sh 需要 gh-pages 分支的历史
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: deploy/requirements-static.txt
+
+      - name: 安装依赖
+        run: pip install -r deploy/requirements-static.txt
+
+      - name: 构建（只读缓存，严格模式）
+        env:
+          GRAPHRAG_OFFLINE: "1"
+          GRAPHRAG_LLM: deepseek      # 与录制缓存时的 provider 一致, 否则缓存键对不上
+        run: python scripts/export_static.py --strict
+
+      - name: 发布到 gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages:gh-pages || true
+          bash scripts/publish_pages.sh
+          git push origin gh-pages
