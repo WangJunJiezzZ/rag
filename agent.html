@@ -84,6 +84,27 @@ a{color:var(--accent)}
 .md code{font:12.5px ui-monospace,SFMono-Regular,Menlo,monospace}
 .note{color:var(--muted);font-size:11.5px;line-height:1.7}
 .empty{color:var(--muted);text-align:center;padding:30px 0}
+/* 109 题评测结果 */
+.stats{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:6px}
+.stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.stat .k{font-size:12px;color:var(--muted)}
+.stat .v{font-size:13px;margin-top:4px;font-variant-numeric:tabular-nums}
+.stat .v b{font-size:18px}
+.stat .v .vs{color:var(--muted);margin:0 4px}
+.bar{display:flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums;min-width:70px}
+.tbl th{white-space:nowrap}
+.bar i{display:inline-block;height:8px;border-radius:4px;background:var(--accent);opacity:.85}
+.bar i.p{background:var(--muted);opacity:.6}
+.grp{font-size:12.5px;font-weight:600;margin:14px 0 6px}
+.frow{display:flex;gap:10px;align-items:baseline;width:100%;text-align:left;background:none;border:0;
+ border-left:2px solid var(--line);padding:6px 0 6px 10px;color:var(--fg);font:inherit;font-size:13px;cursor:pointer}
+.frow:hover,.frow.on{border-left-color:var(--accent);background:var(--panel2)}
+.frow .qid{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);flex:none}
+.frow .qq{flex:1;min-width:0}
+.frow .mk{flex:none;font-size:12px;color:var(--muted)}
+.sec{font-size:15px;font-weight:600;margin:22px 0 10px}
+@media(max-width:600px){.frow{flex-wrap:wrap}.frow .mk{width:100%;padding-left:0}
+ .tbl th,.tbl td{padding:7px 5px}}
 </style>
 </head>
 <body>
@@ -98,7 +119,7 @@ a{color:var(--accent)}
     <b>这是什么：</b>我把知识图谱做成了一个 <b>MCP Server</b>（可以理解成 AI 的 USB 接口），让 AI 能通过标准协议调用
     「查角色、查关系、解释两个角色是什么关系、读原文」等 7 个工具。下面是 DeepSeek 回答问题的<b>真实运行录像</b>，并与写死流程的固定流水线对比：
     每一步调哪个工具、传什么参数、拿到什么结果，<b>都是模型自己决定的</b>。<br>
-    <b>怎么看：</b>先看下方对比表，再切换两次运行，点开每一步查看工具的原始返回。
+    <b>怎么看：</b>先看「109 题评测结果」了解整体结论，再点列表里的任意一题，看它的逐步回放。
     本页是纯静态回放，不调用任何模型。
   </div>
 
@@ -236,7 +257,8 @@ function render(demo, key){
   $('#tabs').querySelectorAll('.tab').forEach(b => b.classList.toggle('on', b.dataset.k === key));
   $('#run').innerHTML = `
     ${run.verdict || run.note ? `<div class="verdict ${run.verdict || ''}"><b>${
-      run.verdict === 'correct' ? '✓ 答对了' : run.verdict === 'wrong' ? '✗ 答错了' : '待核对'}</b>　${esc(run.note || '')}</div>` : ''}
+      run.verdict === 'correct' ? '✓ 答对了' : run.verdict === 'wrong' ? '✗ 答错了' : '待核对'}</b>　${esc(run.note || '')}${
+      !run.note && run.judge_reason ? `<span class="note">LLM 判官：${esc(run.judge_reason)}</span>` : ''}</div>` : ''}
     <div class="card"><h2>证据覆盖（绿色 = 已引用，红色 = 漏引）</h2>
       ${demo.gold_docs.map(d => `<span class="doc ${c.has(d) ? 'hit' : 'miss'}">${d}</span>`).join('')}</div>
     <div class="card"><h2>${run.mode === 'pipeline' ? '固定流水线的执行过程（每一步都是写死的）'
@@ -249,6 +271,7 @@ function show(idx){
   const demo = DATA.demos[idx];
   const keys = Object.keys(demo.runs);
   $('#pick')?.querySelectorAll('.tab').forEach(b => b.classList.toggle('on', +b.dataset.i === idx));
+  document.querySelectorAll('.frow').forEach(b => b.classList.toggle('on', +b.dataset.i === idx));
   $('#demo').innerHTML = `
     <div class="card">
       <p class="q">${esc(demo.question)}</p>
@@ -272,18 +295,69 @@ function show(idx){
   render(demo, keys[0]);
 }
 
+const TYPE_LABEL = {fact_direct: '单跳事实', fact_paraphrase: '同义改写', semantic_only: '纯语义',
+  fact_disambig: '易混实体', hop2: '两跳关系', hop3: '三跳关系', relation_path: '关系路径',
+  aggregation: '列举比较', negative: '幻觉陷阱'};
+const pctf = x => x == null ? '—' : `${(x * 100).toFixed(1)}%`;
+
+function evalView(ev){
+  const P = ev.pipeline, A = ev.agent;
+  const stat = (k, p, a) => `<div class="stat"><div class="k">${k}</div>
+    <div class="v">流水线 ${p}<span class="vs">→</span>Agent <b>${a}</b></div></div>`;
+  const types = Object.keys(TYPE_LABEL).filter(t => ev.by_type[t]);
+  const w = n => Math.max(3, Math.round(n * 70));
+  const rows = types.map(t => { const b = ev.by_type[t];
+    return `<tr><th>${TYPE_LABEL[t]}</th><td class="num">${b.n}</td>
+      <td><span class="bar"><i class="p" style="width:${w(b.pipeline / b.n)}%"></i>${b.pipeline}</span></td>
+      <td><span class="bar"><i style="width:${w(b.agent / b.n)}%"></i>${b.agent}</span></td>
+      <td class="num">${b.agent - b.pipeline > 0 ? '+' + (b.agent - b.pipeline) : b.agent - b.pipeline === 0 ? '0' : b.agent - b.pipeline}</td></tr>`; }).join('');
+  const idx = qid => DATA.demos.findIndex(d => d.qid === qid);
+  const item = d => { const i = idx(d.id), q = DATA.demos[i];
+    return i < 0 ? '' : `<button class="frow" data-i="${i}"><span class="qid">${d.id}</span>
+      <span class="qq">${esc(q.question)}</span>
+      <span class="mk">${TYPE_LABEL[d.type] || d.type} · Agent ${d.tools} 次工具${d.stopped === 'max_steps' ? ' · 达到步数上限' : ''}</span></button>`; };
+  const g1 = ev.diff.filter(d => d.agent && !d.pipeline), g2 = ev.diff.filter(d => !d.agent && d.pipeline),
+        g3 = ev.diff.filter(d => !d.agent && !d.pipeline);
+  return `<div class="sec">109 题评测结果（同一模型 deepseek-chat · 同一份抽取图谱 · 同一套判分）</div>
+    <div class="card">
+      <div class="stats">
+        ${stat('答对率', `${pctf(P.acc)}`, `${pctf(A.acc)}`)}
+        ${stat('可答题误拒答率', pctf(P.false_refusal), pctf(A.false_refusal))}
+        ${stat('陷阱题正确拒答', pctf(P.trap), pctf(A.trap))}
+        ${stat('每题 token', fmt(Math.round(P.tokens)), fmt(Math.round(A.tokens)))}
+        ${stat('109 题估算花费', `$${P.cost_usd.toFixed(3)}`, `$${A.cost_usd.toFixed(3)}`)}
+      </div>
+      <p class="note">Agent 多答对 ${A.correct - P.correct} 题（${P.correct} → ${A.correct}），成本约为 ${(A.cost_usd / P.cost_usd).toFixed(0)} 倍。
+      提升全部来自需要多步推理的题，简单题两边打平。关系类题由 LLM 判官判最终结论，其余题按关键词判分。</p>
+    </div>
+    <div class="card"><h2>按题型（答对题数）</h2><div class="tblwrap"><table class="tbl">
+      <tr><th>题型</th><th>题数</th><th>固定流水线</th><th>Agent</th><th>差</th></tr>${rows}</table></div></div>
+    <div class="card"><h2>逐题可查：两边结论不同、或都答错的题（点一题看回放）</h2>
+      <div class="grp">Agent 答对、流水线答错（${g1.length}）</div>${g1.map(item).join('')}
+      <div class="grp">流水线答对、Agent 答错（${g2.length}）</div>${g2.map(item).join('')}
+      <div class="grp">两边都答错（${g3.length}）</div>${g3.map(item).join('')}
+    </div>`;
+}
+
 async function boot(){
   DATA = await fetch('data/agent_traces.json').then(r => r.json());
   if (!DATA.demos.length){ $('#app').innerHTML = '<div class="empty">没有可回放的运行记录</div>'; return; }
-  // 只有一道题时不显示选题栏
-  const pick = DATA.demos.length > 1 ? `<div class="tabs" id="pick">${DATA.demos.map((d, i) =>
+  const cur = DATA.demos.map((d, i) => [d, i]).filter(([d]) => (d.group || 'curated') === 'curated');
+  const pick = cur.length ? `<div class="sec">精选案例</div><div class="tabs" id="pick">${cur.map(([d, i]) =>
     `<button class="tab" data-i="${i}"><span class="t">${esc(d.question)}</span>
-     <span class="s">${esc(d.qid)} · ${esc(d.label || d.type)}</span></button>`).join('')}</div>` : '';
-  $('#app').innerHTML = pick + '<div id="demo"></div>';
-  $('#pick')?.addEventListener('click', e => {
-    const b = e.target.closest('.tab'); if (b) show(+b.dataset.i);
+     <span class="s">${esc(d.qid)} · ${esc(TYPE_LABEL[d.type] || d.type)}</span></button>`).join('')}</div>` : '';
+  $('#app').innerHTML = (DATA.eval ? evalView(DATA.eval) : '') + pick + '<div id="demo"></div>';
+  $('#app').addEventListener('click', e => {
+    const b = e.target.closest('.tab[data-i], .frow');
+    if (!b) return;
+    show(+b.dataset.i);
+    history.replaceState(null, '', '#' + DATA.demos[+b.dataset.i].qid);
+    if (b.classList.contains('frow')) $('#demo').scrollIntoView({behavior: 'smooth', block: 'start'});
   });
-  show(0);
+  // agent.html#q-0058 直接打开某道题的回放, 方便把单题链接发给别人
+  const want = DATA.demos.findIndex(d => d.qid === decodeURIComponent(location.hash.slice(1)));
+  show(want >= 0 ? want : (cur.length ? cur[0][1] : 0));
+  if (want >= 0) $('#demo').scrollIntoView({block: 'start'});
 }
 boot().catch(e => { $('#app').innerHTML = `<div class="empty">加载失败：${esc(e.message)}</div>`; });
 </script>
