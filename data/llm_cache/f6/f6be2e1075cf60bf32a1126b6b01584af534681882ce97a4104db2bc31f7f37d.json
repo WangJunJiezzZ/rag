@@ -1,0 +1,33 @@
+{
+ "text": "I'll trace this step by step: first find 卡布达's partner, then that partner's grandfather, then who that grandfather sealed.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3603,
+ "output_tokens": 102,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2604.8986249952577,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Qh4QoY7urBd2f07Aco9u9134",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_whcjfJaWUqO5naYjAsC17045",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"SEALED_BY\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "图谱里只有三条\"最爱吃\"的记录，其中属于水果的是：\n\n- **蕉太狼**（《喜羊羊与灰太狼》）——最爱吃**香蕉**（doc-0013）\n- **卡布达**（《铁甲小宝》）——最爱吃**西瓜**（doc-0022）\n\n另一条是丸子龙最爱吃糯米丸子（doc-0027），不是水果。\n\n所以两部剧里最爱吃水果的两个角色是**蕉太狼（香蕉）**和**卡布达（西瓜）**。\n\n依据: doc-0013, doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4316,
+ "output_tokens": 124,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2980.6867499719374,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

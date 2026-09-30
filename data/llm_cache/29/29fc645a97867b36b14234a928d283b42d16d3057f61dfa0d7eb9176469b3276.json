@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的奶奶是**银太狼**。\n\n依据图谱：小灰灰（E0022）的父母是灰太狼（E0015）和红太狼（E0019）；而灰太狼的父母是黑太狼（E0016）和银太狼（E0017）。因此银太狼是小灰灰父亲的母亲，即奶奶。\n\n依据: doc-0012, doc-0010",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4153,
+ "output_tokens": 89,
+ "cached_read_tokens": 3840,
+ "latency_ms": 2823.682667047251,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

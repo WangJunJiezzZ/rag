@@ -1,0 +1,14 @@
+{
+ "text": "**反派三人组**由以下三个机器人组成：\n\n1. **蟑螂恶霸**（三人组的老大，另两人称他为\"大哥\"）\n2. **蜘蛛侦探**\n3. **蝎子莱莱**\n\n他们出自特摄剧《铁甲小宝》，三个机器人一起过着穷困的日子，一心想利用和平星统治人类；在鲨鱼辣椒出现之前，他们一直是最主要的反派。\n\n注：反派阵营中还有**鲨鱼辣椒**，但他不属于\"反派三人组\"这个团体。\n\n依据: doc-0037, doc-0036",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4261,
+ "output_tokens": 120,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3761.772292025853,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

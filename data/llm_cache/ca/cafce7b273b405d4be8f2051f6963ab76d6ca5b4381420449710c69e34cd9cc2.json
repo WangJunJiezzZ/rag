@@ -1,0 +1,14 @@
+{
+ "text": "不是。图谱里蝎子莱莱（又名蝎子蓝蓝）的原型记录为**鲎**（hòu，一种海洋节肢动物，俗称\"马蹄蟹\"），而不是蝎子。\n\n其他相关信息：\n- 出自《铁甲小宝》，编号 4 号机\n- 阵营：反派\n- 所属团体：反派三人组\n\n依据: doc-0025, doc-0036, doc-0037",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4106,
+ "output_tokens": 93,
+ "cached_read_tokens": 3712,
+ "latency_ms": 2719.9130409862846,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

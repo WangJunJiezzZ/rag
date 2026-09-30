@@ -1,0 +1,33 @@
+{
+ "text": "I've searched the knowledge graph and the source documents thoroughly. Let me do one final check with a different phrasing to be sure.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 6745,
+ "output_tokens": 134,
+ "cached_read_tokens": 5248,
+ "latency_ms": 4083.520459011197,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_HC0sS13EOk65F66iyUFK6725",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"谁为卡布达配音 中文配音\", \"top_k\": 10}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_PAskKtRQvmoNFXWdPvgY5680",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"ROLE\", \"value\": \"配音\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

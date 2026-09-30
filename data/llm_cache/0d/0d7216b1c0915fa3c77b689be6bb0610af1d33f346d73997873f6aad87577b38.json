@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3607,
+ "output_tokens": 77,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2777.6454580016434,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_sE0w9LqJytMeluzmaAr61328",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小宝\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_W5EmMGowPHHjvGrV34I50194",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"铁甲小宝 主角 名字\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

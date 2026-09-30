@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 丸子龙 and its favorite food.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3597,
+ "output_tokens": 86,
+ "cached_read_tokens": 0,
+ "latency_ms": 3021.1284589604475,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_WxgiEgZ2cNAkMoEFAY4W3282",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"丸子龙\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_jbnjeaQecKOHnWvmoqUJ8008",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

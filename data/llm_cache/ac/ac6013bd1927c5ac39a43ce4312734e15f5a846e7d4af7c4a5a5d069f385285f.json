@@ -1,0 +1,14 @@
+{
+ "text": "图谱中带编号的 B 机器人共 **10 台**（1 号机 ~ 10 号机）：\n\n| 编号 | 角色 |\n|---|---|\n| 1 号机 | 卡布达 |\n| 2 号机 | 金龟次郎 |\n| 3 号机 | 飞翔机器人 |\n| 4 号机 | 蝎子莱莱 |\n| 5 号机 | 蜘蛛侦探 |\n| 6 号机 | 丸子龙 |\n| 7 号机 | 呱呱蛙 |\n| 8 号机 | 蟑螂恶霸 |\n| 9 号机 | 鲨鱼辣椒 |\n| 10 号机 | 田德莉娜 |\n\n依据: doc-0022, doc-0023, doc-0024, doc-0025, doc-0026, doc-0027, doc-0028, doc-0029, doc-0030, doc-0031",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4072,
+ "output_tokens": 208,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3302.6495830272324,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

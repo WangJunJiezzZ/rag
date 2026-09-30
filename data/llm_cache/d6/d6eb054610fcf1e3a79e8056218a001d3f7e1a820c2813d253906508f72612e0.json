@@ -1,0 +1,14 @@
+{
+ "text": "队伍里仅有的女生是**田德莉娜**。\n\n依据：\n- 田德莉娜的角色档案明确写道\"该角色是唯一的女性机器人\"，她是《铁甲小宝》中的角色，编号 10 号机，原型是瓢虫（doc-0031）。\n- 阵营一览显示她属于正义阵营，与卡布达、金龟次郎、飞翔机器人、呱呱蛙同队（doc-0036）。\n\n依据: doc-0031, doc-0036",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4791,
+ "output_tokens": 104,
+ "cached_read_tokens": 4480,
+ "latency_ms": 3157.426832942292,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

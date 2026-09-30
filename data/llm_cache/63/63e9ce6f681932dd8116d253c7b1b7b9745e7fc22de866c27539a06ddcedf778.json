@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n我查了卡布达的角色档案（doc-0022）以及图谱中卡布达的全部一跳关系，其中包含编号（1 号机）、原型（独角仙）、口头禅、武器、最爱食物、超级变换时间、巨人形态等属性，但**没有任何关于体重（或身高、重量）的记录**。\n\n另外，全文检索\"卡布达 体重\"也没有返回体重相关的片段——唯一涉及尺寸的是卡布达巨人（doc-0041：普通形态高 6.5 米，超级形态高 10.8 米），那是身高而非体重，且属于巨人形态，不是卡布达本体。\n\n依据: doc-0022, doc-0041",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5197,
+ "output_tokens": 152,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3777.112042007502,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

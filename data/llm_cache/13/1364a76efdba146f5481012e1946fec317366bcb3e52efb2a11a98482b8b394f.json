@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and trace the relationship between them.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3603,
+ "output_tokens": 83,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2762.656082981266,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_0e3QqSoBUGNVq6qEVxhj0297",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"藏之助\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_DCUHoqR5UMPAD3X9Acvd5439",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

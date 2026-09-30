@@ -1,0 +1,14 @@
+{
+ "text": "**蕉太狼是灰太狼的侄子**（灰太狼是蕉太狼的叔叔）。\n\n图谱中的直接关系：`蕉太狼 <-[UNCLE_OF]- 灰太狼`，即灰太狼 UNCLE_OF 蕉太狼。\n\n另外还有一条间接联系：香太狼喜欢蕉太狼，而香太狼是红太狼的表亲、也是夜太狼的妻子，因此蕉太狼与灰太狼家还有一层姻亲上的关联。\n\n依据: doc-0013, doc-0014, doc-0011, doc-0015",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4164,
+ "output_tokens": 123,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3187.057167000603,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "卡布达最喜欢啃的水果是**西瓜**。\n\n依据: doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3866,
+ "output_tokens": 17,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2519.0887079807,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

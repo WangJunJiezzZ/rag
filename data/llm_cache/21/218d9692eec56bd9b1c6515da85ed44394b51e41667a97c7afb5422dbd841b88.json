@@ -1,0 +1,14 @@
+{
+ "text": "**灰二太太狼**是灰太狼的二叔，他是**七大恶狼**团体的首领。\n\n关系链：\n- 灰二太太狼 —UNCLE_OF→ 灰太狼（即灰太狼的二叔）\n- 灰二太太狼 —LEADER_OF→ 七大恶狼\n\n依据: doc-0016, doc-0038",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4684,
+ "output_tokens": 77,
+ "cached_read_tokens": 4352,
+ "latency_ms": 3334.5162500045262,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

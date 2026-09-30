@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3831,
+ "output_tokens": 70,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2673.501458019018,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_xhGZFhAJHkfxIexbZNKi1352",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0008\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_Vtya3EN2MXWOq7H529nM2116",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"羊村\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

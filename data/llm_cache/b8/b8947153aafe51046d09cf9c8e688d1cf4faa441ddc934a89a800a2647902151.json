@@ -1,0 +1,14 @@
+{
+ "text": "是**慢羊羊**（慢羊羊村长）。\n\n依据 doc-0008《慢羊羊 角色档案》\"二、性格与特长\"：他是羊族里最年长的羊，**行动比蜗牛还慢，拄着拐杖**，记性不好；思考时头上会长出一根聪明草，还是个乌龙发明家。同一档案的\"三、人物关系\"显示他是羊村的村长、大肥羊学校的校长。\n\n依据: doc-0008",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4681,
+ "output_tokens": 102,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3873.226208961569,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

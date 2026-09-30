@@ -1,0 +1,14 @@
+{
+ "text": "反派三人组的老大是**蟑螂恶霸**，他的武器是**眼镜蛇尾鞭**。\n\n依据: doc-0037, doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4018,
+ "output_tokens": 35,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3128.406499978155,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

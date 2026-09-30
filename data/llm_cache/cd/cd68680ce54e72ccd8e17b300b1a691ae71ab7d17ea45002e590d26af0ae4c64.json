@@ -1,0 +1,14 @@
+{
+ "text": "根据文档记载：\n\n**喜羊羊这个主角最初打算叫「懒羊羊」。**\n\n制作团队觉得「喜羊羊」这个名字更正面，于是改成了现在的名字。\n\n另外，文档还提到羊的名字都是谐音梗：喜羊羊取自「喜气洋洋」，懒羊羊取自「懒洋洋」，沸羊羊取自「沸沸扬扬」。\n\n依据: doc-0001",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4334,
+ "output_tokens": 82,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3240.3512080200016,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

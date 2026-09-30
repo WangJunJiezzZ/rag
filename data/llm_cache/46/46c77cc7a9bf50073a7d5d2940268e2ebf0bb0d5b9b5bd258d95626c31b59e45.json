@@ -1,0 +1,14 @@
+{
+ "text": "**答案：眼镜蛇。**\n\n推理链条：\n1. 蜘蛛侦探是《铁甲小宝》中的角色，属于\"反派三人组\"（成员：蟑螂恶霸、蜘蛛侦探、蝎子莱莱）。\n2. 该团体的资料明确写着：**蟑螂恶霸是反派三人组的老大，蜘蛛侦探和蝎子莱莱都称他为\"大哥\"**。所以蜘蛛侦探口中的\"大哥\"就是蟑螂恶霸。\n3. 蟑螂恶霸的角色档案记载：编号 8 号机，**原型是眼镜蛇**（档案还特别说明\"虽然名字里有蟑螂，原型却不是蟑螂\"）。\n\n依据: doc-0037, doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5863,
+ "output_tokens": 154,
+ "cached_read_tokens": 5376,
+ "latency_ms": 4640.007333015092,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

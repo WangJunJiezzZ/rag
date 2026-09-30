@@ -1,0 +1,14 @@
+{
+ "text": "金龟次郎（《铁甲小宝》中的 2 号机，原型是锹形虫）使用的武器是**金龟大剪钳**。\n\n依据: doc-0023",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4191,
+ "output_tokens": 41,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3909.705917001702,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

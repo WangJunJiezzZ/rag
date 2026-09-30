@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the character first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 47,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2960.8563749934547,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_uHqd1e946W0aUUUsB53Z8879",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"呱呱蛙\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

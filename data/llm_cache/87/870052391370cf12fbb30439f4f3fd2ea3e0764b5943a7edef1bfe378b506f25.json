@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 77,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2707.237000053283,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_y05OIU2Cby5VtfjJx0tv0945",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_8yFtrhkjGMyGRz0mSbuF4376",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

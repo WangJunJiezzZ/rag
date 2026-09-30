@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰嘴里老叼着的是**奶嘴**。\n\n图谱中「小灰灰 —CARRIES→ 奶嘴」这条随身物品关系来自 doc-0012。\n\n依据: doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4053,
+ "output_tokens": 44,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3321.646290947683,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

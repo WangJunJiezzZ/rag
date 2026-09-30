@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3610,
+ "output_tokens": 82,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3093.5362920281477,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_MdBA6Y31U4IcuTSjPZ0p2542",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_N4SVRc73EajjaeOLIpPZ9393",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"卡布达巨人 向和平星许愿\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -210,7 +210,7 @@ class BaseProvider:
         raise NotImplementedError
 
     def chat(self, *, messages: list[dict], tools: list[dict] | None,
-             max_tokens: int) -> LLMResult:
+             max_tokens: int, tool_choice: str | None = None) -> LLMResult:
         """多轮对话 + 工具调用。消息与工具均为 OpenAI 兼容格式。"""
         raise NotImplementedError(f"provider={self.name} 未实现工具调用; 用 deepseek")
 
@@ -451,12 +451,14 @@ class DeepSeekProvider(BaseProvider):
                 "cached_read_tokens": u.get("prompt_cache_hit_tokens", 0) or 0}
 
     def chat(self, *, messages: list[dict], tools: list[dict] | None,
-             max_tokens: int) -> LLMResult:
+             max_tokens: int, tool_choice: str | None = None) -> LLMResult:
         body: dict[str, Any] = {"model": self.model, "messages": messages,
                                 "max_tokens": max_tokens, "temperature": 0,
                                 "stream": False}
         if tools:
             body["tools"] = tools
+            if tool_choice:
+                body["tool_choice"] = tool_choice      # "none" = 本轮不许再调工具
         data, latency = self._post(body)
         choice = data["choices"][0]
         msg = choice["message"]
@@ -575,7 +577,7 @@ class LLM:
         return res
 
     def chat(self, *, messages: list[dict], tools: list[dict] | None = None,
-             max_tokens: int = 2048) -> LLMResult:
+             max_tokens: int = 2048, tool_choice: str | None = None) -> LLMResult:
         """多轮 + 工具调用。缓存键 = 完整消息历史 + 工具定义。
 
         Agent 每一步的输入都包含之前所有工具结果, 所以只要工具是确定性的,
@@ -583,11 +585,13 @@ class LLM:
         工具描述改一个字, 键就变, 会重新调用: 这是对的, 描述本身就是被评测的变量。
         """
         model = self._model_for_key("")
+        # tool_choice 只在设置时进键: 不设置时键与引入该参数之前逐字节一致, 旧缓存照常命中
+        extra = {"tool_choice": tool_choice} if tool_choice else {}
         key = DiskCache.key({"provider": self.provider_name, "model": model,
                              "kind": "chat", "messages": messages,
-                             "tools": tools, "max_tokens": max_tokens})
-        stable = DiskCache.key({"stable": self._chat_stable_key(model, messages, tools,
-                                                                 max_tokens)})
+                             "tools": tools, "max_tokens": max_tokens, **extra})
+        stable = DiskCache.key({"stable": {**self._chat_stable_key(model, messages, tools,
+                                                                    max_tokens), **extra}})
         hit = self.cache.get(key)
         if hit is not None:
             # 命中精确键时补写稳定键 —— 录满缓存的机器永远走不到下面的写入路径
@@ -603,7 +607,7 @@ class LLM:
                 f"离线模式(provider={self.provider_name})下 chat 缓存未命中。"
                 f"在线调用需要: 设置 API key, 且 GRAPHRAG_OFFLINE 未开启")
         res = self.provider.chat(messages=messages, tools=tools,
-                                 max_tokens=max_tokens)
+                                 max_tokens=max_tokens, tool_choice=tool_choice)
         self.cache.put(key, res)
         self.cache.put_alias(stable, key)
         self.calls += 1

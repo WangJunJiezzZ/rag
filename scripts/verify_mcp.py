@@ -40,8 +40,10 @@ class ScriptedLLM:
     def __init__(self, script: list[LLMResult]):
         self.script = list(script)
         self.seen: list[list[dict]] = []
+        self.tool_choices: list = []
 
-    def chat(self, *, messages, tools=None, max_tokens=2048):
+    def chat(self, *, messages, tools=None, max_tokens=2048, tool_choice=None):
+        self.tool_choices.append(tool_choice)
         self.seen.append(json.loads(json.dumps(messages)))
         return self.script.pop(0) if self.script else LLMResult(text="(剧本用完)")
 
@@ -113,6 +115,35 @@ async def main() -> int:
         turn = await chat.ask("死循环测试")
         check(turn.stopped == "max_steps" and len(turn.steps) == 3,
               "模型一直调工具 -> 在 max_steps 处截停")
+        check(all(tc is None for tc in llm.tool_choices), "v1 从不设置 tool_choice(缓存键与录制时一致)")
+        v1_tools = [t["function"]["name"] for t in chat.tools]
+
+    print("4. Agent v2")
+    params_v2 = StdioServerParameters(command=sys.executable,
+                                      args=[str(SERVER_SCRIPT), "--profile", "v2"])
+    async with Client(params_v2) as client:
+        chat = MCPChat(client, ScriptedLLM([]), verbose=False, profile="v2")
+        await chat.setup()
+        v2_tools = [t["function"]["name"] for t in chat.tools]
+        check(v2_tools == v1_tools + ["list_by_relation"],
+              "v2 工具 = v1 的 7 个 + list_by_relation(追加在末尾)")
+        check("泛词" in chat.system and "list_by_relation" in chat.system, "v2 system prompt 含检索与列举规则")
+
+        r = await client.call_tool("list_by_relation", {"relation": "FACTION", "value": "正义"})
+        rows = json.loads(r.content[0].text)["rows"]
+        check(len(rows) >= 2 and all(x["object"] == "正义" for x in rows), "list_by_relation 按属性取值列举")
+
+        # 模型一直想调工具: 最后一轮必须禁止调工具并追加提示, 拿到最终答案
+        llm = ScriptedLLM([LLMResult(text="", tool_calls=[
+            call("find_entity", {"name": "太狼"}, f"f{i}")]) for i in range(2)]
+            + [LLMResult(text="根据已有信息: 未找到依据。")])
+        chat.llm, chat.max_steps = llm, 3
+        turn = await chat.ask("强制作答测试")
+        check(llm.tool_choices == [None, None, "none"], "只在最后一轮设置 tool_choice=none")
+        check(llm.seen[-1][-1]["role"] == "user" and "最后一轮" in llm.seen[-1][-1]["content"],
+              "最后一轮追加了收尾提示")
+        check(turn.stopped == "forced_final" and turn.answer.startswith("根据已有信息"),
+              "最后一轮强制作答 -> stopped=forced_final, 答案不丢")
 
     print("-" * 60)
     print("[PASS] MCP 链路自检通过" if not FAILS else f"[FAIL] {len(FAILS)} 项未通过")

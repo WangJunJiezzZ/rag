@@ -1,0 +1,14 @@
+{
+ "text": "未找到依据。\n\n图谱中「鲨鱼辣椒」（E0040）没有任何 FAVORITE_FOOD（最爱吃的食物）关系；全库仅记录了 3 条该关系，分别是蕉太狼→香蕉、卡布达→西瓜、丸子龙→糯米丸子，均与鲨鱼辣椒无关。文本检索「鲨鱼辣椒 最爱吃」也只返回其封印与转变、角色档案等内容，未提及饮食偏好。\n\n鲨鱼辣椒的已知信息为：9 号机、原型鲨鱼、武器鲨鱼神斧、超级变换形态维持 15 分钟、巨人形态超级鲨鱼巨人、反派阵营，被高圆寺寅彦封印、由丸子龙解开封印。\n\n依据: doc-0030, doc-0042, doc-0013, doc-0022, doc-0027",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4962,
+ "output_tokens": 175,
+ "cached_read_tokens": 4352,
+ "latency_ms": 3912.6065419986844,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

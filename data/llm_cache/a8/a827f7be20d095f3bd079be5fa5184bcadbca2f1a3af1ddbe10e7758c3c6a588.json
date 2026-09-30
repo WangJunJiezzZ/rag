@@ -1,0 +1,14 @@
+{
+ "text": "小让用的是**友情呼唤指令器**。\n\n依据: doc-0018, doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4218,
+ "output_tokens": 21,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2588.419666979462,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

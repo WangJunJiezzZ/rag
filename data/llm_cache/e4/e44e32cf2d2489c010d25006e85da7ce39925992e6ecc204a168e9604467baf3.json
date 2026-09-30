@@ -1,0 +1,14 @@
+{
+ "text": "**包包大人**负责管理整片草原。\n\n图谱中明确记录：包包大人（E0014）的身份/职务是「青青草原的管理者」（来源 doc-0009）。文档原文也写道：「包包大人是动画《喜羊羊与灰太狼》中的角色。该角色的身份是青青草原的管理者。」\n\n依据: doc-0009",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4635,
+ "output_tokens": 74,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3932.947624998633,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

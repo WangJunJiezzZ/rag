@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的表哥是**夜太狼**（COUSIN_OF，doc-0015），夜太狼的妻子是**香太狼**（SPOUSE_OF，doc-0014）。\n\n所以灰太狼表哥的老婆是**香太狼**。\n\n依据: doc-0015, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4006,
+ "output_tokens": 68,
+ "cached_read_tokens": 3840,
+ "latency_ms": 2745.791499968618,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -123,6 +123,8 @@ def main() -> int:
                     help="实际 API 花费上限(缓存命中不计)")
     ap.add_argument("--concurrency", type=int, default=4)
     ap.add_argument("--max-steps", type=int, default=8)
+    ap.add_argument("--agent", default="v1", choices=["v1", "v2"],
+                    help="v1 = 第一轮(冻结); v2 = 加 list_by_relation + 检索规则 + 最后一轮强制作答")
     ap.add_argument("--no-judge", action="store_true",
                     help="关系类题也只用关键词判分(默认用 LLM 判官, 见 eval/judge.py)")
     args = ap.parse_args()
@@ -151,7 +153,7 @@ def main() -> int:
         return 1
 
     gname = "标准图谱" if "synthetic" in args.graph else "抽取图谱"
-    print(f"题目 {len(items)} 道 ({args.split or 'all'}) · {gname} · "
+    print(f"Agent {args.agent} · 题目 {len(items)} 道 ({args.split or 'all'}) · {gname} · "
           f"{'在线' if args.online else '只读缓存'}")
     if args.online:
         print(f"预估: 未命中缓存的题每道约 ${EST_USD_PER_Q}, 最多约 "
@@ -171,7 +173,7 @@ def main() -> int:
                                       concurrency=args.concurrency,
                                       max_steps=args.max_steps,
                                       budget_usd=args.max_usd if args.online else None,
-                                      progress=progress))
+                                      progress=progress, agent=args.agent))
     print()
     if res["missed"]:
         print(f"  [info] {res['missed']} 题没有缓存" +
@@ -208,10 +210,35 @@ def main() -> int:
     tools = Counter(t for r in res["rows"] for t in r["tools"])
     print("Agent 工具使用分布: " + ", ".join(f"{k} {v}" for k, v in tools.most_common()))
 
-    suffix = ("_oracle" if "synthetic" in args.graph else "") + f"_{args.split or 'all'}"
+    suffix = (("_v2" if args.agent == "v2" else "") + ("_oracle" if "synthetic" in args.graph else "")
+              + f"_{args.split or 'all'}")
+
+    # v2: 与同一划分的 v1 逐题对比 —— 改进是否真的修好了题, 又有没有把原来对的题改错
+    if args.agent == "v2":
+        v1f = ROOT / "reports" / f"phase4_agent{suffix.replace('_v2', '', 1)}.json"
+        if v1f.exists():
+            v1 = {r["id"]: r for r in json.loads(v1f.read_text(encoding="utf-8"))["agent"]["details"]}
+            v2 = {r["id"]: r for r in res["rows"]}
+            common = [i for i in v2 if i in v1]
+            fixed = [i for i in common if v2[i]["correct"] > v1[i]["correct"]]
+            broke = [i for i in common if v2[i]["correct"] < v1[i]["correct"]]
+            m = lambda rows, k: sum(r[k] for r in rows) / max(1, len(rows))      # noqa: E731
+            V1, V2 = [v1[i] for i in common], [v2[i] for i in common]
+            print(f"\nv1 → v2（共同题数 {len(common)}）")
+            print(f"  答对      {sum(r['correct'] for r in V1):.0f} → {sum(r['correct'] for r in V2):.0f}")
+            print(f"  每题工具  {m(V1, 'tool_calls'):.2f} → {m(V2, 'tool_calls'):.2f}")
+            print(f"  每题 token {m(V1, 'input_tokens') + m(V1, 'output_tokens'):,.0f} → "
+                  f"{m(V2, 'input_tokens') + m(V2, 'output_tokens'):,.0f}")
+            print(f"  总花费    ${sum(r['cost_usd'] for r in V1):.4f} → ${sum(r['cost_usd'] for r in V2):.4f}")
+            print(f"  修好 {len(fixed)} 题: {fixed}")
+            print(f"  改坏 {len(broke)} 题: {broke}")
+            ft = sum(1 for r in V2 if r.get("stopped") == "forced_final")
+            lb = sum(1 for r in V2 if "list_by_relation" in r["tools"])
+            print(f"  v2 用到强制作答 {ft} 题, 用到 list_by_relation {lb} 题")
     out = ROOT / "reports" / f"phase4_agent{suffix}.json"
     write_text(out, json.dumps({
         "graph": args.graph, "split": args.split or "all", "model": "deepseek-chat",
+        "agent": args.agent,
         "scoring": "keyword" if args.no_judge else "keyword + judge/v1_rubric(关系类题)",
         "pipeline": {"summary": summarize(pipe["rows"]), "details": pipe["rows"]},
         "agent": {"summary": summarize(res["rows"]), "details": res["rows"],

@@ -1,0 +1,33 @@
+{
+ "text": "I'll start by finding the \"反派三人组\" group and its leader.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 88,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3235.649334033951,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_fpDWYvR2MIWCC58dhvTD2207",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"反派三人组\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_GArX193oKUtutEqmKplr3638",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"LEADER_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

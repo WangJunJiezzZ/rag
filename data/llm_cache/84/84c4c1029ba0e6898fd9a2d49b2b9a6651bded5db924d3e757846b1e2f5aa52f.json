@@ -1,0 +1,51 @@
+{
+ "text": "I'll look up the transformation time for each of these characters.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3618,
+ "output_tokens": 145,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2863.3619580068626,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_eeNFzcEk8HxBMnSwo3bR2378",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_jHTKrmccU3hkTSEufELw1061",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_TIx5fw0YqyN2ICfUKsj28369",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"飞翔机器人\"}"
+   }
+  },
+  {
+   "index": 3,
+   "id": "call_03_H5U9yE3E7K9LBHbFweC13539",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

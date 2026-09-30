@@ -26,7 +26,7 @@ import sys
 from typing import Any
 
 from ..service import RAGService, ServiceConfig
-from ..store.graph import LITERAL_PREFIX, KnowledgeGraph
+from ..store.graph import LITERAL_PREFIX, KnowledgeGraph, normalize_name
 
 # 关系的含义与方向。放进 schema resource, 也写进工具描述 ——
 # 模型不知道 "PARENT_OF 是 父母->子女" 就会把方向查反, 把爷爷答成孙子。
@@ -210,6 +210,37 @@ class GraphRAGTools:
                            "docs": kg.path_docs(p)} for p in paths],
                 "note": ("两者之间没有不经枢纽的关系路径(已阻断连接数>"
                          f"{gr.hub_degree} 的节点中转, 如节目节点)") if not paths else ""}
+
+    def list_by_relation(self, relation: str, value: str | None = None,
+                         limit: int = 50) -> dict:
+        """按关系(和可选的取值)列出所有匹配的边 —— Agent v2 新增。
+
+        v1 的失败分析里有两类问题都源于缺这个工具(见 docs/07-Agent.md 第三节):
+          · 列举题只能逐个查邻居: "正义阵营有哪些机器人"调了 13 次工具
+          · 共同属性连不起来: 阵营是字面量节点, 按设计不能作为路径中转,
+            "藏之助和卡布达同属正义阵营"这类联系, explain_relation 永远找不到
+        """
+        kg = self.kg
+        if relation not in RELATIONS:
+            return {"error": f"未知关系 {relation}", "valid_relations": list(RELATIONS)}
+        want_id = self._resolve(value) if value else None
+        want = normalize_name(value) if value else ""
+        rows: list[dict] = []
+        for e in kg.edges:
+            if e.rel != relation:
+                continue
+            if value:
+                obj = normalize_name(kg.name(e.dst))
+                # 实体按 id 匹配(支持别名); 字面量按规范化后的文本匹配, 允许包含关系
+                if not (e.dst == want_id or obj == want or (want and want in obj)):
+                    continue
+            rows.append({"subject": {"id": e.src, "name": kg.name(e.src)},
+                         "object": kg.name(e.dst), "docs": e.all_docs()})
+        if not rows:
+            return {"relation": relation, "value": value, "total": 0, "rows": [],
+                    "hint": "没有匹配的边。不确定取值写法时, 先不填 value 看看这个关系有哪些取值。"}
+        return {"relation": relation, "value": value, "total": len(rows),
+                "truncated": len(rows) > limit, "rows": rows[:limit]}
 
     def search_text(self, query: str, top_k: int = 5) -> dict:
         top_k = max(1, min(top_k, 10))

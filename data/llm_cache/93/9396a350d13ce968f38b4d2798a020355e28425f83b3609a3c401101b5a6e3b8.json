@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for information about this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 83,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2491.0462080151774,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_fROknlkhLJsOyOU5okc12347",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"灰太狼一共抓到过多少只羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_j8uH26nRGYFeUlWeSsgA1627",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰发现被爸爸（灰太狼）骗了时，嚷的是口头禅：**“爸爸，你又骗我”**。\n\n依据: doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4710,
+ "output_tokens": 36,
+ "cached_read_tokens": 4224,
+ "latency_ms": 4310.355250025168,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

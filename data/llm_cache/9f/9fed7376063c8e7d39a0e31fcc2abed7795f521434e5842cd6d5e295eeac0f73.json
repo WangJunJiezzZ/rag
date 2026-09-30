@@ -1,0 +1,33 @@
+{
+ "text": "The SEALED_BY relation shows 鲨鱼辣椒 was sealed by 高圆寺寅彦. Let me verify that 高圆寺寅彦 is 小让's grandfather.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3800,
+ "output_tokens": 111,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2707.958040991798,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_pVJLTSLaNgPY8mJxz3cJ1200",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0002\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_dcehRbvNdbJJW5Ego81n5803",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"高圆寺寅彦\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

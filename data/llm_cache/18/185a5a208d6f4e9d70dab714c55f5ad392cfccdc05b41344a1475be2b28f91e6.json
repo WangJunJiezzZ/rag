@@ -1,0 +1,14 @@
+{
+ "text": "**香太狼是小灰灰的表姨（表姑）——即小灰灰母亲红太狼的表姐妹。**\n\n依据路径：香太狼 —[COUSIN_OF]→ 红太狼 —[PARENT_OF]→ 小灰灰（doc-0014, doc-0012）。\n\n补充说明：\n- 香太狼是红太狼的表姐妹，而红太狼是灰太狼的妻子、小灰灰的母亲，所以香太狼是小灰灰的母系表亲长辈（表姨）。\n- 香太狼的丈夫是夜太狼（夜太狼又是灰太狼的表兄弟），因此她与小灰灰家还有一层姻亲关系（doc-0014, doc-0015）。\n- 香太狼自己的女儿是小香香（doc-0014）。\n\n依据: doc-0014, doc-0012, doc-0011, doc-0015",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4885,
+ "output_tokens": 193,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3437.8494580159895,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

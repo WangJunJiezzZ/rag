@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and find the relationship path between them.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 83,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3182.6997080352157,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_iJs1qQ8dTticLUpYOYcz2063",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小让\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_YDChfESXqqKPfJ5gZJzh0004",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

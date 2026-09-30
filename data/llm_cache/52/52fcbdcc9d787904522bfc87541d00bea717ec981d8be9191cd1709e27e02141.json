@@ -1,0 +1,33 @@
+{
+ "text": "I'll start by finding the entity for 鲨鱼辣椒 and tracing the seal relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 91,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2914.5414590020664,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_HX7SHxEt4MRC2O4rCqoW9548",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_fEuGEzZMvv6Zpp8m3sCx5070",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"RELEASED_BY\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

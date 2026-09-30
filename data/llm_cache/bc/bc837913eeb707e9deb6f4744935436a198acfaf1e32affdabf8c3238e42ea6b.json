@@ -1,0 +1,24 @@
+{
+ "text": "灰太狼的妻子是红太狼。查红太狼的父母。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4618,
+ "output_tokens": 54,
+ "cached_read_tokens": 3968,
+ "latency_ms": 3201.9668749999255,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_uk2ChoLCGKiB4G6Q8CSp8035",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0019\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

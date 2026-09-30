@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3606,
+ "output_tokens": 84,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3260.9996250248514,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_60fbaOlrGWCB2zcVgxnD0032",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"最爱打扮 用各种材料编小首饰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_CJCACoFVa2yBfePzjKpc0770",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜欢打扮 编首饰 羊\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

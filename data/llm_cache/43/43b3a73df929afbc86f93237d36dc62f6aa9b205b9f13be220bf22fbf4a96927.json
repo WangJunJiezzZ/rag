@@ -1,0 +1,14 @@
+{
+ "text": "**蝎子蓝蓝（蝎子莱莱）的原型是「鲎」。**\n\n依据: doc-0025",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3850,
+ "output_tokens": 25,
+ "cached_read_tokens": 3712,
+ "latency_ms": 2741.091249976307,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

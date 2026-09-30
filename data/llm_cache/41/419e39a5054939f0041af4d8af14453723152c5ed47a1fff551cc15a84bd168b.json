@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this character description.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3604,
+ "output_tokens": 90,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3984.1511250124313,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_FbeYP5YKufezWpLrKD6r1949",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"动作慢吞吞，走路还得撑着棍子\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_YsMeKGeFZTXdCc7pfcyJ9223",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"走路撑棍子 慢吞吞 村长\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

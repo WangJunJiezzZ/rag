@@ -1,0 +1,14 @@
+{
+ "text": "**暖羊羊是班长。**\n\n依据图谱：暖羊羊（E0010）有一条 ROLE 关系指向「班长」，来源文档 doc-0007；懒羊羊（E0008）没有任何 ROLE 关系记录，图谱中未找到他是班长的依据。\n\ndoc-0007 原文也明确写着：「暖羊羊是动画《喜羊羊与灰太狼》中的角色。该角色的身份是班长。」\n\n依据: doc-0007",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4319,
+ "output_tokens": 97,
+ "cached_read_tokens": 3968,
+ "latency_ms": 2856.0519170132466,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

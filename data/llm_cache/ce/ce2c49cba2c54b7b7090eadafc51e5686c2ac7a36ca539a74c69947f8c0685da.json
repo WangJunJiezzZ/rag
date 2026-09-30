@@ -1,0 +1,33 @@
+{
+ "text": "I found a lead. Let me verify with the source document.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4168,
+ "output_tokens": 87,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2993.5747499694116,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_KjyGKLfRsFSJ17tVT7bl2429",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0019\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_9liPV38vLoddb6rVnAE60535",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"高圆寺寅彦\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

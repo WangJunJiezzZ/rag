@@ -1,0 +1,14 @@
+{
+ "text": "**蕉太狼**。\n\n依据 doc-0013《蕉太狼 角色档案》：\n- 性格与特长：「该角色胆小，从小和父母失散，**被猴子收养，吃素**。」「该角色最爱吃香蕉。」\n- 人物关系：「该角色是灰太狼的侄子。」「该角色和暖羊羊是好朋友。」\n\n图谱中该角色实体为 E0024（Character）。另外档案还提到他「常常阻止二叔抓羊」，与「素食者」的设定一致。\n\n依据: doc-0013",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4566,
+ "output_tokens": 116,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3581.3035420142114,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

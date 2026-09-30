@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 46,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3260.975250042975,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_EuzjWaScynlNHPSDJvvk0969",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"飞翔机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

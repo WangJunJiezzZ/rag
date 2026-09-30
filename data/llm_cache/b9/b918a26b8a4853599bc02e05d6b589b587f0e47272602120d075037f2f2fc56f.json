@@ -1,0 +1,14 @@
+{
+ "text": "蟑螂恶霸出手时用的兵器是**眼镜蛇尾鞭**。\n\n依据: doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3840,
+ "output_tokens": 23,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2622.100957960356,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

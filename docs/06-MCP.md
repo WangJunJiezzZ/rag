@@ -244,6 +244,9 @@ Windows 上 `command` 写 `C:\\绝对路径\\graphrag-lab\\.venv\\Scripts\\pytho
 | `search_text` | 描述性问题，或者图里查不到的对象 | BM25 + Dense 的 RRF 融合 |
 | `read_document` | 核实证据原文 | 文档库 |
 | `ask` | 一站式问答（固定流水线） | `RAGService.ask` |
+| `list_by_relation` | **仅 v2**：按关系和取值一次列出所有匹配的角色，如某阵营有哪些角色 | 遍历 `kg.edges`，见 [07-Agent 第四节](07-Agent.md) |
+
+Server 有两套工具集：`--profile v1` 是上面前 7 个，冻结不动，第一轮 Agent 评测的缓存依赖它逐字节一致；`--profile v2` 在末尾追加 `list_by_relation`。
 
 ---
 

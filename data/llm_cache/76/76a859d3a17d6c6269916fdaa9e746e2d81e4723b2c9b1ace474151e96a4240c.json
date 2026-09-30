@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the character 卡布达 and its catchphrase.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 54,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3555.1715409965254,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ntHszL42qKMEQTT0cx994783",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

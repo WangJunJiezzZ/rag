@@ -1,0 +1,14 @@
+{
+ "text": "**羊村由慢羊羊当家。**\n\n图谱显示慢羊羊（别名「慢羊羊村长」）同时是**羊村**和**大肥羊学校**的村长/校长（HEAD_OF 关系）。\n\n依据: doc-0008",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3834,
+ "output_tokens": 52,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2758.721957972739,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

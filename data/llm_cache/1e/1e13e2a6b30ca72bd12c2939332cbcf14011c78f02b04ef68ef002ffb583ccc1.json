@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the documents for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3603,
+ "output_tokens": 91,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3032.646208012011,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_BeVPBtSzoQ4sDa6ILo4T9143",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"哪只羊体型最圆、最不爱干活\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_MprQ3H438nIaZqmZMoSX2928",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"懒羊羊 体型圆 懒惰 爱睡觉\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

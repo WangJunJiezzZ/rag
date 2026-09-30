@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3788,
+ "output_tokens": 92,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3248.8889589440078,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Kmk4IgTCCtDHgWdq547s6321",
+   "type": "function",
+   "function": {
+    "name": "explain_relation",
+    "arguments": "{\"a\": \"吉祥寺藏之助\", \"b\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_9kF6FGEp5ENbWwONd6qe4903",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0030\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

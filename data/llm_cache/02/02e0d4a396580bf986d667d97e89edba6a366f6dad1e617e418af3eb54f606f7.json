@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the documents for information about 红太狼's preferences.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 88,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2705.555458960589,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_MA6WrzyX5D8quuLpHC1g2753",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"红太狼 最喜欢 颜色\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_p1sbw2XOLaWAN1M6CoMi7170",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"红太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

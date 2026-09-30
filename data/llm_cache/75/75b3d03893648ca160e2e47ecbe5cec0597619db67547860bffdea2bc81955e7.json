@@ -1,0 +1,14 @@
+{
+ "text": "答案是**美羊羊**。\n\n依据文档 doc-0004《美羊羊 角色档案》「二、性格与特长」：该角色天真善良，爱美也爱哭，精通营养、美容、服装等一切和美有关的事；该角色能用任何东西编织饰物。\n\n（另注：红太狼也「爱打扮」，见 doc-0011，但「用各种材料编小首饰」这一特征对应的是美羊羊。）\n\n依据: doc-0004",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4595,
+ "output_tokens": 102,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2993.729749985505,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

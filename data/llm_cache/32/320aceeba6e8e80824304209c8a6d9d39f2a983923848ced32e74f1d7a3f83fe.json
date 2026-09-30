@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity first, then check its weapon relation.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 53,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3119.496916013304,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ITtSaxah8khi6TDWeD4a0624",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"红太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

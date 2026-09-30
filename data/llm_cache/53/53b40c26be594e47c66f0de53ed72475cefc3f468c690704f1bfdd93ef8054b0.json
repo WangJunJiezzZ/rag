@@ -1,0 +1,33 @@
+{
+ "text": "图谱中没有\"最爱吃的食物\"这一关系。我再检索一下文本。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4282,
+ "output_tokens": 92,
+ "cached_read_tokens": 3712,
+ "latency_ms": 2919.4948749500327,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_MOGPMA9va04ZhAElnZgl3879",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"鲨鱼辣椒 最爱吃\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_wN69IwomgnbIjKCiPCrQ7590",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

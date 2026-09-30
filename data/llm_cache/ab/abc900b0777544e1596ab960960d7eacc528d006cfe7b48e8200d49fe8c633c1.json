@@ -1,0 +1,14 @@
+{
+ "text": "不是。蟑螂恶霸的原型是**眼镜蛇**，不是蟑螂。\n\n依据：\n- 图谱中「蟑螂恶霸」的 PROTOTYPE 关系指向「眼镜蛇」（doc-0029）。\n- 角色档案明确写道：「该角色的原型是眼镜蛇」，并在性格与特长一节特别说明「该角色虽然名字里有蟑螂，原型却不是蟑螂」（doc-0029）。\n- 旁证：他的武器是「眼镜蛇尾鞭」，编号为 8 号机（doc-0029）。\n\n依据: doc-0029",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4616,
+ "output_tokens": 124,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3867.329249973409,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

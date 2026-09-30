@@ -1,0 +1,14 @@
+{
+ "text": "- **卡布达**：1 号机\n- **鲨鱼辣椒**：9 号机\n\n依据: doc-0022, doc-0030",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4048,
+ "output_tokens": 35,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3136.849250004161,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

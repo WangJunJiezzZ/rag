@@ -1,0 +1,33 @@
+{
+ "text": "蜘蛛侦探口中的\"大哥\"是**蟑螂恶霸**。查一下蟑螂恶霸的原型。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5373,
+ "output_tokens": 116,
+ "cached_read_tokens": 4480,
+ "latency_ms": 3466.046042041853,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_jFoAOYjQhR0GP8pNfZRY5311",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0039\", \"relation\": \"PROTOTYPE\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_Gl8uLdfv8ZDs6BqIAXxm6303",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0029\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

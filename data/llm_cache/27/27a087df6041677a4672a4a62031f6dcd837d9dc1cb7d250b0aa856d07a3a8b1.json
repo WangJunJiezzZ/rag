@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰和小香香是表兄妹（表亲）关系。**\n\n关系路径：小灰灰的母亲**红太狼**与**香太狼**是表姐妹（COUSIN_OF），而香太狼是**小香香**的母亲。所以小灰灰和小香香是隔了一代的表亲——即小灰灰是香太狼的表外甥，小香香是小灰灰的表妹（同辈表亲）。\n\n图谱中还有几条旁证路径也指向同一结论，例如：\n- 小灰灰 ← 红太狼（母）← 表亲 → 香太狼 → 小香香\n- 小灰灰 ← 灰太狼（父）— 配偶 → 红太狼 ← 表亲 → 香太狼 → 小香香\n\n依据: doc-0012, doc-0014",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4309,
+ "output_tokens": 184,
+ "cached_read_tokens": 3840,
+ "latency_ms": 4849.5412089978345,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

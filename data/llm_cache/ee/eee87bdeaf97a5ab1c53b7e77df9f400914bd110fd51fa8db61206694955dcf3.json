@@ -1,0 +1,14 @@
+{
+ "text": "小灰灰的爷爷是**黑太狼**（灰太狼的父亲），黑太狼的妻子是**银太狼**（灰太狼的母亲）。\n\n关系链：小灰灰 ← 灰太狼（父）← 黑太狼（祖父），黑太狼 SPOUSE_OF 银太狼。\n\n依据: doc-0012, doc-0010, doc-0017",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4429,
+ "output_tokens": 83,
+ "cached_read_tokens": 4224,
+ "latency_ms": 2664.999708009418,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

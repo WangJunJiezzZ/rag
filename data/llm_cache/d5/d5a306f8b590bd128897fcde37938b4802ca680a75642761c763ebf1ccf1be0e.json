@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 卡布达 in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3521.6814589803107,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_NsbZrBXkRg9jNn16yF3T4973",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_3r0ou7DZd7PSDpg6yOiR2115",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"卡布达 体重 多重\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

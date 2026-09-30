@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 卡布达 and his favorite food.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 88,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2954.478957981337,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_eBO9w132MquExaldE5Qo8350",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_5G3VRkx1PPJKdKX6NNTF8668",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

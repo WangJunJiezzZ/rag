@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for information about this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 81,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2892.13670801837,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_7QVGUbKrohNz7t1yuse85635",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"热衷锻炼肌肉的羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_yb2cwo6KEdvS8WpeEK3I8553",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜欢健身 肌肉 锻炼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the episode count for 《铁甲小宝》.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3845.937958045397,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_xuQRbXgJXKJL4t63RQZg2405",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"铁甲小宝\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_n4YnMqq3TQGEDmPUIUI93040",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"EPISODES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

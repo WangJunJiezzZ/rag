@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up information about 卡布达's transformation time.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3601,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3078.2859590253793,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_SZAStCCniF5GnFYrOHO74901",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_c6lntgRRnQzN7d3TdPNB0674",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"TRANSFORM_TIME\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

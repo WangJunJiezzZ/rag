@@ -1,0 +1,24 @@
+{
+ "text": "红太狼的父母是爹爹狼和娘娘狼，所以小灰灰的外婆是娘娘狼。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5155,
+ "output_tokens": 60,
+ "cached_read_tokens": 4096,
+ "latency_ms": 3292.3868329962716,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_t9dmKOscRdNwLIErA8gP0306",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0021\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

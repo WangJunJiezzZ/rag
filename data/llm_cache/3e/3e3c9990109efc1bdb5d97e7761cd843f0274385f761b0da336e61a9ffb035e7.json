@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的生日是**羊历 3475 年 9 月 26 日**。\n\n依据: doc-0010",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3823,
+ "output_tokens": 30,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2507.701584021561,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

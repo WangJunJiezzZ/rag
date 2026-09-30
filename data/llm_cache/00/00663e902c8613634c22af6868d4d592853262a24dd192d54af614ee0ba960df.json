@@ -1,0 +1,14 @@
+{
+ "text": "解开鲨鱼辣椒封印的是**丸子龙**，他最爱吃的是**糯米丸子**。\n\n依据: doc-0042, doc-0027",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4048,
+ "output_tokens": 31,
+ "cached_read_tokens": 3840,
+ "latency_ms": 2936.7549999733455,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

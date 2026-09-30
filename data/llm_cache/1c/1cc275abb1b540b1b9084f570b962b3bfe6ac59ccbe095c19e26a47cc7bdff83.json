@@ -1,0 +1,24 @@
+{
+ "text": "Let me verify this by reading the source document.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4474,
+ "output_tokens": 51,
+ "cached_read_tokens": 3584,
+ "latency_ms": 4079.02499998454,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Yv3cePfooc4Q905VTyUZ6894",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0031\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

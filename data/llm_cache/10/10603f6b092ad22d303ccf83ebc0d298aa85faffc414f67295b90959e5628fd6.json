@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确给出小灰灰和小香香是表兄妹（表亲）关系，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确给出小灰灰和小香香是表兄妹（表亲）关系，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 635,
+ "output_tokens": 35,
+ "cached_read_tokens": 384,
+ "latency_ms": 3683.76200000057,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

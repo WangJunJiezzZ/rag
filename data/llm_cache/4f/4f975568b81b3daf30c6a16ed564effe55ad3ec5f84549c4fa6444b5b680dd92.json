@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this character trait.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 83,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3074.605292000342,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_B12oIdjhZ7VqLA7V20RF8327",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"爱钱如命的财迷\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_soSnupKydURVQmq8vWTI2010",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"财迷 喜欢钱 机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

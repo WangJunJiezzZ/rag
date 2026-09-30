@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship for 灰太狼.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 84,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3448.3144999830984,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_pwQ9qJ8ffcLGWeaRz1Sw6396",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_457nvn0LP9lOZqpyaHlz5760",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"COUSIN_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

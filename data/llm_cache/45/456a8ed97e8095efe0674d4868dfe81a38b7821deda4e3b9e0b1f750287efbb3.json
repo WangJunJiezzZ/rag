@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship between 小灰灰 and 武大狼.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3604,
+ "output_tokens": 87,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2686.02241697954,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_xdHixDWlfHYPqCWS7NpH7613",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_URsI3zb56sJedcfrXggB9297",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"武大狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

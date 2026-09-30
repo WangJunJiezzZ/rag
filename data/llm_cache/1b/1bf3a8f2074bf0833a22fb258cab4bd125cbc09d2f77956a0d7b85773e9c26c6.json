@@ -1,0 +1,33 @@
+{
+ "text": "Let me confirm the protagonist details.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4264,
+ "output_tokens": 97,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3001.26591703156,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_LdK6gltShuepjGLpO2em5966",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0002\", \"max_chars\": 1200}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_5b4tYnWtzFQMKyiDXU7Q3679",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"小让\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

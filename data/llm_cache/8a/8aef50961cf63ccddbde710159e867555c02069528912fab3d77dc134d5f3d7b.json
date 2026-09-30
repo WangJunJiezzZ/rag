@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship between 喜羊羊 and his sister.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 103,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2865.338416013401,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_flR3SAol3dUYV9Xm2RCx7931",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_graFrdcQeac4yAt54Iyo0454",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"喜羊羊\", \"relation\": \"PARENT_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

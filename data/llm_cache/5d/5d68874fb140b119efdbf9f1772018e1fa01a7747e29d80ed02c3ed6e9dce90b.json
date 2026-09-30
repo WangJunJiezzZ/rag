@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱中「美羊羊」(E0007) 没有任何 CATCHPHRASE（口头禅）关系边，其全部一跳关系只有：出自《喜羊羊与灰太狼》、喜欢喜羊羊、住在羊村、就读大肥羊学校，以及被沸羊羊喜欢。\n\n文档检索也只命中她的角色档案 doc-0004，该档案的「性格与特长」部分只提到她天真善良、爱美爱哭、精通营养美容服装、能用任何东西编织饰物，并未记载口头禅。检索中出现的口头禅记录属于灰太狼（\"我一定会回来的\"，doc-0010），与美羊羊无关。\n\n依据: doc-0004, doc-0010",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4839,
+ "output_tokens": 154,
+ "cached_read_tokens": 4480,
+ "latency_ms": 3871.4793330291286,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

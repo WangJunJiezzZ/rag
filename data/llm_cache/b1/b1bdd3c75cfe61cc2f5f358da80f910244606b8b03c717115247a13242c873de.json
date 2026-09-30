@@ -1,0 +1,24 @@
+{
+ "text": "I'll trace this step by step: first find 卡布达, then its partner, then that partner's grandfather.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 64,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2872.201874968596,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_FWFzuoqd1cygGnw0lg257822",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4264,
+ "output_tokens": 75,
+ "cached_read_tokens": 3840,
+ "latency_ms": 2674.8330839909613,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_wlVcgSbwIgyGta6pOd403318",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0004\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_qVy8WqKFXWvaISDG7O1Z0445",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜羊羊 爱好 喜欢做什么\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

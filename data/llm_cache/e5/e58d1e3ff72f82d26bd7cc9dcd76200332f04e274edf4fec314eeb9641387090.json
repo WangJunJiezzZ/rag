@@ -1,0 +1,14 @@
+{
+ "text": "**卡布达巨人是卡布达向「射手座和平星」许愿诞生的。**\n\n依据文档记载：为了对抗巨人形态的鲨鱼辣椒，卡布达向射手座和平星许愿，由此诞生了卡布达巨人；卡布达坐进驾驶舱操纵它战斗。卡布达巨人普通形态高 6.5 米，超级形态高 10.8 米。\n\n依据: doc-0041",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4318,
+ "output_tokens": 94,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2739.1147920279764,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

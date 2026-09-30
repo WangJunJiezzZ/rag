@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the quantity of 和平星 in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 85,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3102.8139170375653,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_rshFvTxip6460rMFcIUi7326",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"和平星\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_zFWHISxbLPB7rCBHBpmg4789",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"QUANTITY\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

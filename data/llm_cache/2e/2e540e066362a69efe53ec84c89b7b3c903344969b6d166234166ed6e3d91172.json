@@ -1,0 +1,14 @@
+{
+ "text": "未找到依据。\n\n图谱中「飞翔机器人」（E0033）没有任何 PROTOTYPE（原型）关系，其档案文档 doc-0024 也只记录了编号（3 号机）、身份（支援型机器人）、超级变换形态维持时间（7 分钟）、喜欢田德莉娜等信息，没有提到原型。\n\n依据: doc-0024",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4419,
+ "output_tokens": 73,
+ "cached_read_tokens": 4096,
+ "latency_ms": 2960.207541997079,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

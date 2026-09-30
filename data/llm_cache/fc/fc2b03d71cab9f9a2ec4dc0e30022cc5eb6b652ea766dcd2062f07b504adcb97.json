@@ -1,0 +1,33 @@
+{
+ "text": "The character document for 卡布达 doesn't mention a voice actor. Let me check the graph relations and search more broadly.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5174,
+ "output_tokens": 119,
+ "cached_read_tokens": 4224,
+ "latency_ms": 4392.0170000055805,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_hAJ6WPkbMJIsyfjzgbzA4710",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_qtZXwgX1lARbqRIUgZgr7951",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"卡布达 配音 声优 演员\", \"top_k\": 10}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

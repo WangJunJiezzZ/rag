@@ -1,0 +1,24 @@
+{
+ "text": "The sealed robot is 鲨鱼辣椒. Now let me check its weapon.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3810,
+ "output_tokens": 73,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3484.320208954159,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_LJbGrU2YPbqI59uzv3Uq6349",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0040\", \"relation\": \"WEAPON\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

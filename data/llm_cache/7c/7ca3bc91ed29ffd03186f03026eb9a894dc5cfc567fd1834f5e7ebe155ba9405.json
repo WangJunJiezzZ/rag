@@ -1,0 +1,42 @@
+{
+ "text": "蜘蛛侦探的图谱关系里没有直接标出\"大哥\"。我查一下反派三人组的成员和首领。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4429,
+ "output_tokens": 140,
+ "cached_read_tokens": 4096,
+ "latency_ms": 3454.269915993791,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Klaq1znerah1cHQksZdw1483",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0044\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_WT7UFq55uyH86l5k5eEm3928",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"LEADER_OF\"}"
+   }
+  },
+  {
+   "index": 2,
+   "id": "call_02_L0U1HyMbat8Wzddo8u4p9482",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"蟑螂恶霸 蜘蛛侦探 蝎子莱莱 三人组 老大\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

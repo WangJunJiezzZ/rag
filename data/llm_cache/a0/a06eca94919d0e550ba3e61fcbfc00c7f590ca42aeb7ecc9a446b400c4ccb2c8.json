@@ -1,0 +1,14 @@
+{
+ "text": "灰太狼的表哥是**夜太狼**。\n\n图谱中 `COUSIN_OF` 关系显示：夜太狼 → 灰太狼（即夜太狼是灰太狼的表哥），来源文档 doc-0015 的《夜太狼 角色档案》也明确写着\"该角色是灰太狼的表哥\"。\n\n依据: doc-0015",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4238,
+ "output_tokens": 80,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3988.291833025869,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "Confirmed: 高圆寺寅彦 (高圆寺博士) is 小让's grandfather (GRANDPARENT_OF → 小让), and he sealed 鲨鱼辣椒.\n\n**小让的爷爷（高圆寺寅彦，即高圆寺博士）封印的是「鲨鱼辣椒」。**\n\n依据: doc-0042, doc-0018",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4221,
+ "output_tokens": 77,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3507.1412079851143,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

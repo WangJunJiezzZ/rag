@@ -1,0 +1,14 @@
+{
+ "text": "蕉太狼最喜欢吃的水果是**香蕉**。\n\n依据: doc-0013",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3845,
+ "output_tokens": 17,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3224.590540979989,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

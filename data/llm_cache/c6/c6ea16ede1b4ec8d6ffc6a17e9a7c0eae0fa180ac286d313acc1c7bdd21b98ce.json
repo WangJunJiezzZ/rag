@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up 灰太狼's birthday in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 87,
+ "cached_read_tokens": 3456,
+ "latency_ms": 4008.805708028376,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_l272D5L8hHEv0Z5uyr818543",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_yz2XeugFLmuQhjHcqpJ33459",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"BIRTHDAY\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

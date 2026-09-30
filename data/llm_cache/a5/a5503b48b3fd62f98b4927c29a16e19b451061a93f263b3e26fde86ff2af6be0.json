@@ -1,0 +1,24 @@
+{
+ "text": "I'll trace this step by step: first find 金龟次郎, then its partner, then that partner's role at the school.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3603,
+ "output_tokens": 69,
+ "cached_read_tokens": 3456,
+ "latency_ms": 4879.4284160248935,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_pXni2mI3WT3bcKjhk6kp7794",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

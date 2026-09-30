@@ -1,0 +1,33 @@
+{
+ "text": "The graph shows 小让's grandfather (高圆寺寅彦) but no parent edge. Let me check the source document.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3999,
+ "output_tokens": 98,
+ "cached_read_tokens": 3712,
+ "latency_ms": 4717.231457994785,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_GCzl6xQLb9p9KQl4ycu50526",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0018\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_nH1akyaAX5TEL7TnZKgG7335",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"小让的妈妈\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

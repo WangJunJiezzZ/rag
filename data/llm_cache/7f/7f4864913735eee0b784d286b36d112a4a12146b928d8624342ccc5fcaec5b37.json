@@ -1,0 +1,14 @@
+{
+ "text": "住在狼堡的有三只狼：\n\n- **灰太狼**（E0015）\n- **红太狼**（E0019）\n- **小灰灰**（E0022）\n\n依据: doc-0034",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4044,
+ "output_tokens": 47,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2988.603083998896,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

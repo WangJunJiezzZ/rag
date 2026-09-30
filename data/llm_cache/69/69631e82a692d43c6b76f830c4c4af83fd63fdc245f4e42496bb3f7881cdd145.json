@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出黑太狼与爹爹狼是儿女亲家关系，即黑太狼的儿子灰太狼娶了爹爹狼的女儿红太狼，与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出黑太狼与爹爹狼是儿女亲家关系，即黑太狼的儿子灰太狼娶了爹爹狼的女儿红太狼，与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 656,
+ "output_tokens": 48,
+ "cached_read_tokens": 384,
+ "latency_ms": 3135.1288330042735,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

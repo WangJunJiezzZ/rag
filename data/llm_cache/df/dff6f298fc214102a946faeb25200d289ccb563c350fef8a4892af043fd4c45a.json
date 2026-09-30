@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰的外公是爹爹狼。**\n\n依据链条：\n- 小灰灰的母亲是红太狼（doc-0012）\n- 红太狼的父亲是爹爹狼（doc-0011）\n\n所以爹爹狼是小灰灰的外公（红太狼之父）。图谱中红太狼的入边 PARENT_OF 也确认了这一点：爹爹狼 → 红太狼。\n\n依据: doc-0012, doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5071,
+ "output_tokens": 94,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3808.194291021209,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

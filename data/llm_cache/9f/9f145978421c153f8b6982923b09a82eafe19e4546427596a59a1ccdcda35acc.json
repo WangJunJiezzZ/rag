@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity and its relationships.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 49,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2580.2563749602996,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_wNxlZaupcBJusqIEa5u26651",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

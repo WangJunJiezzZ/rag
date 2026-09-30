@@ -1,0 +1,14 @@
+{
+ "text": "**平底锅。**\n\n依据红太狼的角色档案：她的武器是**平底锅**，必杀技是**千手平底锅**；性格上「总是派丈夫去抓羊，抓不到就动手」，口头禅是「快去抓羊」。所以灰太狼抓不到羊时，招呼他的就是平底锅。\n\n依据: doc-0011",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4642,
+ "output_tokens": 78,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3131.4292500028387,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

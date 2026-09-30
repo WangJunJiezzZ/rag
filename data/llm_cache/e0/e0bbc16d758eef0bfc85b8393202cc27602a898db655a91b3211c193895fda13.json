@@ -1,0 +1,14 @@
+{
+ "text": "**金龟次郎撑得更久。**\n\n- 卡布达：超级变换形态维持 **3 分钟**（doc-0022）\n- 金龟次郎：超级变换形态维持 **5 分钟**（doc-0023）\n\n依据: doc-0022, doc-0023",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4060,
+ "output_tokens": 63,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3090.1927500381134,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

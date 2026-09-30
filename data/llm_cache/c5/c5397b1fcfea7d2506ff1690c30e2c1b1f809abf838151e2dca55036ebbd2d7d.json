@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3605,
+ "output_tokens": 44,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2494.699957955163,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_lYAYHn2zfw6luqGM4RuC3702",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊与灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

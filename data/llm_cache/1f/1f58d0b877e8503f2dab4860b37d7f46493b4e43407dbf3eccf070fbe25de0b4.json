@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters' transformation time limits.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3608,
+ "output_tokens": 82,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3157.5403330498375,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_Q8eM8uEUSikyAFKuMLF25264",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_4R9Fb25jot59BYnX75Ev2724",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

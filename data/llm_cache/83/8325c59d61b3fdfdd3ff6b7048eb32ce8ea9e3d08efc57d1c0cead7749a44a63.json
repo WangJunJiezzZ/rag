@@ -1,0 +1,14 @@
+{
+ "text": "懒羊羊上学的地方是**大肥羊学校**，该校的校长是**慢羊羊**（慢羊羊同时是羊村村长，并担任大肥羊学校校长）。\n\n依据: doc-0035, doc-0008",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3973,
+ "output_tokens": 51,
+ "cached_read_tokens": 3712,
+ "latency_ms": 2668.5266669956036,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

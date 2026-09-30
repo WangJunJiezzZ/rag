@@ -1,0 +1,24 @@
+{
+ "text": "The leader of 反派三人组 is 蟑螂恶霸. Now let me check his weapon.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3850,
+ "output_tokens": 79,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2553.3351249760017,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_OPJhPVRFdV5JlGhpi4ii3446",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0039\", \"relation\": \"WEAPON\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

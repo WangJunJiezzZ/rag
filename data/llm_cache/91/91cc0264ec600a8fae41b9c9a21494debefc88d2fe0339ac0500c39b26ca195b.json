@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me first find the character 小灰灰 and search for related content.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3604,
+ "output_tokens": 99,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2588.3076660102233,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_h1cJL0fRfowa4D7AFnS58665",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"小灰灰\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_pgx9zmxpI5VhtSXBjHB20332",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"小灰灰发现被爸爸骗了会嚷什么\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

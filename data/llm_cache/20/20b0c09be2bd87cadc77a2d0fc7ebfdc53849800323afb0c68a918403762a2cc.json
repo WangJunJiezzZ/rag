@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up who heads 羊村.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 79,
+ "cached_read_tokens": 0,
+ "latency_ms": 3170.859957986977,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_E9BAHiQBH9rY2CiOIoCy2016",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"羊村\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_uy5dW7840DhOPDUMiQKh6760",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"HEAD_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the numbered B-robots in 铁甲小宝.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3606,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 4242.316292016767,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_D8DtZXOTAII5MfO3HefI9635",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"UNIT_NO\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_QDawtC4565MfVZRybpFN3626",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"铁甲小宝\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

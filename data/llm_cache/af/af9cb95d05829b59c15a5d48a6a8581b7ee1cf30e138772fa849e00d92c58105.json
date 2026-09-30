@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的口头禅是「卡布」。\n\n依据: doc-0022",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3857,
+ "output_tokens": 17,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2811.5283750230446,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the character first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 47,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3282.3339159949683,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_ucqwqX6DkEXn1mI3LDVE6542",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters and their relationship.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 79,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3058.1685000215657,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_CH25vzI8P4jNgdrVmh9P6802",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蕉太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_2cwdNDNkyqWYxIrkj1oT1041",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"爹爹狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

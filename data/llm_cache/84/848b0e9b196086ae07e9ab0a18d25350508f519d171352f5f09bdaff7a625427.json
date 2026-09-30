@@ -1,0 +1,14 @@
+{
+ "text": "**警用机器人（AP717）的搭档是中野美树，她的身份是女警。**\n\n依据图谱与文档：\n- 警用机器人（又名 AP717）的搭档是中野美树（PARTNER_OF，doc-0033）\n- 中野美树是《铁甲小宝》中的角色，身份/职务为「女警」（ROLE，doc-0021）\n\n补充说明：关于中野美树的具体工作内容（如办案情节、性格表现），档案中只写了「性格特点详见正片」「人物关系详见相关条目」，未找到更详细的依据。\n\n依据: doc-0033, doc-0021",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4618,
+ "output_tokens": 136,
+ "cached_read_tokens": 4096,
+ "latency_ms": 3159.4494999735616,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

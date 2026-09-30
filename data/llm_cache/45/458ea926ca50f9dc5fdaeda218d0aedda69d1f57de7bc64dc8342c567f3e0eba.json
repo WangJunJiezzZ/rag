@@ -1,0 +1,14 @@
+{
+ "text": "**鲨鱼辣椒**维持得最久，为 **15 分钟**。\n\n四位的超级变换形态维持时间对比：\n\n| 角色 | 维持时间 | 依据 |\n|---|---|---|\n| 鲨鱼辣椒 | **15 分钟** | doc-0030 |\n| 飞翔机器人 | 7 分钟 | doc-0024 |\n| 金龟次郎 | 5 分钟 | doc-0023 |\n| 卡布达 | 3 分钟 | doc-0022 |\n\n依据: doc-0022, doc-0023, doc-0024, doc-0030",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4461,
+ "output_tokens": 126,
+ "cached_read_tokens": 4096,
+ "latency_ms": 2936.0495419823565,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

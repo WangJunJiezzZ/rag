@@ -1,0 +1,33 @@
+{
+ "text": "Let me search with more specific terms.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4511,
+ "output_tokens": 90,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3163.8510419870727,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_2snSxH5pJXLqtYMrd9yS6804",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"财迷 贪财 金钱 硬币\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_3Sp4ZcR557mxBF540TRR9176",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜欢钱 攒钱 金币 机器人 性格\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

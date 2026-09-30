@@ -61,7 +61,8 @@ def to_answer(turn, known_docs: set[str], latency_ms: float) -> AgentAnswer:
 
 async def run_agent(items: list[dict], graph_rel: str, llm, score, *,
                     concurrency: int = 4, max_steps: int = 8,
-                    budget_usd: float | None = None, progress=None) -> dict:
+                    budget_usd: float | None = None, progress=None,
+                    agent: str = "v1") -> dict:
     """在进程内 MCP 连接上并发跑 Agent。
 
     与 mcp-chat 走的是同一个 MCPChat + 同一个 Server, 所以请求体逐字节一致,
@@ -70,7 +71,7 @@ async def run_agent(items: list[dict], graph_rel: str, llm, score, *,
     import anyio
     from mcp import Client
 
-    from ..mcp_app.client import MCPChat
+    from ..mcp_app.client import AGENT_PROFILES, MCPChat
     from ..mcp_app.server import build_server
     from ..mcp_app.tools import GraphRAGTools
     from ..service import ServiceConfig
@@ -81,8 +82,8 @@ async def run_agent(items: list[dict], graph_rel: str, llm, score, *,
     state = {"spent": 0.0, "missed": 0, "skipped_budget": 0, "done": 0}
     limiter = anyio.Semaphore(concurrency)
 
-    async with Client(build_server(tools)) as c:
-        chat = MCPChat(c, llm, max_steps=max_steps, verbose=False)
+    async with Client(build_server(tools, AGENT_PROFILES[agent]["server_profile"])) as c:
+        chat = MCPChat(c, llm, max_steps=max_steps, verbose=False, profile=agent)
         await chat.setup()
 
         async def one(it: dict) -> None:

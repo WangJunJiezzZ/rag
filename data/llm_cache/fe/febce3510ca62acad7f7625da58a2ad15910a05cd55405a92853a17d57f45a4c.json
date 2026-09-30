@@ -1,0 +1,14 @@
+{
+ "text": "**灰二太太狼是灰太狼的叔叔**（长辈）。\n\n依据图谱中的一跳关系：灰二太太狼 —[UNCLE_OF]→ 灰太狼（doc-0016）。\n\n另外还有一条间接路径：灰二太太狼是「七大恶狼」的首领，而七大恶狼成员夜太狼是灰太狼的表哥，所以灰二太太狼也是灰太狼所在狼族圈子里的长辈/首领（doc-0038、doc-0015）。\n\n依据: doc-0016, doc-0038, doc-0015",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4223,
+ "output_tokens": 120,
+ "cached_read_tokens": 3840,
+ "latency_ms": 2855.4589999839664,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

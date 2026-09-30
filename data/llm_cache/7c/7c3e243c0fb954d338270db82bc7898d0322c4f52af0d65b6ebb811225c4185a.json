@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱中喜羊羊（E0004）的一跳关系里只有：父亲智羊羊、母亲丽羊羊、喜欢他的美羊羊、住在羊村、就读大肥羊学校、随身物品铃铛、出自《喜羊羊与灰太狼》——**没有任何\"妹妹\"或兄弟姐妹（COUSIN_OF 等）关系**。\n\n文本检索\"喜羊羊的妹妹\"也只返回了喜羊羊的父母信息（doc-0003）和节目花絮（doc-0001），没有提到妹妹。\n\n依据: doc-0003, doc-0001",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4734,
+ "output_tokens": 129,
+ "cached_read_tokens": 3840,
+ "latency_ms": 3557.147541025188,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me start by finding the relevant entities and searching for information about the team's female robot.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3601,
+ "output_tokens": 98,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2605.3973750094883,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_DbQUk9mLRyLRSiMZfj0l7267",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"队伍里仅有的女生 机器人\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_qdkpL5JvHU5fPLHXZfo76415",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FACTION\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

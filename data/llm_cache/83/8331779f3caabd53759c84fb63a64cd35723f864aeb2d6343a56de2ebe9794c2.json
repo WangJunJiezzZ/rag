@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for information about a robot that serves as a referee in competitions.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 85,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2725.6995839998126,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_wcjIMqpP6V6PJYtyZX7m4296",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"比赛公证人 机器人\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_olUtBwuTudW4AU1vNjbx5715",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"公证人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

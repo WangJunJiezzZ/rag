@@ -1,0 +1,33 @@
+{
+ "text": "Let me also search more broadly for any mention of favorite color in the corpus.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5003,
+ "output_tokens": 108,
+ "cached_read_tokens": 4224,
+ "latency_ms": 4576.480375020765,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_8fDDkFF5r7JwZVUqsBXP0156",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"最喜欢的颜色 红色\", \"top_k\": 8}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_AgtYzJj7skYxMRO81TMD7547",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

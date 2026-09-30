@@ -1,0 +1,14 @@
+{
+ "text": "**红太狼**（小灰灰的妈妈）用**平底锅**打**灰太狼**（小灰灰的爸爸）。\n\n依据图谱：红太狼 —WEAPON→ 平底锅，其必杀技为「千手平底锅」；红太狼与灰太狼为 SPOUSE_OF（夫妻），二人同为小灰灰的父母。\n\n依据: doc-0011, doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4673,
+ "output_tokens": 92,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3365.0604999857023,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

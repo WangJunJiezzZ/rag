@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the LIKES relation for 沸羊羊.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3667.8017909871414,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_rIVCSx4cqDYUvHyEULs51988",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"沸羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_eFPMRHCF5WJ4oVBLB6ZW6865",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"LIKES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

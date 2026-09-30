@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the students of 大肥羊学校.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3599,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3326.1948750005104,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_CKL478P3TlMRUvVeXNPR9233",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"大肥羊学校\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_EirLkioz7mrKyowoLmyw8717",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"STUDENT_OF\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

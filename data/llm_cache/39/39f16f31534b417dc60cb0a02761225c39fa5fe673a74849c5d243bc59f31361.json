@@ -1,0 +1,14 @@
+{
+ "text": "美羊羊喜欢的是**喜羊羊**（doc-0004）。\n\n喜羊羊的爱好：**踢足球和做实验**。另外档案还提到他是羊族里跑得最快的羊，聪明乐观，性子急，脖子上总带着父母送的铃铛（doc-0003）。\n\n依据: doc-0004, doc-0003",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5027,
+ "output_tokens": 73,
+ "cached_read_tokens": 4224,
+ "latency_ms": 3790.0924579589628,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

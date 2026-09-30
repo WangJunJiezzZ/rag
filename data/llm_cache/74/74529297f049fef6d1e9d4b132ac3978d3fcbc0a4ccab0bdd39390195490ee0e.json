@@ -1,0 +1,33 @@
+{
+ "text": "I'll start by finding 美羊羊 and tracing the LIKES relation.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 88,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2806.942416995298,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_lUY7PYghBpYPu0kubhpH0568",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"美羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_pta8EX5xvx1njwXG0ZyI1116",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"LIKES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

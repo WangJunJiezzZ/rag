@@ -1,0 +1,14 @@
+{
+ "text": "呱呱蛙（又名聒聒蛙）的口头禅是「从结论上来看」。\n\n依据: doc-0028",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3853,
+ "output_tokens": 26,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3463.7172499787994,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

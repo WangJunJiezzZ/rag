@@ -1,0 +1,14 @@
+{
+ "text": "**懒羊羊**。\n\n依据文档记载，懒羊羊是「草原上最胖、最懒的羊」，最爱睡觉和吃零食，口头禅是「天下皆醒我独睡，天下皆勤我独懒」，还总是随身带着枕头——体型最圆（最胖）和最不爱干活（最懒）都指向它。\n\n依据: doc-0005",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4752,
+ "output_tokens": 79,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3259.064334037248,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

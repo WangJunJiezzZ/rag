@@ -61,7 +61,18 @@ def _j(obj) -> str:
     return json.dumps(obj, ensure_ascii=False, separators=(",", ":"))
 
 
-def build_server(tools: GraphRAGTools | None = None) -> MCPServer:
+PROFILES = ("v1", "v2")
+
+
+def build_server(tools: GraphRAGTools | None = None, profile: str = "v1") -> MCPServer:
+    """profile 决定暴露哪些工具。
+
+    v1  7 个工具, 与第一轮评测录制缓存时完全一致 —— 工具定义是缓存键的一部分,
+        改一个字 v1 的全部离线回放都会失效, 所以 v1 冻结不动
+    v2  v1 + list_by_relation(按关系 / 属性列举), 注册在最后, 见 docs/07-Agent.md
+    """
+    if profile not in PROFILES:
+        raise ValueError(f"未知 profile {profile}, 可选 {PROFILES}")
     t = tools or GraphRAGTools()
     mcp = MCPServer(name="graphrag-lab", version="0.1.0", instructions=INSTRUCTIONS)
 
@@ -132,6 +143,20 @@ def build_server(tools: GraphRAGTools | None = None) -> MCPServer:
         会产生一次 LLM 调用。想自己控制检索步骤时, 用上面的原子工具。"""
         return _j(t.ask(question))
 
+    if profile == "v2":
+        @mcp.tool(annotations=READ_ONLY)
+        def list_by_relation(
+            relation: Annotated[str, Field(description="关系名, 如 FACTION(阵营)、UNIT_NO(编号)、LIVES_IN(住在)。可选: "
+                                                        + ", ".join(RELATIONS))],
+            value: Annotated[str | None, Field(
+                description="只看取值为它的边, 如「正义」「羊村」; 不填则列出该关系的全部边")] = None,
+            limit: Annotated[int, Field(ge=1, le=100)] = 50,
+        ) -> str:
+            """按关系(和取值)一次列出所有匹配的角色。
+            适合: 列举题(某阵营有哪些角色、谁住在某地、带编号的有几台), 以及比较两个角色是否有共同属性
+            (是否同一阵营 / 同一团体)。不要为了列举而逐个调用 get_neighbors。"""
+            return _j(t.list_by_relation(relation, value, limit))
+
     # -------------------------------------------------------------- resources
     @mcp.resource("graphrag://schema", name="schema", mime_type="application/json",
                   description="图谱的实体类型、关系含义与方向、规模统计")
@@ -164,11 +189,13 @@ def main() -> None:
     ap.add_argument("--http", action="store_true", help="用 Streamable HTTP 代替 stdio")
     ap.add_argument("--host", default="127.0.0.1")
     ap.add_argument("--port", type=int, default=8765)
+    ap.add_argument("--profile", default="v1", choices=PROFILES,
+                    help="v1 = 7 个工具(冻结); v2 = 增加 list_by_relation")
     ap.add_argument("--graph", default=ServiceConfig.graph_path,
                     help="图谱文件; 换成 data/synthetic/graph.json 即 oracle 图")
     args = ap.parse_args()
 
-    server = build_server(GraphRAGTools(ServiceConfig(graph_path=args.graph)))
+    server = build_server(GraphRAGTools(ServiceConfig(graph_path=args.graph)), args.profile)
     if args.http:
         print(f"MCP (Streamable HTTP) -> http://{args.host}:{args.port}/mcp",
               file=sys.stderr)

@@ -1,0 +1,14 @@
+{
+ "text": "**沸羊羊**。\n\n依据文档记载，沸羊羊是一只黑脸羊，最健壮也最鲁莽，做事直率、从不考虑后果，而他的爱好正是**最爱健身**——这与\"热衷锻炼肌肉\"的描述相符。\n\n依据: doc-0006",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4558,
+ "output_tokens": 58,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3109.008624975104,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

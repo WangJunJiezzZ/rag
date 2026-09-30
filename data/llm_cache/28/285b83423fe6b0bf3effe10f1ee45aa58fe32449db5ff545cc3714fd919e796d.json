@@ -1,0 +1,14 @@
+{
+ "text": "未找到依据。\n\n知识图谱中懒羊羊（E0008）没有 BIRTHDAY 关系，其角色档案文档（doc-0005）的「基本资料」一节也只说明他是《喜羊羊与灰太狼》中的角色，并未记载生日；全文检索「懒羊羊 生日」也没有返回任何包含生日的片段。\n\n图谱中确实存在一条 BIRTHDAY 关系，但不属于懒羊羊。如需，我可以帮你查那条记录属于哪个角色。\n\n依据: doc-0005",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4955,
+ "output_tokens": 110,
+ "cached_read_tokens": 4608,
+ "latency_ms": 3182.755666959565,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

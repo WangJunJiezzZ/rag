@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both entities first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3601,
+ "output_tokens": 77,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3075.0547079951502,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_88ai3ZI25h48LfPxyYlj4814",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"黑太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_Bjuxeq5oQyXgQ8PkYsIj0920",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"爹爹狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,14 @@
+{
+ "text": "根据查到的资料，**灰太狼一只羊都没抓到过**。\n\n依据文档 doc-0010《灰太狼 角色档案》\"二、性格与特长\"中的记载：\n\n> 该角色是青青草原上的发明家，曾制造各种道具去抓羊，**却从没成功过**。\n\n也就是说，虽然灰太狼不断发明各种道具去抓羊，但从未成功，因此抓到羊的数量是 0 只。资料中也没有给出任何\"抓到过 N 只羊\"的具体数字。\n\n依据: doc-0010",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4726,
+ "output_tokens": 117,
+ "cached_read_tokens": 4352,
+ "latency_ms": 3046.3680409593508,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

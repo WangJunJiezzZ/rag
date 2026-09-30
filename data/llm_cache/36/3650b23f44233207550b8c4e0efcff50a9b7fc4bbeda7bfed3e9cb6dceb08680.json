@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱和文档中只记录了《铁甲小宝》的**日本首播**信息：1997 年 2 月 23 日首播，首播电视台为朝日电视台，共 52 集（doc-0002）。文档中没有任何关于该剧在中国大陆引进/开始播出年份的记载，因此无法回答\"中国大陆哪一年开始播出\"。\n\n依据: doc-0002",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5542,
+ "output_tokens": 91,
+ "cached_read_tokens": 4352,
+ "latency_ms": 3226.252624997869,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

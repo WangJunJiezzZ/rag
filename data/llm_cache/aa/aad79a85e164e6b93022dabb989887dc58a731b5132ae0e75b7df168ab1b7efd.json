@@ -1,0 +1,33 @@
+{
+ "text": "The seal on 鲨鱼辣椒 was released by 丸子龙. Now let me find 丸子龙's favorite food.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3793,
+ "output_tokens": 99,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3266.5963749750517,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_SItfFjEie2FWwRvH3aN19832",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"丸子龙\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_dXGy9ESMnay9IYmw53qV8776",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

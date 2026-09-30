@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up both characters' unit numbers.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3604,
+ "output_tokens": 80,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2601.2845410150476,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_osOdxkwfbCzyriwv6EGv6727",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"卡布达\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_6VJ6qwUiHnY1ytMXPxKg8812",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"鲨鱼辣椒\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

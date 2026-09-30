@@ -1,0 +1,14 @@
+{
+ "text": "**蝎子莱莱**（又名蝎子蓝蓝）——《铁甲小宝》中的 4 号机，原型是鲎，档案中明确记载\"该角色爱喝酒\"。\n\n依据: doc-0025",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4825,
+ "output_tokens": 47,
+ "cached_read_tokens": 4480,
+ "latency_ms": 2572.454083012417,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

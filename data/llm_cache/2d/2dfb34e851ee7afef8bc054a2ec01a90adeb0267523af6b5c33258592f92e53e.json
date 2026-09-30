@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the show's broadcast information.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3609,
+ "output_tokens": 53,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2313.818208000157,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_v47R2SoZlwsFn9IKQx682205",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"喜羊羊与灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

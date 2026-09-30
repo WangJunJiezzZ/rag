@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3829,
+ "output_tokens": 91,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2946.0152499959804,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_gDiRVbPzYAJSR22viZYR5714",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0003\", \"relation\": \"PARTNER_OF\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_zFIcxLNvcawCR5RIypPf8431",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"高圆寺寅彦\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

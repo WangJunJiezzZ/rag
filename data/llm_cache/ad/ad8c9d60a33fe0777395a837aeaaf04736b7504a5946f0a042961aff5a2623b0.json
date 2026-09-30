@@ -1,0 +1,14 @@
+{
+ "text": "正义阵营共有 5 个角色：\n\n| 角色 | 来源文档 |\n|---|---|\n| 卡布达 | doc-0036 |\n| 金龟次郎 | doc-0036 |\n| 飞翔机器人 | doc-0036 |\n| 呱呱蛙 | doc-0036 |\n| 田德莉娜 | doc-0036 |\n\n依据: doc-0036",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3846,
+ "output_tokens": 81,
+ "cached_read_tokens": 3584,
+ "latency_ms": 4348.9873329526745,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

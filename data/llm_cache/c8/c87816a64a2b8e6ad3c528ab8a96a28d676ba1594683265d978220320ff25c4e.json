@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 47,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2819.161167019047,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_9uhnqdA7M8gWW2psDgqF8924",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蜻蜓队长\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up 灰太狼's catchphrase in the knowledge graph.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 55,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3897.5557910162024,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_R4BafMsBTKqglgPMZDLU5499",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

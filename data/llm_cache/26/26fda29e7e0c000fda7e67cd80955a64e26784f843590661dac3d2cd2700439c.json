@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the relationship between these two characters.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3602,
+ "output_tokens": 81,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2946.558666008059,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_lYk6I2Bkv0fyd5S8o71r0247",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"蕉太狼\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_BVhhmPAWuKgHLJXxACJ45721",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

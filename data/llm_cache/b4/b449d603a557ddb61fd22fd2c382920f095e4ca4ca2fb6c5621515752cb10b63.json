@@ -1,0 +1,14 @@
+{
+ "text": "卡布达的搭档是**小让**（高圆寺让）。\n\n图谱中卡布达有两条 PARTNER_OF 出边：\n- 卡布达 → 小让（高圆寺让），依据 doc-0022\n- 卡布达 → 卡布达巨人，依据 doc-0041\n\n其中「小让」是作为搭档（伙伴）关系记录的；卡布达巨人是卡布达的巨人形态/搭档机体。\n\n依据: doc-0022, doc-0041",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3893,
+ "output_tokens": 109,
+ "cached_read_tokens": 3712,
+ "latency_ms": 3035.0719589623623,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

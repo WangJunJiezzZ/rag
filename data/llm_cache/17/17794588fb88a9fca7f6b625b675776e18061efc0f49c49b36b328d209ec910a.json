@@ -1,0 +1,33 @@
+{
+ "text": "I'll look up the LIKES relation for 美羊羊.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3598,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2882.8429999994114,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_PZacovCJA8n8oGQDfHaE6241",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"美羊羊\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_owsPXRqUMHEEa25BYN6C5835",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"LIKES\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

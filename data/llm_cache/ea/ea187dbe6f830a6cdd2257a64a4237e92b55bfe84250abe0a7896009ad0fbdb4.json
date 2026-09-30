@@ -1,0 +1,33 @@
+{
+ "text": "I'll look into this. Let me first find the relevant entities.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3604,
+ "output_tokens": 84,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3245.189582987223,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_jfExH8iUx11uqQGWKIac8180",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"B机器人\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_UHV6lQTNoe5gam6hV2aC3466",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"B机器人 是谁制造的\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

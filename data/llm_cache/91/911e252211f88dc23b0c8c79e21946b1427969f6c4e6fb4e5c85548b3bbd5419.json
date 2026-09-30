@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for characters' favorite foods in both shows.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3603,
+ "output_tokens": 86,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2804.4576660031453,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_K1BoCpvDBiXZaa5WfSHM4406",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"FAVORITE_FOOD\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_Qd1n4bbsx6i16mVLZf0y5579",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"最爱吃水果\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

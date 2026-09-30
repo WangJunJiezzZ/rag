@@ -1,0 +1,33 @@
+{
+ "text": "I'll search the knowledge graph for this.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 79,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2597.515499975998,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_4GX78Kt8OmH6jIBKHiYg6956",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"管理整片草原\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_8huBr9rLtlsFwd8YrvL19710",
+   "type": "function",
+   "function": {
+    "name": "list_by_relation",
+    "arguments": "{\"relation\": \"ROLE\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答明确指出小灰灰的妈妈红太狼用平底锅打小灰灰的爸爸灰太狼，结论与标准答案一致。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答明确指出小灰灰的妈妈红太狼用平底锅打小灰灰的爸爸灰太狼，结论与标准答案一致。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 529,
+ "output_tokens": 41,
+ "cached_read_tokens": 384,
+ "latency_ms": 2943.508500000462,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

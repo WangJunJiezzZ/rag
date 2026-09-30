@@ -1,0 +1,14 @@
+{
+ "text": "**答案：鲨鱼辣椒。**\n\n推理链：\n- 卡布达（E0003）的搭档是**小让**（高圆寺让，E0002）——依据 doc-0022。\n- 小让的爷爷是**高圆寺寅彦**（高圆寺博士，E0029），图谱中 GRANDPARENT_OF 指向小让——依据 doc-0018。\n- 高圆寺寅彦封印过的机器人是**鲨鱼辣椒**（E0040），SEALED_BY 边为「鲨鱼辣椒 → 高圆寺寅彦」——依据 doc-0042。\n\n依据: doc-0022, doc-0018, doc-0042",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4499,
+ "output_tokens": 151,
+ "cached_read_tokens": 3968,
+ "latency_ms": 3213.7517920346,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

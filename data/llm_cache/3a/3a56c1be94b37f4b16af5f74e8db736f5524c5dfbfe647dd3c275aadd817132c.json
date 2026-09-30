@@ -1,0 +1,14 @@
+{
+ "text": "大肥羊学校的学生共有 5 位：\n\n| 学生 | 来源文档 |\n|---|---|\n| 喜羊羊 | doc-0035 |\n| 美羊羊 | doc-0035 |\n| 懒羊羊 | doc-0035 |\n| 沸羊羊 | doc-0035 |\n| 暖羊羊 | doc-0007, doc-0035 |\n\n依据: doc-0007, doc-0035",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3916,
+ "output_tokens": 92,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3470.560082991142,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

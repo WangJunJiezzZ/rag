@@ -1,0 +1,14 @@
+{
+ "text": "是**呱呱蛙**（又名聒聒蛙）。\n\n依据 doc-0028《呱呱蛙 角色档案》：\n- 性格与特长：「该角色说话长篇大论，善于分析敌人」——即讲话又臭又长、很会研究对手\n- 口头禅是「从结论上来看」\n- 基本资料：特摄剧《铁甲小宝》中的角色，编号 7 号机，原型是青蛙，身份是科学博士\n\n依据: doc-0028",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4879,
+ "output_tokens": 106,
+ "cached_read_tokens": 4480,
+ "latency_ms": 3518.7045840430073,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

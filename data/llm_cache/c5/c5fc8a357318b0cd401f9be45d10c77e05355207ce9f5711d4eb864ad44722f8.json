@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3881,
+ "output_tokens": 72,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2920.1198749942705,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_mGCmbikDPCqjugZDfOyz6529",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0004\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_YB4BHPnaWIt0Ei4Hzuxq2194",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"喜羊羊的妹妹\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

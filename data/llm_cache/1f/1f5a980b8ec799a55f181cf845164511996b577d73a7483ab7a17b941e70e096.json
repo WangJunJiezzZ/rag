@@ -1,0 +1,14 @@
+{
+ "text": "**小灰灰是武大狼的第 251 代孙。**\n\n依据链条：\n- 灰太狼是武大狼的第 250 代孙（doc-0010）\n- 黑太狼是武大狼的第 249 代孙（doc-0017），即灰太狼的父亲\n- 小灰灰是灰太狼的儿子（doc-0012），因此比灰太狼低一代，为第 251 代孙\n\n图谱中也有对应路径：小灰灰 ←[PARENT_OF]— 灰太狼 —[DESCENDANT_OF]→ 武大狼。\n\n依据: doc-0010, doc-0017, doc-0012",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 5633,
+ "output_tokens": 148,
+ "cached_read_tokens": 4864,
+ "latency_ms": 4228.7453750032,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

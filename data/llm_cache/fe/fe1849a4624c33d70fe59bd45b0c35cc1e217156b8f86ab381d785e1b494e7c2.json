@@ -1,0 +1,14 @@
+{
+ "text": "**未找到依据。**\n\n图谱中「蜻蜓队长」(E0041) 没有任何 UNIT_NO(编号)关系,其档案文档(doc-0032)也只记载了原型是蜻蜓、身份是裁判机器人、口头禅「绝对裁判的公正漂亮」,并未提到他是几号机。因此无法回答他是几号机。\n\n依据: doc-0032",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4817,
+ "output_tokens": 78,
+ "cached_read_tokens": 4480,
+ "latency_ms": 3325.7210410083644,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

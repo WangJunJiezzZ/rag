@@ -1,0 +1,14 @@
+{
+ "text": "**黑太狼和爹爹狼之间没有直接的血缘关系，是通过婚姻联结的亲家关系。**\n\n具体路径（3 跳）：\n\n- 黑太狼 —[PARENT_OF]→ **灰太狼**（黑太狼是灰太狼的父亲）\n- 灰太狼 —[SPOUSE_OF]→ **红太狼**（夫妻）\n- 红太狼 ←[PARENT_OF]— **爹爹狼**（爹爹狼是红太狼的父亲）\n\n也就是说：**黑太狼是灰太狼的父亲，爹爹狼是红太狼的父亲，两人是亲家（儿女亲家）关系**——黑太狼的儿子灰太狼娶了爹爹狼的女儿红太狼。\n\n补充：图谱中黑太狼还有配偶银太狼，且是狼族大王、武大狼的后代；爹爹狼在图谱中只有\"红太狼之父\"这一条关系。\n\n依据: doc-0010, doc-0011, doc-0017",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4575,
+ "output_tokens": 206,
+ "cached_read_tokens": 3840,
+ "latency_ms": 4256.170957989525,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

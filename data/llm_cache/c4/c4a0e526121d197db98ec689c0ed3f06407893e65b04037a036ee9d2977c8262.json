@@ -1,0 +1,24 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4541,
+ "output_tokens": 42,
+ "cached_read_tokens": 4096,
+ "latency_ms": 3091.0066660144366,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_3pkLB9rEwbrpKYY5CgHY3854",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0004\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

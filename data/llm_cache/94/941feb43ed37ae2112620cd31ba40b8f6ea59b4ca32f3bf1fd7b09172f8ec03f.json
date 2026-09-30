@@ -1,0 +1,33 @@
+{
+ "text": "I'll search for this character trait.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3607,
+ "output_tokens": 92,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2903.1386250280775,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_CzVagoOfNA86qwrWByNW5662",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"讲起话来又臭又长 很会研究对手\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_YpkL5bw6Ri50knLh18aw5152",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"话多 啰嗦 研究对手 机器人\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

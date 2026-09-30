@@ -1,0 +1,14 @@
+{
+ "text": "图谱中「住在羊村」(LIVES_IN → 羊村) 的角色共 7 位：\n\n| 角色 | 来源文档 |\n|---|---|\n| 慢羊羊 | doc-0008, doc-0034 |\n| 喜羊羊 | doc-0034 |\n| 美羊羊 | doc-0034 |\n| 懒羊羊 | doc-0034 |\n| 沸羊羊 | doc-0034 |\n| 暖羊羊 | doc-0034 |\n| 软绵绵 | doc-0039 |\n\n依据: doc-0008, doc-0034, doc-0039",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3912,
+ "output_tokens": 130,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3271.223292045761,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

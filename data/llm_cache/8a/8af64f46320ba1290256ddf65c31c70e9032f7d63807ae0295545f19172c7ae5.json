@@ -1,0 +1,24 @@
+{
+ "text": "I'll trace this relationship step by step.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 48,
+ "cached_read_tokens": 3456,
+ "latency_ms": 2603.3569580176845,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_TXtwhWnt9JLiXZ85TruH1189",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"灰太狼\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

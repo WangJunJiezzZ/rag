@@ -1,0 +1,33 @@
+{
+ "text": "小灰灰的父母是灰太狼和红太狼。图谱里没有直接给出小灰灰的外公（红太狼的父亲），我再查一下红太狼的亲属关系。",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 4147,
+ "output_tokens": 111,
+ "cached_read_tokens": 3712,
+ "latency_ms": 2797.627499967348,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_MgNql3XQteN3a9GANzsf4160",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0019\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_ts7DufjIXWl3y3SccS1B2489",
+   "type": "function",
+   "function": {
+    "name": "search_text",
+    "arguments": "{\"query\": \"红太狼的父亲 外公\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

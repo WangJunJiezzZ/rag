@@ -1,0 +1,24 @@
+{
+ "text": "I'll look up the entity first.",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3600,
+ "output_tokens": 48,
+ "cached_read_tokens": 3456,
+ "latency_ms": 3977.6162080233917,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_nCmKts0oSwPg3hXZD8Lw8787",
+   "type": "function",
+   "function": {
+    "name": "find_entity",
+    "arguments": "{\"name\": \"金龟次郎\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

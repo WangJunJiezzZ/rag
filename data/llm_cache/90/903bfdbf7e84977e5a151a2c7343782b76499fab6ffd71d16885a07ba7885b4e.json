@@ -1,0 +1,17 @@
+{
+ "text": "{\"verdict\": \"correct\", \"reason\": \"回答虽指出无直接血缘，但给出了与标准答案一致的间接姻亲关系：蕉太狼是灰太狼的叔叔，灰太狼娶了红太狼，而爹爹狼是红太狼的父亲。\"}",
+ "parsed": {
+  "verdict": "correct",
+  "reason": "回答虽指出无直接血缘，但给出了与标准答案一致的间接姻亲关系：蕉太狼是灰太狼的叔叔，灰太狼娶了红太狼，而爹爹狼是红太狼的父亲。"
+ },
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 713,
+ "output_tokens": 58,
+ "cached_read_tokens": 384,
+ "latency_ms": 2922.987332975026,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": ""
+}

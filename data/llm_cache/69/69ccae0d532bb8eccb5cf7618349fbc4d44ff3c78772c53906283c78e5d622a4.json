@@ -1,0 +1,14 @@
+{
+ "text": "沸羊羊喜欢**美羊羊**。\n\n依据: doc-0006",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3873,
+ "output_tokens": 16,
+ "cached_read_tokens": 3584,
+ "latency_ms": 2612.9075420321897,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [],
+ "finish_reason": "stop"
+}

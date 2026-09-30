@@ -1,0 +1,33 @@
+{
+ "text": "",
+ "parsed": null,
+ "citations": [],
+ "model": "deepseek-chat",
+ "input_tokens": 3837,
+ "output_tokens": 92,
+ "cached_read_tokens": 3584,
+ "latency_ms": 3181.545541039668,
+ "alias_hit": false,
+ "provider": "deepseek",
+ "tool_calls": [
+  {
+   "index": 0,
+   "id": "call_00_N3wpeQ5s4PFZ706bHL2w5543",
+   "type": "function",
+   "function": {
+    "name": "get_neighbors",
+    "arguments": "{\"entity\": \"E0015\", \"relation\": \"COUSIN_OF\"}"
+   }
+  },
+  {
+   "index": 1,
+   "id": "call_01_qnhKiDWC274qFu3ZzoRD8929",
+   "type": "function",
+   "function": {
+    "name": "read_document",
+    "arguments": "{\"doc_id\": \"doc-0015\"}"
+   }
+  }
+ ],
+ "finish_reason": "tool_calls"
+}

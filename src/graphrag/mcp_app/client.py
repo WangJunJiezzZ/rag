@@ -50,6 +50,36 @@ SYSTEM = """你是一名动画角色关系调查助手, 通过工具查询知识
 图谱 schema:
 {schema}"""
 
+# v2: 针对 v1 失败分析加的三条检索 / 列举规则(docs/07-Agent.md 第三节)。
+# 这些规则是看了 train / dev 上的失败题写的; test 上 v1 没有失败题, 所以 test 才是 v2 的样本外成绩。
+SYSTEM_V2 = """你是一名动画角色关系调查助手, 通过工具查询知识图谱与来源文档来回答问题。
+规则:
+- 只依据工具返回的内容作答; 工具没查到的, 明确说"未找到依据", 不要编造,
+  也不要拿你自己对这部动画的记忆来补
+- 关系类问题优先用图谱工具; 描述性问题用 search_text
+- 用 search_text 时:
+  · 第一次检索直接用问题本身的措辞
+  · 检索词只写有区分度的特征, 不要加"机器人""角色""动画"这类几乎每份文档都有的泛词
+  · 不要把你猜测的答案写进检索词, 那会把检索引向你猜的方向
+- 列举类问题(某阵营有哪些角色、谁住在某地、一共有几台)用 list_by_relation 一次取全,
+  不要逐个调用 get_neighbors
+- 两个角色之间找不到关系路径时, 检查双方以及双方的搭档、亲属有没有共同属性
+  (同一阵营、同一团体、住在同一地点), 共同属性也是一种联系
+- 答案末尾列出引用的文档 id, 格式: 依据: doc-xxxx, doc-yyyy
+
+图谱 schema:
+{schema}"""
+
+# 最后一轮强制作答: v1 在第 8 轮读到答案, 却因达到上限把已拿到的证据整个丢掉(q-0058)
+FINAL_NUDGE = ("已经到最后一轮了。请不要再调用工具, 直接根据上面已经拿到的信息作答; "
+               "信息不足以回答的部分, 明确说未找到依据。")
+
+AGENT_PROFILES = {
+    # server_profile 决定工具列表; v1 冻结, 与第一轮评测录制缓存时逐字节一致
+    "v1": {"system": SYSTEM, "server_profile": "v1", "force_final": False},
+    "v2": {"system": SYSTEM_V2, "server_profile": "v2", "force_final": True},
+}
+
 SERVER_SCRIPT = Path(__file__).resolve().parent / "server.py"
 
 
@@ -81,17 +111,20 @@ class Turn:
     llm_calls: int = 0
     input_tokens: int = 0
     output_tokens: int = 0
-    stopped: str = ""           # "final" | "max_steps"
+    stopped: str = ""           # "final" | "forced_final"(v2 最后一轮强制作答) | "max_steps"
     alias_rounds: int = 0       # 离线回放时经稳定键兜底命中的轮数(跨平台工具结果有细微差异)
 
 
 class MCPChat:
     def __init__(self, client: Client, llm: LLM, max_steps: int = 8,
-                 verbose: bool = True):
+                 verbose: bool = True, profile: str = "v1"):
         self.client = client
         self.llm = llm
         self.max_steps = max_steps
         self.verbose = verbose
+        self.profile = profile
+        self.system_tpl = AGENT_PROFILES[profile]["system"]
+        self.force_final = AGENT_PROFILES[profile]["force_final"]
         self.tools: list[dict] = []
         self.system = ""
 
@@ -101,7 +134,7 @@ class MCPChat:
         # Resource 由 Host 决定何时读: 这里在对话开始前读一次 schema 塞进 system prompt,
         # 省掉模型"先调个工具问问有哪些关系"的一轮往返。
         schema = await self.client.read_resource("graphrag://schema")
-        self.system = SYSTEM.format(schema=schema.contents[0].text)
+        self.system = self.system_tpl.format(schema=schema.contents[0].text)
         if self.verbose:
             print(f"[mcp] 已连接, 发现 {len(self.tools)} 个工具: "
                   + ", ".join(t["function"]["name"] for t in self.tools), file=sys.stderr)
@@ -115,16 +148,25 @@ class MCPChat:
                     *(history or []), {"role": "user", "content": question}]
         turn = Turn(answer="")
         for rnd in range(1, self.max_steps + 1):
+            last = self.force_final and rnd == self.max_steps
+            if last:
+                # 最后一轮: 追加提示并禁止调工具, 让模型用已有信息收尾, 而不是把证据丢掉
+                messages.append({"role": "user", "content": FINAL_NUDGE})
             # LLM.chat 是同步 HTTP; 放到线程里跑, 不阻塞 MCP 会话的事件循环
             res = await anyio.to_thread.run_sync(
-                lambda: self.llm.chat(messages=messages, tools=self.tools))
+                lambda: self.llm.chat(messages=messages, tools=self.tools,
+                                      tool_choice="none" if last else None))
             turn.llm_calls += 1
             turn.alias_rounds += 1 if res.alias_hit else 0
             turn.input_tokens += res.input_tokens
             turn.output_tokens += res.output_tokens
 
             if not res.tool_calls:
-                turn.answer, turn.stopped = res.text, "final"
+                turn.answer, turn.stopped = res.text, ("forced_final" if last else "final")
+                break
+            if last:                  # 禁止调工具了还返回 tool_calls: 按步数用尽处理
+                turn.stopped = "max_steps"
+                turn.answer = f"(已达到最大步数 {self.max_steps}, 未能给出最终答案)"
                 break
 
             # assistant 消息必须原样带上 tool_calls, 后面的 tool 消息靠 id 与之配对
@@ -165,11 +207,12 @@ async def _main(args: argparse.Namespace) -> int:
         print(f"[warn] 离线模式: {why}。只能回放已缓存的对话, "
               f"新问题会报缓存未命中。", file=sys.stderr)
 
-    server_args = [str(SERVER_SCRIPT)] + (["--graph", args.graph] if args.graph else [])
+    server_args = ([str(SERVER_SCRIPT), "--profile", AGENT_PROFILES[args.agent]["server_profile"]]
+                   + (["--graph", args.graph] if args.graph else []))
     target = (args.url if args.url else
               StdioServerParameters(command=sys.executable, args=server_args))
     async with Client(target) as client:
-        chat = MCPChat(client, llm, max_steps=args.max_steps)
+        chat = MCPChat(client, llm, max_steps=args.max_steps, profile=args.agent)
         await chat.setup()
 
         async def one(q: str, history: list[dict]) -> None:
@@ -208,6 +251,8 @@ def main() -> int:
     ap.add_argument("-q", "--question", help="只问一个问题后退出")
     ap.add_argument("--url", help="连接 Streamable HTTP Server; 不填则拉起本地 stdio Server")
     ap.add_argument("--max-steps", type=int, default=8)
+    ap.add_argument("--agent", default="v1", choices=list(AGENT_PROFILES),
+                    help="v1 = 第一轮评测的版本; v2 = 改进版(见 docs/07-Agent.md)")
     ap.add_argument("--graph", help="透传给本地 Server 的图谱文件; "
                                     "data/synthetic/graph.json 即标准(oracle)图, 用于区分数据错误与模型错误")
     return anyio.run(_main, ap.parse_args())
