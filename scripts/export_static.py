@@ -123,6 +123,76 @@ AGENT_DEMOS = [{
 }]
 
 
+# 评测里两边结论不同 / 都答错的题, 自动收录进回放页。
+# 下面几道写了失败分析(见 docs/07-Agent.md 第二节), 其余只显示判分结果。
+EVAL_NOTES = {
+    "q-0052": {"agent": "答错，原因是检索时预设了答案。Agent 的检索词是「管理整片草原 村长」——"
+                        "它自己加了「村长」，结果被引向慢羊羊（羊村村长），"
+                        "写着「包包大人……青青草原的管理者」的 doc-0009 根本没有出现。"
+                        "（用原问题直接检索，doc-0009 排第一。）"},
+    "q-0058": {"agent": "没答出来，但其实只差一步。前 2 轮检索了 4 次（含「爱喝酒」「喜欢喝酒」），"
+                        "每个检索词都带了「机器人」这个泛词，结果被「阵营一览」等提到大量机器人的文档占满；"
+                        "第 3～6 轮挨个查机器人的邻居；第 7 轮只搜「贪杯好饮」，第 3 条就是蝎子莱莱（「该角色爱喝酒」）；"
+                        "第 8 轮去读原文——这是最后一轮，读到的内容还没交回给模型就达到了步数上限，已拿到的证据被整个丢掉。"
+                        "两个问题：检索词带泛词；步数用完时没有强制模型根据已有信息作答。"},
+    "q-0088": {"agent": "答错。答案是「藏之助的搭档金龟次郎与卡布达同属正义阵营」，要比较两个角色的属性；"
+                        "工具只能沿关系走，阵营这类字面量节点按设计不能作为中转，Agent 于是认为两人没有关系。"
+                        "改进方向：补一个「按属性列出实体」的工具。",
+               "pipeline": "答错。抽取图多记的一份来源文档占掉一个检索名额，把「阵营一览」挤出了前 8 条。"},
+    "q-0069": {"agent": "答对。没有任何文档直接写「251」：Agent 读了三份档案，"
+                        "按「黑太狼第 249 代 → 灰太狼第 250 代 → 小灰灰是灰太狼的儿子」推出第 251 代。",
+               "pipeline": "拒答。只拿到了「灰太狼是第 250 代」，推不出小灰灰的代数。"},
+    "q-0063": {"agent": "答对。查到妈妈是红太狼之后，又去查了红太狼的武器。",
+               "pipeline": "拒答。只取回了人物关系，没有取回红太狼的武器。"},
+}
+
+
+def load_eval_results() -> dict | None:
+    """汇总 reports/phase4_agent_*.json(三个划分) —— 页面上的 109 题评测结果。"""
+    files = [ROOT / f"reports/phase4_agent_{s}.json" for s in ("train", "dev", "test")]
+    if not all(f.exists() for f in files):
+        return None
+    P, A = [], []
+    for f in files:
+        d = json.loads(f.read_text(encoding="utf-8"))
+        split = d["split"]
+        P += [{**r, "split": split} for r in d["pipeline"]["details"]]
+        A += [{**r, "split": split} for r in d["agent"]["details"]]
+
+    def mean(xs):
+        xs = [x for x in xs if x == x]
+        return sum(xs) / len(xs) if xs else None
+
+    def summ(R):
+        ans = [r for r in R if r["type"] != "negative"]
+        neg = [r for r in R if r["type"] == "negative"]
+        return {"n": len(R), "correct": sum(r["correct"] for r in R),
+                "acc": mean([r["correct"] for r in R]),
+                "false_refusal": mean([r["false_refusal"] for r in ans]),
+                "trap": mean([r["refusal_correct"] for r in neg]),
+                "tools": mean([r["tool_calls"] for r in R]),
+                "llm_calls": mean([r["llm_calls"] for r in R]),
+                "tokens": mean([r["input_tokens"] + r["output_tokens"] for r in R]),
+                "cost_usd": sum(r["cost_usd"] for r in R)}
+
+    by_type: dict[str, dict] = {}
+    for r in P:
+        by_type.setdefault(r["type"], {"n": 0, "pipeline": 0, "agent": 0})
+        by_type[r["type"]]["n"] += 1
+        by_type[r["type"]]["pipeline"] += r["correct"]
+    for r in A:
+        by_type[r["type"]]["agent"] += r["correct"]
+    pm = {r["id"]: r for r in P}
+    diff = [{"id": r["id"], "type": r["type"], "split": r["split"],
+             "pipeline": pm[r["id"]]["correct"], "agent": r["correct"],
+             "tools": r["tool_calls"], "tokens": r["input_tokens"] + r["output_tokens"],
+             "stopped": r.get("stopped", "")}
+            for r in A if r["correct"] != pm[r["id"]]["correct"]
+            or (r["correct"] == 0 and pm[r["id"]]["correct"] == 0)]
+    return {"pipeline": summ(P), "agent": summ(A), "by_type": by_type, "diff": diff,
+            "details": {"pipeline": pm, "agent": {r["id"]: r for r in A}}}
+
+
 def export_agent_traces(out: Path) -> int:
     """离线重放 MCP Agent 的运行, 导出逐步轨迹。
 
@@ -174,8 +244,28 @@ def export_agent_traces(out: Path) -> int:
                              # 实际交给模型的路径(未去重, 与生成时一致)
                              "paths": ans.graph_paths}}
 
+    # ---- 精选案例 + 评测中两边结论不同 / 都答错的题 ----
+    ev = load_eval_results()
+    specs = [{**sp, "group": "curated"} for sp in AGENT_DEMOS]
+    if ev:
+        curated = {sp["qid"] for sp in AGENT_DEMOS}
+        for d in ev["diff"]:
+            if d["id"] in curated:
+                continue
+            notes = EVAL_NOTES.get(d["id"], {})
+            verdict = lambda ok: "correct" if ok else "wrong"          # noqa: E731
+            pr, ar = ev["details"]["pipeline"][d["id"]], ev["details"]["agent"][d["id"]]
+            specs.append({"qid": d["id"], "question": gold[d["id"]]["question"], "group": "eval",
+                          "runs": {
+                "pipeline": {"mode": "pipeline", "graph": "extracted", "label": "固定流水线",
+                             "verdict": verdict(d["pipeline"]), "note": notes.get("pipeline", ""),
+                             "judge_reason": pr.get("judge_reason", "")},
+                "agent": {"mode": "agent", "graph": "extracted", "label": "Agent（MCP 工具）",
+                          "verdict": verdict(d["agent"]), "note": notes.get("agent", ""),
+                          "judge_reason": ar.get("judge_reason", "")}}})
+
     demos = []
-    for spec in AGENT_DEMOS:
+    for spec in specs:
         g = gold[spec["qid"]]
         runs = {}
         for key, meta in spec["runs"].items():
@@ -206,12 +296,14 @@ def export_agent_traces(out: Path) -> int:
                           for s in turn.steps],
             }
         if runs:
-            demos.append({"qid": spec["qid"], "question": spec["question"],
+            demos.append({"qid": spec["qid"], "question": spec["question"], "group": spec["group"],
+                          "split": g["split"],
                           "eval_question": g["question"], "type": g["type"],
                           "gold_answer": g["gold_answer"], "gold_docs": g["gold_docs"],
                           "runs": runs})
     write_text(out / "agent_traces.json",
-               json.dumps({"model": "deepseek-chat", "demos": demos},
+               json.dumps({"model": "deepseek-chat", "demos": demos,
+                           "eval": {k: v for k, v in ev.items() if k != "details"} if ev else None},
                           ensure_ascii=False, separators=(",", ":")))
     return sum(len(d["runs"]) for d in demos)
 
