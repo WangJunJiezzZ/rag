@@ -152,6 +152,7 @@ a{color:var(--accent)}
       <div class="card" id="graphcard" style="display:none">
         <h2>关系路径（由知识图谱推导）</h2>
         <div id="paths"></div>
+        <div class="note">箭头表示关系方向。例如“父母”：父母 → 子女；“喜欢”：喜欢的人 → 被喜欢的人。</div>
       </div>
     </div>
     <div class="card">
@@ -166,6 +167,7 @@ a{color:var(--accent)}
   </div>
 </div>
 
+<script src="./js/graph-labels.js"></script>
 <script type="module">
 import { BM25, Graph, graphSearch } from './js/engine.js';
 
@@ -274,9 +276,9 @@ function ask(){
 function render(d){
   const { gs, pre } = d;
   $('#trace').innerHTML = [
-    `<span class="pill route">路由 ${esc(gs.route.primary)}</span>`,
+    `<span class="pill route">路由 ${esc(GraphLabels.route(gs.route.primary))}</span>`,
     `<span class="pill">${esc(gs.route.reason)}</span>`,
-    gs.intent ? `<span class="pill graph">图模板 ${esc(gs.intent)}</span>` : '',
+    gs.intent ? `<span class="pill graph">图查询 ${esc(GraphLabels.intent(gs.intent))}</span>` : '',
     gs.linked.length ? `<span class="pill graph">链接实体 ${gs.linked.map(x=>esc(x[1])).join('、')}</span>` : '',
     `<span class="pill">${d.ms.toFixed(0)}ms</span>`,
     `<span class="pill">${d.gname === 'oracle' ? '标准图' : '抽取图'}</span>`,
@@ -338,13 +340,16 @@ function drawPath(g){
     svg += `<g class="node"><rect x="16" y="${y-15}" width="230" height="30" fill="var(--panel2)"
       stroke="${color}" stroke-width="1.6" rx="7"></rect>
       <text x="28" y="${y+4}">${esc(label)}</text>
-      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">${esc(n.type)}</text></g>`;
+      <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">${esc(GraphLabels.type(n.type))}</text></g>`;
     if (i < order.length-1){
       const e = edges.find(e => (e.from===id&&e.to===order[i+1])||(e.to===id&&e.from===order[i+1]));
       const y2 = PAD+(i+1)*H+18;
-      svg += `<g class="edge"><line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
-        <polygon points="131,${y2-15} 127,${y2-22} 135,${y2-22}" fill="var(--muted)"></polygon>
-        <text x="142" y="${(y+y2)/2+4}">${esc(e?e.rel:'')}</text></g>`;
+      const reversed = e && (e.from===id ? e.reversed : !e.reversed);
+      const tip = reversed ? y+15 : y2-15, base = tip+(reversed ? 7 : -7);
+      svg += `<g class="edge"><title>${esc(GraphLabels.edgeTitle(e,byId))}</title>
+        <line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
+        <polygon points="131,${tip} 127,${base} 135,${base}" fill="var(--muted)"></polygon>
+        <text x="142" y="${(y+y2)/2+4}">${esc(GraphLabels.relation(e?e.rel:''))}</text></g>`;
     }
   });
   return svg + '</svg>';
