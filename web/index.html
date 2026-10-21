@@ -171,6 +171,7 @@ svg.paths{width:100%;height:auto;display:block}
       <div class="card" id="graphcard" style="display:none">
         <h2>关系路径（由知识图谱推导）</h2>
         <div id="paths"></div>
+        <div class="note">箭头表示关系方向。例如“父母”：父母 → 子女；“喜欢”：喜欢的人 → 被喜欢的人。</div>
       </div>
     </div>
     <div class="card">
@@ -180,6 +181,7 @@ svg.paths{width:100%;height:auto;display:block}
   </div>
 </div>
 
+<script src="/static/graph-labels.js"></script>
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -274,9 +276,9 @@ async function ask(){
 function render(d){
   const t = d.trace||{};
   $('#trace').innerHTML = [
-    t.route ? `<span class="pill route">路由 ${esc(t.route)}</span>` : '',
+    t.route ? `<span class="pill route">路由 ${esc(GraphLabels.route(t.route))}</span>` : '',
     t.reason ? `<span class="pill">${esc(t.reason)}</span>` : '',
-    t.intent ? `<span class="pill graph">图模板 ${esc(t.intent)}</span>` : '',
+    t.intent ? `<span class="pill graph">图查询 ${esc(GraphLabels.intent(t.intent))}</span>` : '',
     (t.linked_entities&&t.linked_entities.length)
       ? `<span class="pill graph">链接实体 ${t.linked_entities.map(esc).join('、')}</span>` : '',
     `<span class="pill">${d.latency_ms.toFixed(0)}ms</span>`,
@@ -326,7 +328,8 @@ function drawPath(g){
   if(!nodes.length) return '';
   const order=[]; const seen=new Set();
   const push=id=>{ if(!seen.has(id)){seen.add(id);order.push(id);} };
-  if(edges.length){ push(edges[0].reversed?edges[0].to:edges[0].from); }
+  // from/to 是路径的遍历顺序；reversed 只用于恢复关系箭头方向。
+  if(edges.length){ push(edges[0].from); }
   edges.forEach(e=>{ push(e.from); push(e.to); });
   nodes.forEach(n=>push(n.id));
   const byId=Object.fromEntries(nodes.map(n=>[n.id,n]));
@@ -344,13 +347,16 @@ function drawPath(g){
       stroke-width="1.6" rx="7"></rect>
       <text x="28" y="${y+4}">${esc(label)}</text>
       <text x="236" y="${y+4}" text-anchor="end" style="fill:${color};font-size:9.5px">
-        ${esc(n.type)}</text></g>`;
+        ${esc(GraphLabels.type(n.type))}</text></g>`;
     if(i<seq.length-1){
       const e=edges.find(e=>(e.from===id&&e.to===seq[i+1])||(e.to===id&&e.from===seq[i+1]));
       const y2=PAD+(i+1)*H+18;
-      svg+=`<g class="edge"><line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
-        <polygon points="131,${y2-15} 127,${y2-22} 135,${y2-22}" fill="var(--muted)"></polygon>
-        <text x="142" y="${(y+y2)/2+4}">${esc(e?e.rel:'')}</text></g>`;
+      const reversed=e && (e.from===id ? e.reversed : !e.reversed);
+      const tip=reversed ? y+15 : y2-15, base=tip+(reversed ? 7 : -7);
+      svg+=`<g class="edge"><title>${esc(GraphLabels.edgeTitle(e,byId))}</title>
+        <line x1="131" y1="${y+15}" x2="131" y2="${y2-15}"></line>
+        <polygon points="131,${tip} 127,${base} 135,${base}" fill="var(--muted)"></polygon>
+        <text x="142" y="${(y+y2)/2+4}">${esc(GraphLabels.relation(e?e.rel:''))}</text></g>`;
     }
   });
   return svg+'</svg>';

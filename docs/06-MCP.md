@@ -41,10 +41,16 @@ AI 领域也一样：
 ### 怎么用
 
 ```bash
-source .venv/bin/activate          # 每次新开终端都要执行一次；Windows: .\.venv\Scripts\Activate.ps1
+source .venv/bin/activate          # macOS / Linux，每次新开终端执行
 
 # 问 DeepSeek 一个问题，它会自己决定调用哪些工具
 python run.py mcp-chat -- --graph data/synthetic/graph.json -q "小灰灰和小香香是什么关系？"
+```
+
+Windows / PowerShell 7：
+
+```powershell
+pwsh -NoProfile -File .\scripts\windows-run.ps1 mcp-chat -- --graph data/synthetic/graph.json -q "小灰灰和小香香是什么关系？"
 ```
 
 屏幕上会逐行打印 AI 调用了哪些工具，最后给出答案：
@@ -59,7 +65,7 @@ python run.py mcp-chat -- --graph data/synthetic/graph.json -q "小灰灰和小�
 **这些步骤是 AI 自己决定的，不是写死的。** 这就是演示时最想让对方看到的东西。
 
 另外两种用法：
-- **MCP Inspector**：`npx @modelcontextprotocol/inspector .venv/bin/python src/graphrag/mcp_app/server.py`（Windows 把 `.venv/bin/python` 换成 `.venv\Scripts\python.exe`），在网页上手动调用工具。这是开发者的调试工具，相当于电工用的万用表，**不用于演示**。工具参数要填角色名，比如 `灰太狼`，不要填整句问题；整句问题要交给 `search_text` 或 `ask`
+- **MCP Inspector**：`npx @modelcontextprotocol/inspector .venv/bin/python src/graphrag/mcp_app/server.py`；Windows 使用 `npx.cmd @modelcontextprotocol/inspector .\.venv\Scripts\python.exe src/graphrag/mcp_app/server.py`，避免 `.ps1` 包装脚本被执行策略拦截。在网页上手动调用工具。这是开发者的调试工具，相当于电工用的万用表，**不用于演示**。工具参数要填角色名，比如 `灰太狼`，不要填整句问题；整句问题要交给 `search_text` 或 `ask`
 - **接入其他 AI 应用**：见第二节的配置
 
 ### 演示时要让对方看到的三件事

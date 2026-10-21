@@ -9,6 +9,7 @@
 | [05-部署说明](05-部署说明.md) | 想把演示放到线上时看；现在推送 `main` 就会自动发布 |
 | [06-MCP](06-MCP.md) | 把检索做成 **MCP Server** + DeepSeek 驱动的 **MCP Client**：是什么、怎么用、怎么做的、踩坑、面试问答 |
 | [07-Agent](07-Agent.md) | **Agent vs 固定流水线**：怎么实现的、109 题实测对比、失败分析、改进实验 v2、LLM 判官校准、评测怎么一步步变准的、面试问答 |
+| [08-Windows命令](08-Windows命令.md) | PowerShell、Python、npm 子进程与 Codex 自动命令的兼容规则和回归检查 |
 
 ## 每份 MCP / Agent 文档都按同样的顺序写
 

@@ -299,7 +299,7 @@ Agent 平均每题 4.5 次工具调用、3.6 次模型调用。**每一轮都要
 ## 六、怎么跑
 
 ```bash
-source .venv/bin/activate          # Windows: .\.venv\Scripts\Activate.ps1
+source .venv/bin/activate          # macOS / Linux
 
 # 默认只读缓存，不联网、不花钱。这些题都已缓存，可以直接复现上面的数字
 python run.py eval-agent -- --split test
@@ -313,6 +313,13 @@ python run.py mcp-chat -- --agent v2 -q "正义阵营有哪些机器人？"     
 # 校准判官（默认只读缓存）
 python run.py calibrate-judge
 python run.py calibrate-judge -- --prompt judge/v1_rubric    # 看 v1 在留出集上的误判
+```
+
+Windows 无需激活脚本；使用 PowerShell 7，例如：
+
+```powershell
+pwsh -NoProfile -File .\scripts\windows-run.ps1 eval-agent -- --split test
+pwsh -NoProfile -File .\scripts\windows-run.ps1 calibrate-judge
 ```
 
 加 `--online` 才会调用 DeepSeek。联网前会打印预估花费，**实际花费**超过 `--max-usd`（默认 $0.5）就不再开新题；缓存命中不计入。

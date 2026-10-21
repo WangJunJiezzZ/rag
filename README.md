@@ -353,14 +353,19 @@ v3 的 hypothesis 写的是"拒答率大幅上升，风险是矫枉过正"。**�
 
 ```powershell
 py -3.12 -m venv .venv
-.\.venv\Scripts\Activate.ps1
 
-python run.py doctor                    # 环境自检（含中文编码验证）
-pip install -r requirements.txt         # 可选：启用向量检索与 Web 演示
-python run.py fetch-model               # 可选：下载 24MB 向量模型
-python run.py all                       # 全流程
-python run.py serve                     # http://127.0.0.1:8000
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt  # 可选：安装项目依赖
+pwsh -NoProfile -File .\scripts\windows-run.ps1 doctor        # 环境自检
+pwsh -NoProfile -File .\scripts\windows-run.ps1 fetch-model   # 可选：下载模型
+pwsh -NoProfile -File .\scripts\windows-run.ps1 all           # 全流程
+pwsh -NoProfile -File .\scripts\windows-run.ps1 serve         # http://127.0.0.1:8000
 ```
+
+入口要求 PowerShell 7.3+，优先使用项目虚拟环境，并只对子进程设置 `SHELL`。
+无需执行 `Activate.ps1` 或修改执行策略；也可以直接运行
+`.\.venv\Scripts\python.exe run.py doctor`。
+Windows 使用 `python` 或 `py -3.12`，避免 WindowsApps 的 `python3` 占位程序。
+Node.js 调用 npm 与 Codex 项目配置见 [Windows 命令兼容说明](docs/08-Windows命令.md)。
 
 > **关于中文乱码**：`src/graphrag/compat.py` 在启动时把 stdout 重设为 UTF-8，
 > 并对旧版 `cmd.exe` 调用 `SetConsoleOutputCP(65001)`。所有文件读写一律显式
